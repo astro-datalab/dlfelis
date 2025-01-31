@@ -10,4 +10,4 @@ dlfelis
 .. _`Astro Data Lab`: https://datalab.noirlab.edu
 """
 
-__version__ = '0.1.0.dev5'
+__version__ = '0.1.0'
