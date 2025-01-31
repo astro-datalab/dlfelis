@@ -3,13 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=====================
 dlfelis Documentation
 =====================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Introduction
+============
 
+``dlfelis`` provides tools for interfacing with Felis_ in the `Astro Data Lab`_
+environment.
+
+.. _Felis: https://felis.lsst.io/
+.. _`Astro Data Lab`: https://datalab.noirlab.edu
+
+Contents
+========
 
 .. toctree::
    :maxdepth: 1
@@ -17,3 +25,10 @@ documentation for details.
 
    api.rst
    changes.rst
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

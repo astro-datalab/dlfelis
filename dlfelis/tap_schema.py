@@ -4,15 +4,13 @@
 dlfelis.tap_schema
 ==================
 
-Tools for working with Astro Data Lab TapSchema_.
+Tools for working with Astro Data Lab's TapSchema_.
 
 .. _TapSchema: https://github.com/astro-datalab/TapSchema
 """
-# """
-# Transform a TapSchema JSON file to felis/YAML.
-# """
 import argparse
 import json
+import logging
 import os
 import subprocess
 import sys
@@ -57,9 +55,16 @@ felis_units = {'nanomaggies': 'nanomaggy',
 
 def _options():
     """Parse command-line options.
+
+    Returns
+    -------
+    :class:`~argparse.Namespace`
+        Parsed command-line arguments.
     """
     prsr = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
                                    description='Transform a TapSchema JSON file to felis/YAML.')
+    prsr.add_argument('-d', '--debug', action='store_true',
+                      help='Debug mode, print extra information.')
     prsr.add_argument('-o', '--output', metavar='FILE',
                       help=("Write output to FILE. By default, output is written to " +
                             "the same directory as the input file with .json changed to .yaml."))
@@ -67,6 +72,34 @@ def _options():
                       help='If set, do not perform felis validation on the output.')
     prsr.add_argument('json', metavar='JSON', help='Name of a JSON file to convert.')
     return prsr.parse_args()
+
+
+def validate(filename):
+    """Calls :command:`felis validate` on `filename`.
+
+    Parameters
+    ----------
+    filename : :class:`str`
+        Name of the file to validate.
+
+    Returns
+    -------
+    :class:`int`
+        Status returned by :command:`felis`.
+    """
+    log = logging.getLogger('dlfelis.tap_schema.validate')
+    proc = subprocess.Popen(['felis', 'validate', filename],
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = proc.communicate()
+    out = out.decode('utf-8')
+    err = err.decode('utf-8')
+    if proc.returncode != 0 or err != f"INFO:felis:Validating {filename}\n":
+        if out:
+            log.error('STDOUT =')
+            log.error(out)
+        log.error('STDERR =')
+        log.error(err)
+    return proc.returncode
 
 
 def main():
@@ -78,6 +111,9 @@ def main():
         An integer suitable for passing to :func:`sys.exit()`.
     """
     options = _options()
+    log = logging.getLogger('dlfelis.tap_schema.main')
+    if options.debug:
+        log.setLevel(logging.DEBUG)
     schema_name = os.path.splitext(options.json)
     schema_basename = os.path.basename(schema_name[0])
     assert schema_name[1] == '.json'
@@ -91,8 +127,8 @@ def main():
                     'description': json_schema['schemas'][0]['description'],
                     'version': {'current': 'v1',
                                 'compatible': ['v1'],
-                                'read_compatible': ['v1'],},
-                    'tables':list()}
+                                'read_compatible': ['v1'], },
+                    'tables': list()}
 
     for tap_index, json_table in enumerate(json_schema['tables']):
         assert json_table['schema_name'] == schema_basename
@@ -116,7 +152,9 @@ def main():
             except KeyError:
                 felis_datatype = json_column['datatype']
             felis_column = {'name': json_column['column_name'],
-                            '@id': f"#{schema_basename}.{json_table['table_name']}.{json_column['column_name']}",
+                            '@id': (f"#{schema_basename}." +
+                                    f"{json_table['table_name']}." +
+                                    f"{json_column['column_name']}"),
                             'description': json_column['description'],
                             'datatype': felis_datatype,
                             'nullable': False,
@@ -155,26 +193,12 @@ def main():
         yaml.dump(felis_schema, y)
 
     if options.validate:
-        proc = subprocess.Popen(['felis', 'validate', felis_yaml],
-                                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        out, err = proc.communicate()
-        status = proc.returncode
-        out = out.decode('utf-8')
-        err = err.decode('utf-8')
-        err == f"INFO:felis:Validating {felis_yaml}"
-        if status != 0 or err != f"INFO:felis:Validating {felis_yaml}\n":
-            if out:
-                print('STDOUT =')
-                print(out)
-            print('STDERR =')
-            print(err)
+        status = validate(felis_yaml)
     else:
         status = 0
 
     return status
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     sys.exit(main())
-
-
