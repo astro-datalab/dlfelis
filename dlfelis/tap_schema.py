@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Licensed under a BSD-style 3-clause license - see LICENSE.md.
 # -*- coding: utf-8 -*-
 """
@@ -25,7 +26,18 @@ felis_datatypes = {'bigint': 'long',
                    'real': 'float',
                    'REAL': 'float',
                    'character': 'string',
-                   'varchar': 'string'}
+                   'varchar': 'string',
+                   'adql:INTEGER': 'int',
+                   'adql:SMALLINT': 'short',
+                   'adql:BIGINT': 'long',
+                   'adql:REAL': 'float',
+                   'adql:DOUBLE': 'double',
+                   'adql:CHAR': 'string',
+                   'adql:VARCHAR': 'string',
+                   'adql:TIMESTAMP': 'timestamp',
+                   'adql:POINT': 'point',
+                   'adql:REGION': 'region'
+                   }
 #
 # Conversion between units used in TapSchema and units recommended by Felis,
 # which adheres to the FITS standard.
@@ -44,6 +56,7 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'W/m2/Hz': 'W m-2 Hz-1',
                'log(counts/s)': 'log(count/s)',
                'sec': 's',
+               'seconds': 's',
                'days': 'd',
                'years': 'yr',
                'Gyrs': 'Gyr',
@@ -52,6 +65,11 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'microns': 'um',
                'degrees': 'deg'}
 
+#
+# Conversion between UCDs used in some json files and UCDs required by felis/IVOA
+#
+felis_ucds = {'pos.gal.lon': 'pos.galactic.lon',
+              'pos.gal.lat': 'pos.galactic.lat'}
 
 def _options():
     """Parse command-line options.
@@ -178,7 +196,10 @@ def main():
                 else:
                     felis_column['fits:tunit'] = json_column['unit']
             if json_column['ucd']:
-                felis_column['ivoa:ucd'] = json_column['ucd']
+                if json_column['ucd'] in felis_ucds:
+                    felis_column['ivoa:ucd'] = felis_ucds[json_column['ucd']]
+                else:
+                    felis_column['ivoa:ucd'] = json_column['ucd']
             felis_table['columns'].append(felis_column)
 
         felis_schema['tables'].append(felis_table)
