@@ -148,9 +148,9 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'solar metallicity': '',
                'E(B-V) mag': 'mag',
                '(3.63 nJy)^2': '13.1769 nJy^2',
-               'sexigesimal hours': 'deg', # in ivoa files
-               'sexigesimal degrees': 'deg' # in ivoa files
-              }
+               'sexigesimal hours': 'deg',  # in ivoa files
+               'sexigesimal degrees': 'deg'  # in ivoa files
+               }
 
 #
 # Conversion between UCDs used in some json files and UCDs required by felis/IVOA
@@ -186,6 +186,7 @@ felis_ucds = {'pos.gal.lon': 'pos.galactic.lon',
               'pos_eq_pmra': 'pos.pm;pos.eq.ra',
               'pos_eq_pmdec': 'pos.pm;pos.eq.dec'
               }
+
 
 def _options():
     """Parse command-line options.
