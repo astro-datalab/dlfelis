@@ -16,6 +16,7 @@ import os
 import subprocess
 import sys
 import yaml
+from astropy import units as u
 
 #
 # Conversion between types used in TapSchema and types required by Felis.
@@ -36,10 +37,12 @@ felis_datatypes = {'bigint': 'long',
                    'adql:integer': 'int',
                    'adql:SMALLINT': 'short',
                    'adql:smallint': 'short',
+                   'adql:SMALLINT[]': 'short',
                    'adql:BIGINT': 'long',
                    'adql:bigint': 'long',
                    'adql:REAL': 'float',
                    'adql:real': 'float',
+                   'adql:REAL[]': 'float',
                    'adql:DOUBLE': 'double',
                    'adql:double': 'double',
                    'adql:DOUBLE[]': 'double',
@@ -49,6 +52,7 @@ felis_datatypes = {'bigint': 'long',
                    'adql:character(1)': 'char',
                    'adql:VARCHAR': 'string',
                    'adql:varchar': 'string',
+                   'adql:VARCHAR(n)': 'string',
                    'adql:TIMESTAMP': 'timestamp',
                    'adql:POINT': 'point',
                    'adql:REGION': 'region',
@@ -113,6 +117,7 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'Dimensionless': '',
                'Frequency[1/day]': '1/day',
                'e-/s': 'electron/s',
+               'Electrons/ADU': 'electron/adu',
                'Time[Barycentric JD in TCB - 2455197.5 (day)]': 'd',
                'Angle[mas^-2]': 'mas^-2',
                'log(cm.s**-2)': 'dex(cm/s2)',
@@ -141,7 +146,10 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'dex (solar masses)': 'dex(M_sun)',
                'solar mass': 'M_sun',
                'solar metallicity': '',
-               'E(B-V) mag': 'mag'
+               'E(B-V) mag': 'mag',
+               '(3.63 nJy)^2': '13.1769 nJy^2',
+               'sexigesimal hours': 'deg', # in ivoa files
+               'sexigesimal degrees': 'deg' # in ivoa files
               }
 
 #
