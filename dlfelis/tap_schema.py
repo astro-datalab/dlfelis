@@ -16,7 +16,6 @@ import os
 import subprocess
 import sys
 import yaml
-from astropy import units as u
 
 #
 # Conversion between types used in TapSchema and types required by Felis.
