@@ -535,7 +535,7 @@ tables:
     datatype: double
     description: Ecliptic Longitude
     fits:tunit: deg
-    ivoa:ucd: pos.ecl.lon
+    ivoa:ucd: pos.ecliptic.lon
     name: elon
     nullable: false
     tap:column_index: 49
@@ -545,7 +545,7 @@ tables:
     datatype: double
     description: Ecliptic Latitude
     fits:tunit: deg
-    ivoa:ucd: pos.ecl.lat
+    ivoa:ucd: pos.ecliptic.lat
     name: elat
     nullable: false
     tap:column_index: 50
