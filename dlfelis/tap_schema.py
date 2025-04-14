@@ -291,14 +291,14 @@ def main():
                                     f"{json_column['column_name']}"),
                             'description': json_column['description'],
                             'datatype': felis_datatype,
-                            'nullable': False,
+                            'nullable': True,
                             # 'fits:tunit': json_column['unit'],
                             # 'ivoa:ucd': json_column['ucd'],
                             # 'votable:utype': json_column['utype'],
                             # 'votable:arraysize': json_column['size'],
                             'tap:principal': json_column['principal'],
-                            'tap:std': json_column['std'],
-                            'tap:column_index': column_index + 1}
+                            'tap:std': json_column['std']}
+                            # 'tap:column_index': column_index + 1}
             if felis_datatype in ['string', 'char']:
                 felis_column['length'] = json_column['size']
             if json_column['indexed']:
