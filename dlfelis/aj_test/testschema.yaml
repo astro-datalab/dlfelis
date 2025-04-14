@@ -11,8 +11,7 @@ tables:
     fits:tunit: deg
     ivoa:ucd: pos.ecliptic.lat
     name: elat
-    nullable: false
-    tap:column_index: 1
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.main.px'
@@ -20,8 +19,7 @@ tables:
     description: Comoving position X coordinate [Mpc/h]
     fits:tunit: Mpc/h
     name: px
-    nullable: false
-    tap:column_index: 2
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.main.absmag_r'
@@ -29,8 +27,7 @@ tables:
     description: SDSS r-band absolute magnitude [mag]
     fits:tunit: mag
     name: absmag_r
-    nullable: false
-    tap:column_index: 3
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.main.m200'
@@ -38,8 +35,7 @@ tables:
     description: M_200 of host halo [M_sun/h]
     fits:tunit: M_sun/h
     name: m200
-    nullable: false
-    tap:column_index: 4
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.main.tdec'
@@ -47,8 +43,7 @@ tables:
     description: Unlensed dec [deg]
     fits:tunit: degree
     name: tdec
-    nullable: false
-    tap:column_index: 5
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.main.size'
@@ -56,8 +51,7 @@ tables:
     description: Lensed half light radius [arcsec]
     fits:tunit: arcsec
     name: size
-    nullable: false
-    tap:column_index: 6
+    nullable: true
     tap:principal: 0
     tap:std: 0
   description: Main table for test schema
@@ -80,8 +74,7 @@ tables:
     description: Average MJD (ok detections only)
     fits:tunit: J2000
     name: epochmean_ok
-    nullable: false
-    tap:column_index: 1
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.median_mag_y'
@@ -89,8 +82,7 @@ tables:
     description: Median magnitude in Y-band
     fits:tunit: AB mag
     name: median_mag_y
-    nullable: false
-    tap:column_index: 2
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.a_image_g'
@@ -98,8 +90,7 @@ tables:
     description: Semi-major axis of g-band adaptive aperture in image coordinates
     fits:tunit: pixel
     name: a_image_g
-    nullable: false
-    tap:column_index: 3
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.fluxerr_aper_2_g'
@@ -108,8 +99,7 @@ tables:
       measurement for circular apertures [adu]
     fits:tunit: adu
     name: fluxerr_aper_2_g
-    nullable: false
-    tap:column_index: 4
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.flux_ivar_z'
@@ -117,8 +107,7 @@ tables:
     description: Inverse variance of FLUX_Z (AB)
     fits:tunit: nanomaggy^-2
     name: flux_ivar_z
-    nullable: false
-    tap:column_index: 5
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.pmdec'
@@ -126,8 +115,7 @@ tables:
     description: Reference catalog proper motion in the Dec direction
     fits:tunit: mas yr^-1
     name: pmdec
-    nullable: false
-    tap:column_index: 6
+    nullable: true
     tap:principal: 0
     tap:std: 0
   - '@id': '#testschema.vac.pmdec_ivar'
@@ -135,8 +123,7 @@ tables:
     description: Inverse variance of PMDEC
     fits:tunit: yr^2 mas^-2
     name: pmdec_ivar
-    nullable: false
-    tap:column_index: 7
+    nullable: true
     tap:principal: 0
     tap:std: 0
   description: Value-added catalog table for test schema
