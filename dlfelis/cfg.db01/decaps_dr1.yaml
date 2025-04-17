@@ -1,0 +1,3738 @@
+---
+'@id': '#decaps_dr1'
+description: DECaPS Survey Data Release 1
+name: decaps_dr1
+tables:
+- '@id': '#decaps_dr1.ccds'
+  columns:
+  - '@id': '#decaps_dr1.ccds.filter'
+    datatype: char
+    description: Filter used for observation
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ra'
+    datatype: double
+    description: Approximate right ascension center of this CCD (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.dec'
+    datatype: double
+    description: Approximate declination center of this CCD (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.airmass'
+    datatype: double
+    description: Airmass extinction
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.date_obs'
+    datatype: string
+    description: Date of observation start
+    length: 26
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.exptime'
+    datatype: double
+    description: Exposure time (sec)
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.expnum'
+    datatype: long
+    description: Unique DECam exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.mjd_obs'
+    datatype: double
+    description: Date of observation in MJD (in UTC system)
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.propid'
+    datatype: string
+    description: Propsal ID
+    length: 10
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.seeing'
+    datatype: double
+    description: Seeing in arcseconds determined by fitting a 2-dimensional gaussian
+      to the median PSF of stars on the CCD
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.object'
+    datatype: string
+    description: Name listed in the object tag from the CCD header
+    length: 22
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.avsky'
+    datatype: double
+    description: Average sky level in this image (ADU)
+    fits:tunit: adu
+    name: avsky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.arawgain'
+    datatype: double
+    description: Average gain for this CCD
+    name: arawgain
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.fwhm'
+    datatype: double
+    description: '[Use seeing instead]'
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.crpix1'
+    datatype: double
+    description: 'Astrometric header value: X reference pixel'
+    name: crpix1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.crpix2'
+    datatype: double
+    description: 'Astrometric header value: Y reference pixel'
+    name: crpix2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.crval1'
+    datatype: double
+    description: 'Astrometric header value: RA of reference pixel'
+    name: crval1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.crval2'
+    datatype: double
+    description: 'Astrometric header value: Dec of reference pixel'
+    name: crval2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.cd1_1'
+    datatype: double
+    description: 'Astrometric header value: transformation matrix'
+    name: cd1_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.cd1_2'
+    datatype: double
+    description: 'Astrometric header value: transformation matrix'
+    name: cd1_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.cd2_1'
+    datatype: double
+    description: 'Astrometric header value: transformation matrix'
+    name: cd2_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.cd2_2'
+    datatype: double
+    description: 'Astrometric header value: transformation matrix'
+    name: cd2_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.extname'
+    datatype: string
+    description: Extension name
+    length: 3
+    name: extname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccdnum'
+    datatype: long
+    description: CCD number (see DECam layout)
+    name: ccdnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.image_filename'
+    datatype: string
+    description: Path to FITS image
+    length: 50
+    name: image_filename
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.image_hdu'
+    datatype: long
+    description: FITS HDU number in the image_filename file where this image can be
+      found
+    name: image_hdu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.height'
+    datatype: long
+    description: Height of the image (pixels)
+    fits:tunit: pixel
+    name: height
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.width'
+    datatype: long
+    description: Width of the image (pixels)
+    fits:tunit: pixel
+    name: width
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.camera'
+    datatype: string
+    description: The camera that took this image
+    length: 5
+    name: camera
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccdname'
+    datatype: string
+    description: CCD name (see DECam layout)
+    length: 3
+    name: ccdname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.zpt'
+    datatype: double
+    description: Median zero point for the entire image (median of all CCDs of the
+      image)
+    name: zpt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccdzpt'
+    datatype: double
+    description: Zero point for the CCD (AB mag)
+    name: ccdzpt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccdnmatch'
+    datatype: int
+    description: Number of stars matched to PS1 catalog of matched stars
+    name: ccdnmatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccdraoff'
+    datatype: float
+    description: Median astrometric offset for the CCD in arcsec
+    fits:tunit: arcsec
+    name: ccdraoff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccddecoff'
+    datatype: float
+    description: Median astrometric offset for the CCD in arcsec
+    fits:tunit: arcsec
+    name: ccddecoff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ra_bore'
+    datatype: double
+    description: Telescope boresight RA of this exposure (deg)
+    fits:tunit: deg
+    name: ra_bore
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.dec_bore'
+    datatype: double
+    description: Telescope boresight Dec of this exposure (deg)
+    fits:tunit: deg
+    name: dec_bore
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.zpscatter'
+    datatype: double
+    description: Zero point scatter
+    name: zpscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccd_x0'
+    datatype: short
+    description: Physical array start x
+    name: ccd_x0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccd_y0'
+    datatype: short
+    description: Physical array start y
+    name: ccd_y0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccd_x1'
+    datatype: short
+    description: Physical array end x
+    name: ccd_x1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.ccd_y1'
+    datatype: short
+    description: Physical array end y
+    name: ccd_y1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.brick_x0'
+    datatype: short
+    description: Brick region start x
+    name: brick_x0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.brick_x1'
+    datatype: short
+    description: Brick region end x
+    name: brick_x1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.brick_y0'
+    datatype: short
+    description: Brick region start y
+    name: brick_y0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.brick_y1'
+    datatype: short
+    description: Brick region end y
+    name: brick_y1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.sig1'
+    datatype: double
+    description: Median per-pixel error standard deviation, in nanomaggies
+    name: sig1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.psfnorm'
+    datatype: double
+    description: PSF norm = 1/sqrt of N_eff = sqrt(sum(psf_i^2)) for normalized PSF
+      pixels i
+    name: psfnorm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.galnorm'
+    datatype: float
+    description: Norm of the PSF model convolved by a 0.45 arcsec exponential galaxy
+    name: galnorm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.plver'
+    datatype: string
+    description: Commuity Pipeline (CP) version number
+    length: 6
+    name: plver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.skyver'
+    datatype: char
+    description: Sky version
+    length: 1
+    name: skyver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.wcsver'
+    datatype: char
+    description: WCS version
+    length: 1
+    name: wcsver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.psfver'
+    datatype: char
+    description: Version of the fits format for this PSFTYPE
+    length: 1
+    name: psfver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.skyplver'
+    datatype: string
+    description: Sky Community Pipeline (CP) version number
+    length: 6
+    name: skyplver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.wcsplver'
+    datatype: string
+    description: WCS Community Pipeline (CP) version number
+    length: 6
+    name: wcsplver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.ccds.psfplver'
+    datatype: char
+    description: PSF Community Pipeline (CP) version number
+    length: 1
+    name: psfplver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Brick CCD table
+  indexes:
+  - '@id': '#ccds_ra_idx'
+    columns:
+    - '#decaps_dr1.ccds.ra'
+    name: ccds_ra_idx
+  - '@id': '#ccds_dec_idx'
+    columns:
+    - '#decaps_dr1.ccds.dec'
+    name: ccds_dec_idx
+  name: ccds
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#decaps_dr1.depth'
+  columns:
+  - '@id': '#decaps_dr1.depth.depthlo'
+    datatype: float
+    description: Lower limit of depth bin
+    name: depthlo
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.depthhi'
+    datatype: float
+    description: Upper limit of the depth bin
+    name: depthhi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_ptsrc_g'
+    datatype: int
+    description: Number of pixels in histogram for point source depth in g-band
+    name: counts_ptsrc_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_gal_g'
+    datatype: int
+    description: Number of pixels in histogram for canonical galaxy depth in g-band
+    name: counts_gal_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_ptsrc_r'
+    datatype: int
+    description: Number of pixels in histogram for point source depth in r-band
+    name: counts_ptsrc_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_gal_r'
+    datatype: int
+    description: Number of pixels in histogram for canonical galaxy depth in r-band
+    name: counts_gal_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_ptsrc_i'
+    datatype: int
+    description: Number of pixels in histogram for point source depth in i-band
+    name: counts_ptsrc_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_gal_i'
+    datatype: int
+    description: Number of pixels in histogram for canonical galaxy depth in i-band
+    name: counts_gal_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_ptsrc_z'
+    datatype: int
+    description: Number of pixels in histogram for point source depth in z-band
+    name: counts_ptsrc_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_gal_z'
+    datatype: int
+    description: Number of pixels in histogram for canonical galaxy depth in z-band
+    name: counts_gal_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_ptsrc_y'
+    datatype: int
+    description: Number of pixels in histogram for point source depth in Y-band
+    name: counts_ptsrc_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.depth.counts_gal_y'
+    datatype: int
+    description: Number of pixels in histogram for canonical galaxy depth in Y-band
+    name: counts_gal_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Brick depth table
+  indexes: []
+  name: depth
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#decaps_dr1.imdb'
+  columns:
+  - '@id': '#decaps_dr1.imdb.exp_id'
+    datatype: long
+    description: Exposure ID
+    name: exp_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.cached'
+    datatype: short
+    description: Ignore; all values for this column are 0
+    name: cached
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.simple'
+    datatype: short
+    description: Ignore; all values for this column are 0
+    name: simple
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.bitpix'
+    datatype: long
+    description: Number of bits per data pixel
+    name: bitpix
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.naxis'
+    datatype: long
+    description: Number of data axes
+    name: naxis
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.extend'
+    datatype: short
+    description: Extension
+    name: extend
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.date'
+    datatype: string
+    description: Date of observation
+    length: 19
+    name: date
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.iraf_tlm'
+    datatype: string
+    description: Time of last modification
+    length: 19
+    name: iraf_tlm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.origin'
+    datatype: string
+    description: Low edge of first LST histogram bin (deg)
+    fits:tunit: deg
+    length: 37
+    name: origin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.object'
+    datatype: string
+    description: Object name
+    length: 22
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.proctype'
+    datatype: string
+    description: Processing type
+    length: 7
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.prodtype'
+    datatype: string
+    description: Product type (image, dqmask, expmap, etc)
+    length: 5
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pixscal1'
+    datatype: double
+    description: Pixel scale for axis 1 (arcsec/pixel)
+    fits:tunit: arcsec/pixel
+    name: pixscal1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pixscal2'
+    datatype: double
+    description: Pixel scale for axis 2 (arcsec/pixel)
+    fits:tunit: arcsec/pixel
+    name: pixscal2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.obs_long'
+    datatype: double
+    description: Observatory longitude (deg)
+    fits:tunit: deg
+    name: obs_long
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.telescop'
+    datatype: string
+    description: Name of telescope used
+    length: 20
+    name: telescop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.observat'
+    datatype: string
+    description: Name of observatory used
+    length: 4
+    name: observat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.obs_lat'
+    datatype: double
+    description: Observatory latitude (deg)
+    fits:tunit: deg
+    name: obs_lat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.obs_elev'
+    datatype: double
+    description: Observatory elevation
+    name: obs_elev
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.instrume'
+    datatype: string
+    description: Name of instrument used
+    length: 5
+    name: instrume
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.expreq'
+    datatype: double
+    description: Requested exposure time (sec)
+    fits:tunit: s
+    name: expreq
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.exptime'
+    datatype: double
+    description: Actual exposure time (sec)
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.darktime'
+    datatype: double
+    description: Total elapsed time (sec)
+    fits:tunit: s
+    name: darktime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.obsid'
+    datatype: string
+    description: Observation ID
+    length: 19
+    name: obsid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.date_obs'
+    datatype: string
+    description: Date of observation
+    length: 26
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.time_obs'
+    datatype: string
+    description: Time of observation
+    length: 15
+    name: time_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.mjd_obs'
+    datatype: double
+    description: Modified Julian Date of observation
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.openshut'
+    datatype: string
+    description: Date and time at shutter open (UTC)
+    length: 26
+    name: openshut
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.timesys'
+    datatype: string
+    description: Time system
+    length: 3
+    name: timesys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.expnum'
+    datatype: long
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.obstype'
+    datatype: string
+    description: Observation type (object, zero, dark, dome flat)
+    length: 6
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.camshut'
+    datatype: string
+    description: Shutter status during observation
+    length: 4
+    name: camshut
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.program'
+    datatype: string
+    description: Name of program
+    length: 54
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.observer'
+    datatype: string
+    description: Name of observer
+    length: 10
+    name: observer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.proposer'
+    datatype: string
+    description: Name of proposer PI
+    length: 10
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtpi'
+    datatype: string
+    description: Principal Investigator
+    length: 10
+    name: dtpi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.propid'
+    datatype: string
+    description: Proposal ID
+    length: 10
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.excluded'
+    datatype: char
+    description: DECam components not used for this frame
+    length: 1
+    name: excluded
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.aos'
+    datatype: short
+    description: AOS data available if true
+    name: aos
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.bcam'
+    datatype: short
+    description: BCAM data available if true
+    name: bcam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.guider'
+    datatype: long
+    description: Guider (0-absent,1-ok,2-lost star,3-lost all stars)
+    name: guider
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.skystat'
+    datatype: short
+    description: Cloud camera (RASICAM) available if true
+    name: skystat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.filter'
+    datatype: string
+    description: Filter used
+    length: 32
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.filtpos'
+    datatype: string
+    description: Instrument filter position
+    length: 10
+    name: filtpos
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.instance'
+    datatype: string
+    description: SISPI instance name
+    length: 14
+    name: instance
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.errors'
+    datatype: string
+    description: SISPI readout errors
+    length: 4
+    name: errors
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.telequin'
+    datatype: double
+    description: Equinox of telescope coordinates
+    name: telequin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.telstat'
+    datatype: string
+    description: Telescope tracking status
+    length: 5
+    name: telstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fits_ra'
+    datatype: double
+    description: Right ascension of FITS image (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: fits_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fits_dec'
+    datatype: double
+    description: Declination of FITS image (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: fits_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ra'
+    datatype: double
+    description: Right ascension (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dec'
+    datatype: double
+    description: Declination (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn1ra'
+    datatype: double
+    description: RA corner of exposure (deg)
+    fits:tunit: deg
+    name: corn1ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn1dec'
+    datatype: double
+    description: Dec corner of exposure (deg)
+    fits:tunit: deg
+    name: corn1dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn2ra'
+    datatype: double
+    description: RA corner of exposure (deg)
+    fits:tunit: deg
+    name: corn2ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn2dec'
+    datatype: double
+    description: Dec corner of exposure (deg)
+    fits:tunit: deg
+    name: corn2dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn3ra'
+    datatype: double
+    description: RA corner of exposure (deg)
+    fits:tunit: deg
+    name: corn3ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn3dec'
+    datatype: double
+    description: Dec corner of exposure (deg)
+    fits:tunit: deg
+    name: corn3dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn4ra'
+    datatype: double
+    description: RA corner of exposure (deg)
+    fits:tunit: deg
+    name: corn4ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.corn4dec'
+    datatype: double
+    description: Dec corner of exposure (deg)
+    fits:tunit: deg
+    name: corn4dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.telra'
+    datatype: string
+    description: '[HH:MM:SS] telescope RA'
+    length: 12
+    name: telra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.teldec'
+    datatype: string
+    description: '[HH:MM:SS] telescope Dec'
+    length: 13
+    name: teldec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ha'
+    datatype: string
+    description: Hour angle of observation
+    length: 12
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.zd'
+    datatype: double
+    description: Zenith distance of observation
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.az'
+    datatype: double
+    description: Telescope azimuth
+    name: az
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.domeaz'
+    datatype: double
+    description: Dome position (deg)
+    fits:tunit: deg
+    name: domeaz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.telfocus'
+    datatype: string
+    description: DESI hexapod settings
+    length: 41
+    name: telfocus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.vsub'
+    datatype: short
+    description: True if CCD substrate voltage is on
+    name: vsub
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.gskyphot'
+    datatype: short
+    description: RASICAM global sky clear flag
+    name: gskyphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lskyphot'
+    datatype: short
+    description: RASICAM local sky clear flag
+    name: lskyphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.windspd'
+    datatype: double
+    description: Wind speed outside (m/s)
+    fits:tunit: m/s
+    name: windspd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.winddir'
+    datatype: double
+    description: Wind direction outside (deg)
+    fits:tunit: deg
+    name: winddir
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.humidity'
+    datatype: double
+    description: Percent humidity outside
+    name: humidity
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pressure'
+    datatype: double
+    description: Air pressure outside (torr)
+    fits:tunit: torr
+    name: pressure
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dimmsee'
+    datatype: double
+    description: Pachon DIMM seeing
+    name: dimmsee
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.outtemp'
+    datatype: double
+    description: Outside temperature (celsius)
+    fits:tunit: Celsius
+    name: outtemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.airmass'
+    datatype: double
+    description: Airmass extinction
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.gskyvar'
+    datatype: double
+    description: RASICAM global sky standard deviation
+    name: gskyvar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.gskyhot'
+    datatype: double
+    description: RASICAM global sky fraction above threshold
+    name: gskyhot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lskyvar'
+    datatype: string
+    description: RASICAM local sky standard deviation
+    length: 3
+    name: lskyvar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lskyhot'
+    datatype: string
+    description: RASICAM local sky fraction above threshold
+    length: 3
+    name: lskyhot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lskypow'
+    datatype: string
+    description: RASICAM local sky normalized power
+    length: 3
+    name: lskypow
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.msurtemp'
+    datatype: double
+    description: Mirror surface average temperature (deg C)
+    fits:tunit: deg C
+    name: msurtemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.mairtemp'
+    datatype: double
+    description: Mirror temperature above surface (deg C)
+    fits:tunit: deg C
+    name: mairtemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.uptrtemp'
+    datatype: double
+    description: Upper truss temperature (deg C)
+    fits:tunit: deg C
+    name: uptrtemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lwtrtemp'
+    datatype: string
+    description: Lower truss temperature (deg C)
+    fits:tunit: deg C
+    length: 3
+    name: lwtrtemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pmostemp'
+    datatype: double
+    description: Primary mirror top surface temperature (deg C)
+    fits:tunit: deg C
+    name: pmostemp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.utn_temp'
+    datatype: double
+    description: Upper truss temperature north (deg C)
+    fits:tunit: deg C
+    name: utn_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.uts_temp'
+    datatype: double
+    description: Upper truss temperature south (deg C)
+    fits:tunit: deg C
+    name: uts_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.utw_temp'
+    datatype: double
+    description: Upper truss temperature west (deg C)
+    fits:tunit: deg C
+    name: utw_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ute_temp'
+    datatype: double
+    description: Upper truss temperature east (deg C)
+    fits:tunit: deg C
+    name: ute_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pmn_temp'
+    datatype: double
+    description: Mirror north edge temperature (deg C)
+    fits:tunit: deg C
+    name: pmn_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pms_temp'
+    datatype: double
+    description: Mirror south edge temperature (deg C)
+    fits:tunit: deg C
+    name: pms_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pmw_temp'
+    datatype: double
+    description: Mirror west edge temperature (deg C)
+    fits:tunit: deg C
+    name: pmw_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pme_temp'
+    datatype: double
+    description: Mirror east edge temperature (deg C)
+    fits:tunit: deg C
+    name: pme_temp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.domelow'
+    datatype: double
+    description: Temperature at dome back, lower (deg C)
+    fits:tunit: deg C
+    name: domelow
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.domehigh'
+    datatype: double
+    description: Temperature at dome back, upper (deg C)
+    fits:tunit: deg C
+    name: domehigh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.domeflor'
+    datatype: double
+    description: Temperature of dome floor (deg C)
+    fits:tunit: deg C
+    name: domeflor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_meanx'
+    datatype: double
+    description: Guider x-axis mean offset (arcsec)
+    fits:tunit: arcsec
+    name: g_meanx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_meany'
+    datatype: double
+    description: Guider y-axis mean offset (arcsec)
+    fits:tunit: arcsec
+    name: g_meany
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfs4'
+    datatype: string
+    description: Mean wavefront
+    length: 52
+    name: donutfs4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfs3'
+    datatype: string
+    description: Mean wavefront
+    length: 48
+    name: donutfs3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfs2'
+    datatype: string
+    description: Mean wavefront
+    length: 50
+    name: donutfs2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfs1'
+    datatype: string
+    description: Mean wavefront
+    length: 49
+    name: donutfs1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_flxvar'
+    datatype: double
+    description: Guider mean guide star flux variances (arcsec)
+    fits:tunit: arcsec
+    name: g_flxvar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_meanxy'
+    datatype: double
+    description: Guider (xy) 2nd moment mean offset (arcsec^2)
+    fits:tunit: arcsec^2
+    name: g_meanxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfn1'
+    datatype: string
+    description: Mean wavefront
+    length: 52
+    name: donutfn1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfn2'
+    datatype: string
+    description: Mean wavefront
+    length: 49
+    name: donutfn2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfn3'
+    datatype: string
+    description: Mean wavefront
+    length: 51
+    name: donutfn3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.donutfn4'
+    datatype: string
+    description: Mean wavefront
+    length: 51
+    name: donutfn4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.time_recorded'
+    datatype: string
+    description: Time recorded
+    length: 26
+    name: time_recorded
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_feedbk'
+    datatype: string
+    description: Guider feedback (%)
+    length: 5
+    name: g_feedbk
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_ccdnum'
+    datatype: long
+    description: Number of guide CCDs that remained active
+    name: g_ccdnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.doxt'
+    datatype: double
+    description: X-theta from donut analysis (arcsec)
+    fits:tunit: arcsec
+    name: doxt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_maxx'
+    datatype: double
+    description: Guider x-axis mamimum offset (arcsec)
+    fits:tunit: arcsec
+    name: g_maxx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fadz'
+    datatype: double
+    description: FA delta Z (um)
+    fits:tunit: um
+    name: fadz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fady'
+    datatype: double
+    description: FA delta Y (um)
+    fits:tunit: um
+    name: fady
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fadx'
+    datatype: double
+    description: FA delta X (um)
+    fits:tunit: um
+    name: fadx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_mode'
+    datatype: string
+    description: Guider operation mode
+    length: 4
+    name: g_mode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.fayt'
+    datatype: double
+    description: FA delta Y-theta (arcsec)
+    fits:tunit: arcsec
+    name: fayt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dodz'
+    datatype: double
+    description: Z-decenter from donut analysis (um)
+    fits:tunit: um
+    name: dodz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dody'
+    datatype: double
+    description: Y-decenter from donut analysis (um)
+    fits:tunit: um
+    name: dody
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dodx'
+    datatype: double
+    description: X-decenter from donut analysis (um)
+    fits:tunit: um
+    name: dodx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.multiexp'
+    datatype: short
+    description: Frame contains multiple exposures if true
+    name: multiexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.skyupdat'
+    datatype: string
+    description: Time of last RASICAM exposure (UTC)
+    length: 19
+    name: skyupdat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_seeing'
+    datatype: double
+    description: Guider average seeing (arcsec)
+    fits:tunit: arcsec
+    name: g_seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_transp'
+    datatype: double
+    description: Guider average sky transparency
+    name: g_transp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_meany2'
+    datatype: double
+    description: Guider (y) 2nd moment mean offset (arcsec^2)
+    fits:tunit: arcsec^2
+    name: g_meany2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.doyt'
+    datatype: double
+    description: Y-theta from donut analysis (arcsec)
+    fits:tunit: arcsec
+    name: doyt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_latenc'
+    datatype: double
+    description: Guider average latency between exposures (sec)
+    fits:tunit: s
+    name: g_latenc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.lutver'
+    datatype: string
+    description: Hexapod Lookup Table version
+    length: 9
+    name: lutver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.faxt'
+    datatype: double
+    description: FA delta x-theta (arcsec)
+    fits:tunit: arcsec
+    name: faxt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_maxy'
+    datatype: double
+    description: Guider y-axis maximum offset (arcsec)
+    fits:tunit: arcsec
+    name: g_maxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.g_meanx2'
+    datatype: double
+    description: Guider (x) 2nd moment mean offset (arcsec^2)
+    fits:tunit: arcsec^2
+    name: g_meanx2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sispiver'
+    datatype: string
+    description: SISPI software version
+    length: 5
+    name: sispiver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.constver'
+    datatype: string
+    description: SISPI constants version
+    length: 8
+    name: constver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.hdrver'
+    datatype: string
+    description: DECam fits header version
+    length: 2
+    name: hdrver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtsite'
+    datatype: string
+    description: Telescope/observatory local from which original raw data was taken
+    length: 2
+    name: dtsite
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dttelesc'
+    datatype: string
+    description: Telescope identifier
+    length: 4
+    name: dttelesc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtinstru'
+    datatype: string
+    description: Instrument identifier
+    length: 5
+    name: dtinstru
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtcaldat'
+    datatype: string
+    description: Calendar date from observing schedule
+    length: 10
+    name: dtcaldat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.odateobs'
+    datatype: char
+    description: Previous date-obs
+    length: 1
+    name: odateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtutc'
+    datatype: string
+    description: Post exposure UTC epoch from DTS
+    length: 19
+    name: dtutc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtobserv'
+    datatype: string
+    description: Scheduling institution
+    length: 4
+    name: dtobserv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtpropid'
+    datatype: string
+    description: Proposal ID validated by Archive
+    length: 10
+    name: dtpropid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtpiaffl'
+    datatype: char
+    description: PI affiliation
+    length: 1
+    name: dtpiaffl
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dttitle'
+    datatype: char
+    description: Title of data
+    length: 1
+    name: dttitle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtcopyri'
+    datatype: string
+    description: Copyright holder of data
+    length: 4
+    name: dtcopyri
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtacquis'
+    datatype: string
+    description: Host name of data acquisition computer
+    length: 23
+    name: dtacquis
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtaccoun'
+    datatype: string
+    description: Observing account name
+    length: 5
+    name: dtaccoun
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtacqnam'
+    datatype: string
+    description: File name supplied at telescope
+    length: 56
+    name: dtacqnam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtnsanam'
+    datatype: string
+    description: File name supplied at NSA
+    length: 26
+    name: dtnsanam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dt_rtnam'
+    datatype: string
+    description: NSA root name
+    length: 21
+    name: dt_rtnam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtqueue'
+    datatype: string
+    description: DTS queue (1513)
+    length: 5
+    name: dtqueue
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dtstatus'
+    datatype: string
+    description: Data transport status
+    length: 4
+    name: dtstatus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_host'
+    datatype: string
+    description: iSTB client host
+    length: 18
+    name: sb_host
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_accou'
+    datatype: string
+    description: iSTB client user account
+    length: 2
+    name: sb_accou
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_site'
+    datatype: string
+    description: iSTB host site
+    length: 2
+    name: sb_site
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_local'
+    datatype: string
+    description: Locale of iSTB daemon
+    length: 2
+    name: sb_local
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_dir1'
+    datatype: string
+    description: Level 1 directory in NSA DS
+    length: 9
+    name: sb_dir1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_dir2'
+    datatype: string
+    description: Level 2 directory in NSA DS
+    length: 6
+    name: sb_dir2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_dir3'
+    datatype: string
+    description: Level 3 directory in NSA DS
+    length: 8
+    name: sb_dir3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_recno'
+    datatype: long
+    description: iSTB sequence number
+    name: sb_recno
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_id'
+    datatype: string
+    description: Unique iSTB identifier
+    length: 9
+    name: sb_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_name'
+    datatype: string
+    description: Name assigned by iSTB
+    length: 31
+    name: sb_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.sb_rtnam'
+    datatype: string
+    description: NSA root name
+    length: 21
+    name: sb_rtnam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.rmcount'
+    datatype: long
+    description: Remediation counter
+    name: rmcount
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.recno'
+    datatype: long
+    description: Record number assigned by the VizieR team. Should not be used for
+      identification.
+    name: recno
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.bunit'
+    datatype: string
+    description: Photoelectrons per second
+    length: 3
+    name: bunit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.detsize'
+    datatype: string
+    description: Detector size
+    length: 17
+    name: detsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ccdsec'
+    datatype: string
+    description: CCD section
+    length: 15
+    name: ccdsec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ccdbin1'
+    datatype: long
+    description: Binning factor along axis 1
+    name: ccdbin1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ccdbin2'
+    datatype: long
+    description: Binning factor along axis 2
+    name: ccdbin2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dheinf'
+    datatype: string
+    description: Controller info
+    length: 19
+    name: dheinf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.dhefirm'
+    datatype: string
+    description: DHE Firmware
+    length: 6
+    name: dhefirm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.radesys'
+    datatype: string
+    description: Coordinate reference frame of major/minor axes
+    length: 3
+    name: radesys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.equinox'
+    datatype: double
+    description: Equinox of RA and Dec
+    name: equinox
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.valida'
+    datatype: short
+    description: Data from amp A is valid
+    name: valida
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.validb'
+    datatype: short
+    description: Data from amp B is valid
+    name: validb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.ndonuts'
+    datatype: long
+    description: AOS number of donuts analyzed for this CCD
+    name: ndonuts
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.photflag'
+    datatype: long
+    description: Night Photometric (1) or not (0)
+    name: photflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.xtalkfil'
+    datatype: string
+    description: Crosstalk file
+    length: 18
+    name: xtalkfil
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.des_ext'
+    datatype: string
+    description: Image extension
+    length: 5
+    name: des_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.scampchi'
+    datatype: double
+    description: chi2 value from SCAMP
+    name: scampchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.scampflg'
+    datatype: long
+    description: Flag for SCAMP; 0=no WARNING; 1=WARNING exists
+    name: scampflg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.scampnum'
+    datatype: long
+    description: number of matched stars from SCAMP
+    name: scampnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.radecsys'
+    datatype: string
+    description: The RA/Dec system used
+    length: 4
+    name: radecsys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.magzero'
+    datatype: double
+    description: Magnitude zero point (mag)
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.magzpt'
+    datatype: double
+    description: Magnitude zero point per sec (mag)
+    fits:tunit: mag
+    name: magzpt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.photref'
+    datatype: string
+    description: Phototometric reference catalog
+    length: 7
+    name: photref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pupilsky'
+    datatype: double
+    description: Sky background
+    name: pupilsky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pupilmax'
+    datatype: double
+    description: Camera pupil maximum (mm)
+    fits:tunit: mm
+    name: pupilmax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pupilamp'
+    datatype: double
+    description: Amplitude of pupil
+    name: pupilamp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.skyorder'
+    datatype: long
+    description: Ignore; all values for this column are either 0 or 8
+    name: skyorder
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.skysub'
+    datatype: double
+    description: Sky subtraction
+    name: skysub
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.nextend'
+    datatype: long
+    description: Number of extensions
+    name: nextend
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.filename'
+    datatype: string
+    description: Filename of fits image
+    length: 44
+    name: filename
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plver'
+    datatype: string
+    description: Community Pipeline (CP) version number
+    length: 6
+    name: plver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pldname'
+    datatype: string
+    description: PL dataset
+    length: 23
+    name: pldname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plqueue'
+    datatype: string
+    description: PL queue
+    length: 6
+    name: plqueue
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plqname'
+    datatype: string
+    description: PL dataset
+    length: 8
+    name: plqname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plprocid'
+    datatype: string
+    description: Unique, time-based, CP processing hash - see the plprocid page for
+      how to convert this to a date
+    length: 7
+    name: plprocid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plfname'
+    datatype: string
+    description: PL filename
+    length: 44
+    name: plfname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.wcscal'
+    datatype: string
+    description: Astrometric calibration
+    length: 10
+    name: wcscal
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.checksum'
+    datatype: string
+    description: FITS header keyword used to verify the integrity of the HDU
+    length: 16
+    name: checksum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.datasum'
+    datatype: char
+    description: FITS header keyword used to verify the integrity of the HDU data
+      unit
+    length: 1
+    name: datasum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.pldsid'
+    datatype: string
+    description: PL NSA name
+    length: 26
+    name: pldsid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.plarver'
+    datatype: long
+    description: PL NSA archive version
+    name: plarver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.catfname'
+    datatype: string
+    description: Filename of cat FITS file, e.g. c4d_160811_001340_ooi_Y_v1.cat.fits
+    length: 35
+    name: catfname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.smf_fn'
+    datatype: double
+    description: Single-mode-fiber (SMF) frequency
+    name: smf_fn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.median_fwhm_geo'
+    datatype: double
+    description: Median FWHM geometry mode
+    name: median_fwhm_geo
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.median_fwhm_maj'
+    datatype: double
+    description: Median FWHM of major axis
+    name: median_fwhm_maj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.imdb.filterid'
+    datatype: string
+    description: Filter (one of g,r,i,z,Y)
+    length: 6
+    name: filterid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Image header table
+  indexes:
+  - '@id': '#imdb_exp_id_idx'
+    columns:
+    - '#decaps_dr1.imdb.exp_id'
+    name: imdb_exp_id_idx
+  - '@id': '#imdb_object_idx'
+    columns:
+    - '#decaps_dr1.imdb.object'
+    name: imdb_object_idx
+  - '@id': '#imdb_mjd_obs_idx'
+    columns:
+    - '#decaps_dr1.imdb.mjd_obs'
+    name: imdb_mjd_obs_idx
+  - '@id': '#imdb_fits_ra_idx'
+    columns:
+    - '#decaps_dr1.imdb.fits_ra'
+    name: imdb_fits_ra_idx
+  - '@id': '#imdb_fits_dec_idx'
+    columns:
+    - '#decaps_dr1.imdb.fits_dec'
+    name: imdb_fits_dec_idx
+  - '@id': '#imdb_ra_idx'
+    columns:
+    - '#decaps_dr1.imdb.ra'
+    name: imdb_ra_idx
+  - '@id': '#imdb_dec_idx'
+    columns:
+    - '#decaps_dr1.imdb.dec'
+    name: imdb_dec_idx
+  name: imdb
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#decaps_dr1.meas'
+  columns:
+  - '@id': '#decaps_dr1.meas.decapsid'
+    datatype: long
+    description: Unique identifier
+    ivoa:ucd: meta.id;meta.main
+    name: decapsid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.dec'
+    datatype: double
+    description: Declination (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.ra'
+    datatype: double
+    description: Right ascension (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.elat'
+    datatype: double
+    description: Ecliptic latitude (deg)
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.elon'
+    datatype: double
+    description: Ecliptic longitude (deg)
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.glat'
+    datatype: double
+    description: Galactic latitude (deg)
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.glon'
+    datatype: double
+    description: Galactic longitude (deg)
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.mjd_obs'
+    datatype: double
+    description: Modified Julian Date of the observation
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.x'
+    datatype: double
+    description: x coordinate in the CCD (pix)
+    fits:tunit: pix
+    name: x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.y'
+    datatype: double
+    description: y coordinate in the CCD (pix)
+    fits:tunit: pix
+    name: y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.mag'
+    datatype: float
+    description: Magnitude
+    name: mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.flux'
+    datatype: float
+    description: Instrumental flux (ADU)
+    fits:tunit: adu
+    name: flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.dx'
+    datatype: float
+    description: x coordinate uncertainty
+    name: dx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.dy'
+    datatype: float
+    description: y coordinate uncertainty
+    name: dy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.dflux'
+    datatype: float
+    description: flux uncertainty
+    name: dflux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.mag_err'
+    datatype: float
+    description: Magnitude uncertainty
+    name: mag_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.snr'
+    datatype: float
+    description: Signal-to-noise ratio
+    name: snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.qf'
+    datatype: float
+    description: Quality factor, PSF-weighted fraction of good pixels
+    name: qf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.rchi2'
+    datatype: float
+    description: PSF-weighted fraction average chi^2
+    name: rchi2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.fracflux'
+    datatype: float
+    description: PSF-weighted fraction of flux from this source
+    name: fracflux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.fluxlbs'
+    datatype: float
+    description: local-background-subtracted flux (ADU)
+    fits:tunit: adu
+    name: fluxlbs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.dfluxlbs'
+    datatype: float
+    description: fluxlbs uncertainty
+    name: dfluxlbs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.fwhm'
+    datatype: float
+    description: Full width at half maximum of PSF (pix)
+    fits:tunit: pix
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.flags'
+    datatype: int
+    description: Community Pipeline flag value at central pixel
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.sky'
+    datatype: float
+    description: sky at source location (ADU)
+    fits:tunit: adu
+    name: sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.psf'
+    datatype: int
+    description: Octant of CCD where model was instantiated (1-8)
+    name: psf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.gain'
+    datatype: float
+    description: gain at source location (e-/ADU)
+    fits:tunit: adu
+    name: gain
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.exptime'
+    datatype: float
+    description: Exposure time (sec)
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.filterid'
+    datatype: char
+    description: Filter (one of g,r,i,z,Y)
+    length: 1
+    name: filterid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.airmass'
+    datatype: double
+    description: Airmass extinction
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.chip_id'
+    datatype: int
+    description: CCD number (one of 1,2,3,4)
+    name: chip_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.zp'
+    datatype: float
+    description: Zero point (mag)
+    fits:tunit: mag
+    name: zp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.meas.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Measurement table
+  indexes:
+  - '@id': '#meas_decapsid_idx'
+    columns:
+    - '#decaps_dr1.meas.decapsid'
+    name: meas_decapsid_idx
+  - '@id': '#meas_dec_idx'
+    columns:
+    - '#decaps_dr1.meas.dec'
+    name: meas_dec_idx
+  - '@id': '#meas_ra_idx'
+    columns:
+    - '#decaps_dr1.meas.ra'
+    name: meas_ra_idx
+  - '@id': '#meas_mjd_obs_idx'
+    columns:
+    - '#decaps_dr1.meas.mjd_obs'
+    name: meas_mjd_obs_idx
+  - '@id': '#meas_mag_idx'
+    columns:
+    - '#decaps_dr1.meas.mag'
+    name: meas_mag_idx
+  - '@id': '#meas_flux_idx'
+    columns:
+    - '#decaps_dr1.meas.flux'
+    name: meas_flux_idx
+  - '@id': '#meas_htm9_idx'
+    columns:
+    - '#decaps_dr1.meas.htm9'
+    name: meas_htm9_idx
+  - '@id': '#meas_ring256_idx'
+    columns:
+    - '#decaps_dr1.meas.ring256'
+    name: meas_ring256_idx
+  - '@id': '#meas_nest4096_idx'
+    columns:
+    - '#decaps_dr1.meas.nest4096'
+    name: meas_nest4096_idx
+  name: meas
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#decaps_dr1.object'
+  columns:
+  - '@id': '#decaps_dr1.object._id'
+    datatype: long
+    description: Object identifier
+    name: _id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.obj_id'
+    datatype: long
+    description: Unique object identifier
+    ivoa:ucd: meta.id;meta.main
+    name: obj_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ra'
+    datatype: double
+    description: Right ascension (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.dec'
+    datatype: double
+    description: Declination (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.epochrange'
+    datatype: double
+    description: MJD between first and last detections
+    name: epochrange
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.epochmean'
+    datatype: double
+    description: Average MJD
+    name: epochmean
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.elon'
+    datatype: double
+    description: Ecliptic longitude (deg)
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.elat'
+    datatype: double
+    description: Ecliptic latitude (deg)
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.glon'
+    datatype: double
+    description: Galactic longitude (deg)
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.glat'
+    datatype: double
+    description: Galactic latitude (deg)
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ra_ok'
+    datatype: double
+    description: Right ascension of ok detections (deg)
+    fits:tunit: deg
+    name: ra_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.dec_ok'
+    datatype: double
+    description: Declination of ok detections (deg)
+    fits:tunit: deg
+    name: dec_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.epochrange_ok'
+    datatype: double
+    description: MJD between first and last ok detections
+    name: epochrange_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.epochmean_ok'
+    datatype: double
+    description: Average MJD (ok only)
+    name: epochmean_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_g_r'
+    datatype: float
+    description: Mean magnitude of g-r color
+    name: mean_mag_g_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_r_i'
+    datatype: float
+    description: Mean magnitude of r-i color
+    name: mean_mag_r_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_i_z'
+    datatype: float
+    description: Mean magnitude of i-z color
+    name: mean_mag_i_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_z_y'
+    datatype: float
+    description: Mean magnitude of z-Y color
+    name: mean_mag_z_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_g_r'
+    datatype: float
+    description: Median magnitude of g-r color
+    name: median_mag_g_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_r_i'
+    datatype: float
+    description: Median magnitude of r-i color
+    name: median_mag_r_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_i_z'
+    datatype: float
+    description: Median magnitude of i-z color
+    name: median_mag_i_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_z_y'
+    datatype: float
+    description: Median magnitude of z-Y color
+    name: median_mag_z_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_g'
+    datatype: float
+    description: Mean flux in g-band
+    name: mean_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_r'
+    datatype: float
+    description: Mean flux in r-band
+    name: mean_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_i'
+    datatype: float
+    description: Mean flux in i-band
+    name: mean_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_z'
+    datatype: float
+    description: Mean flux in z-band
+    name: mean_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_y'
+    datatype: float
+    description: Mean flux in Y-band
+    name: mean_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_g'
+    datatype: float
+    description: Mean magnitude in g-band
+    name: mean_mag_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_r'
+    datatype: float
+    description: Mean magnitude in r-band
+    name: mean_mag_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_i'
+    datatype: float
+    description: Mean magnitude in i-band
+    name: mean_mag_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_z'
+    datatype: float
+    description: Mean magnitude in z-band
+    name: mean_mag_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_mag_y'
+    datatype: float
+    description: Mean magnitude in Y-band
+    name: mean_mag_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_g'
+    datatype: float
+    description: Flux standard deviation in g-band
+    name: stdev_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_r'
+    datatype: float
+    description: Flux standard deviation in r-band
+    name: stdev_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_i'
+    datatype: float
+    description: Flux standard deviation in i-band
+    name: stdev_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_z'
+    datatype: float
+    description: Flux standard deviation in z-band
+    name: stdev_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_y'
+    datatype: float
+    description: Flux standard deviation in Y-band
+    name: stdev_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_g'
+    datatype: float
+    description: Uncertainty in mean flux in g-band
+    name: err_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_r'
+    datatype: float
+    description: Uncertainty in mean flux in r-band
+    name: err_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_i'
+    datatype: float
+    description: Uncertainty in mean flux in i-band
+    name: err_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_z'
+    datatype: float
+    description: Uncertainty in mean flux in z-band
+    name: err_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_y'
+    datatype: float
+    description: Uncertainty in mean flux in Y-band
+    name: err_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_g'
+    datatype: float
+    description: Median flux (units of 3631 Jy) in g-band
+    name: median_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_r'
+    datatype: float
+    description: Median flux (units of 3631 Jy) in r-band
+    name: median_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_i'
+    datatype: float
+    description: Median flux (units of 3631 Jy) in i-band
+    name: median_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_z'
+    datatype: float
+    description: Median flux (units of 3631 Jy) in z-band
+    name: median_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_y'
+    datatype: float
+    description: Median flux (units of 3631 Jy) in Y-band
+    name: median_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_g'
+    datatype: float
+    description: Median magnitude (units of 3631 Jy) in g-band
+    name: median_mag_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_r'
+    datatype: float
+    description: Median magnitude (units of 3631 Jy) in r-band
+    name: median_mag_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_i'
+    datatype: float
+    description: Median magnitude (units of 3631 Jy) in i-band
+    name: median_mag_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_z'
+    datatype: float
+    description: Median magnitude (units of 3631 Jy) in z-band
+    name: median_mag_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_mag_y'
+    datatype: float
+    description: Median magnitude (units of 3631 Jy) in Y-band
+    name: median_mag_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.posstdev'
+    datatype: float
+    description: Standard deviation in position (arcsec)
+    fits:tunit: arcsec
+    name: posstdev
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.posstdev_ok'
+    datatype: float
+    description: Standard deviation (ok detections only) (arcsec)
+    fits:tunit: arcsec
+    name: posstdev_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_g'
+    datatype: float
+    description: 25th percentile flux (units of 3631 Jy) in g-band
+    name: q25_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_r'
+    datatype: float
+    description: 25th percentile flux (units of 3631 Jy) in r-band
+    name: q25_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_i'
+    datatype: float
+    description: 25th percentile flux (units of 3631 Jy) in i-band
+    name: q25_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_z'
+    datatype: float
+    description: 25th percentile flux (units of 3631 Jy) in z-band
+    name: q25_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_y'
+    datatype: float
+    description: 25th percentile flux (units of 3631 Jy) in Y-band
+    name: q25_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_g'
+    datatype: float
+    description: 75th percentile flux (units of 3631 Jy) in g-band
+    name: q75_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_r'
+    datatype: float
+    description: 75th percentile flux (units of 3631 Jy) in r-band
+    name: q75_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_i'
+    datatype: float
+    description: 75th percentile flux (units of 3631 Jy) in i-band
+    name: q75_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_z'
+    datatype: float
+    description: 75th percentile flux (units of 3631 Jy) in z-band
+    name: q75_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_y'
+    datatype: float
+    description: 75th percentile flux (units of 3631 Jy) in Y-band
+    name: q75_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_lbs_g'
+    datatype: float
+    description: Mean local-background-subtracted flux (units of 3631 Jy) in g-band
+    name: mean_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_lbs_r'
+    datatype: float
+    description: Mean local-background-subtracted flux (units of 3631 Jy) in r-band
+    name: mean_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_lbs_i'
+    datatype: float
+    description: Mean local-background-subtracted flux (units of 3631 Jy) in i-band
+    name: mean_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_lbs_z'
+    datatype: float
+    description: Mean local-background-subtracted flux (units of 3631 Jy) in z-band
+    name: mean_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.mean_lbs_y'
+    datatype: float
+    description: Mean local-background-subtracted flux (units of 3631 Jy) in Y-band
+    name: mean_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_lbs_g'
+    datatype: float
+    description: Local-background-subtracted flux standard deviation in g-band
+    name: stdev_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_lbs_r'
+    datatype: float
+    description: Local-background-subtracted flux standard deviation in r-band
+    name: stdev_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_lbs_i'
+    datatype: float
+    description: Local-background-subtracted flux standard deviation in i-band
+    name: stdev_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_lbs_z'
+    datatype: float
+    description: Local-background-subtracted flux standard deviation in z-band
+    name: stdev_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.stdev_lbs_y'
+    datatype: float
+    description: Local-background-subtracted flux standard deviation in Y-band
+    name: stdev_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_lbs_g'
+    datatype: float
+    description: Uncertainty in mean local-background-subtracted flux in g-band
+    name: err_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_lbs_r'
+    datatype: float
+    description: Uncertainty in mean local-background-subtracted flux in r-band
+    name: err_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_lbs_i'
+    datatype: float
+    description: Uncertainty in mean local-background-subtracted flux in i-band
+    name: err_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_lbs_z'
+    datatype: float
+    description: Uncertainty in mean local-background-subtracted flux in z-band
+    name: err_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.err_lbs_y'
+    datatype: float
+    description: Uncertainty in mean local-background-subtracted flux in Y-band
+    name: err_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_lbs_g'
+    datatype: float
+    description: Median local-background-subtracted flux (units of 3631 Jy) in g-band
+    name: median_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_lbs_r'
+    datatype: float
+    description: Median local-background-subtracted flux (units of 3631 Jy) in r-band
+    name: median_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_lbs_i'
+    datatype: float
+    description: Median local-background-subtracted flux (units of 3631 Jy) in i-band
+    name: median_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_lbs_z'
+    datatype: float
+    description: Median local-background-subtracted flux (units of 3631 Jy) in z-band
+    name: median_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.median_lbs_y'
+    datatype: float
+    description: Median local-background-subtracted flux (units of 3631 Jy) in Y-band
+    name: median_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_lbs_g'
+    datatype: float
+    description: 25th percentile local-background-subtracted flux (units of 3631 Jy)
+      in g-band
+    name: q25_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_lbs_r'
+    datatype: float
+    description: 25th percentile local-background-subtracted flux (units of 3631 Jy)
+      in r-band
+    name: q25_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_lbs_i'
+    datatype: float
+    description: 25th percentile local-background-subtracted flux (units of 3631 Jy)
+      in i-band
+    name: q25_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_lbs_z'
+    datatype: float
+    description: 25th percentile local-background-subtracted flux (units of 3631 Jy)
+      in z-band
+    name: q25_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q25_lbs_y'
+    datatype: float
+    description: 25th percentile local-background-subtracted flux (units of 3631 Jy)
+      in Y-band
+    name: q25_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_lbs_g'
+    datatype: float
+    description: 75th percentile local-background-subtracted flux (units of 3631 Jy)
+      in g-band
+    name: q75_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_lbs_r'
+    datatype: float
+    description: 75th percentile local-background-subtracted flux (units of 3631 Jy)
+      in r-band
+    name: q75_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_lbs_i'
+    datatype: float
+    description: 75th percentile local-background-subtracted flux (units of 3631 Jy)
+      in i-band
+    name: q75_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_lbs_z'
+    datatype: float
+    description: 75th percentile local-background-subtracted flux (units of 3631 Jy)
+      in z-band
+    name: q75_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.q75_lbs_y'
+    datatype: float
+    description: 75th percentile local-background-subtracted flux (units of 3631 Jy)
+      in Y-band
+    name: q75_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.maglimit_g'
+    datatype: float
+    description: 5-sigma magnitude limit of deepest image (ok only) in g-band
+    name: maglimit_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.maglimit_r'
+    datatype: float
+    description: 5-sigma magnitude limit of deepest image (ok only) in r-band
+    name: maglimit_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.maglimit_i'
+    datatype: float
+    description: 5-sigma magnitude limit of deepest image (ok only) in i-band
+    name: maglimit_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.maglimit_z'
+    datatype: float
+    description: 5-sigma magnitude limit of deepest image (ok only) in z-band
+    name: maglimit_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.maglimit_y'
+    datatype: float
+    description: 5-sigma magnitude limit of deepest image (ok only) in Y-band
+    name: maglimit_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.fracflux_g'
+    datatype: float
+    description: Average fractional flux in g-band (ok only)
+    name: fracflux_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.fracflux_r'
+    datatype: float
+    description: Average fractional flux in r-band (ok only)
+    name: fracflux_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.fracflux_i'
+    datatype: float
+    description: Average fractional flux in i-band (ok only)
+    name: fracflux_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.fracflux_z'
+    datatype: float
+    description: Average fractional flux in z-band (ok only)
+    name: fracflux_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.fracflux_y'
+    datatype: float
+    description: Average fractional flux in Y-band (ok only)
+    name: fracflux_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ndet'
+    datatype: short
+    description: Number of detections
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ndet_ok'
+    datatype: short
+    description: Number of ok detections
+    name: ndet_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_g'
+    datatype: short
+    description: Number of detections in g-band
+    name: nmag_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_r'
+    datatype: short
+    description: Number of detections in r-band
+    name: nmag_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_i'
+    datatype: short
+    description: Number of detections in i-band
+    name: nmag_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_z'
+    datatype: short
+    description: Number of detections in z-band
+    name: nmag_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_y'
+    datatype: short
+    description: Number of detections in Y-band
+    name: nmag_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_ok_g'
+    datatype: short
+    description: Number of ok detections in g-band
+    name: nmag_ok_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_ok_r'
+    datatype: short
+    description: Number of ok detections in r-band
+    name: nmag_ok_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_ok_i'
+    datatype: short
+    description: Number of ok detections in i-band
+    name: nmag_ok_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_ok_z'
+    datatype: short
+    description: Number of ok detections in z-band
+    name: nmag_ok_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_ok_y'
+    datatype: short
+    description: Number of ok detections in Y-band
+    name: nmag_ok_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ndet_lbs'
+    datatype: short
+    description: Number of local-background-subtracted flux detections
+    name: ndet_lbs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.ndet_lbs_ok'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections
+    name: ndet_lbs_ok
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_g'
+    datatype: short
+    description: Number of local-background-subtracted flux detections in g-band
+    name: nmag_lbs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_r'
+    datatype: short
+    description: Number of local-background-subtracted flux detections in r-band
+    name: nmag_lbs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_i'
+    datatype: short
+    description: Number of local-background-subtracted flux detections in i-band
+    name: nmag_lbs_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_z'
+    datatype: short
+    description: Number of local-background-subtracted flux detections in z-band
+    name: nmag_lbs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_y'
+    datatype: short
+    description: Number of local-background-subtracted flux detections in Y-band
+    name: nmag_lbs_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_ok_g'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections in g-band
+    name: nmag_lbs_ok_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_ok_r'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections in r-band
+    name: nmag_lbs_ok_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_ok_i'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections in i-band
+    name: nmag_lbs_ok_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_ok_z'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections in z-band
+    name: nmag_lbs_ok_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.object.nmag_lbs_ok_y'
+    datatype: short
+    description: Number of ok local-background-subtracted flux detections in Y-band
+    name: nmag_lbs_ok_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Band-merged catalog
+  indexes:
+  - '@id': '#object__id_idx'
+    columns:
+    - '#decaps_dr1.object._id'
+    name: object__id_idx
+  - '@id': '#object_obj_id_idx'
+    columns:
+    - '#decaps_dr1.object.obj_id'
+    name: object_obj_id_idx
+  - '@id': '#object_ra_idx'
+    columns:
+    - '#decaps_dr1.object.ra'
+    name: object_ra_idx
+  - '@id': '#object_dec_idx'
+    columns:
+    - '#decaps_dr1.object.dec'
+    name: object_dec_idx
+  - '@id': '#object_elon_idx'
+    columns:
+    - '#decaps_dr1.object.elon'
+    name: object_elon_idx
+  - '@id': '#object_elat_idx'
+    columns:
+    - '#decaps_dr1.object.elat'
+    name: object_elat_idx
+  - '@id': '#object_glon_idx'
+    columns:
+    - '#decaps_dr1.object.glon'
+    name: object_glon_idx
+  - '@id': '#object_glat_idx'
+    columns:
+    - '#decaps_dr1.object.glat'
+    name: object_glat_idx
+  - '@id': '#object_htm9_idx'
+    columns:
+    - '#decaps_dr1.object.htm9'
+    name: object_htm9_idx
+  - '@id': '#object_ring256_idx'
+    columns:
+    - '#decaps_dr1.object.ring256'
+    name: object_ring256_idx
+  - '@id': '#object_nest4096_idx'
+    columns:
+    - '#decaps_dr1.object.nest4096'
+    name: object_nest4096_idx
+  - '@id': '#object_random_id_idx'
+    columns:
+    - '#decaps_dr1.object.random_id'
+    name: object_random_id_idx
+  - '@id': '#object_mean_mag_g_r_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_g_r'
+    name: object_mean_mag_g_r_idx
+  - '@id': '#object_mean_mag_r_i_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_r_i'
+    name: object_mean_mag_r_i_idx
+  - '@id': '#object_mean_mag_i_z_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_i_z'
+    name: object_mean_mag_i_z_idx
+  - '@id': '#object_mean_mag_z_y_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_z_y'
+    name: object_mean_mag_z_y_idx
+  - '@id': '#object_median_mag_g_r_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_g_r'
+    name: object_median_mag_g_r_idx
+  - '@id': '#object_median_mag_r_i_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_r_i'
+    name: object_median_mag_r_i_idx
+  - '@id': '#object_median_mag_i_z_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_i_z'
+    name: object_median_mag_i_z_idx
+  - '@id': '#object_median_mag_z_y_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_z_y'
+    name: object_median_mag_z_y_idx
+  - '@id': '#object_mean_g_idx'
+    columns:
+    - '#decaps_dr1.object.mean_g'
+    name: object_mean_g_idx
+  - '@id': '#object_mean_r_idx'
+    columns:
+    - '#decaps_dr1.object.mean_r'
+    name: object_mean_r_idx
+  - '@id': '#object_mean_i_idx'
+    columns:
+    - '#decaps_dr1.object.mean_i'
+    name: object_mean_i_idx
+  - '@id': '#object_mean_z_idx'
+    columns:
+    - '#decaps_dr1.object.mean_z'
+    name: object_mean_z_idx
+  - '@id': '#object_mean_y_idx'
+    columns:
+    - '#decaps_dr1.object.mean_y'
+    name: object_mean_y_idx
+  - '@id': '#object_mean_mag_g_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_g'
+    name: object_mean_mag_g_idx
+  - '@id': '#object_mean_mag_r_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_r'
+    name: object_mean_mag_r_idx
+  - '@id': '#object_mean_mag_i_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_i'
+    name: object_mean_mag_i_idx
+  - '@id': '#object_mean_mag_z_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_z'
+    name: object_mean_mag_z_idx
+  - '@id': '#object_mean_mag_y_idx'
+    columns:
+    - '#decaps_dr1.object.mean_mag_y'
+    name: object_mean_mag_y_idx
+  - '@id': '#object_median_g_idx'
+    columns:
+    - '#decaps_dr1.object.median_g'
+    name: object_median_g_idx
+  - '@id': '#object_median_r_idx'
+    columns:
+    - '#decaps_dr1.object.median_r'
+    name: object_median_r_idx
+  - '@id': '#object_median_i_idx'
+    columns:
+    - '#decaps_dr1.object.median_i'
+    name: object_median_i_idx
+  - '@id': '#object_median_z_idx'
+    columns:
+    - '#decaps_dr1.object.median_z'
+    name: object_median_z_idx
+  - '@id': '#object_median_y_idx'
+    columns:
+    - '#decaps_dr1.object.median_y'
+    name: object_median_y_idx
+  - '@id': '#object_median_mag_g_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_g'
+    name: object_median_mag_g_idx
+  - '@id': '#object_median_mag_r_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_r'
+    name: object_median_mag_r_idx
+  - '@id': '#object_median_mag_i_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_i'
+    name: object_median_mag_i_idx
+  - '@id': '#object_median_mag_z_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_z'
+    name: object_median_mag_z_idx
+  - '@id': '#object_median_mag_y_idx'
+    columns:
+    - '#decaps_dr1.object.median_mag_y'
+    name: object_median_mag_y_idx
+  - '@id': '#object_ndet_idx'
+    columns:
+    - '#decaps_dr1.object.ndet'
+    name: object_ndet_idx
+  - '@id': '#object_ndet_ok_idx'
+    columns:
+    - '#decaps_dr1.object.ndet_ok'
+    name: object_ndet_ok_idx
+  - '@id': '#object_nmag_ok_g_idx'
+    columns:
+    - '#decaps_dr1.object.nmag_ok_g'
+    name: object_nmag_ok_g_idx
+  - '@id': '#object_nmag_ok_r_idx'
+    columns:
+    - '#decaps_dr1.object.nmag_ok_r'
+    name: object_nmag_ok_r_idx
+  - '@id': '#object_nmag_ok_i_idx'
+    columns:
+    - '#decaps_dr1.object.nmag_ok_i'
+    name: object_nmag_ok_i_idx
+  - '@id': '#object_nmag_ok_z_idx'
+    columns:
+    - '#decaps_dr1.object.nmag_ok_z'
+    name: object_nmag_ok_z_idx
+  - '@id': '#object_nmag_ok_y_idx'
+    columns:
+    - '#decaps_dr1.object.nmag_ok_y'
+    name: object_nmag_ok_y_idx
+  name: object
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#decaps_dr1.zps'
+  columns:
+  - '@id': '#decaps_dr1.zps.smf_fn'
+    datatype: double
+    description: Single-mode-fiber (SMF) frequency
+    name: smf_fn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.zps.mjd_obs'
+    datatype: double
+    description: Modified Julian Date of observation
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.zps.zp'
+    datatype: double
+    description: Zero point
+    name: zp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.zps.reason'
+    datatype: int
+    description: Flag that is zero for ideal photometric conditions used in the photometric
+      calibration (fit)
+    name: reason
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.zps.resid'
+    datatype: float
+    description: Residual
+    name: resid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr1.zps.scatter'
+    datatype: float
+    description: Zero point scatter
+    name: scatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Zero points, flat fields, & QA table
+  indexes: []
+  name: zps
+  primaryKey: ''
+  tap:table_index: 6
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

@@ -1,0 +1,5042 @@
+---
+'@id': '#ivoa_coadd'
+description: Subset of stacked calibrated images for specific surveys
+name: ivoa_coadd
+tables:
+- '@id': '#ivoa_coadd.coadd_all'
+  columns:
+  - '@id': '#ivoa_coadd.coadd_all.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.coadd_all.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from all surveys
+  indexes:
+  - '@id': '#coadd_all_obs_id_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.obs_id'
+    name: coadd_all_obs_id_idx
+  - '@id': '#coadd_all_obs_pub_did_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.obs_pub_did'
+    name: coadd_all_obs_pub_did_idx
+  - '@id': '#coadd_all_filter_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.filter'
+    name: coadd_all_filter_idx
+  - '@id': '#coadd_all_s_ra_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.s_ra'
+    name: coadd_all_s_ra_idx
+  - '@id': '#coadd_all_s_dec_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.s_dec'
+    name: coadd_all_s_dec_idx
+  - '@id': '#coadd_all_time_start_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.time_start'
+    name: coadd_all_time_start_idx
+  - '@id': '#coadd_all_mjd_obs_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.mjd_obs'
+    name: coadd_all_mjd_obs_idx
+  - '@id': '#coadd_all_exptime_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.exptime'
+    name: coadd_all_exptime_idx
+  - '@id': '#coadd_all_fileref_idx'
+    columns:
+    - '#ivoa_coadd.coadd_all.fileref'
+    name: coadd_all_fileref_idx
+  name: coadd_all
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#ivoa_coadd.decaps_dr1'
+  columns:
+  - '@id': '#ivoa_coadd.decaps_dr1.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.decaps_dr1.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from DECaPS DR1
+  indexes: []
+  name: decaps_dr1
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#ivoa_coadd.des_dr1'
+  columns:
+  - '@id': '#ivoa_coadd.des_dr1.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_dr1.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from the Dark Energy Survey DR1
+  indexes: []
+  name: des_dr1
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#ivoa_coadd.des_sva'
+  columns:
+  - '@id': '#ivoa_coadd.des_sva.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.des_sva.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from the Dark Energy Survey SVA
+  indexes: []
+  name: des_sva
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#ivoa_coadd.nsa'
+  columns:
+  - '@id': '#ivoa_coadd.nsa.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.nsa.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from the Astro Data Archive
+  indexes: []
+  name: nsa
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#ivoa_coadd.ls_dr8'
+  columns:
+  - '@id': '#ivoa_coadd.ls_dr8.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr8.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from Legacy Surveys DR8
+  indexes: []
+  name: ls_dr8
+  primaryKey: ''
+  tap:table_index: 6
+- '@id': '#ivoa_coadd.ls_dr9'
+  columns:
+  - '@id': '#ivoa_coadd.ls_dr9.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.ls_dr9.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from Legacy Surveys DR9
+  indexes: []
+  name: ls_dr9
+  primaryKey: ''
+  tap:table_index: 7
+- '@id': '#ivoa_coadd.smash_dr1'
+  columns:
+  - '@id': '#ivoa_coadd.smash_dr1.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr1.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from SMASH DR1
+  indexes: []
+  name: smash_dr1
+  primaryKey: ''
+  tap:table_index: 8
+- '@id': '#ivoa_coadd.smash_dr2'
+  columns:
+  - '@id': '#ivoa_coadd.smash_dr2.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.project_code'
+    datatype: char
+    description: NOIRLab Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_coadd.smash_dr2.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Stacked calibrated images from SMASH DR2
+  indexes: []
+  name: smash_dr2
+  primaryKey: ''
+  tap:table_index: 9
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

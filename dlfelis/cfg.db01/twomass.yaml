@@ -1,0 +1,3640 @@
+---
+'@id': '#twomass'
+description: 2MASS All-Sky Catalogs (2003)
+name: twomass
+tables:
+- '@id': '#twomass.psc'
+  columns:
+  - '@id': '#twomass.psc.ra'
+    datatype: double
+    description: J2000 right ascension with respect to the ICRS
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dec'
+    datatype: double
+    description: J2000 declination with respect to the ICRS
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.nest256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: nest256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.jdate'
+    datatype: double
+    description: The Julian Date of the source measurement accurate to +-30 seconds.
+    name: jdate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.date'
+    datatype: char
+    description: The observation reference date for this source expressed in ISO standard
+      format.
+    length: 10
+    name: date
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.err_maj'
+    datatype: float
+    description: Semi-major axis length of the one sigma position uncertainty ellipse
+    name: err_maj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.err_min'
+    datatype: float
+    description: Semi-minor axis length of the one sigma position uncertainty ellipse
+    name: err_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_m'
+    datatype: float
+    description: Default J-band magnitude, or if the source is not detected in the
+      J-band, the 95% confidence upper limit derived from a 4-inch radius aperture
+      measurement taken at the position of the source on the Atlas Image.
+    name: j_m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_cmsig'
+    datatype: float
+    description: Corrected photometric uncertainty for the default J-band magnitude.
+    name: j_cmsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_msigcom'
+    datatype: float
+    description: Combined, or total photometric uncertainty for the default J-band
+      magnitude.
+    name: j_msigcom
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_snr'
+    datatype: float
+    description: J-band scan signal-to-noise ratio.
+    name: j_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_m'
+    datatype: float
+    description: Default H-band magnitude, or if the source is not detected in the
+      H-band, the 95% confidence upper limit derived from a 4-inch radius aperture
+      measurement taken at the position of the source on the Atlas Image.
+    name: h_m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_cmsig'
+    datatype: float
+    description: Corrected photometric uncertainty for the default H-band magnitude.
+    name: h_cmsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_msigcom'
+    datatype: float
+    description: Combined, or total photometric uncertainty for the default H-band
+      magnitude.
+    name: h_msigcom
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_snr'
+    datatype: float
+    description: H-band scan signal-to-noise ratio.
+    name: h_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_m'
+    datatype: float
+    description: Default Ks-band magnitude, or if the source is not detected in the
+      Ks-band, the 95% confidence upper limit derived from a 4-inch radius aperture
+      measurement taken at the position of the source on the Atlas Image.
+    name: k_m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_cmsig'
+    datatype: float
+    description: Corrected photometric uncertainty for the default Ks-band magnitude.
+    name: k_cmsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_msigcom'
+    datatype: float
+    description: Combined, or total photometric uncertainty for the default Ks-band
+      magnitude.
+    name: k_msigcom
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_snr'
+    datatype: float
+    description: Ks-band scan signal-to-noise ratio.
+    name: k_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.prox'
+    datatype: float
+    description: Proximity. The distance between this source and its nearest neighbor
+      in the PSC.
+    fits:tunit: arcsec
+    name: prox
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.glon'
+    datatype: float
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.glat'
+    datatype: float
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.x_scan'
+    datatype: float
+    description: Mean cross-scan focal plane position of the source in the Universal
+      scan (U-scan) coordinate system. This is the approximate distance a source lies
+      west or east of the focal plane centerline. Positive values of x_scan indicate
+      that the source falls west of the centerline and negative values indicate the
+      source is east of the centerline.
+    name: x_scan
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_psfchi'
+    datatype: float
+    description: Reduced chi-squared goodness-of-fit value for the J-band profile-fit
+      photometry made on the 1.3 s Read_2 exposures.
+    name: j_psfchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_psfchi'
+    datatype: float
+    description: Reduced chi-squared goodness-of-fit value for the H-band profile-fit
+      photometry made on the 1.3 s Read_2 exposures.
+    name: h_psfchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_psfchi'
+    datatype: float
+    description: Reduced chi-squared goodness-of-fit value for the Ks-band profile-fit
+      photometry made on the 1.3 s Read_2 exposures.
+    name: k_psfchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_m_stdap'
+    datatype: float
+    description: J-band standard aperture magnitude. This is the curve-of-growth corrected
+      average brightness measured in a 4-inch radius aperture centered on the source
+      position on each of the available 1.3 s Read_2 frames.
+    name: j_m_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.j_msig_stdap'
+    datatype: float
+    description: Uncertainty in the J-band standard aperture magnitude.
+    name: j_msig_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_m_stdap'
+    datatype: float
+    description: H-band standard aperture magnitude. This is the curve-of-growth corrected
+      average brightness measured in a 4-inch radius aperture centered on the source
+      position on each of the available 1.3 s Read_2 frames.
+    name: h_m_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.h_msig_stdap'
+    datatype: float
+    description: Uncertainty in the H-band standard aperture magnitude.
+    name: h_msig_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_m_stdap'
+    datatype: float
+    description: Ks-band standard aperture magnitude. This is the curve-of-growth
+      corrected average brightness measured in a 4-inch radius aperture centered on
+      the source position on each of the available 1.3 s Read_2 frames.
+    name: k_m_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.k_msig_stdap'
+    datatype: float
+    description: Uncertainty in the Ks-band standard aperture magnitude.
+    name: k_msig_stdap
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dist_opt'
+    datatype: float
+    description: Distance separating 2MASS source position and associated optical
+      source within approximately 5 arcsec
+    fits:tunit: arcsec
+    name: dist_opt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.b_m_opt'
+    datatype: float
+    description: Blue magnitude of associated optical source.
+    fits:tunit: mag
+    name: b_m_opt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.vr_m_opt'
+    datatype: float
+    description: Visual or red magnitude of the associated optical source.
+    fits:tunit: mag
+    name: vr_m_opt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.pxcntr'
+    datatype: int
+    description: The pts_key value of the nearest source in the PSC.
+    name: pxcntr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.pts_key'
+    datatype: int
+    description: A unique identification number for the PSC source.
+    name: pts_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dist_edge_ns'
+    datatype: int
+    description: The distance from the source to the nearest North or South scan edge.
+    fits:tunit: arcsec
+    name: dist_edge_ns
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dist_edge_ew'
+    datatype: int
+    description: The distance from the source to the nearest East or West scan edge.
+    fits:tunit: arcsec
+    name: dist_edge_ew
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.ext_key'
+    datatype: int
+    description: Unique identification number of the record in the XSC that corresponds
+      to this point source.
+    name: ext_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.scan_key'
+    datatype: int
+    description: Unique identification number of the record in the Scan Information
+      Table that corresponds to the survey scan in which this source was detected.
+    name: scan_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.coadd_key'
+    datatype: int
+    description: Unique identification number of the record in the Atlas Image Information
+      Table that corresponds to Image in which the position of this source falls.
+    name: coadd_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.err_ang'
+    datatype: short
+    description: Position angle on the sky of the semi-major axis of the position
+      uncertainty ellipse (East of North)
+    fits:tunit: deg
+    name: err_ang
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.pxpa'
+    datatype: short
+    description: The position angle on the sky of the vector from the source to the
+      nearest neighbor in the PSC, in degrees East of North. This column in null if
+      prox=0.0, which occurs only for confused sources or from errors in the bandmerge
+      process caused by confusion.
+    fits:tunit: deg
+    name: pxpa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.scan'
+    datatype: short
+    description: The nightly scan number in which the source was detected.
+    name: scan
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dup_src'
+    datatype: short
+    description: Duplicate source flag. Used in conjunction with the use_src flag,
+      this numerical flag indicates whether the source falls in a Tile overlap region,
+      and if so, if it was detected multiple times.
+    name: dup_src
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.use_src'
+    datatype: short
+    description: Use source flag. Used in conjunction with the dup_src flag, this
+      numerical flag indicates if a source falls within a Tile overlap region, and
+      whether or not it satisfies the unbiased selection rules for multiple source
+      resolution.
+    name: use_src
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.phi_opt'
+    datatype: short
+    description: Position angle on the sky of the vector from the the associated optical
+      source to the 2MASS source position, in degrees East of North.
+    fits:tunit: deg
+    name: phi_opt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.nopt_mchs'
+    datatype: short
+    description: The number of USNO-A2.0 or Tycho 2 optical sources found within a
+      radius of approximately 5 arcsec of the 2MASS position.
+    name: nopt_mchs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.coadd'
+    datatype: short
+    description: Sequence number of the Atlas Image in which the position of this
+      source falls. The Image sequence number is number of the frame that is nearest
+      the center of the Image.
+    name: coadd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.mp_flg'
+    datatype: short
+    description: Minor Planet Flag. Indicates if this source is associated with the
+      predicted position of a known minor planet, comet, planet or planetary satellite.
+      This association does not guarantee that the PSC source is a detection of the
+      solar system object.
+    name: mp_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.gal_contam'
+    datatype: short
+    description: Extended source contamination flag.
+    name: gal_contam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.designation'
+    datatype: char
+    description: 'Sexagesimal, equatorial position-based source name in the form:
+      hhmmssss+ddmmsss[ABC...].'
+    length: 17
+    name: designation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.ndet'
+    datatype: char
+    description: Frame detection statistics.
+    length: 6
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.ph_qual'
+    datatype: char
+    description: Photometric quality flag.
+    length: 3
+    name: ph_qual
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.rd_flg'
+    datatype: char
+    description: Read flag. Three character flag, one character per band [JHKs], that
+      indicates the origin of the default magnitudes and uncertainties in each band
+      (j_m, h_m, k_m, j_cmsig, h_cmsig, k_cmsig). Rd_flg values of 1,2, or 3 generally
+      indicate the best quality detections, photometry and astrometry (although other
+      quality flags must be considered). Values of 0,4,6,9 in a band indicate either
+      non-detections, or generally poor quality photometry and positions.
+    length: 3
+    name: rd_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.bl_flg'
+    datatype: char
+    description: Blend flag. Three character flag, one character per band [JHKs],
+      that indicates the number of components that were fit simultaneously when estimating
+      the brightness of a source.
+    length: 3
+    name: bl_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.cc_flg'
+    datatype: char
+    description: Contamination and confusion flag. Three character flag, one character
+      per band [JHKs], that indicates that the photometry and/or position measurements
+      of a source may be contaminated or biased due to proximity to an image artifact
+      or nearby source of equal or greater brightness.
+    length: 3
+    name: cc_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.dist_edge_flg'
+    datatype: char
+    description: Two character flag that specifies to which scan edges a source lies
+      closest, and to which edges the dist_edge_ns and dist_edge_ew values refer.
+    length: 2
+    name: dist_edge_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.a'
+    datatype: char
+    description: Catalog identifier of an optical source from either the Tycho 2 or
+      USNO-A2.0 catalog that falls within approximately 5 arcsec of the 2MASS source
+      position.
+    length: 1
+    name: a
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.psc.hemis'
+    datatype: char
+    description: Hemisphere code for the 2MASS Observatory from which this source
+      was observed. n=North/Mt. Hopkins. s=South/CTIO
+    length: 1
+    name: hemis
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Point Source Catalog (470,992,970 rows)
+  indexes:
+  - '@id': '#psc_ra_idx'
+    columns:
+    - '#twomass.psc.ra'
+    name: psc_ra_idx
+  - '@id': '#psc_dec_idx'
+    columns:
+    - '#twomass.psc.dec'
+    name: psc_dec_idx
+  - '@id': '#psc_htm9_idx'
+    columns:
+    - '#twomass.psc.htm9'
+    name: psc_htm9_idx
+  - '@id': '#psc_nest256_idx'
+    columns:
+    - '#twomass.psc.nest256'
+    name: psc_nest256_idx
+  - '@id': '#psc_ring256_idx'
+    columns:
+    - '#twomass.psc.ring256'
+    name: psc_ring256_idx
+  - '@id': '#psc_jdate_idx'
+    columns:
+    - '#twomass.psc.jdate'
+    name: psc_jdate_idx
+  - '@id': '#psc_j_m_idx'
+    columns:
+    - '#twomass.psc.j_m'
+    name: psc_j_m_idx
+  - '@id': '#psc_j_snr_idx'
+    columns:
+    - '#twomass.psc.j_snr'
+    name: psc_j_snr_idx
+  - '@id': '#psc_h_m_idx'
+    columns:
+    - '#twomass.psc.h_m'
+    name: psc_h_m_idx
+  - '@id': '#psc_h_snr_idx'
+    columns:
+    - '#twomass.psc.h_snr'
+    name: psc_h_snr_idx
+  - '@id': '#psc_k_m_idx'
+    columns:
+    - '#twomass.psc.k_m'
+    name: psc_k_m_idx
+  - '@id': '#psc_k_snr_idx'
+    columns:
+    - '#twomass.psc.k_snr'
+    name: psc_k_snr_idx
+  - '@id': '#psc_glon_idx'
+    columns:
+    - '#twomass.psc.glon'
+    name: psc_glon_idx
+  - '@id': '#psc_glat_idx'
+    columns:
+    - '#twomass.psc.glat'
+    name: psc_glat_idx
+  - '@id': '#psc_designation_idx'
+    columns:
+    - '#twomass.psc.designation'
+    name: psc_designation_idx
+  name: psc
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#twomass.xsc'
+  columns:
+  - '@id': '#twomass.xsc.jdate'
+    datatype: double
+    description: The Julian Date of the source measurement accurate to +-30 seconds.
+    name: jdate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.designation'
+    datatype: char
+    description: 'Sexagesimal, equatorial position-based source name in the form:
+      hhmmssss+ddmmsss[ABC...]. '
+    length: 17
+    name: designation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.ra'
+    datatype: double
+    description: J2000 right ascension with respect to the ICRS
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.dec'
+    datatype: double
+    description: J2000 declination with respect to the ICRS
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.nest256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: nest256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_ra'
+    datatype: double
+    description: Super-coadd centroid RA (J2000 decimal deg).
+    fits:tunit: deg
+    name: sup_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_dec'
+    datatype: double
+    description: Super-coadd centroid Dec (J2000 decimal deg).
+    fits:tunit: deg
+    name: sup_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.glon'
+    datatype: float
+    description: Galactic longitude (decimal deg) based on peak pixel.
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.glat'
+    datatype: float
+    description: Galactic latitude (decimal deg) based on peak pixel.
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.density'
+    datatype: float
+    description: Coadd log(density) of stars with k<14 mag.
+    name: density
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_k20fe'
+    datatype: float
+    description: 20mag/sq.-inch isophotal K fiducial ell. ap. semi-major axis.
+    fits:tunit: arcsec
+    name: r_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_k20fe'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: j_m_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_k20fe'
+    datatype: float
+    description: J 1-sigma uncertainty in 20mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: j_msig_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_k20fe'
+    datatype: short
+    description: J confusion flag for 20mag/sq.-inch iso. fid. ell. mag.
+    name: j_flg_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_k20fe'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: h_m_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_k20fe'
+    datatype: float
+    description: H 1-sigma uncertainty in 20mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: h_msig_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_k20fe'
+    datatype: short
+    description: H confusion flag for 20mag/sq.-inch iso. fid. ell. mag.
+    name: h_flg_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_k20fe'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: k_m_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_k20fe'
+    datatype: float
+    description: K 1-sigma uncertainty in 20mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: k_msig_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_k20fe'
+    datatype: short
+    description: K confusion flag for 20mag/sq.-inch iso. fid. ell. mag.
+    name: k_flg_k20fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_3sig'
+    datatype: float
+    description: 3-sigma K isophotal semi-major axis.
+    fits:tunit: arcsec
+    name: r_3sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_ba'
+    datatype: float
+    description: J minor/major axis ratio fit to the 3-sigma isophote.
+    name: j_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_phi'
+    datatype: short
+    description: J angle to 3-sigma major axis (E of N).
+    fits:tunit: deg
+    name: j_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_ba'
+    datatype: float
+    description: H minor/major axis ratio fit to the 3-sigma isophote.
+    name: h_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_phi'
+    datatype: short
+    description: H angle to 3-sigma major axis (E of N).
+    fits:tunit: deg
+    name: h_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_ba'
+    datatype: float
+    description: K minor/major axis ratio fit to the 3-sigma isophote.
+    name: k_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_phi'
+    datatype: short
+    description: K angle to 3-sigma major axis (E of N).
+    fits:tunit: deg
+    name: k_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_r_3sig'
+    datatype: float
+    description: Super-coadd 3-sigma isophotal semi-major axis radius.
+    fits:tunit: arcsec
+    name: sup_r_3sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_ba'
+    datatype: float
+    description: Minor/major axis ratio fit to 3-sig. super-coadd isophote.
+    name: sup_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_phi'
+    datatype: short
+    description: Super-coadd angle to major axis (E of N).
+    fits:tunit: deg
+    name: sup_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_fe'
+    datatype: float
+    description: K fiducial Kron elliptical aperture semi-major axis.
+    fits:tunit: arcsec
+    name: r_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_fe'
+    datatype: float
+    description: J fiducial Kron elliptical aperture magnitude.
+    fits:tunit: mag
+    name: j_m_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_fe'
+    datatype: float
+    description: J 1-sigma uncertainty in fiducial Kron ell. mag.
+    fits:tunit: mag
+    name: j_msig_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_fe'
+    datatype: short
+    description: J confusion flag for fiducial Kron ell. mag.
+    name: j_flg_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_fe'
+    datatype: float
+    description: H fiducial Kron elliptical aperture magnitude.
+    fits:tunit: mag
+    name: h_m_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_fe'
+    datatype: float
+    description: H 1-sigma uncertainty in fiducial Kron ell. mag.
+    fits:tunit: mag
+    name: h_msig_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_fe'
+    datatype: short
+    description: H confusion flag for fiducial Kron ell. mag.
+    name: h_flg_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_fe'
+    datatype: float
+    description: K fiducial Kron ell. mag aperture magnitude.
+    fits:tunit: mag
+    name: k_m_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_fe'
+    datatype: float
+    description: K 1-sigma uncertainty in fiducial Kron ell. mag.
+    fits:tunit: mag
+    name: k_msig_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_fe'
+    datatype: short
+    description: K confusion flag for fiducial Kron ell. mag.
+    name: k_flg_fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_ext'
+    datatype: float
+    description: extrapolation/total radius.
+    fits:tunit: arcsec
+    name: r_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_ext'
+    datatype: float
+    description: J mag from fit extrapolation.
+    fits:tunit: mag
+    name: j_m_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_ext'
+    datatype: float
+    description: J 1-sigma uncertainty in mag from fit extrapolation.
+    fits:tunit: mag
+    name: j_msig_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_pchi'
+    datatype: float
+    description: 'J chi^2 of fit to rad. profile (LCSB: alpha scale len).'
+    name: j_pchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_ext'
+    datatype: float
+    description: H mag from fit extrapolation.
+    fits:tunit: mag
+    name: h_m_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_ext'
+    datatype: float
+    description: H 1-sigma uncertainty in mag from fit extrapolation.
+    fits:tunit: mag
+    name: h_msig_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_pchi'
+    datatype: float
+    description: 'H chi^2 of fit to rad. profile (LCSB: alpha scale len).'
+    name: h_pchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_ext'
+    datatype: float
+    description: K mag from fit extrapolation.
+    fits:tunit: mag
+    name: k_m_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_ext'
+    datatype: float
+    description: K 1-sigma uncertainty in mag from fit extrapolation.
+    fits:tunit: mag
+    name: k_msig_ext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_pchi'
+    datatype: float
+    description: 'K chi^2 of fit to rad. profile (LCSB: alpha scale len).'
+    name: k_pchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_eff'
+    datatype: float
+    description: J half-light (integrated half-flux point) radius.
+    fits:tunit: arcsec
+    name: j_r_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_mnsurfb_eff'
+    datatype: float
+    description: J mean surface brightness at the half-light radius.
+    fits:tunit: mag
+    name: j_mnsurfb_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_eff'
+    datatype: float
+    description: H half-light (integrated half-flux point) radius.
+    fits:tunit: arcsec
+    name: h_r_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_mnsurfb_eff'
+    datatype: float
+    description: H mean surface brightness at the half-light radius.
+    fits:tunit: mag
+    name: h_mnsurfb_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_eff'
+    datatype: float
+    description: K half-light (integrated half-flux point) radius.
+    fits:tunit: arcsec
+    name: k_r_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_mnsurfb_eff'
+    datatype: float
+    description: K mean surface brightness at the half-light radius.
+    fits:tunit: mag
+    name: k_mnsurfb_eff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_con_indx'
+    datatype: float
+    description: J concentration index r_75%/r_25%.
+    name: j_con_indx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_con_indx'
+    datatype: float
+    description: H concentration index r_75%/r_25%.
+    name: h_con_indx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_con_indx'
+    datatype: float
+    description: K concentration index r_75%/r_25%.
+    name: k_con_indx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_peak'
+    datatype: float
+    description: J peak pixel brightness.
+    fits:tunit: mag
+    name: j_peak
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_peak'
+    datatype: float
+    description: H peak pixel brightness.
+    fits:tunit: mag
+    name: h_peak
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_peak'
+    datatype: float
+    description: K peak pixel brightness.
+    fits:tunit: mag
+    name: k_peak
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_5surf'
+    datatype: float
+    description: J central surface brightness (r<=5).
+    fits:tunit: mag
+    name: j_5surf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_5surf'
+    datatype: float
+    description: H central surface brightness (r<=5).
+    fits:tunit: mag
+    name: h_5surf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_5surf'
+    datatype: float
+    description: K central surface brightness (r<=5).
+    fits:tunit: mag
+    name: k_5surf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.e_score'
+    datatype: float
+    description: 'extended score: 1(extended) < e_score < 2(point-like).'
+    name: e_score
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.g_score'
+    datatype: float
+    description: 'galaxy score: 1(extended) < g_score < 2(point-like).'
+    name: g_score
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.vc'
+    datatype: short
+    description: 'visual verification score for source. The visual classification
+      score gives the source type for those sources examined by eye: -2=unknown, -1=no
+      verification (i.e., not examined), 1=galaxy, 2=non-extended (i.e., star,double,triple,artifact'
+    name: vc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.cc_flg'
+    datatype: char
+    description: Indicates artifact contamination and/or confusion.
+    length: 1
+    name: cc_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.im_nx'
+    datatype: short
+    description: Size of postage stamp image in pixels.
+    name: im_nx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_k20fc'
+    datatype: float
+    description: 20mag/sq.-inch isophotal K fiducial circular ap. radius.
+    fits:tunit: arcsec
+    name: r_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_k20fc'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: j_m_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_k20fc'
+    datatype: float
+    description: J 1-sigma uncertainty in 20mag/sq.-inch iso.fid.circ. mag.
+    fits:tunit: mag
+    name: j_msig_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_k20fc'
+    datatype: short
+    description: J confusion flag for 20mag/sq.-inch iso. fid. circ. mag.
+    name: j_flg_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_k20fc'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: h_m_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_k20fc'
+    datatype: float
+    description: H 1-sigma uncertainty in 20mag/sq.-inch iso.fid.circ. mag.
+    fits:tunit: mag
+    name: h_msig_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_k20fc'
+    datatype: short
+    description: H confusion flag for 20mag/sq.-inch iso. fid. circ. mag.
+    name: h_flg_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_k20fc'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: k_m_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_k20fc'
+    datatype: float
+    description: K 1-sigma uncertainty in 20mag/sq.-inch iso.fid.circ. mag.
+    fits:tunit: mag
+    name: k_msig_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_k20fc'
+    datatype: short
+    description: K confusion flag for 20mag/sq.-inch iso. fid. circ. mag.
+    name: k_flg_k20fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_e'
+    datatype: float
+    description: J Kron elliptical aperture semi-major axis.
+    fits:tunit: arcsec
+    name: j_r_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_e'
+    datatype: float
+    description: J Kron elliptical aperture magnitude.
+    fits:tunit: mag
+    name: j_m_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_e'
+    datatype: float
+    description: J 1-sigma uncertainty in Kron elliptical mag.
+    fits:tunit: mag
+    name: j_msig_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_e'
+    datatype: short
+    description: J confusion flag for Kron elliptical mag.
+    name: j_flg_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_e'
+    datatype: float
+    description: H Kron elliptical aperture semi-major axis.
+    fits:tunit: arcsec
+    name: h_r_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_e'
+    datatype: float
+    description: H Kron elliptical aperture magnitude.
+    fits:tunit: mag
+    name: h_m_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_e'
+    datatype: float
+    description: H 1-sigma uncertainty in Kron elliptical mag.
+    fits:tunit: mag
+    name: h_msig_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_e'
+    datatype: short
+    description: H confusion flag for Kron elliptical mag.
+    name: h_flg_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_e'
+    datatype: float
+    description: K Kron elliptical aperture semi-major axis.
+    fits:tunit: arcsec
+    name: k_r_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_e'
+    datatype: float
+    description: K Kron elliptical aperture magnitude.
+    fits:tunit: mag
+    name: k_m_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_e'
+    datatype: float
+    description: K 1-sigma uncertainty in Kron elliptical mag.
+    fits:tunit: mag
+    name: k_msig_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_e'
+    datatype: short
+    description: K confusion flag for Kron elliptical mag.
+    name: k_flg_e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_c'
+    datatype: float
+    description: J Kron circular aperture radius.
+    fits:tunit: arcsec
+    name: j_r_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_c'
+    datatype: float
+    description: J Kron circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_c'
+    datatype: float
+    description: J 1-sigma uncertainty in Kron circular mag.
+    fits:tunit: mag
+    name: j_msig_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_c'
+    datatype: short
+    description: J confusion flag for Kron circular mag.
+    name: j_flg_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_c'
+    datatype: float
+    description: H Kron circular aperture radius.
+    fits:tunit: arcsec
+    name: h_r_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_c'
+    datatype: float
+    description: H Kron circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_c'
+    datatype: float
+    description: H 1-sigma uncertainty in Kron circular mag.
+    fits:tunit: mag
+    name: h_msig_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_c'
+    datatype: short
+    description: H confusion flag for Kron circular mag.
+    name: h_flg_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_c'
+    datatype: float
+    description: K Kron circular aperture radius.
+    fits:tunit: arcsec
+    name: k_r_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_c'
+    datatype: float
+    description: K Kron circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_c'
+    datatype: float
+    description: K 1-sigma uncertainty in Kron circular mag.
+    fits:tunit: mag
+    name: k_msig_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_c'
+    datatype: short
+    description: K confusion flag for Kron circular mag.
+    name: k_flg_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_fc'
+    datatype: float
+    description: H Kron circular aperture radius.
+    fits:tunit: arcsec
+    name: r_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_fc'
+    datatype: float
+    description: J fiducial Kron circular magnitude.
+    fits:tunit: mag
+    name: j_m_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_fc'
+    datatype: float
+    description: J 1-sigma uncertainty in fiducial Kron circ. mag.
+    fits:tunit: mag
+    name: j_msig_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_fc'
+    datatype: short
+    description: J confusion flag for fiducial Kron circ. mag.
+    name: j_flg_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_fc'
+    datatype: float
+    description: H fiducial Kron circular magnitude.
+    fits:tunit: mag
+    name: h_m_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_fc'
+    datatype: float
+    description: H 1-sigma uncertainty in fiducial Kron circ. mag.
+    fits:tunit: mag
+    name: h_msig_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_fc'
+    datatype: short
+    description: H confusion flag for fiducial Kron circ. mag.
+    name: h_flg_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_fc'
+    datatype: float
+    description: K fiducial Kron circular magnitude.
+    fits:tunit: mag
+    name: k_m_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_fc'
+    datatype: float
+    description: K 1-sigma uncertainty in fiducial Kron circ. mag.
+    fits:tunit: mag
+    name: k_msig_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_fc'
+    datatype: short
+    description: K confusion flag for fiducial Kron circ. mag.
+    name: k_flg_fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_i20e'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: j_r_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_i20e'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: j_m_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_i20e'
+    datatype: float
+    description: J 1-sigma uncertainty in 20mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: j_msig_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_i20e'
+    datatype: short
+    description: J confusion flag for 20mag/sq.-inch iso. ell. mag.
+    name: j_flg_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_i20e'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: h_r_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_i20e'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: h_m_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_i20e'
+    datatype: float
+    description: H 1-sigma uncertainty in 20mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: h_msig_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_i20e'
+    datatype: short
+    description: H confusion flag for 20mag/sq.-inch iso. ell. mag.
+    name: h_flg_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_i20e'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: k_r_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_i20e'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: k_m_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_i20e'
+    datatype: float
+    description: K 1-sigma uncertainty in 20mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: k_msig_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_i20e'
+    datatype: short
+    description: K confusion flag for 20mag/sq.-inch iso. ell. mag.
+    name: k_flg_i20e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_i20c'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: j_r_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_i20c'
+    datatype: float
+    description: J 20mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: j_m_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_i20c'
+    datatype: float
+    description: J 1-sigma uncertainty in 20mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: j_msig_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_i20c'
+    datatype: short
+    description: J confusion flag for 20mag/sq.-inch iso. circ. mag.
+    name: j_flg_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_i20c'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: h_r_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_i20c'
+    datatype: float
+    description: H 20mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: h_m_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_i20c'
+    datatype: float
+    description: H 1-sigma uncertainty in 20mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: h_msig_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_i20c'
+    datatype: short
+    description: H confusion flag for 20mag/sq.-inch iso. circ. mag.
+    name: h_flg_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_i20c'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: k_r_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_i20c'
+    datatype: float
+    description: K 20mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: k_m_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_i20c'
+    datatype: float
+    description: K 1-sigma uncertainty in 20mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: k_msig_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_i20c'
+    datatype: short
+    description: K confusion flag for 20mag/sq.-inch iso. circ. mag.
+    name: k_flg_i20c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_i21e'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: j_r_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_i21e'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: j_m_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_i21e'
+    datatype: float
+    description: J 1-sigma uncertainty in 21mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: j_msig_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_i21e'
+    datatype: short
+    description: J confusion flag for 21mag/sq.-inch iso. ell. mag.
+    name: j_flg_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_i21e'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: h_r_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_i21e'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: h_m_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_i21e'
+    datatype: float
+    description: H 1-sigma uncertainty in 21mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: h_msig_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_i21e'
+    datatype: short
+    description: H confusion flag for 21mag/sq.-inch iso. ell. mag.
+    name: h_flg_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_i21e'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal elliptical ap. semi-major axis.
+    fits:tunit: arcsec
+    name: k_r_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_i21e'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal elliptical ap. magnitude.
+    fits:tunit: mag
+    name: k_m_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_i21e'
+    datatype: float
+    description: K 1-sigma uncertainty in 21mag/sq.-inch iso. ell. mag.
+    fits:tunit: mag
+    name: k_msig_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_i21e'
+    datatype: short
+    description: K confusion flag for 21mag/sq.-inch iso. ell. mag.
+    name: k_flg_i21e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_j21fe'
+    datatype: float
+    description: 21mag/sq.-inch isophotal J fiducial ell. ap. semi-major axis.
+    fits:tunit: arcsec
+    name: r_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_j21fe'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: j_m_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_j21fe'
+    datatype: float
+    description: J 1-sigma uncertainty in 21mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: j_msig_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_j21fe'
+    datatype: short
+    description: J confusion flag for 21mag/sq.-inch iso. fid. ell. mag.
+    name: j_flg_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_j21fe'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: h_m_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_j21fe'
+    datatype: float
+    description: H 1-sigma uncertainty in 21mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: h_msig_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_j21fe'
+    datatype: short
+    description: H confusion flag for 21mag/sq.-inch iso. fid. ell. mag.
+    name: h_flg_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_j21fe'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal fiducial ell. ap. magnitude.
+    fits:tunit: mag
+    name: k_m_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_j21fe'
+    datatype: float
+    description: K 1-sigma uncertainty in 21mag/sq.-inch iso.fid.ell.mag.
+    fits:tunit: mag
+    name: k_msig_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_j21fe'
+    datatype: short
+    description: K confusion flag for 21mag/sq.-inch iso. fid. ell. mag.
+    name: k_flg_j21fe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_r_i21c'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: j_r_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_i21c'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: j_m_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_i21c'
+    datatype: float
+    description: J 1-sigma uncertainty in 21mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: j_msig_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_i21c'
+    datatype: short
+    description: J confusion flag for 21mag/sq.-inch iso. circ. mag.
+    name: j_flg_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_r_i21c'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: h_r_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_i21c'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: h_m_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_i21c'
+    datatype: float
+    description: H 1-sigma uncertainty in 21mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: h_msig_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_i21c'
+    datatype: short
+    description: H confusion flag for 21mag/sq.-inch iso. circ. mag.
+    name: h_flg_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_r_i21c'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal circular aperture radius.
+    fits:tunit: arcsec
+    name: k_r_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_i21c'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal circular ap. magnitude.
+    fits:tunit: mag
+    name: k_m_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_i21c'
+    datatype: float
+    description: K 1-sigma uncertainty in 21mag/sq.-inch iso. circ. mag.
+    fits:tunit: mag
+    name: k_msig_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_i21c'
+    datatype: short
+    description: K confusion flag for 21mag/sq.-inch iso. circ. mag.
+    name: k_flg_i21c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.r_j21fc'
+    datatype: float
+    description: 21mag/sq.-inch isophotal J fiducial circular ap. radius.
+    fits:tunit: arcsec
+    name: r_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_j21fc'
+    datatype: float
+    description: J 21mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: j_m_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_j21fc'
+    datatype: float
+    description: J 1-sigma uncertainty in 21mag/sq.-inch iso.fid.circ.mag.
+    fits:tunit: mag
+    name: j_msig_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_j21fc'
+    datatype: short
+    description: J confusion flag for 21mag/sq.-inch iso. fid. circ. mag.
+    name: j_flg_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_j21fc'
+    datatype: float
+    description: H 21mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: h_m_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_j21fc'
+    datatype: float
+    description: H 1-sigma uncertainty in 21mag/sq.-inch iso.fid.circ.mag.
+    fits:tunit: mag
+    name: h_msig_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_j21fc'
+    datatype: short
+    description: H confusion flag for 21mag/sq.-inch iso. fid. circ. mag.
+    name: h_flg_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_j21fc'
+    datatype: float
+    description: K 21mag/sq.-inch isophotal fiducial circ. ap. mag.
+    fits:tunit: mag
+    name: k_m_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_j21fc'
+    datatype: float
+    description: K 1-sigma uncertainty in 21mag/sq.-inch iso.fid.circ.mag.
+    fits:tunit: mag
+    name: k_msig_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_j21fc'
+    datatype: short
+    description: K confusion flag for 21mag/sq.-inch iso. fid. circ. mag.
+    name: k_flg_j21fc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_5'
+    datatype: float
+    description: J 5 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_5'
+    datatype: float
+    description: J 1-sigma uncertainty in 5 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_5'
+    datatype: short
+    description: J confusion flag for 5 arcsec circular ap. mag.
+    name: j_flg_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_5'
+    datatype: float
+    description: H 5 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_5'
+    datatype: float
+    description: H 1-sigma uncertainty in 5 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_5'
+    datatype: short
+    description: H confusion flag for 5 arcsec circular ap. mag.
+    name: h_flg_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_5'
+    datatype: float
+    description: K 5 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_5'
+    datatype: float
+    description: K 1-sigma uncertainty in 5 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_5'
+    datatype: short
+    description: K confusion flag for 5 arcsec circular ap. mag.
+    name: k_flg_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_7'
+    datatype: float
+    description: J 7 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_7'
+    datatype: float
+    description: J 1-sigma uncertainty in 7 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_7'
+    datatype: short
+    description: J confusion flag for 7 arcsec circular ap. mag.
+    name: j_flg_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_7'
+    datatype: float
+    description: H 7 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_7'
+    datatype: float
+    description: H 1-sigma uncertainty in 7 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_7'
+    datatype: short
+    description: H confusion flag for 7 arcsec circular ap. mag.
+    name: h_flg_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_7'
+    datatype: float
+    description: K 7 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_7'
+    datatype: float
+    description: K 1-sigma uncertainty in 7 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_7'
+    datatype: short
+    description: K confusion flag for 7 arcsec circular ap. mag.
+    name: k_flg_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_10'
+    datatype: float
+    description: J 10 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_10'
+    datatype: float
+    description: J 1-sigma uncertainty in 10 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_10'
+    datatype: short
+    description: J confusion flag for 10 arcsec circular ap. mag.
+    name: j_flg_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_10'
+    datatype: float
+    description: H 10 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_10'
+    datatype: float
+    description: H 1-sigma uncertainty in 10 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_10'
+    datatype: short
+    description: H confusion flag for 10 arcsec circular ap. mag.
+    name: h_flg_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_10'
+    datatype: float
+    description: K 10 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_10'
+    datatype: float
+    description: K 1-sigma uncertainty in 10 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_10'
+    datatype: short
+    description: K confusion flag for 10 arcsec circular ap. mag.
+    name: k_flg_10
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_15'
+    datatype: float
+    description: J 15 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_15'
+    datatype: float
+    description: J 1-sigma uncertainty in 15 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_15'
+    datatype: short
+    description: J confusion flag for 15 arcsec circular ap. mag.
+    name: j_flg_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_15'
+    datatype: float
+    description: H 15 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_15'
+    datatype: float
+    description: H 1-sigma uncertainty in 15 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_15'
+    datatype: short
+    description: H confusion flag for 15 arcsec circular ap. mag.
+    name: h_flg_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_15'
+    datatype: float
+    description: K 15 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_15'
+    datatype: float
+    description: K 1-sigma uncertainty in 15 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_15'
+    datatype: short
+    description: K confusion flag for 15 arcsec circular ap. mag.
+    name: k_flg_15
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_20'
+    datatype: float
+    description: J 20 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_20'
+    datatype: float
+    description: J 1-sigma uncertainty in 20 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_20'
+    datatype: short
+    description: J confusion flag for 20 arcsec circular ap. mag.
+    name: j_flg_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_20'
+    datatype: float
+    description: H 20 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_20'
+    datatype: float
+    description: H 1-sigma uncertainty in 20 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_20'
+    datatype: short
+    description: H confusion flag for 20 arcsec circular ap. mag.
+    name: h_flg_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_20'
+    datatype: float
+    description: K 20 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_20'
+    datatype: float
+    description: K 1-sigma uncertainty in 20 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_20'
+    datatype: short
+    description: K confusion flag for 20 arcsec circular ap. mag.
+    name: k_flg_20
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_25'
+    datatype: float
+    description: J 25 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_25'
+    datatype: float
+    description: J 1-sigma uncertainty in 25 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_25'
+    datatype: short
+    description: J confusion flag for 25 arcsec circular ap. mag.
+    name: j_flg_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_25'
+    datatype: float
+    description: H 25 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_25'
+    datatype: float
+    description: H 1-sigma uncertainty in 25 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_25'
+    datatype: short
+    description: H confusion flag for 25 arcsec circular ap. mag.
+    name: h_flg_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_25'
+    datatype: float
+    description: K 25 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_25'
+    datatype: float
+    description: K 1-sigma uncertainty in 25 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_25'
+    datatype: short
+    description: K confusion flag for 25 arcsec circular ap. mag.
+    name: k_flg_25
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_30'
+    datatype: float
+    description: J 30 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_30'
+    datatype: float
+    description: J 1-sigma uncertainty in 30 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_30'
+    datatype: short
+    description: J confusion flag for 30 arcsec circular ap. mag.
+    name: j_flg_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_30'
+    datatype: float
+    description: H 30 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_30'
+    datatype: float
+    description: H 1-sigma uncertainty in 30 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_30'
+    datatype: short
+    description: H confusion flag for 30 arcsec circular ap. mag.
+    name: h_flg_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_30'
+    datatype: float
+    description: K 30 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_30'
+    datatype: float
+    description: K 1-sigma uncertainty in 30 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_30'
+    datatype: short
+    description: K confusion flag for 30 arcsec circular ap. mag.
+    name: k_flg_30
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_40'
+    datatype: float
+    description: J 40 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_40'
+    datatype: float
+    description: J 1-sigma uncertainty in 40 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_40'
+    datatype: short
+    description: J confusion flag for 40 arcsec circular ap. mag.
+    name: j_flg_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_40'
+    datatype: float
+    description: H 40 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_40'
+    datatype: float
+    description: H 1-sigma uncertainty in 40 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_40'
+    datatype: short
+    description: H confusion flag for 40 arcsec circular ap. mag.
+    name: h_flg_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_40'
+    datatype: float
+    description: K 40 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_40'
+    datatype: float
+    description: K 1-sigma uncertainty in 40 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_40'
+    datatype: short
+    description: K confusion flag for 40 arcsec circular ap. mag.
+    name: k_flg_40
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_50'
+    datatype: float
+    description: J 50 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_50'
+    datatype: float
+    description: J 1-sigma uncertainty in 50 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_50'
+    datatype: short
+    description: J confusion flag for 50 arcsec circular ap. mag.
+    name: j_flg_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_50'
+    datatype: float
+    description: H 50 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_50'
+    datatype: float
+    description: H 1-sigma uncertainty in 50 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_50'
+    datatype: short
+    description: H confusion flag for 50 arcsec circular ap. mag.
+    name: h_flg_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_50'
+    datatype: float
+    description: K 50 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_50'
+    datatype: float
+    description: K 1-sigma uncertainty in 50 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_50'
+    datatype: short
+    description: K confusion flag for 50 arcsec circular ap. mag.
+    name: k_flg_50
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_60'
+    datatype: float
+    description: J 60 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_60'
+    datatype: float
+    description: J 1-sigma uncertainty in 60 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_60'
+    datatype: short
+    description: J confusion flag for 60 arcsec circular ap. mag.
+    name: j_flg_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_60'
+    datatype: float
+    description: H 60 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_60'
+    datatype: float
+    description: H 1-sigma uncertainty in 60 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_60'
+    datatype: short
+    description: H confusion flag for 60 arcsec circular ap. mag.
+    name: h_flg_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_60'
+    datatype: float
+    description: K 60 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_60'
+    datatype: float
+    description: K 1-sigma uncertainty in 60 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_60'
+    datatype: short
+    description: K confusion flag for 60 arcsec circular ap. mag.
+    name: k_flg_60
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_70'
+    datatype: float
+    description: J 70 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: j_m_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_70'
+    datatype: float
+    description: J 1-sigma uncertainty in 70 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: j_msig_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_flg_70'
+    datatype: short
+    description: J confusion flag for 70 arcsec circular ap. mag.
+    name: j_flg_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_70'
+    datatype: float
+    description: H 70 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: h_m_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_70'
+    datatype: float
+    description: H 1-sigma uncertainty in 70 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: h_msig_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_flg_70'
+    datatype: short
+    description: H confusion flag for 70 arcsec circular ap. mag.
+    name: h_flg_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_70'
+    datatype: float
+    description: K 70 arcsec radius circular aperture magnitude.
+    fits:tunit: mag
+    name: k_m_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_70'
+    datatype: float
+    description: K 1-sigma uncertainty in 70 arcsec circular ap. mag.
+    fits:tunit: mag
+    name: k_msig_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_flg_70'
+    datatype: short
+    description: K confusion flag for 70 arcsec circular ap. mag.
+    name: k_flg_70
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_m_sys'
+    datatype: float
+    description: J system photometry magnitude.
+    fits:tunit: mag
+    name: j_m_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_msig_sys'
+    datatype: float
+    description: J 1-sigma uncertainty in system photometry mag.
+    fits:tunit: mag
+    name: j_msig_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_m_sys'
+    datatype: float
+    description: H system photometry magnitude.
+    fits:tunit: mag
+    name: h_m_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_msig_sys'
+    datatype: float
+    description: H 1-sigma uncertainty in system photometry mag.
+    fits:tunit: mag
+    name: h_msig_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_m_sys'
+    datatype: float
+    description: K system photometry magnitude.
+    fits:tunit: mag
+    name: k_m_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_msig_sys'
+    datatype: float
+    description: K 1-sigma uncertainty in system photometry mag.
+    fits:tunit: mag
+    name: k_msig_sys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sys_flg'
+    datatype: short
+    description: 'System flag: 0=no system, 1=nearby galaxy flux incl. in mag.'
+    name: sys_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.contam_flg'
+    datatype: short
+    description: 'Contamination flag: 0=no stars, 1=stellar flux incl. in mag.'
+    name: contam_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_5sig_ba'
+    datatype: float
+    description: J minor/major axis ratio fit to the 5-sigma isophote.
+    name: j_5sig_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_5sig_phi'
+    datatype: short
+    description: J angle to 5-sigma major axis (E of N).
+    fits:tunit: deg
+    name: j_5sig_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_5sig_ba'
+    datatype: float
+    description: H minor/major axis ratio fit to the 5-sigma isophote.
+    name: h_5sig_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_5sig_phi'
+    datatype: short
+    description: H angle to 5-sigma major axis (E of N).
+    fits:tunit: deg
+    name: h_5sig_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_5sig_ba'
+    datatype: float
+    description: K minor/major axis ratio fit to the 5-sigma isophote.
+    name: k_5sig_ba
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_5sig_phi'
+    datatype: short
+    description: K angle to 5-sigma major axis (E of N).
+    fits:tunit: deg
+    name: k_5sig_phi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_d_area'
+    datatype: short
+    description: J 5-sigma to 3-sigma differential area.
+    name: j_d_area
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_perc_darea'
+    datatype: short
+    description: J 5-sigma to 3-sigma percent area change.
+    name: j_perc_darea
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_d_area'
+    datatype: short
+    description: H 5-sigma to 3-sigma differential area.
+    name: h_d_area
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_perc_darea'
+    datatype: short
+    description: H 5-sigma to 3-sigma percent area change.
+    name: h_perc_darea
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_d_area'
+    datatype: short
+    description: K 5-sigma to 3-sigma differential area.
+    name: k_d_area
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_perc_darea'
+    datatype: short
+    description: K 5-sigma to 3-sigma percent area change.
+    name: k_perc_darea
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_bisym_rat'
+    datatype: float
+    description: J bi-symmetric flux ratio.
+    name: j_bisym_rat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_bisym_chi'
+    datatype: float
+    description: J bi-symmetric cross-correlation chi.
+    name: j_bisym_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_bisym_rat'
+    datatype: float
+    description: H bi-symmetric flux ratio.
+    name: h_bisym_rat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_bisym_chi'
+    datatype: float
+    description: H bi-symmetric cross-correlation chi.
+    name: h_bisym_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_bisym_rat'
+    datatype: float
+    description: K bi-symmetric flux ratio.
+    name: k_bisym_rat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_bisym_chi'
+    datatype: float
+    description: K bi-symmetric cross-correlation chi.
+    name: k_bisym_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sh0'
+    datatype: float
+    description: 'J ridge shape (LCSB: BSNR limit).'
+    name: j_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sig_sh0'
+    datatype: float
+    description: 'J ridge shape sigma (LCSB: B2SNR limit).'
+    name: j_sig_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sh0'
+    datatype: float
+    description: 'H ridge shape (LCSB: BSNR limit).'
+    name: h_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sig_sh0'
+    datatype: float
+    description: 'H ridge shape sigma (LCSB: B2SNR limit).'
+    name: h_sig_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sh0'
+    datatype: float
+    description: 'K ridge shape (LCSB: BSNR limit).'
+    name: k_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sig_sh0'
+    datatype: float
+    description: 'K ridge shape sigma (LCSB: B2SNR limit).'
+    name: k_sig_sh0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_mxdn'
+    datatype: float
+    description: 'J mxdn (score) (LCSB: BSNR - block/smoothed SNR).'
+    name: j_sc_mxdn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_sh'
+    datatype: float
+    description: J shape (score).
+    name: j_sc_sh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_wsh'
+    datatype: float
+    description: 'J wsh (score) (LCSB: PSNR - peak raw SNR).'
+    name: j_sc_wsh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_r23'
+    datatype: float
+    description: 'J r23 (score) (LCSB: TSNR - integrated SNR for r=15).'
+    name: j_sc_r23
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_1mm'
+    datatype: float
+    description: 'J 1st moment (score) (LCSB: super blk 2,4,8 SNR).'
+    name: j_sc_1mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_2mm'
+    datatype: float
+    description: 'J 2nd moment (score) (LCSB: SNRMAX - super SNR max).'
+    name: j_sc_2mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_vint'
+    datatype: float
+    description: J vint (score).
+    name: j_sc_vint
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_r1'
+    datatype: float
+    description: J r1 (score).
+    name: j_sc_r1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_sc_msh'
+    datatype: float
+    description: J median shape score.
+    name: j_sc_msh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_mxdn'
+    datatype: float
+    description: 'H mxdn (score) (LCSB: BSNR - block/smoothed SNR).'
+    name: h_sc_mxdn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_sh'
+    datatype: float
+    description: H shape (score).
+    name: h_sc_sh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_wsh'
+    datatype: float
+    description: 'H wsh (score) (LCSB: PSNR - peak raw SNR).'
+    name: h_sc_wsh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_r23'
+    datatype: float
+    description: 'H r23 (score) (LCSB: TSNR - integrated SNR for r=15).'
+    name: h_sc_r23
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_1mm'
+    datatype: float
+    description: 'H 1st moment (score) (LCSB: super blk 2,4,8 SNR).'
+    name: h_sc_1mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_2mm'
+    datatype: float
+    description: 'H 2nd moment (score) (LCSB: SNRMAX - super SNR max).'
+    name: h_sc_2mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_vint'
+    datatype: float
+    description: H vint (score).
+    name: h_sc_vint
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_r1'
+    datatype: float
+    description: H r1 (score).
+    name: h_sc_r1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_sc_msh'
+    datatype: float
+    description: H median shape score.
+    name: h_sc_msh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_mxdn'
+    datatype: float
+    description: 'K mxdn (score) (LCSB: BSNR - block/smoothed SNR).'
+    name: k_sc_mxdn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_sh'
+    datatype: float
+    description: K shape (score).
+    name: k_sc_sh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_wsh'
+    datatype: float
+    description: 'K wsh (score) (LCSB: PSNR - peak raw SNR).'
+    name: k_sc_wsh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_r23'
+    datatype: float
+    description: 'K r23 (score) (LCSB: TSNR - integrated SNR for r=15).'
+    name: k_sc_r23
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_1mm'
+    datatype: float
+    description: 'K 1st moment (score) (LCSB: super blk 2,4,8 SNR).'
+    name: k_sc_1mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_2mm'
+    datatype: float
+    description: 'K 2nd moment (score) (LCSB: SNRMAX - super SNR max).'
+    name: k_sc_2mm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_vint'
+    datatype: float
+    description: K vint (score).
+    name: k_sc_vint
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_r1'
+    datatype: float
+    description: K r1 (score).
+    name: k_sc_r1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_sc_msh'
+    datatype: float
+    description: K median shape score.
+    name: k_sc_msh
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_chif_ellf'
+    datatype: float
+    description: J % chi-fraction for elliptical fit to 3-sig isophote.
+    name: j_chif_ellf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_chif_ellf'
+    datatype: float
+    description: K % chi-fraction for elliptical fit to 3-sig isophote.
+    name: k_chif_ellf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.ellfit_flg'
+    datatype: short
+    description: Ellipse fitting contamination flag.
+    name: ellfit_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.sup_chif_ellf'
+    datatype: float
+    description: Super-coadd % chi-fraction for ellip. fit to 3-sig isophote.
+    name: sup_chif_ellf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.n_blank'
+    datatype: short
+    description: Number of blanked source records.
+    name: n_blank
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.n_sub'
+    datatype: short
+    description: Number of subtracted source records.
+    name: n_sub
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.bl_sub_flg'
+    datatype: short
+    description: Blanked/subtracted src description flag.
+    name: bl_sub_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.id_flg'
+    datatype: short
+    description: 'Type/galaxy ID flag (0=non-catalog, 1=catalog, 2=LCSB). This flag
+      indicates the extended source catalog type as follows: 0 = extended source not
+      found in another catalog, 1 = extended source is found in galaxy catalog (ID
+      found in id_cat field), 2 = LCSB (Low Central Surface Brightness) source'
+    name: id_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.id_cat'
+    datatype: char
+    description: Matched galaxys catalog name.
+    length: 20
+    name: id_cat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.fg_flg'
+    datatype: char
+    description: Flux-growth convergence flag.
+    length: 6
+    name: fg_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.blk_fac'
+    datatype: short
+    description: LCSB blocking factor (1, 2, 4, 8).
+    name: blk_fac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.dup_src'
+    datatype: short
+    description: Duplicate source flag. Used in conjunction with the use_src flag,
+      this numerical flag indicates whether the source falls in a Tile overlap region,
+      and if so, if it was detected multiple times.
+    name: dup_src
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.use_src'
+    datatype: short
+    description: Use source flag. Used in conjunction with the dup_src flag, this
+      numerical flag indicates if a source falls within a Tile overlap region, and
+      whether or not it satisfies the unbiased selection rules for multiple source
+      resolution.
+    name: use_src
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.prox'
+    datatype: float
+    description: Proximity. The distance between this source and its nearest neighbor
+      in the PSC.
+    fits:tunit: arcsec
+    name: prox
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.pxpa'
+    datatype: short
+    description: The position angle on the sky of the vector from the source to the
+      nearest neighbor in the PSC, in degrees East of North.
+    fits:tunit: deg
+    name: pxpa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.pxcntr'
+    datatype: int
+    description: ext_key value of nearest XSC source.
+    name: pxcntr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.dist_edge_ns'
+    datatype: int
+    description: The distance from the source to the nearest North or South scan edge.
+      The scan edge is defined by the great-circle interpolation between the 3-band
+      coverage corners. The equatorial coordinates of the 3-band coverage corners
+      are given in the Scan Information Table, referenced by the scan_key. The first
+      character of the dist_edge_flg indicates to which edge the source is closer.
+    fits:tunit: arcsec
+    name: dist_edge_ns
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.dist_edge_ew'
+    datatype: short
+    description: The distance from the source to the nearest East or West scan edge.
+      The scan edge is defined by the great-circle interpolation between the 3-band
+      coverage corners. The equatorial coordinates of the 3-band coverage corners
+      are given in the Scan Information Table, referenced by the scan_key. The second
+      character of the dist_edge_flg indicates to which edge the source is closer.
+    fits:tunit: arcsec
+    name: dist_edge_ew
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.dist_edge_flg'
+    datatype: char
+    description: Flag indicating which edges ([n|s][e|w]) are nearest to src.
+    length: 2
+    name: dist_edge_flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.pts_key'
+    datatype: int
+    description: Key to point source data DB record.
+    name: pts_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.mp_key'
+    datatype: int
+    description: Key to minor planet prediction DB record.
+    name: mp_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.night_key'
+    datatype: short
+    description: Key to night data record in scan DB.
+    name: night_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.scan_key'
+    datatype: int
+    description: Key to scan data record in scan DB.
+    name: scan_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.coadd_key'
+    datatype: int
+    description: Key to coadd data record in scan DB.
+    name: coadd_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.hemis'
+    datatype: char
+    description: Hemisphere (N/S) of observation. n=North/Mt. Hopkins; s=South/CTIO.
+    length: 1
+    name: hemis
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.date'
+    datatype: char
+    description: The observation reference date for this source expressed in ISO standard
+      format. This is the UT day value at sunrise for the night on which the source
+      was observed. Because it is possible for the UT day to change during a night
+      of observations, the actual UT date for a source measurement can differ from
+      date by one day. Use the Julian Day value (jdate) for a more accurate determination
+      of the observation time of the source.
+    length: 10
+    name: date
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.scan'
+    datatype: short
+    description: Scan number (unique within date).
+    name: scan
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.coadd'
+    datatype: short
+    description: 3-digit coadd number (unique within scan).
+    name: coadd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.id'
+    datatype: int
+    description: Source ID number (unique within scan, coadd).
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.x_coadd'
+    datatype: float
+    description: x (cross-scan) position (coadd coord.).
+    fits:tunit: arcsec
+    name: x_coadd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.y_coadd'
+    datatype: float
+    description: y (in-scan) position (coadd coord.).
+    fits:tunit: arcsec
+    name: y_coadd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_subst2'
+    datatype: float
+    description: J residual background number 2 (score).
+    name: j_subst2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_subst2'
+    datatype: float
+    description: H residual background number 2 (score).
+    name: h_subst2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_subst2'
+    datatype: float
+    description: K residual background number 2 (score).
+    name: k_subst2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_back'
+    datatype: float
+    description: J coadd median background.
+    name: j_back
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_back'
+    datatype: float
+    description: H coadd median background.
+    name: h_back
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_back'
+    datatype: float
+    description: K coadd median background.
+    name: k_back
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_resid_ann'
+    datatype: float
+    description: J residual annulus background median.
+    name: j_resid_ann
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_resid_ann'
+    datatype: float
+    description: H residual annulus background median.
+    name: h_resid_ann
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_resid_ann'
+    datatype: float
+    description: K residual annulus background median.
+    name: k_resid_ann
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_bndg_per'
+    datatype: int
+    description: J banding Fourier Transf. period on this side of coadd.
+    fits:tunit: arcsec
+    name: j_bndg_per
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_bndg_amp'
+    datatype: float
+    description: J banding maximum FT amplitude on this side of coadd.
+    name: j_bndg_amp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_bndg_per'
+    datatype: int
+    description: H banding Fourier Transf. period on this side of coadd.
+    fits:tunit: arcsec
+    name: h_bndg_per
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_bndg_amp'
+    datatype: float
+    description: H banding maximum FT amplitude on this side of coadd.
+    name: h_bndg_amp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_bndg_per'
+    datatype: int
+    description: K banding Fourier Transf. period on this side of coadd.
+    fits:tunit: arcsec
+    name: k_bndg_per
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_bndg_amp'
+    datatype: float
+    description: K banding maximum FT amplitude on this side of coadd.
+    name: k_bndg_amp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.j_seetrack'
+    datatype: float
+    description: J band seetracking score.
+    name: j_seetrack
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.h_seetrack'
+    datatype: float
+    description: H band seetracking score.
+    name: h_seetrack
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.k_seetrack'
+    datatype: float
+    description: K band seetracking score.
+    name: k_seetrack
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#twomass.xsc.ext_key'
+    datatype: int
+    description: Entry counter (key) number (unique within table).
+    name: ext_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Extended Source Catalog (1,647,599 rows)
+  indexes:
+  - '@id': '#xsc_designation_idx'
+    columns:
+    - '#twomass.xsc.designation'
+    name: xsc_designation_idx
+  - '@id': '#xsc_ra_idx'
+    columns:
+    - '#twomass.xsc.ra'
+    name: xsc_ra_idx
+  - '@id': '#xsc_dec_idx'
+    columns:
+    - '#twomass.xsc.dec'
+    name: xsc_dec_idx
+  - '@id': '#xsc_htm9_idx'
+    columns:
+    - '#twomass.xsc.htm9'
+    name: xsc_htm9_idx
+  - '@id': '#xsc_nest256_idx'
+    columns:
+    - '#twomass.xsc.nest256'
+    name: xsc_nest256_idx
+  - '@id': '#xsc_ring256_idx'
+    columns:
+    - '#twomass.xsc.ring256'
+    name: xsc_ring256_idx
+  - '@id': '#xsc_glon_idx'
+    columns:
+    - '#twomass.xsc.glon'
+    name: xsc_glon_idx
+  - '@id': '#xsc_glat_idx'
+    columns:
+    - '#twomass.xsc.glat'
+    name: xsc_glat_idx
+  - '@id': '#xsc_id_idx'
+    columns:
+    - '#twomass.xsc.id'
+    name: xsc_id_idx
+  name: xsc
+  primaryKey: ''
+  tap:table_index: 2
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

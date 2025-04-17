@@ -1,0 +1,3664 @@
+---
+'@id': '#gaia_dr3'
+description: Gaia Data Release 3
+name: gaia_dr3
+tables:
+- '@id': '#gaia_dr3.gaia_source'
+  columns:
+  - '@id': '#gaia_dr3.gaia_source.ag_gspphot'
+    datatype: float
+    description: 'Extinction in G band from GSP-Phot Aeneas best library using BP/RP
+      spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ag_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of extinction in G band from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ag_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of extinction in G band from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_chi2_al'
+    datatype: float
+    description: AL chi-square value Astrometric goodness-of-fit (&chi;<sup>2</sup>)
+    name: astrometric_chi2_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_excess_noise'
+    datatype: float
+    description: Excess noise of the source Angle[mas]
+    fits:tunit: mas
+    name: astrometric_excess_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_excess_noise_sig'
+    datatype: float
+    description: Significance of excess noise
+    name: astrometric_excess_noise_sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_gof_al'
+    datatype: float
+    description: Goodness of fit statistic of model wrt along-scan observations
+    name: astrometric_gof_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_sigma5d_max'
+    datatype: float
+    description: Matched FOV transits used in the AGIS solution
+    name: astrometric_sigma5d_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.azero_gspphot'
+    datatype: float
+    description: 'Monochromatic extinction A0 at 547.7nm from GSP-Phot Aeneas best
+      library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.azero_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of monochromatic extinction A0 at 547.7nm
+      from GSP-Phot Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.azero_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of monochromatic extinction A0 at 547.7nm
+      from GSP-Phot Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.b'
+    datatype: double
+    description: Galactic latitude Angle[deg]
+    fits:tunit: deg
+    name: b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.bp_g'
+    datatype: double
+    description: BP - G colour Magnitude[mag]
+    fits:tunit: mag
+    name: bp_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.bp_rp'
+    datatype: float
+    description: BP - RP colour Magnitude[mag]
+    fits:tunit: mag
+    name: bp_rp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec'
+    datatype: double
+    description: Declination Angle[deg]
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec_error'
+    datatype: float
+    description: Standard error of declination Angle[mas]
+    fits:tunit: mas
+    name: dec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec_parallax_corr'
+    datatype: float
+    description: Correlation between declination and parallax [-1,+1]
+    name: dec_parallax_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec_pmdec_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in declination
+      [-1,+1]
+    name: dec_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec_pmra_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in right ascension
+      [-1,+1]
+    name: dec_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.dec_pseudocolour_corr'
+    datatype: float
+    description: Correlation between declination and pseudocolour [-1,+1]
+    name: dec_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.distance_gspphot'
+    datatype: float
+    description: 'Distance from GSP-Phot Aeneas best library using BP/RP spectra (Length
+      & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.distance_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of distance from GSP-Phot Aeneas best
+      library using BP/RP spectra (Length & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.distance_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of distance from GSP-Phot Aeneas best
+      library using BP/RP spectra (Length & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot'
+    datatype: float
+    description: 'Reddening E(G_BP - G_RP) from GSP-Phot Aeneas best library using
+      BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of reddening E(G_BP - G_RP) from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of reddening E(G_BP - G_RP) from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ecl_lat'
+    datatype: double
+    description: Ecliptic latitude Angle[deg]
+    fits:tunit: deg
+    name: ecl_lat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ecl_lon'
+    datatype: double
+    description: Ecliptic longitude Angle[deg]
+    fits:tunit: deg
+    name: ecl_lon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.g_rp'
+    datatype: float
+    description: G - RP colour Magnitude[mag]
+    fits:tunit: mag
+    name: g_rp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.grvs_mag'
+    datatype: float
+    description: 'Integrated Grvs magnitude (Magnitude[mag]) '
+    fits:tunit: mag
+    name: grvs_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.grvs_mag_error'
+    datatype: float
+    description: Grvs magnitude uncertainty (Magnitude[mag])
+    fits:tunit: mag
+    name: grvs_mag_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ipd_gof_harmonic_amplitude'
+    datatype: float
+    description: Amplitude of the IPD GoF versus position angle of scan
+    name: ipd_gof_harmonic_amplitude
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ipd_gof_harmonic_phase'
+    datatype: float
+    description: Phase of the IPD GoF versus position angle of scan Angle[deg]
+    fits:tunit: deg
+    name: ipd_gof_harmonic_phase
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.l'
+    datatype: double
+    description: Galactic longitude Angle[deg]
+    fits:tunit: deg
+    name: l
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.logg_gspphot'
+    datatype: float
+    description: Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra
+    name: logg_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.logg_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of surface gravity from GSP-Phot Aeneas
+      best library using BP/RP spectra (GravitySurface[log cgs]) '
+    name: logg_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.logg_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of surface gravity from GSP-Phot Aeneas
+      best library using BP/RP spectra (GravitySurface[log cgs]) '
+    name: logg_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.mh_gspphot'
+    datatype: float
+    description: 'Iron abundance from GSP-Phot Aeneas best library using BP/RP spectra
+      (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.mh_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of iron abundance from GSP-Phot Aeneas
+      best library using BP/RP spectra (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.mh_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of iron abundance from GSP-Phot Aeneas
+      best library using BP/RP spectra (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.nu_eff_used_in_astrometry'
+    datatype: float
+    description: Effective wavenumber of the source used in the astrometric solution
+      Misc[&mu;m<sup>-1</sup>]
+    name: nu_eff_used_in_astrometry
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax'
+    datatype: double
+    description: Parallax Angle[mas]
+    fits:tunit: mas
+    name: parallax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax_error'
+    datatype: float
+    description: Standard error of Parallax Angle[mas]
+    fits:tunit: mas
+    name: parallax_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax_over_error'
+    datatype: float
+    description: Standard error of parallax Angle[mas]
+    fits:tunit: mas
+    name: parallax_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax_pmdec_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in declination [-1,+1]
+    name: parallax_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax_pmra_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in right ascension
+      [-1,+1]
+    name: parallax_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.parallax_pseudocolour_corr'
+    datatype: float
+    description: Correlation between parallax and pseudocolour [-1,+1]
+    name: parallax_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_flux'
+    datatype: double
+    description: Integrated BP mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_bp_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_flux_error'
+    datatype: float
+    description: Error on the integrated BP mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_bp_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_flux_over_error'
+    datatype: float
+    description: Integrated BP mean flux divided by its error
+    name: phot_bp_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_mag'
+    datatype: float
+    description: Integrated BP mean magnitude Magnitude[mag]
+    fits:tunit: mag
+    name: phot_bp_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_rp_excess_factor'
+    datatype: float
+    description: BP/RP excess factor
+    name: phot_bp_rp_excess_factor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_g_mean_flux'
+    datatype: double
+    description: G-band mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_g_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_g_mean_flux_error'
+    datatype: float
+    description: Error on G-band mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_g_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_g_mean_flux_over_error'
+    datatype: float
+    description: G-band mean flux divided by its error
+    name: phot_g_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_g_mean_mag'
+    datatype: float
+    description: G-band mean magnitude Magnitude[mag]
+    fits:tunit: mag
+    name: phot_g_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_flux'
+    datatype: double
+    description: Integrated RP mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_rp_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_flux_error'
+    datatype: float
+    description: Error on the integrated RP mean flux Flux[e-/s]
+    fits:tunit: electron/s
+    name: phot_rp_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_flux_over_error'
+    datatype: float
+    description: Integrated RP mean flux divided by its error
+    name: phot_rp_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_mag'
+    datatype: float
+    description: Integrated RP mean magnitude Magnitude[mag]
+    fits:tunit: mag
+    name: phot_rp_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pm'
+    datatype: float
+    description: Total proper motion Angular Velocity[mas/year]
+    fits:tunit: mas/year
+    name: pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmdec'
+    datatype: double
+    description: Proper motion in declination direction Angular Velocity[mas/year]
+    fits:tunit: mas/year
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmdec_error'
+    datatype: float
+    description: Standard error of proper motion in declination direction Angular
+      Velocity[mas/year]
+    fits:tunit: mas/year
+    name: pmdec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmdec_pseudocolour_corr'
+    datatype: float
+    description: Correlation between proper motion in declination and pseudocolour
+      [-1,+1]
+    name: pmdec_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmra'
+    datatype: double
+    description: Proper motion in right ascension direction Angular Velocity[mas/year]
+    fits:tunit: mas/year
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmra_error'
+    datatype: float
+    description: Standard error of proper motion in right ascension direction Angular
+      Velocity[mas/year]
+    fits:tunit: mas/year
+    name: pmra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmra_pmdec_corr'
+    datatype: float
+    description: Correlation between proper motion in right ascension and proper motion
+      in declination [-1,+1]
+    name: pmra_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pmra_pseudocolour_corr'
+    datatype: float
+    description: Correlation between proper motion in right asension and pseudocolour
+      [-1,+1]
+    name: pmra_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pseudocolour'
+    datatype: float
+    description: Astrometrically estimated pseudocolour of the source Misc[&mu;m<sup>-1</sup>]
+    name: pseudocolour
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.pseudocolour_error'
+    datatype: float
+    description: Standard error of the pseudocolour of the source Misc[&mu;m<sup>-1</sup>]
+    name: pseudocolour_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra'
+    datatype: double
+    description: Barycentric right ascension &alpha; of the source in ICRS at the
+      reference epoch ref_epoch
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_dec_corr'
+    datatype: float
+    description: Correlation between right ascension and declination [-1,+1]
+    name: ra_dec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_error'
+    datatype: float
+    description: Standard error of the right ascension of the source in ICRS at the
+      reference epoch ref_epoch.
+    fits:tunit: mas
+    name: ra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_parallax_corr'
+    datatype: float
+    description: Correlation between right ascension and parallax [-1,+1]
+    name: ra_parallax_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_pmdec_corr'
+    datatype: float
+    description: Correlation between right ascension and proper motion in declination
+      [-1,+1]
+    name: ra_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_pmra_corr'
+    datatype: float
+    description: Correlation between right ascension and proper motion in right ascension
+      [-1,+1]
+    name: ra_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ra_pseudocolour_corr'
+    datatype: float
+    description: Correlation between right ascension and pseudocolour [-1,+1]
+    name: ra_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.radial_velocity'
+    datatype: float
+    description: Radial velocity [km/s]
+    fits:tunit: km/s
+    name: radial_velocity
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.radial_velocity_error'
+    datatype: float
+    description: Radial velocity error [km/s]
+    fits:tunit: km/s
+    name: radial_velocity_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ruwe'
+    datatype: float
+    description: Renormalised unit weight error
+    name: ruwe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_chisq_pvalue'
+    datatype: float
+    description: 'P-value for constancy based on a chi-squared criterion '
+    name: rv_chisq_pvalue
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_expected_sig_to_noise'
+    datatype: float
+    description: 'Expected signal to noise ratio in the combination of the spectra
+      used to obtain the radial velocity '
+    name: rv_expected_sig_to_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_renormalised_gof'
+    datatype: float
+    description: 'Radial velocity renormalised goodness of fit '
+    name: rv_renormalised_gof
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rvs_spec_sig_to_noise'
+    datatype: float
+    description: Signal to noise ratio in the mean RVS spectrum
+    name: rvs_spec_sig_to_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k1'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k2'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k3'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k4'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k1'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k2'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k3'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k4'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.teff_gspphot'
+    datatype: float
+    description: 'Effective temperature from GSP-Phot Aeneas best library using BP/RP
+      spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.teff_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of effective temperature from GSP-
+      Phot Aeneas best library using BP/RP spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.teff_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of effective temperature from GSP-Phot
+      Aeneas best library using BP/RP spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.solution_id'
+    datatype: long
+    description: Solution Identifier. To decode a given solution ID visit https://gaia.esac.esa.int/decoder/solnDecoder.jsp
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.source_id'
+    datatype: long
+    description: Unique source identifier (unique within a particular Data Release)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.classprob_dsc_combmod_galaxy'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a galaxy (data used: BP/RP
+      spectrum, photometry, astrometry)'
+    name: classprob_dsc_combmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.classprob_dsc_combmod_quasar'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a quasar (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.classprob_dsc_combmod_star'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a single star (but not a white
+      dwarf) (data used: BP/RP spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ref_epoch'
+    datatype: double
+    description: Reference epoch Time[Julian Years]
+    fits:tunit: yr
+    name: ref_epoch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_amplitude_robust'
+    datatype: float
+    description: 'Total amplitude in the radial velocity time series after outlier
+      removal (Velocity[km/s]) '
+    fits:tunit: km/s
+    name: rv_amplitude_robust
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_template_fe_h'
+    datatype: float
+    description: Fe/H of the template used to compute radial velocity [dex]
+    fits:tunit: dex
+    name: rv_template_fe_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_template_logg'
+    datatype: float
+    description: logg of the template used to compute radial velocity (GravitySurface[log
+      cgs])
+    name: rv_template_logg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_template_teff'
+    datatype: float
+    description: 'Teff of the template used to compute the radial velocity (Temperature[K]) '
+    fits:tunit: K
+    name: rv_template_teff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_time_duration'
+    datatype: float
+    description: Time coverage of the radial velocity time series (Time[day])
+    fits:tunit: day
+    name: rv_time_duration
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.vbroad'
+    datatype: float
+    description: 'Spectral line broadening parameter (Velocity[km/s] ) '
+    fits:tunit: km/s
+    name: vbroad
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.vbroad_error'
+    datatype: float
+    description: 'Uncertainty on the spectral line broadening (Velocity[km/s] ) '
+    fits:tunit: km/s
+    name: vbroad_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.random_index'
+    datatype: int
+    description: Random index used to select subsets
+    name: random_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_matched_transits'
+    datatype: short
+    description: Matched FOV transits used in the AGIS solution
+    name: astrometric_matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_n_bad_obs_al'
+    datatype: short
+    description: Number of bad observations AL
+    name: astrometric_n_bad_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_n_good_obs_al'
+    datatype: short
+    description: Number of good observations AL
+    name: astrometric_n_good_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_n_obs_ac'
+    datatype: short
+    description: Total number of observations AC
+    name: astrometric_n_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_n_obs_al'
+    datatype: short
+    description: Total number of observations AL
+    name: astrometric_n_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_params_solved'
+    datatype: short
+    description: Which parameters have been solved for [byte]
+    fits:tunit: byte
+    name: astrometric_params_solved
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.duplicated_source'
+    datatype: short
+    description: Source with multiple source identifiers
+    name: duplicated_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.grvs_mag_nb_transits'
+    datatype: short
+    description: 'Number of transits used to compute Grvs '
+    name: grvs_mag_nb_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ipd_frac_multi_peak'
+    datatype: short
+    description: Percent of successful-IPD windows with more than one peak
+    name: ipd_frac_multi_peak
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.ipd_frac_odd_win'
+    datatype: short
+    description: Percent of transits with truncated windows or multiple gate
+    name: ipd_frac_odd_win
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.matched_transits'
+    datatype: short
+    description: The number of transits matched to this source
+    name: matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.matched_transits_removed'
+    datatype: short
+    description: The number of transits removed from an existing source in the current
+      cycle
+    name: matched_transits_removed
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.new_matched_transits'
+    datatype: short
+    description: The number of transits newly incorporated into an existing source
+      in the current cycle
+    name: new_matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.non_single_star'
+    datatype: short
+    description: 'Flag indicating the availability of additional information in the
+      various Non-Single Star tables '
+    name: non_single_star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_n_blended_transits'
+    datatype: short
+    description: Number of BP blended transits
+    name: phot_bp_n_blended_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_n_contaminated_transits'
+    datatype: short
+    description: Number of BP contaminated transits
+    name: phot_bp_n_contaminated_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_bp_n_obs'
+    datatype: short
+    description: Number of observations contributing to BP photometry
+    name: phot_bp_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_g_n_obs'
+    datatype: short
+    description: Number of observations contributing to G photometry
+    name: phot_g_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_proc_mode'
+    datatype: short
+    description: Photometry processing mode
+    name: phot_proc_mode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_n_blended_transits'
+    datatype: short
+    description: Number of RP blended transits
+    name: phot_rp_n_blended_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_n_contaminated_transits'
+    datatype: short
+    description: Number of RP contaminated transits
+    name: phot_rp_n_contaminated_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_rp_n_obs'
+    datatype: short
+    description: Number of observations contributing to RP photometry
+    name: phot_rp_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_atm_param_origin'
+    datatype: short
+    description: 'Origin of the atmospheric parameters associated to the template '
+    name: rv_atm_param_origin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_method_used'
+    datatype: short
+    description: Method used to obtain the radial velocity
+    name: rv_method_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_nb_deblended_transits'
+    datatype: short
+    description: 'Number of valid transits that have undergone deblending '
+    name: rv_nb_deblended_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_nb_transits'
+    datatype: short
+    description: Number of transits used to compute radial velocity
+    name: rv_nb_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.rv_visibility_periods_used'
+    datatype: short
+    description: 'Number of visibility periods used to estimate the radial velocity '
+    name: rv_visibility_periods_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.vbroad_nb_transits'
+    datatype: short
+    description: Number of transits used to compute vbroad
+    name: vbroad_nb_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.visibility_periods_used'
+    datatype: short
+    description: Number of visibility periods used in Astrometric solution
+    name: visibility_periods_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.astrometric_primary_flag'
+    datatype: char
+    description: Flag indicating if this source was used as a primary source (true)
+      or secondary source (false)
+    length: 1
+    name: astrometric_primary_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_epoch_photometry'
+    datatype: char
+    description: 'Flag indicating the availability of epoch photometry for this source '
+    length: 1
+    name: has_epoch_photometry
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_epoch_rv'
+    datatype: char
+    description: 'Flag indicating the availability of epoch radial velocity for this
+      source '
+    length: 1
+    name: has_epoch_rv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_mcmc_gspphot'
+    datatype: char
+    description: Flag indicating the availability of GSP-Phot MCMC samples for this
+      source
+    length: 1
+    name: has_mcmc_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_mcmc_msc'
+    datatype: char
+    description: 'Flag indicating the availability of MSC MCMC samples for this source '
+    length: 1
+    name: has_mcmc_msc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_rvs'
+    datatype: char
+    description: 'Flag indicating the availability of mean RVS spectrum for this source '
+    length: 1
+    name: has_rvs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_xp_continuous'
+    datatype: char
+    description: 'Flag indicating the availability of mean BP/RP spectrum in continuous
+      representation for this source '
+    length: 1
+    name: has_xp_continuous
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.has_xp_sampled'
+    datatype: char
+    description: 'Flag indicating the availability of mean BP/RP spectrum in sampled
+      form for this source '
+    length: 1
+    name: has_xp_sampled
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.in_andromeda_survey'
+    datatype: char
+    description: 'Flag indicating that the source is present in the Gaia Andromeda
+      Photometric Survey (GAPS) '
+    length: 1
+    name: in_andromeda_survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.in_galaxy_candidates'
+    datatype: char
+    description: 'Flag indicating the availability of additional information in the
+      galaxy_candidates table '
+    length: 1
+    name: in_galaxy_candidates
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.in_qso_candidates'
+    datatype: char
+    description: 'Flag indicating the availability of additional information in the
+      qso_candidates table '
+    length: 1
+    name: in_qso_candidates
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.designation'
+    datatype: char
+    description: Unique source designation (unique across all Data Releases)
+    length: 1
+    name: designation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.libname_gspphot'
+    datatype: char
+    description: 'Name of library that achieves the highest mean log-posterior in
+      MCMC samples and was used to derive GSP-Phot parameters in this table '
+    length: 1
+    name: libname_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.gaia_source.phot_variable_flag'
+    datatype: char
+    description: Photometric variability flag
+    length: 1
+    name: phot_variable_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table has an entry for every Gaia observed source as published
+    with this data release. It contains the basic source parameters, in their final
+    state as processed by the Gaia Data Processing and Analysis Consortium from the
+    raw data coming from the spacecraft.
+  indexes:
+  - '@id': '#gaia_source_b_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.b'
+    name: gaia_source_b_idx
+  - '@id': '#gaia_source_bp_g_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.bp_g'
+    name: gaia_source_bp_g_idx
+  - '@id': '#gaia_source_bp_rp_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.bp_rp'
+    name: gaia_source_bp_rp_idx
+  - '@id': '#gaia_source_dec_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.dec'
+    name: gaia_source_dec_idx
+  - '@id': '#gaia_source_ecl_lat_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.ecl_lat'
+    name: gaia_source_ecl_lat_idx
+  - '@id': '#gaia_source_ecl_lon_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.ecl_lon'
+    name: gaia_source_ecl_lon_idx
+  - '@id': '#gaia_source_g_rp_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.g_rp'
+    name: gaia_source_g_rp_idx
+  - '@id': '#gaia_source_grvs_mag_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.grvs_mag'
+    name: gaia_source_grvs_mag_idx
+  - '@id': '#gaia_source_l_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.l'
+    name: gaia_source_l_idx
+  - '@id': '#gaia_source_logg_gspphot_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.logg_gspphot'
+    name: gaia_source_logg_gspphot_idx
+  - '@id': '#gaia_source_mh_gspphot_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.mh_gspphot'
+    name: gaia_source_mh_gspphot_idx
+  - '@id': '#gaia_source_parallax_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.parallax'
+    name: gaia_source_parallax_idx
+  - '@id': '#gaia_source_phot_bp_mean_flux_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_bp_mean_flux'
+    name: gaia_source_phot_bp_mean_flux_idx
+  - '@id': '#gaia_source_phot_bp_mean_mag_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_bp_mean_mag'
+    name: gaia_source_phot_bp_mean_mag_idx
+  - '@id': '#gaia_source_phot_g_mean_flux_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_g_mean_flux'
+    name: gaia_source_phot_g_mean_flux_idx
+  - '@id': '#gaia_source_phot_g_mean_mag_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_g_mean_mag'
+    name: gaia_source_phot_g_mean_mag_idx
+  - '@id': '#gaia_source_phot_rp_mean_flux_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_rp_mean_flux'
+    name: gaia_source_phot_rp_mean_flux_idx
+  - '@id': '#gaia_source_phot_rp_mean_mag_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.phot_rp_mean_mag'
+    name: gaia_source_phot_rp_mean_mag_idx
+  - '@id': '#gaia_source_pm_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.pm'
+    name: gaia_source_pm_idx
+  - '@id': '#gaia_source_pmdec_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.pmdec'
+    name: gaia_source_pmdec_idx
+  - '@id': '#gaia_source_pmra_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.pmra'
+    name: gaia_source_pmra_idx
+  - '@id': '#gaia_source_pseudocolour_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.pseudocolour'
+    name: gaia_source_pseudocolour_idx
+  - '@id': '#gaia_source_ra_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.ra'
+    name: gaia_source_ra_idx
+  - '@id': '#gaia_source_radial_velocity_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.radial_velocity'
+    name: gaia_source_radial_velocity_idx
+  - '@id': '#gaia_source_teff_gspphot_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.teff_gspphot'
+    name: gaia_source_teff_gspphot_idx
+  - '@id': '#gaia_source_source_id_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.source_id'
+    name: gaia_source_source_id_idx
+  - '@id': '#gaia_source_classprob_dsc_combmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.classprob_dsc_combmod_galaxy'
+    name: gaia_source_classprob_dsc_combmod_galaxy_idx
+  - '@id': '#gaia_source_classprob_dsc_combmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.classprob_dsc_combmod_quasar'
+    name: gaia_source_classprob_dsc_combmod_quasar_idx
+  - '@id': '#gaia_source_classprob_dsc_combmod_star_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.classprob_dsc_combmod_star'
+    name: gaia_source_classprob_dsc_combmod_star_idx
+  - '@id': '#gaia_source_random_id_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.random_id'
+    name: gaia_source_random_id_idx
+  - '@id': '#gaia_source_vbroad_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.vbroad'
+    name: gaia_source_vbroad_idx
+  - '@id': '#gaia_source_htm9_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.htm9'
+    name: gaia_source_htm9_idx
+  - '@id': '#gaia_source_nest4096_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.nest4096'
+    name: gaia_source_nest4096_idx
+  - '@id': '#gaia_source_random_index_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.random_index'
+    name: gaia_source_random_index_idx
+  - '@id': '#gaia_source_ring256_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.ring256'
+    name: gaia_source_ring256_idx
+  - '@id': '#gaia_source_designation_idx'
+    columns:
+    - '#gaia_dr3.gaia_source.designation'
+    name: gaia_source_designation_idx
+  name: gaia_source
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#gaia_dr3.astrophysical_parameters'
+  columns:
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspphot'
+    datatype: float
+    description: 'Effective temperature from GSP-Phot Aeneas best library using BP/RP
+      spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of effective temperature from GSP-
+      Phot Aeneas best library using BP/RP spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of effective temperature from GSP-Phot
+      Aeneas best library using BP/RP spectra (Temperature[K]) '
+    fits:tunit: K
+    name: teff_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot'
+    datatype: float
+    description: 'Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra '
+    name: logg_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of surface gravity from GSP-Phot Aeneas
+      best library using BP/RP spectra (GravitySurface[log cgs]) '
+    name: logg_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of surface gravity from GSP-Phot Aeneas
+      best library using BP/RP spectra (GravitySurface[log cgs]) '
+    name: logg_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot'
+    datatype: float
+    description: 'Iron abundance from GSP-Phot Aeneas best library using BP/RP spectra
+      (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of iron abundance from GSP-Phot Aeneas
+      best library using BP/RP spectra (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of iron abundance from GSP-Phot Aeneas
+      best library using BP/RP spectra (Abundances[dex]) '
+    fits:tunit: dex
+    name: mh_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot'
+    datatype: float
+    description: 'Distance from GSP-Phot Aeneas best library using BP/RP spectra (Length
+      & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of distance from GSP-Phot Aeneas best
+      library using BP/RP spectra (Length & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of distance from GSP-Phot Aeneas best
+      library using BP/RP spectra (Length & Distance[pc]) '
+    fits:tunit: pc
+    name: distance_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot'
+    datatype: float
+    description: 'Monochromatic extinction A0 at 547.7nm from GSP-Phot Aeneas best
+      library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of monochromatic extinction A0 at 547.7nm
+      from GSP-Phot Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of monochromatic extinction A0 at 547.7nm
+      from GSP-Phot Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: azero_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot'
+    datatype: float
+    description: 'Extinction in G band from GSP-Phot Aeneas best library using BP/RP
+      spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of extinction in G band from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of extinction in G band from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ag_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot'
+    datatype: float
+    description: 'Extinction in G_BP band from GSP-Phot Aeneas best library using
+      BP/RP spectra '
+    fits:tunit: mag
+    name: abp_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of extinction in G_BP band from GSP-
+      Phot Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: abp_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of extinction in G_BP band from GSP-Phot
+      Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: abp_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot'
+    datatype: float
+    description: 'Extinction in G_RP band from GSP-Phot Aeneas best library using
+      BP/RP spectra '
+    fits:tunit: mag
+    name: arp_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of extinction in G_RP band from GSP-
+      Phot Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: arp_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of extinction in G_RP band from GSP-Phot
+      Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: arp_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot'
+    datatype: float
+    description: 'Reddening E(G_BP - G_RP) from GSP-Phot Aeneas best library using
+      BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of reddening E(G_BP - G_RP) from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of reddening E(G_BP - G_RP) from GSP-Phot
+      Aeneas best library using BP/RP spectra (Magnitude[mag]) '
+    fits:tunit: mag
+    name: ebpminrp_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot'
+    datatype: float
+    description: 'Absolute magnitude M_G from GSP-Phot Aeneas best library using BP/RP
+      spectra '
+    fits:tunit: mag
+    name: mg_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of absolute magnitude M_G from GSP-
+      Phot Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: mg_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of absolute magnitude M_G from GSP-
+      Phot Aeneas best library using BP/RP spectra '
+    fits:tunit: mag
+    name: mg_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot'
+    datatype: float
+    description: 'Radius from GSP-Phot Aeneas best library using BP/RP spectra '
+    fits:tunit: R_sun
+    name: radius_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot_lower'
+    datatype: float
+    description: 'Lower confidence level (16%) of radius from GSP-Phot Aeneas best
+      library using BP/RP spectra '
+    fits:tunit: R_sun
+    name: radius_gspphot_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot_upper'
+    datatype: float
+    description: 'Upper confidence level (84%) of radius from GSP-Phot Aeneas best
+      library using BP/RP spectra '
+    fits:tunit: R_sun
+    name: radius_gspphot_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec'
+    datatype: float
+    description: 'Effective temperature from GSP-Spec MatisseGauguin using RVS spectra
+      and Monte Carlo realisations '
+    fits:tunit: K
+    name: teff_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec_lower'
+    datatype: float
+    description: '16th percentile of effective temperature from GSP-Spec MatisseGau-
+      guin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: K
+    name: teff_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec_upper'
+    datatype: float
+    description: '84th percentile of effective temperature from GSP-Spec MatisseGau-
+      guin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: K
+    name: teff_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec'
+    datatype: float
+    description: 'Logarithm of the stellar surface gravity from GSP-Spec MatisseGauguin
+      using RVS spectra and Monte Carlo realisations '
+    name: logg_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the logarithm of the stellar surface gravity
+      from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    name: logg_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the logarithm of the stellar surface gravity
+      from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    name: logg_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec'
+    datatype: float
+    description: 'Global metallicity [M/H] from GSP-Spec MatisseGauguin using RVS
+      spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: mh_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec_lower'
+    datatype: float
+    description: '16th percentile of global metallicity [M/H] from GSP-Spec Matis-
+      seGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: mh_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec_upper'
+    datatype: float
+    description: '84th percentile of global metallicity [M/H] from GSP-Spec MatisseGau-
+      guin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: mh_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec'
+    datatype: float
+    description: 'Abundance of alpha-elements [alpha/Fe] with respect to iron from
+      GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: alphafe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of alpha-elements [alpha/Fe] with
+      respect to iron from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo
+      realisations '
+    fits:tunit: dex
+    name: alphafe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of alpha-elements [alpha/Fe] with
+      respect to iron from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo
+      realisations '
+    fits:tunit: dex
+    name: alphafe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec'
+    datatype: float
+    description: 'Abundance of neutral iron [Fe/M] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in fem_gspspec_nlines '
+    fits:tunit: dex
+    name: fem_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of neutral iron [Fe/M] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: fem_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of neutral iron [Fe/M] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: fem_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Fe/M] abundance using N lines of the
+      element, given in fem_gspspec_nlines '
+    fits:tunit: dex
+    name: fem_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec'
+    datatype: float
+    description: 'Abundance of silicon [Si/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in sife_gspspec_nlines '
+    fits:tunit: dex
+    name: sife_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of silicon [Si/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: sife_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of silicon [Si/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: sife_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Si/Fe] abundance using N lines of the
+      element, given in sife_gspspec_nlines '
+    fits:tunit: dex
+    name: sife_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec'
+    datatype: float
+    description: 'Abundance of calcium [Ca/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in cafe_gspspec_nlines '
+    fits:tunit: dex
+    name: cafe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of calcium [Ca/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: cafe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of calcium [Ca/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: cafe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Ca/Fe] abundance using N lines of the
+      element, given in cafe_gspspec_nlines '
+    fits:tunit: dex
+    name: cafe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec'
+    datatype: float
+    description: 'Abundance of titanium [Ti/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in tife_gspspec_nlines '
+    fits:tunit: dex
+    name: tife_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of titanium [Ti/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: tife_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of titanium [Ti/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: tife_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Ti/Fe] abundance using N lines of the
+      element, given in tife_gspspec_nlines '
+    fits:tunit: dex
+    name: tife_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec'
+    datatype: float
+    description: 'Abundance of magnesium [Mg/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in mgfe_gspspec_nlines '
+    fits:tunit: dex
+    name: mgfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of magnesium [Mg/Fe] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: mgfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of magnesium [Mg/Fe] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: mgfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Mg/Fe] abundance using N lines of the
+      element, given in mgfe_gspspec_nlines '
+    fits:tunit: dex
+    name: mgfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec'
+    datatype: float
+    description: 'Abundance of neodymium [Nd/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in ndfe_gspspec_nlines '
+    fits:tunit: dex
+    name: ndfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of neodymium [Nd/Fe] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: ndfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of neodymium [Nd/Fe] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: ndfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Nd/Fe] abundance using N lines of the
+      element, given in ndfe_gspspec_nlines '
+    fits:tunit: dex
+    name: ndfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec'
+    datatype: float
+    description: 'Abundance of ionised iron [FeII/M] from GSP-Spec MatisseGauguin
+      using RVS spectra and Monte Carlo realisations, applied to the individual N
+      lines of the element, given in feiim_gspspec_nlines '
+    fits:tunit: dex
+    name: feiim_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of ionised iron [FeII/M] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: feiim_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of ionised iron [FeII/M] from GSP-
+      Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: feiim_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [FeII/M] abundance using N lines of the
+      element, given in feiim_gspspec_nlines '
+    fits:tunit: dex
+    name: feiim_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec'
+    datatype: float
+    description: 'Abundance of sulphur [S/Fe] from GSP-Spec MatisseGauguin using RVS
+      spectra and Monte Carlo realisations, applied to the individual N lines of the
+      element, given in sfe_gspspec_nlines '
+    fits:tunit: dex
+    name: sfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of sulphur [S/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: sfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of sulphur [S/Fe] from GSP-Spec
+      Ma- tisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: sfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [S/Fe] abundance using N lines of the
+      element, given in sfe_gspspec_nlines '
+    fits:tunit: dex
+    name: sfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec'
+    datatype: float
+    description: 'Abundance of zirconium [Zr/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in zrfe_gspspec_nlines '
+    fits:tunit: dex
+    name: zrfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of zirconium [Zr/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: zrfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of zirconium [Zr/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: zrfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Zr/Fe] abundance using N lines of the
+      element, given in zrfe_gspspec_nlines '
+    fits:tunit: dex
+    name: zrfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec'
+    datatype: float
+    description: 'Abundance of nitrogen [N/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in nfe_gspspec_nlines '
+    fits:tunit: dex
+    name: nfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of nitrogen [N/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: nfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of nitrogen [N/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: nfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [N/Fe] abundance using N lines of the
+      element, given in nfe_gspspec_nlines '
+    fits:tunit: dex
+    name: nfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec'
+    datatype: float
+    description: 'Abundance of chromium [Cr/Fe] from GSP-Spec MatisseGauguin using
+      RVS spectra and Monte Carlo realisations, applied to the individual N lines
+      of the element, given in crfe_gspspec_nlines '
+    fits:tunit: dex
+    name: crfe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of chromium [Cr/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: crfe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of chromium [Cr/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: crfe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Cr/Fe] abundance using N lines of the
+      element, given in crfe_gspspec_nlines '
+    fits:tunit: dex
+    name: crfe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec'
+    datatype: float
+    description: Abundance of cerium [Ce/Fe] from GSP-Spec MatisseGauguin using RVS
+      spectra and Monte Carlo realisations, applied to the individual N lines of the
+      element, given in cefe_gspspec_nlines
+    fits:tunit: dex
+    name: cefe_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of cerium [Ce/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: cefe_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of cerium [Ce/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: cefe_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_linescatter'
+    datatype: float
+    description: Uncertainty estimation of [Ce/Fe] abundance using N lines of the
+      element, given in cefe_gspspec_nlines
+    fits:tunit: dex
+    name: cefe_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec'
+    datatype: float
+    description: 'Abundance of nickel [Ni/Fe] from GSP-Spec MatisseGauguin using RVS
+      spectra and Monte Carlo realisations, applied to the individual N lines of the
+      element, given in nife_gspspec_nlines '
+    fits:tunit: dex
+    name: nife_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_lower'
+    datatype: float
+    description: '16th percentile of the abundance of nickel [Ni/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: nife_gspspec_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_upper'
+    datatype: float
+    description: '84th percentile of the abundance of nickel [Ni/Fe] from GSP-Spec
+      MatisseGauguin using RVS spectra and Monte Carlo realisations '
+    fits:tunit: dex
+    name: nife_gspspec_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_linescatter'
+    datatype: float
+    description: 'Uncertainty estimation of [Ni/Fe] abundance using N lines of the
+      element, given in nife_gspspec_nlines '
+    fits:tunit: dex
+    name: nife_gspspec_linescatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cn0ew_gspspec'
+    datatype: float
+    description: Equivalent width of cyanogen absorption line, derived from RVS spectra
+      (nm)
+    fits:tunit: nm
+    name: cn0ew_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cn0ew_gspspec_uncertainty'
+    datatype: float
+    description: Uncertainty of equivalent witdh of cyanogen absorption line, derived
+      from RVS spectra (nm)
+    fits:tunit: nm
+    name: cn0ew_gspspec_uncertainty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cn0_gspspec_centralline'
+    datatype: float
+    description: Central wavelength of cyanogen line, derived from RVS spectra using
+      DIB algorithm (nm)
+    fits:tunit: nm
+    name: cn0_gspspec_centralline
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cn0_gspspec_width'
+    datatype: float
+    description: Width of cyoanogen line, derived from RVS spectra using DIB algorithm
+      (nm)
+    fits:tunit: nm
+    name: cn0_gspspec_width
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dib_gspspec_lambda'
+    datatype: float
+    description: DIB central wavelength from GSP-Spec MatisseGauguin using RVS spectra
+      (nm)
+    fits:tunit: nm
+    name: dib_gspspec_lambda
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dib_gspspec_lambda_uncertainty'
+    datatype: float
+    description: Uncertainty on DIB central wavelength from GSP-Spec MatisseGauguin
+      using RVS spectra (nm)
+    fits:tunit: nm
+    name: dib_gspspec_lambda_uncertainty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibew_gspspec'
+    datatype: float
+    description: Equivalent width of the DIB from GSP-Spec MatisseGauguin using RVS
+      spectra (Angstrom)
+    fits:tunit: Angstrom
+    name: dibew_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibew_gspspec_uncertainty'
+    datatype: float
+    description: Global uncertainty on DIB equivalent width value using DIB algorithm
+      (Angstrom)
+    fits:tunit: Angstrom
+    name: dibew_gspspec_uncertainty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibewnoise_gspspec_uncertainty'
+    datatype: float
+    description: Uncertainty on DIB equivalent width value occuring from noise part
+      (Angstrom)
+    fits:tunit: Angstrom
+    name: dibewnoise_gspspec_uncertainty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibp0_gspspec'
+    datatype: float
+    description: 'Depth (p_0 parameter) of the DIB derived from a Gaussian model fit '
+    name: dibp0_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibp2_gspspec'
+    datatype: float
+    description: Width (p_2 parameter) of the DIB derived from a Gaussian model fit
+      (Angstrom)
+    fits:tunit: Angstrom
+    name: dibp2_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibp2_gspspec_uncertainty'
+    datatype: float
+    description: Uncertainty on the dibp2_gspspec parameter (Angstrom)
+    fits:tunit: Angstrom
+    name: dibp2_gspspec_uncertainty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.solution_id'
+    datatype: long
+    description: Solution Identifier. To decode a given solution ID visit https://gaia.esac.esa.int/decoder/solnDecoder.jsp
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.source_id'
+    datatype: long
+    description: Unique source identifier (unique within a particular Data Release)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_galaxy'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a galaxy (data used: BP/RP
+      spectrum, photometry, astrometry)'
+    name: classprob_dsc_combmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_quasar'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a quasar (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_star'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a single star (but not a white
+      dwarf) (data used: BP/RP spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_whitedwarf'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a white dwarf (data used:
+      BP/RP spectrum, photometry, astrometry)'
+    name: classprob_dsc_combmod_whitedwarf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_binarystar'
+    datatype: float
+    description: 'Probability from DSC-Combmod of being a bi- nary star (data used:
+      BP/RP spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_binarystar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_quasar'
+    datatype: float
+    description: 'Probability from DSC-Specmod of being a quasar (data used: BP/RP
+      spectrum) '
+    name: classprob_dsc_specmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_galaxy'
+    datatype: float
+    description: 'Probability from DSC-Specmod of being a galaxy (data used: BP/RP
+      spectrum) '
+    name: classprob_dsc_specmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_star'
+    datatype: float
+    description: 'Probability from DSC-Specmod of being a single star (but not a white
+      dwarf) (data used: BP/RP spectrum) '
+    name: classprob_dsc_specmod_star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_whitedwarf'
+    datatype: float
+    description: 'Probability from DSC-Specmod of being a white dwarf (data used:
+      BP/RP spectrum) '
+    name: classprob_dsc_specmod_whitedwarf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_binarystar'
+    datatype: float
+    description: 'Probability from DSC-Specmod of being a binary star (data used:
+      BP/RP spectrum) '
+    name: classprob_dsc_specmod_binarystar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_quasar'
+    datatype: float
+    description: 'Probability from DSC-Allosmod of being a quasar (data used: photometry,
+      astrometry) '
+    name: classprob_dsc_allosmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_galaxy'
+    datatype: float
+    description: 'Probability from DSC-Allosmod of being a galaxy (data used: photometry,
+      astrometry) '
+    name: classprob_dsc_allosmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_star'
+    datatype: float
+    description: 'Probability from DSC-Allosmod of being a star (data used: photometry,
+      astrometry) '
+    name: classprob_dsc_allosmod_star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.logposterior_gspphot'
+    datatype: float
+    description: 'Goodness-of-fit score (mean log-posterior of MCMC) of GSP-Phot Aeneas
+      MCMC best library '
+    name: logposterior_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mcmcaccept_gspphot'
+    datatype: float
+    description: 'MCMC acceptance rate of GSP-Phot Aeneas MCMC best library '
+    name: mcmcaccept_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Fe/M] abundance estimation '
+    name: fem_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Si/Fe] abundance estimation '
+    name: sife_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Ca/Fe] abundance estimation '
+    name: cafe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Ti/Fe] abundance estimation '
+    name: tife_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Mg/Fe] abundance estimation '
+    name: mgfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Nd/Fe] abundance estimation '
+    name: ndfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [FeII/M] abundance estimation '
+    name: feiim_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_nlines'
+    datatype: int
+    description: Number of lines used for [S/Fe] abundance estimation
+    name: sfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Zr/Fe] abundance estimation '
+    name: zrfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [N/Fe] abundance estimation '
+    name: nfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Cr/Fe] abundance estimation '
+    name: crfe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Ce/Fe] abundance estimation '
+    name: cefe_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_nlines'
+    datatype: int
+    description: 'Number of lines used for [Ni/Fe] abundance estimation '
+    name: nife_gspspec_nlines
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.dibqf_gspspec'
+    datatype: int
+    description: 'Quality flag of the DIB computation '
+    name: dibqf_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.flags_gspspec'
+    datatype: char
+    description: Catalogue flags for GSP-Spec MatisseGauguin
+    length: 1
+    name: flags_gspspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.astrophysical_parameters.libname_gspphot'
+    datatype: char
+    description: 'Name of library that achieves the highest mean log-posterior in
+      MCMC samples and was used to derive GSP-Phot parameters in this table '
+    length: 1
+    name: libname_gspphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: 1D astrophysical parameters produced by the Apsis processing chain
+    developed in Gaia DPAC CU8
+  indexes:
+  - '@id': '#astrophysical_parameters_teff_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.teff_gspphot'
+    name: astrophysical_parameters_teff_gspphot_idx
+  - '@id': '#astrophysical_parameters_logg_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.logg_gspphot'
+    name: astrophysical_parameters_logg_gspphot_idx
+  - '@id': '#astrophysical_parameters_mh_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.mh_gspphot'
+    name: astrophysical_parameters_mh_gspphot_idx
+  - '@id': '#astrophysical_parameters_distance_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.distance_gspphot'
+    name: astrophysical_parameters_distance_gspphot_idx
+  - '@id': '#astrophysical_parameters_azero_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.azero_gspphot'
+    name: astrophysical_parameters_azero_gspphot_idx
+  - '@id': '#astrophysical_parameters_ag_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.ag_gspphot'
+    name: astrophysical_parameters_ag_gspphot_idx
+  - '@id': '#astrophysical_parameters_abp_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.abp_gspphot'
+    name: astrophysical_parameters_abp_gspphot_idx
+  - '@id': '#astrophysical_parameters_arp_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.arp_gspphot'
+    name: astrophysical_parameters_arp_gspphot_idx
+  - '@id': '#astrophysical_parameters_ebpminrp_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot'
+    name: astrophysical_parameters_ebpminrp_gspphot_idx
+  - '@id': '#astrophysical_parameters_mg_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.mg_gspphot'
+    name: astrophysical_parameters_mg_gspphot_idx
+  - '@id': '#astrophysical_parameters_radius_gspphot_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.radius_gspphot'
+    name: astrophysical_parameters_radius_gspphot_idx
+  - '@id': '#astrophysical_parameters_teff_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.teff_gspspec'
+    name: astrophysical_parameters_teff_gspspec_idx
+  - '@id': '#astrophysical_parameters_logg_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.logg_gspspec'
+    name: astrophysical_parameters_logg_gspspec_idx
+  - '@id': '#astrophysical_parameters_mh_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.mh_gspspec'
+    name: astrophysical_parameters_mh_gspspec_idx
+  - '@id': '#astrophysical_parameters_alphafe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.alphafe_gspspec'
+    name: astrophysical_parameters_alphafe_gspspec_idx
+  - '@id': '#astrophysical_parameters_fem_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.fem_gspspec'
+    name: astrophysical_parameters_fem_gspspec_idx
+  - '@id': '#astrophysical_parameters_sife_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.sife_gspspec'
+    name: astrophysical_parameters_sife_gspspec_idx
+  - '@id': '#astrophysical_parameters_cafe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.cafe_gspspec'
+    name: astrophysical_parameters_cafe_gspspec_idx
+  - '@id': '#astrophysical_parameters_tife_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.tife_gspspec'
+    name: astrophysical_parameters_tife_gspspec_idx
+  - '@id': '#astrophysical_parameters_mgfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.mgfe_gspspec'
+    name: astrophysical_parameters_mgfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_ndfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.ndfe_gspspec'
+    name: astrophysical_parameters_ndfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_feiim_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.feiim_gspspec'
+    name: astrophysical_parameters_feiim_gspspec_idx
+  - '@id': '#astrophysical_parameters_sfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.sfe_gspspec'
+    name: astrophysical_parameters_sfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_zrfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.zrfe_gspspec'
+    name: astrophysical_parameters_zrfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_nfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.nfe_gspspec'
+    name: astrophysical_parameters_nfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_crfe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.crfe_gspspec'
+    name: astrophysical_parameters_crfe_gspspec_idx
+  - '@id': '#astrophysical_parameters_cefe_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.cefe_gspspec'
+    name: astrophysical_parameters_cefe_gspspec_idx
+  - '@id': '#astrophysical_parameters_nife_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.nife_gspspec'
+    name: astrophysical_parameters_nife_gspspec_idx
+  - '@id': '#astrophysical_parameters_cn0ew_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.cn0ew_gspspec'
+    name: astrophysical_parameters_cn0ew_gspspec_idx
+  - '@id': '#astrophysical_parameters_cn0_gspspec_centralline_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.cn0_gspspec_centralline'
+    name: astrophysical_parameters_cn0_gspspec_centralline_idx
+  - '@id': '#astrophysical_parameters_cn0_gspspec_width_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.cn0_gspspec_width'
+    name: astrophysical_parameters_cn0_gspspec_width_idx
+  - '@id': '#astrophysical_parameters_dib_gspspec_lambda_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.dib_gspspec_lambda'
+    name: astrophysical_parameters_dib_gspspec_lambda_idx
+  - '@id': '#astrophysical_parameters_dibew_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.dibew_gspspec'
+    name: astrophysical_parameters_dibew_gspspec_idx
+  - '@id': '#astrophysical_parameters_dibp0_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.dibp0_gspspec'
+    name: astrophysical_parameters_dibp0_gspspec_idx
+  - '@id': '#astrophysical_parameters_dibp2_gspspec_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.dibp2_gspspec'
+    name: astrophysical_parameters_dibp2_gspspec_idx
+  - '@id': '#astrophysical_parameters_solution_id_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.solution_id'
+    name: astrophysical_parameters_solution_id_idx
+  - '@id': '#astrophysical_parameters_source_id_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.source_id'
+    name: astrophysical_parameters_source_id_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_combmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_galaxy'
+    name: astrophysical_parameters_classprob_dsc_combmod_galaxy_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_combmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_quasar'
+    name: astrophysical_parameters_classprob_dsc_combmod_quasar_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_combmod_star_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_star'
+    name: astrophysical_parameters_classprob_dsc_combmod_star_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_combmod_whitedwarf_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_whitedwarf'
+    name: astrophysical_parameters_classprob_dsc_combmod_whitedwarf_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_combmod_binarystar_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_binarystar'
+    name: astrophysical_parameters_classprob_dsc_combmod_binarystar_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_specmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_quasar'
+    name: astrophysical_parameters_classprob_dsc_specmod_quasar_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_specmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_galaxy'
+    name: astrophysical_parameters_classprob_dsc_specmod_galaxy_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_specmod_star_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_star'
+    name: astrophysical_parameters_classprob_dsc_specmod_star_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_specmod_whitedwarf_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_whitedwarf'
+    name: astrophysical_parameters_classprob_dsc_specmod_whitedwarf_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_specmod_binarystar_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_binarystar'
+    name: astrophysical_parameters_classprob_dsc_specmod_binarystar_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_allosmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_quasar'
+    name: astrophysical_parameters_classprob_dsc_allosmod_quasar_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_allosmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_galaxy'
+    name: astrophysical_parameters_classprob_dsc_allosmod_galaxy_idx
+  - '@id': '#astrophysical_parameters_classprob_dsc_allosmod_star_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_star'
+    name: astrophysical_parameters_classprob_dsc_allosmod_star_idx
+  - '@id': '#astrophysical_parameters_random_id_idx'
+    columns:
+    - '#gaia_dr3.astrophysical_parameters.random_id'
+    name: astrophysical_parameters_random_id_idx
+  name: astrophysical_parameters
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#gaia_dr3.qso_candidates'
+  columns:
+  - '@id': '#gaia_dr3.qso_candidates.structure_function_index_scatter'
+    datatype: double
+    description: 'Standard deviation of the index of the structure function '
+    name: structure_function_index_scatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.vari_agn_membership_score'
+    datatype: double
+    description: 'Membership score (0=lowest,1=highest) of source to be of AGN type '
+    name: vari_agn_membership_score
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.intensity_quasar'
+    datatype: double
+    description: 'Light intensity at the center of the quasar as obtained by fitting
+      an exponential profile for the central quasar and a Sersic profile for the host
+      galaxy.  '
+    fits:tunit: electron/s
+    name: intensity_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.intensity_quasar_error'
+    datatype: double
+    description: 'Uncertainty on the light intensity at the center of the quasar as
+      obtained by fitting an exponential profile for the central quasar and a Sersic
+      profile for the host galaxy. '
+    fits:tunit: electron/s
+    name: intensity_quasar_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.intensity_hostgalaxy'
+    datatype: double
+    description: 'Light intensity at the center of the host galaxy as obtained by
+      fitting an exponential profile for the central quasar and a Sersic profile for
+      the host galaxy. '
+    fits:tunit: electron/s
+    name: intensity_hostgalaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.intensity_hostgalaxy_error'
+    datatype: double
+    description: 'Formal uncertainty on the light intensity of the host galaxy at
+      the effective radius as obtained by fitting an exponential profile for the central
+      quasar and a Sersic profile for the host galaxy. '
+    fits:tunit: electron/s
+    name: intensity_hostgalaxy_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.radius_hostgalaxy'
+    datatype: double
+    description: Effective radius containing half of the total luminosity of the Sersic
+      profile used to fit the host galaxy
+    fits:tunit: mas
+    name: radius_hostgalaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.radius_hostgalaxy_error'
+    datatype: double
+    description: 'Uncertainty on the effective radius containing half of the total
+      luminosity of the Sersic profile used to fit the host galaxy. '
+    fits:tunit: mas
+    name: radius_hostgalaxy_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.ellipticity_hostgalaxy'
+    datatype: double
+    description: 'Ellipticity (defined as 1-(b/a) where (b/a) is the axis ratio) of
+      the host galaxy obtained by the morphological fitting of a Sersic profile for
+      the host galaxy '
+    name: ellipticity_hostgalaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.ellipticity_hostgalaxy_error'
+    datatype: double
+    description: Formal uncertainty on the ellipticity of the host galaxy as obtained
+      by the morphological fitting of a Sersic profile.
+    name: ellipticity_hostgalaxy_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.posangle_hostgalaxy'
+    datatype: double
+    description: 'Position angle of the host galaxy obtained by the morphological
+      fitting of the Sersic profile with respect to Celestial North Pole. '
+    fits:tunit: deg
+    name: posangle_hostgalaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.posangle_hostgalaxy_error'
+    datatype: double
+    description: 'Formal uncertainty on the position angle of the host galaxy obtained
+      by the morphological fitting of the Sersic profile with respect to Celestial
+      North Pole. '
+    fits:tunit: deg
+    name: posangle_hostgalaxy_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.l2_norm'
+    datatype: double
+    description: 'This value represents the mean squared error between the integrated
+      flux of all observed samples (from the Sky Mapper and Astrometric Field) and
+      the integrated flux of synthetic samples produced with the fitted profile. '
+    name: l2_norm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.solution_id'
+    datatype: long
+    description: Solution identifier
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.source_id'
+    datatype: long
+    description: Unique source identifier (unique within a particular Data Release)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.flags_qsoc'
+    datatype: long
+    description: 'Processing flags for the analysis based on BP/RP Spectra from QSOC '
+    name: flags_qsoc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.n_transits'
+    datatype: short
+    description: 'The number of transits used to reconstruct the image and to analyse
+      the object morphology. '
+    name: n_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.source_selection_flags'
+    datatype: short
+    description: 'Bit indicative of whether the input data from a given module met
+      the source list eligibility criteria for the source of interest. '
+    name: source_selection_flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.vari_best_class_score'
+    datatype: double
+    description: 'It describes a quantity between 0 and 1 which is related to the
+      (median) normalised rank of the confidence of the classifier(s) in the identification
+      of the best class (vari_best_class_name). In the special case of class EP, all
+      scores are set to 1. '
+    name: vari_best_class_score
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.fractional_variability_g'
+    datatype: double
+    description: 'Fractional variability in the G band '
+    name: fractional_variability_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.structure_function_index'
+    datatype: double
+    description: 'Index of the first-order structure function in the G band '
+    name: structure_function_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.qso_variability'
+    datatype: double
+    description: Quasar variability metric in the G band
+    name: qso_variability
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.non_qso_variability'
+    datatype: double
+    description: 'Non-quasar variability metric in the G band '
+    name: non_qso_variability
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.classprob_dsc_combmod_quasar'
+    datatype: double
+    description: 'Probability from DSC-Combmod of being a quasar (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.classprob_dsc_combmod_galaxy'
+    datatype: double
+    description: 'Probability from DSC-Combmod of being a galaxy (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.redshift_qsoc'
+    datatype: double
+    description: The redshift of the source estimated from the analysis of the BP/RP
+      spectra by the QSOC Apsis module
+    name: redshift_qsoc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.redshift_qsoc_lower'
+    datatype: double
+    description: Lower confidence level of the redshift estimate based on the BP/RP
+      spectra analysis. This is the 16th percentile of the PDF over redshift as computed
+      by QSOC
+    name: redshift_qsoc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.redshift_qsoc_upper'
+    datatype: double
+    description: 'Upper confidence level of the redshift estimate based on the BP/RP
+      spectra analysis. This is the 84th percentile of the PDF over redshift as computed
+      by QSOC '
+    name: redshift_qsoc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.ccfratio_qsoc'
+    datatype: double
+    description: 'Value of the cross-correlation function used to derive the redshift
+      from QSOC, relative to the maximum value '
+    name: ccfratio_qsoc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.zscore_qsoc'
+    datatype: double
+    description: Redshift zscore from QSOC
+    name: zscore_qsoc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.sersic_index'
+    datatype: double
+    description: 'Sersic index as obtained by fitting a Sersic profile for the host
+      galaxy. The Sersic profile is a mathematical function that describes how the
+      intensity of a galaxy varies with the distance from its center. The Sersic index
+      describes how steep is this variation. '
+    name: sersic_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.sersic_index_error'
+    datatype: double
+    description: 'Formal uncertainty on sersic_index. '
+    name: sersic_index_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.astrometric_selection_flag'
+    datatype: short
+    description: 'This flag indicates whether the source is part of the astrometric
+      selection of the qso_candidates table that was constructed based on the principles
+      originally that were used to select the sources defining the Gaia-CRF3 and published
+      in agn_cross_id. See also Klioner et al. (2021). '
+    name: astrometric_selection_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.gaia_crf_source'
+    datatype: short
+    description: This boolean flag indicates whether the source is part of the Gaia-CRF3,
+      which is published through agn_cross_id. See also Klioner et al. (2021).
+    name: gaia_crf_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.host_galaxy_detected'
+    datatype: short
+    description: 'Flag indicating the presence of a detectable host galaxy. False
+      means that no host galaxy could be detected, while True means that a measurable
+      host galaxy was detected around the quasar. '
+    name: host_galaxy_detected
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.host_galaxy_flag'
+    datatype: int
+    description: 'This flag provides information about the processing or scientific
+      quality of the results of the Quasar morphology analysis chain for the source
+      of interest. '
+    name: host_galaxy_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.vari_best_class_name'
+    datatype: char
+    description: 'Best class name with corresponding classification score in best_class_score.
+      For the n_transits:5+ classifier in DR3, the following classes are published:
+      ACV|CP|MCP|ROAM|ROAP, ACYG, AGN, BCEP, BE|GCAS|SDOR|WR, CEP, CV, DSCT|GDOR|SXPHE,
+      ECL, ELL, EP, LPV, MICROLENSING, RCB, RR, RS, S, SDB, SN, SOLAR_LIKE, SPB, SYST,
+      WD, and YSO. The GALAXY classifications are largely due to artificial variability.'
+    length: 1
+    name: vari_best_class_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.classlabel_dsc'
+    datatype: char
+    description: Class assigned by DSC based on the probability from its Combmod classifier
+    length: 1
+    name: classlabel_dsc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.classlabel_dsc_joint'
+    datatype: char
+    description: 'Class assigned by DSC based on the probability from its Specmod
+      and Allosmod classifiers '
+    length: 1
+    name: classlabel_dsc_joint
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.classlabel_oa'
+    datatype: char
+    description: Class label of the neuron that represents the source, as assigned
+      by the OA module in Apsis
+    length: 1
+    name: classlabel_oa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.qso_candidates.morph_params_corr_vec'
+    datatype: char
+    description: 'Vector form of the upper triangle of the correlation matrix for
+      the fitted morphological parameters '
+    length: 1
+    name: morph_params_corr_vec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table contains parameters derived from various modules dedicated
+    to the classification and characterisation of sources considered as QSO candidates.
+    Together with those, the QSOs used to define the Gaia-CRF3 are also listed in
+    this table.
+  indexes:
+  - '@id': '#qso_candidates_intensity_quasar_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.intensity_quasar'
+    name: qso_candidates_intensity_quasar_idx
+  - '@id': '#qso_candidates_intensity_hostgalaxy_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.intensity_hostgalaxy'
+    name: qso_candidates_intensity_hostgalaxy_idx
+  - '@id': '#qso_candidates_radius_hostgalaxy_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.radius_hostgalaxy'
+    name: qso_candidates_radius_hostgalaxy_idx
+  - '@id': '#qso_candidates_ellipticity_hostgalaxy_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.ellipticity_hostgalaxy'
+    name: qso_candidates_ellipticity_hostgalaxy_idx
+  - '@id': '#qso_candidates_posangle_hostgalaxy_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.posangle_hostgalaxy'
+    name: qso_candidates_posangle_hostgalaxy_idx
+  - '@id': '#qso_candidates_source_id_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.source_id'
+    name: qso_candidates_source_id_idx
+  - '@id': '#qso_candidates_structure_function_index_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.structure_function_index'
+    name: qso_candidates_structure_function_index_idx
+  - '@id': '#qso_candidates_qso_variability_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.qso_variability'
+    name: qso_candidates_qso_variability_idx
+  - '@id': '#qso_candidates_non_qso_variability_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.non_qso_variability'
+    name: qso_candidates_non_qso_variability_idx
+  - '@id': '#qso_candidates_classprob_dsc_combmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.classprob_dsc_combmod_quasar'
+    name: qso_candidates_classprob_dsc_combmod_quasar_idx
+  - '@id': '#qso_candidates_classprob_dsc_combmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.classprob_dsc_combmod_galaxy'
+    name: qso_candidates_classprob_dsc_combmod_galaxy_idx
+  - '@id': '#qso_candidates_redshift_qsoc_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.redshift_qsoc'
+    name: qso_candidates_redshift_qsoc_idx
+  - '@id': '#qso_candidates_sersic_index_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.sersic_index'
+    name: qso_candidates_sersic_index_idx
+  - '@id': '#qso_candidates_random_id_idx'
+    columns:
+    - '#gaia_dr3.qso_candidates.random_id'
+    name: qso_candidates_random_id_idx
+  name: qso_candidates
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#gaia_dr3.galaxy_candidates'
+  columns:
+  - '@id': '#gaia_dr3.galaxy_candidates.posangle_sersic'
+    datatype: float
+    description: 'Position angle of the source for fitted Sersic profile with respect
+      to Celestial North Pole '
+    fits:tunit: deg
+    name: posangle_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.posangle_sersic_error'
+    datatype: float
+    description: 'Uncertainty in the position angle of source with respect to Celestial
+      North Pole for the Sersic profile. '
+    fits:tunit: deg
+    name: posangle_sersic_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.intensity_sersic'
+    datatype: double
+    description: 'Intensity of the source at the fitted effective radius (radius_sersic)
+      for the Sersic profile. '
+    fits:tunit: electron/s
+    name: intensity_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.intensity_sersic_error'
+    datatype: double
+    description: 'Uncertainty of the light intensity at the fitted effective radius
+      (radius_sersic) of the source for the Sersic profile. '
+    fits:tunit: electron/s
+    name: intensity_sersic_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.radius_sersic'
+    datatype: double
+    description: Effective radius containing half of the total luminosity of the source
+      bulge as obtained by morphological fitting for the Sersic profile
+    fits:tunit: mas
+    name: radius_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.radius_sersic_error'
+    datatype: double
+    description: 'Uncertainty in the effective radius containing half of the total
+      luminosity of the source for the Sersic profile. '
+    fits:tunit: mas
+    name: radius_sersic_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_sersic'
+    datatype: float
+    description: 'Ellipticity (defined as 1-(b/a) where b/a is the axis ratio) of
+      the source for the Sersic profile. '
+    name: ellipticity_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_sersic_error'
+    datatype: float
+    description: 'Uncertainty in the ellipticity (defined as 1-(b/a) where b/a is
+      the axis ratio) of the source for the Sersic profile. '
+    name: ellipticity_sersic_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.l2_sersic'
+    datatype: double
+    description: 'This value represents the mean squared error between the integrated
+      flux of all observed samples (from the Sky Mapper and Astrometric Field) and
+      the integrated flux of synthetic samples produced with the fitted profile. '
+    name: l2_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.posangle_de_vaucouleurs'
+    datatype: float
+    description: 'Position angle of the source for fitted de Vaucouleurs profile with
+      respect to Celestial North Pole. '
+    fits:tunit: deg
+    name: posangle_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.posangle_de_vaucouleurs_error'
+    datatype: float
+    description: 'Uncertainty in the position angle of source with respect to Celestial
+      North Pole for the de Vaucouleurs profile. '
+    fits:tunit: deg
+    name: posangle_de_vaucouleurs_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.intensity_de_vaucouleurs'
+    datatype: double
+    description: 'Intensity of the source at the fitted effective radius (radius_de_vaucouleurs)
+      for the de Vaucouleurs profile. '
+    fits:tunit: electron/s
+    name: intensity_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.intensity_de_vaucouleurs_error'
+    datatype: double
+    description: 'Uncertainty of the light intensity at the fitted effective radius
+      (radius_de_vaucouleurs) of the source for the de Vaucouleurs profile. '
+    fits:tunit: electron/s
+    name: intensity_de_vaucouleurs_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.radius_de_vaucouleurs'
+    datatype: double
+    description: 'Effective radius containing half of the total luminosity of the
+      source bulge as obtained by morphological fitting for the de Vaucouleurs profile. '
+    fits:tunit: mas
+    name: radius_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.radius_de_vaucouleurs_error'
+    datatype: double
+    description: 'Uncertainty in the effective radius containing half of the total
+      luminosity of the source for the de Vaucouleurs profile. '
+    fits:tunit: mas
+    name: radius_de_vaucouleurs_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_de_vaucouleurs'
+    datatype: float
+    description: 'Ellipticity (defined as 1-(b/a) where b/a is the axis ratio) of
+      the source for the de Vaucouleurs profile. '
+    name: ellipticity_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_de_vaucouleurs_error'
+    datatype: float
+    description: 'Uncertainty in the ellipticity (defined as 1-(b/a) where b/a is
+      the axis ratio) of the source for the de Vaucouleurs profile. '
+    name: ellipticity_de_vaucouleurs_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.l2_de_vaucouleurs'
+    datatype: double
+    description: 'This value represents the mean squared error between the integrated
+      flux of all observed samples (from the Sky Mapper and Astrometric Field) and
+      the integrated flux of synthetic samples produced with the fitted profile. '
+    name: l2_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.solution_id'
+    datatype: long
+    description: Solution identifier
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.source_id'
+    datatype: long
+    description: Unique source identifier (unique within a particular Data Release)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.n_transits'
+    datatype: short
+    description: 'The number of transits used to reconstruct the image and to analyse
+      the object morphology '
+    name: n_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.source_selection_flags'
+    datatype: short
+    description: 'Bit indicative of whether the input data from a given module met
+      the source list eligibility criteria for the source of interest. '
+    name: source_selection_flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.vari_best_class_score'
+    datatype: double
+    description: 'It describes a quantity between 0 and 1 which is related to the
+      (median) normalised rank of the confidence of the classifier(s) in the identification
+      of the best class (vari_best_class_name). In the special case of class EP, all
+      scores are set to 1. '
+    name: vari_best_class_score
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.classprob_dsc_combmod_galaxy'
+    datatype: double
+    description: 'Probability from DSC-Combmod of being a galaxy (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_galaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.classprob_dsc_combmod_quasar'
+    datatype: double
+    description: 'Probability from DSC-Combmod of being a quasar (data used: BP/RP
+      spectrum, photometry, astrometry) '
+    name: classprob_dsc_combmod_quasar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.redshift_ugc'
+    datatype: float
+    description: 'The redshift of the source treated as a galaxy by the Apsis module
+      UGC. The redshift is estimated from the sampled mean BP/RP spectrum applying
+      a regression model based on Support Vector Machines (SVM), a supervised machine
+      learning algorithm. '
+    name: redshift_ugc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.redshift_ugc_lower'
+    datatype: double
+    description: 'Redshift prediction lower limit from UGC '
+    name: redshift_ugc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.redshift_ugc_upper'
+    datatype: double
+    description: 'Redshift prediction upper limit from UGC '
+    name: redshift_ugc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.n_sersic'
+    datatype: double
+    description: 'Sersic index for the Sersic profile. The Sersic profile is a mathematical
+      function that describes how the intensity of a galaxy varies with the distance
+      from its center. The Sersic index describes how steep this variation is. '
+    name: n_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.n_sersic_error'
+    datatype: double
+    description: 'Uncertainty in the Sersic index for the Sersic profile. '
+    name: n_sersic_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.flags_sersic'
+    datatype: float
+    description: 'Flag indicative of processing or scientific quality for the morphological
+      parameters fitting for the Sersic Profile '
+    name: flags_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.flags_de_vaucouleurs'
+    datatype: float
+    description: 'This flag provides information about the processing or scientific
+      quality of the results of the Galaxy morphology analysis chain for the source
+      of interest for the de Vaucouleurs Profile. '
+    name: flags_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.vari_best_class_name'
+    datatype: char
+    description: 'Best class name with corresponding classification score in best_class_score.
+      For the n_transits:5+ classifier in DR3, the following classes are published:
+      ACV|CP|MCP|ROAM|ROAP, ACYG, AGN, BCEP, BE|GCAS|SDOR|WR, CEP, CV, DSCT|GDOR|SXPHE,
+      ECL, ELL, EP, LPV, MICROLENSING, RCB, RR, RS, S, SDB, SN, SOLAR_LIKE, SPB, SYST,
+      WD, and YSO. The GALAXY classifications are largely due to artificial variability.'
+    length: 1
+    name: vari_best_class_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.classlabel_dsc'
+    datatype: char
+    description: Class assigned by DSC based on the probability from its Combmod classifier
+    length: 1
+    name: classlabel_dsc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.classlabel_dsc_joint'
+    datatype: char
+    description: 'Class assigned by DSC based on the probability from its Specmod
+      and Allosmod classifiers '
+    length: 1
+    name: classlabel_dsc_joint
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.classlabel_oa'
+    datatype: char
+    description: Class label of the neuron that represents the source, as assigned
+      by the OA module in Apsis
+    length: 1
+    name: classlabel_oa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.morph_params_corr_vec_sersic'
+    datatype: char
+    description: 'Vector form of the upper triangle of the correlation matrix for
+      the fitted parameters for the Sersic Profile '
+    length: 1
+    name: morph_params_corr_vec_sersic
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr3.galaxy_candidates.morph_params_corr_vec_de_vaucouleurs'
+    datatype: char
+    description: 'Vector form of the upper triangle of the correlation matrix for
+      the fitted parameters for the de Vaucouleurs Profile '
+    length: 1
+    name: morph_params_corr_vec_de_vaucouleurs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table contains parameters derived from various modules dedicated
+    to the classification and characterisation of sources considered as galaxy candidates.
+  indexes:
+  - '@id': '#galaxy_candidates_posangle_sersic_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.posangle_sersic'
+    name: galaxy_candidates_posangle_sersic_idx
+  - '@id': '#galaxy_candidates_intensity_sersic_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.intensity_sersic'
+    name: galaxy_candidates_intensity_sersic_idx
+  - '@id': '#galaxy_candidates_radius_sersic_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.radius_sersic'
+    name: galaxy_candidates_radius_sersic_idx
+  - '@id': '#galaxy_candidates_ellipticity_sersic_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.ellipticity_sersic'
+    name: galaxy_candidates_ellipticity_sersic_idx
+  - '@id': '#galaxy_candidates_posangle_de_vaucouleurs_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.posangle_de_vaucouleurs'
+    name: galaxy_candidates_posangle_de_vaucouleurs_idx
+  - '@id': '#galaxy_candidates_intensity_de_vaucouleurs_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.intensity_de_vaucouleurs'
+    name: galaxy_candidates_intensity_de_vaucouleurs_idx
+  - '@id': '#galaxy_candidates_radius_de_vaucouleurs_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.radius_de_vaucouleurs'
+    name: galaxy_candidates_radius_de_vaucouleurs_idx
+  - '@id': '#galaxy_candidates_ellipticity_de_vaucouleurs_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.ellipticity_de_vaucouleurs'
+    name: galaxy_candidates_ellipticity_de_vaucouleurs_idx
+  - '@id': '#galaxy_candidates_solution_id_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.solution_id'
+    name: galaxy_candidates_solution_id_idx
+  - '@id': '#galaxy_candidates_source_id_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.source_id'
+    name: galaxy_candidates_source_id_idx
+  - '@id': '#galaxy_candidates_classprob_dsc_combmod_galaxy_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.classprob_dsc_combmod_galaxy'
+    name: galaxy_candidates_classprob_dsc_combmod_galaxy_idx
+  - '@id': '#galaxy_candidates_classprob_dsc_combmod_quasar_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.classprob_dsc_combmod_quasar'
+    name: galaxy_candidates_classprob_dsc_combmod_quasar_idx
+  - '@id': '#galaxy_candidates_redshift_ugc_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.redshift_ugc'
+    name: galaxy_candidates_redshift_ugc_idx
+  - '@id': '#galaxy_candidates_n_sersic_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.n_sersic'
+    name: galaxy_candidates_n_sersic_idx
+  - '@id': '#galaxy_candidates_random_id_idx'
+    columns:
+    - '#gaia_dr3.galaxy_candidates.random_id'
+    name: galaxy_candidates_random_id_idx
+  name: galaxy_candidates
+  primaryKey: ''
+  tap:table_index: 4
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

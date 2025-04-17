@@ -1,0 +1,502 @@
+---
+'@id': '#unwise_dr1'
+description: unWISE DR1 band-merged catalog
+name: unwise_dr1
+tables:
+- '@id': '#unwise_dr1.object'
+  columns:
+  - '@id': '#unwise_dr1.object.x_w1'
+    datatype: double
+    description: W1 channel x coordinate (pix)
+    name: x_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.x_w2'
+    datatype: double
+    description: W2 channel x coordinate (pix)
+    name: x_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.y_w1'
+    datatype: double
+    description: W1 channel y coordinate (pix)
+    name: y_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.y_w2'
+    datatype: double
+    description: W2 channel y coordinate (pix)
+    name: y_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.ra12_w1'
+    datatype: double
+    description: Positions from individual-image catalogs
+    name: ra12_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.ra12_w2'
+    datatype: double
+    description: Positions from individual-image catalogs
+    name: ra12_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dec12_w1'
+    datatype: double
+    description: Positions from individual-image catalogs
+    name: dec12_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dec12_w2'
+    datatype: double
+    description: Positions from individual-image catalogs
+    name: dec12_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.ra'
+    datatype: double
+    description: W1 position, if available; otherwise W2 position
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dec'
+    datatype: double
+    description: W1 position, if available; otherwise W2 position
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.glon'
+    datatype: double
+    description: Galactic Longitude
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.glat'
+    datatype: double
+    description: Galactic Latitude
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.elon'
+    datatype: double
+    description: Ecliptic Longitude
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.elat'
+    datatype: double
+    description: Ecliptic Latitude
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flux_w1'
+    datatype: float
+    description: W1 flux (Vega nMgy)
+    name: flux_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flux_w2'
+    datatype: float
+    description: W2 flux (Vega nMgy)
+    name: flux_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dx_w1'
+    datatype: float
+    description: uncertainty in W1 x position
+    name: dx_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dx_w2'
+    datatype: float
+    description: uncertainty in W2 x position
+    name: dx_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dy_w1'
+    datatype: float
+    description: uncertainty in W1 y position
+    name: dy_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dy_w2'
+    datatype: float
+    description: uncertainty in W2 y position
+    name: dy_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dflux_w1'
+    datatype: float
+    description: uncertainty in W1 flux (statistical only)
+    name: dflux_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dflux_w2'
+    datatype: float
+    description: uncertainty in W2 flux (statistical only)
+    name: dflux_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.qf_w1'
+    datatype: float
+    description: quality factor for W1
+    name: qf_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.qf_w2'
+    datatype: float
+    description: quality factor for W2
+    name: qf_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.rchi2_w1'
+    datatype: float
+    description: average X^2 per pixel, weighted by PSF, for W1
+    name: rchi2_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.rchi2_w2'
+    datatype: float
+    description: average X^2 per pixel, weighted by PSF, for W2
+    name: rchi2_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fracflux_w1'
+    datatype: float
+    description: fraction of W1 flux in this objects PSF that comes from this object
+    name: fracflux_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fracflux_w2'
+    datatype: float
+    description: fraction of W2 flux in this objects PSF that comes from this object
+    name: fracflux_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fluxlbs_w1'
+    datatype: float
+    description: local-background-subtracted flux (Vega nMgy) in W1
+    name: fluxlbs_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fluxlbs_w2'
+    datatype: float
+    description: local-background-subtracted flux (Vega nMgy) in W2
+    name: fluxlbs_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dfluxlbs_w1'
+    datatype: float
+    description: uncertainty in local-background-subtracted flux in W1
+    name: dfluxlbs_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dfluxlbs_w2'
+    datatype: float
+    description: uncertainty in local-background-subtracted flux in W2
+    name: dfluxlbs_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fwhm_w1'
+    datatype: float
+    description: full-width at half-maximum of PSF (pixels) in W1
+    name: fwhm_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.fwhm_w2'
+    datatype: float
+    description: full-width at half-maximum of PSF (pixels) in W2
+    name: fwhm_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.spread_model_w1'
+    datatype: float
+    description: SExtractor spread_model parameter for W1
+    name: spread_model_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.spread_model_w2'
+    datatype: float
+    description: SExtractor spread_model parameter for W2
+    name: spread_model_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dspread_model_w1'
+    datatype: float
+    description: uncertainty in spread_model for W1
+    name: dspread_model_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.dspread_model_w2'
+    datatype: float
+    description: uncertainty in spread_model for W2
+    name: dspread_model_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.sky_w1'
+    datatype: float
+    description: sky (Vega nMgy) in W1
+    name: sky_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.sky_w2'
+    datatype: float
+    description: sky (Vega nMgy) in W2
+    name: sky_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.mag_w1_vg'
+    datatype: float
+    description: W1 magnitude [Vega]
+    name: mag_w1_vg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.mag_w2_vg'
+    datatype: float
+    description: W2 magnitude [Vega]
+    name: mag_w2_vg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.w1_w2_vg'
+    datatype: float
+    description: W1-W2 color [Vega]
+    name: w1_w2_vg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.nm_w1'
+    datatype: short
+    description: number of single-exposure W1 images of this part of sky in coadd
+    name: nm_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.nm_w2'
+    datatype: short
+    description: number of single-exposure W2 images of this part of sky in coadd
+    name: nm_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.primary12_w1'
+    datatype: short
+    description: the center of this source is in the primary region of its coadd (i2
+      for 2 digit integer)
+    name: primary12_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.primary12_w2'
+    datatype: short
+    description: the center of this source is in the primary region of its coadd (i2
+      for 2 digit integer)
+    name: primary12_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flags_unwise_w1'
+    datatype: short
+    description: unWISE Coadd Flags flags at central pixel for W1
+    name: flags_unwise_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flags_unwise_w2'
+    datatype: short
+    description: unWISE Coadd Flags flags at central pixel for W2
+    name: flags_unwise_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flags_info_w1'
+    datatype: short
+    description: additional informational flags at central pixel for W1
+    name: flags_info_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.flags_info_w2'
+    datatype: short
+    description: additional informational flags at central pixel for W2
+    name: flags_info_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.primary'
+    datatype: short
+    description: the center of this source is in the primary region of its coadd
+    name: primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.coadd_id'
+    datatype: string
+    description: Unique astrometric footprint string encoding the tile central (RA,
+      Dec) coordinates. For example, the tile centered at (RA, Dec) = (130.04,-18.17)
+      has coadd_id = 1300m182.
+    length: 8
+    name: coadd_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.unwise_detid_w1'
+    datatype: string
+    description: unique ID
+    length: 18
+    name: unwise_detid_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.unwise_detid_w2'
+    datatype: string
+    description: unique ID
+    length: 18
+    name: unwise_detid_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#unwise_dr1.object.unwise_objid'
+    datatype: string
+    description: unique object id
+    ivoa:ucd: meta.id;meta.main
+    length: 16
+    name: unwise_objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Most columns in the unWISE band-merged catalogs are identical to the
+    individual-image catalogs, and include W1 and W2 measurements of a source.
+  indexes:
+  - '@id': '#object_ra_idx'
+    columns:
+    - '#unwise_dr1.object.ra'
+    name: object_ra_idx
+  - '@id': '#object_dec_idx'
+    columns:
+    - '#unwise_dr1.object.dec'
+    name: object_dec_idx
+  - '@id': '#object_glon_idx'
+    columns:
+    - '#unwise_dr1.object.glon'
+    name: object_glon_idx
+  - '@id': '#object_glat_idx'
+    columns:
+    - '#unwise_dr1.object.glat'
+    name: object_glat_idx
+  - '@id': '#object_elon_idx'
+    columns:
+    - '#unwise_dr1.object.elon'
+    name: object_elon_idx
+  - '@id': '#object_elat_idx'
+    columns:
+    - '#unwise_dr1.object.elat'
+    name: object_elat_idx
+  - '@id': '#object_htm9_idx'
+    columns:
+    - '#unwise_dr1.object.htm9'
+    name: object_htm9_idx
+  - '@id': '#object_ring256_idx'
+    columns:
+    - '#unwise_dr1.object.ring256'
+    name: object_ring256_idx
+  - '@id': '#object_nest4096_idx'
+    columns:
+    - '#unwise_dr1.object.nest4096'
+    name: object_nest4096_idx
+  - '@id': '#object_mag_w1_vg_idx'
+    columns:
+    - '#unwise_dr1.object.mag_w1_vg'
+    name: object_mag_w1_vg_idx
+  - '@id': '#object_mag_w2_vg_idx'
+    columns:
+    - '#unwise_dr1.object.mag_w2_vg'
+    name: object_mag_w2_vg_idx
+  - '@id': '#object_random_id_idx'
+    columns:
+    - '#unwise_dr1.object.random_id'
+    name: object_random_id_idx
+  - '@id': '#object_unwise_objid_idx'
+    columns:
+    - '#unwise_dr1.object.unwise_objid'
+    name: object_unwise_objid_idx
+  name: object
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

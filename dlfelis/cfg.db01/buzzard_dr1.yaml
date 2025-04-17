@@ -1,0 +1,1026 @@
+---
+'@id': '#buzzard_dr1'
+description: Buzzard Data Release 1
+name: buzzard_dr1
+tables:
+- '@id': '#buzzard_dr1.main'
+  columns:
+  - '@id': '#buzzard_dr1.main.px'
+    datatype: double
+    description: Comoving position X coordinate [Mpc/h]
+    fits:tunit: Mpc/h
+    name: px
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.py'
+    datatype: double
+    description: Comoving position Y coordinate [Mpc/h]
+    fits:tunit: Mpc/h
+    name: py
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.pz'
+    datatype: double
+    description: Comoving position Z coordinate [Mpc/h]
+    fits:tunit: Mpc/h
+    name: pz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.vx'
+    datatype: double
+    description: Physical velocity X coordinate [km/s]
+    fits:tunit: km/s
+    name: vx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.vy'
+    datatype: double
+    description: Physical velocity Y coordinate [km/s]
+    fits:tunit: km/s
+    name: vy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.vz'
+    datatype: double
+    description: Physical velocity Z coordinate [km/s]
+    fits:tunit: km/s
+    name: vz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.z_cos'
+    datatype: double
+    description: Cosmological redshift
+    name: z_cos
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.z'
+    datatype: double
+    description: Redshift including RSD
+    name: z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.absmag_r'
+    datatype: double
+    description: SDSS r-band absolute magnitude [mag]
+    fits:tunit: mag
+    name: absmag_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.m200'
+    datatype: double
+    description: M_200 of host halo [M_sun/h]
+    fits:tunit: M_sun/h
+    name: m200
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.r200'
+    datatype: double
+    description: R_200 of host halo [Mpc/h]
+    fits:tunit: Mpc/h
+    name: r200
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.rhalo'
+    datatype: double
+    description: Distance to nearest halo [Mpc/h]
+    fits:tunit: Mpc/h
+    name: rhalo
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tsize'
+    datatype: double
+    description: Unlensed half light radius [arcsec]
+    fits:tunit: arcsec
+    name: tsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.te1'
+    datatype: double
+    description: Unlensed ellipticity along local RA direction
+    name: te1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.te2'
+    datatype: double
+    description: Unlensed ellipticity along local DEC direction
+    name: te2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tra'
+    datatype: double
+    description: Unlensed RA [deg]
+    fits:tunit: degree
+    name: tra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tdec'
+    datatype: double
+    description: Unlensed dec [deg]
+    fits:tunit: degree
+    name: tdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.epsilon1'
+    datatype: double
+    description: Lensed ellipticities along local RA direction
+    name: epsilon1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.epsilon2'
+    datatype: double
+    description: Lensed ellipticities along local DEC direction
+    name: epsilon2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.size'
+    datatype: double
+    description: Lensed half light radius [arcsec]
+    fits:tunit: arcsec
+    name: size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.kappa'
+    datatype: double
+    description: Weak lensing convergence
+    name: kappa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.mu'
+    datatype: double
+    description: Weak lensing magnification
+    name: mu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.w'
+    datatype: double
+    description: Weak lensing rotation
+    name: w
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.gamma1'
+    datatype: double
+    description: True gravitational shear along local RA direction
+    name: gamma1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.gamma2'
+    datatype: double
+    description: True gravitational shear along local DEC direction
+    name: gamma2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.dec'
+    datatype: double
+    description: Lensed DEC [deg]
+    fits:tunit: degree
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.ra'
+    datatype: double
+    description: Lensed RA [deg]
+    fits:tunit: degree
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_u'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM u band [mag]
+    fits:tunit: mag
+    name: tmag_decam_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_g'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM g band [mag]
+    fits:tunit: mag
+    name: tmag_decam_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_r'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM r band [mag]
+    fits:tunit: mag
+    name: tmag_decam_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_i'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM i band [mag]
+    fits:tunit: mag
+    name: tmag_decam_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_z'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM z band [mag]
+    fits:tunit: mag
+    name: tmag_decam_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_decam_y'
+    datatype: float
+    description: Noiseless unlensed apparent mag in DECAM Y band [mag]
+    fits:tunit: mag
+    name: tmag_decam_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_vista_z'
+    datatype: float
+    description: Noiseless unlensed apparent mag in VISTA Z band [mag]
+    fits:tunit: mag
+    name: tmag_vista_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_vista_y'
+    datatype: float
+    description: Noiseless unlensed apparent mag in VISTA Y band [mag]
+    fits:tunit: mag
+    name: tmag_vista_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_vista_j'
+    datatype: float
+    description: Noiseless unlensed apparent mag in VISTA J band [mag]
+    fits:tunit: mag
+    name: tmag_vista_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_vista_h'
+    datatype: float
+    description: Noiseless unlensed apparent mag in VISTA H band [mag]
+    fits:tunit: mag
+    name: tmag_vista_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_vista_ks'
+    datatype: float
+    description: Noiseless unlensed apparent mag in VISTA Ks band [mag]
+    fits:tunit: mag
+    name: tmag_vista_ks
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_u'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST u band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_g'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST g band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_r'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST r band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_i'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST i band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_z'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST z band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_rubin_y'
+    datatype: float
+    description: Noiseless unlensed apparent mag in Rubin LSST Y band [mag]
+    fits:tunit: mag
+    name: tmag_rubin_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_roman_y'
+    datatype: float
+    description: Noiseless unlensed apparent mag in ROMAN Y band [mag]
+    fits:tunit: mag
+    name: tmag_roman_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_roman_j'
+    datatype: float
+    description: Noiseless unlensed apparent mag in ROMAN J band [mag]
+    fits:tunit: mag
+    name: tmag_roman_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_roman_h'
+    datatype: float
+    description: Noiseless unlensed apparent mag in ROMAN H band [mag]
+    fits:tunit: mag
+    name: tmag_roman_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_roman_k'
+    datatype: float
+    description: Noiseless unlensed apparent mag in ROMAN K band [mag]
+    fits:tunit: mag
+    name: tmag_roman_k
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_wise_w1'
+    datatype: float
+    description: Noiseless unlensed apparent mag in WISE W1 band [mag]
+    fits:tunit: mag
+    name: tmag_wise_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.tmag_wise_w2'
+    datatype: float
+    description: Noiseless unlensed apparent mag in WISE W2 band [mag]
+    fits:tunit: mag
+    name: tmag_wise_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_u'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM u band [mag]
+    fits:tunit: mag
+    name: lmag_decam_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_g'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM g band [mag]
+    fits:tunit: mag
+    name: lmag_decam_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_r'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM r band [mag]
+    fits:tunit: mag
+    name: lmag_decam_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_i'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM i band [mag]
+    fits:tunit: mag
+    name: lmag_decam_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_z'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM z band [mag]
+    fits:tunit: mag
+    name: lmag_decam_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_decam_y'
+    datatype: float
+    description: Noiseless lensed apparent mag in DECAM Y band [mag]
+    fits:tunit: mag
+    name: lmag_decam_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_vista_z'
+    datatype: float
+    description: Noiseless lensed apparent mag in VISTA Z band [mag]
+    fits:tunit: mag
+    name: lmag_vista_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_vista_y'
+    datatype: float
+    description: Noiseless lensed apparent mag in VISTA Y band [mag]
+    fits:tunit: mag
+    name: lmag_vista_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_vista_j'
+    datatype: float
+    description: Noiseless lensed apparent mag in VISTA J band [mag]
+    fits:tunit: mag
+    name: lmag_vista_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_vista_h'
+    datatype: float
+    description: Noiseless lensed apparent mag in VISTA H band [mag]
+    fits:tunit: mag
+    name: lmag_vista_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_vista_ks'
+    datatype: float
+    description: Noiseless lensed apparent mag in VISTA Ks band [mag]
+    fits:tunit: mag
+    name: lmag_vista_ks
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_u'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST u band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_g'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST g band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_r'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST r band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_i'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST i band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_z'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST z band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_rubin_y'
+    datatype: float
+    description: Noiseless lensed apparent mag in Rubin LSST Y band [mag]
+    fits:tunit: mag
+    name: lmag_rubin_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_roman_y'
+    datatype: float
+    description: Noiseless lensed apparent mag in ROMAN Y band [mag]
+    fits:tunit: mag
+    name: lmag_roman_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_roman_j'
+    datatype: float
+    description: Noiseless lensed apparent mag in ROMAN J band [mag]
+    fits:tunit: mag
+    name: lmag_roman_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_roman_h'
+    datatype: float
+    description: Noiseless lensed apparent mag in ROMAN H band [mag]
+    fits:tunit: mag
+    name: lmag_roman_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_roman_k'
+    datatype: float
+    description: Noiseless lensed apparent mag in ROMAN K band [mag]
+    fits:tunit: mag
+    name: lmag_roman_k
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_wise_w1'
+    datatype: float
+    description: Noiseless lensed apparent mag in WISE W1 band [mag]
+    fits:tunit: mag
+    name: lmag_wise_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.lmag_wise_w2'
+    datatype: float
+    description: Noiseless lensed apparent mag in WISE W2 band [mag]
+    fits:tunit: mag
+    name: lmag_wise_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_u'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM u band [mag]
+    fits:tunit: mag
+    name: amag_decam_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_g'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM g band [mag]
+    fits:tunit: mag
+    name: amag_decam_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_r'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM r band [mag]
+    fits:tunit: mag
+    name: amag_decam_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_i'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM i band [mag]
+    fits:tunit: mag
+    name: amag_decam_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_z'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM z band [mag]
+    fits:tunit: mag
+    name: amag_decam_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_decam_y'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in DECAM Y band [mag]
+    fits:tunit: mag
+    name: amag_decam_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_vista_z'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in VISTA Z band [mag]
+    fits:tunit: mag
+    name: amag_vista_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_vista_y'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in VISTA Y band [mag]
+    fits:tunit: mag
+    name: amag_vista_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_vista_j'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in VISTA J band [mag]
+    fits:tunit: mag
+    name: amag_vista_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_vista_h'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in VISTA H band [mag]
+    fits:tunit: mag
+    name: amag_vista_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_vista_ks'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in VISTA Ks band [mag]
+    fits:tunit: mag
+    name: amag_vista_ks
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_u'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST u band [mag]
+    fits:tunit: mag
+    name: amag_rubin_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_g'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST g band [mag]
+    fits:tunit: mag
+    name: amag_rubin_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_r'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST r band [mag]
+    fits:tunit: mag
+    name: amag_rubin_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_i'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST i band [mag]
+    fits:tunit: mag
+    name: amag_rubin_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_z'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST z band [mag]
+    fits:tunit: mag
+    name: amag_rubin_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_rubin_y'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in Rubin LSST Y band [mag]
+    fits:tunit: mag
+    name: amag_rubin_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_roman_y'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in ROMAN Y band [mag]
+    fits:tunit: mag
+    name: amag_roman_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_roman_j'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in ROMAN J band [mag]
+    fits:tunit: mag
+    name: amag_roman_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_roman_h'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in ROMAN H band [mag]
+    fits:tunit: mag
+    name: amag_roman_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_roman_k'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in ROMAN K band [mag]
+    fits:tunit: mag
+    name: amag_roman_k
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_wise_w1'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in WISE W1 band [mag]
+    fits:tunit: mag
+    name: amag_wise_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.amag_wise_w2'
+    datatype: float
+    description: Noiseless unlensed rest frame absolute mag in WISE W2 band [mag]
+    fits:tunit: mag
+    name: amag_wise_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: degree
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: degree
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: degree
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: degree
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.haloid'
+    datatype: long
+    description: Halo id of host halo
+    name: haloid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.sedid'
+    datatype: long
+    description: SDSS training set index for SED assigned to galaxy
+    name: sedid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.id'
+    datatype: double
+    description: Unique galaxy ID
+    ivoa:ucd: meta.id;meta.main
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#buzzard_dr1.main.central'
+    datatype: short
+    description: True for central galaxies
+    name: central
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Main table
+  indexes:
+  - '@id': '#main_vx_idx'
+    columns:
+    - '#buzzard_dr1.main.vx'
+    name: main_vx_idx
+  - '@id': '#main_vy_idx'
+    columns:
+    - '#buzzard_dr1.main.vy'
+    name: main_vy_idx
+  - '@id': '#main_vz_idx'
+    columns:
+    - '#buzzard_dr1.main.vz'
+    name: main_vz_idx
+  - '@id': '#main_z_cos_idx'
+    columns:
+    - '#buzzard_dr1.main.z_cos'
+    name: main_z_cos_idx
+  - '@id': '#main_z_idx'
+    columns:
+    - '#buzzard_dr1.main.z'
+    name: main_z_idx
+  - '@id': '#main_absmag_r_idx'
+    columns:
+    - '#buzzard_dr1.main.absmag_r'
+    name: main_absmag_r_idx
+  - '@id': '#main_dec_idx'
+    columns:
+    - '#buzzard_dr1.main.dec'
+    name: main_dec_idx
+  - '@id': '#main_ra_idx'
+    columns:
+    - '#buzzard_dr1.main.ra'
+    name: main_ra_idx
+  - '@id': '#main_lmag_decam_u_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_u'
+    name: main_lmag_decam_u_idx
+  - '@id': '#main_lmag_decam_g_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_g'
+    name: main_lmag_decam_g_idx
+  - '@id': '#main_lmag_decam_r_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_r'
+    name: main_lmag_decam_r_idx
+  - '@id': '#main_lmag_decam_i_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_i'
+    name: main_lmag_decam_i_idx
+  - '@id': '#main_lmag_decam_z_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_z'
+    name: main_lmag_decam_z_idx
+  - '@id': '#main_lmag_decam_y_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_decam_y'
+    name: main_lmag_decam_y_idx
+  - '@id': '#main_lmag_vista_z_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_vista_z'
+    name: main_lmag_vista_z_idx
+  - '@id': '#main_lmag_vista_y_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_vista_y'
+    name: main_lmag_vista_y_idx
+  - '@id': '#main_lmag_vista_j_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_vista_j'
+    name: main_lmag_vista_j_idx
+  - '@id': '#main_lmag_vista_h_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_vista_h'
+    name: main_lmag_vista_h_idx
+  - '@id': '#main_lmag_vista_ks_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_vista_ks'
+    name: main_lmag_vista_ks_idx
+  - '@id': '#main_lmag_rubin_u_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_u'
+    name: main_lmag_rubin_u_idx
+  - '@id': '#main_lmag_rubin_g_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_g'
+    name: main_lmag_rubin_g_idx
+  - '@id': '#main_lmag_rubin_r_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_r'
+    name: main_lmag_rubin_r_idx
+  - '@id': '#main_lmag_rubin_i_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_i'
+    name: main_lmag_rubin_i_idx
+  - '@id': '#main_lmag_rubin_z_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_z'
+    name: main_lmag_rubin_z_idx
+  - '@id': '#main_lmag_rubin_y_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_rubin_y'
+    name: main_lmag_rubin_y_idx
+  - '@id': '#main_lmag_roman_y_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_roman_y'
+    name: main_lmag_roman_y_idx
+  - '@id': '#main_lmag_roman_j_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_roman_j'
+    name: main_lmag_roman_j_idx
+  - '@id': '#main_lmag_roman_h_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_roman_h'
+    name: main_lmag_roman_h_idx
+  - '@id': '#main_lmag_roman_k_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_roman_k'
+    name: main_lmag_roman_k_idx
+  - '@id': '#main_lmag_wise_w1_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_wise_w1'
+    name: main_lmag_wise_w1_idx
+  - '@id': '#main_lmag_wise_w2_idx'
+    columns:
+    - '#buzzard_dr1.main.lmag_wise_w2'
+    name: main_lmag_wise_w2_idx
+  - '@id': '#main_glon_idx'
+    columns:
+    - '#buzzard_dr1.main.glon'
+    name: main_glon_idx
+  - '@id': '#main_glat_idx'
+    columns:
+    - '#buzzard_dr1.main.glat'
+    name: main_glat_idx
+  - '@id': '#main_elon_idx'
+    columns:
+    - '#buzzard_dr1.main.elon'
+    name: main_elon_idx
+  - '@id': '#main_elat_idx'
+    columns:
+    - '#buzzard_dr1.main.elat'
+    name: main_elat_idx
+  - '@id': '#main_id_idx'
+    columns:
+    - '#buzzard_dr1.main.id'
+    name: main_id_idx
+  - '@id': '#main_random_id_idx'
+    columns:
+    - '#buzzard_dr1.main.random_id'
+    name: main_random_id_idx
+  - '@id': '#main_htm9_idx'
+    columns:
+    - '#buzzard_dr1.main.htm9'
+    name: main_htm9_idx
+  - '@id': '#main_ring256_idx'
+    columns:
+    - '#buzzard_dr1.main.ring256'
+    name: main_ring256_idx
+  - '@id': '#main_nest4096_idx'
+    columns:
+    - '#buzzard_dr1.main.nest4096'
+    name: main_nest4096_idx
+  name: main
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

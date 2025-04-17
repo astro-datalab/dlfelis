@@ -1,0 +1,469 @@
+---
+'@id': '#pgir_dr1'
+description: Palomar Gattini-IR Data Release 1 of near-IR, J-band photometry that
+  covers the first ~4 years of the survey operation with a cadence of a few days and
+  sensitivity of around J ~ 15.
+name: pgir_dr1
+tables:
+- '@id': '#pgir_dr1.sources'
+  columns:
+  - '@id': '#pgir_dr1.sources.tmcra'
+    datatype: float
+    description: 2MASS right ascension of source
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: tmcra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.tmcdec'
+    datatype: float
+    description: 2MASS declination of source
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: tmcdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.pts_key'
+    datatype: float
+    description: 2MASS ID number of source
+    name: pts_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.tmcjmag'
+    datatype: float
+    description: 2MASS J-band magnitude
+    name: tmcjmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.tmchmag'
+    datatype: float
+    description: 2MASS H-band magnitude
+    name: tmchmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.psfcontam'
+    datatype: int
+    description: Number of other sources within the sources PGIR PSF aperture
+    name: psfcontam
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.meanmag'
+    datatype: float
+    description: Mean magnitude of all PGIR exposures of source
+    name: meanmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.maxmag'
+    datatype: float
+    description: Maximum magnitude of all PGIR exposures of source
+    name: maxmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.minmag'
+    datatype: float
+    description: Minimum magnitude of all PGIR exposures of source
+    name: minmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.rmsmag'
+    datatype: float
+    description: Magnitude RMS of all PGIR exposurs of source
+    name: rmsmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.htm9'
+    datatype: int
+    description: HTM index (order 9=>~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256=>~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme=>~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.sources.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Metadata and statistical moments of photometry for each 2MASS source
+  indexes:
+  - '@id': '#sources_tmcra_idx'
+    columns:
+    - '#pgir_dr1.sources.tmcra'
+    name: sources_tmcra_idx
+  - '@id': '#sources_tmcdec_idx'
+    columns:
+    - '#pgir_dr1.sources.tmcdec'
+    name: sources_tmcdec_idx
+  - '@id': '#sources_pts_key_idx'
+    columns:
+    - '#pgir_dr1.sources.pts_key'
+    name: sources_pts_key_idx
+  - '@id': '#sources_tmcjmag_idx'
+    columns:
+    - '#pgir_dr1.sources.tmcjmag'
+    name: sources_tmcjmag_idx
+  - '@id': '#sources_tmchmag_idx'
+    columns:
+    - '#pgir_dr1.sources.tmchmag'
+    name: sources_tmchmag_idx
+  - '@id': '#sources_meanmag_idx'
+    columns:
+    - '#pgir_dr1.sources.meanmag'
+    name: sources_meanmag_idx
+  - '@id': '#sources_rmsmag_idx'
+    columns:
+    - '#pgir_dr1.sources.rmsmag'
+    name: sources_rmsmag_idx
+  - '@id': '#sources_htm9_idx'
+    columns:
+    - '#pgir_dr1.sources.htm9'
+    name: sources_htm9_idx
+  - '@id': '#sources_ring256_idx'
+    columns:
+    - '#pgir_dr1.sources.ring256'
+    name: sources_ring256_idx
+  - '@id': '#sources_nest4096_idx'
+    columns:
+    - '#pgir_dr1.sources.nest4096'
+    name: sources_nest4096_idx
+  - '@id': '#sources_elon_idx'
+    columns:
+    - '#pgir_dr1.sources.elon'
+    name: sources_elon_idx
+  - '@id': '#sources_elat_idx'
+    columns:
+    - '#pgir_dr1.sources.elat'
+    name: sources_elat_idx
+  - '@id': '#sources_glon_idx'
+    columns:
+    - '#pgir_dr1.sources.glon'
+    name: sources_glon_idx
+  - '@id': '#sources_glat_idx'
+    columns:
+    - '#pgir_dr1.sources.glat'
+    name: sources_glat_idx
+  - '@id': '#sources_random_id_idx'
+    columns:
+    - '#pgir_dr1.sources.random_id'
+    name: sources_random_id_idx
+  name: sources
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#pgir_dr1.photometry'
+  columns:
+  - '@id': '#pgir_dr1.photometry.stackquadid'
+    datatype: int
+    description: Exposure identification
+    ivoa:ucd: meta.id;meta.main
+    name: stackquadid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.obsjd'
+    datatype: float
+    description: Julian date of exposure start
+    name: obsjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.pts_key'
+    datatype: int
+    description: 2MASS ID number of source
+    ivoa:ucd: meta.id;meta.main
+    name: pts_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.magpsf'
+    datatype: float
+    description: J-band magnitude of PGIR exposure of source
+    name: magpsf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.magpsferr'
+    datatype: float
+    description: Image noise magnitude error of PGIR exposure of source
+    name: magpsferr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.magpsfstaterr'
+    datatype: float
+    description: Statistical magnitude error of PGIR exposure of source
+    name: magpsfstaterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.magpsflim'
+    datatype: float
+    description: Maximum error value to yield signal-to-noise of < 3
+    name: magpsflim
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.flags'
+    datatype: int
+    description: Bit-value of the flags of exposure of source
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.photometry.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Individual photometric measurements for each source in the catalog
+  indexes:
+  - '@id': '#photometry_stackquadid_idx'
+    columns:
+    - '#pgir_dr1.photometry.stackquadid'
+    name: photometry_stackquadid_idx
+  - '@id': '#photometry_obsjd_idx'
+    columns:
+    - '#pgir_dr1.photometry.obsjd'
+    name: photometry_obsjd_idx
+  - '@id': '#photometry_pts_key_idx'
+    columns:
+    - '#pgir_dr1.photometry.pts_key'
+    name: photometry_pts_key_idx
+  - '@id': '#photometry_magpsf_idx'
+    columns:
+    - '#pgir_dr1.photometry.magpsf'
+    name: photometry_magpsf_idx
+  - '@id': '#photometry_magpsferr_idx'
+    columns:
+    - '#pgir_dr1.photometry.magpsferr'
+    name: photometry_magpsferr_idx
+  - '@id': '#photometry_magpsfstaterr_idx'
+    columns:
+    - '#pgir_dr1.photometry.magpsfstaterr'
+    name: photometry_magpsfstaterr_idx
+  - '@id': '#photometry_flags_idx'
+    columns:
+    - '#pgir_dr1.photometry.flags'
+    name: photometry_flags_idx
+  - '@id': '#photometry_random_id_idx'
+    columns:
+    - '#pgir_dr1.photometry.random_id'
+    name: photometry_random_id_idx
+  name: photometry
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#pgir_dr1.exposures'
+  columns:
+  - '@id': '#pgir_dr1.exposures.stackquadid'
+    datatype: int
+    description: Exposure identification
+    ivoa:ucd: meta.id;meta.main
+    name: stackquadid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.obsjd'
+    datatype: float
+    description: Julian date of exposure start
+    name: obsjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.exptime'
+    datatype: float
+    description: Total exposure time in seconds
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.airmass'
+    datatype: float
+    description: Airmass value of exposure
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.zp'
+    datatype: float
+    description: Zero point magnitude of exposure
+    name: zp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.zp_std'
+    datatype: float
+    description: Zero point RMS
+    name: zp_std
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.zp_unc'
+    datatype: float
+    description: Zero point uncertainty
+    name: zp_unc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.limmag'
+    datatype: float
+    description: Averaged 5-sigma limiting magnitude of image
+    name: limmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.color_term'
+    datatype: float
+    description: Color term to correct for J-H color
+    name: color_term
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.color_unc'
+    datatype: float
+    description: Uncertainty in J-H color term
+    name: color_unc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.saturmag'
+    datatype: float
+    description: Saturation magnitude for exposure
+    name: saturmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.numnoisepixels'
+    datatype: float
+    description: Effective footprint of PSF in number of pixels
+    name: numnoisepixels
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.mside'
+    datatype: char
+    description: East or West, side of meridian of exposure
+    length: 4
+    name: mside
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.nightid'
+    datatype: int
+    description: Night ID number of exposure
+    name: nightid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.filename'
+    datatype: string
+    description: File name of image
+    length: 71
+    name: filename
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#pgir_dr1.exposures.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Metadata of each exposure included in the catalog
+  indexes:
+  - '@id': '#exposures_stackquadid_idx'
+    columns:
+    - '#pgir_dr1.exposures.stackquadid'
+    name: exposures_stackquadid_idx
+  - '@id': '#exposures_obsjd_idx'
+    columns:
+    - '#pgir_dr1.exposures.obsjd'
+    name: exposures_obsjd_idx
+  - '@id': '#exposures_limmag_idx'
+    columns:
+    - '#pgir_dr1.exposures.limmag'
+    name: exposures_limmag_idx
+  - '@id': '#exposures_color_term_idx'
+    columns:
+    - '#pgir_dr1.exposures.color_term'
+    name: exposures_color_term_idx
+  - '@id': '#exposures_color_unc_idx'
+    columns:
+    - '#pgir_dr1.exposures.color_unc'
+    name: exposures_color_unc_idx
+  - '@id': '#exposures_nightid_idx'
+    columns:
+    - '#pgir_dr1.exposures.nightid'
+    name: exposures_nightid_idx
+  - '@id': '#exposures_random_id_idx'
+    columns:
+    - '#pgir_dr1.exposures.random_id'
+    name: exposures_random_id_idx
+  name: exposures
+  primaryKey: ''
+  tap:table_index: 3
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

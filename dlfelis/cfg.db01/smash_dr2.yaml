@@ -1,0 +1,3345 @@
+---
+'@id': '#smash_dr2'
+description: SMASH Data Release 2
+name: smash_dr2
+tables:
+- '@id': '#smash_dr2.chip'
+  columns:
+  - '@id': '#smash_dr2.chip.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.chipid'
+    datatype: char
+    description: Unique chip image name, e.g. 00123451_10
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 2
+    name: chipid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.fieldid'
+    datatype: short
+    description: SMASH Field ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: fieldid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.photred_field'
+    datatype: char
+    description: Short field name for the PHOTRED reduction
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 2
+    name: photred_field
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.file'
+    datatype: char
+    description: Filename for this chip
+    fits:tunit: ''
+    length: 19
+    name: file
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.expnum'
+    datatype: char
+    description: Eight-digit exposure number
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 8
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.chip'
+    datatype: short
+    description: Chip number (1-62)
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: chip
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.base'
+    datatype: char
+    description: Base of all files for this chip
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 14
+    name: base
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.exptime'
+    datatype: float
+    description: Exposure time in seconds
+    fits:tunit: s
+    ivoa:ucd: time.duration
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.filter'
+    datatype: char
+    description: Filter, u, g, r, i, or z
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dateobs'
+    datatype: char
+    description: 'Observation timestamp: YYYY-MM-DDTHH:MM:SS.SSSSSS'
+    fits:tunit: ''
+    ivoa:ucd: time.epoch
+    length: 26
+    name: dateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.mjd'
+    datatype: double
+    description: Observation Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.airmass'
+    datatype: float
+    description: Airmass
+    fits:tunit: ''
+    ivoa:ucd: obs.airMass
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.gain'
+    datatype: float
+    description: Gain, electrons/ADU
+    fits:tunit: electron/adu
+    name: gain
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.rdnoise'
+    datatype: float
+    description: Read noise, electrons
+    fits:tunit: electron
+    ivoa:ucd: instr.det.noise
+    name: rdnoise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.nx'
+    datatype: int
+    description: Number of pixels in X-dimension
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nx
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ny'
+    datatype: int
+    description: Number of pixels in Y-dimension
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ny
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.wcstype'
+    datatype: char
+    description: WCS type, always TPV
+    fits:tunit: ''
+    ivoa:ucd: pos.wcs.ctype
+    length: 3
+    name: wcstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.pixscale'
+    datatype: float
+    description: Arcsec per pixel
+    fits:tunit: arcsec
+    name: pixscale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ra'
+    datatype: double
+    description: Right ascension at center of chip (in degrees)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dec'
+    datatype: double
+    description: Declination at center of chip (in degrees)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.wcsrms'
+    datatype: float
+    description: RMS in WCS fit with respect to reference catalog in arcsec
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: wcsrms
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.gaiawcsrms'
+    datatype: float
+    description: The RMS of the residuals using the GAIA DR1 reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: gaiawcsrms
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.gaiawcsnmatch'
+    datatype: int
+    description: GAIA DR1 matches used for the astrometric fitting
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: gaiawcsnmatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.fwhm'
+    datatype: float
+    description: FWHM of PSF (i.e. seeing) in pixels (multiply by 0.26 to get arcsec)
+    fits:tunit: pixel
+    ivoa:ucd: instr.det.psf
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.skymode'
+    datatype: float
+    description: Median sky background level
+    fits:tunit: count
+    ivoa:ucd: instr.skyLevel
+    name: skymode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.skysig'
+    datatype: float
+    description: Sigma in sky background
+    fits:tunit: count
+    ivoa:ucd: stat.error
+    name: skysig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_nsources'
+    datatype: int
+    description: Total number of DAOPHOT/ALLSTAR sources in chip
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: dao_nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_depth'
+    datatype: float
+    description: ALLSTAR depth (peak of the source histogram), instrumental mags
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: dao_depth
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_npsfstars'
+    datatype: int
+    description: Number of stars used to construct PSF
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: dao_npsfstars
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_psftype'
+    datatype: char
+    description: Analytical function type for DAOPHOT PSF
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    length: 8
+    name: dao_psftype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_psfboxsize'
+    datatype: int
+    description: PSF box size in pixels
+    fits:tunit: pixel
+    ivoa:ucd: meta.number
+    name: dao_psfboxsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_psfvarorder'
+    datatype: int
+    description: Spatial PSF variations, -1 to 2
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: dao_psfvarorder
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.dao_psfchi'
+    datatype: float
+    description: DAOPHOT PSF chi goodness-of-fit value
+    fits:tunit: ''
+    ivoa:ucd: stat.fit.chi2
+    name: dao_psfchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.alf_nsources'
+    datatype: int
+    description: Total number of DAOPHOT/ALLFRAME sources
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: alf_nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.alf_depth'
+    datatype: float
+    description: Median ALLFRAME depth, instrumental mags
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: alf_depth
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.apcor'
+    datatype: float
+    description: Aperture correction
+    fits:tunit: mag
+    name: apcor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ebv'
+    datatype: float
+    description: Median SFD E(B-V) for this chip
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.refexpnum'
+    datatype: char
+    description: Exposure number for the reference frame
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 8
+    name: refexpnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_ra1'
+    datatype: double
+    description: First RA value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_ra2'
+    datatype: double
+    description: Second RA value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_ra3'
+    datatype: double
+    description: Third RA value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_ra4'
+    datatype: double
+    description: Fourth RA value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_dec1'
+    datatype: double
+    description: First DEC value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_dec2'
+    datatype: double
+    description: Second DEC value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_dec3'
+    datatype: double
+    description: Third DEC value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.vertex_dec4'
+    datatype: double
+    description: Fourth DEC value for the four corners of the chip
+    fits:tunit: deg
+    name: vertex_dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.nsrc'
+    datatype: int
+    description: Number of sources in SOURCE table for this chip
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nsrc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calibrated'
+    datatype: short
+    description: Is this chip calibrated or not
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: calibrated
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ubercal_magoffset'
+    datatype: float
+    description: The magnitude offset applied from the ubercal algorithm
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: ubercal_magoffset
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.ubercal_flag'
+    datatype: short
+    description: 'Ubercal flag: 0-none, 1-good, 2-med exp+chip, 3-med exp+std chip'
+    fits:tunit: ''
+    ivoa:ucd: stat.error;phot.mag
+    name: ubercal_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.zpcalib_magoffset'
+    datatype: float
+    description: The zero-point offset used for this chip
+    fits:tunit: mag
+    ivoa:ucd: phot.calib;phot.mag
+    name: zpcalib_magoffset
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.zpcalib_magofferr'
+    datatype: float
+    description: The uncertainty in the zero-point offset
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zpcalib_magofferr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.zpcalibflag'
+    datatype: short
+    description: 'ZP calib type: 1-phot DECam, 2-overlap, 3-0.9m, 4-GAIA relations'
+    fits:tunit: ''
+    ivoa:ucd: meta.code;phot.mag
+    name: zpcalibflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.photometric'
+    datatype: short
+    description: Is this from a photometric night
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: photometric
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.badsoln'
+    datatype: short
+    description: Did we have a good transformation equation/solution for these data
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: badsoln
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_band'
+    datatype: char
+    description: Transformation equation band name
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 1
+    name: calib_band
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_colband'
+    datatype: char
+    description: Transformation equation band name to construct the color
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 1
+    name: calib_colband
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_colsign'
+    datatype: short
+    description: 'Trans. eqn. sign: 1 - color=band-colband; -1 - color=colband-band'
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: calib_colsign
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_zpterm'
+    datatype: float
+    description: Transformation equation zeropoint term
+    fits:tunit: mag
+    ivoa:ucd: phot.calib
+    name: calib_zpterm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_zptermsig'
+    datatype: float
+    description: Transformation equation uncertainty in zeropoint term
+    fits:tunit: mag
+    ivoa:ucd: stat.error
+    name: calib_zptermsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_amterm'
+    datatype: float
+    description: Transformation equation airmass/extinction term
+    fits:tunit: mag
+    ivoa:ucd: obs.atmos.extinction
+    name: calib_amterm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_amtermsig'
+    datatype: float
+    description: Transformation equation uncertainty in airmass/extinction term
+    fits:tunit: mag
+    ivoa:ucd: stat.error
+    name: calib_amtermsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_colterm'
+    datatype: float
+    description: Transformation equation color term
+    fits:tunit: ''
+    ivoa:ucd: stat.param
+    name: calib_colterm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.chip.calib_coltermsig'
+    datatype: float
+    description: Sigma of color term in calibration
+    name: calib_coltermsig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Info on each chip in the frame
+  indexes:
+  - '@id': '#chip_glon_idx'
+    columns:
+    - '#smash_dr2.chip.glon'
+    name: chip_glon_idx
+  - '@id': '#chip_glat_idx'
+    columns:
+    - '#smash_dr2.chip.glat'
+    name: chip_glat_idx
+  - '@id': '#chip_elon_idx'
+    columns:
+    - '#smash_dr2.chip.elon'
+    name: chip_elon_idx
+  - '@id': '#chip_elat_idx'
+    columns:
+    - '#smash_dr2.chip.elat'
+    name: chip_elat_idx
+  - '@id': '#chip_ring256_idx'
+    columns:
+    - '#smash_dr2.chip.ring256'
+    name: chip_ring256_idx
+  - '@id': '#chip_htm9_idx'
+    columns:
+    - '#smash_dr2.chip.htm9'
+    name: chip_htm9_idx
+  - '@id': '#chip_nest4096_idx'
+    columns:
+    - '#smash_dr2.chip.nest4096'
+    name: chip_nest4096_idx
+  - '@id': '#chip_chipid_idx'
+    columns:
+    - '#smash_dr2.chip.chipid'
+    name: chip_chipid_idx
+  - '@id': '#chip_fieldid_idx'
+    columns:
+    - '#smash_dr2.chip.fieldid'
+    name: chip_fieldid_idx
+  - '@id': '#chip_expnum_idx'
+    columns:
+    - '#smash_dr2.chip.expnum'
+    name: chip_expnum_idx
+  - '@id': '#chip_chip_idx'
+    columns:
+    - '#smash_dr2.chip.chip'
+    name: chip_chip_idx
+  - '@id': '#chip_exptime_idx'
+    columns:
+    - '#smash_dr2.chip.exptime'
+    name: chip_exptime_idx
+  - '@id': '#chip_filter_idx'
+    columns:
+    - '#smash_dr2.chip.filter'
+    name: chip_filter_idx
+  - '@id': '#chip_mjd_idx'
+    columns:
+    - '#smash_dr2.chip.mjd'
+    name: chip_mjd_idx
+  - '@id': '#chip_ra_idx'
+    columns:
+    - '#smash_dr2.chip.ra'
+    name: chip_ra_idx
+  - '@id': '#chip_dec_idx'
+    columns:
+    - '#smash_dr2.chip.dec'
+    name: chip_dec_idx
+  - '@id': '#chip_fwhm_idx'
+    columns:
+    - '#smash_dr2.chip.fwhm'
+    name: chip_fwhm_idx
+  - '@id': '#chip_vertex_ra1_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_ra1'
+    name: chip_vertex_ra1_idx
+  - '@id': '#chip_vertex_ra2_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_ra2'
+    name: chip_vertex_ra2_idx
+  - '@id': '#chip_vertex_ra3_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_ra3'
+    name: chip_vertex_ra3_idx
+  - '@id': '#chip_vertex_ra4_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_ra4'
+    name: chip_vertex_ra4_idx
+  - '@id': '#chip_vertex_dec1_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_dec1'
+    name: chip_vertex_dec1_idx
+  - '@id': '#chip_vertex_dec2_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_dec2'
+    name: chip_vertex_dec2_idx
+  - '@id': '#chip_vertex_dec3_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_dec3'
+    name: chip_vertex_dec3_idx
+  - '@id': '#chip_vertex_dec4_idx'
+    columns:
+    - '#smash_dr2.chip.vertex_dec4'
+    name: chip_vertex_dec4_idx
+  - '@id': '#chip_calib_zpterm_idx'
+    columns:
+    - '#smash_dr2.chip.calib_zpterm'
+    name: chip_calib_zpterm_idx
+  name: chip
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#smash_dr2.exposure'
+  columns:
+  - '@id': '#smash_dr2.exposure.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.expnum'
+    datatype: char
+    description: Eight-digit exposure number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 8
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.nchips'
+    datatype: int
+    description: Number of chips with good data for this exposure, normally 60 or
+      61
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nchips
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.fieldid'
+    datatype: short
+    description: SMASH Field ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: fieldid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.filter'
+    datatype: char
+    description: Filter, u, g, r, i, or z
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.exptime'
+    datatype: float
+    description: Exposure time in seconds
+    fits:tunit: s
+    ivoa:ucd: time.duration
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.dateobs'
+    datatype: char
+    description: 'Observation timestamp: YYYY-MM-DDTHH:MM:SS.SSSSSS'
+    fits:tunit: ''
+    ivoa:ucd: time.epoch
+    length: 26
+    name: dateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.mjd'
+    datatype: double
+    description: Observation Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.night_mjd'
+    datatype: int
+    description: Night Modified Julian Date (integer)
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: night_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.airmass'
+    datatype: float
+    description: Airmass
+    fits:tunit: ''
+    ivoa:ucd: obs.airMass
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.wcstype'
+    datatype: char
+    description: WCS type, always TPV
+    fits:tunit: ''
+    ivoa:ucd: pos.wcs.ctype
+    length: 3
+    name: wcstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.ra'
+    datatype: double
+    description: Right ascension at center of frame (in degrees)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.dec'
+    datatype: double
+    description: Declination at center of frame (in degrees)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.wcsrms'
+    datatype: float
+    description: RMS in WCS fit w.r.t. ref catalog in arcsec, median of chips
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: wcsrms
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.gaiawcsrms'
+    datatype: float
+    description: RMS in WCS fit w.r.t. GAIA catalog in arcsec, median of chips
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: gaiawcsrms
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.fwhm'
+    datatype: float
+    description: FWHM of PSF (i.e. seeing) in pixels, median across chips
+    fits:tunit: pixel
+    ivoa:ucd: instr.det.psf
+    name: fwhm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.skymode'
+    datatype: float
+    description: Median sky background level across chips
+    fits:tunit: count
+    ivoa:ucd: instr.skyLevel
+    name: skymode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.skysig'
+    datatype: float
+    description: Median sigma in sky background across chips
+    fits:tunit: count
+    ivoa:ucd: stat.stdev
+    name: skysig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.dao_nsources'
+    datatype: int
+    description: Total number of DAOPHOT/ALLSTAR sources in frame
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: dao_nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.dao_depth'
+    datatype: float
+    description: Median ALLSTAR depth across all chips, instrumental mags
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: dao_depth
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.dao_psfchi'
+    datatype: float
+    description: Median DAOPHOT PSF chi value across all chips
+    fits:tunit: ''
+    ivoa:ucd: stat.fit.chi2
+    name: dao_psfchi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.alf_nsources'
+    datatype: int
+    description: Total number of DAOPHOT/ALLFRAME sources in frame
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: alf_nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.alf_depth'
+    datatype: float
+    description: Median ALLFRAME depth across all chips, instrumental mags
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: alf_depth
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.apcor'
+    datatype: float
+    description: Aperture correction
+    fits:tunit: mag
+    name: apcor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.ebv'
+    datatype: float
+    description: Median SFD E(B-V) across frame
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.photometric'
+    datatype: short
+    description: Is this from a photometric night
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: photometric
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.exposure.badsoln'
+    datatype: short
+    description: Did we have a good transformation equation/solution for these data
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: badsoln
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Info on each exposure
+  indexes:
+  - '@id': '#exposure_glon_idx'
+    columns:
+    - '#smash_dr2.exposure.glon'
+    name: exposure_glon_idx
+  - '@id': '#exposure_glat_idx'
+    columns:
+    - '#smash_dr2.exposure.glat'
+    name: exposure_glat_idx
+  - '@id': '#exposure_elon_idx'
+    columns:
+    - '#smash_dr2.exposure.elon'
+    name: exposure_elon_idx
+  - '@id': '#exposure_elat_idx'
+    columns:
+    - '#smash_dr2.exposure.elat'
+    name: exposure_elat_idx
+  - '@id': '#exposure_ring256_idx'
+    columns:
+    - '#smash_dr2.exposure.ring256'
+    name: exposure_ring256_idx
+  - '@id': '#exposure_htm9_idx'
+    columns:
+    - '#smash_dr2.exposure.htm9'
+    name: exposure_htm9_idx
+  - '@id': '#exposure_nest4096_idx'
+    columns:
+    - '#smash_dr2.exposure.nest4096'
+    name: exposure_nest4096_idx
+  - '@id': '#exposure_expnum_idx'
+    columns:
+    - '#smash_dr2.exposure.expnum'
+    name: exposure_expnum_idx
+  - '@id': '#exposure_fieldid_idx'
+    columns:
+    - '#smash_dr2.exposure.fieldid'
+    name: exposure_fieldid_idx
+  - '@id': '#exposure_filter_idx'
+    columns:
+    - '#smash_dr2.exposure.filter'
+    name: exposure_filter_idx
+  - '@id': '#exposure_exptime_idx'
+    columns:
+    - '#smash_dr2.exposure.exptime'
+    name: exposure_exptime_idx
+  - '@id': '#exposure_mjd_idx'
+    columns:
+    - '#smash_dr2.exposure.mjd'
+    name: exposure_mjd_idx
+  - '@id': '#exposure_ra_idx'
+    columns:
+    - '#smash_dr2.exposure.ra'
+    name: exposure_ra_idx
+  - '@id': '#exposure_dec_idx'
+    columns:
+    - '#smash_dr2.exposure.dec'
+    name: exposure_dec_idx
+  name: exposure
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#smash_dr2.field'
+  columns:
+  - '@id': '#smash_dr2.field.mlon'
+    datatype: double
+    description: Magellanic Stream longitude of field, in degrees
+    fits:tunit: deg
+    name: mlon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.mlat'
+    datatype: double
+    description: Magellanic Stream latitude of field, in degrees
+    fits:tunit: deg
+    name: mlat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.name'
+    datatype: char
+    description: SMASH Field name
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 64
+    name: name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.fieldid'
+    datatype: short
+    description: SMASH Field ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    name: fieldid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.ra'
+    datatype: double
+    description: Right Ascension (J2000.0) of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.dec'
+    datatype: double
+    description: Declination (J2000.0) of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.ring256'
+    datatype: long
+    description: HEALPix ring nside=256 index
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nchips'
+    datatype: int
+    description: Number of chips for this field
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nchips
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nsrc'
+    datatype: int
+    description: Number of sources for this field
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nsrc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nobj'
+    datatype: int
+    description: Number of objects for this field
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nobj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp'
+    datatype: short
+    description: Number of total exposures of field
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp_u'
+    datatype: short
+    description: Number of u-band exposures
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp_g'
+    datatype: short
+    description: Number of g-band exposures
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp_r'
+    datatype: short
+    description: Number of r-band exposures
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp_i'
+    datatype: short
+    description: Number of i-band exposures
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.nexp_z'
+    datatype: short
+    description: Number of z-band exposures
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nexp_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.ucalib'
+    datatype: short
+    description: Is the u-band data calibrated?
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual
+    name: ucalib
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.gcalib'
+    datatype: short
+    description: Is the g-band data calibrated?
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual
+    name: gcalib
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.rcalib'
+    datatype: short
+    description: Is the r-band data calibrated?
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual
+    name: rcalib
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.icalib'
+    datatype: short
+    description: Is the i-band data calibrated?
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual
+    name: icalib
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.field.zcalib'
+    datatype: short
+    description: Is the z-band data calibrated?
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual
+    name: zcalib
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Info on each target field (position, Num exposures, etc)
+  indexes:
+  - '@id': '#field_elon_idx'
+    columns:
+    - '#smash_dr2.field.elon'
+    name: field_elon_idx
+  - '@id': '#field_elat_idx'
+    columns:
+    - '#smash_dr2.field.elat'
+    name: field_elat_idx
+  - '@id': '#field_htm9_idx'
+    columns:
+    - '#smash_dr2.field.htm9'
+    name: field_htm9_idx
+  - '@id': '#field_nest4096_idx'
+    columns:
+    - '#smash_dr2.field.nest4096'
+    name: field_nest4096_idx
+  - '@id': '#field_name_idx'
+    columns:
+    - '#smash_dr2.field.name'
+    name: field_name_idx
+  - '@id': '#field_fieldid_idx'
+    columns:
+    - '#smash_dr2.field.fieldid'
+    name: field_fieldid_idx
+  - '@id': '#field_ra_idx'
+    columns:
+    - '#smash_dr2.field.ra'
+    name: field_ra_idx
+  - '@id': '#field_dec_idx'
+    columns:
+    - '#smash_dr2.field.dec'
+    name: field_dec_idx
+  - '@id': '#field_glon_idx'
+    columns:
+    - '#smash_dr2.field.glon'
+    name: field_glon_idx
+  - '@id': '#field_glat_idx'
+    columns:
+    - '#smash_dr2.field.glat'
+    name: field_glat_idx
+  - '@id': '#field_ring256_idx'
+    columns:
+    - '#smash_dr2.field.ring256'
+    name: field_ring256_idx
+  - '@id': '#field_nobj_idx'
+    columns:
+    - '#smash_dr2.field.nobj'
+    name: field_nobj_idx
+  - '@id': '#field_nexp_idx'
+    columns:
+    - '#smash_dr2.field.nexp'
+    name: field_nexp_idx
+  name: field
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#smash_dr2.object'
+  columns:
+  - '@id': '#smash_dr2.object.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.decscatter'
+    datatype: float
+    description: RMS scatter in DEC from multiple measurements of this object
+    name: decscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.rascatter'
+    datatype: float
+    description: RMS scatter in RA from multiple measurements of this object
+    name: rascatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.id'
+    datatype: char
+    description: Unique ID for this object, the field name plus a running number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 10
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ra'
+    datatype: double
+    description: Right Ascension (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.dec'
+    datatype: double
+    description: Declination (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.raerr'
+    datatype: float
+    description: Uncertainty in mean RA of object (arcseconds) from indiv values
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.decerr'
+    datatype: float
+    description: Uncertainty in mean DEC of object (arcseconds) from indiv values
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndet'
+    datatype: short
+    description: Number of detections of this source (in ALLSRC)
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.depthflag'
+    datatype: short
+    description: 'Flag of exposure detected in: 1-shallow, 2-deep, 3-both'
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: depthflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.umag'
+    datatype: float
+    description: Weighted-average, calibrated u-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.uerr'
+    datatype: float
+    description: Uncertainty in calibrated u-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: uerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.uscatter'
+    datatype: float
+    description: RMS scatter in u from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: uscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndetu'
+    datatype: short
+    description: Number of detections in u
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.gmag'
+    datatype: float
+    description: Weighted-average, calibrated g-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.gerr'
+    datatype: float
+    description: Unceratinty in calibrated g-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.gscatter'
+    datatype: float
+    description: RMS scatter in g from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: gscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndetg'
+    datatype: short
+    description: Number of detections in g
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.rmag'
+    datatype: float
+    description: Weighted-avarage, calibrated r-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.rerr'
+    datatype: float
+    description: Uncertainty in calibrated r-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: rerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.rscatter'
+    datatype: float
+    description: RMS scatter in r from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: rscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndetr'
+    datatype: short
+    description: Number of detections in r
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.imag'
+    datatype: float
+    description: Weighted-average, calibrated i-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ierr'
+    datatype: float
+    description: Uncertainty in calibrated i-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: ierr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.iscatter'
+    datatype: float
+    description: RMS scatter in i from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: iscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndeti'
+    datatype: short
+    description: Number of detections in i
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndeti
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.zmag'
+    datatype: float
+    description: Weighted-avarege, calibrated z-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.zerr'
+    datatype: float
+    description: Uncertainty in calibrated z-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.zscatter'
+    datatype: float
+    description: RMS scatter in z from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: zscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ndetz'
+    datatype: short
+    description: Number of detections in z
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.chi'
+    datatype: float
+    description: Average DAOPHOT chi value, i.e. how well the PSF fit this source
+    fits:tunit: ''
+    ivoa:ucd: stat.fit.chi2
+    name: chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.sharp'
+    datatype: float
+    description: Average DAOPHOT sharp value, measurement of peakiness
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.flag'
+    datatype: short
+    description: OR-combined Source Extractor FLAG value from coadd image
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.prob'
+    datatype: float
+    description: Average Source Extractor stellaricity probability value
+    fits:tunit: ''
+    ivoa:ucd: stat.probability
+    name: prob
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.object.ebv'
+    datatype: float
+    description: Median SFD E(B-V) across frame
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Average photometry of each unique object
+  indexes:
+  - '@id': '#object_glon_idx'
+    columns:
+    - '#smash_dr2.object.glon'
+    name: object_glon_idx
+  - '@id': '#object_glat_idx'
+    columns:
+    - '#smash_dr2.object.glat'
+    name: object_glat_idx
+  - '@id': '#object_elon_idx'
+    columns:
+    - '#smash_dr2.object.elon'
+    name: object_elon_idx
+  - '@id': '#object_elat_idx'
+    columns:
+    - '#smash_dr2.object.elat'
+    name: object_elat_idx
+  - '@id': '#object_ring256_idx'
+    columns:
+    - '#smash_dr2.object.ring256'
+    name: object_ring256_idx
+  - '@id': '#object_htm9_idx'
+    columns:
+    - '#smash_dr2.object.htm9'
+    name: object_htm9_idx
+  - '@id': '#object_nest4096_idx'
+    columns:
+    - '#smash_dr2.object.nest4096'
+    name: object_nest4096_idx
+  - '@id': '#object_random_id_idx'
+    columns:
+    - '#smash_dr2.object.random_id'
+    name: object_random_id_idx
+  - '@id': '#object_id_idx'
+    columns:
+    - '#smash_dr2.object.id'
+    name: object_id_idx
+  - '@id': '#object_ra_idx'
+    columns:
+    - '#smash_dr2.object.ra'
+    name: object_ra_idx
+  - '@id': '#object_dec_idx'
+    columns:
+    - '#smash_dr2.object.dec'
+    name: object_dec_idx
+  - '@id': '#object_ndet_idx'
+    columns:
+    - '#smash_dr2.object.ndet'
+    name: object_ndet_idx
+  - '@id': '#object_umag_idx'
+    columns:
+    - '#smash_dr2.object.umag'
+    name: object_umag_idx
+  - '@id': '#object_ndetu_idx'
+    columns:
+    - '#smash_dr2.object.ndetu'
+    name: object_ndetu_idx
+  - '@id': '#object_gmag_idx'
+    columns:
+    - '#smash_dr2.object.gmag'
+    name: object_gmag_idx
+  - '@id': '#object_ndetg_idx'
+    columns:
+    - '#smash_dr2.object.ndetg'
+    name: object_ndetg_idx
+  - '@id': '#object_rmag_idx'
+    columns:
+    - '#smash_dr2.object.rmag'
+    name: object_rmag_idx
+  - '@id': '#object_ndetr_idx'
+    columns:
+    - '#smash_dr2.object.ndetr'
+    name: object_ndetr_idx
+  - '@id': '#object_imag_idx'
+    columns:
+    - '#smash_dr2.object.imag'
+    name: object_imag_idx
+  - '@id': '#object_ndeti_idx'
+    columns:
+    - '#smash_dr2.object.ndeti'
+    name: object_ndeti_idx
+  - '@id': '#object_zmag_idx'
+    columns:
+    - '#smash_dr2.object.zmag'
+    name: object_zmag_idx
+  - '@id': '#object_ndetz_idx'
+    columns:
+    - '#smash_dr2.object.ndetz'
+    name: object_ndetz_idx
+  - '@id': '#object_chi_idx'
+    columns:
+    - '#smash_dr2.object.chi'
+    name: object_chi_idx
+  - '@id': '#object_sharp_idx'
+    columns:
+    - '#smash_dr2.object.sharp'
+    name: object_sharp_idx
+  - '@id': '#object_prob_idx'
+    columns:
+    - '#smash_dr2.object.prob'
+    name: object_prob_idx
+  name: object
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#smash_dr2.source'
+  columns:
+  - '@id': '#smash_dr2.source.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.sourceid'
+    datatype: char
+    description: Unique ID for this source, the field name plus a running number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 10
+    name: sourceid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.id'
+    datatype: char
+    description: Deep ID for this source, same as in object table
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 10
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.origid'
+    datatype: int
+    description: ID used for this detection in the original als/alf chip file
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: origid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.refid'
+    datatype: int
+    description: ID used for this detection in the reference frame file
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: refid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.fieldid'
+    datatype: int
+    description: Field ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: fieldid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.expnum'
+    datatype: char
+    description: Eight-digit exposure number
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 8
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.chip'
+    datatype: short
+    description: Chip number (1-62)
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: chip
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.chipid'
+    datatype: char
+    description: Unique chip image name, e.g. 00123451_10
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 2
+    name: chipid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.mjd'
+    datatype: double
+    description: Exposure Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.filter'
+    datatype: char
+    description: Filter, u, g, r, i, or z
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.x'
+    datatype: float
+    description: X-coordinate for this source in the original chip (1-indexed)
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.x
+    name: x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.y'
+    datatype: float
+    description: Y-coordinate for this source in the original chip (1-indexed)
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.y
+    name: y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.xref'
+    datatype: float
+    description: X-coordinate for this source in the reference chip (1-indexed)
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.x
+    name: xref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.yref'
+    datatype: float
+    description: Y-coordinate for this source in the reference chip (1-indexed)
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.y
+    name: yref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.forced'
+    datatype: short
+    description: Boolean flag indicating if this is forced (ALLFRAME) photometry
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: forced
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.mag'
+    datatype: float
+    description: Instrumental magnitude from ALLFRAME or ALLSTAR (not both)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.err'
+    datatype: float
+    description: Uncertainty of MAG
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.cmag'
+    datatype: float
+    description: Calibrated magnitude version of MAG
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: cmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.cerr'
+    datatype: float
+    description: Uncertainty of CMAG including errors in calibration
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: cerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.chi'
+    datatype: float
+    description: DAOPHOT chi value, i.e. how well the PSF fit this source
+    fits:tunit: ''
+    ivoa:ucd: stat.fit.chi2
+    name: chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.sharp'
+    datatype: float
+    description: DAOPHOT sharp value, measurement of peakiness
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.flag'
+    datatype: short
+    description: Source Extractor FLAG value from coadd image
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.prob'
+    datatype: float
+    description: Source Extractor stellaricity probability value (0~galaxy, 1~star)
+    fits:tunit: ''
+    ivoa:ucd: stat.probability
+    name: prob
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.ra'
+    datatype: double
+    description: Right Ascension (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.dec'
+    datatype: double
+    description: Declination (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.raerr'
+    datatype: float
+    description: Uncertainty in RA (arcseconds) based on S/N of source and PSF FWHM
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.decerr'
+    datatype: float
+    description: Uncertainty in DEC (arcseconds) based on S/N of source and PSF FWHM
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.raindiv'
+    datatype: double
+    description: Right Ascension of source, from the original chip X/Y and WCS
+    fits:tunit: deg
+    name: raindiv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.decindiv'
+    datatype: double
+    description: Declination of source, from the original chip X/Y and WCS
+    fits:tunit: deg
+    name: decindiv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.raref'
+    datatype: double
+    description: Right Ascension of source, from X/YREF and ref WCS
+    fits:tunit: deg
+    name: raref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.source.decref'
+    datatype: double
+    description: Declination (J2000.0) of source, in degrees, from the referene chip
+      chip file using XREF/YREF coords and the reference chip WCS
+    fits:tunit: deg
+    name: decref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: All of the individual source measurements
+  indexes:
+  - '@id': '#source_glon_idx'
+    columns:
+    - '#smash_dr2.source.glon'
+    name: source_glon_idx
+  - '@id': '#source_glat_idx'
+    columns:
+    - '#smash_dr2.source.glat'
+    name: source_glat_idx
+  - '@id': '#source_elon_idx'
+    columns:
+    - '#smash_dr2.source.elon'
+    name: source_elon_idx
+  - '@id': '#source_elat_idx'
+    columns:
+    - '#smash_dr2.source.elat'
+    name: source_elat_idx
+  - '@id': '#source_ring256_idx'
+    columns:
+    - '#smash_dr2.source.ring256'
+    name: source_ring256_idx
+  - '@id': '#source_htm9_idx'
+    columns:
+    - '#smash_dr2.source.htm9'
+    name: source_htm9_idx
+  - '@id': '#source_nest4096_idx'
+    columns:
+    - '#smash_dr2.source.nest4096'
+    name: source_nest4096_idx
+  - '@id': '#source_random_id_idx'
+    columns:
+    - '#smash_dr2.source.random_id'
+    name: source_random_id_idx
+  - '@id': '#source_sourceid_idx'
+    columns:
+    - '#smash_dr2.source.sourceid'
+    name: source_sourceid_idx
+  - '@id': '#source_id_idx'
+    columns:
+    - '#smash_dr2.source.id'
+    name: source_id_idx
+  - '@id': '#source_expnum_idx'
+    columns:
+    - '#smash_dr2.source.expnum'
+    name: source_expnum_idx
+  - '@id': '#source_chip_idx'
+    columns:
+    - '#smash_dr2.source.chip'
+    name: source_chip_idx
+  - '@id': '#source_chipid_idx'
+    columns:
+    - '#smash_dr2.source.chipid'
+    name: source_chipid_idx
+  - '@id': '#source_mjd_idx'
+    columns:
+    - '#smash_dr2.source.mjd'
+    name: source_mjd_idx
+  - '@id': '#source_filter_idx'
+    columns:
+    - '#smash_dr2.source.filter'
+    name: source_filter_idx
+  - '@id': '#source_mag_idx'
+    columns:
+    - '#smash_dr2.source.mag'
+    name: source_mag_idx
+  - '@id': '#source_cmag_idx'
+    columns:
+    - '#smash_dr2.source.cmag'
+    name: source_cmag_idx
+  - '@id': '#source_ra_idx'
+    columns:
+    - '#smash_dr2.source.ra'
+    name: source_ra_idx
+  - '@id': '#source_dec_idx'
+    columns:
+    - '#smash_dr2.source.dec'
+    name: source_dec_idx
+  name: source
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#smash_dr2.deep'
+  columns:
+  - '@id': '#smash_dr2.deep.glon'
+    datatype: double
+    description: Galactic longitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.glat'
+    datatype: double
+    description: Galactic latitude of field, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.decscatter'
+    datatype: float
+    description: RMS scatter in DEC from multiple measurements of this object
+    name: decscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.rascatter'
+    datatype: float
+    description: RMS scatter in RA from multiple measurements of this object
+    name: rascatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.id'
+    datatype: char
+    description: Unique ID for this object, the field name plus a running number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 10
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ra'
+    datatype: double
+    description: Right Ascension (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.dec'
+    datatype: double
+    description: Declination (J2000.0) of source, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.raerr'
+    datatype: float
+    description: Uncertainty in mean RA of object (arcseconds) from indiv values
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.decerr'
+    datatype: float
+    description: Uncertainty in mean DEC of object (arcseconds) from indiv values
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndet'
+    datatype: short
+    description: Number of detections of this source (in ALLSRC)
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.depthflag'
+    datatype: short
+    description: 'Flag of exposure detected in: 1-shallow, 2-deep, 3-both'
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: depthflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.umag'
+    datatype: float
+    description: Weighted-average, calibrated u-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.uerr'
+    datatype: float
+    description: Uncertainty in calibrated u-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: uerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.uscatter'
+    datatype: float
+    description: RMS scatter in u from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: uscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndetu'
+    datatype: short
+    description: Number of detections in u
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.gmag'
+    datatype: float
+    description: Weighted-average, calibrated g-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.gerr'
+    datatype: float
+    description: Unceratinty in calibrated g-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.gscatter'
+    datatype: float
+    description: RMS scatter in g from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: gscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndetg'
+    datatype: short
+    description: Number of detections in g
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.rmag'
+    datatype: float
+    description: Weighted-avarage, calibrated r-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.rerr'
+    datatype: float
+    description: Uncertainty in calibrated r-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: rerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.rscatter'
+    datatype: float
+    description: RMS scatter in r from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: rscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndetr'
+    datatype: short
+    description: Number of detections in r
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.imag'
+    datatype: float
+    description: Weighted-average, calibrated i-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ierr'
+    datatype: float
+    description: Uncertainty in calibrated i-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: ierr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.iscatter'
+    datatype: float
+    description: RMS scatter in i from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: iscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndeti'
+    datatype: short
+    description: Number of detections in i
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndeti
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.zmag'
+    datatype: float
+    description: Weighted-avarege, calibrated z-band magnitude, 99.99 if no detection
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.zerr'
+    datatype: float
+    description: Uncertainty in calibrated z-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.zscatter'
+    datatype: float
+    description: RMS scatter in z from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: zscatter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ndetz'
+    datatype: short
+    description: Number of detections in z
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.chi'
+    datatype: float
+    description: Average DAOPHOT chi value, i.e. how well the PSF fit this source
+    fits:tunit: ''
+    ivoa:ucd: stat.fit.chi2
+    name: chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.sharp'
+    datatype: float
+    description: Average DAOPHOT sharp value, measurement of peakiness
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.flag'
+    datatype: short
+    description: OR-combined Source Extractor FLAG value from coadd image
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.prob'
+    datatype: float
+    description: Average Source Extractor stellaricity probability value
+    fits:tunit: ''
+    ivoa:ucd: stat.probability
+    name: prob
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.deep.ebv'
+    datatype: float
+    description: Median SFD E(B-V) across frame
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Average photometry of each unique object only from deep exposures
+  indexes:
+  - '@id': '#deep_glon_idx'
+    columns:
+    - '#smash_dr2.deep.glon'
+    name: deep_glon_idx
+  - '@id': '#deep_glat_idx'
+    columns:
+    - '#smash_dr2.deep.glat'
+    name: deep_glat_idx
+  - '@id': '#deep_elon_idx'
+    columns:
+    - '#smash_dr2.deep.elon'
+    name: deep_elon_idx
+  - '@id': '#deep_elat_idx'
+    columns:
+    - '#smash_dr2.deep.elat'
+    name: deep_elat_idx
+  - '@id': '#deep_ring256_idx'
+    columns:
+    - '#smash_dr2.deep.ring256'
+    name: deep_ring256_idx
+  - '@id': '#deep_htm9_idx'
+    columns:
+    - '#smash_dr2.deep.htm9'
+    name: deep_htm9_idx
+  - '@id': '#deep_nest4096_idx'
+    columns:
+    - '#smash_dr2.deep.nest4096'
+    name: deep_nest4096_idx
+  - '@id': '#deep_random_id_idx'
+    columns:
+    - '#smash_dr2.deep.random_id'
+    name: deep_random_id_idx
+  - '@id': '#deep_id_idx'
+    columns:
+    - '#smash_dr2.deep.id'
+    name: deep_id_idx
+  - '@id': '#deep_ra_idx'
+    columns:
+    - '#smash_dr2.deep.ra'
+    name: deep_ra_idx
+  - '@id': '#deep_dec_idx'
+    columns:
+    - '#smash_dr2.deep.dec'
+    name: deep_dec_idx
+  - '@id': '#deep_ndet_idx'
+    columns:
+    - '#smash_dr2.deep.ndet'
+    name: deep_ndet_idx
+  - '@id': '#deep_umag_idx'
+    columns:
+    - '#smash_dr2.deep.umag'
+    name: deep_umag_idx
+  - '@id': '#deep_ndetu_idx'
+    columns:
+    - '#smash_dr2.deep.ndetu'
+    name: deep_ndetu_idx
+  - '@id': '#deep_gmag_idx'
+    columns:
+    - '#smash_dr2.deep.gmag'
+    name: deep_gmag_idx
+  - '@id': '#deep_ndetg_idx'
+    columns:
+    - '#smash_dr2.deep.ndetg'
+    name: deep_ndetg_idx
+  - '@id': '#deep_rmag_idx'
+    columns:
+    - '#smash_dr2.deep.rmag'
+    name: deep_rmag_idx
+  - '@id': '#deep_ndetr_idx'
+    columns:
+    - '#smash_dr2.deep.ndetr'
+    name: deep_ndetr_idx
+  - '@id': '#deep_imag_idx'
+    columns:
+    - '#smash_dr2.deep.imag'
+    name: deep_imag_idx
+  - '@id': '#deep_ndeti_idx'
+    columns:
+    - '#smash_dr2.deep.ndeti'
+    name: deep_ndeti_idx
+  - '@id': '#deep_zmag_idx'
+    columns:
+    - '#smash_dr2.deep.zmag'
+    name: deep_zmag_idx
+  - '@id': '#deep_ndetz_idx'
+    columns:
+    - '#smash_dr2.deep.ndetz'
+    name: deep_ndetz_idx
+  - '@id': '#deep_chi_idx'
+    columns:
+    - '#smash_dr2.deep.chi'
+    name: deep_chi_idx
+  - '@id': '#deep_sharp_idx'
+    columns:
+    - '#smash_dr2.deep.sharp'
+    name: deep_sharp_idx
+  - '@id': '#deep_prob_idx'
+    columns:
+    - '#smash_dr2.deep.prob'
+    name: deep_prob_idx
+  name: deep
+  primaryKey: ''
+  tap:table_index: 6
+- '@id': '#smash_dr2.xmatch'
+  columns:
+  - '@id': '#smash_dr2.xmatch.id'
+    datatype: char
+    description: SMASH OBJECT source ID.
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 10
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_match'
+    datatype: short
+    description: Boolean flag indicating if a match with GAIA DR2 was found.
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: gaia_match
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_matchdist'
+    datatype: float
+    description: Distance to matched GAIA-DR2 source (arcseconds).
+    fits:tunit: ''
+    ivoa:ucd: pos.angDistance
+    name: gaia_matchdist
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_sourceid'
+    datatype: int
+    description: GAIA source ID.
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    name: gaia_sourceid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_ra'
+    datatype: double
+    description: GAIA right ascension (degrees).
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: gaia_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_dec'
+    datatype: double
+    description: GAIA declination (degrees)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: gaia_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_raerr'
+    datatype: float
+    description: GAIA RA uncertainty (arcseconds)
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: gaia_raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_decerr'
+    datatype: float
+    description: GAIA DEC uncertainty (arcseconds)
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: gaia_decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_parallax'
+    datatype: float
+    description: GAIA DR2 parallax (milli arcseconds)
+    fits:tunit: mas
+    ivoa:ucd: pos.parallax
+    name: gaia_parallax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_parallax_error'
+    datatype: float
+    description: GAIA DR2 parallax uncertainty (milli arcseconds)
+    fits:tunit: mas
+    ivoa:ucd: stat.error
+    name: gaia_parallax_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_pmra'
+    datatype: float
+    description: GAIA DR2 proper motion in RA (mas/yr)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: gaia_pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_pmra_error'
+    datatype: float
+    description: GAIA DR2 proper motion in RA uncertainty (mas/yr)
+    fits:tunit: mas/yr
+    ivoa:ucd: stat.error
+    name: gaia_pmra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_pmdec'
+    datatype: float
+    description: GAIA DR2 proper motion in DEC (mas/yr)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: gaia_pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_pmdec_error'
+    datatype: float
+    description: GAIA DR2 proper motion in DEC uncertainty (mas/yr)
+    fits:tunit: mas/yr
+    ivoa:ucd: stat.error
+    name: gaia_pmdec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_gmag'
+    datatype: float
+    description: GAIA G-band mean magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gaia_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_gerr'
+    datatype: float
+    description: GAIA uncertainty in G-band magnitue (from flux uncertainty)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gaia_gerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_bpmag'
+    datatype: float
+    description: GAIA DR2 BP mean magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gaia_bpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_bperr'
+    datatype: float
+    description: GAIA DR2 uncertainty in BP magnitue (from flux uncertainty)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gaia_bperr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_rpmag'
+    datatype: float
+    description: GAIA DR2 RP mean magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gaia_rpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.gaia_rperr'
+    datatype: float
+    description: GAIA DR2 uncertainty in RP magnitue (from flux uncertainty)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gaia_rperr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_match'
+    datatype: short
+    description: Boolean flag indicating if a match with 2MASS-PSC was found
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: tmass_match
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_matchdist'
+    datatype: float
+    description: Distance to matched 2MASS-PSC source (arcseconds)
+    fits:tunit: ''
+    ivoa:ucd: pos.angDistance
+    name: tmass_matchdist
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_id'
+    datatype: char
+    description: 2MASS source ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 16
+    name: tmass_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_ra'
+    datatype: double
+    description: 2MASS right ascension (degrees)
+    fits:tunit: deg
+    name: tmass_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_dec'
+    datatype: double
+    description: 2MASS declination (degrees)
+    fits:tunit: deg
+    name: tmass_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_raerr'
+    datatype: float
+    description: 2MASS RA uncertainty (arcseconds)
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: tmass_raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_decerr'
+    datatype: float
+    description: 2MASS DEC uncertainty (arcseconds)
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: tmass_decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_jmag'
+    datatype: float
+    description: 2MASS J-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: tmass_jmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_jerr'
+    datatype: float
+    description: 2MASS uncertainty in J-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag;em.IR.J
+    name: tmass_jerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_hmag'
+    datatype: float
+    description: 2MASS H-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: tmass_hmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_herr'
+    datatype: float
+    description: 2MASS uncertainty in H-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag;em.IR.H
+    name: tmass_herr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_kmag'
+    datatype: float
+    description: 2MASS Ks-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: tmass_kmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_kerr'
+    datatype: float
+    description: 2MASS uncertainty in Ks-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag;em.IR.K
+    name: tmass_kerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.tmass_qflg'
+    datatype: char
+    description: 2MASS JHKs photometry quality flag
+    fits:tunit: ''
+    ivoa:ucd: meta.code.qual;phot
+    length: 3
+    name: tmass_qflg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_match'
+    datatype: short
+    description: Boolean flag indicating if a match with ALLWISE was found
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: wise_match
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_matchdist'
+    datatype: float
+    description: Distance to matched ALLWISE source (arcseconds)
+    fits:tunit: ''
+    ivoa:ucd: pos.angDistance
+    name: wise_matchdist
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_id'
+    datatype: char
+    description: ALLWISE source ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id
+    length: 19
+    name: wise_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_ra'
+    datatype: double
+    description: ALLWISE right ascension (degrees)
+    fits:tunit: deg
+    name: wise_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_dec'
+    datatype: double
+    description: ALLWISE declination (degrees)
+    fits:tunit: deg
+    name: wise_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_raerr'
+    datatype: float
+    description: ALLWISE RA uncertainty (arcseconds)
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: wise_raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_decerr'
+    datatype: float
+    description: ALLWISE DEC uncertainty (arcseconds)
+    fits:tunit: deg
+    ivoa:ucd: stat.error
+    name: wise_decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w1mag'
+    datatype: float
+    description: ALLWISE W1 magnitude (3.35um)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.3-4um
+    name: wise_w1mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w1err'
+    datatype: float
+    description: ALLWISE uncertainty in W1 magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: wise_w1err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w2mag'
+    datatype: float
+    description: ALLWISE W2 magnitude (4.6um)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.4-8um
+    name: wise_w2mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w2err'
+    datatype: float
+    description: ALLWISE uncertainty in W2 magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: wise_w2err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w3mag'
+    datatype: float
+    description: ALLWISE W3 magnitude (11.6um)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.8-15um
+    name: wise_w3mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w3err'
+    datatype: float
+    description: ALLWISE uncertainty in W3 magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: wise_w3err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w4mag'
+    datatype: float
+    description: ALLWISE W4 magnitude (22.1um)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.15-30um
+    name: wise_w4mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_w4err'
+    datatype: float
+    description: ALLWISE uncertainty in W4 magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: wise_w4err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#smash_dr2.xmatch.wise_qph'
+    datatype: char
+    description: ALLWISE photometry quality flag
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    length: 32
+    name: wise_qph
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Crossmatch of object against GAIA DR2 and WISE
+  indexes:
+  - '@id': '#xmatch_id_idx'
+    columns:
+    - '#smash_dr2.xmatch.id'
+    name: xmatch_id_idx
+  - '@id': '#xmatch_gaia_match_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_match'
+    name: xmatch_gaia_match_idx
+  - '@id': '#xmatch_gaia_sourceid_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_sourceid'
+    name: xmatch_gaia_sourceid_idx
+  - '@id': '#xmatch_gaia_ra_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_ra'
+    name: xmatch_gaia_ra_idx
+  - '@id': '#xmatch_gaia_dec_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_dec'
+    name: xmatch_gaia_dec_idx
+  - '@id': '#xmatch_gaia_parallax_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_parallax'
+    name: xmatch_gaia_parallax_idx
+  - '@id': '#xmatch_gaia_pmra_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_pmra'
+    name: xmatch_gaia_pmra_idx
+  - '@id': '#xmatch_gaia_pmdec_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_pmdec'
+    name: xmatch_gaia_pmdec_idx
+  - '@id': '#xmatch_gaia_gmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_gmag'
+    name: xmatch_gaia_gmag_idx
+  - '@id': '#xmatch_gaia_bpmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_bpmag'
+    name: xmatch_gaia_bpmag_idx
+  - '@id': '#xmatch_gaia_rpmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.gaia_rpmag'
+    name: xmatch_gaia_rpmag_idx
+  - '@id': '#xmatch_tmass_match_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_match'
+    name: xmatch_tmass_match_idx
+  - '@id': '#xmatch_tmass_id_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_id'
+    name: xmatch_tmass_id_idx
+  - '@id': '#xmatch_tmass_ra_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_ra'
+    name: xmatch_tmass_ra_idx
+  - '@id': '#xmatch_tmass_dec_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_dec'
+    name: xmatch_tmass_dec_idx
+  - '@id': '#xmatch_tmass_jmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_jmag'
+    name: xmatch_tmass_jmag_idx
+  - '@id': '#xmatch_tmass_hmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_hmag'
+    name: xmatch_tmass_hmag_idx
+  - '@id': '#xmatch_tmass_kmag_idx'
+    columns:
+    - '#smash_dr2.xmatch.tmass_kmag'
+    name: xmatch_tmass_kmag_idx
+  - '@id': '#xmatch_wise_match_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_match'
+    name: xmatch_wise_match_idx
+  - '@id': '#xmatch_wise_id_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_id'
+    name: xmatch_wise_id_idx
+  - '@id': '#xmatch_wise_ra_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_ra'
+    name: xmatch_wise_ra_idx
+  - '@id': '#xmatch_wise_dec_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_dec'
+    name: xmatch_wise_dec_idx
+  - '@id': '#xmatch_wise_w1mag_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_w1mag'
+    name: xmatch_wise_w1mag_idx
+  - '@id': '#xmatch_wise_w2mag_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_w2mag'
+    name: xmatch_wise_w2mag_idx
+  - '@id': '#xmatch_wise_w3mag_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_w3mag'
+    name: xmatch_wise_w3mag_idx
+  - '@id': '#xmatch_wise_w4mag_idx'
+    columns:
+    - '#smash_dr2.xmatch.wise_w4mag'
+    name: xmatch_wise_w4mag_idx
+  name: xmatch
+  primaryKey: ''
+  tap:table_index: 7
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

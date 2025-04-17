@@ -1,0 +1,1425 @@
+---
+'@id': '#vhs_dr5'
+description: VISTA Hemisphere Survey (VHS) band-merged multi-waveband catalogues Data
+  Release 5
+name: vhs_dr5
+tables:
+- '@id': '#vhs_dr5.vhs_cat_v3'
+  columns:
+  - '@id': '#vhs_dr5.vhs_cat_v3.sourcename'
+    datatype: char
+    description: Source name in IAU convention
+    ivoa:ucd: meta.id
+    length: 1
+    name: sourcename
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.sourceid'
+    datatype: long
+    description: UID of this merged detection as assigned by merge algorithm
+    ivoa:ucd: meta.id;meta.main
+    name: sourceid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.cueventid'
+    datatype: int
+    description: UID of curation event giving rise to this record
+    ivoa:ucd: meta.bib
+    name: cueventid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.framesetid'
+    datatype: long
+    description: UID of the set of frames that this merged source comes from
+    ivoa:ucd: meta.bib
+    name: framesetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ra2000'
+    datatype: double
+    description: Celestial Right Ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.dec2000'
+    datatype: double
+    description: Celestial Declination
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.l'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: l
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.b'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.lambda'
+    datatype: double
+    description: SDSS system spherical co-ordinate 1
+    fits:tunit: deg
+    ivoa:ucd: pos
+    name: lambda
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.eta'
+    datatype: double
+    description: SDSS system spherical co-ordinate 2
+    fits:tunit: deg
+    ivoa:ucd: pos
+    name: eta
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.priorsec'
+    datatype: long
+    description: Seam code for a unique (=0) or duplicated (!=0) source
+    ivoa:ucd: meta.code
+    name: priorsec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ymjpnt'
+    datatype: float
+    description: Point source colour Y-J (using aperMag3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.NIR;em.IR.J
+    name: ymjpnt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ymjpnterr'
+    datatype: float
+    description: Error on point source colour Y-J
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR;em.IR.J
+    name: ymjpnterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmhpnt'
+    datatype: float
+    description: Point source colour J-H (using aperMag3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.J;em.IR.H
+    name: jmhpnt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmhpnterr'
+    datatype: float
+    description: Error on point source colour J-H
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J;em.IR.H
+    name: jmhpnterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hmkspnt'
+    datatype: float
+    description: Point source colour H-Ks (using aperMag3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.H;em.IR.K
+    name: hmkspnt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hmkspnterr'
+    datatype: float
+    description: Error on point source colour H-Ks
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H;em.IR.K
+    name: hmkspnterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmkspnt'
+    datatype: float
+    description: Point source colour J-Ks (using aperMag3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.J;em.IR.K
+    name: jmkspnt
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmkspnterr'
+    datatype: float
+    description: Error on point source colour J-Ks
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J;em.IR.K
+    name: jmkspnterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ymjext'
+    datatype: float
+    description: Extended source colour Y-J (using aperMagNoAperCorr3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.NIR;em.IR.J
+    name: ymjext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ymjexterr'
+    datatype: float
+    description: Error on extended source colour Y-J
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR;em.IR.J
+    name: ymjexterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmhext'
+    datatype: float
+    description: Extended source colour J-H (using aperMagNoAperCorr3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.J;em.IR.H
+    name: jmhext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmhexterr'
+    datatype: float
+    description: Error on extended source colour J-H
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J;em.IR.H
+    name: jmhexterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hmksext'
+    datatype: float
+    description: Extended source colour H-Ks (using aperMagNoAperCorr3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.H;em.IR.K
+    name: hmksext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hmksexterr'
+    datatype: float
+    description: Error on extended source colour H-Ks
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H;em.IR.K
+    name: hmksexterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmksext'
+    datatype: float
+    description: Extended source colour J-Ks (using aperMagNoAperCorr3)
+    fits:tunit: mag
+    ivoa:ucd: phot.color;em.IR.J;em.IR.K
+    name: jmksext
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmksexterr'
+    datatype: float
+    description: Error on extended source colour J-Ks
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J;em.IR.K
+    name: jmksexterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.mergedclassstat'
+    datatype: float
+    description: Merged N(0,1) stellarness-of-profile statistic
+    ivoa:ucd: stat
+    name: mergedclassstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.mergedclass'
+    datatype: short
+    description: Class flag,1|0|-1|-2|-3|-9=gal|noise|star|probStar|probGal|saturated
+    ivoa:ucd: meta.code
+    name: mergedclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.pstar'
+    datatype: float
+    description: Probability that the source is a star
+    ivoa:ucd: stat.probability
+    name: pstar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.pgalaxy'
+    datatype: float
+    description: Probability that the source is a galaxy
+    ivoa:ucd: stat.probability
+    name: pgalaxy
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.pnoise'
+    datatype: float
+    description: Probability that the source is noise
+    ivoa:ucd: stat.probability
+    name: pnoise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.psaturated'
+    datatype: float
+    description: Probability that the source is saturated
+    ivoa:ucd: stat.probability
+    name: psaturated
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ebv'
+    datatype: float
+    description: The galactic dust extinction value measured from the Schlegel maps
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption.gal
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ay'
+    datatype: float
+    description: The galactic extinction correction in the Y band
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption.gal;em.IR.NIR
+    name: ay
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.aj'
+    datatype: float
+    description: The galactic extinction correction in the J band
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption.gal;em.IR.J
+    name: aj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ah'
+    datatype: float
+    description: The galactic extinction correction in the H band
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption.gal;em.IR.H
+    name: ah
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.aks'
+    datatype: float
+    description: The galactic extinction correction in the Ks band
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption.gal;em.IR.K
+    name: aks
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ymjd'
+    datatype: double
+    description: Modified Julian Day in Y band
+    fits:tunit: d
+    ivoa:ucd: time.epoch;em.IR.NIR
+    name: ymjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ypetromag'
+    datatype: float
+    description: Extended source Y mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: ypetromag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ypetromagerr'
+    datatype: float
+    description: Error in extended source Y mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR
+    name: ypetromagerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag3'
+    datatype: float
+    description: Default point source Y aperture corrected mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermag3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag3err'
+    datatype: float
+    description: Error in default point/extended source Y mag
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR
+    name: yapermag3err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag4'
+    datatype: float
+    description: Point source Y aperture corrected mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermag4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag4err'
+    datatype: float
+    description: Error in point/extended source Y mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR
+    name: yapermag4err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag6'
+    datatype: float
+    description: Point source Y aperture corrected mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermag6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermag6err'
+    datatype: float
+    description: Error in point/extended source Y mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.NIR
+    name: yapermag6err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr3'
+    datatype: float
+    description: Default extended source Y aperture mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermagnoapercorr3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr4'
+    datatype: float
+    description: Extended source Y aperture mag (2.8 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermagnoapercorr4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr6'
+    datatype: float
+    description: Extended source Y aperture mag (5.7 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.NIR
+    name: yapermagnoapercorr6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yhlcorsmjradas'
+    datatype: float
+    description: Seeing corrected half-light, semi-major axis in Y band
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize;em.IR.NIR
+    name: yhlcorsmjradas
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ygausig'
+    datatype: float
+    description: RMS of axes of ellipse fit in Y
+    fits:tunit: pixel
+    ivoa:ucd: src.morph.param;em.IR.NIR
+    name: ygausig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yell'
+    datatype: float
+    description: 1-b/a, where a/b=semi-major/minor axes in Y
+    ivoa:ucd: src.ellipticity;em.IR.NIR
+    name: yell
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ypa'
+    datatype: float
+    description: ellipse fit celestial orientation in Y
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng;em.IR.NIR
+    name: ypa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yerrbits'
+    datatype: int
+    description: processing warning/error bitwise flags in Y
+    ivoa:ucd: meta.code
+    name: yerrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yaverageconf'
+    datatype: float
+    description: average confidence in 2 arcsec diam default aperture 3 Y
+    ivoa:ucd: stat.likelihood;em.IR.NIR
+    name: yaverageconf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yclass'
+    datatype: short
+    description: discrete image classification flag in Y
+    ivoa:ucd: src.class;em.IR.NIR
+    name: yclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yclassstat'
+    datatype: float
+    description: N(0,1) stellarness-of-profile statistic in Y
+    ivoa:ucd: stat;em.IR.NIR
+    name: yclassstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ypperrbits'
+    datatype: int
+    description: additional WFAU post-processing error bits in Y
+    ivoa:ucd: meta.code
+    name: ypperrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yseqnum'
+    datatype: int
+    description: the running number of the Y detection
+    ivoa:ucd: meta.number
+    name: yseqnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yxi'
+    datatype: float
+    description: Offset of Y detection from master position (+east/-west)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.ra;arith.diff;em.IR.NIR
+    name: yxi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.yeta'
+    datatype: float
+    description: Offset of Y detection from master position (+north/-south)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.dec;arith.diff;em.IR.NIR
+    name: yeta
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jmjd'
+    datatype: double
+    description: Modified Julian Day in J band
+    fits:tunit: d
+    ivoa:ucd: time.epoch;em.IR.J
+    name: jmjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jpetromag'
+    datatype: float
+    description: Extended source J mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: jpetromag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jpetromagerr'
+    datatype: float
+    description: Error in extended source J mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J
+    name: jpetromagerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag3'
+    datatype: float
+    description: Default point source J aperture corrected mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermag3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag3err'
+    datatype: float
+    description: Error in default point/extended source J mag
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J
+    name: japermag3err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag4'
+    datatype: float
+    description: Point source J aperture corrected mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermag4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag4err'
+    datatype: float
+    description: Error in point/extended source J mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J
+    name: japermag4err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag6'
+    datatype: float
+    description: Point source J aperture corrected mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermag6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermag6err'
+    datatype: float
+    description: Error in point/extended source J mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.J
+    name: japermag6err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr3'
+    datatype: float
+    description: Default extended source J aperture mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermagnoapercorr3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr4'
+    datatype: float
+    description: Extended source J aperture mag (2.8 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermagnoapercorr4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr6'
+    datatype: float
+    description: Extended source J aperture mag (5.7 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.J
+    name: japermagnoapercorr6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jhlcorsmjradas'
+    datatype: float
+    description: Seeing corrected half-light, semi-major axis in J band
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize;em.IR.J
+    name: jhlcorsmjradas
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jgausig'
+    datatype: float
+    description: RMS of axes of ellipse fit in J
+    fits:tunit: pixel
+    ivoa:ucd: src.morph.param;em.IR.J
+    name: jgausig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jell'
+    datatype: float
+    description: 1-b/a, where a/b=semi-major/minor axes in J
+    ivoa:ucd: src.ellipticity;em.IR.J
+    name: jell
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jpa'
+    datatype: float
+    description: ellipse fit celestial orientation in J
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng;em.IR.J
+    name: jpa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jerrbits'
+    datatype: int
+    description: processing warning/error bitwise flags in J
+    ivoa:ucd: meta.code
+    name: jerrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.javerageconf'
+    datatype: float
+    description: average confidence in 2 arcsec diam default aperture 3 J
+    ivoa:ucd: stat.likelihood;em.IR.J
+    name: javerageconf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jclass'
+    datatype: short
+    description: discrete image classification flag in J
+    ivoa:ucd: src.class;em.IR.J
+    name: jclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jclassstat'
+    datatype: float
+    description: N(0,1) stellarness-of-profile statistic in J
+    ivoa:ucd: stat;em.IR.J
+    name: jclassstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jpperrbits'
+    datatype: int
+    description: additional WFAU post-processing error bits in J
+    ivoa:ucd: meta.code
+    name: jpperrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jseqnum'
+    datatype: int
+    description: the running number of the J detection
+    ivoa:ucd: meta.number
+    name: jseqnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jxi'
+    datatype: float
+    description: Offset of J detection from master position (+east/-west)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.ra;arith.diff;em.IR.J
+    name: jxi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.jeta'
+    datatype: float
+    description: Offset of J detection from master position (+north/-south)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.dec;arith.diff;em.IR.J
+    name: jeta
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hmjd'
+    datatype: double
+    description: Modified Julian Day in H band
+    fits:tunit: d
+    ivoa:ucd: time.epoch;em.IR.H
+    name: hmjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hpetromag'
+    datatype: float
+    description: Extended source H mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hpetromag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hpetromagerr'
+    datatype: float
+    description: Error in extended source H mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H
+    name: hpetromagerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag3'
+    datatype: float
+    description: Default point source H aperture corrected mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermag3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag3err'
+    datatype: float
+    description: Error in default point/extended source H mag
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H
+    name: hapermag3err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag4'
+    datatype: float
+    description: Point source H aperture corrected mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermag4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag4err'
+    datatype: float
+    description: Error in point/extended source H mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H
+    name: hapermag4err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag6'
+    datatype: float
+    description: Point source H aperture corrected mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermag6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermag6err'
+    datatype: float
+    description: Error in point/extended source H mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.H
+    name: hapermag6err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr3'
+    datatype: float
+    description: Default extended source H aperture mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermagnoapercorr3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr4'
+    datatype: float
+    description: Extended source H aperture mag (2.8 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermagnoapercorr4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr6'
+    datatype: float
+    description: Extended source H aperture mag (5.7 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.H
+    name: hapermagnoapercorr6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hhlcorsmjradas'
+    datatype: float
+    description: Seeing corrected half-light, semi-major axis in H band
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize;em.IR.H
+    name: hhlcorsmjradas
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hgausig'
+    datatype: float
+    description: RMS of axes of ellipse fit in H
+    fits:tunit: pixel
+    ivoa:ucd: src.morph.param;em.IR.H
+    name: hgausig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hell'
+    datatype: float
+    description: 1-b/a, where a/b=semi-major/minor axes in H
+    ivoa:ucd: src.ellipticity;em.IR.H
+    name: hell
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hpa'
+    datatype: float
+    description: ellipse fit celestial orientation in H
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng;em.IR.H
+    name: hpa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.herrbits'
+    datatype: int
+    description: processing warning/error bitwise flags in H
+    ivoa:ucd: meta.code
+    name: herrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.haverageconf'
+    datatype: float
+    description: average confidence in 2 arcsec diam default aperture 3 H
+    ivoa:ucd: stat.likelihood;em.IR.H
+    name: haverageconf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hclass'
+    datatype: short
+    description: discrete image classification flag in H
+    ivoa:ucd: src.class;em.IR.H
+    name: hclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hclassstat'
+    datatype: float
+    description: N(0,1) stellarness-of-profile statistic in H
+    ivoa:ucd: stat;em.IR.H
+    name: hclassstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hpperrbits'
+    datatype: int
+    description: additional WFAU post-processing error bits in H
+    ivoa:ucd: meta.code
+    name: hpperrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hseqnum'
+    datatype: int
+    description: the running number of the H detection
+    ivoa:ucd: meta.number
+    name: hseqnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.hxi'
+    datatype: float
+    description: Offset of H detection from master position (+east/-west)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.ra;arith.diff;em.IR.H
+    name: hxi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.heta'
+    datatype: float
+    description: Offset of H detection from master position (+north/-south)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.dec;arith.diff;em.IR.H
+    name: heta
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksmjd'
+    datatype: double
+    description: Modified Julian Day in Ks band
+    fits:tunit: d
+    ivoa:ucd: time.epoch;em.IR.K
+    name: ksmjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kspetromag'
+    datatype: float
+    description: Extended source Ks mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: kspetromag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kspetromagerr'
+    datatype: float
+    description: Error in extended source Ks mag (Petrosian)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.K
+    name: kspetromagerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag3'
+    datatype: float
+    description: Default point source Ks aperture corrected mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermag3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag3err'
+    datatype: float
+    description: Error in default point/extended source Ks mag
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.K
+    name: ksapermag3err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag4'
+    datatype: float
+    description: Point source Ks aperture corrected mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermag4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag4err'
+    datatype: float
+    description: Error in point/extended source Ks mag (2.8 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.K
+    name: ksapermag4err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag6'
+    datatype: float
+    description: Point source Ks aperture corrected mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermag6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag6err'
+    datatype: float
+    description: Error in point/extended source Ks mag (5.7 arcsec aperture diam)
+    fits:tunit: mag
+    ivoa:ucd: stat.error;em.IR.K
+    name: ksapermag6err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr3'
+    datatype: float
+    description: Default extended source Ks aperture mag (2.0 arcsec diam)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermagnoapercorr3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr4'
+    datatype: float
+    description: Extended source Ks aperture mag (2.8 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermagnoapercorr4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr6'
+    datatype: float
+    description: Extended source Ks aperture mag (5.7 arcsec aperture diameter)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.IR.K
+    name: ksapermagnoapercorr6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kshlcorsmjradas'
+    datatype: float
+    description: Seeing corrected half-light, semi-major axis in Ks band
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize;em.IR.K
+    name: kshlcorsmjradas
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksgausig'
+    datatype: float
+    description: RMS of axes of ellipse fit in Ks
+    fits:tunit: pixel
+    ivoa:ucd: src.morph.param;em.IR.K
+    name: ksgausig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksell'
+    datatype: float
+    description: 1-b/a, where a/b=semi-major/minor axes in Ks
+    ivoa:ucd: src.ellipticity;em.IR.K
+    name: ksell
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kspa'
+    datatype: float
+    description: ellipse fit celestial orientation in Ks
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng;em.IR.K
+    name: kspa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kserrbits'
+    datatype: int
+    description: processing warning/error bitwise flags in Ks
+    ivoa:ucd: meta.code
+    name: kserrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksaverageconf'
+    datatype: float
+    description: average confidence in 2 arcsec diam default aperture 3 Ks
+    ivoa:ucd: stat.likelihood;em.IR.K
+    name: ksaverageconf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksclass'
+    datatype: short
+    description: discrete image classification flag in Ks
+    ivoa:ucd: src.class;em.IR.K
+    name: ksclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksclassstat'
+    datatype: float
+    description: N(0,1) stellarness-of-profile statistic in Ks
+    ivoa:ucd: stat;em.IR.K
+    name: ksclassstat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kspperrbits'
+    datatype: int
+    description: additional WFAU post-processing error bits in Ks
+    ivoa:ucd: meta.code
+    name: kspperrbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksseqnum'
+    datatype: int
+    description: the running number of the Ks detection
+    ivoa:ucd: meta.number
+    name: ksseqnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ksxi'
+    datatype: float
+    description: Offset of Ks detection from master position (+east/-west)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.ra;arith.diff;em.IR.K
+    name: ksxi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.kseta'
+    datatype: float
+    description: Offset of Ks detection from master position (+north/-south)
+    fits:tunit: arcsec
+    ivoa:ucd: pos.eq.dec;arith.diff;em.IR.K
+    name: kseta
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.primary_source'
+    datatype: double
+    description: Flag indicates primary sources (=1), otherwise (=0)
+    ivoa:ucd: meta.code.class
+    name: primary_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.ring256'
+    datatype: int
+    description: HEALPix ring nside=256 index
+    ivoa:ucd: meta.code.class
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code.class
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#vhs_dr5.vhs_cat_v3.htm9'
+    datatype: double
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code.class
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: 'This multi-band source catalogue provides aperture photometry in four
+    near infrared broad-band filters: Y, J, H and Ks for almost 1.4 billion detections.
+    The total coverage of the VHS survey is almost 17000 square degrees in the South
+    Hemisphere.'
+  indexes:
+  - '@id': '#vhs_cat_v3_sourcename_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.sourcename'
+    name: vhs_cat_v3_sourcename_idx
+  - '@id': '#vhs_cat_v3_sourceid_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.sourceid'
+    name: vhs_cat_v3_sourceid_idx
+  - '@id': '#vhs_cat_v3_ra2000_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ra2000'
+    name: vhs_cat_v3_ra2000_idx
+  - '@id': '#vhs_cat_v3_dec2000_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.dec2000'
+    name: vhs_cat_v3_dec2000_idx
+  - '@id': '#vhs_cat_v3_l_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.l'
+    name: vhs_cat_v3_l_idx
+  - '@id': '#vhs_cat_v3_b_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.b'
+    name: vhs_cat_v3_b_idx
+  - '@id': '#vhs_cat_v3_ymjpnt_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ymjpnt'
+    name: vhs_cat_v3_ymjpnt_idx
+  - '@id': '#vhs_cat_v3_jmhpnt_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jmhpnt'
+    name: vhs_cat_v3_jmhpnt_idx
+  - '@id': '#vhs_cat_v3_hmkspnt_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hmkspnt'
+    name: vhs_cat_v3_hmkspnt_idx
+  - '@id': '#vhs_cat_v3_jmkspnt_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jmkspnt'
+    name: vhs_cat_v3_jmkspnt_idx
+  - '@id': '#vhs_cat_v3_ymjext_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ymjext'
+    name: vhs_cat_v3_ymjext_idx
+  - '@id': '#vhs_cat_v3_jmhext_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jmhext'
+    name: vhs_cat_v3_jmhext_idx
+  - '@id': '#vhs_cat_v3_hmksext_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hmksext'
+    name: vhs_cat_v3_hmksext_idx
+  - '@id': '#vhs_cat_v3_jmksext_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jmksext'
+    name: vhs_cat_v3_jmksext_idx
+  - '@id': '#vhs_cat_v3_pstar_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.pstar'
+    name: vhs_cat_v3_pstar_idx
+  - '@id': '#vhs_cat_v3_pgalaxy_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.pgalaxy'
+    name: vhs_cat_v3_pgalaxy_idx
+  - '@id': '#vhs_cat_v3_pnoise_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.pnoise'
+    name: vhs_cat_v3_pnoise_idx
+  - '@id': '#vhs_cat_v3_psaturated_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.psaturated'
+    name: vhs_cat_v3_psaturated_idx
+  - '@id': '#vhs_cat_v3_ebv_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ebv'
+    name: vhs_cat_v3_ebv_idx
+  - '@id': '#vhs_cat_v3_ymjd_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ymjd'
+    name: vhs_cat_v3_ymjd_idx
+  - '@id': '#vhs_cat_v3_ypetromag_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ypetromag'
+    name: vhs_cat_v3_ypetromag_idx
+  - '@id': '#vhs_cat_v3_ypetromagerr_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ypetromagerr'
+    name: vhs_cat_v3_ypetromagerr_idx
+  - '@id': '#vhs_cat_v3_yapermag3_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.yapermag3'
+    name: vhs_cat_v3_yapermag3_idx
+  - '@id': '#vhs_cat_v3_yapermag3err_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.yapermag3err'
+    name: vhs_cat_v3_yapermag3err_idx
+  - '@id': '#vhs_cat_v3_jmjd_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jmjd'
+    name: vhs_cat_v3_jmjd_idx
+  - '@id': '#vhs_cat_v3_jpetromag_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jpetromag'
+    name: vhs_cat_v3_jpetromag_idx
+  - '@id': '#vhs_cat_v3_jpetromagerr_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.jpetromagerr'
+    name: vhs_cat_v3_jpetromagerr_idx
+  - '@id': '#vhs_cat_v3_japermag3_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.japermag3'
+    name: vhs_cat_v3_japermag3_idx
+  - '@id': '#vhs_cat_v3_japermag3err_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.japermag3err'
+    name: vhs_cat_v3_japermag3err_idx
+  - '@id': '#vhs_cat_v3_hmjd_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hmjd'
+    name: vhs_cat_v3_hmjd_idx
+  - '@id': '#vhs_cat_v3_hpetromag_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hpetromag'
+    name: vhs_cat_v3_hpetromag_idx
+  - '@id': '#vhs_cat_v3_hpetromagerr_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hpetromagerr'
+    name: vhs_cat_v3_hpetromagerr_idx
+  - '@id': '#vhs_cat_v3_hapermag3_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hapermag3'
+    name: vhs_cat_v3_hapermag3_idx
+  - '@id': '#vhs_cat_v3_hapermag3err_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.hapermag3err'
+    name: vhs_cat_v3_hapermag3err_idx
+  - '@id': '#vhs_cat_v3_ksmjd_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ksmjd'
+    name: vhs_cat_v3_ksmjd_idx
+  - '@id': '#vhs_cat_v3_kspetromag_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.kspetromag'
+    name: vhs_cat_v3_kspetromag_idx
+  - '@id': '#vhs_cat_v3_kspetromagerr_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.kspetromagerr'
+    name: vhs_cat_v3_kspetromagerr_idx
+  - '@id': '#vhs_cat_v3_ksapermag3_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ksapermag3'
+    name: vhs_cat_v3_ksapermag3_idx
+  - '@id': '#vhs_cat_v3_ksapermag3err_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ksapermag3err'
+    name: vhs_cat_v3_ksapermag3err_idx
+  - '@id': '#vhs_cat_v3_random_id_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.random_id'
+    name: vhs_cat_v3_random_id_idx
+  - '@id': '#vhs_cat_v3_elat_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.elat'
+    name: vhs_cat_v3_elat_idx
+  - '@id': '#vhs_cat_v3_elon_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.elon'
+    name: vhs_cat_v3_elon_idx
+  - '@id': '#vhs_cat_v3_ring256_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.ring256'
+    name: vhs_cat_v3_ring256_idx
+  - '@id': '#vhs_cat_v3_nest4096_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.nest4096'
+    name: vhs_cat_v3_nest4096_idx
+  - '@id': '#vhs_cat_v3_htm9_idx'
+    columns:
+    - '#vhs_dr5.vhs_cat_v3.htm9'
+    name: vhs_cat_v3_htm9_idx
+  name: vhs_cat_v3
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

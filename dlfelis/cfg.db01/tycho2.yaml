@@ -1,0 +1,464 @@
+---
+'@id': '#tycho2'
+description: The Tycho-2 Catalogue is an astrometric reference catalogue containing
+  positions, proper motions and two-colour photometry for the 2.5 million brightest
+  stars in the sky. The catalogue is based on observations made using the Hipparcos
+  satellite star mapper and is constructed using the same observations that were used
+  to create the original Tycho catalogue. Improved reduction techniques have resulted
+  in a catalogue with significantly more entries and in improved precision.
+name: tycho2
+tables:
+- '@id': '#tycho2.main'
+  columns:
+  - '@id': '#tycho2.main.tyc1'
+    datatype: short
+    description: 'TYC from TYC or GSC; note:  The TYC identifier is constructed from
+      the GSC region number (TYC1), the running number within the region (TYC2) and
+      a component identifier (TYC3) which is normally 1. Some non-GSC running numbers
+      were constructed for the first Tycho Catalogue and for Tycho-2.  The recommended
+      star designation contains a hyphen between the TYC numbers, e.g. TYC 1-13-1.'
+    ivoa:ucd: meta.id
+    name: tyc1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.tyc2'
+    datatype: short
+    description: 'TYC2 from TYC or GSC;  note:  The TYC identifier is constructed
+      from the GSC region number (TYC1), the running number within the region (TYC2)
+      and a component identifier (TYC3) which is normally 1. Some non-GSC running
+      numbers were constructed for the first Tycho Catalogue and for Tycho-2.  The
+      recommended star designation contains a hyphen between the TYC numbers, e.g.
+      TYC 1-13-1.'
+    ivoa:ucd: meta.id
+    name: tyc2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.tyc3'
+    datatype: short
+    description: 'TYC3 from TYC;  note:  The TYC identifier is constructed from the
+      GSC region number (TYC1), the running number within the region (TYC2) and a
+      component identifier (TYC3) which is normally 1. Some non-GSC running numbers
+      were constructed for the first Tycho Catalogue and for Tycho-2.  The recommended
+      star designation contains a hyphen between the TYC numbers, e.g. TYC 1-13-1.'
+    name: tyc3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.pflag'
+    datatype: char
+    description: 'mean position flag; note:       = normal mean position and proper
+      motion.<BR>  P = the mean position, proper motion, etc., refer to the<BR> photocentre
+      of two Tycho-2 entries, where the BT magnitudes<BR> were used in weighting the
+      positions.<BR>  X = no mean position, no proper motion.'
+    length: 1
+    name: pflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.ramdeg'
+    datatype: double
+    description: 'Mean Right Asc, ICRS, epoch=J2000; note: The mean position is a
+      weighted mean for the catalogues contributing to the proper motion determination.
+      This mean has then been brought to epoch 2000.0 by the computed proper motion.
+      See Note(2) above for details. Tycho-2 is one of the several catalogues used
+      to determine the mean position and proper motion. The observed Tycho-2 position
+      is given in the fields RAdeg and DEdeg.'
+    name: ramdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.demdeg'
+    datatype: double
+    description: 'Mean Decl, ICRS, at epoch=J2000; note: The mean position is a weighted
+      mean for the catalogues contributing to the proper motion determination. This
+      mean has then been brought to epoch 2000.0 by the computed proper motion. See
+      Note(2) above for details. Tycho-2 is one of the several catalogues used to
+      determine the mean position and proper motion. The observed Tycho-2 position
+      is given in the fields RAdeg and DEdeg.'
+    name: demdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.pmra'
+    datatype: float
+    description: 'Proper motion in RA*cos(dec); note: Some Hipparcos stars (having
+      a positive number in the HIP column) have no proper motions; these are virtually
+      all in multiple systems.'
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.pmde'
+    datatype: float
+    description: 'Proper motion in Dec; note: Some Hipparcos stars (having a positive
+      number in the HIP column) have no proper motions; these are virtually all in
+      multiple systems.'
+    name: pmde
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_ramdeg'
+    datatype: short
+    description: 's.e. RA*cos(dec),at mean epoch; note: The errors are based on error
+      models.'
+    name: e_ramdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_demdeg'
+    datatype: short
+    description: 's.e. of Dec at mean epoch; note: The errors are based on error models.'
+    name: e_demdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_pmra'
+    datatype: float
+    description: 's.e. prop mot in RA*cos(dec); note: The errors are based on error
+      models.'
+    name: e_pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_pmde'
+    datatype: float
+    description: 's.e. of proper motion in Dec; note: The errors are based on error
+      models.'
+    name: e_pmde
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.epram'
+    datatype: float
+    description: 'mean epoch of RA; note: The mean epochs are given in Julian years.'
+    name: epram
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.epdem'
+    datatype: float
+    description: 'mean epoch of Dec; note: The mean epochs are given in Julian years.'
+    name: epdem
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.num'
+    datatype: short
+    description: Number of positions used
+    name: num
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.q_ramdeg'
+    datatype: float
+    description: 'Goodness of fit for mean RA; note: This goodness of fit is the ratio
+      of the scatter-based and the model-based error. It is only defined when Num
+      > 2. Values exceeding 9.9 are truncated to 9.9.'
+    name: q_ramdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.q_demdeg'
+    datatype: float
+    description: 'Goodness of fit for mean Dec; note: This goodness of fit is the
+      ratio of the scatter-based and the model-based error. It is only defined when
+      Num > 2. Values exceeding 9.9 are truncated to 9.9.'
+    name: q_demdeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.q_pmra'
+    datatype: float
+    description: 'Goodness of fit for pmRA; note: This goodness of fit is the ratio
+      of the scatter-based and the model-based error. It is only defined when Num
+      > 2. Values exceeding 9.9 are truncated to 9.9.'
+    name: q_pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.q_pmde'
+    datatype: float
+    description: 'Goodness of fit for pmDE; note: This goodness of fit is the ratio
+      of the scatter-based and the model-based error. It is only defined when Num
+      > 2. Values exceeding 9.9 are truncated to 9.9.'
+    name: q_pmde
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.btmag'
+    datatype: float
+    description: 'Tycho-2 BT magnitude; note: Blank when no magnitude is available.
+      Either BTmag or VTmag is<BR> always given. Approximate Johnson photometry may
+      be obtained as:<BR> V   = VT -0.090*(BT-VT)<BR> B-V = 0.850*(BT-VT)<BR> Consult
+      Sect 1.3 of Vol 1 of &quotThe Hipparcos and Tycho Catalogues&quot;,<BR> ESA
+      SP-1200, 1997, for details.'
+    name: btmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_btmag'
+    datatype: float
+    description: 's.e. of BT; note:  Blank when no magnitude is available. Either
+      BTmag or VTmag is<BR> always given. Approximate Johnson photometry may be obtained
+      as:<BR> V   = VT -0.090*(BT-VT)<BR> B-V = 0.850*(BT-VT)<BR> Consult Sect 1.3
+      of Vol 1 of &quotThe Hipparcos and Tycho Catalogues&quot;,<BR> ESA SP-1200,
+      1997, for details.'
+    name: e_btmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.vtmag'
+    datatype: float
+    description: 'Tycho-2 VT magnitude; note:  Blank when no magnitude is available.
+      Either BTmag or VTmag is<BR> always given. Approximate Johnson photometry may
+      be obtained as:<BR> V   = VT -0.090*(BT-VT)<BR> B-V = 0.850*(BT-VT)<BR> Consult
+      Sect 1.3 of Vol 1 of &quotThe Hipparcos and Tycho Catalogues&quot;,<BR> ESA
+      SP-1200, 1997, for details.'
+    name: vtmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_vtmag'
+    datatype: float
+    description: 's.e. of VT; note:  Blank when no magnitude is available. Either
+      BTmag or VTmag is<BR> always given. Approximate Johnson photometry may be obtained
+      as:<BR> V   = VT -0.090*(BT-VT)<BR> B-V = 0.850*(BT-VT)<BR> Consult Sect 1.3
+      of Vol 1 of &quotThe Hipparcos and Tycho Catalogues&quot;,<BR> ESA SP-1200,
+      1997, for details.'
+    name: e_vtmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.prox'
+    datatype: short
+    description: 'proximity indicator; note: Distance in units of 100 mas to the nearest
+      entry in the Tycho-2 main catalogue or supplement. The distance is computed
+      for the epoch 1991.25. A value of 999 (i.e. 99.9 arcsec) is given if the distance
+      exceeds 99.9 arcsec.'
+    name: prox
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.tyc'
+    datatype: short
+    description: 'Tycho-1 star; note:      = no Tycho-1 star was found within 0.8
+      arcsec (quality 1-8)<br> or 2.4 arcsec (quality 9).<BR>  T = this is a Tycho-1
+      star. The Tycho-1 identifier is given in the<BR> beginning of the record. For
+      Tycho-1 stars, resolved in<BR> Tycho-2 as a close pair, both components are
+      flagged as<BR> a Tycho-1 star and the Tycho-1 TYC3 is assigned to the<BR> brightest
+      (VT) component.<BR>  The HIP-only stars given in Tycho-1 are not flagged as
+      Tycho-1 stars.'
+    name: tyc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.hip'
+    datatype: short
+    description: Hipparcos number
+    name: hip
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.ccdm'
+    datatype: string
+    description: 'CCDM component identifier for HIP stars; note: The CCDM component
+      identifiers for double or multiple Hipparcos stars contributing to this Tycho-2
+      entry. For photocentre solutions, all components within 0.8 arcsec contribute.
+      For double star solutions any unresolved component within 0.8 arcsec contributes.
+      For single star solutions, the predicted signal from close stars were normally
+      subtracted in the analysis of the photon counts and such stars therefore do
+      not contribute to the solution. The components are given in lexical order.'
+    length: 3
+    name: ccdm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.radeg'
+    datatype: double
+    description: Observed Tycho-2 Right Ascension, ICRS
+    ivoa:ucd: pos.eq.ra
+    name: radeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.dedeg'
+    datatype: double
+    description: Observed Tycho-2 Declination, ICRS
+    ivoa:ucd: pos.eq.dec
+    name: dedeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.epra_1990'
+    datatype: float
+    description: epoch-1990 of RAdeg
+    name: epra_1990
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.epde_1990'
+    datatype: float
+    description: epoch-1990 of DEdeg
+    name: epde_1990
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_radeg'
+    datatype: float
+    description: 's.e.RA*cos(dec), of observed Tycho-2 RA; note: The errors are based
+      on error models.'
+    name: e_radeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.e_dedeg'
+    datatype: float
+    description: 's.e. of observed Tycho-2 Dec; note: The errors are based on error
+      models.'
+    name: e_dedeg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.posflg'
+    datatype: char
+    description: 'type of Tycho-2 solution; note:       = normal treatment, close
+      stars were subtracted when possible.<BR>  D = double star treatment. Two stars
+      were found. The companion is<BR> normally included as a separate Tycho-2 entry,
+      but may have<BR> been rejected.<BR>  P = photocentre treatment, close stars
+      were not subtracted. This<BR> special treatment was applied to known or suspected
+      doubles<BR> which were not successfully (or reliably) resolved in the<BR> Tycho-2
+      double star processing.'
+    length: 1
+    name: posflg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.corr'
+    datatype: float
+    description: correlation (RAdeg,DEdeg)
+    name: corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest schem => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.glon'
+    datatype: double
+    description: Galactic Longitude
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.glat'
+    datatype: double
+    description: Galactic Latitude
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.elon'
+    datatype: double
+    description: Ecliptic Longitude
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.elat'
+    datatype: double
+    description: Ecliptic Latitude
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#tycho2.main.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: The Tycho-2 main catalogue
+  indexes:
+  - '@id': '#main_ramdeg_idx'
+    columns:
+    - '#tycho2.main.ramdeg'
+    name: main_ramdeg_idx
+  - '@id': '#main_demdeg_idx'
+    columns:
+    - '#tycho2.main.demdeg'
+    name: main_demdeg_idx
+  - '@id': '#main_pmra_idx'
+    columns:
+    - '#tycho2.main.pmra'
+    name: main_pmra_idx
+  - '@id': '#main_pmde_idx'
+    columns:
+    - '#tycho2.main.pmde'
+    name: main_pmde_idx
+  - '@id': '#main_btmag_idx'
+    columns:
+    - '#tycho2.main.btmag'
+    name: main_btmag_idx
+  - '@id': '#main_vtmag_idx'
+    columns:
+    - '#tycho2.main.vtmag'
+    name: main_vtmag_idx
+  - '@id': '#main_epra_1990_idx'
+    columns:
+    - '#tycho2.main.epra_1990'
+    name: main_epra_1990_idx
+  - '@id': '#main_epde_1990_idx'
+    columns:
+    - '#tycho2.main.epde_1990'
+    name: main_epde_1990_idx
+  - '@id': '#main_ring256_idx'
+    columns:
+    - '#tycho2.main.ring256'
+    name: main_ring256_idx
+  - '@id': '#main_nest4096_idx'
+    columns:
+    - '#tycho2.main.nest4096'
+    name: main_nest4096_idx
+  - '@id': '#main_glon_idx'
+    columns:
+    - '#tycho2.main.glon'
+    name: main_glon_idx
+  - '@id': '#main_glat_idx'
+    columns:
+    - '#tycho2.main.glat'
+    name: main_glat_idx
+  - '@id': '#main_elon_idx'
+    columns:
+    - '#tycho2.main.elon'
+    name: main_elon_idx
+  - '@id': '#main_elat_idx'
+    columns:
+    - '#tycho2.main.elat'
+    name: main_elat_idx
+  - '@id': '#main_random_id_idx'
+    columns:
+    - '#tycho2.main.random_id'
+    name: main_random_id_idx
+  name: main
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

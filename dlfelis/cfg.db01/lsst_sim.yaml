@@ -1,0 +1,1512 @@
+---
+'@id': '#lsst_sim'
+description: lsst_sim
+name: lsst_sim
+tables:
+- '@id': '#lsst_sim.simdr2'
+  columns:
+  - '@id': '#lsst_sim.simdr2.ra'
+    datatype: double
+    description: Right Ascension J2000 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.dec'
+    datatype: double
+    description: Declination J2000 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.gall'
+    datatype: double
+    description: Galactic longitude (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon;meta.main
+    name: gall
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.galb'
+    datatype: double
+    description: Galactic latitude (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat;meta.main
+    name: galb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.gc'
+    datatype: short
+    description: Galactic component, thin disk=1, thick disk=2, halo=3, bulge=4, MCs=5
+    name: gc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.logage'
+    datatype: float
+    description: Logarithm of age in years
+    fits:tunit: yr
+    ivoa:ucd: time.age
+    name: logage
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.m_h'
+    datatype: float
+    description: Initial Metallicity [M/H], equal to [Fe/H] in this version (dex)
+    name: m_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.m_ini'
+    datatype: float
+    description: Initial mass (M_sun)
+    name: m_ini
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mratio'
+    datatype: float
+    description: Mass ratio of binary systems (0 for single stars)
+    name: mratio
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mu0'
+    datatype: float
+    description: True distance modulus
+    fits:tunit: mag
+    ivoa:ucd: phot.mag.distMod
+    name: mu0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.av'
+    datatype: float
+    description: V-band Extinction
+    fits:tunit: mag
+    name: av
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mass'
+    datatype: float
+    description: Present mass (M_sun)
+    name: mass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.logl'
+    datatype: float
+    description: Logarithm of luminosity in L_sun
+    name: logl
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.logte'
+    datatype: float
+    description: Log effective temperature (K)
+    fits:tunit: Kelvin
+    name: logte
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.logg'
+    datatype: float
+    description: Logarithm of surface gravity in cgs units
+    name: logg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.label'
+    datatype: short
+    description: Evolutionary phase, PMS=0, MS=1, SGB=2, RGB=3, CHeB=4,5,6, EAGB=7,
+      TPAGB=8, PAGB+WD=9
+    name: label
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mcoretp'
+    datatype: float
+    description: Core mass during the TP-AGB, otherwise null (Msun)
+    name: mcoretp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.c_o'
+    datatype: float
+    description: Surface C/O ratio by number, n_C/n_O
+    name: c_o
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.period0'
+    datatype: float
+    description: Period of fundamental mode (days) if LPV, otherwise null
+    name: period0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.period1'
+    datatype: float
+    description: Period of first overtone mode (days) if LPV, otherwise null
+    name: period1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.period2'
+    datatype: float
+    description: Period of second overtone mode (days) if LPV, otherwise null
+    name: period2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.period3'
+    datatype: float
+    description: Period of third overtone mode (days) if LPV, otherwise null
+    name: period3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.period4'
+    datatype: float
+    description: Period of fourth overtone mode (days) if LPV, otherwise null
+    name: period4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.pmode'
+    datatype: short
+    description: Expected pulsation mode if LPV, fundamental=0, first overtone=1,
+      second overtone=2, third overtone=3, fourth overtone=4, -1 otherwise
+    name: pmode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mloss'
+    datatype: float
+    description: Mass loss rate (M_sun/year)
+    name: mloss
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.tau1m'
+    datatype: float
+    description: Optical depth at 1 micron, for stars w/ heavy mass loss
+    name: tau1m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.x'
+    datatype: float
+    description: Surface H mass fraction
+    name: x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.y'
+    datatype: float
+    description: Surface He mass fraction
+    name: y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.xc'
+    datatype: float
+    description: Surface C mass fraction
+    name: xc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.xn'
+    datatype: float
+    description: Surface N mass fraction
+    name: xn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.xo'
+    datatype: float
+    description: Surface O mass fraction
+    name: xo
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.cexcess'
+    datatype: float
+    description: Carbon excess at surface, log(n_c-n_O)-log(n_H)+12, -1 for O-rich
+      stars
+    name: cexcess
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.z'
+    datatype: float
+    description: Linear heavy element abundance
+    name: z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.mbolmag'
+    datatype: float
+    description: Apparent Bolometric luminosity (4.77 for Sun)
+    name: mbolmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.umag'
+    datatype: float
+    description: LSST u-band magnitude (ABmag)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.U
+    name: umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.gmag'
+    datatype: float
+    description: LSST g-band magnitude (ABmag)
+    fits:tunit: mag
+    name: gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.rmag'
+    datatype: float
+    description: LSST r-band magnitude (ABmag)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.imag'
+    datatype: float
+    description: LSST i-band magnitude (ABmag)
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.I
+    name: imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.zmag'
+    datatype: float
+    description: LSST z-band magnitude (ABmag)
+    fits:tunit: mag
+    name: zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.ymag'
+    datatype: float
+    description: LSST y-band magnitude (ABmag)
+    fits:tunit: mag
+    name: ymag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.gaia_gmag'
+    datatype: float
+    description: Gaia G magnitude (Vegamag)
+    fits:tunit: mag
+    name: gaia_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.g_bpmag'
+    datatype: float
+    description: Gaia G-BP color (Vegamag)
+    fits:tunit: mag
+    name: g_bpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.g_rpmag'
+    datatype: float
+    description: Gaia G-RP color (Vegamag)
+    fits:tunit: mag
+    name: g_rpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.velu'
+    datatype: float
+    description: U-component velocity
+    fits:tunit: km/s
+    name: velu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.velv'
+    datatype: float
+    description: V-component velocity
+    fits:tunit: km/s
+    name: velv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.velw'
+    datatype: float
+    description: W-component velocity
+    fits:tunit: km/s
+    name: velw
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.vrad'
+    datatype: float
+    description: Radial velocity
+    fits:tunit: km/s
+    name: vrad
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.pmracosd'
+    datatype: float
+    description: Proper motion in RA*cos(Dec)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: pmracosd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.pmdec'
+    datatype: float
+    description: Proper motion in Dec
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.htm9'
+    datatype: int
+    description: HTM index (order-9 -> ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with NSIDE=256 (~14
+      arcmin resolution)
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon;meta.main
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat;meta.main
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: lsst simulation data release 2 main table
+  indexes:
+  - '@id': '#simdr2_ra_idx'
+    columns:
+    - '#lsst_sim.simdr2.ra'
+    name: simdr2_ra_idx
+  - '@id': '#simdr2_dec_idx'
+    columns:
+    - '#lsst_sim.simdr2.dec'
+    name: simdr2_dec_idx
+  - '@id': '#simdr2_gall_idx'
+    columns:
+    - '#lsst_sim.simdr2.gall'
+    name: simdr2_gall_idx
+  - '@id': '#simdr2_galb_idx'
+    columns:
+    - '#lsst_sim.simdr2.galb'
+    name: simdr2_galb_idx
+  - '@id': '#simdr2_mu0_idx'
+    columns:
+    - '#lsst_sim.simdr2.mu0'
+    name: simdr2_mu0_idx
+  - '@id': '#simdr2_umag_idx'
+    columns:
+    - '#lsst_sim.simdr2.umag'
+    name: simdr2_umag_idx
+  - '@id': '#simdr2_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.gmag'
+    name: simdr2_gmag_idx
+  - '@id': '#simdr2_rmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.rmag'
+    name: simdr2_rmag_idx
+  - '@id': '#simdr2_imag_idx'
+    columns:
+    - '#lsst_sim.simdr2.imag'
+    name: simdr2_imag_idx
+  - '@id': '#simdr2_zmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.zmag'
+    name: simdr2_zmag_idx
+  - '@id': '#simdr2_ymag_idx'
+    columns:
+    - '#lsst_sim.simdr2.ymag'
+    name: simdr2_ymag_idx
+  - '@id': '#simdr2_gaia_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.gaia_gmag'
+    name: simdr2_gaia_gmag_idx
+  - '@id': '#simdr2_g_bpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.g_bpmag'
+    name: simdr2_g_bpmag_idx
+  - '@id': '#simdr2_g_rpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2.g_rpmag'
+    name: simdr2_g_rpmag_idx
+  - '@id': '#simdr2_vrad_idx'
+    columns:
+    - '#lsst_sim.simdr2.vrad'
+    name: simdr2_vrad_idx
+  - '@id': '#simdr2_pmracosd_idx'
+    columns:
+    - '#lsst_sim.simdr2.pmracosd'
+    name: simdr2_pmracosd_idx
+  - '@id': '#simdr2_pmdec_idx'
+    columns:
+    - '#lsst_sim.simdr2.pmdec'
+    name: simdr2_pmdec_idx
+  - '@id': '#simdr2_htm9_idx'
+    columns:
+    - '#lsst_sim.simdr2.htm9'
+    name: simdr2_htm9_idx
+  - '@id': '#simdr2_ring256_idx'
+    columns:
+    - '#lsst_sim.simdr2.ring256'
+    name: simdr2_ring256_idx
+  - '@id': '#simdr2_nest4096_idx'
+    columns:
+    - '#lsst_sim.simdr2.nest4096'
+    name: simdr2_nest4096_idx
+  - '@id': '#simdr2_random_id_idx'
+    columns:
+    - '#lsst_sim.simdr2.random_id'
+    name: simdr2_random_id_idx
+  - '@id': '#simdr2_elon_idx'
+    columns:
+    - '#lsst_sim.simdr2.elon'
+    name: simdr2_elon_idx
+  - '@id': '#simdr2_elat_idx'
+    columns:
+    - '#lsst_sim.simdr2.elat'
+    name: simdr2_elat_idx
+  name: simdr2
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#lsst_sim.simdr2_binary'
+  columns:
+  - '@id': '#lsst_sim.simdr2_binary.gall'
+    datatype: double
+    description: Galactic longitude in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon;meta.main
+    name: gall
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.galb'
+    datatype: double
+    description: Galactic latitude in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat;meta.main
+    name: galb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_m_ini'
+    datatype: double
+    description: Initial mass (M_sun) of the primary
+    fits:tunit: M_sun
+    name: c1_m_ini
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.p'
+    datatype: double
+    description: Current orbital period in years
+    fits:tunit: yr
+    name: p
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.a'
+    datatype: double
+    description: Current semi-major axis in R_sun
+    fits:tunit: R_sun
+    name: a
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.i'
+    datatype: double
+    description: Inclination of the orbit in degrees
+    fits:tunit: deg
+    name: i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon;meta.main
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat;meta.main
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.ra'
+    datatype: double
+    description: Right Ascension J2000 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.dec'
+    datatype: double
+    description: Declination J2000 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.logage'
+    datatype: float
+    description: Logarithm of stellar age in years
+    fits:tunit: yr
+    ivoa:ucd: time.age
+    name: logage
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.m_h'
+    datatype: float
+    description: Metallicity [M/H]
+    fits:tunit: dex
+    name: m_h
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.mu0'
+    datatype: float
+    description: True distance modulus
+    fits:tunit: mag
+    ivoa:ucd: phot.mag.distMod
+    name: mu0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.av'
+    datatype: float
+    description: Extinction in the Johnson V band, A_v
+    fits:tunit: mag
+    name: av
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.velu'
+    datatype: float
+    description: U-component velocity
+    fits:tunit: km/s
+    name: velu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.velv'
+    datatype: float
+    description: V-component velocity
+    fits:tunit: km/s
+    name: velv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.velw'
+    datatype: float
+    description: W-component velocity
+    fits:tunit: km/s
+    name: velw
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.vrad'
+    datatype: float
+    description: Radial velocity
+    fits:tunit: km/s
+    name: vrad
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.pmracosd'
+    datatype: float
+    description: Proper motion in RA*cos(Dec)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: pmracosd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.pmdec'
+    datatype: float
+    description: Proper motion in Dec
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_mass'
+    datatype: float
+    description: Present mass (M_sun) of the primary
+    fits:tunit: M_sun
+    name: c1_mass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_logl'
+    datatype: float
+    description: Logarithm of luminosity of the primary in L_sun
+    fits:tunit: L_sun
+    name: c1_logl
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_logte'
+    datatype: float
+    description: Log effective temperature (K) of the primary
+    fits:tunit: Kelvin
+    name: c1_logte
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_logg'
+    datatype: float
+    description: Logarithm of surface gravity g of the primary in cgs units
+    name: c1_logg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_mcoretp'
+    datatype: float
+    description: Core mass of the primary during the TP-AGB, otherwise null (M_sun)
+    fits:tunit: M_sun
+    name: c1_mcoretp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_c_o'
+    datatype: float
+    description: Surface abundance ratio by number, n_C/n_O, during the TP-AGB phase
+      of the primary
+    name: c1_c_o
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_period0'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the fundamental
+      mode for the primary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c1_period0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_period1'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the first overtone
+      mode for the primary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c1_period1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_period2'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the second overtone
+      mode for the primary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c1_period2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_period3'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the third overtone
+      mode for the primary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c1_period3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_period4'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the fourth overtone
+      mode for the primary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c1_period4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_mloss'
+    datatype: float
+    description: Mass loss rate of the primary (Msun/year)
+    fits:tunit: M_sun/yr
+    name: c1_mloss
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_mbolmag'
+    datatype: float
+    description: Absolute bolometric magnitude of the primary
+    fits:tunit: mag
+    name: c1_mbolmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_umag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST u-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.U
+    name: c1_umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_gmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST g-band photometric
+      system
+    fits:tunit: mag
+    name: c1_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_rmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST r-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: c1_rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_imag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST i-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.I
+    name: c1_imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_zmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST z-band photometric
+      system
+    fits:tunit: mag
+    name: c1_zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_ymag'
+    datatype: float
+    description: Apparent magnitude of the primary in the LSST y-band photometric
+      system
+    fits:tunit: mag
+    name: c1_ymag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_gaia_gmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the Gaia G-band photometric
+      system
+    fits:tunit: mag
+    name: c1_gaia_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_g_bpmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the Gaia G_BP-band photometric
+      system
+    fits:tunit: mag
+    name: c1_g_bpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_g_rpmag'
+    datatype: float
+    description: Apparent magnitude of the primary in the Gaia G_RP-band photometric
+      system
+    fits:tunit: mag
+    name: c1_g_rpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_m_ini'
+    datatype: float
+    description: Initial mass (M_sun) of the secondary
+    fits:tunit: M_sun
+    name: c2_m_ini
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_mass'
+    datatype: float
+    description: Present mass (M_sun) of the secondary
+    fits:tunit: M_sun
+    name: c2_mass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_logl'
+    datatype: float
+    description: Logarithm of luminosity of the secondary in L_sun
+    fits:tunit: L_sun
+    name: c2_logl
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_logte'
+    datatype: float
+    description: Log effective temperature (K) of the secondary
+    fits:tunit: Kelvin
+    name: c2_logte
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_logg'
+    datatype: float
+    description: Logarithm of surface gravity g of the secondary in cgs units
+    name: c2_logg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_mcoretp'
+    datatype: float
+    description: Core mass of the secondary during the TP-AGB, otherwise null (M_sun)
+    fits:tunit: M_sun
+    name: c2_mcoretp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_c_o'
+    datatype: float
+    description: Surface abundance ratio by number, n_C/n_O, during the TP-AGB phase
+      of the secondary
+    name: c2_c_o
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_period0'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the fundamental
+      mode for the secondary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c2_period0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_period1'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the first overtone
+      mode for the secondary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c2_period1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_period2'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the second overtone
+      mode for the secondary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c2_period2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_period3'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the third overtone
+      mode for the secondary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c2_period3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_period4'
+    datatype: float
+    description: Period for classical Cepheid and LBV, in days, in the fourth overtone
+      mode for the secondary. Cepheids contain only period0, period1. Values are set
+      to 0 for the other stars.
+    fits:tunit: d
+    name: c2_period4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_mloss'
+    datatype: float
+    description: Mass loss rate of the secondary (Msun/year)
+    fits:tunit: M_sun/yr
+    name: c2_mloss
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_mbolmag'
+    datatype: float
+    description: Absolute bolometric magnitude of the secondary
+    fits:tunit: mag
+    name: c2_mbolmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_umag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST u-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.U
+    name: c2_umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_gmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST g-band photometric
+      system
+    fits:tunit: mag
+    name: c2_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_rmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST r-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: c2_rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_imag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST i-band photometric
+      system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.I
+    name: c2_imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_zmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST z-band photometric
+      system
+    fits:tunit: mag
+    name: c2_zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_ymag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the LSST y-band photometric
+      system
+    fits:tunit: mag
+    name: c2_ymag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_gaia_gmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the Gaia G-band photometric
+      system
+    fits:tunit: mag
+    name: c2_gaia_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_g_bpmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the Gaia G_BP-band photometric
+      system
+    fits:tunit: mag
+    name: c2_g_bpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_g_rpmag'
+    datatype: float
+    description: Apparent magnitude of the secondary in the Gaia G_RP-band photometric
+      system
+    fits:tunit: mag
+    name: c2_g_rpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_mbolmag'
+    datatype: float
+    description: Absolute bolometric magnitude of the total binary system
+    fits:tunit: mag
+    name: c3_mbolmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_umag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST u-band
+      photometric system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.U
+    name: c3_umag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_gmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST g-band
+      photometric system
+    fits:tunit: mag
+    name: c3_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_rmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST r-band
+      photometric system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: c3_rmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_imag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST i-band
+      photometric system
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.I
+    name: c3_imag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_zmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST z-band
+      photometric system
+    fits:tunit: mag
+    name: c3_zmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_ymag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the LSST y-band
+      photometric system
+    fits:tunit: mag
+    name: c3_ymag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_gaia_gmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the Gaia G-band
+      photometric system
+    fits:tunit: mag
+    name: c3_gaia_gmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_g_bpmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the Gaia G_BP-band
+      photometric system
+    fits:tunit: mag
+    name: c3_g_bpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c3_g_rpmag'
+    datatype: float
+    description: Apparent magnitude of the total binary system in the Gaia G_RP-band
+      photometric system
+    fits:tunit: mag
+    name: c3_g_rpmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.e'
+    datatype: float
+    description: Current eccentricity
+    name: e
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.id'
+    datatype: int
+    description: Identification number of the binary system
+    ivoa:ucd: meta.id;meta.main
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.htm9'
+    datatype: int
+    description: HTM index (order-9 -> ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with NSIDE=256 (~14
+      arcmin resolution)
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.gc'
+    datatype: short
+    description: 'Galactic component the binary belongs to: thin disk=1, thick disk=2,
+      halo=3, bulge=4, Magellanic Clouds=5'
+    name: gc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_label'
+    datatype: short
+    description: Evolutionary phase of the primary, PMS=0, MS=1, SGB=2, RGB=3, CHeB=4,5,6,
+      EAGB=7, TPAGB=8, PAGB+WD=9
+    name: c1_label
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_pmode'
+    datatype: short
+    description: Radial order of the dominant pulsation mode for the primary, (0 is
+      the fundamental mode, 1 is the first overtone, and so on). It has value 0 or
+      1 for classical Cepheids, from 0 to 4 for LPVs, and is set to -1 for the other
+      stars
+    name: c1_pmode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c1_kw'
+    datatype: short
+    description: Stellar type of the primary
+    name: c1_kw
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_label'
+    datatype: short
+    description: Evolutionary phase of the secondary, PMS=0, MS=1, SGB=2, RGB=3, CHeB=4,5,6,
+      EAGB=7, TPAGB=8, PAGB+WD=9
+    name: c2_label
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_pmode'
+    datatype: short
+    description: Radial order of the dominant pulsation mode for the secondary, (0
+      is the fundamental mode, 1 is the first overtone, and so on). It has value 0
+      or 1 for classical Cepheids, from 0 to 4 for LPVs, and is set to -1 for the
+      other stars
+    name: c2_pmode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.c2_kw'
+    datatype: short
+    description: Stellar type of the secondary
+    name: c2_kw
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.k1'
+    datatype: text
+    description: Radial velocity amplitude in R_Sun/year
+    fits:tunit: R_sun/yr
+    name: k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.k2'
+    datatype: text
+    description: Radial velocity amplitude in R_Sun/year
+    fits:tunit: R_sun/yr
+    name: k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.delta_r1'
+    datatype: text
+    description: Maximum depth of the primary eclipse, in magnitudes, in the r band
+    fits:tunit: mag
+    name: delta_r1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#lsst_sim.simdr2_binary.delta_r2'
+    datatype: text
+    description: Maximum depth of the secondary eclipse, in magnitudes, in the r band
+    fits:tunit: mag
+    name: delta_r2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: lsst simulation data release 2 binary stars table
+  indexes:
+  - '@id': '#simdr2_binary_gall_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.gall'
+    name: simdr2_binary_gall_idx
+  - '@id': '#simdr2_binary_galb_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.galb'
+    name: simdr2_binary_galb_idx
+  - '@id': '#simdr2_binary_elon_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.elon'
+    name: simdr2_binary_elon_idx
+  - '@id': '#simdr2_binary_elat_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.elat'
+    name: simdr2_binary_elat_idx
+  - '@id': '#simdr2_binary_ra_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.ra'
+    name: simdr2_binary_ra_idx
+  - '@id': '#simdr2_binary_dec_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.dec'
+    name: simdr2_binary_dec_idx
+  - '@id': '#simdr2_binary_mu0_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.mu0'
+    name: simdr2_binary_mu0_idx
+  - '@id': '#simdr2_binary_pmracosd_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.pmracosd'
+    name: simdr2_binary_pmracosd_idx
+  - '@id': '#simdr2_binary_pmdec_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.pmdec'
+    name: simdr2_binary_pmdec_idx
+  - '@id': '#simdr2_binary_c1_umag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_umag'
+    name: simdr2_binary_c1_umag_idx
+  - '@id': '#simdr2_binary_c1_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_gmag'
+    name: simdr2_binary_c1_gmag_idx
+  - '@id': '#simdr2_binary_c1_rmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_rmag'
+    name: simdr2_binary_c1_rmag_idx
+  - '@id': '#simdr2_binary_c1_imag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_imag'
+    name: simdr2_binary_c1_imag_idx
+  - '@id': '#simdr2_binary_c1_zmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_zmag'
+    name: simdr2_binary_c1_zmag_idx
+  - '@id': '#simdr2_binary_c1_ymag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_ymag'
+    name: simdr2_binary_c1_ymag_idx
+  - '@id': '#simdr2_binary_c1_gaia_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_gaia_gmag'
+    name: simdr2_binary_c1_gaia_gmag_idx
+  - '@id': '#simdr2_binary_c1_g_bpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_g_bpmag'
+    name: simdr2_binary_c1_g_bpmag_idx
+  - '@id': '#simdr2_binary_c1_g_rpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c1_g_rpmag'
+    name: simdr2_binary_c1_g_rpmag_idx
+  - '@id': '#simdr2_binary_c2_umag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_umag'
+    name: simdr2_binary_c2_umag_idx
+  - '@id': '#simdr2_binary_c2_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_gmag'
+    name: simdr2_binary_c2_gmag_idx
+  - '@id': '#simdr2_binary_c2_rmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_rmag'
+    name: simdr2_binary_c2_rmag_idx
+  - '@id': '#simdr2_binary_c2_imag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_imag'
+    name: simdr2_binary_c2_imag_idx
+  - '@id': '#simdr2_binary_c2_zmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_zmag'
+    name: simdr2_binary_c2_zmag_idx
+  - '@id': '#simdr2_binary_c2_ymag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_ymag'
+    name: simdr2_binary_c2_ymag_idx
+  - '@id': '#simdr2_binary_c2_gaia_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_gaia_gmag'
+    name: simdr2_binary_c2_gaia_gmag_idx
+  - '@id': '#simdr2_binary_c2_g_bpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_g_bpmag'
+    name: simdr2_binary_c2_g_bpmag_idx
+  - '@id': '#simdr2_binary_c2_g_rpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c2_g_rpmag'
+    name: simdr2_binary_c2_g_rpmag_idx
+  - '@id': '#simdr2_binary_c3_umag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_umag'
+    name: simdr2_binary_c3_umag_idx
+  - '@id': '#simdr2_binary_c3_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_gmag'
+    name: simdr2_binary_c3_gmag_idx
+  - '@id': '#simdr2_binary_c3_rmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_rmag'
+    name: simdr2_binary_c3_rmag_idx
+  - '@id': '#simdr2_binary_c3_imag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_imag'
+    name: simdr2_binary_c3_imag_idx
+  - '@id': '#simdr2_binary_c3_zmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_zmag'
+    name: simdr2_binary_c3_zmag_idx
+  - '@id': '#simdr2_binary_c3_ymag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_ymag'
+    name: simdr2_binary_c3_ymag_idx
+  - '@id': '#simdr2_binary_c3_gaia_gmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_gaia_gmag'
+    name: simdr2_binary_c3_gaia_gmag_idx
+  - '@id': '#simdr2_binary_c3_g_bpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_g_bpmag'
+    name: simdr2_binary_c3_g_bpmag_idx
+  - '@id': '#simdr2_binary_c3_g_rpmag_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.c3_g_rpmag'
+    name: simdr2_binary_c3_g_rpmag_idx
+  - '@id': '#simdr2_binary_random_id_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.random_id'
+    name: simdr2_binary_random_id_idx
+  - '@id': '#simdr2_binary_id_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.id'
+    name: simdr2_binary_id_idx
+  - '@id': '#simdr2_binary_htm9_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.htm9'
+    name: simdr2_binary_htm9_idx
+  - '@id': '#simdr2_binary_ring256_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.ring256'
+    name: simdr2_binary_ring256_idx
+  - '@id': '#simdr2_binary_nest4096_idx'
+    columns:
+    - '#lsst_sim.simdr2_binary.nest4096'
+    name: simdr2_binary_nest4096_idx
+  name: simdr2_binary
+  primaryKey: ''
+  tap:table_index: 2
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1
