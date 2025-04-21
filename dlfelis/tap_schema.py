@@ -135,6 +135,7 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'm_sun/year': 'M_sun/yr',
                'kelvin': 'Kelvin',
                'log10(M_sun)': 'dex(M_sun)',
+               'log(solMass)': 'dex(M_sun)',
                'log Gyr<sup>-1</sup>': 'dex(Gyr^-1)',
                'log(count/s)': 'dex(count/s)',
                'log(cm^-2)': 'dex(cm^-2)',
@@ -299,6 +300,8 @@ def main():
                             'tap:principal': json_column['principal'],
                             'tap:std': json_column['std']}
                             # 'tap:column_index': column_index + 1}
+            if felis_datatype == 'float':
+                felis_column['postgresql:datatype'] = 'REAL'
             if felis_datatype in ['string', 'char']:
                 felis_column['length'] = json_column['size']
             if json_column['indexed']:
