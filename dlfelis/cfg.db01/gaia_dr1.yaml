@@ -263,6 +263,7 @@ tables:
     description: Correlation between right ascension and declination
     name: ra_dec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.solution_id'
@@ -404,6 +405,7 @@ tables:
     description: Correlation between right ascension and parallax
     name: ra_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.ra_pmra_corr'
@@ -411,6 +413,7 @@ tables:
     description: Correlation between right ascension and proper motion in right ascension
     name: ra_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.ra_pmdec_corr'
@@ -418,6 +421,7 @@ tables:
     description: Correlation between right ascension and proper motion in declination
     name: ra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.dec_parallax_corr'
@@ -425,6 +429,7 @@ tables:
     description: Correlation between declination and parallax
     name: dec_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.dec_pmra_corr'
@@ -432,6 +437,7 @@ tables:
     description: Correlation between declination and proper motion in right ascension
     name: dec_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.dec_pmdec_corr'
@@ -439,6 +445,7 @@ tables:
     description: Correlation between declination and proper motion in declination
     name: dec_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.parallax_pmra_corr'
@@ -446,6 +453,7 @@ tables:
     description: Correlation between parallax and proper motion in right ascension
     name: parallax_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.parallax_pmdec_corr'
@@ -453,6 +461,7 @@ tables:
     description: Correlation between parallax and proper motion in declination
     name: parallax_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.pmra_pmdec_corr'
@@ -461,6 +470,7 @@ tables:
       in declination
     name: pmra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.astrometric_n_obs_al'
@@ -511,6 +521,7 @@ tables:
       only)
     name: astrometric_delta_q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.astrometric_excess_noise'
@@ -544,6 +555,7 @@ tables:
       process
     name: astrometric_relegation_factor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.astrometric_weight_al'
@@ -552,6 +564,7 @@ tables:
     fits:tunit: mas^-2
     name: astrometric_weight_al
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.astrometric_weight_ac'
@@ -560,6 +573,7 @@ tables:
     fits:tunit: mas^-2
     name: astrometric_weight_ac
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.astrometric_priors_used'
@@ -588,6 +602,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k2'
@@ -595,6 +610,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k3'
@@ -602,6 +618,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k4'
@@ -609,6 +626,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k1'
@@ -617,6 +635,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k2'
@@ -625,6 +644,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k3'
@@ -633,6 +653,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k4'
@@ -641,6 +662,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.gaia_source.phot_g_n_obs'
@@ -1393,6 +1415,7 @@ tables:
     description: Correlation between right ascension and declination
     name: ra_dec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.ra_parallax_corr'
@@ -1400,6 +1423,7 @@ tables:
     description: Correlation between right ascension and parallax
     name: ra_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.ra_pmra_corr'
@@ -1407,6 +1431,7 @@ tables:
     description: Correlation between right ascention and proper motion in right ascension
     name: ra_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.ra_pmdec_corr'
@@ -1414,6 +1439,7 @@ tables:
     description: Correlation between right ascention and proper motion in declination
     name: ra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.dec_parallax_corr'
@@ -1421,6 +1447,7 @@ tables:
     description: Correlation between declination and parallax
     name: dec_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.dec_pmra_corr'
@@ -1428,6 +1455,7 @@ tables:
     description: Correlation between declination and proper motion in right ascension
     name: dec_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.dec_pmdec_corr'
@@ -1435,6 +1463,7 @@ tables:
     description: Correlation between declination and proper motion in declination
     name: dec_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.parallax_pmra_corr'
@@ -1442,6 +1471,7 @@ tables:
     description: Correlation between parallax and proper motion in right ascension
     name: parallax_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.parallax_pmdec_corr'
@@ -1449,6 +1479,7 @@ tables:
     description: Correlation between parallax and proper motion in declination
     name: parallax_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.pmra_pmdec_corr'
@@ -1457,6 +1488,7 @@ tables:
       in declination
     name: pmra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.astrometric_n_obs_al'
@@ -1506,6 +1538,7 @@ tables:
     description: Hipparcos/Gaia data discrepancy (Hipparcos subset of TGAS only)
     name: astrometric_delta_q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.astrometric_excess_noise'
@@ -1535,6 +1568,7 @@ tables:
     description: Relegation factor
     name: astrometric_relegation_factor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.astrometric_weight_al'
@@ -1543,6 +1577,7 @@ tables:
     fits:tunit: mas-2
     name: astrometric_weight_al
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.astrometric_weight_ac'
@@ -1551,6 +1586,7 @@ tables:
     fits:tunit: mas-2
     name: astrometric_weight_ac
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.astrometric_priors_used'
@@ -1579,6 +1615,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k2'
@@ -1586,6 +1623,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k3'
@@ -1593,6 +1631,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k4'
@@ -1600,6 +1639,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k1'
@@ -1608,6 +1648,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k2'
@@ -1616,6 +1657,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k3'
@@ -1624,6 +1666,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k4'
@@ -1632,6 +1675,7 @@ tables:
     fits:tunit: deg
     name: scan_direction_mean_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr1.tgas_source.phot_g_n_obs'

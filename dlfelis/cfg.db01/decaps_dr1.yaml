@@ -261,6 +261,7 @@ tables:
     fits:tunit: arcsec
     name: ccdraoff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.ccds.ccddecoff'
@@ -269,6 +270,7 @@ tables:
     fits:tunit: arcsec
     name: ccddecoff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.ccds.ra_bore'
@@ -370,6 +372,7 @@ tables:
     description: Norm of the PSF model convolved by a 0.45 arcsec exponential galaxy
     name: galnorm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.ccds.plver'
@@ -448,6 +451,7 @@ tables:
     description: Lower limit of depth bin
     name: depthlo
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.depth.depthhi'
@@ -455,6 +459,7 @@ tables:
     description: Upper limit of the depth bin
     name: depthhi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.depth.counts_ptsrc_g'
@@ -2319,6 +2324,7 @@ tables:
     description: Magnitude
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.flux'
@@ -2327,6 +2333,7 @@ tables:
     fits:tunit: adu
     name: flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.dx'
@@ -2334,6 +2341,7 @@ tables:
     description: x coordinate uncertainty
     name: dx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.dy'
@@ -2341,6 +2349,7 @@ tables:
     description: y coordinate uncertainty
     name: dy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.dflux'
@@ -2348,6 +2357,7 @@ tables:
     description: flux uncertainty
     name: dflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.mag_err'
@@ -2355,6 +2365,7 @@ tables:
     description: Magnitude uncertainty
     name: mag_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.snr'
@@ -2362,6 +2373,7 @@ tables:
     description: Signal-to-noise ratio
     name: snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.qf'
@@ -2369,6 +2381,7 @@ tables:
     description: Quality factor, PSF-weighted fraction of good pixels
     name: qf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.rchi2'
@@ -2376,6 +2389,7 @@ tables:
     description: PSF-weighted fraction average chi^2
     name: rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.fracflux'
@@ -2383,6 +2397,7 @@ tables:
     description: PSF-weighted fraction of flux from this source
     name: fracflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.fluxlbs'
@@ -2391,6 +2406,7 @@ tables:
     fits:tunit: adu
     name: fluxlbs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.dfluxlbs'
@@ -2398,6 +2414,7 @@ tables:
     description: fluxlbs uncertainty
     name: dfluxlbs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.fwhm'
@@ -2406,6 +2423,7 @@ tables:
     fits:tunit: pix
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.flags'
@@ -2421,6 +2439,7 @@ tables:
     fits:tunit: adu
     name: sky
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.psf'
@@ -2436,6 +2455,7 @@ tables:
     fits:tunit: adu
     name: gain
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.exptime'
@@ -2444,6 +2464,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.filterid'
@@ -2474,6 +2495,7 @@ tables:
     fits:tunit: mag
     name: zp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.meas.htm9'
@@ -2675,6 +2697,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_g_r'
@@ -2682,6 +2705,7 @@ tables:
     description: Mean magnitude of g-r color
     name: mean_mag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_r_i'
@@ -2689,6 +2713,7 @@ tables:
     description: Mean magnitude of r-i color
     name: mean_mag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_i_z'
@@ -2696,6 +2721,7 @@ tables:
     description: Mean magnitude of i-z color
     name: mean_mag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_z_y'
@@ -2703,6 +2729,7 @@ tables:
     description: Mean magnitude of z-Y color
     name: mean_mag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_g_r'
@@ -2710,6 +2737,7 @@ tables:
     description: Median magnitude of g-r color
     name: median_mag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_r_i'
@@ -2717,6 +2745,7 @@ tables:
     description: Median magnitude of r-i color
     name: median_mag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_i_z'
@@ -2724,6 +2753,7 @@ tables:
     description: Median magnitude of i-z color
     name: median_mag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_z_y'
@@ -2731,6 +2761,7 @@ tables:
     description: Median magnitude of z-Y color
     name: median_mag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_g'
@@ -2738,6 +2769,7 @@ tables:
     description: Mean flux in g-band
     name: mean_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_r'
@@ -2745,6 +2777,7 @@ tables:
     description: Mean flux in r-band
     name: mean_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_i'
@@ -2752,6 +2785,7 @@ tables:
     description: Mean flux in i-band
     name: mean_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_z'
@@ -2759,6 +2793,7 @@ tables:
     description: Mean flux in z-band
     name: mean_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_y'
@@ -2766,6 +2801,7 @@ tables:
     description: Mean flux in Y-band
     name: mean_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_g'
@@ -2773,6 +2809,7 @@ tables:
     description: Mean magnitude in g-band
     name: mean_mag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_r'
@@ -2780,6 +2817,7 @@ tables:
     description: Mean magnitude in r-band
     name: mean_mag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_i'
@@ -2787,6 +2825,7 @@ tables:
     description: Mean magnitude in i-band
     name: mean_mag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_z'
@@ -2794,6 +2833,7 @@ tables:
     description: Mean magnitude in z-band
     name: mean_mag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_mag_y'
@@ -2801,6 +2841,7 @@ tables:
     description: Mean magnitude in Y-band
     name: mean_mag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_g'
@@ -2808,6 +2849,7 @@ tables:
     description: Flux standard deviation in g-band
     name: stdev_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_r'
@@ -2815,6 +2857,7 @@ tables:
     description: Flux standard deviation in r-band
     name: stdev_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_i'
@@ -2822,6 +2865,7 @@ tables:
     description: Flux standard deviation in i-band
     name: stdev_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_z'
@@ -2829,6 +2873,7 @@ tables:
     description: Flux standard deviation in z-band
     name: stdev_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_y'
@@ -2836,6 +2881,7 @@ tables:
     description: Flux standard deviation in Y-band
     name: stdev_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_g'
@@ -2843,6 +2889,7 @@ tables:
     description: Uncertainty in mean flux in g-band
     name: err_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_r'
@@ -2850,6 +2897,7 @@ tables:
     description: Uncertainty in mean flux in r-band
     name: err_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_i'
@@ -2857,6 +2905,7 @@ tables:
     description: Uncertainty in mean flux in i-band
     name: err_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_z'
@@ -2864,6 +2913,7 @@ tables:
     description: Uncertainty in mean flux in z-band
     name: err_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_y'
@@ -2871,6 +2921,7 @@ tables:
     description: Uncertainty in mean flux in Y-band
     name: err_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_g'
@@ -2878,6 +2929,7 @@ tables:
     description: Median flux (units of 3631 Jy) in g-band
     name: median_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_r'
@@ -2885,6 +2937,7 @@ tables:
     description: Median flux (units of 3631 Jy) in r-band
     name: median_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_i'
@@ -2892,6 +2945,7 @@ tables:
     description: Median flux (units of 3631 Jy) in i-band
     name: median_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_z'
@@ -2899,6 +2953,7 @@ tables:
     description: Median flux (units of 3631 Jy) in z-band
     name: median_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_y'
@@ -2906,6 +2961,7 @@ tables:
     description: Median flux (units of 3631 Jy) in Y-band
     name: median_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_g'
@@ -2913,6 +2969,7 @@ tables:
     description: Median magnitude (units of 3631 Jy) in g-band
     name: median_mag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_r'
@@ -2920,6 +2977,7 @@ tables:
     description: Median magnitude (units of 3631 Jy) in r-band
     name: median_mag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_i'
@@ -2927,6 +2985,7 @@ tables:
     description: Median magnitude (units of 3631 Jy) in i-band
     name: median_mag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_z'
@@ -2934,6 +2993,7 @@ tables:
     description: Median magnitude (units of 3631 Jy) in z-band
     name: median_mag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_mag_y'
@@ -2941,6 +3001,7 @@ tables:
     description: Median magnitude (units of 3631 Jy) in Y-band
     name: median_mag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.posstdev'
@@ -2949,6 +3010,7 @@ tables:
     fits:tunit: arcsec
     name: posstdev
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.posstdev_ok'
@@ -2957,6 +3019,7 @@ tables:
     fits:tunit: arcsec
     name: posstdev_ok
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_g'
@@ -2964,6 +3027,7 @@ tables:
     description: 25th percentile flux (units of 3631 Jy) in g-band
     name: q25_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_r'
@@ -2971,6 +3035,7 @@ tables:
     description: 25th percentile flux (units of 3631 Jy) in r-band
     name: q25_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_i'
@@ -2978,6 +3043,7 @@ tables:
     description: 25th percentile flux (units of 3631 Jy) in i-band
     name: q25_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_z'
@@ -2985,6 +3051,7 @@ tables:
     description: 25th percentile flux (units of 3631 Jy) in z-band
     name: q25_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_y'
@@ -2992,6 +3059,7 @@ tables:
     description: 25th percentile flux (units of 3631 Jy) in Y-band
     name: q25_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_g'
@@ -2999,6 +3067,7 @@ tables:
     description: 75th percentile flux (units of 3631 Jy) in g-band
     name: q75_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_r'
@@ -3006,6 +3075,7 @@ tables:
     description: 75th percentile flux (units of 3631 Jy) in r-band
     name: q75_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_i'
@@ -3013,6 +3083,7 @@ tables:
     description: 75th percentile flux (units of 3631 Jy) in i-band
     name: q75_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_z'
@@ -3020,6 +3091,7 @@ tables:
     description: 75th percentile flux (units of 3631 Jy) in z-band
     name: q75_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_y'
@@ -3027,6 +3099,7 @@ tables:
     description: 75th percentile flux (units of 3631 Jy) in Y-band
     name: q75_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_lbs_g'
@@ -3034,6 +3107,7 @@ tables:
     description: Mean local-background-subtracted flux (units of 3631 Jy) in g-band
     name: mean_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_lbs_r'
@@ -3041,6 +3115,7 @@ tables:
     description: Mean local-background-subtracted flux (units of 3631 Jy) in r-band
     name: mean_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_lbs_i'
@@ -3048,6 +3123,7 @@ tables:
     description: Mean local-background-subtracted flux (units of 3631 Jy) in i-band
     name: mean_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_lbs_z'
@@ -3055,6 +3131,7 @@ tables:
     description: Mean local-background-subtracted flux (units of 3631 Jy) in z-band
     name: mean_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.mean_lbs_y'
@@ -3062,6 +3139,7 @@ tables:
     description: Mean local-background-subtracted flux (units of 3631 Jy) in Y-band
     name: mean_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_lbs_g'
@@ -3069,6 +3147,7 @@ tables:
     description: Local-background-subtracted flux standard deviation in g-band
     name: stdev_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_lbs_r'
@@ -3076,6 +3155,7 @@ tables:
     description: Local-background-subtracted flux standard deviation in r-band
     name: stdev_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_lbs_i'
@@ -3083,6 +3163,7 @@ tables:
     description: Local-background-subtracted flux standard deviation in i-band
     name: stdev_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_lbs_z'
@@ -3090,6 +3171,7 @@ tables:
     description: Local-background-subtracted flux standard deviation in z-band
     name: stdev_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.stdev_lbs_y'
@@ -3097,6 +3179,7 @@ tables:
     description: Local-background-subtracted flux standard deviation in Y-band
     name: stdev_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_lbs_g'
@@ -3104,6 +3187,7 @@ tables:
     description: Uncertainty in mean local-background-subtracted flux in g-band
     name: err_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_lbs_r'
@@ -3111,6 +3195,7 @@ tables:
     description: Uncertainty in mean local-background-subtracted flux in r-band
     name: err_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_lbs_i'
@@ -3118,6 +3203,7 @@ tables:
     description: Uncertainty in mean local-background-subtracted flux in i-band
     name: err_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_lbs_z'
@@ -3125,6 +3211,7 @@ tables:
     description: Uncertainty in mean local-background-subtracted flux in z-band
     name: err_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.err_lbs_y'
@@ -3132,6 +3219,7 @@ tables:
     description: Uncertainty in mean local-background-subtracted flux in Y-band
     name: err_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_lbs_g'
@@ -3139,6 +3227,7 @@ tables:
     description: Median local-background-subtracted flux (units of 3631 Jy) in g-band
     name: median_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_lbs_r'
@@ -3146,6 +3235,7 @@ tables:
     description: Median local-background-subtracted flux (units of 3631 Jy) in r-band
     name: median_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_lbs_i'
@@ -3153,6 +3243,7 @@ tables:
     description: Median local-background-subtracted flux (units of 3631 Jy) in i-band
     name: median_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_lbs_z'
@@ -3160,6 +3251,7 @@ tables:
     description: Median local-background-subtracted flux (units of 3631 Jy) in z-band
     name: median_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.median_lbs_y'
@@ -3167,6 +3259,7 @@ tables:
     description: Median local-background-subtracted flux (units of 3631 Jy) in Y-band
     name: median_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_lbs_g'
@@ -3175,6 +3268,7 @@ tables:
       in g-band
     name: q25_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_lbs_r'
@@ -3183,6 +3277,7 @@ tables:
       in r-band
     name: q25_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_lbs_i'
@@ -3191,6 +3286,7 @@ tables:
       in i-band
     name: q25_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_lbs_z'
@@ -3199,6 +3295,7 @@ tables:
       in z-band
     name: q25_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q25_lbs_y'
@@ -3207,6 +3304,7 @@ tables:
       in Y-band
     name: q25_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_lbs_g'
@@ -3215,6 +3313,7 @@ tables:
       in g-band
     name: q75_lbs_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_lbs_r'
@@ -3223,6 +3322,7 @@ tables:
       in r-band
     name: q75_lbs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_lbs_i'
@@ -3231,6 +3331,7 @@ tables:
       in i-band
     name: q75_lbs_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_lbs_z'
@@ -3239,6 +3340,7 @@ tables:
       in z-band
     name: q75_lbs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.q75_lbs_y'
@@ -3247,6 +3349,7 @@ tables:
       in Y-band
     name: q75_lbs_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.maglimit_g'
@@ -3254,6 +3357,7 @@ tables:
     description: 5-sigma magnitude limit of deepest image (ok only) in g-band
     name: maglimit_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.maglimit_r'
@@ -3261,6 +3365,7 @@ tables:
     description: 5-sigma magnitude limit of deepest image (ok only) in r-band
     name: maglimit_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.maglimit_i'
@@ -3268,6 +3373,7 @@ tables:
     description: 5-sigma magnitude limit of deepest image (ok only) in i-band
     name: maglimit_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.maglimit_z'
@@ -3275,6 +3381,7 @@ tables:
     description: 5-sigma magnitude limit of deepest image (ok only) in z-band
     name: maglimit_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.maglimit_y'
@@ -3282,6 +3389,7 @@ tables:
     description: 5-sigma magnitude limit of deepest image (ok only) in Y-band
     name: maglimit_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.fracflux_g'
@@ -3289,6 +3397,7 @@ tables:
     description: Average fractional flux in g-band (ok only)
     name: fracflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.fracflux_r'
@@ -3296,6 +3405,7 @@ tables:
     description: Average fractional flux in r-band (ok only)
     name: fracflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.fracflux_i'
@@ -3303,6 +3413,7 @@ tables:
     description: Average fractional flux in i-band (ok only)
     name: fracflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.fracflux_z'
@@ -3310,6 +3421,7 @@ tables:
     description: Average fractional flux in z-band (ok only)
     name: fracflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.fracflux_y'
@@ -3317,6 +3429,7 @@ tables:
     description: Average fractional flux in Y-band (ok only)
     name: fracflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.object.ndet'
@@ -3716,6 +3829,7 @@ tables:
     description: Residual
     name: resid
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr1.zps.scatter'
@@ -3723,6 +3837,7 @@ tables:
     description: Zero point scatter
     name: scatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Zero points, flat fields, & QA table

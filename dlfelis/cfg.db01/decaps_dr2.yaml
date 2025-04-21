@@ -197,6 +197,7 @@ tables:
     fits:tunit: arcsec
     name: posstdev
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.posstdev_ok'
@@ -206,6 +207,7 @@ tables:
     fits:tunit: arcsec
     name: posstdev_ok
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.random_id'
@@ -213,6 +215,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_g'
@@ -221,6 +224,7 @@ tables:
     fits:tunit: AB mag
     name: mean_mag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_r'
@@ -229,6 +233,7 @@ tables:
     fits:tunit: AB mag
     name: mean_mag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_i'
@@ -237,6 +242,7 @@ tables:
     fits:tunit: AB mag
     name: mean_mag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_z'
@@ -245,6 +251,7 @@ tables:
     fits:tunit: AB mag
     name: mean_mag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_y'
@@ -253,6 +260,7 @@ tables:
     fits:tunit: AB mag
     name: mean_mag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_g'
@@ -261,6 +269,7 @@ tables:
     fits:tunit: AB mag
     name: median_mag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_r'
@@ -269,6 +278,7 @@ tables:
     fits:tunit: AB mag
     name: median_mag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_i'
@@ -277,6 +287,7 @@ tables:
     fits:tunit: AB mag
     name: median_mag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_z'
@@ -285,6 +296,7 @@ tables:
     fits:tunit: AB mag
     name: median_mag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_y'
@@ -293,6 +305,7 @@ tables:
     fits:tunit: AB mag
     name: median_mag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_g_r'
@@ -300,6 +313,7 @@ tables:
     description: Mean magnitude of g-r color
     name: mean_mag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_r_i'
@@ -307,6 +321,7 @@ tables:
     description: Mean magnitude of r-i color
     name: mean_mag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_i_z'
@@ -314,6 +329,7 @@ tables:
     description: Mean magnitude of i-z color
     name: mean_mag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_mag_z_y'
@@ -321,6 +337,7 @@ tables:
     description: Mean magnitude of z-Y color
     name: mean_mag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_g_r'
@@ -328,6 +345,7 @@ tables:
     description: Median magnitude of g-r color
     name: median_mag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_r_i'
@@ -335,6 +353,7 @@ tables:
     description: Median magnitude of r-i color
     name: median_mag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_i_z'
@@ -342,6 +361,7 @@ tables:
     description: Median magnitude of i-z color
     name: median_mag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_mag_z_y'
@@ -349,6 +369,7 @@ tables:
     description: Median magnitude of z-Y color
     name: median_mag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_g'
@@ -357,6 +378,7 @@ tables:
     fits:tunit: mgy
     name: mean_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_r'
@@ -365,6 +387,7 @@ tables:
     fits:tunit: mgy
     name: mean_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_i'
@@ -373,6 +396,7 @@ tables:
     fits:tunit: mgy
     name: mean_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_z'
@@ -381,6 +405,7 @@ tables:
     fits:tunit: mgy
     name: mean_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_y'
@@ -389,6 +414,7 @@ tables:
     fits:tunit: mgy
     name: mean_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_g'
@@ -398,6 +424,7 @@ tables:
     fits:tunit: mgy
     name: stdev_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_r'
@@ -407,6 +434,7 @@ tables:
     fits:tunit: mgy
     name: stdev_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_i'
@@ -416,6 +444,7 @@ tables:
     fits:tunit: mgy
     name: stdev_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_z'
@@ -425,6 +454,7 @@ tables:
     fits:tunit: mgy
     name: stdev_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_y'
@@ -434,6 +464,7 @@ tables:
     fits:tunit: mgy
     name: stdev_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_g'
@@ -442,6 +473,7 @@ tables:
     fits:tunit: mgy
     name: err_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_r'
@@ -450,6 +482,7 @@ tables:
     fits:tunit: mgy
     name: err_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_i'
@@ -458,6 +491,7 @@ tables:
     fits:tunit: mgy
     name: err_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_z'
@@ -466,6 +500,7 @@ tables:
     fits:tunit: mgy
     name: err_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_y'
@@ -474,6 +509,7 @@ tables:
     fits:tunit: mgy
     name: err_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_g'
@@ -482,6 +518,7 @@ tables:
     fits:tunit: mgy
     name: median_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_r'
@@ -490,6 +527,7 @@ tables:
     fits:tunit: mgy
     name: median_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_i'
@@ -498,6 +536,7 @@ tables:
     fits:tunit: mgy
     name: median_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_z'
@@ -506,6 +545,7 @@ tables:
     fits:tunit: mgy
     name: median_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_y'
@@ -514,6 +554,7 @@ tables:
     fits:tunit: mgy
     name: median_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_g'
@@ -522,6 +563,7 @@ tables:
     fits:tunit: mgy
     name: q25_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_r'
@@ -530,6 +572,7 @@ tables:
     fits:tunit: mgy
     name: q25_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_i'
@@ -538,6 +581,7 @@ tables:
     fits:tunit: mgy
     name: q25_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_z'
@@ -546,6 +590,7 @@ tables:
     fits:tunit: mgy
     name: q25_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_y'
@@ -554,6 +599,7 @@ tables:
     fits:tunit: mgy
     name: q25_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_g'
@@ -562,6 +608,7 @@ tables:
     fits:tunit: mgy
     name: q75_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_r'
@@ -570,6 +617,7 @@ tables:
     fits:tunit: mgy
     name: q75_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_i'
@@ -578,6 +626,7 @@ tables:
     fits:tunit: mgy
     name: q75_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_z'
@@ -586,6 +635,7 @@ tables:
     fits:tunit: mgy
     name: q75_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_y'
@@ -594,6 +644,7 @@ tables:
     fits:tunit: mgy
     name: q75_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cflux_g'
@@ -602,6 +653,7 @@ tables:
     fits:tunit: mgy
     name: mean_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cflux_r'
@@ -610,6 +662,7 @@ tables:
     fits:tunit: mgy
     name: mean_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cflux_i'
@@ -618,6 +671,7 @@ tables:
     fits:tunit: mgy
     name: mean_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cflux_z'
@@ -626,6 +680,7 @@ tables:
     fits:tunit: mgy
     name: mean_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cflux_y'
@@ -634,6 +689,7 @@ tables:
     fits:tunit: mgy
     name: mean_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_cflux_g'
@@ -643,6 +699,7 @@ tables:
     fits:tunit: mgy
     name: stdev_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_cflux_r'
@@ -652,6 +709,7 @@ tables:
     fits:tunit: mgy
     name: stdev_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_cflux_i'
@@ -661,6 +719,7 @@ tables:
     fits:tunit: mgy
     name: stdev_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_cflux_z'
@@ -670,6 +729,7 @@ tables:
     fits:tunit: mgy
     name: stdev_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.stdev_cflux_y'
@@ -679,6 +739,7 @@ tables:
     fits:tunit: mgy
     name: stdev_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_cflux_g'
@@ -687,6 +748,7 @@ tables:
     fits:tunit: mgy
     name: err_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_cflux_r'
@@ -695,6 +757,7 @@ tables:
     fits:tunit: mgy
     name: err_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_cflux_i'
@@ -703,6 +766,7 @@ tables:
     fits:tunit: mgy
     name: err_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_cflux_z'
@@ -711,6 +775,7 @@ tables:
     fits:tunit: mgy
     name: err_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.err_cflux_y'
@@ -719,6 +784,7 @@ tables:
     fits:tunit: mgy
     name: err_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cflux_g'
@@ -727,6 +793,7 @@ tables:
     fits:tunit: mgy
     name: median_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cflux_r'
@@ -735,6 +802,7 @@ tables:
     fits:tunit: mgy
     name: median_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cflux_i'
@@ -743,6 +811,7 @@ tables:
     fits:tunit: mgy
     name: median_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cflux_z'
@@ -751,6 +820,7 @@ tables:
     fits:tunit: mgy
     name: median_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cflux_y'
@@ -759,6 +829,7 @@ tables:
     fits:tunit: mgy
     name: median_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_cflux_g'
@@ -767,6 +838,7 @@ tables:
     fits:tunit: mgy
     name: q25_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_cflux_r'
@@ -775,6 +847,7 @@ tables:
     fits:tunit: mgy
     name: q25_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_cflux_i'
@@ -783,6 +856,7 @@ tables:
     fits:tunit: mgy
     name: q25_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_cflux_z'
@@ -791,6 +865,7 @@ tables:
     fits:tunit: mgy
     name: q25_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q25_cflux_y'
@@ -799,6 +874,7 @@ tables:
     fits:tunit: mgy
     name: q25_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_cflux_g'
@@ -807,6 +883,7 @@ tables:
     fits:tunit: mgy
     name: q75_cflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_cflux_r'
@@ -815,6 +892,7 @@ tables:
     fits:tunit: mgy
     name: q75_cflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_cflux_i'
@@ -823,6 +901,7 @@ tables:
     fits:tunit: mgy
     name: q75_cflux_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_cflux_z'
@@ -831,6 +910,7 @@ tables:
     fits:tunit: mgy
     name: q75_cflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.q75_cflux_y'
@@ -839,6 +919,7 @@ tables:
     fits:tunit: mgy
     name: q75_cflux_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.maglimit_g'
@@ -848,6 +929,7 @@ tables:
     fits:tunit: AB mag
     name: maglimit_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.maglimit_r'
@@ -857,6 +939,7 @@ tables:
     fits:tunit: AB mag
     name: maglimit_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.maglimit_i'
@@ -866,6 +949,7 @@ tables:
     fits:tunit: AB mag
     name: maglimit_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.maglimit_z'
@@ -875,6 +959,7 @@ tables:
     fits:tunit: AB mag
     name: maglimit_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.maglimit_y'
@@ -884,6 +969,7 @@ tables:
     fits:tunit: AB mag
     name: maglimit_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.fracflux_avg_g'
@@ -892,6 +978,7 @@ tables:
       this object
     name: fracflux_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.fracflux_avg_r'
@@ -900,6 +987,7 @@ tables:
       this object
     name: fracflux_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.fracflux_avg_i'
@@ -908,6 +996,7 @@ tables:
       this object
     name: fracflux_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.fracflux_avg_z'
@@ -916,6 +1005,7 @@ tables:
       this object
     name: fracflux_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.fracflux_avg_y'
@@ -924,6 +1014,7 @@ tables:
       this object
     name: fracflux_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.rchi2_avg_g'
@@ -931,6 +1022,7 @@ tables:
     description: Average chi^2 per pixel in g-band, weighted by PSF
     name: rchi2_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.rchi2_avg_r'
@@ -938,6 +1030,7 @@ tables:
     description: Average chi^2 per pixel in r-band, weighted by PSF
     name: rchi2_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.rchi2_avg_i'
@@ -945,6 +1038,7 @@ tables:
     description: Average chi^2 per pixel in i-band, weighted by PSF
     name: rchi2_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.rchi2_avg_z'
@@ -952,6 +1046,7 @@ tables:
     description: Average chi^2 per pixel in z-band, weighted by PSF
     name: rchi2_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.rchi2_avg_y'
@@ -959,6 +1054,7 @@ tables:
     description: Average chi^2 per pixel in Y-band, weighted by PSF
     name: rchi2_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.qf_avg_g'
@@ -967,6 +1063,7 @@ tables:
       contributing to the detection (0 < qf <1 ranges bad < qf < good) in g-band
     name: qf_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.qf_avg_r'
@@ -975,6 +1072,7 @@ tables:
       contributing to the detection (0 < qf <1 ranges bad < qf < good) in r-band
     name: qf_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.qf_avg_i'
@@ -983,6 +1081,7 @@ tables:
       contributing to the detection (0 < qf <1 ranges bad < qf < good) in i-band
     name: qf_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.qf_avg_z'
@@ -991,6 +1090,7 @@ tables:
       contributing to the detection (0 < qf <1 ranges bad < qf < good) in z-band
     name: qf_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.qf_avg_y'
@@ -999,6 +1099,7 @@ tables:
       contributing to the detection (0 < qf <1 ranges bad < qf < good) in Y-band
     name: qf_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prn_avg_g'
@@ -1007,6 +1108,7 @@ tables:
       location in g-band
     name: prn_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prn_avg_r'
@@ -1015,6 +1117,7 @@ tables:
       location in r-band
     name: prn_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prn_avg_i'
@@ -1023,6 +1126,7 @@ tables:
       location in i-band
     name: prn_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prn_avg_z'
@@ -1031,6 +1135,7 @@ tables:
       location in z-band
     name: prn_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prn_avg_y'
@@ -1039,6 +1144,7 @@ tables:
       location in Y-band
     name: prn_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prl_avg_g'
@@ -1047,6 +1153,7 @@ tables:
       location in g-band
     name: prl_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prl_avg_r'
@@ -1055,6 +1162,7 @@ tables:
       location in r-band
     name: prl_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prl_avg_i'
@@ -1063,6 +1171,7 @@ tables:
       location in i-band
     name: prl_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prl_avg_z'
@@ -1071,6 +1180,7 @@ tables:
       location in z-band
     name: prl_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prl_avg_y'
@@ -1079,6 +1189,7 @@ tables:
       location in Y-band
     name: prl_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prr_avg_g'
@@ -1087,6 +1198,7 @@ tables:
       in g-band
     name: prr_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prr_avg_r'
@@ -1095,6 +1207,7 @@ tables:
       in r-band
     name: prr_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prr_avg_i'
@@ -1103,6 +1216,7 @@ tables:
       in i-band
     name: prr_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prr_avg_z'
@@ -1111,6 +1225,7 @@ tables:
       in z-band
     name: prr_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.prr_avg_y'
@@ -1119,6 +1234,7 @@ tables:
       in Y-band
     name: prr_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.pre_avg_g'
@@ -1127,6 +1243,7 @@ tables:
       location in g-band
     name: pre_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.pre_avg_r'
@@ -1135,6 +1252,7 @@ tables:
       location in r-band
     name: pre_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.pre_avg_i'
@@ -1143,6 +1261,7 @@ tables:
       location in i-band
     name: pre_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.pre_avg_z'
@@ -1151,6 +1270,7 @@ tables:
       location in z-band
     name: pre_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.pre_avg_y'
@@ -1159,6 +1279,7 @@ tables:
       location in Y-band
     name: pre_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.cchi2_avg_g'
@@ -1167,6 +1288,7 @@ tables:
       g-band
     name: cchi2_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.cchi2_avg_r'
@@ -1175,6 +1297,7 @@ tables:
       r-band
     name: cchi2_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.cchi2_avg_i'
@@ -1183,6 +1306,7 @@ tables:
       i-band
     name: cchi2_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.cchi2_avg_z'
@@ -1191,6 +1315,7 @@ tables:
       z-band
     name: cchi2_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.cchi2_avg_y'
@@ -1199,6 +1324,7 @@ tables:
       Y-band
     name: cchi2_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.snr_avg_g'
@@ -1206,6 +1332,7 @@ tables:
     description: Average flux/dflux (where dflux is uncertainty) in g-band
     name: snr_avg_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.snr_avg_r'
@@ -1213,6 +1340,7 @@ tables:
     description: Average flux/dflux (where dflux is uncertainty) in r-band
     name: snr_avg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.snr_avg_i'
@@ -1220,6 +1348,7 @@ tables:
     description: Average flux/dflux (where dflux is uncertainty) in i-band
     name: snr_avg_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.snr_avg_z'
@@ -1227,6 +1356,7 @@ tables:
     description: Average flux/dflux (where dflux is uncertainty) in z-band
     name: snr_avg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.snr_avg_y'
@@ -1234,6 +1364,7 @@ tables:
     description: Average flux/dflux (where dflux is uncertainty) in Y-band
     name: snr_avg_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.htm9'
@@ -1513,6 +1644,7 @@ tables:
     fits:tunit: AB mag
     name: median_cmag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_r'
@@ -1521,6 +1653,7 @@ tables:
     fits:tunit: AB mag
     name: median_cmag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_i'
@@ -1529,6 +1662,7 @@ tables:
     fits:tunit: AB mag
     name: median_cmag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_z'
@@ -1537,6 +1671,7 @@ tables:
     fits:tunit: AB mag
     name: median_cmag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_y'
@@ -1545,6 +1680,7 @@ tables:
     fits:tunit: AB mag
     name: median_cmag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_g'
@@ -1553,6 +1689,7 @@ tables:
     fits:tunit: AB mag
     name: mean_cmag_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_r'
@@ -1561,6 +1698,7 @@ tables:
     fits:tunit: AB mag
     name: mean_cmag_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_i'
@@ -1569,6 +1707,7 @@ tables:
     fits:tunit: AB mag
     name: mean_cmag_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_z'
@@ -1577,6 +1716,7 @@ tables:
     fits:tunit: AB mag
     name: mean_cmag_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_y'
@@ -1585,6 +1725,7 @@ tables:
     fits:tunit: AB mag
     name: mean_cmag_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_g_r'
@@ -1592,6 +1733,7 @@ tables:
     description: Median magnitude of g-r color using cflux
     name: median_cmag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_r_i'
@@ -1599,6 +1741,7 @@ tables:
     description: Median magnitude of r-i color using cflux
     name: median_cmag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_i_z'
@@ -1606,6 +1749,7 @@ tables:
     description: Median magnitude of i-z color using cflux
     name: median_cmag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.median_cmag_z_y'
@@ -1613,6 +1757,7 @@ tables:
     description: Median magnitude of z-Y color using cflux
     name: median_cmag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_g_r'
@@ -1620,6 +1765,7 @@ tables:
     description: Mean magnitude of g-r color using cflux
     name: mean_cmag_g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_r_i'
@@ -1627,6 +1773,7 @@ tables:
     description: Mean magnitude of r-i color using cflux
     name: mean_cmag_r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_i_z'
@@ -1634,6 +1781,7 @@ tables:
     description: Mean magnitude of i-z color using cflux
     name: mean_cmag_i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#decaps_dr2.object.mean_cmag_z_y'
@@ -1641,6 +1789,7 @@ tables:
     description: Mean magnitude of z-Y color using cflux
     name: mean_cmag_z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Band-merged calibrated object catalog

@@ -40,6 +40,7 @@ tables:
     fits:tunit: d
     name: epoch_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.ssoobs.epoch_utc'
@@ -255,6 +256,7 @@ tables:
     fits:tunit: mag
     name: mag_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.ssoorb.slope_g'
@@ -262,6 +264,7 @@ tables:
     description: slope parameter
     name: slope_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.ssoorb.code'
@@ -353,6 +356,7 @@ tables:
     fits:tunit: arcsec
     name: ceu
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.ssoorb.ceu_rate'
@@ -361,6 +365,7 @@ tables:
     fits:tunit: mas.s**-1
     name: ceu_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.ssoorb.ceu_epoch'
@@ -2051,6 +2056,7 @@ tables:
     fits:tunit: yr
     name: ref_epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.rv_template_teff'
@@ -2059,6 +2065,7 @@ tables:
     fits:tunit: K
     name: rv_template_teff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.rv_template_logg'
@@ -2067,6 +2074,7 @@ tables:
     fits:tunit: dex(cm/s2)
     name: rv_template_logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.rv_template_fe_h'
@@ -2075,6 +2083,7 @@ tables:
     fits:tunit: dex
     name: rv_template_fe_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.a_g_val'
@@ -2083,6 +2092,7 @@ tables:
     fits:tunit: mag
     name: a_g_val
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.a_g_percentile_lower'
@@ -2091,6 +2101,7 @@ tables:
     fits:tunit: mag
     name: a_g_percentile_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.a_g_percentile_upper'
@@ -2099,6 +2110,7 @@ tables:
     fits:tunit: mag
     name: a_g_percentile_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.e_bp_min_rp_val'
@@ -2107,6 +2119,7 @@ tables:
     fits:tunit: mag
     name: e_bp_min_rp_val
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.e_bp_min_rp_percentile_lower'
@@ -2115,6 +2128,7 @@ tables:
     fits:tunit: mag
     name: e_bp_min_rp_percentile_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.e_bp_min_rp_percentile_upper'
@@ -2123,6 +2137,7 @@ tables:
     fits:tunit: mag
     name: e_bp_min_rp_percentile_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.random_index'
@@ -2433,6 +2448,7 @@ tables:
     description: Unique random number between 0 and 100
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr2.gaia_source.htm9'

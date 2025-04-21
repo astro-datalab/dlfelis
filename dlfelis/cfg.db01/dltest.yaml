@@ -37,6 +37,7 @@ tables:
     description: test
     name: raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.decerr'
@@ -44,6 +45,7 @@ tables:
     description: test
     name: decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.rascatter'
@@ -51,6 +53,7 @@ tables:
     description: test
     name: rascatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.decscatter'
@@ -58,6 +61,7 @@ tables:
     description: test
     name: decscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndet'
@@ -79,6 +83,7 @@ tables:
     description: test
     name: umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.uerr'
@@ -86,6 +91,7 @@ tables:
     description: test
     name: uerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.uscatter'
@@ -93,6 +99,7 @@ tables:
     description: test
     name: uscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndetu'
@@ -107,6 +114,7 @@ tables:
     description: test
     name: gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.gerr'
@@ -114,6 +122,7 @@ tables:
     description: test
     name: gerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.gscatter'
@@ -121,6 +130,7 @@ tables:
     description: test
     name: gscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndetg'
@@ -135,6 +145,7 @@ tables:
     description: test
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.rerr'
@@ -142,6 +153,7 @@ tables:
     description: test
     name: rerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.rscatter'
@@ -149,6 +161,7 @@ tables:
     description: test
     name: rscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndetr'
@@ -163,6 +176,7 @@ tables:
     description: test
     name: imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ierr'
@@ -170,6 +184,7 @@ tables:
     description: test
     name: ierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.iscatter'
@@ -177,6 +192,7 @@ tables:
     description: test
     name: iscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndeti'
@@ -191,6 +207,7 @@ tables:
     description: test
     name: zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.zerr'
@@ -198,6 +215,7 @@ tables:
     description: test
     name: zerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.zscatter'
@@ -205,6 +223,7 @@ tables:
     description: test
     name: zscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ndetz'
@@ -219,6 +238,7 @@ tables:
     description: test
     name: chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.sharp'
@@ -226,6 +246,7 @@ tables:
     description: test
     name: sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.flag'
@@ -240,6 +261,7 @@ tables:
     description: test
     name: prob
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ebv'
@@ -247,6 +269,7 @@ tables:
     description: test
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.htm9'
@@ -303,6 +326,7 @@ tables:
     description: test
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ugrizmag'
@@ -310,6 +334,7 @@ tables:
     description: test
     name: ugrizmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ugrizerr'
@@ -317,6 +342,7 @@ tables:
     description: test
     name: ugrizerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.ugrizscatter'
@@ -324,6 +350,7 @@ tables:
     description: test
     name: ugrizscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dltest.dltest.object.bigid'

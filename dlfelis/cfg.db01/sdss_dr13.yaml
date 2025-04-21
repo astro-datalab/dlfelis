@@ -43,6 +43,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_seqw_err'
@@ -51,6 +52,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ca_h_abs'
@@ -58,6 +60,7 @@ tables:
     description: CaH absorption line
     name: ca_h_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ca_h_abs_model'
@@ -65,6 +68,7 @@ tables:
     description: CaH absorption line best fit model
     name: ca_h_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ca_k_abs'
@@ -72,6 +76,7 @@ tables:
     description: CaK absorption line
     name: ca_k_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ca_k_abs_model'
@@ -79,6 +84,7 @@ tables:
     description: CaK absorption line best fit model
     name: ca_k_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_abs'
@@ -86,6 +92,7 @@ tables:
     description: H alpha absoption line
     name: h_alpha_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_abs_model'
@@ -93,6 +100,7 @@ tables:
     description: H alpha absorption line best fit model
     name: h_alpha_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_seqw'
@@ -103,6 +111,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_seqw_err'
@@ -111,6 +120,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_abs'
@@ -118,6 +128,7 @@ tables:
     description: H beta absorption line
     name: h_beta_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_abs_model'
@@ -125,6 +136,7 @@ tables:
     description: H beta absorption line best fit model
     name: h_beta_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_seqw'
@@ -135,6 +147,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_seqw_err'
@@ -143,6 +156,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_abs'
@@ -150,6 +164,7 @@ tables:
     description: H delta absorption line
     name: h_delta_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_abs_model'
@@ -157,6 +172,7 @@ tables:
     description: H delta absorption line best fit model
     name: h_delta_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_seqw'
@@ -167,6 +183,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_seqw_err'
@@ -175,6 +192,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_abs'
@@ -182,6 +200,7 @@ tables:
     description: H gamma absorption line
     name: h_gamma_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_abs_model'
@@ -189,6 +208,7 @@ tables:
     description: H gamma absorption line best fit model
     name: h_gamma_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_seqw'
@@ -199,6 +219,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_seqw_err'
@@ -207,6 +228,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_seqw'
@@ -217,6 +239,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_seqw_err'
@@ -225,6 +248,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.na_d_abs'
@@ -232,6 +256,7 @@ tables:
     description: NaD absorption line
     name: na_d_abs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.na_d_abs_model'
@@ -239,6 +264,7 @@ tables:
     description: NaD absorption line best fit model
     name: na_d_abs_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_seqw'
@@ -249,6 +275,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_seqw_err'
@@ -257,6 +284,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_seqw'
@@ -267,6 +295,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_seqw_err'
@@ -275,6 +304,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_seqw'
@@ -285,6 +315,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_seqw_err'
@@ -293,6 +324,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_seqw'
@@ -303,6 +335,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_seqw_err'
@@ -311,6 +344,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_seqw'
@@ -321,6 +355,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_seqw_err'
@@ -329,6 +364,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_seqw'
@@ -339,6 +375,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_seqw_err'
@@ -347,6 +384,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_seqw'
@@ -357,6 +395,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_seqw_err'
@@ -365,6 +404,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_seqw'
@@ -375,6 +415,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_seqw_err'
@@ -383,6 +424,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_seqw'
@@ -393,6 +435,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_seqw_err'
@@ -401,6 +444,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_seqw'
@@ -411,6 +455,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_seqw_err'
@@ -419,6 +464,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_seqw'
@@ -429,6 +475,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_seqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_seqw_err'
@@ -437,6 +484,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_seqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sigma_balmer'
@@ -446,6 +494,7 @@ tables:
     fits:tunit: km/s
     name: sigma_balmer
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sigma_balmer_err'
@@ -454,6 +503,7 @@ tables:
     fits:tunit: km/s
     name: sigma_balmer_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sigma_forbidden'
@@ -463,6 +513,7 @@ tables:
     fits:tunit: km/s
     name: sigma_forbidden
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sigma_forbidden_err'
@@ -471,6 +522,7 @@ tables:
     fits:tunit: km/s
     name: sigma_forbidden_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.v_off_balmer'
@@ -479,6 +531,7 @@ tables:
     fits:tunit: km/s
     name: v_off_balmer
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.v_off_balmer_err'
@@ -487,6 +540,7 @@ tables:
     fits:tunit: km/s
     name: v_off_balmer_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.v_off_forbidden'
@@ -495,6 +549,7 @@ tables:
     fits:tunit: km/s
     name: v_off_forbidden
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.v_off_forbidden_err'
@@ -503,6 +558,7 @@ tables:
     fits:tunit: km/s
     name: v_off_forbidden_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_cont'
@@ -512,6 +568,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oii_3726_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_cont_err'
@@ -520,6 +577,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oii_3726_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_reqw'
@@ -534,6 +592,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_reqw_err'
@@ -542,6 +601,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_eqw'
@@ -554,6 +614,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_eqw_err'
@@ -562,6 +623,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3726_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_flux'
@@ -571,6 +633,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_3726_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_flux_err'
@@ -579,6 +642,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_3726_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_inst_res'
@@ -588,6 +652,7 @@ tables:
     fits:tunit: km/s
     name: oii_3726_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3726_chisq'
@@ -596,6 +661,7 @@ tables:
       EW measurement
     name: oii_3726_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_cont'
@@ -605,6 +671,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oii_3729_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_cont_err'
@@ -613,6 +680,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oii_3729_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_reqw'
@@ -627,6 +695,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_reqw_err'
@@ -635,6 +704,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_eqw'
@@ -647,6 +717,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_eqw_err'
@@ -655,6 +726,7 @@ tables:
     fits:tunit: Angstrom
     name: oii_3729_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_flux'
@@ -664,6 +736,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_3729_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_flux_err'
@@ -672,6 +745,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_3729_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_inst_res'
@@ -681,6 +755,7 @@ tables:
     fits:tunit: km/s
     name: oii_3729_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_3729_chisq'
@@ -689,6 +764,7 @@ tables:
       EW measurement
     name: oii_3729_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_cont'
@@ -698,6 +774,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: neiii_3869_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_cont_err'
@@ -706,6 +783,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: neiii_3869_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_reqw'
@@ -720,6 +798,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_reqw_err'
@@ -728,6 +807,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_eqw'
@@ -740,6 +820,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_eqw_err'
@@ -748,6 +829,7 @@ tables:
     fits:tunit: Angstrom
     name: neiii_3869_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_flux'
@@ -757,6 +839,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: neiii_3869_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_flux_err'
@@ -765,6 +848,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: neiii_3869_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_inst_res'
@@ -774,6 +858,7 @@ tables:
     fits:tunit: km/s
     name: neiii_3869_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.neiii_3869_chisq'
@@ -782,6 +867,7 @@ tables:
       EW measurement
     name: neiii_3869_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_cont'
@@ -791,6 +877,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_delta_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_cont_err'
@@ -799,6 +886,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_delta_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_reqw'
@@ -813,6 +901,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_reqw_err'
@@ -821,6 +910,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_eqw'
@@ -833,6 +923,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_eqw_err'
@@ -841,6 +932,7 @@ tables:
     fits:tunit: Angstrom
     name: h_delta_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_flux'
@@ -850,6 +942,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_delta_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_flux_err'
@@ -858,6 +951,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_delta_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_inst_res'
@@ -867,6 +961,7 @@ tables:
     fits:tunit: km/s
     name: h_delta_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_delta_chisq'
@@ -875,6 +970,7 @@ tables:
       EW measurement
     name: h_delta_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_cont'
@@ -884,6 +980,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_gamma_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_cont_err'
@@ -892,6 +989,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_gamma_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_reqw'
@@ -906,6 +1004,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_reqw_err'
@@ -914,6 +1013,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_eqw'
@@ -926,6 +1026,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_eqw_err'
@@ -934,6 +1035,7 @@ tables:
     fits:tunit: Angstrom
     name: h_gamma_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_flux'
@@ -943,6 +1045,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_gamma_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_flux_err'
@@ -951,6 +1054,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_gamma_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_inst_res'
@@ -960,6 +1064,7 @@ tables:
     fits:tunit: km/s
     name: h_gamma_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_gamma_chisq'
@@ -968,6 +1073,7 @@ tables:
       EW measurement
     name: h_gamma_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_cont'
@@ -977,6 +1083,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_4363_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_cont_err'
@@ -985,6 +1092,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_4363_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_reqw'
@@ -999,6 +1107,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_reqw_err'
@@ -1007,6 +1116,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_eqw'
@@ -1019,6 +1129,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_eqw_err'
@@ -1027,6 +1138,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4363_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_flux'
@@ -1036,6 +1148,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_4363_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_flux_err'
@@ -1044,6 +1157,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_4363_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_inst_res'
@@ -1053,6 +1167,7 @@ tables:
     fits:tunit: km/s
     name: oiii_4363_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4363_chisq'
@@ -1061,6 +1176,7 @@ tables:
       EW measurement
     name: oiii_4363_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_cont'
@@ -1070,6 +1186,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_beta_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_cont_err'
@@ -1078,6 +1195,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_beta_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_reqw'
@@ -1092,6 +1210,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_reqw_err'
@@ -1100,6 +1219,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_eqw'
@@ -1112,6 +1232,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_eqw_err'
@@ -1120,6 +1241,7 @@ tables:
     fits:tunit: Angstrom
     name: h_beta_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_flux'
@@ -1129,6 +1251,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_beta_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_flux_err'
@@ -1137,6 +1260,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_beta_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_inst_res'
@@ -1146,6 +1270,7 @@ tables:
     fits:tunit: km/s
     name: h_beta_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_beta_chisq'
@@ -1154,6 +1279,7 @@ tables:
       EW measurement
     name: h_beta_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_cont'
@@ -1163,6 +1289,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_4959_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_cont_err'
@@ -1171,6 +1298,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_4959_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_reqw'
@@ -1185,6 +1313,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_reqw_err'
@@ -1193,6 +1322,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_eqw'
@@ -1205,6 +1335,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_eqw_err'
@@ -1213,6 +1344,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_4959_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_flux'
@@ -1222,6 +1354,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_4959_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_flux_err'
@@ -1230,6 +1363,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_4959_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_inst_res'
@@ -1239,6 +1373,7 @@ tables:
     fits:tunit: km/s
     name: oiii_4959_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_4959_chisq'
@@ -1247,6 +1382,7 @@ tables:
       EW measurement
     name: oiii_4959_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_cont'
@@ -1256,6 +1392,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_5007_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_cont_err'
@@ -1264,6 +1401,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oiii_5007_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_reqw'
@@ -1278,6 +1416,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_reqw_err'
@@ -1286,6 +1425,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_eqw'
@@ -1298,6 +1438,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_eqw_err'
@@ -1306,6 +1447,7 @@ tables:
     fits:tunit: Angstrom
     name: oiii_5007_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_flux'
@@ -1315,6 +1457,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_5007_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_flux_err'
@@ -1323,6 +1466,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_5007_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_inst_res'
@@ -1332,6 +1476,7 @@ tables:
     fits:tunit: km/s
     name: oiii_5007_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_5007_chisq'
@@ -1340,6 +1485,7 @@ tables:
       EW measurement
     name: oiii_5007_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_cont'
@@ -1349,6 +1495,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: hei_5876_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_cont_err'
@@ -1357,6 +1504,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: hei_5876_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_reqw'
@@ -1371,6 +1519,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_reqw_err'
@@ -1379,6 +1528,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_eqw'
@@ -1391,6 +1541,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_eqw_err'
@@ -1399,6 +1550,7 @@ tables:
     fits:tunit: Angstrom
     name: hei_5876_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_flux'
@@ -1408,6 +1560,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: hei_5876_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_flux_err'
@@ -1416,6 +1569,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: hei_5876_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_inst_res'
@@ -1425,6 +1579,7 @@ tables:
     fits:tunit: km/s
     name: hei_5876_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.hei_5876_chisq'
@@ -1433,6 +1588,7 @@ tables:
       EW measurement
     name: hei_5876_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_cont'
@@ -1442,6 +1598,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oi_6300_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_cont_err'
@@ -1450,6 +1607,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: oi_6300_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_reqw'
@@ -1464,6 +1622,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_reqw_err'
@@ -1472,6 +1631,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_eqw'
@@ -1484,6 +1644,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_eqw_err'
@@ -1492,6 +1653,7 @@ tables:
     fits:tunit: Angstrom
     name: oi_6300_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_flux'
@@ -1501,6 +1663,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oi_6300_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_flux_err'
@@ -1509,6 +1672,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oi_6300_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_inst_res'
@@ -1518,6 +1682,7 @@ tables:
     fits:tunit: km/s
     name: oi_6300_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oi_6300_chisq'
@@ -1526,6 +1691,7 @@ tables:
       EW measurement
     name: oi_6300_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_cont'
@@ -1535,6 +1701,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: nii_6548_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_cont_err'
@@ -1543,6 +1710,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: nii_6548_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_reqw'
@@ -1557,6 +1725,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_reqw_err'
@@ -1565,6 +1734,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_eqw'
@@ -1577,6 +1747,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_eqw_err'
@@ -1585,6 +1756,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6548_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_flux'
@@ -1594,6 +1766,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: nii_6548_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_flux_err'
@@ -1602,6 +1775,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: nii_6548_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_inst_res'
@@ -1611,6 +1785,7 @@ tables:
     fits:tunit: km/s
     name: nii_6548_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6548_chisq'
@@ -1619,6 +1794,7 @@ tables:
       EW measurement
     name: nii_6548_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_cont'
@@ -1628,6 +1804,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_alpha_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_cont_err'
@@ -1636,6 +1813,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: h_alpha_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_reqw'
@@ -1650,6 +1828,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_reqw_err'
@@ -1658,6 +1837,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_eqw'
@@ -1670,6 +1850,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_eqw_err'
@@ -1678,6 +1859,7 @@ tables:
     fits:tunit: Angstrom
     name: h_alpha_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_flux'
@@ -1687,6 +1869,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_alpha_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_flux_err'
@@ -1695,6 +1878,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: h_alpha_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_inst_res'
@@ -1704,6 +1888,7 @@ tables:
     fits:tunit: km/s
     name: h_alpha_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.h_alpha_chisq'
@@ -1712,6 +1897,7 @@ tables:
       EW measurement
     name: h_alpha_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_cont'
@@ -1721,6 +1907,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: nii_6584_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_cont_err'
@@ -1729,6 +1916,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: nii_6584_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_reqw'
@@ -1743,6 +1931,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_reqw_err'
@@ -1751,6 +1940,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_eqw'
@@ -1763,6 +1953,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_eqw_err'
@@ -1771,6 +1962,7 @@ tables:
     fits:tunit: Angstrom
     name: nii_6584_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_flux'
@@ -1780,6 +1972,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: nii_6584_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_flux_err'
@@ -1788,6 +1981,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: nii_6584_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_inst_res'
@@ -1797,6 +1991,7 @@ tables:
     fits:tunit: km/s
     name: nii_6584_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.nii_6584_chisq'
@@ -1805,6 +2000,7 @@ tables:
       EW measurement
     name: nii_6584_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_cont'
@@ -1814,6 +2010,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: sii_6717_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_cont_err'
@@ -1822,6 +2019,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: sii_6717_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_reqw'
@@ -1836,6 +2034,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_reqw_err'
@@ -1844,6 +2043,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_eqw'
@@ -1856,6 +2056,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_eqw_err'
@@ -1864,6 +2065,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6717_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_flux'
@@ -1873,6 +2075,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: sii_6717_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_flux_err'
@@ -1881,6 +2084,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: sii_6717_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_inst_res'
@@ -1890,6 +2094,7 @@ tables:
     fits:tunit: km/s
     name: sii_6717_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6717_chisq'
@@ -1898,6 +2103,7 @@ tables:
       EW measurement
     name: sii_6717_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_cont'
@@ -1907,6 +2113,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: sii_6731_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_cont_err'
@@ -1915,6 +2122,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: sii_6731_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_reqw'
@@ -1929,6 +2137,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_reqw_err'
@@ -1937,6 +2146,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_eqw'
@@ -1949,6 +2159,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_eqw_err'
@@ -1957,6 +2168,7 @@ tables:
     fits:tunit: Angstrom
     name: sii_6731_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_flux'
@@ -1966,6 +2178,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: sii_6731_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_flux_err'
@@ -1974,6 +2187,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: sii_6731_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_inst_res'
@@ -1983,6 +2197,7 @@ tables:
     fits:tunit: km/s
     name: sii_6731_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.sii_6731_chisq'
@@ -1991,6 +2206,7 @@ tables:
       EW measurement
     name: sii_6731_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_cont'
@@ -2000,6 +2216,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: ariii7135_cont
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_cont_err'
@@ -2008,6 +2225,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2 Angstrom-1
     name: ariii7135_cont_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_reqw'
@@ -2022,6 +2240,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_reqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_reqw_err'
@@ -2030,6 +2249,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_reqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_eqw'
@@ -2042,6 +2262,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_eqw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_eqw_err'
@@ -2050,6 +2271,7 @@ tables:
     fits:tunit: Angstrom
     name: ariii7135_eqw_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_flux'
@@ -2059,6 +2281,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: ariii7135_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_flux_err'
@@ -2067,6 +2290,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: ariii7135_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_inst_res'
@@ -2076,6 +2300,7 @@ tables:
     fits:tunit: km/s
     name: ariii7135_inst_res
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.ariii7135_chisq'
@@ -2084,6 +2309,7 @@ tables:
       EW measurement
     name: ariii7135_chisq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_sigma'
@@ -2093,6 +2319,7 @@ tables:
     fits:tunit: km/s
     name: oii_sigma
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_flux'
@@ -2101,6 +2328,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_flux_err'
@@ -2109,6 +2337,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oii_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_voff'
@@ -2117,6 +2346,7 @@ tables:
     fits:tunit: km/s
     name: oii_voff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oii_chi2'
@@ -2124,6 +2354,7 @@ tables:
     description: chi^2 of the fit to the [O II] line in free fit
     name: oii_chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_sigma'
@@ -2133,6 +2364,7 @@ tables:
     fits:tunit: km/s
     name: oiii_sigma
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_flux'
@@ -2141,6 +2373,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_flux_err'
@@ -2149,6 +2382,7 @@ tables:
     fits:tunit: 1e-17 erg s-1 cm-2
     name: oiii_flux_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_voff'
@@ -2157,6 +2391,7 @@ tables:
     fits:tunit: km/s
     name: oiii_voff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.oiii_chi2'
@@ -2164,6 +2399,7 @@ tables:
     description: chi^2 of the fit to the [O III]5007 line in free fit
     name: oiii_chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sdss_dr13.galspecline_dr8.spectofiber'
@@ -2175,6 +2411,7 @@ tables:
       pipeline.
     name: spectofiber
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Emission line measurements from MPA-JHU spectroscopic reanalysis

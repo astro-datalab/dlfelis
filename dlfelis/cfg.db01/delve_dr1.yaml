@@ -43,6 +43,7 @@ tables:
     fits:tunit: mag
     name: mag_psf_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_psf_r'
@@ -51,6 +52,7 @@ tables:
     fits:tunit: mag
     name: mag_psf_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_psf_i'
@@ -59,6 +61,7 @@ tables:
     fits:tunit: mag
     name: mag_psf_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_psf_z'
@@ -67,6 +70,7 @@ tables:
     fits:tunit: mag
     name: mag_psf_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_psf_g'
@@ -75,6 +79,7 @@ tables:
     fits:tunit: mag
     name: magerr_psf_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_psf_r'
@@ -83,6 +88,7 @@ tables:
     fits:tunit: mag
     name: magerr_psf_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_psf_i'
@@ -91,6 +97,7 @@ tables:
     fits:tunit: mag
     name: magerr_psf_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_psf_z'
@@ -99,6 +106,7 @@ tables:
     fits:tunit: mag
     name: magerr_psf_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_auto_g'
@@ -108,6 +116,7 @@ tables:
     fits:tunit: mag
     name: mag_auto_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_auto_r'
@@ -117,6 +126,7 @@ tables:
     fits:tunit: mag
     name: mag_auto_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_auto_i'
@@ -126,6 +136,7 @@ tables:
     fits:tunit: mag
     name: mag_auto_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.mag_auto_z'
@@ -135,6 +146,7 @@ tables:
     fits:tunit: mag
     name: mag_auto_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_auto_g'
@@ -144,6 +156,7 @@ tables:
     fits:tunit: mag
     name: magerr_auto_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_auto_r'
@@ -153,6 +166,7 @@ tables:
     fits:tunit: mag
     name: magerr_auto_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_auto_i'
@@ -162,6 +176,7 @@ tables:
     fits:tunit: mag
     name: magerr_auto_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.magerr_auto_z'
@@ -171,6 +186,7 @@ tables:
     fits:tunit: mag
     name: magerr_auto_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spread_model_g'
@@ -179,6 +195,7 @@ tables:
       for details)
     name: spread_model_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spread_model_r'
@@ -187,6 +204,7 @@ tables:
       for details)
     name: spread_model_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spread_model_i'
@@ -195,6 +213,7 @@ tables:
       for details)
     name: spread_model_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spread_model_z'
@@ -203,6 +222,7 @@ tables:
       for details)
     name: spread_model_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spreaderr_model_g'
@@ -211,6 +231,7 @@ tables:
       al 2012 for details)
     name: spreaderr_model_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spreaderr_model_r'
@@ -219,6 +240,7 @@ tables:
       al 2012 for details)
     name: spreaderr_model_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spreaderr_model_i'
@@ -227,6 +249,7 @@ tables:
       al 2012 for details)
     name: spreaderr_model_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.spreaderr_model_z'
@@ -235,6 +258,7 @@ tables:
       al 2012 for details)
     name: spreaderr_model_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.class_star_g'
@@ -243,6 +267,7 @@ tables:
       details)
     name: class_star_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.class_star_r'
@@ -251,6 +276,7 @@ tables:
       details)
     name: class_star_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.class_star_i'
@@ -259,6 +285,7 @@ tables:
       details)
     name: class_star_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.class_star_z'
@@ -267,6 +294,7 @@ tables:
       details)
     name: class_star_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_psf_g'
@@ -275,6 +303,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_psf_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_psf_r'
@@ -283,6 +312,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_psf_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_psf_i'
@@ -291,6 +321,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_psf_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_psf_z'
@@ -299,6 +330,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_psf_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_psf_g'
@@ -307,6 +339,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_psf_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_psf_r'
@@ -315,6 +348,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_psf_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_psf_i'
@@ -323,6 +357,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_psf_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_psf_z'
@@ -331,6 +366,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_psf_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_psf_g'
@@ -339,6 +375,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_psf_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_psf_r'
@@ -347,6 +384,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_psf_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_psf_i'
@@ -355,6 +393,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_psf_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_psf_z'
@@ -363,6 +402,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_psf_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_auto_g'
@@ -371,6 +411,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_auto_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_auto_r'
@@ -379,6 +420,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_auto_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_auto_i'
@@ -387,6 +429,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_auto_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_mag_auto_z'
@@ -395,6 +438,7 @@ tables:
     fits:tunit: mag
     name: wavg_mag_auto_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_auto_g'
@@ -404,6 +448,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_auto_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_auto_r'
@@ -413,6 +458,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_auto_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_auto_i'
@@ -422,6 +468,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_auto_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magerr_auto_z'
@@ -431,6 +478,7 @@ tables:
     fits:tunit: mag
     name: wavg_magerr_auto_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_auto_g'
@@ -439,6 +487,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_auto_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_auto_r'
@@ -447,6 +496,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_auto_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_auto_i'
@@ -455,6 +505,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_auto_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_magrms_auto_z'
@@ -463,6 +514,7 @@ tables:
     fits:tunit: mag
     name: wavg_magrms_auto_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spread_model_g'
@@ -470,6 +522,7 @@ tables:
     description: Weighted average g-band spread model
     name: wavg_spread_model_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spread_model_r'
@@ -477,6 +530,7 @@ tables:
     description: Weighted average r-band spread model
     name: wavg_spread_model_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spread_model_i'
@@ -484,6 +538,7 @@ tables:
     description: Weighted average i-band spread model
     name: wavg_spread_model_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spread_model_z'
@@ -491,6 +546,7 @@ tables:
     description: Weighted average z-band spread model
     name: wavg_spread_model_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreaderr_model_g'
@@ -498,6 +554,7 @@ tables:
     description: Weighted average g-band spread model error
     name: wavg_spreaderr_model_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreaderr_model_r'
@@ -505,6 +562,7 @@ tables:
     description: Weighted average r-band spread model error
     name: wavg_spreaderr_model_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreaderr_model_i'
@@ -512,6 +570,7 @@ tables:
     description: Weighted average i-band spread model error
     name: wavg_spreaderr_model_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreaderr_model_z'
@@ -519,6 +578,7 @@ tables:
     description: Weighted average z-band spread model error
     name: wavg_spreaderr_model_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreadrms_model_g'
@@ -526,6 +586,7 @@ tables:
     description: Weighted average g-band spread model RMS
     name: wavg_spreadrms_model_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreadrms_model_r'
@@ -533,6 +594,7 @@ tables:
     description: Weighted average r-band spread model RMS
     name: wavg_spreadrms_model_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreadrms_model_i'
@@ -540,6 +602,7 @@ tables:
     description: Weighted average i-band spread model RMS
     name: wavg_spreadrms_model_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.wavg_spreadrms_model_z'
@@ -547,6 +610,7 @@ tables:
     description: Weighted average z-band spread model RMS
     name: wavg_spreadrms_model_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.expnum_g'
@@ -611,6 +675,7 @@ tables:
       Neilsen et al 2015)
     name: t_eff_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.t_eff_r'
@@ -619,6 +684,7 @@ tables:
       Neilsen et al 2015)
     name: t_eff_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.t_eff_i'
@@ -627,6 +693,7 @@ tables:
       Neilsen et al 2015)
     name: t_eff_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.t_eff_z'
@@ -635,6 +702,7 @@ tables:
       Neilsen et al 2015)
     name: t_eff_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.exptime_g'
@@ -643,6 +711,7 @@ tables:
     fits:tunit: s
     name: exptime_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.exptime_r'
@@ -651,6 +720,7 @@ tables:
     fits:tunit: s
     name: exptime_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.exptime_i'
@@ -659,6 +729,7 @@ tables:
     fits:tunit: s
     name: exptime_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.exptime_z'
@@ -667,6 +738,7 @@ tables:
     fits:tunit: s
     name: exptime_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.a_image_g'
@@ -675,6 +747,7 @@ tables:
     fits:tunit: pixel
     name: a_image_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.a_image_r'
@@ -683,6 +756,7 @@ tables:
     fits:tunit: pixel
     name: a_image_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.a_image_i'
@@ -691,6 +765,7 @@ tables:
     fits:tunit: pixel
     name: a_image_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.a_image_z'
@@ -699,6 +774,7 @@ tables:
     fits:tunit: pixel
     name: a_image_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.b_image_g'
@@ -707,6 +783,7 @@ tables:
     fits:tunit: pixel
     name: b_image_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.b_image_r'
@@ -715,6 +792,7 @@ tables:
     fits:tunit: pixel
     name: b_image_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.b_image_i'
@@ -723,6 +801,7 @@ tables:
     fits:tunit: pixel
     name: b_image_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.b_image_z'
@@ -731,6 +810,7 @@ tables:
     fits:tunit: pixel
     name: b_image_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.theta_image_g'
@@ -739,6 +819,7 @@ tables:
     fits:tunit: deg
     name: theta_image_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.theta_image_r'
@@ -747,6 +828,7 @@ tables:
     fits:tunit: deg
     name: theta_image_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.theta_image_i'
@@ -755,6 +837,7 @@ tables:
     fits:tunit: deg
     name: theta_image_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.theta_image_z'
@@ -763,6 +846,7 @@ tables:
     fits:tunit: deg
     name: theta_image_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.ebv'
@@ -771,6 +855,7 @@ tables:
     fits:tunit: mag
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.extinction_g'
@@ -780,6 +865,7 @@ tables:
     fits:tunit: mag
     name: extinction_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.extinction_r'
@@ -789,6 +875,7 @@ tables:
     fits:tunit: mag
     name: extinction_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.extinction_i'
@@ -798,6 +885,7 @@ tables:
     fits:tunit: mag
     name: extinction_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.extinction_z'
@@ -807,6 +895,7 @@ tables:
     fits:tunit: mag
     name: extinction_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.htm9'
@@ -835,6 +924,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#delve_dr1.objects.nepochs_g'

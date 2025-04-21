@@ -146,6 +146,7 @@ tables:
     description: Uncertainty in RA (arcsec)
     name: sigra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigdec'
@@ -153,6 +154,7 @@ tables:
     description: Uncertainty in Dec (arcsec)
     name: sigdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigradec'
@@ -160,6 +162,7 @@ tables:
     description: Cross-term of RA and Dec uncertainty (arcsec)
     name: sigradec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.wx'
@@ -167,6 +170,7 @@ tables:
     description: X-pixel value
     name: wx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.wy'
@@ -174,6 +178,7 @@ tables:
     description: Y-pixel value
     name: wy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sky'
@@ -181,6 +186,7 @@ tables:
     description: Frame sky background value, band-1
     name: w1sky
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigsk'
@@ -188,6 +194,7 @@ tables:
     description: Frame sky background value uncertainty, band-1
     name: w1sigsk
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1conf'
@@ -195,6 +202,7 @@ tables:
     description: Frame sky confusion based on the uncertainty images, band-1
     name: w1conf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sky'
@@ -202,6 +210,7 @@ tables:
     description: Frame sky background value, band-2
     name: w2sky
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigsk'
@@ -209,6 +218,7 @@ tables:
     description: Frame sky background value uncertainty, band-2
     name: w2sigsk
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2conf'
@@ -216,6 +226,7 @@ tables:
     description: Frame sky confusion based on the uncertainty images, band-2
     name: w2conf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1fitr'
@@ -223,6 +234,7 @@ tables:
     description: Fitting radius, band-1 (clipped at 999.99)
     name: w1fitr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2fitr'
@@ -230,6 +242,7 @@ tables:
     description: Fitting radius, band-2 (clipped at 999.99)
     name: w2fitr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1snr'
@@ -237,6 +250,7 @@ tables:
     description: Instrumental profile-fit photometry S/N ratio, band-1
     name: w1snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2snr'
@@ -244,6 +258,7 @@ tables:
     description: Instrumental profile-fit photometry S/N ratio, band-2
     name: w2snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flux'
@@ -251,6 +266,7 @@ tables:
     description: Profile-fit photometry raw flux, band-1
     name: w1flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigflux'
@@ -258,6 +274,7 @@ tables:
     description: profile-fit photometry raw flux uncertainty, band-1
     name: w1sigflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flux'
@@ -265,6 +282,7 @@ tables:
     description: profile-fit photometry raw flux, band-2
     name: w2flux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigflux'
@@ -272,6 +290,7 @@ tables:
     description: profile-fit photometry raw flux uncertainty, band-2
     name: w2sigflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1mpro'
@@ -279,6 +298,7 @@ tables:
     description: Instrumental profile-fit photometry magnitud, band-1
     name: w1mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigmpro'
@@ -287,6 +307,7 @@ tables:
       band-1
     name: w1sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1rchi2'
@@ -294,6 +315,7 @@ tables:
     description: Instrumental profile-fit photometry reduced chi^2, band-1
     name: w1rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2mpro'
@@ -301,6 +323,7 @@ tables:
     description: Instrumental profile-fit photometry magnitude, band-2
     name: w2mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigmpro'
@@ -309,6 +332,7 @@ tables:
       band-2
     name: w2sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2rchi2'
@@ -316,6 +340,7 @@ tables:
     description: Instrumental profile-fit photometry reduced chi^2, band-2
     name: w2rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.rchi2'
@@ -323,6 +348,7 @@ tables:
     description: Instrumental profile-fit photometry reduced chi squared, total
     name: rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.nb'
@@ -344,6 +370,7 @@ tables:
     description: Fraction of pixels affected by saturation, band-1
     name: w1sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sat'
@@ -351,6 +378,7 @@ tables:
     description: Fraction of pixels affected by saturation, band-2
     name: w2sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1mag'
@@ -358,6 +386,7 @@ tables:
     description: Instrumental standard aperture mag w/ correction applied, band-1
     name: w1mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm'
@@ -365,6 +394,7 @@ tables:
     description: Instrumental standard aperture mag uncertainty applied, band-1
     name: w1sigm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg'
@@ -379,6 +409,7 @@ tables:
     description: Mean coverage depth, band-1
     name: w1cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2mag'
@@ -386,6 +417,7 @@ tables:
     description: Instrumental standard aperture mag w/ correction applied, band-2
     name: w2mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm'
@@ -393,6 +425,7 @@ tables:
     description: Instrumental standard aperture mag uncertainty applied, band-2
     name: w2sigm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg'
@@ -407,6 +440,7 @@ tables:
     description: Mean coverage depth, band-2
     name: w2cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1mag_1'
@@ -414,6 +448,7 @@ tables:
     description: Aperture 1, instrumental aperture mag, band-1
     name: w1mag_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_1'
@@ -421,6 +456,7 @@ tables:
     description: Aperture 1, instrumental aperture mag uncertainty, band-1
     name: w1sigm_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_1'
@@ -435,6 +471,7 @@ tables:
     description: Aperture 1, instrumental aperture mag, band-2
     name: w2mag_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_1'
@@ -442,6 +479,7 @@ tables:
     description: Aperture 1, instrumental aperture mag uncertainty, band-2
     name: w2sigm_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_1'
@@ -456,6 +494,7 @@ tables:
     description: Aperture 2, instrumental aperture mag, band-1
     name: w1mag_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_2'
@@ -463,6 +502,7 @@ tables:
     description: Aperture 2, instrumental aperture mag uncertainty, band-1
     name: w1sigm_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_2'
@@ -477,6 +517,7 @@ tables:
     description: Aperture 2, instrumental aperture mag, band-2
     name: w2mag_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_2'
@@ -484,6 +525,7 @@ tables:
     description: Aperture 2, instrumental aperture mag uncertainty, band-2
     name: w2sigm_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_2'
@@ -498,6 +540,7 @@ tables:
     description: Aperture 3, instrumental aperture mag, band-1
     name: w1mag_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_3'
@@ -505,6 +548,7 @@ tables:
     description: Aperture 3, instrumental aperture mag uncertainty, band-1
     name: w1sigm_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_3'
@@ -519,6 +563,7 @@ tables:
     description: Aperture 3, instrumental aperture mag, band-2
     name: w2mag_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_3'
@@ -526,6 +571,7 @@ tables:
     description: Aperture 3, instrumental aperture mag uncertainty, band-2
     name: w2sigm_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_3'
@@ -540,6 +586,7 @@ tables:
     description: Aperture 4, instrumental aperture mag, band-1
     name: w1mag_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_4'
@@ -547,6 +594,7 @@ tables:
     description: Aperture 4, instrumental aperture mag uncertainty, band-1
     name: w1sigm_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_4'
@@ -561,6 +609,7 @@ tables:
     description: Aperture 4, instrumental aperture mag, band-2
     name: w2mag_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_4'
@@ -568,6 +617,7 @@ tables:
     description: Aperture 4, instrumental aperture mag uncertainty, band-2
     name: w2sigm_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_4'
@@ -582,6 +632,7 @@ tables:
     description: Aperture 5, instrumental aperture mag, band-1
     name: w1mag_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_5'
@@ -589,6 +640,7 @@ tables:
     description: Aperture 5, instrumental aperture mag uncertainty, band-1
     name: w1sigm_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_5'
@@ -603,6 +655,7 @@ tables:
     description: Aperture 5, instrumental aperture mag, band-2
     name: w2mag_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_5'
@@ -610,6 +663,7 @@ tables:
     description: Aperture 5, instrumental aperture mag uncertainty, band-2
     name: w2sigm_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_5'
@@ -624,6 +678,7 @@ tables:
     description: Aperture 6, instrumental aperture mag, band-1
     name: w1mag_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_6'
@@ -631,6 +686,7 @@ tables:
     description: Aperture 6, instrumental aperture mag uncertainty, band-1
     name: w1sigm_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_6'
@@ -645,6 +701,7 @@ tables:
     description: Aperture 6, instrumental aperture mag, band-2
     name: w2mag_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_6'
@@ -652,6 +709,7 @@ tables:
     description: Aperture 6, instrumental aperture mag uncertainty, band-2
     name: w2sigm_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_6'
@@ -666,6 +724,7 @@ tables:
     description: Aperture 7, instrumental aperture mag, band-1
     name: w1mag_7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_7'
@@ -673,6 +732,7 @@ tables:
     description: Aperture 7, instrumental aperture mag uncertainty, band-1
     name: w1sigm_7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_7'
@@ -687,6 +747,7 @@ tables:
     description: Aperture 7, instrumental aperture mag, band-2
     name: w2mag_7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_7'
@@ -694,6 +755,7 @@ tables:
     description: Aperture 7, instrumental aperture mag uncertainty, band-2
     name: w2sigm_7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_7'
@@ -708,6 +770,7 @@ tables:
     description: Aperture 8, instrumental aperture mag, band-1
     name: w1mag_8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigm_8'
@@ -715,6 +778,7 @@ tables:
     description: Aperture 8, instrumental aperture mag uncertainty, band-1
     name: w1sigm_8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flg_8'
@@ -729,6 +793,7 @@ tables:
     description: Aperture 8, instrumental aperture mag, band-2
     name: w2mag_8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigm_8'
@@ -736,6 +801,7 @@ tables:
     description: Aperture 8, instrumental aperture mag uncertainty, band-2
     name: w2sigm_8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flg_8'
@@ -765,6 +831,7 @@ tables:
     description: Profile-fit repeatability mag, band-1
     name: w1magp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigp1'
@@ -773,6 +840,7 @@ tables:
       band-1
     name: w1sigp1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigp2'
@@ -781,6 +849,7 @@ tables:
       mean; band-1
     name: w1sigp2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1k'
@@ -788,6 +857,7 @@ tables:
     description: Stetson k index for variability; band-1
     name: w1k
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1ndf'
@@ -802,6 +872,7 @@ tables:
     description: -ln(Q), where Q = 1-P(chi^2);  band-1
     name: w1mlq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2nm'
@@ -824,6 +895,7 @@ tables:
     description: Profile-fit repeatability mag, band-1
     name: w2magp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigp1'
@@ -832,6 +904,7 @@ tables:
       band-2
     name: w2sigp1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigp2'
@@ -840,6 +913,7 @@ tables:
       mean; band-1
     name: w2sigp2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2k'
@@ -847,6 +921,7 @@ tables:
     description: Stetson k index for variability; band-2
     name: w2k
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2ndf'
@@ -861,6 +936,7 @@ tables:
     description: -ln(Q), where Q = 1-P(chi^2);  band-2
     name: w2mlq
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.rho12'
@@ -904,6 +980,7 @@ tables:
       component 1
     name: p1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.p2'
@@ -912,6 +989,7 @@ tables:
       component 2
     name: p2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigra_pm'
@@ -919,6 +997,7 @@ tables:
     description: Uncertainty in the RA motion estimate
     name: sigra_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigdec_pm'
@@ -926,6 +1005,7 @@ tables:
     description: Uncertainty in the Dec motion estimate
     name: sigdec_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigradec_pm'
@@ -934,6 +1014,7 @@ tables:
       incl motion
     name: sigradec_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.pmra'
@@ -941,6 +1022,7 @@ tables:
     description: Aparent motion in RA
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.pmdec'
@@ -948,6 +1030,7 @@ tables:
     description: Aparent motion in Dec
     name: pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigpmra'
@@ -955,6 +1038,7 @@ tables:
     description: Uncertainty in RA motion estimate
     name: sigpmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.sigpmdec'
@@ -962,6 +1046,7 @@ tables:
     description: Uncertainty in Dec motion estimate
     name: sigpmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1snr_pm'
@@ -969,6 +1054,7 @@ tables:
     description: S/N ratio of the W1 profile-fit photometry including motion
     name: w1snr_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2snr_pm'
@@ -976,6 +1062,7 @@ tables:
     description: S/N ratio of the W2 profile-fit photometry including motion
     name: w2snr_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1flux_pm'
@@ -983,6 +1070,7 @@ tables:
     description: Raw flux W1 profile-fit photometry including motion
     name: w1flux_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigflux_pm'
@@ -990,6 +1078,7 @@ tables:
     description: Raw flux uncertainty W1 profile-fit photometry including motion1
     name: w1sigflux_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2flux_pm'
@@ -997,6 +1086,7 @@ tables:
     description: Raw flux W2 profile-fit photometry including motion
     name: w2flux_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigflux_pm'
@@ -1004,6 +1094,7 @@ tables:
     description: Raw flux uncertainty W2 profile-fit photometry including motion1
     name: w2sigflux_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1mpro_pm'
@@ -1011,6 +1102,7 @@ tables:
     description: W1 magnitude from profile-fit photometry including motion
     name: w1mpro_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1sigmpro_pm'
@@ -1018,6 +1110,7 @@ tables:
     description: W1 flux uncertainty from profile-fit photometry including motion
     name: w1sigmpro_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1rchi2_pm'
@@ -1026,6 +1119,7 @@ tables:
       motion estimate
     name: w1rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2mpro_pm'
@@ -1033,6 +1127,7 @@ tables:
     description: W2 magnitude from profile-fit photometry including motion
     name: w2mpro_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2sigmpro_pm'
@@ -1040,6 +1135,7 @@ tables:
     description: W2 flux uncertainty from profile-fit photometry including motion
     name: w2sigmpro_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w2rchi2_pm'
@@ -1048,6 +1144,7 @@ tables:
       motion estimate
     name: w2rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.rchi2_pm'
@@ -1056,6 +1153,7 @@ tables:
       src motion
     name: rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.niters_pm'
@@ -1078,6 +1176,7 @@ tables:
       scans
     name: dist
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.dw1mag'
@@ -1085,6 +1184,7 @@ tables:
     description: Difference in w1mpro between ascending and descending scans
     name: dw1mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.rch2w1'
@@ -1092,6 +1192,7 @@ tables:
     description: Chi-square for dw1mag (1 degree of freedom)
     name: rch2w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.dw2mag'
@@ -1099,6 +1200,7 @@ tables:
     description: Difference in w1mpro between ascending and descending scans
     name: dw2mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.rch2w2'
@@ -1106,6 +1208,7 @@ tables:
     description: Chi-square for dw2mag (1 degree of freedom)
     name: rch2w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.elonsig'
@@ -1113,6 +1216,7 @@ tables:
     description: One-sigma uncertainty in ecliptic longitude
     name: elonsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.elatsig'
@@ -1120,6 +1224,7 @@ tables:
     description: One-sigma uncertainty in ecliptic latitude
     name: elatsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delon'
@@ -1127,6 +1232,7 @@ tables:
     description: Descending scan - ascending scan ecliptic longitude
     name: delon
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delonsig'
@@ -1134,6 +1240,7 @@ tables:
     description: One-sigma uncertainty in Delon
     name: delonsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delat'
@@ -1141,6 +1248,7 @@ tables:
     description: Descending scan - ascending scan ecliptic latitude
     name: delat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delatsig'
@@ -1148,6 +1256,7 @@ tables:
     description: One-sigma uncertainty in Delat
     name: delatsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delonsnr'
@@ -1155,6 +1264,7 @@ tables:
     description: '|Delon|/DelonSig'
     name: delonsnr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.delatsnr'
@@ -1162,6 +1272,7 @@ tables:
     description: '|Delat|/DelatSig'
     name: delatsnr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.chi2pmra'
@@ -1169,6 +1280,7 @@ tables:
     description: Chi-square for PMRA difference (1 degree of freedom)
     name: chi2pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.chi2pmdec'
@@ -1176,6 +1288,7 @@ tables:
     description: Chi-square for PMDEC difference (1 degree of freedom)
     name: chi2pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.ka'
@@ -1211,6 +1324,7 @@ tables:
     description: Parallax from PM desc-asce elon
     name: par_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.par_pmsig'
@@ -1218,6 +1332,7 @@ tables:
     description: One-sigma uncertainty in par_pm
     name: par_pmsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.par_stat'
@@ -1225,6 +1340,7 @@ tables:
     description: Parallax estimate from stationary solution
     name: par_stat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.par_sigma'
@@ -1232,6 +1348,7 @@ tables:
     description: One-sigma uncertainty in par_stat
     name: par_sigma
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.w1cc_map'
@@ -1298,6 +1415,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#catwise2020.main.source_name'

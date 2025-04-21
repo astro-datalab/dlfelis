@@ -1078,6 +1078,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Main S-PLUS object table

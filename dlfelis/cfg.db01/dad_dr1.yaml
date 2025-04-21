@@ -269,6 +269,7 @@ tables:
     description: estimated magnitude zeropoint (for 1 sec)
     name: magzpt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movexp.fwhm'
@@ -276,6 +277,7 @@ tables:
     description: median FWHM of exposure over FWHM for all CCDs (pixels)
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: The exposure table provides details of each exposure. The expname is
@@ -343,6 +345,7 @@ tables:
     description: apparent rate of motion from measured positions (arcsec/hr)
     name: rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movgrp.pa'
@@ -350,6 +353,7 @@ tables:
     description: apparent position angle from measured positions (deg)
     name: pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movgrp.mag'
@@ -357,6 +361,7 @@ tables:
     description: estimated average magnitude over detected observations
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movgrp.digest'
@@ -568,6 +573,7 @@ tables:
     description: column pixel coordinate in CCD image (pix)
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movobs.y'
@@ -575,6 +581,7 @@ tables:
     description: row pixel coordinate in CCD image (pix)
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movobs.xco'
@@ -582,6 +589,7 @@ tables:
     description: column pixel coordinate in cutout image (pix)
     name: xco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movobs.yco'
@@ -589,6 +597,7 @@ tables:
     description: row pixel coordinate in cutout image (pix)
     name: yco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr1.movobs.cutout'
@@ -654,6 +663,7 @@ tables:
     fits:tunit: arcsec/hr
     name: ratecor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Projection corrected rates for moving objects

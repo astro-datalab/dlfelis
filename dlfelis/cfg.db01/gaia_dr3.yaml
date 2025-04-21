@@ -12,6 +12,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ag_gspphot_lower'
@@ -21,6 +22,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ag_gspphot_upper'
@@ -30,6 +32,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.astrometric_chi2_al'
@@ -37,6 +40,7 @@ tables:
     description: AL chi-square value Astrometric goodness-of-fit (&chi;<sup>2</sup>)
     name: astrometric_chi2_al
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.astrometric_excess_noise'
@@ -45,6 +49,7 @@ tables:
     fits:tunit: mas
     name: astrometric_excess_noise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.astrometric_excess_noise_sig'
@@ -52,6 +57,7 @@ tables:
     description: Significance of excess noise
     name: astrometric_excess_noise_sig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.astrometric_gof_al'
@@ -59,6 +65,7 @@ tables:
     description: Goodness of fit statistic of model wrt along-scan observations
     name: astrometric_gof_al
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.astrometric_sigma5d_max'
@@ -66,6 +73,7 @@ tables:
     description: Matched FOV transits used in the AGIS solution
     name: astrometric_sigma5d_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.azero_gspphot'
@@ -75,6 +83,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.azero_gspphot_lower'
@@ -84,6 +93,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.azero_gspphot_upper'
@@ -93,6 +103,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.b'
@@ -117,6 +128,7 @@ tables:
     fits:tunit: mag
     name: bp_rp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.dec'
@@ -134,6 +146,7 @@ tables:
     fits:tunit: mas
     name: dec_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.dec_parallax_corr'
@@ -141,6 +154,7 @@ tables:
     description: Correlation between declination and parallax [-1,+1]
     name: dec_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.dec_pmdec_corr'
@@ -149,6 +163,7 @@ tables:
       [-1,+1]
     name: dec_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.dec_pmra_corr'
@@ -157,6 +172,7 @@ tables:
       [-1,+1]
     name: dec_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.dec_pseudocolour_corr'
@@ -164,6 +180,7 @@ tables:
     description: Correlation between declination and pseudocolour [-1,+1]
     name: dec_pseudocolour_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.distance_gspphot'
@@ -173,6 +190,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.distance_gspphot_lower'
@@ -182,6 +200,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.distance_gspphot_upper'
@@ -191,6 +210,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot'
@@ -200,6 +220,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot_lower'
@@ -209,6 +230,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ebpminrp_gspphot_upper'
@@ -218,6 +240,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ecl_lat'
@@ -242,6 +265,7 @@ tables:
     fits:tunit: mag
     name: g_rp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.grvs_mag'
@@ -250,6 +274,7 @@ tables:
     fits:tunit: mag
     name: grvs_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.grvs_mag_error'
@@ -258,6 +283,7 @@ tables:
     fits:tunit: mag
     name: grvs_mag_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ipd_gof_harmonic_amplitude'
@@ -265,6 +291,7 @@ tables:
     description: Amplitude of the IPD GoF versus position angle of scan
     name: ipd_gof_harmonic_amplitude
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ipd_gof_harmonic_phase'
@@ -273,6 +300,7 @@ tables:
     fits:tunit: deg
     name: ipd_gof_harmonic_phase
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.l'
@@ -288,6 +316,7 @@ tables:
     description: Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra
     name: logg_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.logg_gspphot_lower'
@@ -296,6 +325,7 @@ tables:
       best library using BP/RP spectra (GravitySurface[log cgs]) '
     name: logg_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.logg_gspphot_upper'
@@ -304,6 +334,7 @@ tables:
       best library using BP/RP spectra (GravitySurface[log cgs]) '
     name: logg_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.mh_gspphot'
@@ -313,6 +344,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.mh_gspphot_lower'
@@ -322,6 +354,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.mh_gspphot_upper'
@@ -331,6 +364,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.nu_eff_used_in_astrometry'
@@ -339,6 +373,7 @@ tables:
       Misc[&mu;m<sup>-1</sup>]
     name: nu_eff_used_in_astrometry
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.parallax'
@@ -355,6 +390,7 @@ tables:
     fits:tunit: mas
     name: parallax_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.parallax_over_error'
@@ -363,6 +399,7 @@ tables:
     fits:tunit: mas
     name: parallax_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.parallax_pmdec_corr'
@@ -370,6 +407,7 @@ tables:
     description: Correlation between parallax and proper motion in declination [-1,+1]
     name: parallax_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.parallax_pmra_corr'
@@ -378,6 +416,7 @@ tables:
       [-1,+1]
     name: parallax_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.parallax_pseudocolour_corr'
@@ -385,6 +424,7 @@ tables:
     description: Correlation between parallax and pseudocolour [-1,+1]
     name: parallax_pseudocolour_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_flux'
@@ -401,6 +441,7 @@ tables:
     fits:tunit: electron/s
     name: phot_bp_mean_flux_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_flux_over_error'
@@ -408,6 +449,7 @@ tables:
     description: Integrated BP mean flux divided by its error
     name: phot_bp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_bp_mean_mag'
@@ -416,6 +458,7 @@ tables:
     fits:tunit: mag
     name: phot_bp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_bp_rp_excess_factor'
@@ -423,6 +466,7 @@ tables:
     description: BP/RP excess factor
     name: phot_bp_rp_excess_factor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_g_mean_flux'
@@ -439,6 +483,7 @@ tables:
     fits:tunit: electron/s
     name: phot_g_mean_flux_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_g_mean_flux_over_error'
@@ -446,6 +491,7 @@ tables:
     description: G-band mean flux divided by its error
     name: phot_g_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_g_mean_mag'
@@ -454,6 +500,7 @@ tables:
     fits:tunit: mag
     name: phot_g_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_flux'
@@ -470,6 +517,7 @@ tables:
     fits:tunit: electron/s
     name: phot_rp_mean_flux_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_flux_over_error'
@@ -477,6 +525,7 @@ tables:
     description: Integrated RP mean flux divided by its error
     name: phot_rp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.phot_rp_mean_mag'
@@ -485,6 +534,7 @@ tables:
     fits:tunit: mag
     name: phot_rp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pm'
@@ -493,6 +543,7 @@ tables:
     fits:tunit: mas/year
     name: pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pmdec'
@@ -510,6 +561,7 @@ tables:
     fits:tunit: mas/year
     name: pmdec_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pmdec_pseudocolour_corr'
@@ -518,6 +570,7 @@ tables:
       [-1,+1]
     name: pmdec_pseudocolour_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pmra'
@@ -535,6 +588,7 @@ tables:
     fits:tunit: mas/year
     name: pmra_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pmra_pmdec_corr'
@@ -543,6 +597,7 @@ tables:
       in declination [-1,+1]
     name: pmra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pmra_pseudocolour_corr'
@@ -551,6 +606,7 @@ tables:
       [-1,+1]
     name: pmra_pseudocolour_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pseudocolour'
@@ -558,6 +614,7 @@ tables:
     description: Astrometrically estimated pseudocolour of the source Misc[&mu;m<sup>-1</sup>]
     name: pseudocolour
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.pseudocolour_error'
@@ -565,6 +622,7 @@ tables:
     description: Standard error of the pseudocolour of the source Misc[&mu;m<sup>-1</sup>]
     name: pseudocolour_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra'
@@ -582,6 +640,7 @@ tables:
     description: Correlation between right ascension and declination [-1,+1]
     name: ra_dec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra_error'
@@ -591,6 +650,7 @@ tables:
     fits:tunit: mas
     name: ra_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra_parallax_corr'
@@ -598,6 +658,7 @@ tables:
     description: Correlation between right ascension and parallax [-1,+1]
     name: ra_parallax_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra_pmdec_corr'
@@ -606,6 +667,7 @@ tables:
       [-1,+1]
     name: ra_pmdec_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra_pmra_corr'
@@ -614,6 +676,7 @@ tables:
       [-1,+1]
     name: ra_pmra_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ra_pseudocolour_corr'
@@ -621,6 +684,7 @@ tables:
     description: Correlation between right ascension and pseudocolour [-1,+1]
     name: ra_pseudocolour_corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.radial_velocity'
@@ -629,6 +693,7 @@ tables:
     fits:tunit: km/s
     name: radial_velocity
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.radial_velocity_error'
@@ -637,6 +702,7 @@ tables:
     fits:tunit: km/s
     name: radial_velocity_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ruwe'
@@ -644,6 +710,7 @@ tables:
     description: Renormalised unit weight error
     name: ruwe
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_chisq_pvalue'
@@ -651,6 +718,7 @@ tables:
     description: 'P-value for constancy based on a chi-squared criterion '
     name: rv_chisq_pvalue
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_expected_sig_to_noise'
@@ -659,6 +727,7 @@ tables:
       used to obtain the radial velocity '
     name: rv_expected_sig_to_noise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_renormalised_gof'
@@ -666,6 +735,7 @@ tables:
     description: 'Radial velocity renormalised goodness of fit '
     name: rv_renormalised_gof
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rvs_spec_sig_to_noise'
@@ -673,6 +743,7 @@ tables:
     description: Signal to noise ratio in the mean RVS spectrum
     name: rvs_spec_sig_to_noise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k1'
@@ -680,6 +751,7 @@ tables:
     description: Mean position angle of scan directions across the source
     name: scan_direction_mean_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k2'
@@ -687,6 +759,7 @@ tables:
     description: Mean position angle of scan directions across the source
     name: scan_direction_mean_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k3'
@@ -694,6 +767,7 @@ tables:
     description: Mean position angle of scan directions across the source
     name: scan_direction_mean_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_mean_k4'
@@ -701,6 +775,7 @@ tables:
     description: Mean position angle of scan directions across the source
     name: scan_direction_mean_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k1'
@@ -708,6 +783,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k2'
@@ -715,6 +791,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k3'
@@ -722,6 +799,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.scan_direction_strength_k4'
@@ -729,6 +807,7 @@ tables:
     description: Degree of concentration of scan directions across the source
     name: scan_direction_strength_k4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.teff_gspphot'
@@ -738,6 +817,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.teff_gspphot_lower'
@@ -747,6 +827,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.teff_gspphot_upper'
@@ -756,6 +837,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.solution_id'
@@ -779,6 +861,7 @@ tables:
       spectrum, photometry, astrometry)'
     name: classprob_dsc_combmod_galaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.classprob_dsc_combmod_quasar'
@@ -787,6 +870,7 @@ tables:
       spectrum, photometry, astrometry) '
     name: classprob_dsc_combmod_quasar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.classprob_dsc_combmod_star'
@@ -795,6 +879,7 @@ tables:
       dwarf) (data used: BP/RP spectrum, photometry, astrometry) '
     name: classprob_dsc_combmod_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.random_id'
@@ -802,6 +887,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.ref_epoch'
@@ -819,6 +905,7 @@ tables:
     fits:tunit: km/s
     name: rv_amplitude_robust
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_template_fe_h'
@@ -827,6 +914,7 @@ tables:
     fits:tunit: dex
     name: rv_template_fe_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_template_logg'
@@ -835,6 +923,7 @@ tables:
       cgs])
     name: rv_template_logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_template_teff'
@@ -843,6 +932,7 @@ tables:
     fits:tunit: K
     name: rv_template_teff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.rv_time_duration'
@@ -851,6 +941,7 @@ tables:
     fits:tunit: day
     name: rv_time_duration
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.vbroad'
@@ -859,6 +950,7 @@ tables:
     fits:tunit: km/s
     name: vbroad
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.vbroad_error'
@@ -867,6 +959,7 @@ tables:
     fits:tunit: km/s
     name: vbroad_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.gaia_source.htm9'
@@ -1386,6 +1479,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspphot_lower'
@@ -1395,6 +1489,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspphot_upper'
@@ -1404,6 +1499,7 @@ tables:
     fits:tunit: K
     name: teff_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot'
@@ -1411,6 +1507,7 @@ tables:
     description: 'Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra '
     name: logg_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot_lower'
@@ -1419,6 +1516,7 @@ tables:
       best library using BP/RP spectra (GravitySurface[log cgs]) '
     name: logg_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspphot_upper'
@@ -1427,6 +1525,7 @@ tables:
       best library using BP/RP spectra (GravitySurface[log cgs]) '
     name: logg_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot'
@@ -1436,6 +1535,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot_lower'
@@ -1445,6 +1545,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspphot_upper'
@@ -1454,6 +1555,7 @@ tables:
     fits:tunit: dex
     name: mh_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot'
@@ -1463,6 +1565,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot_lower'
@@ -1472,6 +1575,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.distance_gspphot_upper'
@@ -1481,6 +1585,7 @@ tables:
     fits:tunit: pc
     name: distance_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot'
@@ -1490,6 +1595,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot_lower'
@@ -1499,6 +1605,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.azero_gspphot_upper'
@@ -1508,6 +1615,7 @@ tables:
     fits:tunit: mag
     name: azero_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot'
@@ -1517,6 +1625,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot_lower'
@@ -1526,6 +1635,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ag_gspphot_upper'
@@ -1535,6 +1645,7 @@ tables:
     fits:tunit: mag
     name: ag_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot'
@@ -1544,6 +1655,7 @@ tables:
     fits:tunit: mag
     name: abp_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot_lower'
@@ -1553,6 +1665,7 @@ tables:
     fits:tunit: mag
     name: abp_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.abp_gspphot_upper'
@@ -1562,6 +1675,7 @@ tables:
     fits:tunit: mag
     name: abp_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot'
@@ -1571,6 +1685,7 @@ tables:
     fits:tunit: mag
     name: arp_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot_lower'
@@ -1580,6 +1695,7 @@ tables:
     fits:tunit: mag
     name: arp_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.arp_gspphot_upper'
@@ -1589,6 +1705,7 @@ tables:
     fits:tunit: mag
     name: arp_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot'
@@ -1598,6 +1715,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot_lower'
@@ -1607,6 +1725,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ebpminrp_gspphot_upper'
@@ -1616,6 +1735,7 @@ tables:
     fits:tunit: mag
     name: ebpminrp_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot'
@@ -1625,6 +1745,7 @@ tables:
     fits:tunit: mag
     name: mg_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot_lower'
@@ -1634,6 +1755,7 @@ tables:
     fits:tunit: mag
     name: mg_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mg_gspphot_upper'
@@ -1643,6 +1765,7 @@ tables:
     fits:tunit: mag
     name: mg_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot'
@@ -1651,6 +1774,7 @@ tables:
     fits:tunit: R_sun
     name: radius_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot_lower'
@@ -1660,6 +1784,7 @@ tables:
     fits:tunit: R_sun
     name: radius_gspphot_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.radius_gspphot_upper'
@@ -1669,6 +1794,7 @@ tables:
     fits:tunit: R_sun
     name: radius_gspphot_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec'
@@ -1678,6 +1804,7 @@ tables:
     fits:tunit: K
     name: teff_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec_lower'
@@ -1687,6 +1814,7 @@ tables:
     fits:tunit: K
     name: teff_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.teff_gspspec_upper'
@@ -1696,6 +1824,7 @@ tables:
     fits:tunit: K
     name: teff_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec'
@@ -1704,6 +1833,7 @@ tables:
       using RVS spectra and Monte Carlo realisations '
     name: logg_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec_lower'
@@ -1712,6 +1842,7 @@ tables:
       from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
     name: logg_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logg_gspspec_upper'
@@ -1720,6 +1851,7 @@ tables:
       from GSP-Spec MatisseGauguin using RVS spectra and Monte Carlo realisations '
     name: logg_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec'
@@ -1729,6 +1861,7 @@ tables:
     fits:tunit: dex
     name: mh_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec_lower'
@@ -1738,6 +1871,7 @@ tables:
     fits:tunit: dex
     name: mh_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mh_gspspec_upper'
@@ -1747,6 +1881,7 @@ tables:
     fits:tunit: dex
     name: mh_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec'
@@ -1756,6 +1891,7 @@ tables:
     fits:tunit: dex
     name: alphafe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec_lower'
@@ -1766,6 +1902,7 @@ tables:
     fits:tunit: dex
     name: alphafe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.alphafe_gspspec_upper'
@@ -1776,6 +1913,7 @@ tables:
     fits:tunit: dex
     name: alphafe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec'
@@ -1786,6 +1924,7 @@ tables:
     fits:tunit: dex
     name: fem_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_lower'
@@ -1795,6 +1934,7 @@ tables:
     fits:tunit: dex
     name: fem_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_upper'
@@ -1804,6 +1944,7 @@ tables:
     fits:tunit: dex
     name: fem_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_linescatter'
@@ -1813,6 +1954,7 @@ tables:
     fits:tunit: dex
     name: fem_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec'
@@ -1823,6 +1965,7 @@ tables:
     fits:tunit: dex
     name: sife_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_lower'
@@ -1832,6 +1975,7 @@ tables:
     fits:tunit: dex
     name: sife_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_upper'
@@ -1841,6 +1985,7 @@ tables:
     fits:tunit: dex
     name: sife_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sife_gspspec_linescatter'
@@ -1850,6 +1995,7 @@ tables:
     fits:tunit: dex
     name: sife_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec'
@@ -1860,6 +2006,7 @@ tables:
     fits:tunit: dex
     name: cafe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_lower'
@@ -1869,6 +2016,7 @@ tables:
     fits:tunit: dex
     name: cafe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_upper'
@@ -1878,6 +2026,7 @@ tables:
     fits:tunit: dex
     name: cafe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cafe_gspspec_linescatter'
@@ -1887,6 +2036,7 @@ tables:
     fits:tunit: dex
     name: cafe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec'
@@ -1897,6 +2047,7 @@ tables:
     fits:tunit: dex
     name: tife_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_lower'
@@ -1906,6 +2057,7 @@ tables:
     fits:tunit: dex
     name: tife_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_upper'
@@ -1915,6 +2067,7 @@ tables:
     fits:tunit: dex
     name: tife_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.tife_gspspec_linescatter'
@@ -1924,6 +2077,7 @@ tables:
     fits:tunit: dex
     name: tife_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec'
@@ -1934,6 +2088,7 @@ tables:
     fits:tunit: dex
     name: mgfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_lower'
@@ -1943,6 +2098,7 @@ tables:
     fits:tunit: dex
     name: mgfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_upper'
@@ -1952,6 +2108,7 @@ tables:
     fits:tunit: dex
     name: mgfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mgfe_gspspec_linescatter'
@@ -1961,6 +2118,7 @@ tables:
     fits:tunit: dex
     name: mgfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec'
@@ -1971,6 +2129,7 @@ tables:
     fits:tunit: dex
     name: ndfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_lower'
@@ -1980,6 +2139,7 @@ tables:
     fits:tunit: dex
     name: ndfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_upper'
@@ -1989,6 +2149,7 @@ tables:
     fits:tunit: dex
     name: ndfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.ndfe_gspspec_linescatter'
@@ -1998,6 +2159,7 @@ tables:
     fits:tunit: dex
     name: ndfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec'
@@ -2008,6 +2170,7 @@ tables:
     fits:tunit: dex
     name: feiim_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_lower'
@@ -2017,6 +2180,7 @@ tables:
     fits:tunit: dex
     name: feiim_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_upper'
@@ -2026,6 +2190,7 @@ tables:
     fits:tunit: dex
     name: feiim_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.feiim_gspspec_linescatter'
@@ -2035,6 +2200,7 @@ tables:
     fits:tunit: dex
     name: feiim_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec'
@@ -2045,6 +2211,7 @@ tables:
     fits:tunit: dex
     name: sfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_lower'
@@ -2054,6 +2221,7 @@ tables:
     fits:tunit: dex
     name: sfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_upper'
@@ -2063,6 +2231,7 @@ tables:
     fits:tunit: dex
     name: sfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.sfe_gspspec_linescatter'
@@ -2072,6 +2241,7 @@ tables:
     fits:tunit: dex
     name: sfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec'
@@ -2082,6 +2252,7 @@ tables:
     fits:tunit: dex
     name: zrfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_lower'
@@ -2091,6 +2262,7 @@ tables:
     fits:tunit: dex
     name: zrfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_upper'
@@ -2100,6 +2272,7 @@ tables:
     fits:tunit: dex
     name: zrfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.zrfe_gspspec_linescatter'
@@ -2109,6 +2282,7 @@ tables:
     fits:tunit: dex
     name: zrfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec'
@@ -2119,6 +2293,7 @@ tables:
     fits:tunit: dex
     name: nfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_lower'
@@ -2128,6 +2303,7 @@ tables:
     fits:tunit: dex
     name: nfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_upper'
@@ -2137,6 +2313,7 @@ tables:
     fits:tunit: dex
     name: nfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nfe_gspspec_linescatter'
@@ -2146,6 +2323,7 @@ tables:
     fits:tunit: dex
     name: nfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec'
@@ -2156,6 +2334,7 @@ tables:
     fits:tunit: dex
     name: crfe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_lower'
@@ -2165,6 +2344,7 @@ tables:
     fits:tunit: dex
     name: crfe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_upper'
@@ -2174,6 +2354,7 @@ tables:
     fits:tunit: dex
     name: crfe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.crfe_gspspec_linescatter'
@@ -2183,6 +2364,7 @@ tables:
     fits:tunit: dex
     name: crfe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec'
@@ -2193,6 +2375,7 @@ tables:
     fits:tunit: dex
     name: cefe_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_lower'
@@ -2202,6 +2385,7 @@ tables:
     fits:tunit: dex
     name: cefe_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_upper'
@@ -2211,6 +2395,7 @@ tables:
     fits:tunit: dex
     name: cefe_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cefe_gspspec_linescatter'
@@ -2220,6 +2405,7 @@ tables:
     fits:tunit: dex
     name: cefe_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec'
@@ -2230,6 +2416,7 @@ tables:
     fits:tunit: dex
     name: nife_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_lower'
@@ -2239,6 +2426,7 @@ tables:
     fits:tunit: dex
     name: nife_gspspec_lower
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_upper'
@@ -2248,6 +2436,7 @@ tables:
     fits:tunit: dex
     name: nife_gspspec_upper
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.nife_gspspec_linescatter'
@@ -2257,6 +2446,7 @@ tables:
     fits:tunit: dex
     name: nife_gspspec_linescatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cn0ew_gspspec'
@@ -2266,6 +2456,7 @@ tables:
     fits:tunit: nm
     name: cn0ew_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cn0ew_gspspec_uncertainty'
@@ -2275,6 +2466,7 @@ tables:
     fits:tunit: nm
     name: cn0ew_gspspec_uncertainty
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cn0_gspspec_centralline'
@@ -2284,6 +2476,7 @@ tables:
     fits:tunit: nm
     name: cn0_gspspec_centralline
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.cn0_gspspec_width'
@@ -2293,6 +2486,7 @@ tables:
     fits:tunit: nm
     name: cn0_gspspec_width
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dib_gspspec_lambda'
@@ -2302,6 +2496,7 @@ tables:
     fits:tunit: nm
     name: dib_gspspec_lambda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dib_gspspec_lambda_uncertainty'
@@ -2311,6 +2506,7 @@ tables:
     fits:tunit: nm
     name: dib_gspspec_lambda_uncertainty
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibew_gspspec'
@@ -2320,6 +2516,7 @@ tables:
     fits:tunit: Angstrom
     name: dibew_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibew_gspspec_uncertainty'
@@ -2329,6 +2526,7 @@ tables:
     fits:tunit: Angstrom
     name: dibew_gspspec_uncertainty
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibewnoise_gspspec_uncertainty'
@@ -2338,6 +2536,7 @@ tables:
     fits:tunit: Angstrom
     name: dibewnoise_gspspec_uncertainty
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibp0_gspspec'
@@ -2345,6 +2544,7 @@ tables:
     description: 'Depth (p_0 parameter) of the DIB derived from a Gaussian model fit '
     name: dibp0_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibp2_gspspec'
@@ -2354,6 +2554,7 @@ tables:
     fits:tunit: Angstrom
     name: dibp2_gspspec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.dibp2_gspspec_uncertainty'
@@ -2362,6 +2563,7 @@ tables:
     fits:tunit: Angstrom
     name: dibp2_gspspec_uncertainty
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.solution_id'
@@ -2385,6 +2587,7 @@ tables:
       spectrum, photometry, astrometry)'
     name: classprob_dsc_combmod_galaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_quasar'
@@ -2393,6 +2596,7 @@ tables:
       spectrum, photometry, astrometry) '
     name: classprob_dsc_combmod_quasar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_star'
@@ -2401,6 +2605,7 @@ tables:
       dwarf) (data used: BP/RP spectrum, photometry, astrometry) '
     name: classprob_dsc_combmod_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_whitedwarf'
@@ -2409,6 +2614,7 @@ tables:
       BP/RP spectrum, photometry, astrometry)'
     name: classprob_dsc_combmod_whitedwarf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_combmod_binarystar'
@@ -2417,6 +2623,7 @@ tables:
       BP/RP spectrum, photometry, astrometry) '
     name: classprob_dsc_combmod_binarystar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_quasar'
@@ -2425,6 +2632,7 @@ tables:
       spectrum) '
     name: classprob_dsc_specmod_quasar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_galaxy'
@@ -2433,6 +2641,7 @@ tables:
       spectrum) '
     name: classprob_dsc_specmod_galaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_star'
@@ -2441,6 +2650,7 @@ tables:
       dwarf) (data used: BP/RP spectrum) '
     name: classprob_dsc_specmod_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_whitedwarf'
@@ -2449,6 +2659,7 @@ tables:
       BP/RP spectrum) '
     name: classprob_dsc_specmod_whitedwarf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_specmod_binarystar'
@@ -2457,6 +2668,7 @@ tables:
       BP/RP spectrum) '
     name: classprob_dsc_specmod_binarystar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_quasar'
@@ -2465,6 +2677,7 @@ tables:
       astrometry) '
     name: classprob_dsc_allosmod_quasar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_galaxy'
@@ -2473,6 +2686,7 @@ tables:
       astrometry) '
     name: classprob_dsc_allosmod_galaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.classprob_dsc_allosmod_star'
@@ -2481,6 +2695,7 @@ tables:
       astrometry) '
     name: classprob_dsc_allosmod_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.logposterior_gspphot'
@@ -2489,6 +2704,7 @@ tables:
       MCMC best library '
     name: logposterior_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.mcmcaccept_gspphot'
@@ -2496,6 +2712,7 @@ tables:
     description: 'MCMC acceptance rate of GSP-Phot Aeneas MCMC best library '
     name: mcmcaccept_gspphot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.random_id'
@@ -2503,6 +2720,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.astrophysical_parameters.fem_gspspec_nlines'
@@ -3104,6 +3322,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.qso_candidates.astrometric_selection_flag'
@@ -3262,6 +3481,7 @@ tables:
     fits:tunit: deg
     name: posangle_sersic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.posangle_sersic_error'
@@ -3271,6 +3491,7 @@ tables:
     fits:tunit: deg
     name: posangle_sersic_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.intensity_sersic'
@@ -3315,6 +3536,7 @@ tables:
       the source for the Sersic profile. '
     name: ellipticity_sersic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_sersic_error'
@@ -3323,6 +3545,7 @@ tables:
       the axis ratio) of the source for the Sersic profile. '
     name: ellipticity_sersic_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.l2_sersic'
@@ -3341,6 +3564,7 @@ tables:
     fits:tunit: deg
     name: posangle_de_vaucouleurs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.posangle_de_vaucouleurs_error'
@@ -3350,6 +3574,7 @@ tables:
     fits:tunit: deg
     name: posangle_de_vaucouleurs_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.intensity_de_vaucouleurs'
@@ -3394,6 +3619,7 @@ tables:
       the source for the de Vaucouleurs profile. '
     name: ellipticity_de_vaucouleurs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.ellipticity_de_vaucouleurs_error'
@@ -3402,6 +3628,7 @@ tables:
       the axis ratio) of the source for the de Vaucouleurs profile. '
     name: ellipticity_de_vaucouleurs_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.l2_de_vaucouleurs'
@@ -3478,6 +3705,7 @@ tables:
       learning algorithm. '
     name: redshift_ugc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.redshift_ugc_lower'
@@ -3515,6 +3743,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.flags_sersic'
@@ -3523,6 +3752,7 @@ tables:
       parameters fitting for the Sersic Profile '
     name: flags_sersic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.flags_de_vaucouleurs'
@@ -3532,6 +3762,7 @@ tables:
       of interest for the de Vaucouleurs Profile. '
     name: flags_de_vaucouleurs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_dr3.galaxy_candidates.vari_best_class_name'

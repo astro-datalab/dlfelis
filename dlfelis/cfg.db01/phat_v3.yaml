@@ -669,6 +669,7 @@ tables:
     description: Unique random number between 0 and 100
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v3.phot_mod.htm9'

@@ -108,6 +108,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.NIR;em.IR.J
     name: ymjpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ymjpnterr'
@@ -117,6 +118,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR;em.IR.J
     name: ymjpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmhpnt'
@@ -126,6 +128,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.J;em.IR.H
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmhpnterr'
@@ -135,6 +138,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J;em.IR.H
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hmkspnt'
@@ -144,6 +148,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.H;em.IR.K
     name: hmkspnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hmkspnterr'
@@ -153,6 +158,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H;em.IR.K
     name: hmkspnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmkspnt'
@@ -162,6 +168,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.J;em.IR.K
     name: jmkspnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmkspnterr'
@@ -171,6 +178,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J;em.IR.K
     name: jmkspnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ymjext'
@@ -180,6 +188,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.NIR;em.IR.J
     name: ymjext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ymjexterr'
@@ -189,6 +198,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR;em.IR.J
     name: ymjexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmhext'
@@ -198,6 +208,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.J;em.IR.H
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmhexterr'
@@ -207,6 +218,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J;em.IR.H
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hmksext'
@@ -216,6 +228,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.H;em.IR.K
     name: hmksext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hmksexterr'
@@ -225,6 +238,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H;em.IR.K
     name: hmksexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmksext'
@@ -234,6 +248,7 @@ tables:
     ivoa:ucd: phot.color;em.IR.J;em.IR.K
     name: jmksext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmksexterr'
@@ -243,6 +258,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J;em.IR.K
     name: jmksexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.mergedclassstat'
@@ -251,6 +267,7 @@ tables:
     ivoa:ucd: stat
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.mergedclass'
@@ -267,6 +284,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.pgalaxy'
@@ -275,6 +293,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.pnoise'
@@ -283,6 +302,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.psaturated'
@@ -291,6 +311,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ebv'
@@ -300,6 +321,7 @@ tables:
     ivoa:ucd: phys.absorption.gal
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ay'
@@ -309,6 +331,7 @@ tables:
     ivoa:ucd: phys.absorption.gal;em.IR.NIR
     name: ay
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.aj'
@@ -318,6 +341,7 @@ tables:
     ivoa:ucd: phys.absorption.gal;em.IR.J
     name: aj
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ah'
@@ -327,6 +351,7 @@ tables:
     ivoa:ucd: phys.absorption.gal;em.IR.H
     name: ah
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.aks'
@@ -336,6 +361,7 @@ tables:
     ivoa:ucd: phys.absorption.gal;em.IR.K
     name: aks
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ymjd'
@@ -354,6 +380,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: ypetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ypetromagerr'
@@ -363,6 +390,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR
     name: ypetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag3'
@@ -372,6 +400,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag3err'
@@ -381,6 +410,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR
     name: yapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag4'
@@ -390,6 +420,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag4err'
@@ -399,6 +430,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR
     name: yapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag6'
@@ -408,6 +440,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermag6err'
@@ -417,6 +450,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.NIR
     name: yapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr3'
@@ -426,6 +460,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermagnoapercorr3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr4'
@@ -435,6 +470,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermagnoapercorr4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yapermagnoapercorr6'
@@ -444,6 +480,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.NIR
     name: yapermagnoapercorr6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yhlcorsmjradas'
@@ -453,6 +490,7 @@ tables:
     ivoa:ucd: phys.angSize;em.IR.NIR
     name: yhlcorsmjradas
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ygausig'
@@ -462,6 +500,7 @@ tables:
     ivoa:ucd: src.morph.param;em.IR.NIR
     name: ygausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yell'
@@ -470,6 +509,7 @@ tables:
     ivoa:ucd: src.ellipticity;em.IR.NIR
     name: yell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ypa'
@@ -479,6 +519,7 @@ tables:
     ivoa:ucd: pos.posAng;em.IR.NIR
     name: ypa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yerrbits'
@@ -495,6 +536,7 @@ tables:
     ivoa:ucd: stat.likelihood;em.IR.NIR
     name: yaverageconf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yclass'
@@ -511,6 +553,7 @@ tables:
     ivoa:ucd: stat;em.IR.NIR
     name: yclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ypperrbits'
@@ -536,6 +579,7 @@ tables:
     ivoa:ucd: pos.eq.ra;arith.diff;em.IR.NIR
     name: yxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.yeta'
@@ -545,6 +589,7 @@ tables:
     ivoa:ucd: pos.eq.dec;arith.diff;em.IR.NIR
     name: yeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jmjd'
@@ -563,6 +608,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jpetromagerr'
@@ -572,6 +618,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag3'
@@ -581,6 +628,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag3err'
@@ -590,6 +638,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag4'
@@ -599,6 +648,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag4err'
@@ -608,6 +658,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag6'
@@ -617,6 +668,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermag6err'
@@ -626,6 +678,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.J
     name: japermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr3'
@@ -635,6 +688,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermagnoapercorr3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr4'
@@ -644,6 +698,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermagnoapercorr4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.japermagnoapercorr6'
@@ -653,6 +708,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: japermagnoapercorr6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jhlcorsmjradas'
@@ -662,6 +718,7 @@ tables:
     ivoa:ucd: phys.angSize;em.IR.J
     name: jhlcorsmjradas
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jgausig'
@@ -671,6 +728,7 @@ tables:
     ivoa:ucd: src.morph.param;em.IR.J
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jell'
@@ -679,6 +737,7 @@ tables:
     ivoa:ucd: src.ellipticity;em.IR.J
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jpa'
@@ -688,6 +747,7 @@ tables:
     ivoa:ucd: pos.posAng;em.IR.J
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jerrbits'
@@ -704,6 +764,7 @@ tables:
     ivoa:ucd: stat.likelihood;em.IR.J
     name: javerageconf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jclass'
@@ -720,6 +781,7 @@ tables:
     ivoa:ucd: stat;em.IR.J
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jpperrbits'
@@ -745,6 +807,7 @@ tables:
     ivoa:ucd: pos.eq.ra;arith.diff;em.IR.J
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.jeta'
@@ -754,6 +817,7 @@ tables:
     ivoa:ucd: pos.eq.dec;arith.diff;em.IR.J
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hmjd'
@@ -772,6 +836,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hpetromagerr'
@@ -781,6 +846,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag3'
@@ -790,6 +856,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag3err'
@@ -799,6 +866,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag4'
@@ -808,6 +876,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag4err'
@@ -817,6 +886,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag6'
@@ -826,6 +896,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermag6err'
@@ -835,6 +906,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.H
     name: hapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr3'
@@ -844,6 +916,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermagnoapercorr3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr4'
@@ -853,6 +926,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermagnoapercorr4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hapermagnoapercorr6'
@@ -862,6 +936,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: hapermagnoapercorr6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hhlcorsmjradas'
@@ -871,6 +946,7 @@ tables:
     ivoa:ucd: phys.angSize;em.IR.H
     name: hhlcorsmjradas
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hgausig'
@@ -880,6 +956,7 @@ tables:
     ivoa:ucd: src.morph.param;em.IR.H
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hell'
@@ -888,6 +965,7 @@ tables:
     ivoa:ucd: src.ellipticity;em.IR.H
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hpa'
@@ -897,6 +975,7 @@ tables:
     ivoa:ucd: pos.posAng;em.IR.H
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.herrbits'
@@ -913,6 +992,7 @@ tables:
     ivoa:ucd: stat.likelihood;em.IR.H
     name: haverageconf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hclass'
@@ -929,6 +1009,7 @@ tables:
     ivoa:ucd: stat;em.IR.H
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.hpperrbits'
@@ -954,6 +1035,7 @@ tables:
     ivoa:ucd: pos.eq.ra;arith.diff;em.IR.H
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.heta'
@@ -963,6 +1045,7 @@ tables:
     ivoa:ucd: pos.eq.dec;arith.diff;em.IR.H
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksmjd'
@@ -981,6 +1064,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: kspetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kspetromagerr'
@@ -990,6 +1074,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.K
     name: kspetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag3'
@@ -999,6 +1084,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag3err'
@@ -1008,6 +1094,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.K
     name: ksapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag4'
@@ -1017,6 +1104,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag4err'
@@ -1026,6 +1114,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.K
     name: ksapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag6'
@@ -1035,6 +1124,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermag6err'
@@ -1044,6 +1134,7 @@ tables:
     ivoa:ucd: stat.error;em.IR.K
     name: ksapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr3'
@@ -1053,6 +1144,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermagnoapercorr3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr4'
@@ -1062,6 +1154,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermagnoapercorr4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksapermagnoapercorr6'
@@ -1071,6 +1164,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: ksapermagnoapercorr6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kshlcorsmjradas'
@@ -1080,6 +1174,7 @@ tables:
     ivoa:ucd: phys.angSize;em.IR.K
     name: kshlcorsmjradas
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksgausig'
@@ -1089,6 +1184,7 @@ tables:
     ivoa:ucd: src.morph.param;em.IR.K
     name: ksgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksell'
@@ -1097,6 +1193,7 @@ tables:
     ivoa:ucd: src.ellipticity;em.IR.K
     name: ksell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kspa'
@@ -1106,6 +1203,7 @@ tables:
     ivoa:ucd: pos.posAng;em.IR.K
     name: kspa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kserrbits'
@@ -1122,6 +1220,7 @@ tables:
     ivoa:ucd: stat.likelihood;em.IR.K
     name: ksaverageconf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.ksclass'
@@ -1138,6 +1237,7 @@ tables:
     ivoa:ucd: stat;em.IR.K
     name: ksclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kspperrbits'
@@ -1163,6 +1263,7 @@ tables:
     ivoa:ucd: pos.eq.ra;arith.diff;em.IR.K
     name: ksxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.kseta'
@@ -1172,6 +1273,7 @@ tables:
     ivoa:ucd: pos.eq.dec;arith.diff;em.IR.K
     name: kseta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.primary_source'
@@ -1187,6 +1289,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#vhs_dr5.vhs_cat_v3.elat'

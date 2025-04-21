@@ -22,6 +22,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.dec'
@@ -31,6 +32,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.class_star_j0378'
@@ -207,6 +209,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0395_psf'
@@ -215,6 +218,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0410_psf'
@@ -223,6 +227,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0430_psf'
@@ -231,6 +236,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0515_psf'
@@ -239,6 +245,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0660_psf'
@@ -247,6 +254,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.j0861_psf'
@@ -255,6 +263,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0378'
@@ -263,6 +272,7 @@ tables:
     fits:tunit: pixel
     name: x_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0395'
@@ -271,6 +281,7 @@ tables:
     fits:tunit: pixel
     name: x_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0410'
@@ -279,6 +290,7 @@ tables:
     fits:tunit: pixel
     name: x_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0430'
@@ -287,6 +299,7 @@ tables:
     fits:tunit: pixel
     name: x_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0515'
@@ -295,6 +308,7 @@ tables:
     fits:tunit: pixel
     name: x_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0660'
@@ -303,6 +317,7 @@ tables:
     fits:tunit: pixel
     name: x_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_j0861'
@@ -311,6 +326,7 @@ tables:
     fits:tunit: pixel
     name: x_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_g'
@@ -319,6 +335,7 @@ tables:
     fits:tunit: pixel
     name: x_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_i'
@@ -327,6 +344,7 @@ tables:
     fits:tunit: pixel
     name: x_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_r'
@@ -335,6 +353,7 @@ tables:
     fits:tunit: pixel
     name: x_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_u'
@@ -343,6 +362,7 @@ tables:
     fits:tunit: pixel
     name: x_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.x_z'
@@ -351,6 +371,7 @@ tables:
     fits:tunit: pixel
     name: x_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0378'
@@ -359,6 +380,7 @@ tables:
     fits:tunit: pixel
     name: y_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0395'
@@ -367,6 +389,7 @@ tables:
     fits:tunit: pixel
     name: y_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0410'
@@ -375,6 +398,7 @@ tables:
     fits:tunit: pixel
     name: y_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0430'
@@ -383,6 +407,7 @@ tables:
     fits:tunit: pixel
     name: y_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0515'
@@ -391,6 +416,7 @@ tables:
     fits:tunit: pixel
     name: y_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0660'
@@ -399,6 +425,7 @@ tables:
     fits:tunit: pixel
     name: y_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_j0861'
@@ -407,6 +434,7 @@ tables:
     fits:tunit: pixel
     name: y_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_g'
@@ -415,6 +443,7 @@ tables:
     fits:tunit: pixel
     name: y_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_i'
@@ -423,6 +452,7 @@ tables:
     fits:tunit: pixel
     name: y_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_r'
@@ -431,6 +461,7 @@ tables:
     fits:tunit: pixel
     name: y_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_u'
@@ -439,6 +470,7 @@ tables:
     fits:tunit: pixel
     name: y_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.y_z'
@@ -447,6 +479,7 @@ tables:
     fits:tunit: pixel
     name: y_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0378_psf'
@@ -454,6 +487,7 @@ tables:
     description: Error for j0378_psf magnitude
     name: e_j0378_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0395_psf'
@@ -461,6 +495,7 @@ tables:
     description: Error for j0395_psf magnitude
     name: e_j0395_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0410_psf'
@@ -468,6 +503,7 @@ tables:
     description: Error for j0410_psf magnitude
     name: e_j0410_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0430_psf'
@@ -475,6 +511,7 @@ tables:
     description: Error for j0430_psf magnitude
     name: e_j0430_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0515_psf'
@@ -482,6 +519,7 @@ tables:
     description: Error for j0515_psf magnitude
     name: e_j0515_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0660_psf'
@@ -489,6 +527,7 @@ tables:
     description: Error for j0660_psf magnitude
     name: e_j0660_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_j0861_psf'
@@ -496,6 +535,7 @@ tables:
     description: Error for j0861_psf magnitude
     name: e_j0861_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_g_psf'
@@ -503,6 +543,7 @@ tables:
     description: Error for g_psf magnitude
     name: e_g_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_i_psf'
@@ -510,6 +551,7 @@ tables:
     description: Error for i_psf magnitude
     name: e_i_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_r_psf'
@@ -517,6 +559,7 @@ tables:
     description: Error for r_psf magnitude
     name: e_r_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_u_psf'
@@ -524,6 +567,7 @@ tables:
     description: Error for u_psf magnitude
     name: e_u_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.e_z_psf'
@@ -531,6 +575,7 @@ tables:
     description: Error for z_psf magnitude
     name: e_z_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.g_psf'
@@ -539,6 +584,7 @@ tables:
     fits:tunit: AB mag
     name: g_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.i_psf'
@@ -547,6 +593,7 @@ tables:
     fits:tunit: AB mag
     name: i_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.r_psf'
@@ -555,6 +602,7 @@ tables:
     fits:tunit: AB mag
     name: r_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0378_psf'
@@ -562,6 +610,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0378 filter
     name: s2n_j0378_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0395_psf'
@@ -569,6 +618,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0395 filter
     name: s2n_j0395_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0410_psf'
@@ -576,6 +626,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0410 filter
     name: s2n_j0410_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0430_psf'
@@ -583,6 +634,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0430 filter
     name: s2n_j0430_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0515_psf'
@@ -590,6 +642,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0515 filter
     name: s2n_j0515_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0660_psf'
@@ -597,6 +650,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0660 filter
     name: s2n_j0660_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_j0861_psf'
@@ -604,6 +658,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in j0861 filter
     name: s2n_j0861_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_g_psf'
@@ -611,6 +666,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in g filter
     name: s2n_g_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_i_psf'
@@ -618,6 +674,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in i filter
     name: s2n_i_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_r_psf'
@@ -625,6 +682,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in r filter
     name: s2n_r_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_u_psf'
@@ -632,6 +690,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in u filter
     name: s2n_u_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.s2n_z_psf'
@@ -639,6 +698,7 @@ tables:
     description: Signal to noise ratio of PSF-photometry measurement in z filter
     name: s2n_z_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.u_psf'
@@ -647,6 +707,7 @@ tables:
     fits:tunit: AB mag
     name: u_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.z_psf'
@@ -655,6 +716,7 @@ tables:
     fits:tunit: AB mag
     name: z_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.random_id'
@@ -662,6 +724,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.psf.htm9'
@@ -897,6 +960,7 @@ tables:
     description: Profile RMS along major axis
     name: a
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.b'
@@ -904,6 +968,7 @@ tables:
     description: Profile RMS along minor axis
     name: b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background'
@@ -911,6 +976,7 @@ tables:
     description: Instrumental background at centroid position
     name: background
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0378'
@@ -918,6 +984,7 @@ tables:
     description: Instrumental background at centroid position in j0378 filter
     name: background_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0395'
@@ -925,6 +992,7 @@ tables:
     description: Instrumental background at centroid position in j0395 filter
     name: background_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0410'
@@ -932,6 +1000,7 @@ tables:
     description: Instrumental background at centroid position in j0410 filter
     name: background_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0430'
@@ -939,6 +1008,7 @@ tables:
     description: Instrumental background at centroid position in j0430 filter
     name: background_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0515'
@@ -946,6 +1016,7 @@ tables:
     description: Instrumental background at centroid position in j0515 filter
     name: background_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0660'
@@ -953,6 +1024,7 @@ tables:
     description: Instrumental background at centroid position in j0660 filter
     name: background_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_j0861'
@@ -960,6 +1032,7 @@ tables:
     description: Instrumental background at centroid position in j0861 filter
     name: background_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_g'
@@ -967,6 +1040,7 @@ tables:
     description: Instrumental background at centroid position in g filter
     name: background_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_i'
@@ -974,6 +1048,7 @@ tables:
     description: Instrumental background at centroid position in i filter
     name: background_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_r'
@@ -981,6 +1056,7 @@ tables:
     description: Instrumental background at centroid position in r filter
     name: background_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_u'
@@ -988,6 +1064,7 @@ tables:
     description: Instrumental background at centroid position in u filter
     name: background_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.background_z'
@@ -995,6 +1072,7 @@ tables:
     description: Instrumental background at centroid position in z filter
     name: background_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.class_star'
@@ -1002,6 +1080,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star)'
     name: class_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.det_id_dual'
@@ -1019,6 +1098,7 @@ tables:
     fits:tunit: mag
     name: ebv_sch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.ellipticity'
@@ -1026,6 +1106,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE
     name: ellipticity
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.elongation'
@@ -1033,6 +1114,7 @@ tables:
     description: A_IMAGE/B_IMAGE
     name: elongation
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.flux_radius_20'
@@ -1040,6 +1122,7 @@ tables:
     description: Radius enclosing 20% of the total flux
     name: flux_radius_20
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.flux_radius_50'
@@ -1047,6 +1130,7 @@ tables:
     description: Radius enclosing 50% of the total flux
     name: flux_radius_50
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.flux_radius_70'
@@ -1054,6 +1138,7 @@ tables:
     description: Radius enclosing 70% of the total flux
     name: flux_radius_70
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.flux_radius_90'
@@ -1061,6 +1146,7 @@ tables:
     description: Radius enclosing 90% of the total flux
     name: flux_radius_90
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm'
@@ -1068,6 +1154,7 @@ tables:
     description: FWHM assuming a Gaussian core
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0378'
@@ -1075,6 +1162,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0378 filter
     name: fwhm_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0395'
@@ -1082,6 +1170,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0395 filter
     name: fwhm_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0410'
@@ -1089,6 +1178,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0410 filter
     name: fwhm_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0430'
@@ -1096,6 +1186,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0430 filter
     name: fwhm_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0515'
@@ -1103,6 +1194,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0515 filter
     name: fwhm_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0660'
@@ -1110,6 +1202,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0660 filter
     name: fwhm_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_j0861'
@@ -1117,6 +1210,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0861 filter
     name: fwhm_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_g'
@@ -1124,6 +1218,7 @@ tables:
     description: FWHM assuming a Gaussian core in g filter
     name: fwhm_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_i'
@@ -1131,6 +1226,7 @@ tables:
     description: FWHM assuming a Gaussian core in i filter
     name: fwhm_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n'
@@ -1138,6 +1234,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core
     name: fwhm_n
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0378'
@@ -1145,6 +1242,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0378 filter
     name: fwhm_n_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0395'
@@ -1152,6 +1250,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0395 filter
     name: fwhm_n_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0410'
@@ -1159,6 +1258,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0410 filter
     name: fwhm_n_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0430'
@@ -1166,6 +1266,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0430 filter
     name: fwhm_n_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0515'
@@ -1173,6 +1274,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0515 filter
     name: fwhm_n_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0660'
@@ -1180,6 +1282,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0660 filter
     name: fwhm_n_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_j0861'
@@ -1187,6 +1290,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0861 filter
     name: fwhm_n_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_g'
@@ -1194,6 +1298,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in g filter
     name: fwhm_n_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_i'
@@ -1201,6 +1306,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in i filter
     name: fwhm_n_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_r'
@@ -1208,6 +1314,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in r filter
     name: fwhm_n_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_u'
@@ -1215,6 +1322,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in u filter
     name: fwhm_n_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_n_z'
@@ -1222,6 +1330,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in z filter
     name: fwhm_n_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_r'
@@ -1229,6 +1338,7 @@ tables:
     description: FWHM assuming a Gaussian core in r filter
     name: fwhm_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_u'
@@ -1236,6 +1346,7 @@ tables:
     description: FWHM assuming a Gaussian core in u filter
     name: fwhm_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.fwhm_z'
@@ -1243,6 +1354,7 @@ tables:
     description: FWHM assuming a Gaussian core in z filter
     name: fwhm_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.field'
@@ -1259,6 +1371,7 @@ tables:
     fits:tunit: deg
     name: id_dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.id_ra'
@@ -1267,6 +1380,7 @@ tables:
     fits:tunit: deg
     name: id_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.isoarea'
@@ -1275,6 +1389,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_id_dual'
@@ -1291,6 +1406,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_aper_3'
@@ -1299,6 +1415,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_aper_6'
@@ -1307,6 +1424,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_auto'
@@ -1315,6 +1433,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_iso'
@@ -1323,6 +1442,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0378_petro'
@@ -1331,6 +1451,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_id_dual'
@@ -1347,6 +1468,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_aper_3'
@@ -1355,6 +1477,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_aper_6'
@@ -1363,6 +1486,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_auto'
@@ -1371,6 +1495,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_iso'
@@ -1379,6 +1504,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0395_petro'
@@ -1387,6 +1513,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_id_dual'
@@ -1403,6 +1530,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_aper_3'
@@ -1411,6 +1539,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_aper_6'
@@ -1419,6 +1548,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_auto'
@@ -1427,6 +1557,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_iso'
@@ -1435,6 +1566,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0410_petro'
@@ -1443,6 +1575,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_id_dual'
@@ -1459,6 +1592,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_aper_3'
@@ -1467,6 +1601,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_aper_6'
@@ -1475,6 +1610,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_auto'
@@ -1483,6 +1619,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_iso'
@@ -1491,6 +1628,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0430_petro'
@@ -1499,6 +1637,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_id_dual'
@@ -1515,6 +1654,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_aper_3'
@@ -1523,6 +1663,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_aper_6'
@@ -1531,6 +1672,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_auto'
@@ -1539,6 +1681,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_iso'
@@ -1547,6 +1690,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0515_petro'
@@ -1555,6 +1699,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_id_dual'
@@ -1571,6 +1716,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_aper_3'
@@ -1579,6 +1725,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_aper_6'
@@ -1587,6 +1734,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_auto'
@@ -1595,6 +1743,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_iso'
@@ -1603,6 +1752,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0660_petro'
@@ -1611,6 +1761,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_id_dual'
@@ -1627,6 +1778,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_aper_3'
@@ -1635,6 +1787,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_aper_6'
@@ -1643,6 +1796,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_auto'
@@ -1651,6 +1805,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_iso'
@@ -1659,6 +1814,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.j0861_petro'
@@ -1667,6 +1823,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.kron_radius'
@@ -1674,6 +1831,7 @@ tables:
     description: Kron radius in units of A or B
     name: kron_radius
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_inst'
@@ -1682,6 +1840,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_inst
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0378'
@@ -1690,6 +1849,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0395'
@@ -1698,6 +1858,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0410'
@@ -1706,6 +1867,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0430'
@@ -1714,6 +1876,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0515'
@@ -1722,6 +1885,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0660'
@@ -1730,6 +1894,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_j0861'
@@ -1738,6 +1903,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_g'
@@ -1746,6 +1912,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_i'
@@ -1754,6 +1921,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_r'
@@ -1762,6 +1930,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_u'
@@ -1770,6 +1939,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_max_z'
@@ -1778,6 +1948,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_inst'
@@ -1786,6 +1957,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_inst
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0378'
@@ -1794,6 +1966,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0395'
@@ -1802,6 +1975,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0410'
@@ -1810,6 +1984,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0430'
@@ -1818,6 +1993,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0515'
@@ -1826,6 +2002,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0660'
@@ -1834,6 +2011,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_j0861'
@@ -1842,6 +2020,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_g'
@@ -1850,6 +2029,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_i'
@@ -1858,6 +2038,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_r'
@@ -1866,6 +2047,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_u'
@@ -1874,6 +2056,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.mu_threshold_z'
@@ -1882,6 +2065,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.petro_radius'
@@ -1889,6 +2073,7 @@ tables:
     description: Petrosian apertures in units of A or B
     name: petro_radius
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.phot_id_dec_dual'
@@ -2100,6 +2285,7 @@ tables:
     description: Position angle (CCW/World-x)
     name: theta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold'
@@ -2107,6 +2293,7 @@ tables:
     description: Instrumental detection threshold above background
     name: threshold
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0378'
@@ -2114,6 +2301,7 @@ tables:
     description: Instrumental detection threshold above background in j0378 filter
     name: threshold_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0395'
@@ -2121,6 +2309,7 @@ tables:
     description: Instrumental detection threshold above background in j0395 filter
     name: threshold_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0410'
@@ -2128,6 +2317,7 @@ tables:
     description: Instrumental detection threshold above background in j0410 filter
     name: threshold_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0430'
@@ -2135,6 +2325,7 @@ tables:
     description: Instrumental detection threshold above background in j0430 filter
     name: threshold_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0515'
@@ -2142,6 +2333,7 @@ tables:
     description: Instrumental detection threshold above background in j0515 filter
     name: threshold_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0660'
@@ -2149,6 +2341,7 @@ tables:
     description: Instrumental detection threshold above background in j0660 filter
     name: threshold_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_j0861'
@@ -2156,6 +2349,7 @@ tables:
     description: Instrumental detection threshold above background in j0861 filter
     name: threshold_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_g'
@@ -2163,6 +2357,7 @@ tables:
     description: Instrumental detection threshold above background in g filter
     name: threshold_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_i'
@@ -2170,6 +2365,7 @@ tables:
     description: Instrumental detection threshold above background in i filter
     name: threshold_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_r'
@@ -2177,6 +2373,7 @@ tables:
     description: Instrumental detection threshold above background in r filter
     name: threshold_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_u'
@@ -2184,6 +2381,7 @@ tables:
     description: Instrumental detection threshold above background in u filter
     name: threshold_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.threshold_z'
@@ -2191,6 +2389,7 @@ tables:
     description: Instrumental detection threshold above background in z filter
     name: threshold_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.x'
@@ -2199,6 +2398,7 @@ tables:
     fits:tunit: pixel
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.y'
@@ -2207,6 +2407,7 @@ tables:
     fits:tunit: pixel
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.calib_strat'
@@ -2223,6 +2424,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0378_aper_3'
@@ -2231,6 +2433,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0378_aper_6'
@@ -2239,6 +2442,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0378_auto'
@@ -2247,6 +2451,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0378_iso'
@@ -2255,6 +2460,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0378_petro'
@@ -2263,6 +2469,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_pstotal'
@@ -2271,6 +2478,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_aper_3'
@@ -2279,6 +2487,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_aper_6'
@@ -2287,6 +2496,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_auto'
@@ -2295,6 +2505,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_iso'
@@ -2303,6 +2514,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0395_petro'
@@ -2311,6 +2523,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_pstotal'
@@ -2319,6 +2532,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_aper_3'
@@ -2327,6 +2541,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_aper_6'
@@ -2335,6 +2550,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_auto'
@@ -2343,6 +2559,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_iso'
@@ -2351,6 +2568,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0410_petro'
@@ -2359,6 +2577,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_pstotal'
@@ -2367,6 +2586,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_aper_3'
@@ -2375,6 +2595,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_aper_6'
@@ -2383,6 +2604,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_auto'
@@ -2391,6 +2613,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_iso'
@@ -2399,6 +2622,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0430_petro'
@@ -2407,6 +2631,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_pstotal'
@@ -2415,6 +2640,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_aper_3'
@@ -2423,6 +2649,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_aper_6'
@@ -2431,6 +2658,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_auto'
@@ -2439,6 +2667,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_iso'
@@ -2447,6 +2676,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0515_petro'
@@ -2455,6 +2685,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_pstotal'
@@ -2463,6 +2694,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_aper_3'
@@ -2471,6 +2703,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_aper_6'
@@ -2479,6 +2712,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_auto'
@@ -2487,6 +2721,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_iso'
@@ -2495,6 +2730,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0660_petro'
@@ -2503,6 +2739,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_pstotal'
@@ -2511,6 +2748,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_aper_3'
@@ -2519,6 +2757,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_aper_6'
@@ -2527,6 +2766,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_auto'
@@ -2535,6 +2775,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_iso'
@@ -2543,6 +2784,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_j0861_petro'
@@ -2551,6 +2793,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_pstotal'
@@ -2559,6 +2802,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_aper_3'
@@ -2567,6 +2811,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_aper_6'
@@ -2575,6 +2820,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_auto'
@@ -2583,6 +2829,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_iso'
@@ -2591,6 +2838,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_g_petro'
@@ -2599,6 +2847,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_pstotal'
@@ -2607,6 +2856,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_aper_3'
@@ -2615,6 +2865,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_aper_6'
@@ -2623,6 +2874,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_auto'
@@ -2631,6 +2883,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_iso'
@@ -2639,6 +2892,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_i_petro'
@@ -2647,6 +2901,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_pstotal'
@@ -2655,6 +2910,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_aper_3'
@@ -2663,6 +2919,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_aper_6'
@@ -2671,6 +2928,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_auto'
@@ -2679,6 +2937,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_iso'
@@ -2687,6 +2946,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_r_petro'
@@ -2695,6 +2955,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_pstotal'
@@ -2703,6 +2964,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_aper_3'
@@ -2711,6 +2973,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_aper_6'
@@ -2719,6 +2982,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_auto'
@@ -2727,6 +2991,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_iso'
@@ -2735,6 +3000,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_u_petro'
@@ -2743,6 +3009,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_pstotal'
@@ -2751,6 +3018,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_aper_3'
@@ -2759,6 +3027,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_aper_6'
@@ -2767,6 +3036,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_auto'
@@ -2775,6 +3045,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_iso'
@@ -2783,6 +3054,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.e_z_petro'
@@ -2791,6 +3063,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_id_dual'
@@ -2807,6 +3080,7 @@ tables:
     fits:tunit: AB mag
     name: g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_aper_3'
@@ -2815,6 +3089,7 @@ tables:
     fits:tunit: AB mag
     name: g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_aper_6'
@@ -2823,6 +3098,7 @@ tables:
     fits:tunit: AB mag
     name: g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_auto'
@@ -2831,6 +3107,7 @@ tables:
     fits:tunit: AB mag
     name: g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_iso'
@@ -2839,6 +3116,7 @@ tables:
     fits:tunit: AB mag
     name: g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.g_petro'
@@ -2847,6 +3125,7 @@ tables:
     fits:tunit: AB mag
     name: g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_id_dual'
@@ -2863,6 +3142,7 @@ tables:
     fits:tunit: AB mag
     name: i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_aper_3'
@@ -2871,6 +3151,7 @@ tables:
     fits:tunit: AB mag
     name: i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_aper_6'
@@ -2879,6 +3160,7 @@ tables:
     fits:tunit: AB mag
     name: i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_auto'
@@ -2887,6 +3169,7 @@ tables:
     fits:tunit: AB mag
     name: i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_iso'
@@ -2895,6 +3178,7 @@ tables:
     fits:tunit: AB mag
     name: i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.i_petro'
@@ -2903,6 +3187,7 @@ tables:
     fits:tunit: AB mag
     name: i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_id_dual'
@@ -2919,6 +3204,7 @@ tables:
     fits:tunit: AB mag
     name: r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_aper_3'
@@ -2927,6 +3213,7 @@ tables:
     fits:tunit: AB mag
     name: r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_aper_6'
@@ -2935,6 +3222,7 @@ tables:
     fits:tunit: AB mag
     name: r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_auto'
@@ -2943,6 +3231,7 @@ tables:
     fits:tunit: AB mag
     name: r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_iso'
@@ -2951,6 +3240,7 @@ tables:
     fits:tunit: AB mag
     name: r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.r_petro'
@@ -2959,6 +3249,7 @@ tables:
     fits:tunit: AB mag
     name: r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_pstotal'
@@ -2966,6 +3257,7 @@ tables:
     description: Signal to noise ratio of pstotal measurement
     name: s2n_det_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_aper_3'
@@ -2973,6 +3265,7 @@ tables:
     description: Signal to noise ratio of aper_3 measurement
     name: s2n_det_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_aper_6'
@@ -2980,6 +3273,7 @@ tables:
     description: Signal to noise ratio of aper_6 measurement
     name: s2n_det_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_auto'
@@ -2987,6 +3281,7 @@ tables:
     description: Signal to noise ratio of auto measurement
     name: s2n_det_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_iso'
@@ -2994,6 +3289,7 @@ tables:
     description: Signal to noise ratio of iso measurement
     name: s2n_det_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_det_petro'
@@ -3001,6 +3297,7 @@ tables:
     description: Signal to noise ratio of petro measurement
     name: s2n_det_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_pstotal'
@@ -3008,6 +3305,7 @@ tables:
     description: Signal to noise ratio of j0378_pstotal measurement
     name: s2n_j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_aper_3'
@@ -3015,6 +3313,7 @@ tables:
     description: Signal to noise ratio of j0378_aper_3 measurement
     name: s2n_j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_aper_6'
@@ -3022,6 +3321,7 @@ tables:
     description: Signal to noise ratio of j0378_aper_6 measurement
     name: s2n_j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_auto'
@@ -3029,6 +3329,7 @@ tables:
     description: Signal to noise ratio of j0378_auto measurement
     name: s2n_j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_iso'
@@ -3036,6 +3337,7 @@ tables:
     description: Signal to noise ratio of j0378_iso measurement
     name: s2n_j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0378_petro'
@@ -3043,6 +3345,7 @@ tables:
     description: Signal to noise ratio of j0378_petro measurement
     name: s2n_j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_pstotal'
@@ -3050,6 +3353,7 @@ tables:
     description: Signal to noise ratio of j0395_pstotal measurement
     name: s2n_j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_aper_3'
@@ -3057,6 +3361,7 @@ tables:
     description: Signal to noise ratio of j0395_aper_3 measurement
     name: s2n_j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_aper_6'
@@ -3064,6 +3369,7 @@ tables:
     description: Signal to noise ratio of j0395_aper_6 measurement
     name: s2n_j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_auto'
@@ -3071,6 +3377,7 @@ tables:
     description: Signal to noise ratio of j0395_auto measurement
     name: s2n_j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_iso'
@@ -3078,6 +3385,7 @@ tables:
     description: Signal to noise ratio of j0395_iso measurement
     name: s2n_j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0395_petro'
@@ -3085,6 +3393,7 @@ tables:
     description: Signal to noise ratio of j0395_petro measurement
     name: s2n_j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_pstotal'
@@ -3092,6 +3401,7 @@ tables:
     description: Signal to noise ratio of j0410_pstotal measurement
     name: s2n_j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_aper_3'
@@ -3099,6 +3409,7 @@ tables:
     description: Signal to noise ratio of j0410_aper_3 measurement
     name: s2n_j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_aper_6'
@@ -3106,6 +3417,7 @@ tables:
     description: Signal to noise ratio of j0410_aper_6 measurement
     name: s2n_j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_auto'
@@ -3113,6 +3425,7 @@ tables:
     description: Signal to noise ratio of j0410_auto measurement
     name: s2n_j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_iso'
@@ -3120,6 +3433,7 @@ tables:
     description: Signal to noise ratio of j0410_iso measurement
     name: s2n_j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0410_petro'
@@ -3127,6 +3441,7 @@ tables:
     description: Signal to noise ratio of j0410_petro measurement
     name: s2n_j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_pstotal'
@@ -3134,6 +3449,7 @@ tables:
     description: Signal to noise ratio of j0430_pstotal measurement
     name: s2n_j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_aper_3'
@@ -3141,6 +3457,7 @@ tables:
     description: Signal to noise ratio of j0430_aper_3 measurement
     name: s2n_j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_aper_6'
@@ -3148,6 +3465,7 @@ tables:
     description: Signal to noise ratio of j0430_aper_6 measurement
     name: s2n_j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_auto'
@@ -3155,6 +3473,7 @@ tables:
     description: Signal to noise ratio of j0430_auto measurement
     name: s2n_j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_iso'
@@ -3162,6 +3481,7 @@ tables:
     description: Signal to noise ratio of j0430_iso measurement
     name: s2n_j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0430_petro'
@@ -3169,6 +3489,7 @@ tables:
     description: Signal to noise ratio of j0430_petro measurement
     name: s2n_j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_pstotal'
@@ -3176,6 +3497,7 @@ tables:
     description: Signal to noise ratio of j0515_pstotal measurement
     name: s2n_j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_aper_3'
@@ -3183,6 +3505,7 @@ tables:
     description: Signal to noise ratio of j0515_aper_3 measurement
     name: s2n_j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_aper_6'
@@ -3190,6 +3513,7 @@ tables:
     description: Signal to noise ratio of j0515_aper_6 measurement
     name: s2n_j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_auto'
@@ -3197,6 +3521,7 @@ tables:
     description: Signal to noise ratio of j0515_auto measurement
     name: s2n_j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_iso'
@@ -3204,6 +3529,7 @@ tables:
     description: Signal to noise ratio of j0515_iso measurement
     name: s2n_j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0515_petro'
@@ -3211,6 +3537,7 @@ tables:
     description: Signal to noise ratio of j0515_petro measurement
     name: s2n_j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_pstotal'
@@ -3218,6 +3545,7 @@ tables:
     description: Signal to noise ratio of j0660_pstotal measurement
     name: s2n_j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_aper_3'
@@ -3225,6 +3553,7 @@ tables:
     description: Signal to noise ratio of j0660_aper_3 measurement
     name: s2n_j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_aper_6'
@@ -3232,6 +3561,7 @@ tables:
     description: Signal to noise ratio of j0660_aper_6 measurement
     name: s2n_j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_auto'
@@ -3239,6 +3569,7 @@ tables:
     description: Signal to noise ratio of j0660_auto measurement
     name: s2n_j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_iso'
@@ -3246,6 +3577,7 @@ tables:
     description: Signal to noise ratio of j0660_iso measurement
     name: s2n_j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0660_petro'
@@ -3253,6 +3585,7 @@ tables:
     description: Signal to noise ratio of j0660_petro measurement
     name: s2n_j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_pstotal'
@@ -3260,6 +3593,7 @@ tables:
     description: Signal to noise ratio of j0861_pstotal measurement
     name: s2n_j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_aper_3'
@@ -3267,6 +3601,7 @@ tables:
     description: Signal to noise ratio of j0861_aper_3 measurement
     name: s2n_j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_aper_6'
@@ -3274,6 +3609,7 @@ tables:
     description: Signal to noise ratio of j0861_aper_6 measurement
     name: s2n_j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_auto'
@@ -3281,6 +3617,7 @@ tables:
     description: Signal to noise ratio of j0861_auto measurement
     name: s2n_j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_iso'
@@ -3288,6 +3625,7 @@ tables:
     description: Signal to noise ratio of j0861_iso measurement
     name: s2n_j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_j0861_petro'
@@ -3295,6 +3633,7 @@ tables:
     description: Signal to noise ratio of j0861_petro measurement
     name: s2n_j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_pstotal'
@@ -3302,6 +3641,7 @@ tables:
     description: Signal to noise ratio of g_pstotal measurement
     name: s2n_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_aper_3'
@@ -3309,6 +3649,7 @@ tables:
     description: Signal to noise ratio of g_aper_3 measurement
     name: s2n_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_aper_6'
@@ -3316,6 +3657,7 @@ tables:
     description: Signal to noise ratio of g_aper_6 measurement
     name: s2n_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_auto'
@@ -3323,6 +3665,7 @@ tables:
     description: Signal to noise ratio of g_auto measurement
     name: s2n_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_iso'
@@ -3330,6 +3673,7 @@ tables:
     description: Signal to noise ratio of g_iso measurement
     name: s2n_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_g_petro'
@@ -3337,6 +3681,7 @@ tables:
     description: Signal to noise ratio of g_petro measurement
     name: s2n_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_pstotal'
@@ -3344,6 +3689,7 @@ tables:
     description: Signal to noise ratio of i_pstotal measurement
     name: s2n_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_aper_3'
@@ -3351,6 +3697,7 @@ tables:
     description: Signal to noise ratio of i_aper_3 measurement
     name: s2n_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_aper_6'
@@ -3358,6 +3705,7 @@ tables:
     description: Signal to noise ratio of i_aper_6 measurement
     name: s2n_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_auto'
@@ -3365,6 +3713,7 @@ tables:
     description: Signal to noise ratio of i_auto measurement
     name: s2n_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_iso'
@@ -3372,6 +3721,7 @@ tables:
     description: Signal to noise ratio of i_iso measurement
     name: s2n_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_i_petro'
@@ -3379,6 +3729,7 @@ tables:
     description: Signal to noise ratio of i_petro measurement
     name: s2n_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_pstotal'
@@ -3386,6 +3737,7 @@ tables:
     description: Signal to noise ratio of r_pstotal measurement
     name: s2n_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_aper_3'
@@ -3393,6 +3745,7 @@ tables:
     description: Signal to noise ratio of r_aper_3 measurement
     name: s2n_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_aper_6'
@@ -3400,6 +3753,7 @@ tables:
     description: Signal to noise ratio of r_aper_6 measurement
     name: s2n_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_auto'
@@ -3407,6 +3761,7 @@ tables:
     description: Signal to noise ratio of r_auto measurement
     name: s2n_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_iso'
@@ -3414,6 +3769,7 @@ tables:
     description: Signal to noise ratio of r_iso measurement
     name: s2n_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_r_petro'
@@ -3421,6 +3777,7 @@ tables:
     description: Signal to noise ratio of r_petro measurement
     name: s2n_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_pstotal'
@@ -3428,6 +3785,7 @@ tables:
     description: Signal to noise ratio of u_pstotal measurement
     name: s2n_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_aper_3'
@@ -3435,6 +3793,7 @@ tables:
     description: Signal to noise ratio of u_aper_3 measurement
     name: s2n_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_aper_6'
@@ -3442,6 +3801,7 @@ tables:
     description: Signal to noise ratio of u_aper_6 measurement
     name: s2n_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_auto'
@@ -3449,6 +3809,7 @@ tables:
     description: Signal to noise ratio of u_auto measurement
     name: s2n_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_iso'
@@ -3456,6 +3817,7 @@ tables:
     description: Signal to noise ratio of u_iso measurement
     name: s2n_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_u_petro'
@@ -3463,6 +3825,7 @@ tables:
     description: Signal to noise ratio of u_petro measurement
     name: s2n_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_pstotal'
@@ -3470,6 +3833,7 @@ tables:
     description: Signal to noise ratio of z_pstotal measurement
     name: s2n_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_aper_3'
@@ -3477,6 +3841,7 @@ tables:
     description: Signal to noise ratio of z_aper_3 measurement
     name: s2n_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_aper_6'
@@ -3484,6 +3849,7 @@ tables:
     description: Signal to noise ratio of z_aper_6 measurement
     name: s2n_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_auto'
@@ -3491,6 +3857,7 @@ tables:
     description: Signal to noise ratio of z_auto measurement
     name: s2n_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_iso'
@@ -3498,6 +3865,7 @@ tables:
     description: Signal to noise ratio of z_iso measurement
     name: s2n_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.s2n_z_petro'
@@ -3505,6 +3873,7 @@ tables:
     description: Signal to noise ratio of z_petro measurement
     name: s2n_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_id_dual'
@@ -3521,6 +3890,7 @@ tables:
     fits:tunit: AB mag
     name: u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_aper_3'
@@ -3529,6 +3899,7 @@ tables:
     fits:tunit: AB mag
     name: u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_aper_6'
@@ -3537,6 +3908,7 @@ tables:
     fits:tunit: AB mag
     name: u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_auto'
@@ -3545,6 +3917,7 @@ tables:
     fits:tunit: AB mag
     name: u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_iso'
@@ -3553,6 +3926,7 @@ tables:
     fits:tunit: AB mag
     name: u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.u_petro'
@@ -3561,6 +3935,7 @@ tables:
     fits:tunit: AB mag
     name: u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_id_dual'
@@ -3577,6 +3952,7 @@ tables:
     fits:tunit: AB mag
     name: z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_aper_3'
@@ -3585,6 +3961,7 @@ tables:
     fits:tunit: AB mag
     name: z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_aper_6'
@@ -3593,6 +3970,7 @@ tables:
     fits:tunit: AB mag
     name: z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_auto'
@@ -3601,6 +3979,7 @@ tables:
     fits:tunit: AB mag
     name: z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_iso'
@@ -3609,6 +3988,7 @@ tables:
     fits:tunit: AB mag
     name: z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.z_petro'
@@ -3617,6 +3997,7 @@ tables:
     fits:tunit: AB mag
     name: z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.random_id'
@@ -3624,6 +4005,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.dual.htm9'
@@ -3851,6 +4233,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.dec'
@@ -3860,6 +4243,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0378'
@@ -3868,6 +4252,7 @@ tables:
     fits:tunit: deg
     name: a_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0395'
@@ -3876,6 +4261,7 @@ tables:
     fits:tunit: deg
     name: a_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0410'
@@ -3884,6 +4270,7 @@ tables:
     fits:tunit: deg
     name: a_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0430'
@@ -3892,6 +4279,7 @@ tables:
     fits:tunit: deg
     name: a_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0515'
@@ -3900,6 +4288,7 @@ tables:
     fits:tunit: deg
     name: a_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0660'
@@ -3908,6 +4297,7 @@ tables:
     fits:tunit: deg
     name: a_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_j0861'
@@ -3916,6 +4306,7 @@ tables:
     fits:tunit: deg
     name: a_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_g'
@@ -3924,6 +4315,7 @@ tables:
     fits:tunit: deg
     name: a_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_i'
@@ -3932,6 +4324,7 @@ tables:
     fits:tunit: deg
     name: a_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_r'
@@ -3940,6 +4333,7 @@ tables:
     fits:tunit: deg
     name: a_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_u'
@@ -3948,6 +4342,7 @@ tables:
     fits:tunit: deg
     name: a_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.a_z'
@@ -3956,6 +4351,7 @@ tables:
     fits:tunit: deg
     name: a_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0378'
@@ -3963,6 +4359,7 @@ tables:
     description: Instrumental background at centroid position in j0378 filter
     name: background_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0395'
@@ -3970,6 +4367,7 @@ tables:
     description: Instrumental background at centroid position in j0395 filter
     name: background_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0410'
@@ -3977,6 +4375,7 @@ tables:
     description: Instrumental background at centroid position in j0410 filter
     name: background_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0430'
@@ -3984,6 +4383,7 @@ tables:
     description: Instrumental background at centroid position in j0430 filter
     name: background_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0515'
@@ -3991,6 +4391,7 @@ tables:
     description: Instrumental background at centroid position in j0515 filter
     name: background_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0660'
@@ -3998,6 +4399,7 @@ tables:
     description: Instrumental background at centroid position in j0660 filter
     name: background_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_j0861'
@@ -4005,6 +4407,7 @@ tables:
     description: Instrumental background at centroid position in j0861 filter
     name: background_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_g'
@@ -4012,6 +4415,7 @@ tables:
     description: Instrumental background at centroid position in g filter
     name: background_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_i'
@@ -4019,6 +4423,7 @@ tables:
     description: Instrumental background at centroid position in i filter
     name: background_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_r'
@@ -4026,6 +4431,7 @@ tables:
     description: Instrumental background at centroid position in r filter
     name: background_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_u'
@@ -4033,6 +4439,7 @@ tables:
     description: Instrumental background at centroid position in u filter
     name: background_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.background_z'
@@ -4040,6 +4447,7 @@ tables:
     description: Instrumental background at centroid position in z filter
     name: background_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0378'
@@ -4048,6 +4456,7 @@ tables:
     fits:tunit: deg
     name: b_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0395'
@@ -4056,6 +4465,7 @@ tables:
     fits:tunit: deg
     name: b_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0410'
@@ -4064,6 +4474,7 @@ tables:
     fits:tunit: deg
     name: b_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0430'
@@ -4072,6 +4483,7 @@ tables:
     fits:tunit: deg
     name: b_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0515'
@@ -4080,6 +4492,7 @@ tables:
     fits:tunit: deg
     name: b_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0660'
@@ -4088,6 +4501,7 @@ tables:
     fits:tunit: deg
     name: b_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_j0861'
@@ -4096,6 +4510,7 @@ tables:
     fits:tunit: deg
     name: b_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_g'
@@ -4104,6 +4519,7 @@ tables:
     fits:tunit: deg
     name: b_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_i'
@@ -4112,6 +4528,7 @@ tables:
     fits:tunit: deg
     name: b_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_r'
@@ -4120,6 +4537,7 @@ tables:
     fits:tunit: deg
     name: b_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_u'
@@ -4128,6 +4546,7 @@ tables:
     fits:tunit: deg
     name: b_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.b_z'
@@ -4136,6 +4555,7 @@ tables:
     fits:tunit: deg
     name: b_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0378'
@@ -4143,6 +4563,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0378 filter'
     name: class_star_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0395'
@@ -4150,6 +4571,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0395 filter'
     name: class_star_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0410'
@@ -4157,6 +4579,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0410 filter'
     name: class_star_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0430'
@@ -4164,6 +4587,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0430 filter'
     name: class_star_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0515'
@@ -4171,6 +4595,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0515 filter'
     name: class_star_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0660'
@@ -4178,6 +4603,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0660 filter'
     name: class_star_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_j0861'
@@ -4185,6 +4611,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in j0861 filter'
     name: class_star_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_g'
@@ -4192,6 +4619,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in g filter'
     name: class_star_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_i'
@@ -4199,6 +4627,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in i filter'
     name: class_star_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_r'
@@ -4206,6 +4635,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in r filter'
     name: class_star_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_u'
@@ -4213,6 +4643,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in u filter'
     name: class_star_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.class_star_z'
@@ -4220,6 +4651,7 @@ tables:
     description: 'S/G classifier output (1: star; 0: non-star) in z filter'
     name: class_star_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0378'
@@ -4227,6 +4659,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0378 filter
     name: ellipticity_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0395'
@@ -4234,6 +4667,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0395 filter
     name: ellipticity_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0410'
@@ -4241,6 +4675,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0410 filter
     name: ellipticity_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0430'
@@ -4248,6 +4683,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0430 filter
     name: ellipticity_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0515'
@@ -4255,6 +4691,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0515 filter
     name: ellipticity_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0660'
@@ -4262,6 +4699,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0660 filter
     name: ellipticity_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_j0861'
@@ -4269,6 +4707,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in j0861 filter
     name: ellipticity_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_g'
@@ -4276,6 +4715,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in g filter
     name: ellipticity_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_i'
@@ -4283,6 +4723,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in i filter
     name: ellipticity_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_r'
@@ -4290,6 +4731,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in r filter
     name: ellipticity_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_u'
@@ -4297,6 +4739,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in u filter
     name: ellipticity_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.ellipticity_z'
@@ -4304,6 +4747,7 @@ tables:
     description: 1 - B_IMAGE/A_IMAGE in z filter
     name: ellipticity_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0378'
@@ -4311,6 +4755,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0378 filter
     name: elongation_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0395'
@@ -4318,6 +4763,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0395 filter
     name: elongation_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0410'
@@ -4325,6 +4771,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0410 filter
     name: elongation_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0430'
@@ -4332,6 +4779,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0430 filter
     name: elongation_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0515'
@@ -4339,6 +4787,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0515 filter
     name: elongation_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0660'
@@ -4346,6 +4795,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0660 filter
     name: elongation_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_j0861'
@@ -4353,6 +4803,7 @@ tables:
     description: A_IMAGE/B_IMAGE in j0861 filter
     name: elongation_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_g'
@@ -4360,6 +4811,7 @@ tables:
     description: A_IMAGE/B_IMAGE in g filter
     name: elongation_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_i'
@@ -4367,6 +4819,7 @@ tables:
     description: A_IMAGE/B_IMAGE in i filter
     name: elongation_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_r'
@@ -4374,6 +4827,7 @@ tables:
     description: A_IMAGE/B_IMAGE in r filter
     name: elongation_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_u'
@@ -4381,6 +4835,7 @@ tables:
     description: A_IMAGE/B_IMAGE in u filter
     name: elongation_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.elongation_z'
@@ -4388,6 +4843,7 @@ tables:
     description: A_IMAGE/B_IMAGE in z filter
     name: elongation_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0378'
@@ -4395,6 +4851,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0378 filter
     name: flux_radius_20_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0395'
@@ -4402,6 +4859,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0395 filter
     name: flux_radius_20_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0410'
@@ -4409,6 +4867,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0410 filter
     name: flux_radius_20_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0430'
@@ -4416,6 +4875,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0430 filter
     name: flux_radius_20_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0515'
@@ -4423,6 +4883,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0515 filter
     name: flux_radius_20_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0660'
@@ -4430,6 +4891,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0660 filter
     name: flux_radius_20_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_j0861'
@@ -4437,6 +4899,7 @@ tables:
     description: Radius enclosing 20% of the total flux in j0861 filter
     name: flux_radius_20_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_g'
@@ -4444,6 +4907,7 @@ tables:
     description: Radius enclosing 20% of the total flux in g filter
     name: flux_radius_20_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_i'
@@ -4451,6 +4915,7 @@ tables:
     description: Radius enclosing 20% of the total flux in i filter
     name: flux_radius_20_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_r'
@@ -4458,6 +4923,7 @@ tables:
     description: Radius enclosing 20% of the total flux in r filter
     name: flux_radius_20_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_u'
@@ -4465,6 +4931,7 @@ tables:
     description: Radius enclosing 20% of the total flux in u filter
     name: flux_radius_20_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_20_z'
@@ -4472,6 +4939,7 @@ tables:
     description: Radius enclosing 20% of the total flux in z filter
     name: flux_radius_20_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0378'
@@ -4479,6 +4947,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0378 filter
     name: flux_radius_50_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0395'
@@ -4486,6 +4955,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0395 filter
     name: flux_radius_50_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0410'
@@ -4493,6 +4963,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0410 filter
     name: flux_radius_50_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0430'
@@ -4500,6 +4971,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0430 filter
     name: flux_radius_50_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0515'
@@ -4507,6 +4979,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0515 filter
     name: flux_radius_50_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0660'
@@ -4514,6 +4987,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0660 filter
     name: flux_radius_50_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_j0861'
@@ -4521,6 +4995,7 @@ tables:
     description: Radius enclosing 50% of the total flux in j0861 filter
     name: flux_radius_50_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_g'
@@ -4528,6 +5003,7 @@ tables:
     description: Radius enclosing 50% of the total flux in g filter
     name: flux_radius_50_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_i'
@@ -4535,6 +5011,7 @@ tables:
     description: Radius enclosing 50% of the total flux in i filter
     name: flux_radius_50_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_r'
@@ -4542,6 +5019,7 @@ tables:
     description: Radius enclosing 50% of the total flux in r filter
     name: flux_radius_50_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_u'
@@ -4549,6 +5027,7 @@ tables:
     description: Radius enclosing 50% of the total flux in u filter
     name: flux_radius_50_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_50_z'
@@ -4556,6 +5035,7 @@ tables:
     description: Radius enclosing 50% of the total flux in z filter
     name: flux_radius_50_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0378'
@@ -4563,6 +5043,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0378 filter
     name: flux_radius_70_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0395'
@@ -4570,6 +5051,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0395 filter
     name: flux_radius_70_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0410'
@@ -4577,6 +5059,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0410 filter
     name: flux_radius_70_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0430'
@@ -4584,6 +5067,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0430 filter
     name: flux_radius_70_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0515'
@@ -4591,6 +5075,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0515 filter
     name: flux_radius_70_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0660'
@@ -4598,6 +5083,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0660 filter
     name: flux_radius_70_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_j0861'
@@ -4605,6 +5091,7 @@ tables:
     description: Radius enclosing 70% of the total flux in j0861 filter
     name: flux_radius_70_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_g'
@@ -4612,6 +5099,7 @@ tables:
     description: Radius enclosing 70% of the total flux in g filter
     name: flux_radius_70_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_i'
@@ -4619,6 +5107,7 @@ tables:
     description: Radius enclosing 70% of the total flux in i filter
     name: flux_radius_70_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_r'
@@ -4626,6 +5115,7 @@ tables:
     description: Radius enclosing 70% of the total flux in r filter
     name: flux_radius_70_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_u'
@@ -4633,6 +5123,7 @@ tables:
     description: Radius enclosing 70% of the total flux in u filter
     name: flux_radius_70_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_70_z'
@@ -4640,6 +5131,7 @@ tables:
     description: Radius enclosing 70% of the total flux in z filter
     name: flux_radius_70_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0378'
@@ -4647,6 +5139,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0378 filter
     name: flux_radius_90_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0395'
@@ -4654,6 +5147,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0395 filter
     name: flux_radius_90_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0410'
@@ -4661,6 +5155,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0410 filter
     name: flux_radius_90_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0430'
@@ -4668,6 +5163,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0430 filter
     name: flux_radius_90_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0515'
@@ -4675,6 +5171,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0515 filter
     name: flux_radius_90_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0660'
@@ -4682,6 +5179,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0660 filter
     name: flux_radius_90_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_j0861'
@@ -4689,6 +5187,7 @@ tables:
     description: Radius enclosing 90% of the total flux in j0861 filter
     name: flux_radius_90_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_g'
@@ -4696,6 +5195,7 @@ tables:
     description: Radius enclosing 90% of the total flux in g filter
     name: flux_radius_90_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_i'
@@ -4703,6 +5203,7 @@ tables:
     description: Radius enclosing 90% of the total flux in i filter
     name: flux_radius_90_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_r'
@@ -4710,6 +5211,7 @@ tables:
     description: Radius enclosing 90% of the total flux in r filter
     name: flux_radius_90_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_u'
@@ -4717,6 +5219,7 @@ tables:
     description: Radius enclosing 90% of the total flux in u filter
     name: flux_radius_90_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.flux_radius_90_z'
@@ -4724,6 +5227,7 @@ tables:
     description: Radius enclosing 90% of the total flux in z filter
     name: flux_radius_90_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0378'
@@ -4731,6 +5235,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0378 filter
     name: fwhm_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0395'
@@ -4738,6 +5243,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0395 filter
     name: fwhm_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0410'
@@ -4745,6 +5251,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0410 filter
     name: fwhm_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0430'
@@ -4752,6 +5259,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0430 filter
     name: fwhm_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0515'
@@ -4759,6 +5267,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0515 filter
     name: fwhm_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0660'
@@ -4766,6 +5275,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0660 filter
     name: fwhm_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_j0861'
@@ -4773,6 +5283,7 @@ tables:
     description: FWHM assuming a Gaussian core in j0861 filter
     name: fwhm_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_g'
@@ -4780,6 +5291,7 @@ tables:
     description: FWHM assuming a Gaussian core in g filter
     name: fwhm_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_i'
@@ -4787,6 +5299,7 @@ tables:
     description: FWHM assuming a Gaussian core in i filter
     name: fwhm_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0378'
@@ -4794,6 +5307,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0378 filter
     name: fwhm_n_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0395'
@@ -4801,6 +5315,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0395 filter
     name: fwhm_n_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0410'
@@ -4808,6 +5323,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0410 filter
     name: fwhm_n_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0430'
@@ -4815,6 +5331,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0430 filter
     name: fwhm_n_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0515'
@@ -4822,6 +5339,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0515 filter
     name: fwhm_n_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0660'
@@ -4829,6 +5347,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0660 filter
     name: fwhm_n_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_j0861'
@@ -4836,6 +5355,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in j0861 filter
     name: fwhm_n_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_g'
@@ -4843,6 +5363,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in g filter
     name: fwhm_n_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_i'
@@ -4850,6 +5371,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in i filter
     name: fwhm_n_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_r'
@@ -4857,6 +5379,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in r filter
     name: fwhm_n_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_u'
@@ -4864,6 +5387,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in u filter
     name: fwhm_n_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_n_z'
@@ -4871,6 +5395,7 @@ tables:
     description: Normalized FWHM assuming a Gaussian core in z filter
     name: fwhm_n_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_r'
@@ -4878,6 +5403,7 @@ tables:
     description: FWHM assuming a Gaussian core in r filter
     name: fwhm_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_u'
@@ -4885,6 +5411,7 @@ tables:
     description: FWHM assuming a Gaussian core in u filter
     name: fwhm_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.fwhm_z'
@@ -4892,6 +5419,7 @@ tables:
     description: FWHM assuming a Gaussian core in z filter
     name: fwhm_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0378'
@@ -4900,6 +5428,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0395'
@@ -4908,6 +5437,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0410'
@@ -4916,6 +5446,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0430'
@@ -4924,6 +5455,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0515'
@@ -4932,6 +5464,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0660'
@@ -4940,6 +5473,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_j0861'
@@ -4948,6 +5482,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_g'
@@ -4956,6 +5491,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_i'
@@ -4964,6 +5500,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_r'
@@ -4972,6 +5509,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_u'
@@ -4980,6 +5518,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.isoarea_z'
@@ -4988,6 +5527,7 @@ tables:
     fits:tunit: deg^2
     name: isoarea_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_pstotal'
@@ -4996,6 +5536,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_aper_3'
@@ -5004,6 +5545,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_aper_6'
@@ -5012,6 +5554,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_auto'
@@ -5020,6 +5563,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_iso'
@@ -5028,6 +5572,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0378_petro'
@@ -5036,6 +5581,7 @@ tables:
     fits:tunit: AB mag
     name: j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_pstotal'
@@ -5044,6 +5590,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_aper_3'
@@ -5052,6 +5599,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_aper_6'
@@ -5060,6 +5608,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_auto'
@@ -5068,6 +5617,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_iso'
@@ -5076,6 +5626,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0395_petro'
@@ -5084,6 +5635,7 @@ tables:
     fits:tunit: AB mag
     name: j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_pstotal'
@@ -5092,6 +5644,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_aper_3'
@@ -5100,6 +5653,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_aper_6'
@@ -5108,6 +5662,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_auto'
@@ -5116,6 +5671,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_iso'
@@ -5124,6 +5680,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0410_petro'
@@ -5132,6 +5689,7 @@ tables:
     fits:tunit: AB mag
     name: j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_pstotal'
@@ -5140,6 +5698,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_aper_3'
@@ -5148,6 +5707,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_aper_6'
@@ -5156,6 +5716,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_auto'
@@ -5164,6 +5725,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_iso'
@@ -5172,6 +5734,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0430_petro'
@@ -5180,6 +5743,7 @@ tables:
     fits:tunit: AB mag
     name: j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_pstotal'
@@ -5188,6 +5752,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_aper_3'
@@ -5196,6 +5761,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_aper_6'
@@ -5204,6 +5770,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_auto'
@@ -5212,6 +5779,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_iso'
@@ -5220,6 +5788,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0515_petro'
@@ -5228,6 +5797,7 @@ tables:
     fits:tunit: AB mag
     name: j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_pstotal'
@@ -5236,6 +5806,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_aper_3'
@@ -5244,6 +5815,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_aper_6'
@@ -5252,6 +5824,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_auto'
@@ -5260,6 +5833,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_iso'
@@ -5268,6 +5842,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0660_petro'
@@ -5276,6 +5851,7 @@ tables:
     fits:tunit: AB mag
     name: j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_pstotal'
@@ -5284,6 +5860,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_aper_3'
@@ -5292,6 +5869,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_aper_6'
@@ -5300,6 +5878,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_auto'
@@ -5308,6 +5887,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_iso'
@@ -5316,6 +5896,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.j0861_petro'
@@ -5324,6 +5905,7 @@ tables:
     fits:tunit: AB mag
     name: j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0378'
@@ -5331,6 +5913,7 @@ tables:
     description: Kron radius in units of A or B in j0378 filter
     name: kron_radius_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0395'
@@ -5338,6 +5921,7 @@ tables:
     description: Kron radius in units of A or B in j0395 filter
     name: kron_radius_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0410'
@@ -5345,6 +5929,7 @@ tables:
     description: Kron radius in units of A or B in j0410 filter
     name: kron_radius_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0430'
@@ -5352,6 +5937,7 @@ tables:
     description: Kron radius in units of A or B in j0430 filter
     name: kron_radius_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0515'
@@ -5359,6 +5945,7 @@ tables:
     description: Kron radius in units of A or B in j0515 filter
     name: kron_radius_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0660'
@@ -5366,6 +5953,7 @@ tables:
     description: Kron radius in units of A or B in j0660 filter
     name: kron_radius_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_j0861'
@@ -5373,6 +5961,7 @@ tables:
     description: Kron radius in units of A or B in j0861 filter
     name: kron_radius_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_g'
@@ -5380,6 +5969,7 @@ tables:
     description: Kron radius in units of A or B in g filter
     name: kron_radius_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_i'
@@ -5387,6 +5977,7 @@ tables:
     description: Kron radius in units of A or B in i filter
     name: kron_radius_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_r'
@@ -5394,6 +5985,7 @@ tables:
     description: Kron radius in units of A or B in r filter
     name: kron_radius_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_u'
@@ -5401,6 +5993,7 @@ tables:
     description: Kron radius in units of A or B in u filter
     name: kron_radius_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.kron_radius_z'
@@ -5408,6 +6001,7 @@ tables:
     description: Kron radius in units of A or B in z filter
     name: kron_radius_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0378'
@@ -5416,6 +6010,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0395'
@@ -5424,6 +6019,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0410'
@@ -5432,6 +6028,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0430'
@@ -5440,6 +6037,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0515'
@@ -5448,6 +6046,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0660'
@@ -5456,6 +6055,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_j0861'
@@ -5464,6 +6064,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_g'
@@ -5472,6 +6073,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_i'
@@ -5480,6 +6082,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_r'
@@ -5488,6 +6091,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_u'
@@ -5496,6 +6100,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_max_z'
@@ -5504,6 +6109,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_max_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0378'
@@ -5512,6 +6118,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0395'
@@ -5520,6 +6127,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0410'
@@ -5528,6 +6136,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0430'
@@ -5536,6 +6145,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0515'
@@ -5544,6 +6154,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0660'
@@ -5552,6 +6163,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_j0861'
@@ -5560,6 +6172,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_g'
@@ -5568,6 +6181,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_i'
@@ -5576,6 +6190,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_r'
@@ -5584,6 +6199,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_u'
@@ -5592,6 +6208,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.mu_threshold_z'
@@ -5600,6 +6217,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: mu_threshold_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0378'
@@ -5607,6 +6225,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0378 filter
     name: petro_radius_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0395'
@@ -5614,6 +6233,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0395 filter
     name: petro_radius_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0410'
@@ -5621,6 +6241,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0410 filter
     name: petro_radius_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0430'
@@ -5628,6 +6249,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0430 filter
     name: petro_radius_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0515'
@@ -5635,6 +6257,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0515 filter
     name: petro_radius_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0660'
@@ -5642,6 +6265,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0660 filter
     name: petro_radius_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_j0861'
@@ -5649,6 +6273,7 @@ tables:
     description: Petrosian apertures in units of A or B in j0861 filter
     name: petro_radius_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_g'
@@ -5656,6 +6281,7 @@ tables:
     description: Petrosian apertures in units of A or B in g filter
     name: petro_radius_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_i'
@@ -5663,6 +6289,7 @@ tables:
     description: Petrosian apertures in units of A or B in i filter
     name: petro_radius_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_r'
@@ -5670,6 +6297,7 @@ tables:
     description: Petrosian apertures in units of A or B in r filter
     name: petro_radius_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_u'
@@ -5677,6 +6305,7 @@ tables:
     description: Petrosian apertures in units of A or B in u filter
     name: petro_radius_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.petro_radius_z'
@@ -5684,6 +6313,7 @@ tables:
     description: Petrosian apertures in units of A or B in z filter
     name: petro_radius_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.sex_flags_j0378'
@@ -5860,6 +6490,7 @@ tables:
     fits:tunit: deg
     name: theta_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0395'
@@ -5868,6 +6499,7 @@ tables:
     fits:tunit: deg
     name: theta_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0410'
@@ -5876,6 +6508,7 @@ tables:
     fits:tunit: deg
     name: theta_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0430'
@@ -5884,6 +6517,7 @@ tables:
     fits:tunit: deg
     name: theta_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0515'
@@ -5892,6 +6526,7 @@ tables:
     fits:tunit: deg
     name: theta_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0660'
@@ -5900,6 +6535,7 @@ tables:
     fits:tunit: deg
     name: theta_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_j0861'
@@ -5908,6 +6544,7 @@ tables:
     fits:tunit: deg
     name: theta_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_g'
@@ -5916,6 +6553,7 @@ tables:
     fits:tunit: deg
     name: theta_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_i'
@@ -5924,6 +6562,7 @@ tables:
     fits:tunit: deg
     name: theta_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_r'
@@ -5932,6 +6571,7 @@ tables:
     fits:tunit: deg
     name: theta_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_u'
@@ -5940,6 +6580,7 @@ tables:
     fits:tunit: deg
     name: theta_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.theta_z'
@@ -5948,6 +6589,7 @@ tables:
     fits:tunit: deg
     name: theta_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0378'
@@ -5955,6 +6597,7 @@ tables:
     description: Instrumental detection threshold above background in j0378 filter
     name: threshold_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0395'
@@ -5962,6 +6605,7 @@ tables:
     description: Instrumental detection threshold above background in j0395 filter
     name: threshold_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0410'
@@ -5969,6 +6613,7 @@ tables:
     description: Instrumental detection threshold above background in j0410 filter
     name: threshold_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0430'
@@ -5976,6 +6621,7 @@ tables:
     description: Instrumental detection threshold above background in j0430 filter
     name: threshold_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0515'
@@ -5983,6 +6629,7 @@ tables:
     description: Instrumental detection threshold above background in j0515 filter
     name: threshold_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0660'
@@ -5990,6 +6637,7 @@ tables:
     description: Instrumental detection threshold above background in j0660 filter
     name: threshold_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_j0861'
@@ -5997,6 +6645,7 @@ tables:
     description: Instrumental detection threshold above background in j0861 filter
     name: threshold_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_g'
@@ -6004,6 +6653,7 @@ tables:
     description: Instrumental detection threshold above background in g filter
     name: threshold_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_i'
@@ -6011,6 +6661,7 @@ tables:
     description: Instrumental detection threshold above background in i filter
     name: threshold_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_r'
@@ -6018,6 +6669,7 @@ tables:
     description: Instrumental detection threshold above background in r filter
     name: threshold_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_u'
@@ -6025,6 +6677,7 @@ tables:
     description: Instrumental detection threshold above background in u filter
     name: threshold_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.threshold_z'
@@ -6032,6 +6685,7 @@ tables:
     description: Instrumental detection threshold above background in z filter
     name: threshold_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0378'
@@ -6040,6 +6694,7 @@ tables:
     fits:tunit: pixel
     name: x_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0395'
@@ -6048,6 +6703,7 @@ tables:
     fits:tunit: pixel
     name: x_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0410'
@@ -6056,6 +6712,7 @@ tables:
     fits:tunit: pixel
     name: x_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0430'
@@ -6064,6 +6721,7 @@ tables:
     fits:tunit: pixel
     name: x_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0515'
@@ -6072,6 +6730,7 @@ tables:
     fits:tunit: pixel
     name: x_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0660'
@@ -6080,6 +6739,7 @@ tables:
     fits:tunit: pixel
     name: x_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_j0861'
@@ -6088,6 +6748,7 @@ tables:
     fits:tunit: pixel
     name: x_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_g'
@@ -6096,6 +6757,7 @@ tables:
     fits:tunit: pixel
     name: x_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_i'
@@ -6104,6 +6766,7 @@ tables:
     fits:tunit: pixel
     name: x_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_r'
@@ -6112,6 +6775,7 @@ tables:
     fits:tunit: pixel
     name: x_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_u'
@@ -6120,6 +6784,7 @@ tables:
     fits:tunit: pixel
     name: x_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.x_z'
@@ -6128,6 +6793,7 @@ tables:
     fits:tunit: pixel
     name: x_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0378'
@@ -6136,6 +6802,7 @@ tables:
     fits:tunit: pixel
     name: y_j0378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0395'
@@ -6144,6 +6811,7 @@ tables:
     fits:tunit: pixel
     name: y_j0395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0410'
@@ -6152,6 +6820,7 @@ tables:
     fits:tunit: pixel
     name: y_j0410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0430'
@@ -6160,6 +6829,7 @@ tables:
     fits:tunit: pixel
     name: y_j0430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0515'
@@ -6168,6 +6838,7 @@ tables:
     fits:tunit: pixel
     name: y_j0515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0660'
@@ -6176,6 +6847,7 @@ tables:
     fits:tunit: pixel
     name: y_j0660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_j0861'
@@ -6184,6 +6856,7 @@ tables:
     fits:tunit: pixel
     name: y_j0861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_g'
@@ -6192,6 +6865,7 @@ tables:
     fits:tunit: pixel
     name: y_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_i'
@@ -6200,6 +6874,7 @@ tables:
     fits:tunit: pixel
     name: y_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_r'
@@ -6208,6 +6883,7 @@ tables:
     fits:tunit: pixel
     name: y_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_u'
@@ -6216,6 +6892,7 @@ tables:
     fits:tunit: pixel
     name: y_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.y_z'
@@ -6224,6 +6901,7 @@ tables:
     fits:tunit: pixel
     name: y_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_pstotal'
@@ -6232,6 +6910,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_aper_3'
@@ -6240,6 +6919,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_aper_6'
@@ -6248,6 +6928,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_auto'
@@ -6256,6 +6937,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_iso'
@@ -6264,6 +6946,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0378_petro'
@@ -6272,6 +6955,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_pstotal'
@@ -6280,6 +6964,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_aper_3'
@@ -6288,6 +6973,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_aper_6'
@@ -6296,6 +6982,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_auto'
@@ -6304,6 +6991,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_iso'
@@ -6312,6 +7000,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0395_petro'
@@ -6320,6 +7009,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_pstotal'
@@ -6328,6 +7018,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_aper_3'
@@ -6336,6 +7027,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_aper_6'
@@ -6344,6 +7036,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_auto'
@@ -6352,6 +7045,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_iso'
@@ -6360,6 +7054,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0410_petro'
@@ -6368,6 +7063,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_pstotal'
@@ -6376,6 +7072,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_aper_3'
@@ -6384,6 +7081,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_aper_6'
@@ -6392,6 +7090,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_auto'
@@ -6400,6 +7099,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_iso'
@@ -6408,6 +7108,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0430_petro'
@@ -6416,6 +7117,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_pstotal'
@@ -6424,6 +7126,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_aper_3'
@@ -6432,6 +7135,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_aper_6'
@@ -6440,6 +7144,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_auto'
@@ -6448,6 +7153,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_iso'
@@ -6456,6 +7162,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0515_petro'
@@ -6464,6 +7171,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_pstotal'
@@ -6472,6 +7180,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_aper_3'
@@ -6480,6 +7189,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_aper_6'
@@ -6488,6 +7198,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_auto'
@@ -6496,6 +7207,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_iso'
@@ -6504,6 +7216,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0660_petro'
@@ -6512,6 +7225,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_pstotal'
@@ -6520,6 +7234,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_aper_3'
@@ -6528,6 +7243,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_aper_6'
@@ -6536,6 +7252,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_auto'
@@ -6544,6 +7261,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_iso'
@@ -6552,6 +7270,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_j0861_petro'
@@ -6560,6 +7279,7 @@ tables:
     fits:tunit: AB mag
     name: e_j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_pstotal'
@@ -6568,6 +7288,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_aper_3'
@@ -6576,6 +7297,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_aper_6'
@@ -6584,6 +7306,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_auto'
@@ -6592,6 +7315,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_iso'
@@ -6600,6 +7324,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_g_petro'
@@ -6608,6 +7333,7 @@ tables:
     fits:tunit: AB mag
     name: e_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_pstotal'
@@ -6616,6 +7342,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_aper_3'
@@ -6624,6 +7351,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_aper_6'
@@ -6632,6 +7360,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_auto'
@@ -6640,6 +7369,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_iso'
@@ -6648,6 +7378,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_i_petro'
@@ -6656,6 +7387,7 @@ tables:
     fits:tunit: AB mag
     name: e_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_pstotal'
@@ -6664,6 +7396,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_aper_3'
@@ -6672,6 +7405,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_aper_6'
@@ -6680,6 +7414,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_auto'
@@ -6688,6 +7423,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_iso'
@@ -6696,6 +7432,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_r_petro'
@@ -6704,6 +7441,7 @@ tables:
     fits:tunit: AB mag
     name: e_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_pstotal'
@@ -6712,6 +7450,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_aper_3'
@@ -6720,6 +7459,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_aper_6'
@@ -6728,6 +7468,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_auto'
@@ -6736,6 +7477,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_iso'
@@ -6744,6 +7486,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_u_petro'
@@ -6752,6 +7495,7 @@ tables:
     fits:tunit: AB mag
     name: e_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_pstotal'
@@ -6760,6 +7504,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_aper_3'
@@ -6768,6 +7513,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_aper_6'
@@ -6776,6 +7522,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_auto'
@@ -6784,6 +7531,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_iso'
@@ -6792,6 +7540,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.e_z_petro'
@@ -6800,6 +7549,7 @@ tables:
     fits:tunit: AB mag
     name: e_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_pstotal'
@@ -6808,6 +7558,7 @@ tables:
     fits:tunit: AB mag
     name: g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_aper_3'
@@ -6816,6 +7567,7 @@ tables:
     fits:tunit: AB mag
     name: g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_aper_6'
@@ -6824,6 +7576,7 @@ tables:
     fits:tunit: AB mag
     name: g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_auto'
@@ -6832,6 +7585,7 @@ tables:
     fits:tunit: AB mag
     name: g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_iso'
@@ -6840,6 +7594,7 @@ tables:
     fits:tunit: AB mag
     name: g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.g_petro'
@@ -6848,6 +7603,7 @@ tables:
     fits:tunit: AB mag
     name: g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_pstotal'
@@ -6856,6 +7612,7 @@ tables:
     fits:tunit: AB mag
     name: i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_aper_3'
@@ -6864,6 +7621,7 @@ tables:
     fits:tunit: AB mag
     name: i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_aper_6'
@@ -6872,6 +7630,7 @@ tables:
     fits:tunit: AB mag
     name: i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_auto'
@@ -6880,6 +7639,7 @@ tables:
     fits:tunit: AB mag
     name: i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_iso'
@@ -6888,6 +7648,7 @@ tables:
     fits:tunit: AB mag
     name: i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.i_petro'
@@ -6896,6 +7657,7 @@ tables:
     fits:tunit: AB mag
     name: i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_pstotal'
@@ -6904,6 +7666,7 @@ tables:
     fits:tunit: AB mag
     name: r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_aper_3'
@@ -6912,6 +7675,7 @@ tables:
     fits:tunit: AB mag
     name: r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_aper_6'
@@ -6920,6 +7684,7 @@ tables:
     fits:tunit: AB mag
     name: r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_auto'
@@ -6928,6 +7693,7 @@ tables:
     fits:tunit: AB mag
     name: r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_iso'
@@ -6936,6 +7702,7 @@ tables:
     fits:tunit: AB mag
     name: r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.r_petro'
@@ -6944,6 +7711,7 @@ tables:
     fits:tunit: AB mag
     name: r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_pstotal'
@@ -6951,6 +7719,7 @@ tables:
     description: Signal to noise ratio of j0378_pstotal measurement
     name: s2n_j0378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_aper_3'
@@ -6958,6 +7727,7 @@ tables:
     description: Signal to noise ratio of j0378_aper_3 measurement
     name: s2n_j0378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_aper_6'
@@ -6965,6 +7735,7 @@ tables:
     description: Signal to noise ratio of j0378_aper_6 measurement
     name: s2n_j0378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_auto'
@@ -6972,6 +7743,7 @@ tables:
     description: Signal to noise ratio of j0378_auto measurement
     name: s2n_j0378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_iso'
@@ -6979,6 +7751,7 @@ tables:
     description: Signal to noise ratio of j0378_iso measurement
     name: s2n_j0378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0378_petro'
@@ -6986,6 +7759,7 @@ tables:
     description: Signal to noise ratio of j0378_petro measurement
     name: s2n_j0378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_pstotal'
@@ -6993,6 +7767,7 @@ tables:
     description: Signal to noise ratio of j0395_pstotal measurement
     name: s2n_j0395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_aper_3'
@@ -7000,6 +7775,7 @@ tables:
     description: Signal to noise ratio of j0395_aper_3 measurement
     name: s2n_j0395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_aper_6'
@@ -7007,6 +7783,7 @@ tables:
     description: Signal to noise ratio of j0395_aper_6 measurement
     name: s2n_j0395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_auto'
@@ -7014,6 +7791,7 @@ tables:
     description: Signal to noise ratio of j0395_auto measurement
     name: s2n_j0395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_iso'
@@ -7021,6 +7799,7 @@ tables:
     description: Signal to noise ratio of j0395_iso measurement
     name: s2n_j0395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0395_petro'
@@ -7028,6 +7807,7 @@ tables:
     description: Signal to noise ratio of j0395_petro measurement
     name: s2n_j0395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_pstotal'
@@ -7035,6 +7815,7 @@ tables:
     description: Signal to noise ratio of j0410_pstotal measurement
     name: s2n_j0410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_aper_3'
@@ -7042,6 +7823,7 @@ tables:
     description: Signal to noise ratio of j0410_aper_3 measurement
     name: s2n_j0410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_aper_6'
@@ -7049,6 +7831,7 @@ tables:
     description: Signal to noise ratio of j0410_aper_6 measurement
     name: s2n_j0410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_auto'
@@ -7056,6 +7839,7 @@ tables:
     description: Signal to noise ratio of j0410_auto measurement
     name: s2n_j0410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_iso'
@@ -7063,6 +7847,7 @@ tables:
     description: Signal to noise ratio of j0410_iso measurement
     name: s2n_j0410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0410_petro'
@@ -7070,6 +7855,7 @@ tables:
     description: Signal to noise ratio of j0410_petro measurement
     name: s2n_j0410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_pstotal'
@@ -7077,6 +7863,7 @@ tables:
     description: Signal to noise ratio of j0430_pstotal measurement
     name: s2n_j0430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_aper_3'
@@ -7084,6 +7871,7 @@ tables:
     description: Signal to noise ratio of j0430_aper_3 measurement
     name: s2n_j0430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_aper_6'
@@ -7091,6 +7879,7 @@ tables:
     description: Signal to noise ratio of j0430_aper_6 measurement
     name: s2n_j0430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_auto'
@@ -7098,6 +7887,7 @@ tables:
     description: Signal to noise ratio of j0430_auto measurement
     name: s2n_j0430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_iso'
@@ -7105,6 +7895,7 @@ tables:
     description: Signal to noise ratio of j0430_iso measurement
     name: s2n_j0430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0430_petro'
@@ -7112,6 +7903,7 @@ tables:
     description: Signal to noise ratio of j0430_petro measurement
     name: s2n_j0430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_pstotal'
@@ -7119,6 +7911,7 @@ tables:
     description: Signal to noise ratio of j0515_pstotal measurement
     name: s2n_j0515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_aper_3'
@@ -7126,6 +7919,7 @@ tables:
     description: Signal to noise ratio of j0515_aper_3 measurement
     name: s2n_j0515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_aper_6'
@@ -7133,6 +7927,7 @@ tables:
     description: Signal to noise ratio of j0515_aper_6 measurement
     name: s2n_j0515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_auto'
@@ -7140,6 +7935,7 @@ tables:
     description: Signal to noise ratio of j0515_auto measurement
     name: s2n_j0515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_iso'
@@ -7147,6 +7943,7 @@ tables:
     description: Signal to noise ratio of j0515_iso measurement
     name: s2n_j0515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0515_petro'
@@ -7154,6 +7951,7 @@ tables:
     description: Signal to noise ratio of j0515_petro measurement
     name: s2n_j0515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_pstotal'
@@ -7161,6 +7959,7 @@ tables:
     description: Signal to noise ratio of j0660_pstotal measurement
     name: s2n_j0660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_aper_3'
@@ -7168,6 +7967,7 @@ tables:
     description: Signal to noise ratio of j0660_aper_3 measurement
     name: s2n_j0660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_aper_6'
@@ -7175,6 +7975,7 @@ tables:
     description: Signal to noise ratio of j0660_aper_6 measurement
     name: s2n_j0660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_auto'
@@ -7182,6 +7983,7 @@ tables:
     description: Signal to noise ratio of j0660_auto measurement
     name: s2n_j0660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_iso'
@@ -7189,6 +7991,7 @@ tables:
     description: Signal to noise ratio of j0660_iso measurement
     name: s2n_j0660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0660_petro'
@@ -7196,6 +7999,7 @@ tables:
     description: Signal to noise ratio of j0660_petro measurement
     name: s2n_j0660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_pstotal'
@@ -7203,6 +8007,7 @@ tables:
     description: Signal to noise ratio of j0861_pstotal measurement
     name: s2n_j0861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_aper_3'
@@ -7210,6 +8015,7 @@ tables:
     description: Signal to noise ratio of j0861_aper_3 measurement
     name: s2n_j0861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_aper_6'
@@ -7217,6 +8023,7 @@ tables:
     description: Signal to noise ratio of j0861_aper_6 measurement
     name: s2n_j0861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_auto'
@@ -7224,6 +8031,7 @@ tables:
     description: Signal to noise ratio of j0861_auto measurement
     name: s2n_j0861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_iso'
@@ -7231,6 +8039,7 @@ tables:
     description: Signal to noise ratio of j0861_iso measurement
     name: s2n_j0861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_j0861_petro'
@@ -7238,6 +8047,7 @@ tables:
     description: Signal to noise ratio of j0861_petro measurement
     name: s2n_j0861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_pstotal'
@@ -7245,6 +8055,7 @@ tables:
     description: Signal to noise ratio of g_pstotal measurement
     name: s2n_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_aper_3'
@@ -7252,6 +8063,7 @@ tables:
     description: Signal to noise ratio of g_aper_3 measurement
     name: s2n_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_aper_6'
@@ -7259,6 +8071,7 @@ tables:
     description: Signal to noise ratio of g_aper_6 measurement
     name: s2n_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_auto'
@@ -7266,6 +8079,7 @@ tables:
     description: Signal to noise ratio of g_auto measurement
     name: s2n_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_iso'
@@ -7273,6 +8087,7 @@ tables:
     description: Signal to noise ratio of g_iso measurement
     name: s2n_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_g_petro'
@@ -7280,6 +8095,7 @@ tables:
     description: Signal to noise ratio of g_petro measurement
     name: s2n_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_pstotal'
@@ -7287,6 +8103,7 @@ tables:
     description: Signal to noise ratio of i_pstotal measurement
     name: s2n_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_aper_3'
@@ -7294,6 +8111,7 @@ tables:
     description: Signal to noise ratio of i_aper_3 measurement
     name: s2n_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_aper_6'
@@ -7301,6 +8119,7 @@ tables:
     description: Signal to noise ratio of i_aper_6 measurement
     name: s2n_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_auto'
@@ -7308,6 +8127,7 @@ tables:
     description: Signal to noise ratio of i_auto measurement
     name: s2n_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_iso'
@@ -7315,6 +8135,7 @@ tables:
     description: Signal to noise ratio of i_iso measurement
     name: s2n_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_i_petro'
@@ -7322,6 +8143,7 @@ tables:
     description: Signal to noise ratio of i_petro measurement
     name: s2n_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_pstotal'
@@ -7329,6 +8151,7 @@ tables:
     description: Signal to noise ratio of r_pstotal measurement
     name: s2n_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_aper_3'
@@ -7336,6 +8159,7 @@ tables:
     description: Signal to noise ratio of r_aper_3 measurement
     name: s2n_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_aper_6'
@@ -7343,6 +8167,7 @@ tables:
     description: Signal to noise ratio of r_aper_6 measurement
     name: s2n_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_auto'
@@ -7350,6 +8175,7 @@ tables:
     description: Signal to noise ratio of r_auto measurement
     name: s2n_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_iso'
@@ -7357,6 +8183,7 @@ tables:
     description: Signal to noise ratio of r_iso measurement
     name: s2n_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_r_petro'
@@ -7364,6 +8191,7 @@ tables:
     description: Signal to noise ratio of r_petro measurement
     name: s2n_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_pstotal'
@@ -7371,6 +8199,7 @@ tables:
     description: Signal to noise ratio of u_pstotal measurement
     name: s2n_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_aper_3'
@@ -7378,6 +8207,7 @@ tables:
     description: Signal to noise ratio of u_aper_3 measurement
     name: s2n_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_aper_6'
@@ -7385,6 +8215,7 @@ tables:
     description: Signal to noise ratio of u_aper_6 measurement
     name: s2n_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_auto'
@@ -7392,6 +8223,7 @@ tables:
     description: Signal to noise ratio of u_auto measurement
     name: s2n_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_iso'
@@ -7399,6 +8231,7 @@ tables:
     description: Signal to noise ratio of u_iso measurement
     name: s2n_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_u_petro'
@@ -7406,6 +8239,7 @@ tables:
     description: Signal to noise ratio of u_petro measurement
     name: s2n_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_pstotal'
@@ -7413,6 +8247,7 @@ tables:
     description: Signal to noise ratio of z_pstotal measurement
     name: s2n_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_aper_3'
@@ -7420,6 +8255,7 @@ tables:
     description: Signal to noise ratio of z_aper_3 measurement
     name: s2n_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_aper_6'
@@ -7427,6 +8263,7 @@ tables:
     description: Signal to noise ratio of z_aper_6 measurement
     name: s2n_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_auto'
@@ -7434,6 +8271,7 @@ tables:
     description: Signal to noise ratio of z_auto measurement
     name: s2n_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_iso'
@@ -7441,6 +8279,7 @@ tables:
     description: Signal to noise ratio of z_iso measurement
     name: s2n_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.s2n_z_petro'
@@ -7448,6 +8287,7 @@ tables:
     description: Signal to noise ratio of z_petro measurement
     name: s2n_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_pstotal'
@@ -7456,6 +8296,7 @@ tables:
     fits:tunit: AB mag
     name: u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_aper_3'
@@ -7464,6 +8305,7 @@ tables:
     fits:tunit: AB mag
     name: u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_aper_6'
@@ -7472,6 +8314,7 @@ tables:
     fits:tunit: AB mag
     name: u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_auto'
@@ -7480,6 +8323,7 @@ tables:
     fits:tunit: AB mag
     name: u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_iso'
@@ -7488,6 +8332,7 @@ tables:
     fits:tunit: AB mag
     name: u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.u_petro'
@@ -7496,6 +8341,7 @@ tables:
     fits:tunit: AB mag
     name: u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_pstotal'
@@ -7504,6 +8350,7 @@ tables:
     fits:tunit: AB mag
     name: z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_aper_3'
@@ -7512,6 +8359,7 @@ tables:
     fits:tunit: AB mag
     name: z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_aper_6'
@@ -7520,6 +8368,7 @@ tables:
     fits:tunit: AB mag
     name: z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_auto'
@@ -7528,6 +8377,7 @@ tables:
     fits:tunit: AB mag
     name: z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_iso'
@@ -7536,6 +8386,7 @@ tables:
     fits:tunit: AB mag
     name: z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.z_petro'
@@ -7544,6 +8395,7 @@ tables:
     fits:tunit: AB mag
     name: z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.random_id'
@@ -7551,6 +8403,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.single.htm9'
@@ -7818,6 +8671,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.calib_flag.dec'
@@ -7827,6 +8681,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.calib_flag.calib_flag'
@@ -7849,6 +8704,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.calib_flag.htm9'
@@ -7992,6 +8848,7 @@ tables:
       a maximum-aposteriori estimate from the PDF
     name: zml
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.zml_2_5q'
@@ -7999,6 +8856,7 @@ tables:
     description: 2.5% percentile of the CDF of the object
     name: zml_2_5q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.zml_16q'
@@ -8006,6 +8864,7 @@ tables:
     description: 16% percentile of the CDF of the object
     name: zml_16q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.zml_84q'
@@ -8013,6 +8872,7 @@ tables:
     description: 84% percentile of the CDF of the object
     name: zml_84q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.zml_97_5q'
@@ -8020,6 +8880,7 @@ tables:
     description: 97.5% percentile of the CDF of the object
     name: zml_97_5q
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.pdf_peaks'
@@ -8027,6 +8888,7 @@ tables:
     description: Number of peaks detected in the PDF
     name: pdf_peaks
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.zml_second_peak'
@@ -8035,6 +8897,7 @@ tables:
       is detected
     name: zml_second_peak
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.pdf_err'
@@ -8042,6 +8905,7 @@ tables:
     description: Width of the PDF
     name: pdf_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.odds'
@@ -8049,6 +8913,7 @@ tables:
     description: Odds of the object, calculated as in Benitez et al. 2000
     name: odds
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.pdf_weights'
@@ -8080,6 +8945,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.photoz.htm9'
@@ -10020,6 +10886,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.qso_z.htm9'
@@ -10221,6 +11088,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.splusid.htm9'
@@ -10403,6 +11271,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr4.sqg.htm9'

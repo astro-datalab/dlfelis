@@ -39,6 +39,7 @@ tables:
     ivoa:ucd: pos.eq.ra
     name: ra_best
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.clusters.dec_best'
@@ -50,6 +51,7 @@ tables:
     ivoa:ucd: pos.eq.dec
     name: dec_best
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.clusters.ra_gmos'
@@ -58,6 +60,7 @@ tables:
       observations (GOGREEN only)
     name: ra_gmos
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.clusters.dec_gmos'
@@ -91,6 +94,7 @@ tables:
       of The GOGREEN adn GCLASS Survey: First Data Release paper.'
     name: vdisp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.clusters.vdisp_err'
@@ -99,6 +103,7 @@ tables:
       &sect;4.2.3 of The GOGREEN adn GCLASS Survey: First Data Release paper.'
     name: vdisp_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.clusters.gogreen_m1'
@@ -335,6 +340,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: information relevant to each cluster in system in the GCLASS and GOGREEN
@@ -952,6 +958,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: selected photometric data for each cluster system in the GCLASS, GOGREEN
@@ -990,6 +997,7 @@ tables:
     ivoa:ucd: pos.eq.ra
     name: ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.dec'
@@ -1001,6 +1009,7 @@ tables:
     ivoa:ucd: pos.eq.dec
     name: dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.objclass'
@@ -1019,6 +1028,7 @@ tables:
     description: The redshift measured from the spectrum
     name: redshift
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.redshift_quality'
@@ -1054,6 +1064,7 @@ tables:
       objects, and poor sky subtraction'
     name: spec_flag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.snr_8500_var'
@@ -1063,6 +1074,7 @@ tables:
       with the spectrum.
     name: snr_8500_var
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.snr_8500_rms'
@@ -1072,6 +1084,7 @@ tables:
       spectrum over the same range.
     name: snr_8500_rms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.d4000'
@@ -1080,6 +1093,7 @@ tables:
       See &sect; 4.2.2 in survey paper.
     name: d4000
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.ed4000'
@@ -1087,6 +1101,7 @@ tables:
     description: The D<sub>n</sub> 4000 index uncertainty
     name: ed4000
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.ewoii'
@@ -1096,6 +1111,7 @@ tables:
       emission. See &sect; 4.2.2
     name: ewoii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.eewoii'
@@ -1103,6 +1119,7 @@ tables:
     description: Uncertainty of ewoii
     name: eewoii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.ewhdelta'
@@ -1112,6 +1129,7 @@ tables:
       absorption. See &sect; 4.2.2 in survey paper
     name: ewhdelta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.eewhdelta'
@@ -1119,6 +1137,7 @@ tables:
     description: Uncertainty of ewhdelta
     name: eewhdelta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.ewoii_model'
@@ -1127,6 +1146,7 @@ tables:
       from the Gaussian fitting model described in Old et al. (2020).
     name: ewoii_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.eewoii_model'
@@ -1134,6 +1154,7 @@ tables:
     description: Uncertainty of ewoii_model
     name: eewoii_model
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.f_oii'
@@ -1142,6 +1163,7 @@ tables:
       calculated from the Gaussian fitting model described in Old et al. (2020).
     name: f_oii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.ef_oii'
@@ -1149,6 +1171,7 @@ tables:
     description: Uncertainty of f_oii
     name: ef_oii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.sfr_oii'
@@ -1158,6 +1181,7 @@ tables:
       Gilbank et al. (2010).
     name: sfr_oii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.esfr_oii'
@@ -1165,6 +1189,7 @@ tables:
     description: Uncertainty of sfr_oii
     name: esfr_oii
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.delta_bic'
@@ -1174,6 +1199,7 @@ tables:
       < -10). See Old et al. (2020) for more details.
     name: delta_bic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.member_clean'
@@ -1184,6 +1210,7 @@ tables:
       membership could not be determined.
     name: member_clean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.member_em'
@@ -1194,6 +1221,7 @@ tables:
       indicates membership could not be determined.
     name: member_em
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.member'
@@ -1206,6 +1234,7 @@ tables:
       2.5&sigma; of the centre, as described in &sect; 4.2.3. of the survey paper
     name: member
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gogreen_dr1.redshift.htm9'
@@ -1234,6 +1263,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: contains an entry for every unique object with a GOGREEN or GCLASS

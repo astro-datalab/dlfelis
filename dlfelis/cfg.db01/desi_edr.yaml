@@ -226,6 +226,7 @@ tables:
     description: Minimum fraction of GOALTIME acceptable for considering a tile complete
     name: mintfrac
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.airmass'
@@ -233,6 +234,7 @@ tables:
     description: Average airmass during this exposure
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.efftime_etc'
@@ -242,6 +244,7 @@ tables:
     fits:tunit: s
     name: efftime_etc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_elg'
@@ -249,6 +252,7 @@ tables:
     description: ELG template (S/N)^2 summed over B, R, Z
     name: tsnr2_elg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_qso'
@@ -256,6 +260,7 @@ tables:
     description: QSO template (S/N)^2 summed over B, R, Z
     name: tsnr2_qso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_lrg'
@@ -263,6 +268,7 @@ tables:
     description: LRG template (S/N)^2 summed over B, R, Z
     name: tsnr2_lrg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_bgs'
@@ -270,6 +276,7 @@ tables:
     description: BGS template (S/N)^2 summed over B, R, Z
     name: tsnr2_bgs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_gpbdark'
@@ -277,6 +284,7 @@ tables:
     description: GPBDARK template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbdark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_gpbbright'
@@ -284,6 +292,7 @@ tables:
     description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.tsnr2_gpbbackup'
@@ -291,6 +300,7 @@ tables:
     description: GPBBACKUP template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbackup
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.lrg_efftime_dark'
@@ -300,6 +310,7 @@ tables:
     fits:tunit: s
     name: lrg_efftime_dark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.elg_efftime_dark'
@@ -309,6 +320,7 @@ tables:
     fits:tunit: s
     name: elg_efftime_dark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.bgs_efftime_bright'
@@ -318,6 +330,7 @@ tables:
     fits:tunit: s
     name: bgs_efftime_bright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.gpb_efftime_dark'
@@ -327,6 +340,7 @@ tables:
     fits:tunit: s
     name: gpb_efftime_dark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.gpb_efftime_bright'
@@ -336,6 +350,7 @@ tables:
     fits:tunit: s
     name: gpb_efftime_bright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.gpb_efftime_backup'
@@ -345,6 +360,7 @@ tables:
     fits:tunit: s
     name: gpb_efftime_backup
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.random_id'
@@ -352,6 +368,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.exposure.night'
@@ -541,6 +558,7 @@ tables:
     description: Wavelength at which targets should be centered on fibers
     name: lambda_ref
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.fiberassign.fiberassign_x'
@@ -548,6 +566,7 @@ tables:
     description: Expected CS5 X on focal plane
     name: fiberassign_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.fiberassign.fiberassign_y'
@@ -555,6 +574,7 @@ tables:
     description: Expected CS5 Y on focal plane
     name: fiberassign_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.fiberassign.random_id'
@@ -562,6 +582,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.fiberassign.htm9'
@@ -727,6 +748,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.ebv'
@@ -735,6 +757,7 @@ tables:
     fits:tunit: mag
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_gpbdark'
@@ -742,6 +765,7 @@ tables:
     description: GPBDARK template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbdark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_elg'
@@ -749,6 +773,7 @@ tables:
     description: ELG template (S/N)^2 summed over B, R, Z
     name: tsnr2_elg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_gpbbright'
@@ -756,6 +781,7 @@ tables:
     description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_bgs'
@@ -763,6 +789,7 @@ tables:
     description: BGS template (S/N)^2 summed over B, R, Z
     name: tsnr2_bgs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_gpbbackup'
@@ -770,6 +797,7 @@ tables:
     description: GPBBACKUP template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbackup
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_qso'
@@ -777,6 +805,7 @@ tables:
     description: QSO template (S/N)^2 summed over B, R, Z
     name: tsnr2_qso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.tsnr2_lrg'
@@ -784,6 +813,7 @@ tables:
     description: LRG template (S/N)^2 summed over B, R, Z
     name: tsnr2_lrg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.random_id'
@@ -791,6 +821,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.frame.frameid'
@@ -932,6 +963,7 @@ tables:
     fits:tunit: deg^-2
     name: ra_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dec_ivar'
@@ -940,6 +972,7 @@ tables:
     fits:tunit: deg^-2
     name: dec_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dchisq_psf'
@@ -947,6 +980,7 @@ tables:
     description: Difference in chi-squared between PSF (stellar) Tractor model fits
     name: dchisq_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dchisq_rex'
@@ -955,6 +989,7 @@ tables:
       Tractor model fits
     name: dchisq_rex
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dchisq_dev'
@@ -962,6 +997,7 @@ tables:
     description: Difference in chi-squared between DEV (deVauc) Tractor model fits
     name: dchisq_dev
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dchisq_exp'
@@ -970,6 +1006,7 @@ tables:
       fits
     name: dchisq_exp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.dchisq_ser'
@@ -977,6 +1014,7 @@ tables:
     description: Difference in chi-squared between SER (Sersic) Tractor model fits
     name: dchisq_ser
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.ebv'
@@ -985,6 +1023,7 @@ tables:
     fits:tunit: mag
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_g'
@@ -993,6 +1032,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_r'
@@ -1001,6 +1041,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_z'
@@ -1009,6 +1050,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_g'
@@ -1017,6 +1059,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_r'
@@ -1025,6 +1068,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_z'
@@ -1033,6 +1077,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_g'
@@ -1040,6 +1085,7 @@ tables:
     description: Milky Way dust transmission in LS g-band
     name: mw_transmission_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_r'
@@ -1047,6 +1093,7 @@ tables:
     description: Milky Way dust transmission in LS r-band
     name: mw_transmission_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_z'
@@ -1054,6 +1101,7 @@ tables:
     description: Milky Way dust transmission in LS z-band
     name: mw_transmission_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracflux_g'
@@ -1062,6 +1110,7 @@ tables:
       by the total flux in g (typically [0,1])
     name: fracflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracflux_r'
@@ -1070,6 +1119,7 @@ tables:
       by the total flux in r (typically [0,1])
     name: fracflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracflux_z'
@@ -1078,6 +1128,7 @@ tables:
       by the total flux in z (typically [0,1])
     name: fracflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracmasked_g'
@@ -1086,6 +1137,7 @@ tables:
       of this object in g, strictly between [0,1]
     name: fracmasked_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracmasked_r'
@@ -1094,6 +1146,7 @@ tables:
       of this object in r, strictly between [0,1]
     name: fracmasked_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracmasked_z'
@@ -1102,6 +1155,7 @@ tables:
       of this object in z, strictly between [0,1]
     name: fracmasked_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracin_g'
@@ -1110,6 +1164,7 @@ tables:
       sources
     name: fracin_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracin_r'
@@ -1118,6 +1173,7 @@ tables:
       sources
     name: fracin_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fracin_z'
@@ -1126,6 +1182,7 @@ tables:
       sources
     name: fracin_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.psfdepth_g'
@@ -1134,6 +1191,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.psfdepth_r'
@@ -1142,6 +1200,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.psfdepth_z'
@@ -1150,6 +1209,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.galdepth_g'
@@ -1158,6 +1218,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.galdepth_r'
@@ -1166,6 +1227,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.galdepth_z'
@@ -1174,6 +1236,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_w1'
@@ -1182,6 +1245,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_w2'
@@ -1190,6 +1254,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_w3'
@@ -1198,6 +1263,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_w4'
@@ -1206,6 +1272,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_w1'
@@ -1214,6 +1281,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_w2'
@@ -1222,6 +1290,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_w3'
@@ -1230,6 +1299,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.flux_ivar_w4'
@@ -1238,6 +1308,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_w1'
@@ -1245,6 +1316,7 @@ tables:
     description: Milky Way dust transmission in WISE W1
     name: mw_transmission_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_w2'
@@ -1252,6 +1324,7 @@ tables:
     description: Milky Way dust transmission in WISE W2
     name: mw_transmission_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_w3'
@@ -1259,6 +1332,7 @@ tables:
     description: Milky Way dust transmission in WISE W3
     name: mw_transmission_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.mw_transmission_w4'
@@ -1266,6 +1340,7 @@ tables:
     description: Milky Way dust transmission in WISE W4
     name: mw_transmission_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fiberflux_g'
@@ -1275,6 +1350,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fiberflux_r'
@@ -1284,6 +1360,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fiberflux_z'
@@ -1293,6 +1370,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fibertotflux_g'
@@ -1302,6 +1380,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fibertotflux_r'
@@ -1311,6 +1390,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.fibertotflux_z'
@@ -1320,6 +1400,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.ref_epoch'
@@ -1327,6 +1408,7 @@ tables:
     description: Reference epoch for Gaia/Tycho astrometry. Typically 2015.5 for Gaia
     name: ref_epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_r'
@@ -1335,6 +1417,7 @@ tables:
     fits:tunit: arcsec
     name: shape_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_e1'
@@ -1342,6 +1425,7 @@ tables:
     description: Ellipticity component 1 of galaxy model for galaxy type MORPHTYPE
     name: shape_e1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_e2'
@@ -1349,6 +1433,7 @@ tables:
     description: Ellipticity component 2 of galaxy model for galaxy type MORPHTYPE
     name: shape_e2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_r_ivar'
@@ -1357,6 +1442,7 @@ tables:
     fits:tunit: arcsec^-2
     name: shape_r_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_e1_ivar'
@@ -1364,6 +1450,7 @@ tables:
     description: Inverse variance of SHAPE_E1
     name: shape_e1_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.shape_e2_ivar'
@@ -1371,6 +1458,7 @@ tables:
     description: Inverse variance of SHAPE_E2
     name: shape_e2_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.sersic'
@@ -1378,6 +1466,7 @@ tables:
     description: Power-law index for the Sersic profile model (MORPHTYPE=SER)
     name: sersic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.sersic_ivar'
@@ -1385,6 +1474,7 @@ tables:
     description: Inverse variance of SERSIC
     name: sersic_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_g_mean_mag'
@@ -1393,6 +1483,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_g_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_g_mean_flux_over_error'
@@ -1400,6 +1491,7 @@ tables:
     description: Gaia G band signal-to-noise
     name: gaia_phot_g_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_bp_mean_mag'
@@ -1408,6 +1500,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_bp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_bp_mean_flux_over_error'
@@ -1415,6 +1508,7 @@ tables:
     description: Gaia BP band signal-to-noise
     name: gaia_phot_bp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_rp_mean_mag'
@@ -1423,6 +1517,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_rp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_rp_mean_flux_over_error'
@@ -1430,6 +1525,7 @@ tables:
     description: Gaia RP band signal-to-noise
     name: gaia_phot_rp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_phot_bp_rp_excess_factor'
@@ -1437,6 +1533,7 @@ tables:
     description: Gaia BP/RP excess factor
     name: gaia_phot_bp_rp_excess_factor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.gaia_astrometric_sigma5d_max'
@@ -1445,6 +1542,7 @@ tables:
     fits:tunit: mas
     name: gaia_astrometric_sigma5d_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.parallax'
@@ -1453,6 +1551,7 @@ tables:
     fits:tunit: mas
     name: parallax
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.parallax_ivar'
@@ -1461,6 +1560,7 @@ tables:
     fits:tunit: mas^-2
     name: parallax_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.pmra'
@@ -1469,6 +1569,7 @@ tables:
     fits:tunit: mas yr^-1
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.pmra_ivar'
@@ -1477,6 +1578,7 @@ tables:
     fits:tunit: yr^2 mas^-2
     name: pmra_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.pmdec'
@@ -1485,6 +1587,7 @@ tables:
     fits:tunit: mas yr^-1
     name: pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.pmdec_ivar'
@@ -1493,6 +1596,7 @@ tables:
     fits:tunit: yr^2 mas^-2
     name: pmdec_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.random_id'
@@ -1500,6 +1604,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.photometry.brickid'
@@ -1804,6 +1909,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.potential.tileid'
@@ -1960,6 +2066,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.target.priority_init'
@@ -2199,6 +2306,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.tile.tileid'
@@ -2407,6 +2515,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: mean_fiber_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.mean_fiber_dec'
@@ -2416,6 +2525,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: mean_fiber_dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.elon'
@@ -2472,6 +2582,7 @@ tables:
     fits:tunit: s
     name: coadd_exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.mean_delta_x'
@@ -2480,6 +2591,7 @@ tables:
       CS5 X location on focal plane
     name: mean_delta_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.rms_delta_x'
@@ -2488,6 +2600,7 @@ tables:
       requested CS5 X location on focal plane
     name: rms_delta_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.mean_delta_y'
@@ -2496,6 +2609,7 @@ tables:
       CS5 Y location on focal plane
     name: mean_delta_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.rms_delta_y'
@@ -2504,6 +2618,7 @@ tables:
       requested CS5 Y location on focal plane
     name: rms_delta_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.std_fiber_ra'
@@ -2512,6 +2627,7 @@ tables:
     fits:tunit: deg
     name: std_fiber_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.std_fiber_dec'
@@ -2520,6 +2636,7 @@ tables:
     fits:tunit: deg
     name: std_fiber_dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.mean_psf_to_fiber_specflux'
@@ -2528,6 +2645,7 @@ tables:
       coadd
     name: mean_psf_to_fiber_specflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbdark_b'
@@ -2535,6 +2653,7 @@ tables:
     description: GPBDARK B template (S/N)^2
     name: tsnr2_gpbdark_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_elg_b'
@@ -2542,6 +2661,7 @@ tables:
     description: ELG B template (S/N)^2
     name: tsnr2_elg_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbright_b'
@@ -2549,6 +2669,7 @@ tables:
     description: GPBBRIGHT B template (S/N)^2
     name: tsnr2_gpbbright_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lya_b'
@@ -2556,6 +2677,7 @@ tables:
     description: LYA B template (S/N)^2
     name: tsnr2_lya_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_bgs_b'
@@ -2563,6 +2685,7 @@ tables:
     description: BGS B template (S/N)^2
     name: tsnr2_bgs_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_b'
@@ -2570,6 +2693,7 @@ tables:
     description: GPBBACKUP B template (S/N)^2
     name: tsnr2_gpbbackup_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_qso_b'
@@ -2577,6 +2701,7 @@ tables:
     description: QSO B template (S/N)^2
     name: tsnr2_qso_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lrg_b'
@@ -2584,6 +2709,7 @@ tables:
     description: LRG B template (S/N)^2
     name: tsnr2_lrg_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbdark_r'
@@ -2591,6 +2717,7 @@ tables:
     description: GPBDARK R template (S/N)^2
     name: tsnr2_gpbdark_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_elg_r'
@@ -2598,6 +2725,7 @@ tables:
     description: ELG R template (S/N)^2
     name: tsnr2_elg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbright_r'
@@ -2605,6 +2733,7 @@ tables:
     description: GPBBRIGHT R template (S/N)^2
     name: tsnr2_gpbbright_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lya_r'
@@ -2612,6 +2741,7 @@ tables:
     description: LYA R template (S/N)^2
     name: tsnr2_lya_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_bgs_r'
@@ -2619,6 +2749,7 @@ tables:
     description: BGS R template (S/N)^2
     name: tsnr2_bgs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_r'
@@ -2626,6 +2757,7 @@ tables:
     description: GPBBACKUP R template (S/N)^2
     name: tsnr2_gpbbackup_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_qso_r'
@@ -2633,6 +2765,7 @@ tables:
     description: QSO R template (S/N)^2
     name: tsnr2_qso_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lrg_r'
@@ -2640,6 +2773,7 @@ tables:
     description: LRG R template (S/N)^2
     name: tsnr2_lrg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbdark_z'
@@ -2647,6 +2781,7 @@ tables:
     description: GPBDARK Z template (S/N)^2
     name: tsnr2_gpbdark_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_elg_z'
@@ -2654,6 +2789,7 @@ tables:
     description: ELG Z template (S/N)^2
     name: tsnr2_elg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbright_z'
@@ -2661,6 +2797,7 @@ tables:
     description: GPBBRIGHT Z template (S/N)^2
     name: tsnr2_gpbbright_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lya_z'
@@ -2668,6 +2805,7 @@ tables:
     description: LYA Z template (S/N)^2
     name: tsnr2_lya_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_bgs_z'
@@ -2675,6 +2813,7 @@ tables:
     description: BGS Z template (S/N)^2
     name: tsnr2_bgs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_z'
@@ -2682,6 +2821,7 @@ tables:
     description: GPBBACKUP Z template (S/N)^2
     name: tsnr2_gpbbackup_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_qso_z'
@@ -2689,6 +2829,7 @@ tables:
     description: QSO Z template (S/N)^2
     name: tsnr2_qso_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lrg_z'
@@ -2696,6 +2837,7 @@ tables:
     description: LRG Z template (S/N)^2
     name: tsnr2_lrg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbdark'
@@ -2703,6 +2845,7 @@ tables:
     description: GPBDARK template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbdark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_elg'
@@ -2710,6 +2853,7 @@ tables:
     description: ELG template (S/N)^2 summed over B, R, Z
     name: tsnr2_elg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbright'
@@ -2717,6 +2861,7 @@ tables:
     description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lya'
@@ -2724,6 +2869,7 @@ tables:
     description: LYA template (S/N)^2 summed over B, R, Z
     name: tsnr2_lya
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_bgs'
@@ -2731,6 +2877,7 @@ tables:
     description: BGS template (S/N)^2 summed over B, R, Z
     name: tsnr2_bgs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_gpbbackup'
@@ -2738,6 +2885,7 @@ tables:
     description: GPBBACKUP template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbackup
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_qso'
@@ -2745,6 +2893,7 @@ tables:
     description: QSO template (S/N)^2 summed over B, R, Z
     name: tsnr2_qso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.tsnr2_lrg'
@@ -2752,6 +2901,7 @@ tables:
     description: LRG template (S/N)^2 summed over B, R, Z
     name: tsnr2_lrg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.random_id'
@@ -2759,6 +2909,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.zpix.spgrpval'
@@ -3310,6 +3461,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: mean_fiber_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.mean_fiber_dec'
@@ -3319,6 +3471,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: mean_fiber_dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.elon'
@@ -3383,6 +3536,7 @@ tables:
     fits:tunit: s
     name: coadd_exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.mean_delta_x'
@@ -3391,6 +3545,7 @@ tables:
       CS5 X location on focal plane
     name: mean_delta_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.rms_delta_x'
@@ -3399,6 +3554,7 @@ tables:
       requested CS5 X location on focal plane
     name: rms_delta_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.mean_delta_y'
@@ -3407,6 +3563,7 @@ tables:
       CS5 Y location on focal plane
     name: mean_delta_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.rms_delta_y'
@@ -3415,6 +3572,7 @@ tables:
       requested CS5 Y location on focal plane
     name: rms_delta_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.std_fiber_ra'
@@ -3423,6 +3581,7 @@ tables:
     fits:tunit: deg
     name: std_fiber_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.std_fiber_dec'
@@ -3431,6 +3590,7 @@ tables:
     fits:tunit: deg
     name: std_fiber_dec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.mean_psf_to_fiber_specflux'
@@ -3439,6 +3599,7 @@ tables:
       coadd
     name: mean_psf_to_fiber_specflux
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbdark_b'
@@ -3446,6 +3607,7 @@ tables:
     description: GPBDARK B template (S/N)^2
     name: tsnr2_gpbdark_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_elg_b'
@@ -3453,6 +3615,7 @@ tables:
     description: ELG B template (S/N)^2
     name: tsnr2_elg_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbright_b'
@@ -3460,6 +3623,7 @@ tables:
     description: GPBBRIGHT B template (S/N)^2
     name: tsnr2_gpbbright_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lya_b'
@@ -3467,6 +3631,7 @@ tables:
     description: LYA B template (S/N)^2
     name: tsnr2_lya_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_bgs_b'
@@ -3474,6 +3639,7 @@ tables:
     description: BGS B template (S/N)^2
     name: tsnr2_bgs_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_b'
@@ -3481,6 +3647,7 @@ tables:
     description: GPBBACKUP B template (S/N)^2
     name: tsnr2_gpbbackup_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_qso_b'
@@ -3488,6 +3655,7 @@ tables:
     description: QSO B template (S/N)^2
     name: tsnr2_qso_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lrg_b'
@@ -3495,6 +3663,7 @@ tables:
     description: LRG B template (S/N)^2
     name: tsnr2_lrg_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbdark_r'
@@ -3502,6 +3671,7 @@ tables:
     description: GPBDARK R template (S/N)^2
     name: tsnr2_gpbdark_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_elg_r'
@@ -3509,6 +3679,7 @@ tables:
     description: ELG R template (S/N)^2
     name: tsnr2_elg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbright_r'
@@ -3516,6 +3687,7 @@ tables:
     description: GPBBRIGHT R template (S/N)^2
     name: tsnr2_gpbbright_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lya_r'
@@ -3523,6 +3695,7 @@ tables:
     description: LYA R template (S/N)^2
     name: tsnr2_lya_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_bgs_r'
@@ -3530,6 +3703,7 @@ tables:
     description: BGS R template (S/N)^2
     name: tsnr2_bgs_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_r'
@@ -3537,6 +3711,7 @@ tables:
     description: GPBBACKUP R template (S/N)^2
     name: tsnr2_gpbbackup_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_qso_r'
@@ -3544,6 +3719,7 @@ tables:
     description: QSO R template (S/N)^2
     name: tsnr2_qso_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lrg_r'
@@ -3551,6 +3727,7 @@ tables:
     description: LRG R template (S/N)^2
     name: tsnr2_lrg_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbdark_z'
@@ -3558,6 +3735,7 @@ tables:
     description: GPBDARK Z template (S/N)^2
     name: tsnr2_gpbdark_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_elg_z'
@@ -3565,6 +3743,7 @@ tables:
     description: ELG Z template (S/N)^2
     name: tsnr2_elg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbright_z'
@@ -3572,6 +3751,7 @@ tables:
     description: GPBBRIGHT Z template (S/N)^2
     name: tsnr2_gpbbright_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lya_z'
@@ -3579,6 +3759,7 @@ tables:
     description: LYA Z template (S/N)^2
     name: tsnr2_lya_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_bgs_z'
@@ -3586,6 +3767,7 @@ tables:
     description: BGS Z template (S/N)^2
     name: tsnr2_bgs_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_z'
@@ -3593,6 +3775,7 @@ tables:
     description: GPBBACKUP Z template (S/N)^2
     name: tsnr2_gpbbackup_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_qso_z'
@@ -3600,6 +3783,7 @@ tables:
     description: QSO Z template (S/N)^2
     name: tsnr2_qso_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lrg_z'
@@ -3607,6 +3791,7 @@ tables:
     description: LRG Z template (S/N)^2
     name: tsnr2_lrg_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbdark'
@@ -3614,6 +3799,7 @@ tables:
     description: GPBDARK template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbdark
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_elg'
@@ -3621,6 +3807,7 @@ tables:
     description: ELG template (S/N)^2 summed over B, R, Z
     name: tsnr2_elg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbright'
@@ -3628,6 +3815,7 @@ tables:
     description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbright
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lya'
@@ -3635,6 +3823,7 @@ tables:
     description: LYA template (S/N)^2 summed over B, R, Z
     name: tsnr2_lya
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_bgs'
@@ -3642,6 +3831,7 @@ tables:
     description: BGS template (S/N)^2 summed over B, R, Z
     name: tsnr2_bgs
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_gpbbackup'
@@ -3649,6 +3839,7 @@ tables:
     description: GPBBACKUP template (S/N)^2 summed over B, R, Z
     name: tsnr2_gpbbackup
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_qso'
@@ -3656,6 +3847,7 @@ tables:
     description: QSO template (S/N)^2 summed over B, R, Z
     name: tsnr2_qso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.tsnr2_lrg'
@@ -3663,6 +3855,7 @@ tables:
     description: LRG template (S/N)^2 summed over B, R, Z
     name: tsnr2_lrg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.random_id'
@@ -3670,6 +3863,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.htm9'
@@ -3895,6 +4089,7 @@ tables:
     fits:tunit: mm
     name: mean_fiber_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#desi_edr.ztile.mean_fiber_y'
@@ -3903,6 +4098,7 @@ tables:
     fits:tunit: mm
     name: mean_fiber_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Redshift and other quantities for spectra that have been grouped and

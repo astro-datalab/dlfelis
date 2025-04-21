@@ -90,6 +90,7 @@ tables:
     description: Unique random number between 0 and 100
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.counts'
@@ -97,6 +98,7 @@ tables:
     description: Total counts
     name: counts
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.background'
@@ -104,6 +106,7 @@ tables:
     description: Total sky level
     name: background
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.rate'
@@ -112,6 +115,7 @@ tables:
     fits:tunit: s
     name: rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.magvega'
@@ -120,6 +124,7 @@ tables:
     fits:tunit: mag
     name: magvega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.magerr'
@@ -128,6 +133,7 @@ tables:
     fits:tunit: mag
     name: magerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.chi'
@@ -135,6 +141,7 @@ tables:
     description: Goodness of fit to the PSF
     name: chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.snr'
@@ -142,6 +149,7 @@ tables:
     description: Signal-to-noise ratio
     name: snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.sharp'
@@ -149,6 +157,7 @@ tables:
     description: DolPHOT object sharpness parameter
     name: sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.round'
@@ -156,6 +165,7 @@ tables:
     description: DolPHOT roundness parameter
     name: round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.crowd'
@@ -165,6 +175,7 @@ tables:
     fits:tunit: mag
     name: crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.flag'
@@ -172,6 +183,7 @@ tables:
     description: DolPHOT photometric quality flag
     name: flag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.image'
@@ -214,6 +226,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_meas.filter'
@@ -403,6 +416,7 @@ tables:
     description: Unique random number between 0 and 100
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.x'
@@ -411,6 +425,7 @@ tables:
     fits:tunit: pix
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.y'
@@ -419,6 +434,7 @@ tables:
     fits:tunit: pix
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.ir_x'
@@ -427,6 +443,7 @@ tables:
     fits:tunit: pix
     name: ir_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.ir_y'
@@ -435,6 +452,7 @@ tables:
     fits:tunit: pix
     name: ir_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_rate'
@@ -443,6 +461,7 @@ tables:
     fits:tunit: s
     name: f110w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_raterr'
@@ -451,6 +470,7 @@ tables:
     fits:tunit: s
     name: f110w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_vega'
@@ -459,6 +479,7 @@ tables:
     fits:tunit: mag
     name: f110w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_err'
@@ -467,6 +488,7 @@ tables:
     fits:tunit: mag
     name: f110w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_chi'
@@ -474,6 +496,7 @@ tables:
     description: Chi of fit, F110W
     name: f110w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_snr'
@@ -481,6 +504,7 @@ tables:
     description: Signal-to-noise, F110W
     name: f110w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_sharp'
@@ -488,6 +512,7 @@ tables:
     description: DolPHOT sharpness parameter, F110W
     name: f110w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_round'
@@ -495,6 +520,7 @@ tables:
     description: DolPHOT roundness parameter, F110W
     name: f110w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_crowd'
@@ -503,6 +529,7 @@ tables:
     fits:tunit: mag
     name: f110w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_rate'
@@ -511,6 +538,7 @@ tables:
     fits:tunit: s
     name: f160w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_raterr'
@@ -519,6 +547,7 @@ tables:
     fits:tunit: s
     name: f160w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_vega'
@@ -527,6 +556,7 @@ tables:
     fits:tunit: mag
     name: f160w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_err'
@@ -535,6 +565,7 @@ tables:
     fits:tunit: mag
     name: f160w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_chi'
@@ -542,6 +573,7 @@ tables:
     description: Chi of fit, F160W
     name: f160w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_snr'
@@ -549,6 +581,7 @@ tables:
     description: Signal-to-noise, F160W
     name: f160w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_sharp'
@@ -556,6 +589,7 @@ tables:
     description: DolPHOT sharpness parameter, F160W
     name: f160w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_round'
@@ -563,6 +597,7 @@ tables:
     description: DolPHOT roundness parameter, F160W
     name: f160w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_crowd'
@@ -571,6 +606,7 @@ tables:
     fits:tunit: mag
     name: f160w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_rate'
@@ -579,6 +615,7 @@ tables:
     fits:tunit: s
     name: f275w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_raterr'
@@ -587,6 +624,7 @@ tables:
     fits:tunit: s
     name: f275w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_vega'
@@ -595,6 +633,7 @@ tables:
     fits:tunit: mag
     name: f275w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_err'
@@ -603,6 +642,7 @@ tables:
     fits:tunit: mag
     name: f275w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_chi'
@@ -610,6 +650,7 @@ tables:
     description: Chi of fit, F275W
     name: f275w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_snr'
@@ -617,6 +658,7 @@ tables:
     description: Signal-to-noise, F275W
     name: f275w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_sharp'
@@ -624,6 +666,7 @@ tables:
     description: DolPHOT sharpness parameter, F275W
     name: f275w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_round'
@@ -631,6 +674,7 @@ tables:
     description: DolPHOT roundness parameter, F275W
     name: f275w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_crowd'
@@ -639,6 +683,7 @@ tables:
     fits:tunit: mag
     name: f275w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_rate'
@@ -647,6 +692,7 @@ tables:
     fits:tunit: s
     name: f336w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_raterr'
@@ -655,6 +701,7 @@ tables:
     fits:tunit: s
     name: f336w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_vega'
@@ -663,6 +710,7 @@ tables:
     fits:tunit: mag
     name: f336w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_err'
@@ -671,6 +719,7 @@ tables:
     fits:tunit: mag
     name: f336w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_chi'
@@ -678,6 +727,7 @@ tables:
     description: Chi of fit, F336W
     name: f336w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_snr'
@@ -685,6 +735,7 @@ tables:
     description: Signal-to-noise, F336W
     name: f336w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_sharp'
@@ -692,6 +743,7 @@ tables:
     description: DolPHOT sharpness parameter, F336W
     name: f336w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_round'
@@ -699,6 +751,7 @@ tables:
     description: DolPHOT roundness parameter, F336W
     name: f336w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_crowd'
@@ -707,6 +760,7 @@ tables:
     fits:tunit: mag
     name: f336w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_rate'
@@ -715,6 +769,7 @@ tables:
     fits:tunit: s
     name: f475w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_raterr'
@@ -723,6 +778,7 @@ tables:
     fits:tunit: s
     name: f475w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_vega'
@@ -731,6 +787,7 @@ tables:
     fits:tunit: mag
     name: f475w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_err'
@@ -739,6 +796,7 @@ tables:
     fits:tunit: mag
     name: f475w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_chi'
@@ -746,6 +804,7 @@ tables:
     description: Chi of fit, F475W
     name: f475w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_snr'
@@ -753,6 +812,7 @@ tables:
     description: Signal-to-noise, F475W
     name: f475w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_sharp'
@@ -760,6 +820,7 @@ tables:
     description: DolPHOT sharpness parameter, F475W
     name: f475w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_round'
@@ -767,6 +828,7 @@ tables:
     description: DolPHOT roundness parameter, F475W
     name: f475w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_crowd'
@@ -775,6 +837,7 @@ tables:
     fits:tunit: mag
     name: f475w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_rate'
@@ -783,6 +846,7 @@ tables:
     fits:tunit: s
     name: f814w_rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_raterr'
@@ -791,6 +855,7 @@ tables:
     fits:tunit: s
     name: f814w_raterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_vega'
@@ -799,6 +864,7 @@ tables:
     fits:tunit: mag
     name: f814w_vega
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_err'
@@ -807,6 +873,7 @@ tables:
     fits:tunit: mag
     name: f814w_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_chi'
@@ -814,6 +881,7 @@ tables:
     description: Chi of fit, F814W
     name: f814w_chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_snr'
@@ -821,6 +889,7 @@ tables:
     description: Signal-to-noise, F814W
     name: f814w_snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_sharp'
@@ -828,6 +897,7 @@ tables:
     description: DolPHOT sharpness parameter, F814W
     name: f814w_sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_round'
@@ -835,6 +905,7 @@ tables:
     description: DolPHOT roundness parameter, F814W
     name: f814w_round
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_crowd'
@@ -843,6 +914,7 @@ tables:
     fits:tunit: mag
     name: f814w_crowd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f814w_f475w'
@@ -851,6 +923,7 @@ tables:
     fits:tunit: mag
     name: f814w_f475w
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f475w_f336w'
@@ -859,6 +932,7 @@ tables:
     fits:tunit: mag
     name: f475w_f336w
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f336w_f275w'
@@ -867,6 +941,7 @@ tables:
     fits:tunit: mag
     name: f336w_f275w
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f275w_f160w'
@@ -875,6 +950,7 @@ tables:
     fits:tunit: mag
     name: f275w_f160w
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f160w_f110w'
@@ -883,6 +959,7 @@ tables:
     fits:tunit: mag
     name: f160w_f110w
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#phat_v2.phot_mod.f110w_flag'

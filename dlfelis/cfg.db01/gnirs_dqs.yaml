@@ -450,6 +450,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.gaussian_fit_parameters.ra'
@@ -539,6 +540,7 @@ tables:
     description: SDSS spectroscopic redshift
     name: zsdss
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.obs_log.jmag'
@@ -547,6 +549,7 @@ tables:
     fits:tunit: mag
     name: jmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.obs_log.hmag'
@@ -555,6 +558,7 @@ tables:
     fits:tunit: mag
     name: hmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.obs_log.kmag'
@@ -563,6 +567,7 @@ tables:
     fits:tunit: mag
     name: kmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.obs_log.netexp'
@@ -624,6 +629,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.obs_log.ra'
@@ -741,6 +747,7 @@ tables:
     description: Systemic redshift
     name: zsys
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.kurt_mg2'
@@ -748,6 +755,7 @@ tables:
     description: Kurtosis of Mg II double Gaussian fit profile
     name: kurt_mg2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.kurt_hb'
@@ -755,6 +763,7 @@ tables:
     description: Kurtosis of Hbeta double Gaussian fit profile
     name: kurt_hb
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.ew_o3'
@@ -763,6 +772,7 @@ tables:
     fits:tunit: 0.1nm
     name: ew_o3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.upp_ew_o3'
@@ -771,6 +781,7 @@ tables:
     fits:tunit: 0.1nm
     name: upp_ew_o3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.low_ew_o3'
@@ -779,6 +790,7 @@ tables:
     fits:tunit: 0.1nm
     name: low_ew_o3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.kurt_o3'
@@ -786,6 +798,7 @@ tables:
     description: ' Kurtosis of O III 5007A double Gaussian fit profile'
     name: kurt_o3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.kurt_ha'
@@ -793,6 +806,7 @@ tables:
     description: Kurtosis of Halpha double Gaussian fit profile
     name: kurt_ha
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.ew_fe2'
@@ -801,6 +815,7 @@ tables:
     fits:tunit: 0.1nm
     name: ew_fe2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.upp_ew_fe2'
@@ -809,6 +824,7 @@ tables:
     fits:tunit: 0.1nm
     name: upp_ew_fe2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.low_ew_fe2'
@@ -817,6 +833,7 @@ tables:
     fits:tunit: 0.1nm
     name: low_ew_fe2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.logf5100'
@@ -825,6 +842,7 @@ tables:
     fits:tunit: cW m-2 nm-1
     name: logf5100
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.logl5100'
@@ -833,6 +851,7 @@ tables:
     fits:tunit: 10-7W
     name: logl5100
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.lc_mg2'
@@ -1124,6 +1143,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements.ra'
@@ -1241,6 +1261,7 @@ tables:
     description: Kurtosis of Hdelta double Gaussian fit profile
     name: kurt_hd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_hg'
@@ -1248,6 +1269,7 @@ tables:
     description: Kurtosis of Hgamma double Gaussian fit profile
     name: kurt_hg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_o2'
@@ -1255,6 +1277,7 @@ tables:
     description: Kurtosis of O II 3727A double Gaussian fit profile
     name: kurt_o2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_ne3'
@@ -1262,6 +1285,7 @@ tables:
     description: Kurtosis of Ne III 3870A double Gaussian fit profile
     name: kurt_ne3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements_supp.lc_hd'
@@ -1569,6 +1593,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gnirs_dqs.spec_measurements_supp.ra'

@@ -415,6 +415,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.filt_str'
@@ -506,6 +507,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.airmass'
@@ -513,6 +515,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.seeing'
@@ -521,6 +524,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.moonangle'
@@ -528,6 +532,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.fwhm'
@@ -536,6 +541,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.elliptic'
@@ -543,6 +549,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.calibrated_all.magzero'
@@ -551,6 +558,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: All instrument calibrated images
@@ -998,6 +1006,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.filt_str'
@@ -1089,6 +1098,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.airmass'
@@ -1096,6 +1106,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.seeing'
@@ -1104,6 +1115,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.moonangle'
@@ -1111,6 +1123,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.fwhm'
@@ -1119,6 +1132,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.elliptic'
@@ -1126,6 +1140,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.nsa.magzero'
@@ -1134,6 +1149,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from the Astro Data Archive
@@ -1553,6 +1569,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.filt_str'
@@ -1644,6 +1661,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.airmass'
@@ -1651,6 +1669,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.seeing'
@@ -1659,6 +1678,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.moonangle'
@@ -1666,6 +1686,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.fwhm'
@@ -1674,6 +1695,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.elliptic'
@@ -1681,6 +1703,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y1.magzero'
@@ -1689,6 +1712,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from the Dark Energy Survey DR1 obtained
@@ -2109,6 +2133,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.filt_str'
@@ -2200,6 +2225,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.airmass'
@@ -2207,6 +2233,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.seeing'
@@ -2215,6 +2242,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.moonangle'
@@ -2222,6 +2250,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.fwhm'
@@ -2230,6 +2259,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.elliptic'
@@ -2237,6 +2267,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y2.magzero'
@@ -2245,6 +2276,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from the Dark Energy Survey DR1 obtained
@@ -2665,6 +2697,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.filt_str'
@@ -2756,6 +2789,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.airmass'
@@ -2763,6 +2797,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.seeing'
@@ -2771,6 +2806,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.moonangle'
@@ -2778,6 +2814,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.fwhm'
@@ -2786,6 +2823,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.elliptic'
@@ -2793,6 +2831,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y3.magzero'
@@ -2801,6 +2840,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from the Dark Energy Survey DR1 obtained
@@ -3221,6 +3261,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.filt_str'
@@ -3312,6 +3353,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.airmass'
@@ -3319,6 +3361,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.seeing'
@@ -3327,6 +3370,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.moonangle'
@@ -3334,6 +3378,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.fwhm'
@@ -3342,6 +3387,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.elliptic'
@@ -3349,6 +3395,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.des_y4.magzero'
@@ -3357,6 +3404,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from the Dark Energy Survey DR1 obtained
@@ -3777,6 +3825,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.filt_str'
@@ -3868,6 +3917,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.airmass'
@@ -3875,6 +3925,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.seeing'
@@ -3883,6 +3934,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.moonangle'
@@ -3890,6 +3942,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.fwhm'
@@ -3898,6 +3951,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.elliptic'
@@ -3905,6 +3959,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr1.magzero'
@@ -3913,6 +3968,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from SMASH DR1
@@ -4332,6 +4388,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.filt_str'
@@ -4423,6 +4480,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.airmass'
@@ -4430,6 +4488,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.seeing'
@@ -4438,6 +4497,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.moonangle'
@@ -4445,6 +4505,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.fwhm'
@@ -4453,6 +4514,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.elliptic'
@@ -4460,6 +4522,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_calibrated.smash_dr2.magzero'
@@ -4468,6 +4531,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images from SMASH DR2

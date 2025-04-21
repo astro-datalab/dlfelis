@@ -110,6 +110,7 @@ tables:
     description: W1 flux (Vega nMgy)
     name: flux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.flux_w2'
@@ -117,6 +118,7 @@ tables:
     description: W2 flux (Vega nMgy)
     name: flux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dx_w1'
@@ -124,6 +126,7 @@ tables:
     description: uncertainty in W1 x position
     name: dx_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dx_w2'
@@ -131,6 +134,7 @@ tables:
     description: uncertainty in W2 x position
     name: dx_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dy_w1'
@@ -138,6 +142,7 @@ tables:
     description: uncertainty in W1 y position
     name: dy_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dy_w2'
@@ -145,6 +150,7 @@ tables:
     description: uncertainty in W2 y position
     name: dy_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dflux_w1'
@@ -152,6 +158,7 @@ tables:
     description: uncertainty in W1 flux (statistical only)
     name: dflux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dflux_w2'
@@ -159,6 +166,7 @@ tables:
     description: uncertainty in W2 flux (statistical only)
     name: dflux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.qf_w1'
@@ -166,6 +174,7 @@ tables:
     description: quality factor for W1
     name: qf_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.qf_w2'
@@ -173,6 +182,7 @@ tables:
     description: quality factor for W2
     name: qf_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.rchi2_w1'
@@ -180,6 +190,7 @@ tables:
     description: average X^2 per pixel, weighted by PSF, for W1
     name: rchi2_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.rchi2_w2'
@@ -187,6 +198,7 @@ tables:
     description: average X^2 per pixel, weighted by PSF, for W2
     name: rchi2_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fracflux_w1'
@@ -194,6 +206,7 @@ tables:
     description: fraction of W1 flux in this objects PSF that comes from this object
     name: fracflux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fracflux_w2'
@@ -201,6 +214,7 @@ tables:
     description: fraction of W2 flux in this objects PSF that comes from this object
     name: fracflux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fluxlbs_w1'
@@ -208,6 +222,7 @@ tables:
     description: local-background-subtracted flux (Vega nMgy) in W1
     name: fluxlbs_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fluxlbs_w2'
@@ -215,6 +230,7 @@ tables:
     description: local-background-subtracted flux (Vega nMgy) in W2
     name: fluxlbs_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dfluxlbs_w1'
@@ -222,6 +238,7 @@ tables:
     description: uncertainty in local-background-subtracted flux in W1
     name: dfluxlbs_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dfluxlbs_w2'
@@ -229,6 +246,7 @@ tables:
     description: uncertainty in local-background-subtracted flux in W2
     name: dfluxlbs_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fwhm_w1'
@@ -236,6 +254,7 @@ tables:
     description: full-width at half-maximum of PSF (pixels) in W1
     name: fwhm_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.fwhm_w2'
@@ -243,6 +262,7 @@ tables:
     description: full-width at half-maximum of PSF (pixels) in W2
     name: fwhm_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.spread_model_w1'
@@ -250,6 +270,7 @@ tables:
     description: SExtractor spread_model parameter for W1
     name: spread_model_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.spread_model_w2'
@@ -257,6 +278,7 @@ tables:
     description: SExtractor spread_model parameter for W2
     name: spread_model_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dspread_model_w1'
@@ -264,6 +286,7 @@ tables:
     description: uncertainty in spread_model for W1
     name: dspread_model_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.dspread_model_w2'
@@ -271,6 +294,7 @@ tables:
     description: uncertainty in spread_model for W2
     name: dspread_model_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.sky_w1'
@@ -278,6 +302,7 @@ tables:
     description: sky (Vega nMgy) in W1
     name: sky_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.sky_w2'
@@ -285,6 +310,7 @@ tables:
     description: sky (Vega nMgy) in W2
     name: sky_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.htm9'
@@ -313,6 +339,7 @@ tables:
     description: W1 magnitude [Vega]
     name: mag_w1_vg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.mag_w2_vg'
@@ -320,6 +347,7 @@ tables:
     description: W2 magnitude [Vega]
     name: mag_w2_vg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.w1_w2_vg'
@@ -327,6 +355,7 @@ tables:
     description: W1-W2 color [Vega]
     name: w1_w2_vg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.random_id'
@@ -334,6 +363,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#unwise_dr1.object.nm_w1'

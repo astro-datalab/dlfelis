@@ -70,6 +70,7 @@ tables:
     fits:tunit: mas
     name: plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.pmra'
@@ -78,6 +79,7 @@ tables:
     fits:tunit: mas/yr
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.pmde'
@@ -94,6 +96,7 @@ tables:
     fits:tunit: mas
     name: e_rarad
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_derad'
@@ -102,6 +105,7 @@ tables:
     fits:tunit: mas
     name: e_derad
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_plx'
@@ -110,6 +114,7 @@ tables:
     fits:tunit: mas
     name: e_plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_pmra'
@@ -118,6 +123,7 @@ tables:
     fits:tunit: mas/yr
     name: e_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_pmde'
@@ -126,6 +132,7 @@ tables:
     fits:tunit: mas/yr
     name: e_pmde
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.ntr'
@@ -140,6 +147,7 @@ tables:
     description: Goodness of fit
     name: f2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.f1'
@@ -155,6 +163,7 @@ tables:
     description: Cosmic dispersion added (stochastic solution)
     name: var
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.ic'
@@ -170,6 +179,7 @@ tables:
     fits:tunit: mag
     name: hpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_hpmag'
@@ -178,6 +188,7 @@ tables:
     fits:tunit: mag
     name: e_hpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.shp'
@@ -186,6 +197,7 @@ tables:
     fits:tunit: mag
     name: shp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.va'
@@ -200,6 +212,7 @@ tables:
     description: Colour index B - V
     name: b_v
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.e_b_v'
@@ -207,6 +220,7 @@ tables:
     description: Formal error on colour index B - V
     name: e_b_v
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.v_i'
@@ -214,6 +228,7 @@ tables:
     description: V - I colour index
     name: v_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_1'
@@ -228,6 +243,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_2'
@@ -242,6 +258,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_3'
@@ -256,6 +273,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_4'
@@ -270,6 +288,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_5'
@@ -284,6 +303,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_6'
@@ -298,6 +318,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_7'
@@ -312,6 +333,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_8'
@@ -326,6 +348,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_9'
@@ -340,6 +363,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_10'
@@ -354,6 +378,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_10
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_11'
@@ -368,6 +393,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_12'
@@ -382,6 +408,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_12
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_13'
@@ -396,6 +423,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_13
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_14'
@@ -410,6 +438,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_14
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.uw_15'
@@ -424,6 +453,7 @@ tables:
       of proper motions for 7- and 9-parameter<br> solutions.'
     name: uw_15
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos2.main.radeg'
@@ -506,6 +536,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: hip2.dat 117,955 records

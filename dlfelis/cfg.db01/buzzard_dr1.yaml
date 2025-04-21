@@ -218,6 +218,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_decam_g'
@@ -226,6 +227,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_decam_r'
@@ -234,6 +236,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_decam_i'
@@ -242,6 +245,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_decam_z'
@@ -250,6 +254,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_decam_y'
@@ -258,6 +263,7 @@ tables:
     fits:tunit: mag
     name: tmag_decam_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_vista_z'
@@ -266,6 +272,7 @@ tables:
     fits:tunit: mag
     name: tmag_vista_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_vista_y'
@@ -274,6 +281,7 @@ tables:
     fits:tunit: mag
     name: tmag_vista_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_vista_j'
@@ -282,6 +290,7 @@ tables:
     fits:tunit: mag
     name: tmag_vista_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_vista_h'
@@ -290,6 +299,7 @@ tables:
     fits:tunit: mag
     name: tmag_vista_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_vista_ks'
@@ -298,6 +308,7 @@ tables:
     fits:tunit: mag
     name: tmag_vista_ks
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_u'
@@ -306,6 +317,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_g'
@@ -314,6 +326,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_r'
@@ -322,6 +335,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_i'
@@ -330,6 +344,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_z'
@@ -338,6 +353,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_rubin_y'
@@ -346,6 +362,7 @@ tables:
     fits:tunit: mag
     name: tmag_rubin_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_roman_y'
@@ -354,6 +371,7 @@ tables:
     fits:tunit: mag
     name: tmag_roman_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_roman_j'
@@ -362,6 +380,7 @@ tables:
     fits:tunit: mag
     name: tmag_roman_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_roman_h'
@@ -370,6 +389,7 @@ tables:
     fits:tunit: mag
     name: tmag_roman_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_roman_k'
@@ -378,6 +398,7 @@ tables:
     fits:tunit: mag
     name: tmag_roman_k
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_wise_w1'
@@ -386,6 +407,7 @@ tables:
     fits:tunit: mag
     name: tmag_wise_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.tmag_wise_w2'
@@ -394,6 +416,7 @@ tables:
     fits:tunit: mag
     name: tmag_wise_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_u'
@@ -402,6 +425,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_g'
@@ -410,6 +434,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_r'
@@ -418,6 +443,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_i'
@@ -426,6 +452,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_z'
@@ -434,6 +461,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_decam_y'
@@ -442,6 +470,7 @@ tables:
     fits:tunit: mag
     name: lmag_decam_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_vista_z'
@@ -450,6 +479,7 @@ tables:
     fits:tunit: mag
     name: lmag_vista_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_vista_y'
@@ -458,6 +488,7 @@ tables:
     fits:tunit: mag
     name: lmag_vista_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_vista_j'
@@ -466,6 +497,7 @@ tables:
     fits:tunit: mag
     name: lmag_vista_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_vista_h'
@@ -474,6 +506,7 @@ tables:
     fits:tunit: mag
     name: lmag_vista_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_vista_ks'
@@ -482,6 +515,7 @@ tables:
     fits:tunit: mag
     name: lmag_vista_ks
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_u'
@@ -490,6 +524,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_g'
@@ -498,6 +533,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_r'
@@ -506,6 +542,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_i'
@@ -514,6 +551,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_z'
@@ -522,6 +560,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_rubin_y'
@@ -530,6 +569,7 @@ tables:
     fits:tunit: mag
     name: lmag_rubin_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_roman_y'
@@ -538,6 +578,7 @@ tables:
     fits:tunit: mag
     name: lmag_roman_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_roman_j'
@@ -546,6 +587,7 @@ tables:
     fits:tunit: mag
     name: lmag_roman_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_roman_h'
@@ -554,6 +596,7 @@ tables:
     fits:tunit: mag
     name: lmag_roman_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_roman_k'
@@ -562,6 +605,7 @@ tables:
     fits:tunit: mag
     name: lmag_roman_k
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_wise_w1'
@@ -570,6 +614,7 @@ tables:
     fits:tunit: mag
     name: lmag_wise_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.lmag_wise_w2'
@@ -578,6 +623,7 @@ tables:
     fits:tunit: mag
     name: lmag_wise_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_u'
@@ -586,6 +632,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_g'
@@ -594,6 +641,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_r'
@@ -602,6 +650,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_i'
@@ -610,6 +659,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_z'
@@ -618,6 +668,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_decam_y'
@@ -626,6 +677,7 @@ tables:
     fits:tunit: mag
     name: amag_decam_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_vista_z'
@@ -634,6 +686,7 @@ tables:
     fits:tunit: mag
     name: amag_vista_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_vista_y'
@@ -642,6 +695,7 @@ tables:
     fits:tunit: mag
     name: amag_vista_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_vista_j'
@@ -650,6 +704,7 @@ tables:
     fits:tunit: mag
     name: amag_vista_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_vista_h'
@@ -658,6 +713,7 @@ tables:
     fits:tunit: mag
     name: amag_vista_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_vista_ks'
@@ -666,6 +722,7 @@ tables:
     fits:tunit: mag
     name: amag_vista_ks
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_u'
@@ -674,6 +731,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_g'
@@ -682,6 +740,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_r'
@@ -690,6 +749,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_i'
@@ -698,6 +758,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_z'
@@ -706,6 +767,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_rubin_y'
@@ -714,6 +776,7 @@ tables:
     fits:tunit: mag
     name: amag_rubin_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_roman_y'
@@ -722,6 +785,7 @@ tables:
     fits:tunit: mag
     name: amag_roman_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_roman_j'
@@ -730,6 +794,7 @@ tables:
     fits:tunit: mag
     name: amag_roman_j
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_roman_h'
@@ -738,6 +803,7 @@ tables:
     fits:tunit: mag
     name: amag_roman_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_roman_k'
@@ -746,6 +812,7 @@ tables:
     fits:tunit: mag
     name: amag_roman_k
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_wise_w1'
@@ -754,6 +821,7 @@ tables:
     fits:tunit: mag
     name: amag_wise_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.amag_wise_w2'
@@ -762,6 +830,7 @@ tables:
     fits:tunit: mag
     name: amag_wise_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.glon'
@@ -823,6 +892,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#buzzard_dr1.main.htm9'

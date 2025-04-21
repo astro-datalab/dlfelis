@@ -11,6 +11,7 @@ tables:
     description: Isophotal image major axis [pixel]
     name: a
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.b'
@@ -18,6 +19,7 @@ tables:
     description: Isophotal image minor axis [pixel]
     name: b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.calibration_flag'
@@ -27,6 +29,7 @@ tables:
       (DR6/7). 32: Skymapper (DR2). '
     name: calibration_flag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star'
@@ -34,6 +37,7 @@ tables:
     description: Star/Galaxy classifier output for the detection image
     name: class_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f378'
@@ -41,6 +45,7 @@ tables:
     description: Star/Galaxy classifier output for F378 band image
     name: class_star_f378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f395'
@@ -48,6 +53,7 @@ tables:
     description: Star/Galaxy classifier output for F395 band image
     name: class_star_f395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f410'
@@ -55,6 +61,7 @@ tables:
     description: Star/Galaxy classifier output for F410 band image
     name: class_star_f410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f430'
@@ -62,6 +69,7 @@ tables:
     description: Star/Galaxy classifier output for F430 band image
     name: class_star_f430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f515'
@@ -69,6 +77,7 @@ tables:
     description: Star/Galaxy classifier output for F515 band image
     name: class_star_f515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f660'
@@ -76,6 +85,7 @@ tables:
     description: Star/Galaxy classifier output for F660 band image
     name: class_star_f660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_f861'
@@ -83,6 +93,7 @@ tables:
     description: Star/Galaxy classifier output for F861 band image
     name: class_star_f861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_g'
@@ -90,6 +101,7 @@ tables:
     description: Star/Galaxy classifier output for G band image
     name: class_star_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_i'
@@ -97,6 +109,7 @@ tables:
     description: Star/Galaxy classifier output for I band image
     name: class_star_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_r'
@@ -104,6 +117,7 @@ tables:
     description: Star/Galaxy classifier output for R band image
     name: class_star_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_u'
@@ -111,6 +125,7 @@ tables:
     description: Star/Galaxy classifier output for U band image
     name: class_star_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.class_star_z'
@@ -118,6 +133,7 @@ tables:
     description: Star/Galaxy classifier output for Z band image
     name: class_star_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.dec'
@@ -134,6 +150,7 @@ tables:
     description: AB F378 band APER_3 magnitude error
     name: e_f378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f378_aper_6'
@@ -141,6 +158,7 @@ tables:
     description: AB F378 band APER_6 magnitude error
     name: e_f378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f378_auto'
@@ -148,6 +166,7 @@ tables:
     description: AB F378 band AUTO magnitude error
     name: e_f378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f378_iso'
@@ -155,6 +174,7 @@ tables:
     description: AB F378 band ISO magnitude error
     name: e_f378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f378_petro'
@@ -162,6 +182,7 @@ tables:
     description: AB F378 band PETRO magnitude error
     name: e_f378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f378_pstotal'
@@ -169,6 +190,7 @@ tables:
     description: AB F378 band PSTOTAL magnitude error
     name: e_f378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_aper_3'
@@ -176,6 +198,7 @@ tables:
     description: AB F395 band APER_3 magnitude error
     name: e_f395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_aper_6'
@@ -183,6 +206,7 @@ tables:
     description: AB F395 band APER_6 magnitude error
     name: e_f395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_auto'
@@ -190,6 +214,7 @@ tables:
     description: AB F395 band AUTO magnitude error
     name: e_f395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_iso'
@@ -197,6 +222,7 @@ tables:
     description: AB F395 band ISO magnitude error
     name: e_f395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_petro'
@@ -204,6 +230,7 @@ tables:
     description: AB F395 band PETRO magnitude error
     name: e_f395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f395_pstotal'
@@ -211,6 +238,7 @@ tables:
     description: AB F395 band PSTOTAL magnitude error
     name: e_f395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_aper_3'
@@ -218,6 +246,7 @@ tables:
     description: AB F410 band APER_3 magnitude error
     name: e_f410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_aper_6'
@@ -225,6 +254,7 @@ tables:
     description: AB F410 band APER_6 magnitude error
     name: e_f410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_auto'
@@ -232,6 +262,7 @@ tables:
     description: AB F410 band AUTO magnitude error
     name: e_f410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_iso'
@@ -239,6 +270,7 @@ tables:
     description: AB F410 band ISO magnitude error
     name: e_f410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_petro'
@@ -246,6 +278,7 @@ tables:
     description: AB F410 band PETRO magnitude error
     name: e_f410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f410_pstotal'
@@ -253,6 +286,7 @@ tables:
     description: AB F410 band PSTOTAL magnitude error
     name: e_f410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_aper_3'
@@ -260,6 +294,7 @@ tables:
     description: AB F430 band APER_3 magnitude error
     name: e_f430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_aper_6'
@@ -267,6 +302,7 @@ tables:
     description: AB F430 band APER_6 magnitude error
     name: e_f430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_auto'
@@ -274,6 +310,7 @@ tables:
     description: AB F430 band AUTO magnitude error
     name: e_f430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_iso'
@@ -281,6 +318,7 @@ tables:
     description: AB F430 band ISO magnitude error
     name: e_f430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_petro'
@@ -288,6 +326,7 @@ tables:
     description: AB F430 band PETRO magnitude error
     name: e_f430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f430_pstotal'
@@ -295,6 +334,7 @@ tables:
     description: AB F430 band PSTOTAL magnitude error
     name: e_f430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_aper_3'
@@ -302,6 +342,7 @@ tables:
     description: AB F515 band APER_3 magnitude error
     name: e_f515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_aper_6'
@@ -309,6 +350,7 @@ tables:
     description: AB F515 band APER_6 magnitude error
     name: e_f515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_auto'
@@ -316,6 +358,7 @@ tables:
     description: AB F515 band AUTO magnitude error
     name: e_f515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_iso'
@@ -323,6 +366,7 @@ tables:
     description: AB F515 band ISO magnitude error
     name: e_f515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_petro'
@@ -330,6 +374,7 @@ tables:
     description: AB F515 band PETRO magnitude error
     name: e_f515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f515_pstotal'
@@ -337,6 +382,7 @@ tables:
     description: AB F515 band PSTOTAL magnitude error
     name: e_f515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_aper_3'
@@ -344,6 +390,7 @@ tables:
     description: AB F660 band APER_3 magnitude error
     name: e_f660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_aper_6'
@@ -351,6 +398,7 @@ tables:
     description: AB F660 band APER_6 magnitude error
     name: e_f660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_auto'
@@ -358,6 +406,7 @@ tables:
     description: AB F660 band AUTO magnitude error
     name: e_f660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_iso'
@@ -365,6 +414,7 @@ tables:
     description: AB F660 band ISO magnitude error
     name: e_f660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_petro'
@@ -372,6 +422,7 @@ tables:
     description: AB F660 band PETRO magnitude error
     name: e_f660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f660_pstotal'
@@ -379,6 +430,7 @@ tables:
     description: AB F660 band PSTOTAL magnitude error
     name: e_f660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_aper_3'
@@ -386,6 +438,7 @@ tables:
     description: AB F861 band APER_3 magnitude error
     name: e_f861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_aper_6'
@@ -393,6 +446,7 @@ tables:
     description: AB F861 band APER_6 magnitude error
     name: e_f861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_auto'
@@ -400,6 +454,7 @@ tables:
     description: AB F861 band AUTO magnitude error
     name: e_f861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_iso'
@@ -407,6 +462,7 @@ tables:
     description: AB F861 band ISO magnitude error
     name: e_f861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_petro'
@@ -414,6 +470,7 @@ tables:
     description: AB F861 band PETRO magnitude error
     name: e_f861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_f861_pstotal'
@@ -421,6 +478,7 @@ tables:
     description: AB F861 band PSTOTAL magnitude error
     name: e_f861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_aper_3'
@@ -428,6 +486,7 @@ tables:
     description: AB G band APER_3 magnitude error
     name: e_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_aper_6'
@@ -435,6 +494,7 @@ tables:
     description: AB G band APER_6 magnitude error
     name: e_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_auto'
@@ -442,6 +502,7 @@ tables:
     description: AB G band AUTO magnitude error
     name: e_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_iso'
@@ -449,6 +510,7 @@ tables:
     description: AB G band ISO magnitude error
     name: e_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_petro'
@@ -456,6 +518,7 @@ tables:
     description: AB G band PETRO magnitude error
     name: e_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_g_pstotal'
@@ -463,6 +526,7 @@ tables:
     description: AB G band PSTOTAL magnitude error
     name: e_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_aper_3'
@@ -470,6 +534,7 @@ tables:
     description: AB I band APER_3 magnitude error
     name: e_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_aper_6'
@@ -477,6 +542,7 @@ tables:
     description: AB I band APER_6 magnitude error
     name: e_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_auto'
@@ -484,6 +550,7 @@ tables:
     description: AB I band AUTO magnitude error
     name: e_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_iso'
@@ -491,6 +558,7 @@ tables:
     description: AB I band ISO magnitude error
     name: e_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_petro'
@@ -498,6 +566,7 @@ tables:
     description: AB I band PETRO magnitude error
     name: e_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_i_pstotal'
@@ -505,6 +574,7 @@ tables:
     description: AB I band PSTOTAL magnitude error
     name: e_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_aper_3'
@@ -512,6 +582,7 @@ tables:
     description: AB R band APER_3 magnitude error
     name: e_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_aper_6'
@@ -519,6 +590,7 @@ tables:
     description: AB R band APER_6 magnitude error
     name: e_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_auto'
@@ -526,6 +598,7 @@ tables:
     description: AB R band AUTO magnitude error
     name: e_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_iso'
@@ -533,6 +606,7 @@ tables:
     description: AB R band ISO magnitude error
     name: e_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_petro'
@@ -540,6 +614,7 @@ tables:
     description: AB R band PETRO magnitude error
     name: e_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_r_pstotal'
@@ -547,6 +622,7 @@ tables:
     description: AB R band PSTOTAL magnitude error
     name: e_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_aper_3'
@@ -554,6 +630,7 @@ tables:
     description: AB U band APER_3 magnitude error
     name: e_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_aper_6'
@@ -561,6 +638,7 @@ tables:
     description: AB U band APER_6 magnitude error
     name: e_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_auto'
@@ -568,6 +646,7 @@ tables:
     description: AB U band AUTO magnitude error
     name: e_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_iso'
@@ -575,6 +654,7 @@ tables:
     description: AB U band ISO magnitude error
     name: e_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_petro'
@@ -582,6 +662,7 @@ tables:
     description: AB U band PETRO magnitude error
     name: e_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_u_pstotal'
@@ -589,6 +670,7 @@ tables:
     description: AB U band PSTOTAL magnitude error
     name: e_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_aper_3'
@@ -596,6 +678,7 @@ tables:
     description: AB Z band APER_3 magnitude error
     name: e_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_aper_6'
@@ -603,6 +686,7 @@ tables:
     description: AB Z band APER_6 magnitude error
     name: e_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_auto'
@@ -610,6 +694,7 @@ tables:
     description: AB Z band AUTO magnitude error
     name: e_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_iso'
@@ -617,6 +702,7 @@ tables:
     description: AB Z band ISO magnitude error
     name: e_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_petro'
@@ -624,6 +710,7 @@ tables:
     description: AB Z band PETRO magnitude error
     name: e_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.e_z_pstotal'
@@ -631,6 +718,7 @@ tables:
     description: AB Z band PSTOTAL magnitude error
     name: e_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ellipticity'
@@ -638,6 +726,7 @@ tables:
     description: 1 - B/A
     name: ellipticity
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.elongation'
@@ -645,6 +734,7 @@ tables:
     description: A/B
     name: elongation
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_aper_3'
@@ -652,6 +742,7 @@ tables:
     description: AB F378 band APER_3 magnitude
     name: f378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_aper_6'
@@ -659,6 +750,7 @@ tables:
     description: AB F378 band APER_6 magnitude
     name: f378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_auto'
@@ -666,6 +758,7 @@ tables:
     description: AB F378 band AUTO magnitude
     name: f378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_iso'
@@ -673,6 +766,7 @@ tables:
     description: AB F378 band ISO magnitude
     name: f378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_petro'
@@ -680,6 +774,7 @@ tables:
     description: AB F378 band PETRO magnitude
     name: f378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f378_pstotal'
@@ -687,6 +782,7 @@ tables:
     description: AB F378 band PSTOTAL magnitude
     name: f378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_aper_3'
@@ -694,6 +790,7 @@ tables:
     description: AB F395 band APER_3 magnitude
     name: f395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_aper_6'
@@ -701,6 +798,7 @@ tables:
     description: AB F395 band APER_6 magnitude
     name: f395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_auto'
@@ -708,6 +806,7 @@ tables:
     description: AB F395 band AUTO magnitude
     name: f395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_iso'
@@ -715,6 +814,7 @@ tables:
     description: AB F395 band ISO magnitude
     name: f395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_petro'
@@ -722,6 +822,7 @@ tables:
     description: AB F395 band PETRO magnitude
     name: f395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f395_pstotal'
@@ -729,6 +830,7 @@ tables:
     description: AB F395 band PSTOTAL magnitude
     name: f395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_aper_3'
@@ -736,6 +838,7 @@ tables:
     description: AB F410 band APER_3 magnitude
     name: f410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_aper_6'
@@ -743,6 +846,7 @@ tables:
     description: AB F410 band APER_6 magnitude
     name: f410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_auto'
@@ -750,6 +854,7 @@ tables:
     description: AB F410 band AUTO magnitude
     name: f410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_iso'
@@ -757,6 +862,7 @@ tables:
     description: AB F410 band ISO magnitude
     name: f410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_petro'
@@ -764,6 +870,7 @@ tables:
     description: AB F410 band PETRO magnitude
     name: f410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f410_pstotal'
@@ -771,6 +878,7 @@ tables:
     description: AB F410 band PSTOTAL magnitude
     name: f410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_aper_3'
@@ -778,6 +886,7 @@ tables:
     description: AB F430 band APER_3 magnitude
     name: f430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_aper_6'
@@ -785,6 +894,7 @@ tables:
     description: AB F430 band APER_6 magnitude
     name: f430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_auto'
@@ -792,6 +902,7 @@ tables:
     description: AB F430 band AUTO magnitude
     name: f430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_iso'
@@ -799,6 +910,7 @@ tables:
     description: AB F430 band ISO magnitude
     name: f430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_petro'
@@ -806,6 +918,7 @@ tables:
     description: AB F430 band PETRO magnitude
     name: f430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f430_pstotal'
@@ -813,6 +926,7 @@ tables:
     description: AB F430 band PSTOTAL magnitude
     name: f430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_aper_3'
@@ -820,6 +934,7 @@ tables:
     description: AB F515 band APER_3 magnitude
     name: f515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_aper_6'
@@ -827,6 +942,7 @@ tables:
     description: AB F515 band APER_6 magnitude
     name: f515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_auto'
@@ -834,6 +950,7 @@ tables:
     description: AB F515 band AUTO magnitude
     name: f515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_iso'
@@ -841,6 +958,7 @@ tables:
     description: AB F515 band ISO magnitude
     name: f515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_petro'
@@ -848,6 +966,7 @@ tables:
     description: AB F515 band PETRO magnitude
     name: f515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f515_pstotal'
@@ -855,6 +974,7 @@ tables:
     description: AB F515 band PSTOTAL magnitude
     name: f515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_aper_3'
@@ -862,6 +982,7 @@ tables:
     description: AB F660 band APER_3 magnitude
     name: f660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_aper_6'
@@ -869,6 +990,7 @@ tables:
     description: AB F660 band APER_6 magnitude
     name: f660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_auto'
@@ -876,6 +998,7 @@ tables:
     description: AB F660 band AUTO magnitude
     name: f660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_iso'
@@ -883,6 +1006,7 @@ tables:
     description: AB F660 band ISO magnitude
     name: f660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_petro'
@@ -890,6 +1014,7 @@ tables:
     description: AB F660 band PETRO magnitude
     name: f660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f660_pstotal'
@@ -897,6 +1022,7 @@ tables:
     description: AB F660 band PSTOTAL magnitude
     name: f660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_aper_3'
@@ -904,6 +1030,7 @@ tables:
     description: AB F861 band APER_3 magnitude
     name: f861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_aper_6'
@@ -911,6 +1038,7 @@ tables:
     description: AB F861 band APER_6 magnitude
     name: f861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_auto'
@@ -918,6 +1046,7 @@ tables:
     description: AB F861 band AUTO magnitude
     name: f861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_iso'
@@ -925,6 +1054,7 @@ tables:
     description: AB F861 band ISO magnitude
     name: f861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_petro'
@@ -932,6 +1062,7 @@ tables:
     description: AB F861 band PETRO magnitude
     name: f861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.f861_pstotal'
@@ -939,6 +1070,7 @@ tables:
     description: AB F861 band PSTOTAL magnitude
     name: f861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.field'
@@ -987,6 +1119,7 @@ tables:
     fits:tunit: pixel
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f378'
@@ -994,6 +1127,7 @@ tables:
     description: FWHM at f378 filter
     name: fwhm_f378
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f395'
@@ -1001,6 +1135,7 @@ tables:
     description: FWHM at f395 filter
     name: fwhm_f395
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f410'
@@ -1008,6 +1143,7 @@ tables:
     description: FWHM at f410 filter
     name: fwhm_f410
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f430'
@@ -1015,6 +1151,7 @@ tables:
     description: FWHM at f430 filter
     name: fwhm_f430
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f515'
@@ -1022,6 +1159,7 @@ tables:
     description: FWHM at f515 filter
     name: fwhm_f515
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f660'
@@ -1029,6 +1167,7 @@ tables:
     description: FWHM at f660 filter
     name: fwhm_f660
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_f861'
@@ -1036,6 +1175,7 @@ tables:
     description: FWHM at f861 filter
     name: fwhm_f861
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_g'
@@ -1043,6 +1183,7 @@ tables:
     description: FWHM at g filter
     name: fwhm_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_i'
@@ -1050,6 +1191,7 @@ tables:
     description: FWHM at i filter
     name: fwhm_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_n'
@@ -1057,6 +1199,7 @@ tables:
     description: Normalized field FWHM
     name: fwhm_n
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_r'
@@ -1064,6 +1207,7 @@ tables:
     description: FWHM at r filter
     name: fwhm_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_u'
@@ -1071,6 +1215,7 @@ tables:
     description: FWHM at u filter
     name: fwhm_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.fwhm_z'
@@ -1078,6 +1223,7 @@ tables:
     description: FWHM at z filter
     name: fwhm_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_aper_3'
@@ -1085,6 +1231,7 @@ tables:
     description: AB G band APER_3 magnitude
     name: g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_aper_6'
@@ -1092,6 +1239,7 @@ tables:
     description: AB G band APER_6 magnitude
     name: g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_auto'
@@ -1099,6 +1247,7 @@ tables:
     description: AB G band AUTO magnitude
     name: g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_iso'
@@ -1106,6 +1255,7 @@ tables:
     description: AB G band ISO magnitude
     name: g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_petro'
@@ -1113,6 +1263,7 @@ tables:
     description: AB G band PETRO magnitude
     name: g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.g_pstotal'
@@ -1120,6 +1271,7 @@ tables:
     description: AB G band PSTOTAL magnitude
     name: g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_aper_3'
@@ -1127,6 +1279,7 @@ tables:
     description: AB I band APER_3 magnitude
     name: i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_aper_6'
@@ -1134,6 +1287,7 @@ tables:
     description: AB I band APER_6 magnitude
     name: i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_auto'
@@ -1141,6 +1295,7 @@ tables:
     description: AB I band AUTO magnitude
     name: i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_iso'
@@ -1148,6 +1303,7 @@ tables:
     description: AB I band ISO magnitude
     name: i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_petro'
@@ -1155,6 +1311,7 @@ tables:
     description: AB I band PETRO magnitude
     name: i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.i_pstotal'
@@ -1162,6 +1319,7 @@ tables:
     description: AB I band PSTOTAL magnitude
     name: i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.id'
@@ -1185,6 +1343,7 @@ tables:
     description: Kron apertures in units of A or B
     name: kron_radius
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.mu_max'
@@ -1192,6 +1351,7 @@ tables:
     description: Peak surface brightness above background [mag arcsec(-2)]
     name: mu_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_aper_3'
@@ -1199,6 +1359,7 @@ tables:
     description: Number of filters with detection in the APER_3 aperture
     name: ndet_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_aper_6'
@@ -1206,6 +1367,7 @@ tables:
     description: Number of filters with detection in the APER_6 aperture
     name: ndet_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_auto'
@@ -1213,6 +1375,7 @@ tables:
     description: Number of filters with detection in the AUTO aperture
     name: ndet_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_iso'
@@ -1220,6 +1383,7 @@ tables:
     description: Number of filters with detection in the ISO aperture
     name: ndet_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_magpstotal'
@@ -1227,6 +1391,7 @@ tables:
     description: Number of filters with detection in the PETRO aperture
     name: ndet_magpstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ndet_petro'
@@ -1234,6 +1399,7 @@ tables:
     description: Number of filters with detection in the PSTOTAL aperture
     name: ndet_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.photoflag_f378'
@@ -1332,6 +1498,7 @@ tables:
     description: AB R band APER_3 magnitude
     name: r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.r_aper_6'
@@ -1339,6 +1506,7 @@ tables:
     description: AB R band APER_6 magnitude
     name: r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.r_auto'
@@ -1346,6 +1514,7 @@ tables:
     description: AB R band AUTO magnitude
     name: r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.r_iso'
@@ -1353,6 +1522,7 @@ tables:
     description: AB R band ISO magnitude
     name: r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.r_petro'
@@ -1360,6 +1530,7 @@ tables:
     description: AB R band PETRO magnitude
     name: r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.r_pstotal'
@@ -1367,6 +1538,7 @@ tables:
     description: AB R band PSTOTAL magnitude
     name: r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.ra'
@@ -1383,6 +1555,7 @@ tables:
     description: Sources s2n for the APER_3 aperture in the detection image
     name: s2n_det_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_det_aper_6'
@@ -1390,6 +1563,7 @@ tables:
     description: Sources s2n for the APER_6 aperture in the detection image
     name: s2n_det_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_det_auto'
@@ -1397,6 +1571,7 @@ tables:
     description: Sources s2n for the AUTO aperture in the detection image
     name: s2n_det_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_det_iso'
@@ -1404,6 +1579,7 @@ tables:
     description: Sources s2n for the ISO aperture in the detection image
     name: s2n_det_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_det_petro'
@@ -1411,6 +1587,7 @@ tables:
     description: Sources s2n for the PETRO aperture in the detection image
     name: s2n_det_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_aper_3'
@@ -1418,6 +1595,7 @@ tables:
     description: F378 band APER_3 magnitude s2n
     name: s2n_f378_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_aper_6'
@@ -1425,6 +1603,7 @@ tables:
     description: F378 band APER_6 magnitude s2n
     name: s2n_f378_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_auto'
@@ -1432,6 +1611,7 @@ tables:
     description: F378 band AUTO magnitude s2n
     name: s2n_f378_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_iso'
@@ -1439,6 +1619,7 @@ tables:
     description: F378 band ISO magnitude s2n
     name: s2n_f378_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_petro'
@@ -1446,6 +1627,7 @@ tables:
     description: F378 band PETRO magnitude s2n
     name: s2n_f378_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f378_pstotal'
@@ -1453,6 +1635,7 @@ tables:
     description: F378 band PSTOTAL magnitude s2n
     name: s2n_f378_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_aper_3'
@@ -1460,6 +1643,7 @@ tables:
     description: F395 band APER_3 magnitude s2n
     name: s2n_f395_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_aper_6'
@@ -1467,6 +1651,7 @@ tables:
     description: F395 band APER_6 magnitude s2n
     name: s2n_f395_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_auto'
@@ -1474,6 +1659,7 @@ tables:
     description: F395 band AUTO magnitude s2n
     name: s2n_f395_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_iso'
@@ -1481,6 +1667,7 @@ tables:
     description: F395 band ISO magnitude s2n
     name: s2n_f395_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_petro'
@@ -1488,6 +1675,7 @@ tables:
     description: F395 band PETRO magnitude s2n
     name: s2n_f395_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f395_pstotal'
@@ -1495,6 +1683,7 @@ tables:
     description: F395 band PSTOTAL magnitude s2n
     name: s2n_f395_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_aper_3'
@@ -1502,6 +1691,7 @@ tables:
     description: F410 band APER_3 magnitude s2n
     name: s2n_f410_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_aper_6'
@@ -1509,6 +1699,7 @@ tables:
     description: F410 band APER_6 magnitude s2n
     name: s2n_f410_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_auto'
@@ -1516,6 +1707,7 @@ tables:
     description: F410 band AUTO magnitude s2n
     name: s2n_f410_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_iso'
@@ -1523,6 +1715,7 @@ tables:
     description: F410 band ISO magnitude s2n
     name: s2n_f410_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_petro'
@@ -1530,6 +1723,7 @@ tables:
     description: F410 band PETRO magnitude s2n
     name: s2n_f410_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f410_pstotal'
@@ -1537,6 +1731,7 @@ tables:
     description: F410 band PSTOTAL magnitude s2n
     name: s2n_f410_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_aper_3'
@@ -1544,6 +1739,7 @@ tables:
     description: F430 band APER_3 magnitude s2n
     name: s2n_f430_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_aper_6'
@@ -1551,6 +1747,7 @@ tables:
     description: F430 band APER_6 magnitude s2n
     name: s2n_f430_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_auto'
@@ -1558,6 +1755,7 @@ tables:
     description: F430 band AUTO magnitude s2n
     name: s2n_f430_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_iso'
@@ -1565,6 +1763,7 @@ tables:
     description: F430 band ISO magnitude s2n
     name: s2n_f430_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_petro'
@@ -1572,6 +1771,7 @@ tables:
     description: F430 band PETRO magnitude s2n
     name: s2n_f430_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f430_pstotal'
@@ -1579,6 +1779,7 @@ tables:
     description: F430 band PSTOTAL magnitude s2n
     name: s2n_f430_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_aper_3'
@@ -1586,6 +1787,7 @@ tables:
     description: F515 band APER_3 magnitude s2n
     name: s2n_f515_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_aper_6'
@@ -1593,6 +1795,7 @@ tables:
     description: F515 band APER_6 magnitude s2n
     name: s2n_f515_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_auto'
@@ -1600,6 +1803,7 @@ tables:
     description: F515 band AUTO magnitude s2n
     name: s2n_f515_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_iso'
@@ -1607,6 +1811,7 @@ tables:
     description: F515 band ISO magnitude s2n
     name: s2n_f515_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_petro'
@@ -1614,6 +1819,7 @@ tables:
     description: F515 band PETRO magnitude s2n
     name: s2n_f515_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f515_pstotal'
@@ -1621,6 +1827,7 @@ tables:
     description: F515 band PSTOTAL magnitude s2n
     name: s2n_f515_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_aper_3'
@@ -1628,6 +1835,7 @@ tables:
     description: F660 band APER_3 magnitude s2n
     name: s2n_f660_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_aper_6'
@@ -1635,6 +1843,7 @@ tables:
     description: F660 band APER_6 magnitude s2n
     name: s2n_f660_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_auto'
@@ -1642,6 +1851,7 @@ tables:
     description: F660 band AUTO magnitude s2n
     name: s2n_f660_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_iso'
@@ -1649,6 +1859,7 @@ tables:
     description: F660 band ISO magnitude s2n
     name: s2n_f660_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_petro'
@@ -1656,6 +1867,7 @@ tables:
     description: F660 band PETRO magnitude s2n
     name: s2n_f660_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f660_pstotal'
@@ -1663,6 +1875,7 @@ tables:
     description: F660 band PSTOTAL magnitude s2n
     name: s2n_f660_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_aper_3'
@@ -1670,6 +1883,7 @@ tables:
     description: F861 band APER_3 magnitude s2n
     name: s2n_f861_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_aper_6'
@@ -1677,6 +1891,7 @@ tables:
     description: F861 band APER_6 magnitude s2n
     name: s2n_f861_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_auto'
@@ -1684,6 +1899,7 @@ tables:
     description: F861 band AUTO magnitude s2n
     name: s2n_f861_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_iso'
@@ -1691,6 +1907,7 @@ tables:
     description: F861 band ISO magnitude s2n
     name: s2n_f861_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_petro'
@@ -1698,6 +1915,7 @@ tables:
     description: F861 band PETRO magnitude s2n
     name: s2n_f861_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_f861_pstotal'
@@ -1705,6 +1923,7 @@ tables:
     description: F861 band PSTOTAL magnitude s2n
     name: s2n_f861_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_aper_3'
@@ -1712,6 +1931,7 @@ tables:
     description: G band APER_3 magnitude s2n
     name: s2n_g_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_aper_6'
@@ -1719,6 +1939,7 @@ tables:
     description: G band APER_6 magnitude s2n
     name: s2n_g_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_auto'
@@ -1726,6 +1947,7 @@ tables:
     description: G band AUTO magnitude s2n
     name: s2n_g_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_iso'
@@ -1733,6 +1955,7 @@ tables:
     description: G band ISO magnitude s2n
     name: s2n_g_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_petro'
@@ -1740,6 +1963,7 @@ tables:
     description: G band PETRO magnitude s2n
     name: s2n_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_g_pstotal'
@@ -1747,6 +1971,7 @@ tables:
     description: G band PSTOTAL magnitude s2n
     name: s2n_g_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_aper_3'
@@ -1754,6 +1979,7 @@ tables:
     description: I band APER_3 magnitude s2n
     name: s2n_i_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_aper_6'
@@ -1761,6 +1987,7 @@ tables:
     description: I band APER_6 magnitude s2n
     name: s2n_i_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_auto'
@@ -1768,6 +1995,7 @@ tables:
     description: I band AUTO magnitude s2n
     name: s2n_i_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_iso'
@@ -1775,6 +2003,7 @@ tables:
     description: I band ISO magnitude s2n
     name: s2n_i_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_petro'
@@ -1782,6 +2011,7 @@ tables:
     description: I band PETRO magnitude s2n
     name: s2n_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_i_pstotal'
@@ -1789,6 +2019,7 @@ tables:
     description: I band PSTOTAL magnitude s2n
     name: s2n_i_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_aper_3'
@@ -1796,6 +2027,7 @@ tables:
     description: R band APER_3 magnitude s2n
     name: s2n_r_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_aper_6'
@@ -1803,6 +2035,7 @@ tables:
     description: R band APER_6 magnitude s2n
     name: s2n_r_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_auto'
@@ -1810,6 +2043,7 @@ tables:
     description: R band AUTO magnitude s2n
     name: s2n_r_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_iso'
@@ -1817,6 +2051,7 @@ tables:
     description: R band ISO magnitude s2n
     name: s2n_r_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_petro'
@@ -1824,6 +2059,7 @@ tables:
     description: R band PETRO magnitude s2n
     name: s2n_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_r_pstotal'
@@ -1831,6 +2067,7 @@ tables:
     description: R band PSTOTAL magnitude s2n
     name: s2n_r_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_aper_3'
@@ -1838,6 +2075,7 @@ tables:
     description: U band APER_3 magnitude s2n
     name: s2n_u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_aper_6'
@@ -1845,6 +2083,7 @@ tables:
     description: U band APER_6 magnitude s2n
     name: s2n_u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_auto'
@@ -1852,6 +2091,7 @@ tables:
     description: U band AUTO magnitude s2n
     name: s2n_u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_iso'
@@ -1859,6 +2099,7 @@ tables:
     description: U band ISO magnitude s2n
     name: s2n_u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_petro'
@@ -1866,6 +2107,7 @@ tables:
     description: U band PETRO magnitude s2n
     name: s2n_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_u_pstotal'
@@ -1873,6 +2115,7 @@ tables:
     description: U band PSTOTAL magnitude s2n
     name: s2n_u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_aper_3'
@@ -1880,6 +2123,7 @@ tables:
     description: Z band APER_3 magnitude s2n
     name: s2n_z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_aper_6'
@@ -1887,6 +2131,7 @@ tables:
     description: Z band APER_6 magnitude s2n
     name: s2n_z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_auto'
@@ -1894,6 +2139,7 @@ tables:
     description: Z band AUTO magnitude s2n
     name: s2n_z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_iso'
@@ -1901,6 +2147,7 @@ tables:
     description: Z band ISO magnitude s2n
     name: s2n_z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_petro'
@@ -1908,6 +2155,7 @@ tables:
     description: Z band PETRO magnitude s2n
     name: s2n_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.s2n_z_pstotal'
@@ -1915,6 +2163,7 @@ tables:
     description: Z band PSTOTAL magnitude s2n
     name: s2n_z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.theta'
@@ -1922,6 +2171,7 @@ tables:
     description: Isophotal image position angle [deg]
     name: theta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_aper_3'
@@ -1929,6 +2179,7 @@ tables:
     description: AB U band APER_3 magnitude
     name: u_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_aper_6'
@@ -1936,6 +2187,7 @@ tables:
     description: AB U band APER_6 magnitude
     name: u_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_auto'
@@ -1943,6 +2195,7 @@ tables:
     description: AB U band AUTO magnitude
     name: u_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_iso'
@@ -1950,6 +2203,7 @@ tables:
     description: AB U band ISO magnitude
     name: u_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_petro'
@@ -1957,6 +2211,7 @@ tables:
     description: AB U band PETRO magnitude
     name: u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.u_pstotal'
@@ -1964,6 +2219,7 @@ tables:
     description: AB U band PSTOTAL magnitude
     name: u_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.x'
@@ -1971,6 +2227,7 @@ tables:
     description: Reduced Image CCD position [pixel]
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.y'
@@ -1978,6 +2235,7 @@ tables:
     description: Reduced Image CCD position [pixel]
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_aper_3'
@@ -1985,6 +2243,7 @@ tables:
     description: AB Z band APER_3 magnitude
     name: z_aper_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_aper_6'
@@ -1992,6 +2251,7 @@ tables:
     description: AB Z band APER_6 magnitude
     name: z_aper_6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_auto'
@@ -1999,6 +2259,7 @@ tables:
     description: AB Z band AUTO magnitude
     name: z_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_iso'
@@ -2006,6 +2267,7 @@ tables:
     description: AB Z band ISO magnitude
     name: z_iso
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_petro'
@@ -2013,6 +2275,7 @@ tables:
     description: AB Z band PETRO magnitude
     name: z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.z_pstotal'
@@ -2020,6 +2283,7 @@ tables:
     description: AB Z band PSTOTAL magnitude
     name: z_pstotal
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.main.htm9'
@@ -2083,6 +2347,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Main object table containing photometry in g, i, r, u, z, f378, f395,
@@ -2290,6 +2555,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.photoz.id'
@@ -2402,6 +2668,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#splus_dr2.star_galaxy_quasar_class.id'

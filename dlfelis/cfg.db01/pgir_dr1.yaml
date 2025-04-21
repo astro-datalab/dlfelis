@@ -14,6 +14,7 @@ tables:
     ivoa:ucd: pos.eq.ra;meta.main
     name: tmcra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.tmcdec'
@@ -23,6 +24,7 @@ tables:
     ivoa:ucd: pos.eq.dec;meta.main
     name: tmcdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.pts_key'
@@ -30,6 +32,7 @@ tables:
     description: 2MASS ID number of source
     name: pts_key
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.tmcjmag'
@@ -37,6 +40,7 @@ tables:
     description: 2MASS J-band magnitude
     name: tmcjmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.tmchmag'
@@ -44,6 +48,7 @@ tables:
     description: 2MASS H-band magnitude
     name: tmchmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.psfcontam'
@@ -58,6 +63,7 @@ tables:
     description: Mean magnitude of all PGIR exposures of source
     name: meanmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.maxmag'
@@ -65,6 +71,7 @@ tables:
     description: Maximum magnitude of all PGIR exposures of source
     name: maxmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.minmag'
@@ -72,6 +79,7 @@ tables:
     description: Minimum magnitude of all PGIR exposures of source
     name: minmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.rmsmag'
@@ -79,6 +87,7 @@ tables:
     description: Magnitude RMS of all PGIR exposurs of source
     name: rmsmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.sources.htm9'
@@ -139,6 +148,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Metadata and statistical moments of photometry for each 2MASS source
@@ -221,6 +231,7 @@ tables:
     description: Julian date of exposure start
     name: obsjd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.photometry.pts_key'
@@ -236,6 +247,7 @@ tables:
     description: J-band magnitude of PGIR exposure of source
     name: magpsf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.photometry.magpsferr'
@@ -243,6 +255,7 @@ tables:
     description: Image noise magnitude error of PGIR exposure of source
     name: magpsferr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.photometry.magpsfstaterr'
@@ -250,6 +263,7 @@ tables:
     description: Statistical magnitude error of PGIR exposure of source
     name: magpsfstaterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.photometry.magpsflim'
@@ -257,6 +271,7 @@ tables:
     description: Maximum error value to yield signal-to-noise of < 3
     name: magpsflim
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.photometry.flags'
@@ -271,6 +286,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Individual photometric measurements for each source in the catalog
@@ -325,6 +341,7 @@ tables:
     description: Julian date of exposure start
     name: obsjd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.exptime'
@@ -333,6 +350,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.airmass'
@@ -340,6 +358,7 @@ tables:
     description: Airmass value of exposure
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.zp'
@@ -347,6 +366,7 @@ tables:
     description: Zero point magnitude of exposure
     name: zp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.zp_std'
@@ -354,6 +374,7 @@ tables:
     description: Zero point RMS
     name: zp_std
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.zp_unc'
@@ -361,6 +382,7 @@ tables:
     description: Zero point uncertainty
     name: zp_unc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.limmag'
@@ -368,6 +390,7 @@ tables:
     description: Averaged 5-sigma limiting magnitude of image
     name: limmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.color_term'
@@ -375,6 +398,7 @@ tables:
     description: Color term to correct for J-H color
     name: color_term
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.color_unc'
@@ -382,6 +406,7 @@ tables:
     description: Uncertainty in J-H color term
     name: color_unc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.saturmag'
@@ -389,6 +414,7 @@ tables:
     description: Saturation magnitude for exposure
     name: saturmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.numnoisepixels'
@@ -396,6 +422,7 @@ tables:
     description: Effective footprint of PSF in number of pixels
     name: numnoisepixels
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#pgir_dr1.exposures.mside'
@@ -426,6 +453,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Metadata of each exposure included in the catalog

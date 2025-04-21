@@ -55,6 +55,7 @@ tables:
     description: Magnitude in Johnson V
     name: vmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.varflag'
@@ -114,6 +115,7 @@ tables:
     ivoa:ucd: pos.parallax.trig
     name: plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmra'
@@ -123,6 +125,7 @@ tables:
     ivoa:ucd: pos.pm
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmde'
@@ -142,6 +145,7 @@ tables:
     fits:tunit: mas
     name: e_radeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_dedeg'
@@ -153,6 +157,7 @@ tables:
     fits:tunit: mas
     name: e_dedeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_plx'
@@ -161,6 +166,7 @@ tables:
     fits:tunit: mas
     name: e_plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_pmra'
@@ -169,6 +175,7 @@ tables:
     fits:tunit: mas/yr
     name: e_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_pmde'
@@ -177,6 +184,7 @@ tables:
     fits:tunit: mas/yr
     name: e_pmde
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.de_ra'
@@ -184,6 +192,7 @@ tables:
     description: Correlation, DE/RA*cos(delta)
     name: de_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.plx_ra'
@@ -191,6 +200,7 @@ tables:
     description: Correlation, Plx/RA*cos(delta)
     name: plx_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.plx_de'
@@ -198,6 +208,7 @@ tables:
     description: Correlation, Plx/DE
     name: plx_de
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmra_ra'
@@ -205,6 +216,7 @@ tables:
     description: Correlation, pmRA/RA*cos(delta)
     name: pmra_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmra_de'
@@ -212,6 +224,7 @@ tables:
     description: Correlation, pmRA/DE
     name: pmra_de
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmra_plx'
@@ -219,6 +232,7 @@ tables:
     description: Correlation, pmRA/Plx
     name: pmra_plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmde_ra'
@@ -226,6 +240,7 @@ tables:
     description: Correlation, pmDE/RA*cos(delta)
     name: pmde_ra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmde_de'
@@ -233,6 +248,7 @@ tables:
     description: Correlation, pmDE/DE
     name: pmde_de
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmde_plx'
@@ -240,6 +256,7 @@ tables:
     description: Correlation, pmDE/Plx
     name: pmde_plx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.pmde_pmra'
@@ -247,6 +264,7 @@ tables:
     description: Correlation, pmDE/pmRA
     name: pmde_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.f1'
@@ -263,6 +281,7 @@ tables:
       to the data
     name: f2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.hip2'
@@ -278,6 +297,7 @@ tables:
     fits:tunit: mag
     name: btmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_btmag'
@@ -286,6 +306,7 @@ tables:
     fits:tunit: mag
     name: e_btmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.vtmag'
@@ -294,6 +315,7 @@ tables:
     fits:tunit: mag
     name: vtmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_vtmag'
@@ -302,6 +324,7 @@ tables:
     fits:tunit: mag
     name: e_vtmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.m_btmag'
@@ -321,6 +344,7 @@ tables:
     fits:tunit: mag
     name: b_v
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_b_v'
@@ -329,6 +353,7 @@ tables:
     fits:tunit: mag
     name: e_b_v
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.r_b_v'
@@ -345,6 +370,7 @@ tables:
     fits:tunit: mag
     name: v_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_v_i'
@@ -353,6 +379,7 @@ tables:
     fits:tunit: mag
     name: e_v_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.r_v_i'
@@ -381,6 +408,7 @@ tables:
     fits:tunit: mag
     name: hpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_hpmag'
@@ -389,6 +417,7 @@ tables:
     fits:tunit: mag
     name: e_hpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.hpscat'
@@ -397,6 +426,7 @@ tables:
     fits:tunit: mag
     name: hpscat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.o_hpmag'
@@ -422,6 +452,7 @@ tables:
     description: Hpmag at maximum (5th percentile)
     name: hpmax
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.hpmin'
@@ -430,6 +461,7 @@ tables:
     fits:tunit: mag
     name: hpmin
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.period'
@@ -438,6 +470,7 @@ tables:
     fits:tunit: d
     name: period
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.hvartype'
@@ -559,6 +592,7 @@ tables:
     fits:tunit: arcsec
     name: rho
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_rho'
@@ -567,6 +601,7 @@ tables:
     fits:tunit: arcsec
     name: e_rho
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.dhp'
@@ -575,6 +610,7 @@ tables:
     fits:tunit: mag
     name: dhp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.e_dhp'
@@ -583,6 +619,7 @@ tables:
     fits:tunit: mag
     name: e_dhp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.survey'
@@ -651,6 +688,7 @@ tables:
     fits:tunit: mag
     name: v_i_red
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.sptype'
@@ -658,6 +696,7 @@ tables:
     description: Spectral type
     name: sptype
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.r_sptype'
@@ -672,6 +711,7 @@ tables:
       X : Miscellaneous<BR> A blank entry has no corresponding information.'
     name: r_sptype
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.glon'
@@ -715,6 +755,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#hipparcos.main.nest4096'

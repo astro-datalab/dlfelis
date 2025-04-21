@@ -41,6 +41,7 @@ tables:
     fits:tunit: arcsec/hr
     name: rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.ratec'
@@ -48,6 +49,7 @@ tables:
     description: approx. projection corrected rate (rate/cos(opposition))
     name: ratec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.pa'
@@ -56,6 +58,7 @@ tables:
     fits:tunit: deg
     name: pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.mag'
@@ -63,6 +66,7 @@ tables:
     description: estimated average magnitude over detected observations
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.digest'
@@ -85,6 +89,7 @@ tables:
     description: (for internal use)
     name: rate_rms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.rate_pct'
@@ -92,6 +97,7 @@ tables:
     description: (for internal use)
     name: rate_pct
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addgrp.checked'
@@ -186,6 +192,7 @@ tables:
     fits:tunit: pix
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addobs.y'
@@ -194,6 +201,7 @@ tables:
     fits:tunit: pix
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addobs.xco'
@@ -202,6 +210,7 @@ tables:
     fits:tunit: pix
     name: xco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addobs.yco'
@@ -210,6 +219,7 @@ tables:
     fits:tunit: pix
     name: yco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.addobs.cutout'
@@ -494,6 +504,7 @@ tables:
     description: estimated magnitude zeropoint (for 1 sec)
     name: magzpt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movexp.fwhm'
@@ -501,6 +512,7 @@ tables:
     description: median FWHM of exposure over FWHM for all CCDs (pixels)
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: The exposure table provides details of each exposure. The expname is
@@ -549,6 +561,7 @@ tables:
     description: apparent rate of motion from measured positions (arcsec/hr)
     name: rate
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movgrp.pa'
@@ -556,6 +569,7 @@ tables:
     description: apparent position angle from measured positions (deg)
     name: pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movgrp.mag'
@@ -563,6 +577,7 @@ tables:
     description: estimated average magnitude over detected observations
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movgrp.digest'
@@ -754,6 +769,7 @@ tables:
     description: column pixel coordinate in CCD image (pix)
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movobs.y'
@@ -761,6 +777,7 @@ tables:
     description: row pixel coordinate in CCD image (pix)
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movobs.xco'
@@ -768,6 +785,7 @@ tables:
     description: column pixel coordinate in cutout image (pix)
     name: xco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movobs.yco'
@@ -775,6 +793,7 @@ tables:
     description: row pixel coordinate in cutout image (pix)
     name: yco
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#dad_dr2.movobs.cutout'

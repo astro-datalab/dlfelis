@@ -24,6 +24,7 @@ tables:
     description: ''
     name: skypc2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.exposure.skypc5'
@@ -31,6 +32,7 @@ tables:
     description: ''
     name: skypc5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.exposure.skypc10'
@@ -38,6 +40,7 @@ tables:
     description: ''
     name: skypc10
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.exposure.skypc90'
@@ -45,6 +48,7 @@ tables:
     description: ''
     name: skypc90
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.exposure.filter'
@@ -124,6 +128,7 @@ tables:
     description: ''
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.magerr'
@@ -131,6 +136,7 @@ tables:
     description: ''
     name: magerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.contam'
@@ -138,6 +144,7 @@ tables:
     description: ''
     name: contam
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.xpos'
@@ -145,6 +152,7 @@ tables:
     description: ''
     name: xpos
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.ypos'
@@ -152,6 +160,7 @@ tables:
     description: ''
     name: ypos
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.errfloor'
@@ -159,6 +168,7 @@ tables:
     description: ''
     name: errfloor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.mag_offset'
@@ -166,6 +176,7 @@ tables:
     description: ''
     name: mag_offset
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.sky'
@@ -173,6 +184,7 @@ tables:
     description: ''
     name: sky
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.blim'
@@ -180,6 +192,7 @@ tables:
     description: ''
     name: blim
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.random_id'
@@ -187,6 +200,7 @@ tables:
     description: ''
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.meas.objid'
@@ -363,6 +377,7 @@ tables:
     description: ''
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.umean'
@@ -370,6 +385,7 @@ tables:
     description: ''
     name: umean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.umeanerr'
@@ -377,6 +393,7 @@ tables:
     description: ''
     name: umeanerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.umed'
@@ -384,6 +401,7 @@ tables:
     description: ''
     name: umed
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.umederr'
@@ -391,6 +409,7 @@ tables:
     description: ''
     name: umederr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.gmean'
@@ -398,6 +417,7 @@ tables:
     description: ''
     name: gmean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.gmeanerr'
@@ -405,6 +425,7 @@ tables:
     description: ''
     name: gmeanerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.gmed'
@@ -412,6 +433,7 @@ tables:
     description: ''
     name: gmed
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.gmederr'
@@ -419,6 +441,7 @@ tables:
     description: ''
     name: gmederr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.rmean'
@@ -426,6 +449,7 @@ tables:
     description: ''
     name: rmean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.rmeanerr'
@@ -433,6 +457,7 @@ tables:
     description: ''
     name: rmeanerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.rmed'
@@ -440,6 +465,7 @@ tables:
     description: ''
     name: rmed
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.rmederr'
@@ -447,6 +473,7 @@ tables:
     description: ''
     name: rmederr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.imean'
@@ -454,6 +481,7 @@ tables:
     description: ''
     name: imean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.imeanerr'
@@ -461,6 +489,7 @@ tables:
     description: ''
     name: imeanerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.imed'
@@ -468,6 +497,7 @@ tables:
     description: ''
     name: imed
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.imederr'
@@ -475,6 +505,7 @@ tables:
     description: ''
     name: imederr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.zmean'
@@ -482,6 +513,7 @@ tables:
     description: ''
     name: zmean
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.zmeanerr'
@@ -489,6 +521,7 @@ tables:
     description: ''
     name: zmeanerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.zmed'
@@ -496,6 +529,7 @@ tables:
     description: ''
     name: zmed
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.zmederr'
@@ -503,6 +537,7 @@ tables:
     description: ''
     name: zmederr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.a_u'
@@ -510,6 +545,7 @@ tables:
     description: ''
     name: a_u
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.a_g'
@@ -517,6 +553,7 @@ tables:
     description: ''
     name: a_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.a_r'
@@ -524,6 +561,7 @@ tables:
     description: ''
     name: a_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.a_i'
@@ -531,6 +569,7 @@ tables:
     description: ''
     name: a_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.e_rz'
@@ -538,6 +577,7 @@ tables:
     description: ''
     name: e_rz
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.e_gi'
@@ -545,6 +585,7 @@ tables:
     description: ''
     name: e_gi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#bulge_dr1.object.nu'

@@ -88,6 +88,7 @@ tables:
       all in multiple systems.'
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.pmde'
@@ -97,6 +98,7 @@ tables:
       multiple systems.'
     name: pmde
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_ramdeg'
@@ -120,6 +122,7 @@ tables:
       models.'
     name: e_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_pmde'
@@ -128,6 +131,7 @@ tables:
       models.'
     name: e_pmde
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.epram'
@@ -135,6 +139,7 @@ tables:
     description: 'mean epoch of RA; note: The mean epochs are given in Julian years.'
     name: epram
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.epdem'
@@ -142,6 +147,7 @@ tables:
     description: 'mean epoch of Dec; note: The mean epochs are given in Julian years.'
     name: epdem
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.num'
@@ -158,6 +164,7 @@ tables:
       > 2. Values exceeding 9.9 are truncated to 9.9.'
     name: q_ramdeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.q_demdeg'
@@ -167,6 +174,7 @@ tables:
       Num > 2. Values exceeding 9.9 are truncated to 9.9.'
     name: q_demdeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.q_pmra'
@@ -176,6 +184,7 @@ tables:
       > 2. Values exceeding 9.9 are truncated to 9.9.'
     name: q_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.q_pmde'
@@ -185,6 +194,7 @@ tables:
       > 2. Values exceeding 9.9 are truncated to 9.9.'
     name: q_pmde
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.btmag'
@@ -196,6 +206,7 @@ tables:
       SP-1200, 1997, for details.'
     name: btmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_btmag'
@@ -207,6 +218,7 @@ tables:
       1997, for details.'
     name: e_btmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.vtmag'
@@ -218,6 +230,7 @@ tables:
       SP-1200, 1997, for details.'
     name: vtmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_vtmag'
@@ -229,6 +242,7 @@ tables:
       1997, for details.'
     name: e_vtmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.prox'
@@ -296,6 +310,7 @@ tables:
     description: epoch-1990 of RAdeg
     name: epra_1990
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.epde_1990'
@@ -303,6 +318,7 @@ tables:
     description: epoch-1990 of DEdeg
     name: epde_1990
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_radeg'
@@ -311,6 +327,7 @@ tables:
       on error models.'
     name: e_radeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.e_dedeg'
@@ -319,6 +336,7 @@ tables:
       models.'
     name: e_dedeg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.posflg'
@@ -340,6 +358,7 @@ tables:
     description: correlation (RAdeg,DEdeg)
     name: corr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#tycho2.main.ring256'
@@ -389,6 +408,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: The Tycho-2 main catalogue

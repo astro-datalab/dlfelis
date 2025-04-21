@@ -251,6 +251,7 @@ tables:
       in this brick in g-band
     name: psfsize_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfsize_r'
@@ -259,6 +260,7 @@ tables:
       in this brick in r-band
     name: psfsize_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfsize_z'
@@ -267,6 +269,7 @@ tables:
       in this brick in z-band
     name: psfsize_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_g'
@@ -274,6 +277,7 @@ tables:
     description: 5-sigma PSF detection depth in g-band (AB mag), using PsfEx PSF model
     name: psfdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_r'
@@ -281,6 +285,7 @@ tables:
     description: 5-sigma PSF detection depth in r-band (AB mag), using PsfEx PSF model
     name: psfdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_z'
@@ -288,6 +293,7 @@ tables:
     description: 5-sigma PSF detection depth in z-band (AB mag), using PsfEx PSF model
     name: psfdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_g'
@@ -296,6 +302,7 @@ tables:
       (AB) mag
     name: galdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_r'
@@ -304,6 +311,7 @@ tables:
       (AB) mag
     name: galdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_z'
@@ -312,6 +320,7 @@ tables:
       (AB) mag
     name: galdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ebv'
@@ -320,6 +329,7 @@ tables:
       BRICK_UNIQUE objects in this brick
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_g'
@@ -328,6 +338,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_r'
@@ -336,6 +347,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_z'
@@ -344,6 +356,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_g'
@@ -351,6 +364,7 @@ tables:
     description: Extinction in g-band
     name: ext_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_r'
@@ -358,6 +372,7 @@ tables:
     description: Extinction in r-band
     name: ext_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_z'
@@ -365,6 +380,7 @@ tables:
     description: Extinction in z-band
     name: ext_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.wise_nobs_1'
@@ -405,6 +421,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_2'
@@ -413,6 +430,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_3'
@@ -421,6 +439,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_4'
@@ -429,6 +448,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w1'
@@ -436,6 +456,7 @@ tables:
     description: Extinction in W1
     name: ext_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w2'
@@ -443,6 +464,7 @@ tables:
     description: Extinction in W2
     name: ext_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w3'
@@ -450,6 +472,7 @@ tables:
     description: Extinction in W3
     name: ext_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w4'
@@ -457,6 +480,7 @@ tables:
     description: Extinction in W4
     name: ext_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.htm9'
@@ -575,6 +599,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_tractor.g_r'
@@ -582,6 +607,7 @@ tables:
     description: Computed (g-r) color
     name: g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_tractor.r_z'
@@ -589,6 +615,7 @@ tables:
     description: Computed (r_z) color
     name: r_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_tractor.z_w1'
@@ -596,6 +623,7 @@ tables:
     description: Computed (z_w1) color
     name: z_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr6_tractor.type'
@@ -890,6 +918,7 @@ tables:
       in this brick in g-band
     name: psfsize_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfsize_r'
@@ -898,6 +927,7 @@ tables:
       in this brick in r-band
     name: psfsize_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfsize_z'
@@ -906,6 +936,7 @@ tables:
       in this brick in z-band
     name: psfsize_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_g'
@@ -913,6 +944,7 @@ tables:
     description: 5-sigma PSF detection depth in g-band (AB mag), using PsfEx PSF model
     name: psfdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_r'
@@ -920,6 +952,7 @@ tables:
     description: 5-sigma PSF detection depth in r-band (AB mag), using PsfEx PSF model
     name: psfdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_z'
@@ -927,6 +960,7 @@ tables:
     description: 5-sigma PSF detection depth in z-band (AB mag), using PsfEx PSF model
     name: psfdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_g'
@@ -935,6 +969,7 @@ tables:
       (AB) mag
     name: galdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_r'
@@ -943,6 +978,7 @@ tables:
       (AB) mag
     name: galdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_z'
@@ -951,6 +987,7 @@ tables:
       (AB) mag
     name: galdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ebv'
@@ -959,6 +996,7 @@ tables:
       BRICK_UNIQUE objects in this brick
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_g'
@@ -967,6 +1005,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_r'
@@ -975,6 +1014,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_z'
@@ -983,6 +1023,7 @@ tables:
       DECAM_MW_TRANSMISSION
     name: trans_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_g'
@@ -990,6 +1031,7 @@ tables:
     description: Extinction in g-band
     name: ext_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_r'
@@ -997,6 +1039,7 @@ tables:
     description: Extinction in r-band
     name: ext_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_z'
@@ -1004,6 +1047,7 @@ tables:
     description: Extinction in z-band
     name: ext_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.wise_nobs_1'
@@ -1044,6 +1088,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_2'
@@ -1052,6 +1097,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_3'
@@ -1060,6 +1106,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_4'
@@ -1068,6 +1115,7 @@ tables:
       also, e.g., MW_TRANSMISSION_W1
     name: trans_wise_4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w1'
@@ -1075,6 +1123,7 @@ tables:
     description: Extinction in W1
     name: ext_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w2'
@@ -1082,6 +1131,7 @@ tables:
     description: Extinction in W2
     name: ext_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w3'
@@ -1089,6 +1139,7 @@ tables:
     description: Extinction in W3
     name: ext_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w4'
@@ -1096,6 +1147,7 @@ tables:
     description: Extinction in W4
     name: ext_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.htm9'
@@ -1199,6 +1251,7 @@ tables:
     description: Computed (g-r) color
     name: g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_tractor.mag_w1'
@@ -1206,6 +1259,7 @@ tables:
     description: Computed W1 magnitude
     name: mag_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_tractor.ra'
@@ -1221,6 +1275,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_tractor.r_z'
@@ -1228,6 +1283,7 @@ tables:
     description: Computed (r_z) color
     name: r_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nbdata.nb0068_lsdr7_tractor.type'
@@ -1242,6 +1298,7 @@ tables:
     description: Computed (z_w1) color
     name: z_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Main tractor photometry catalog (with just 8 columns)

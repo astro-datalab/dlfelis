@@ -415,6 +415,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.filt_str'
@@ -506,6 +507,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.airmass'
@@ -513,6 +515,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.seeing'
@@ -521,6 +524,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.moonangle'
@@ -528,6 +532,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.fwhm'
@@ -536,6 +541,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.elliptic'
@@ -543,6 +549,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.calibrated.magzero'
@@ -551,6 +558,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Instrument calibrated images that overlap with SDSS Stripe 82
@@ -1002,6 +1010,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.filt_str'
@@ -1093,6 +1102,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.airmass'
@@ -1100,6 +1110,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.seeing'
@@ -1108,6 +1119,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.moonangle'
@@ -1115,6 +1127,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.fwhm'
@@ -1123,6 +1136,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.elliptic'
@@ -1130,6 +1144,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.coadd.magzero'
@@ -1138,6 +1153,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Stacked calibrated images that overlap with SDSS Stripe 82
@@ -1589,6 +1605,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.filt_str'
@@ -1680,6 +1697,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.airmass'
@@ -1687,6 +1705,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.seeing'
@@ -1695,6 +1714,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.moonangle'
@@ -1702,6 +1722,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.fwhm'
@@ -1710,6 +1731,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.elliptic'
@@ -1717,6 +1739,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.decaps_dr1.magzero'
@@ -1725,6 +1748,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from DECaPS DR1 that overlap with SDSS Stripe 82
@@ -2176,6 +2200,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.filt_str'
@@ -2267,6 +2292,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.airmass'
@@ -2274,6 +2300,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.seeing'
@@ -2282,6 +2309,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.moonangle'
@@ -2289,6 +2317,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.fwhm'
@@ -2297,6 +2326,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.elliptic'
@@ -2304,6 +2334,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr1.magzero'
@@ -2312,6 +2343,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR1 that overlap with SDSS Stripe
@@ -2764,6 +2796,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.filt_str'
@@ -2855,6 +2888,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.airmass'
@@ -2862,6 +2896,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.seeing'
@@ -2870,6 +2905,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.moonangle'
@@ -2877,6 +2913,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.fwhm'
@@ -2885,6 +2922,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.elliptic'
@@ -2892,6 +2930,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_dr2.magzero'
@@ -2900,6 +2939,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR2 that overlap with SDSS Stripe
@@ -3352,6 +3392,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.filt_str'
@@ -3443,6 +3484,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.airmass'
@@ -3450,6 +3492,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.seeing'
@@ -3458,6 +3501,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.moonangle'
@@ -3465,6 +3509,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.fwhm'
@@ -3473,6 +3518,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.elliptic'
@@ -3480,6 +3526,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_sva1.magzero'
@@ -3488,6 +3535,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey SVA1 that overlap with SDSS Stripe
@@ -3940,6 +3988,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.filt_str'
@@ -4031,6 +4080,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.airmass'
@@ -4038,6 +4088,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.seeing'
@@ -4046,6 +4097,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.moonangle'
@@ -4053,6 +4105,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.fwhm'
@@ -4061,6 +4114,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.elliptic'
@@ -4068,6 +4122,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y1.magzero'
@@ -4076,6 +4131,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR1 obtained in the first year of
@@ -4528,6 +4584,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.filt_str'
@@ -4619,6 +4676,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.airmass'
@@ -4626,6 +4684,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.seeing'
@@ -4634,6 +4693,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.moonangle'
@@ -4641,6 +4701,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.fwhm'
@@ -4649,6 +4710,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.elliptic'
@@ -4656,6 +4718,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y2.magzero'
@@ -4664,6 +4727,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR1 obtained in the second year
@@ -5116,6 +5180,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.filt_str'
@@ -5207,6 +5272,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.airmass'
@@ -5214,6 +5280,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.seeing'
@@ -5222,6 +5289,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.moonangle'
@@ -5229,6 +5297,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.fwhm'
@@ -5237,6 +5306,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.elliptic'
@@ -5244,6 +5314,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y3.magzero'
@@ -5252,6 +5323,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR1 obtained in the third year of
@@ -5704,6 +5776,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.filt_str'
@@ -5795,6 +5868,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.airmass'
@@ -5802,6 +5876,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.seeing'
@@ -5810,6 +5885,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.moonangle'
@@ -5817,6 +5893,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.fwhm'
@@ -5825,6 +5902,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.elliptic'
@@ -5832,6 +5910,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.des_y4.magzero'
@@ -5840,6 +5919,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Dark Energy Survey DR1 obtained in the fourth year
@@ -6292,6 +6372,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.filt_str'
@@ -6383,6 +6464,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.airmass'
@@ -6390,6 +6472,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.seeing'
@@ -6398,6 +6481,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.moonangle'
@@ -6405,6 +6489,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.fwhm'
@@ -6413,6 +6498,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.elliptic'
@@ -6420,6 +6506,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr8.magzero'
@@ -6428,6 +6515,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from Legacy Surveys DR8 that overlap with SDSS Stripe 82
@@ -6879,6 +6967,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.filt_str'
@@ -6970,6 +7059,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.airmass'
@@ -6977,6 +7067,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.seeing'
@@ -6985,6 +7076,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.moonangle'
@@ -6992,6 +7084,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.fwhm'
@@ -7000,6 +7093,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.elliptic'
@@ -7007,6 +7101,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.ls_dr9.magzero'
@@ -7015,6 +7110,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from Legacy Surveys DR9 that overlap with SDSS Stripe 82
@@ -7466,6 +7562,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.filt_str'
@@ -7557,6 +7654,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.airmass'
@@ -7564,6 +7662,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.seeing'
@@ -7572,6 +7671,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.moonangle'
@@ -7579,6 +7679,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.fwhm'
@@ -7587,6 +7688,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.elliptic'
@@ -7594,6 +7696,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsa.magzero'
@@ -7602,6 +7705,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from the Astro Data Archive that overlap with SDSS Stripe 82
@@ -8053,6 +8157,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.filt_str'
@@ -8144,6 +8249,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.airmass'
@@ -8151,6 +8257,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.seeing'
@@ -8159,6 +8266,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.moonangle'
@@ -8166,6 +8274,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.fwhm'
@@ -8174,6 +8283,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.elliptic'
@@ -8181,6 +8291,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.nsc_dr2.magzero'
@@ -8189,6 +8300,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from NSC DR2 that overlap with SDSS Stripe 82
@@ -8640,6 +8752,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.filt_str'
@@ -8731,6 +8844,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.airmass'
@@ -8738,6 +8852,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.seeing'
@@ -8746,6 +8861,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.moonangle'
@@ -8753,6 +8869,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.fwhm'
@@ -8761,6 +8878,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.elliptic'
@@ -8768,6 +8886,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.raw.magzero'
@@ -8776,6 +8895,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Raw uncalibrated images that overlap with SDSS Stripe 82
@@ -9235,6 +9355,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.filt_str'
@@ -9326,6 +9447,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.airmass'
@@ -9333,6 +9455,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.seeing'
@@ -9341,6 +9464,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.moonangle'
@@ -9348,6 +9472,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.fwhm'
@@ -9356,6 +9481,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.elliptic'
@@ -9363,6 +9489,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr1.magzero'
@@ -9371,6 +9498,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from SMASH DR1 that overlap with SDSS Stripe 82
@@ -9790,6 +9918,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.filt_str'
@@ -9881,6 +10010,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.airmass'
@@ -9888,6 +10018,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.seeing'
@@ -9896,6 +10027,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.moonangle'
@@ -9903,6 +10035,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.fwhm'
@@ -9911,6 +10044,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.elliptic'
@@ -9918,6 +10052,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.sdss_dr9.magzero'
@@ -9926,6 +10061,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from SDSS DR9 that overlap with SDSS Stripe 82
@@ -10377,6 +10513,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.filt_str'
@@ -10468,6 +10605,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.airmass'
@@ -10475,6 +10613,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.seeing'
@@ -10483,6 +10622,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.moonangle'
@@ -10490,6 +10630,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.fwhm'
@@ -10498,6 +10639,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.elliptic'
@@ -10505,6 +10647,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.smash_dr2.magzero'
@@ -10513,6 +10656,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from SMASH DR2 that overlap with SDSS Stripe 82
@@ -10932,6 +11076,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.filt_str'
@@ -11023,6 +11168,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.airmass'
@@ -11030,6 +11176,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.seeing'
@@ -11038,6 +11185,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.moonangle'
@@ -11045,6 +11193,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.fwhm'
@@ -11053,6 +11202,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.elliptic'
@@ -11060,6 +11210,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_dr1.magzero'
@@ -11068,6 +11219,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from S-PLUS DR1 that overlap with SDSS Stripe 82
@@ -11519,6 +11671,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.filt_str'
@@ -11610,6 +11763,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.airmass'
@@ -11617,6 +11771,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.seeing'
@@ -11625,6 +11780,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.moonangle'
@@ -11632,6 +11788,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.fwhm'
@@ -11640,6 +11797,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.elliptic'
@@ -11647,6 +11805,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.splus_edr.magzero'
@@ -11655,6 +11814,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from S-PLUS EDR that overlap with SDSS Stripe 82
@@ -12106,6 +12266,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.filt_str'
@@ -12197,6 +12358,7 @@ tables:
     fits:tunit: deg
     name: zd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.airmass'
@@ -12204,6 +12366,7 @@ tables:
     description: Airmass of observation
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.seeing'
@@ -12212,6 +12375,7 @@ tables:
     fits:tunit: arcsec
     name: seeing
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.moonangle'
@@ -12219,6 +12383,7 @@ tables:
     description: Angle between target and moon
     name: moonangle
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.fwhm'
@@ -12227,6 +12392,7 @@ tables:
     fits:tunit: arcsec
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.elliptic'
@@ -12234,6 +12400,7 @@ tables:
     description: Estimate of average ellipticity
     name: elliptic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ivoa_stripe82.stripe82_all.magzero'
@@ -12242,6 +12409,7 @@ tables:
     fits:tunit: mag
     name: magzero
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Images from all surveys that overlap with SDSS Stripe 82

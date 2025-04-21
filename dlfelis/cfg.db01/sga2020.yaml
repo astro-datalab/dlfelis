@@ -141,6 +141,7 @@ tables:
     fits:tunit: degree
     name: pa_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.d25_leda'
@@ -151,6 +152,7 @@ tables:
     fits:tunit: arcmin
     name: d25_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.ba_leda'
@@ -159,6 +161,7 @@ tables:
       reference indicated in REF (but see also the BYHAND column)
     name: ba_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_leda'
@@ -167,6 +170,7 @@ tables:
       with -1.0 does not imply that no redshift exists'
     name: z_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sb_d25_leda'
@@ -176,6 +180,7 @@ tables:
     fits:tunit: mag/arcsec^2
     name: sb_d25_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.mag_leda'
@@ -186,6 +191,7 @@ tables:
     fits:tunit: mag
     name: mag_leda
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.group_diameter'
@@ -197,6 +203,7 @@ tables:
     fits:tunit: arcmin
     name: group_diameter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.d26'
@@ -208,6 +215,7 @@ tables:
     fits:tunit: arcmin
     name: d26
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.pa'
@@ -218,6 +226,7 @@ tables:
     fits:tunit: degree
     name: pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.ba'
@@ -226,6 +235,7 @@ tables:
       equivalent to BA_LEDA if the ellipse moments could not be measured)
     name: ba
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_moment'
@@ -236,6 +246,7 @@ tables:
     fits:tunit: arcsec
     name: sma_moment
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_sma50'
@@ -246,6 +257,7 @@ tables:
     fits:tunit: arcsec
     name: g_sma50
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_sma50'
@@ -256,6 +268,7 @@ tables:
     fits:tunit: arcsec
     name: r_sma50
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_sma50'
@@ -266,6 +279,7 @@ tables:
     fits:tunit: arcsec
     name: z_sma50
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb22'
@@ -275,6 +289,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb22
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb22_5'
@@ -284,6 +299,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb22_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb23'
@@ -293,6 +309,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb23
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb23_5'
@@ -302,6 +319,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb23_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb24'
@@ -311,6 +329,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb24
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb24_5'
@@ -320,6 +339,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb24_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb25'
@@ -329,6 +349,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb25
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb25_5'
@@ -338,6 +359,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb25_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb26'
@@ -347,6 +369,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb26
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb22'
@@ -355,6 +378,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb22
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb22'
@@ -363,6 +387,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb22
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb22'
@@ -371,6 +396,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb22
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb22_5'
@@ -379,6 +405,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb22_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb22_5'
@@ -387,6 +414,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb22_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb22_5'
@@ -395,6 +423,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb22_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb23'
@@ -403,6 +432,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb23
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb23'
@@ -411,6 +441,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb23
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb23'
@@ -419,6 +450,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb23
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb23_5'
@@ -427,6 +459,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb23_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb23_5'
@@ -435,6 +468,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb23_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb23_5'
@@ -443,6 +477,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb23_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb24'
@@ -451,6 +486,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb24
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb24'
@@ -459,6 +495,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb24
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb24'
@@ -467,6 +504,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb24
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb24_5'
@@ -475,6 +513,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb24_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb24_5'
@@ -483,6 +522,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb24_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb24_5'
@@ -491,6 +531,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb24_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb25'
@@ -499,6 +540,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb25
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb25'
@@ -507,6 +549,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb25
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb25'
@@ -515,6 +558,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb25
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb25_5'
@@ -523,6 +567,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb25_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb25_5'
@@ -531,6 +576,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb25_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb25_5'
@@ -539,6 +585,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb25_5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb26'
@@ -547,6 +594,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb26
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb26'
@@ -555,6 +603,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb26
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb26'
@@ -563,6 +612,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb26
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb22_err'
@@ -571,6 +621,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb22_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb22_5_err'
@@ -579,6 +630,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb22_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb23_err'
@@ -587,6 +639,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb23_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb23_5_err'
@@ -595,6 +648,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb23_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb24_err'
@@ -603,6 +657,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb24_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb24_5_err'
@@ -611,6 +666,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb24_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb25_err'
@@ -619,6 +675,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb25_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb25_5_err'
@@ -627,6 +684,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb25_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.sma_sb26_err'
@@ -635,6 +693,7 @@ tables:
     fits:tunit: arcsec
     name: sma_sb26_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb22_err'
@@ -643,6 +702,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb22_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb22_err'
@@ -651,6 +711,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb22_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb22_err'
@@ -659,6 +720,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb22_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb22_5_err'
@@ -667,6 +729,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb22_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb22_5_err'
@@ -675,6 +738,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb22_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb22_5_err'
@@ -683,6 +747,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb22_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb23_err'
@@ -691,6 +756,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb23_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb23_err'
@@ -699,6 +765,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb23_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb23_err'
@@ -707,6 +774,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb23_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb23_5_err'
@@ -715,6 +783,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb23_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb23_5_err'
@@ -723,6 +792,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb23_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb23_5_err'
@@ -731,6 +801,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb23_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb24_err'
@@ -739,6 +810,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb24_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb24_err'
@@ -747,6 +819,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb24_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb24_err'
@@ -755,6 +828,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb24_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb24_5_err'
@@ -763,6 +837,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb24_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb24_5_err'
@@ -771,6 +846,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb24_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb24_5_err'
@@ -779,6 +855,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb24_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb25_err'
@@ -787,6 +864,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb25_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb25_err'
@@ -795,6 +873,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb25_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb25_err'
@@ -803,6 +882,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb25_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb25_5_err'
@@ -811,6 +891,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb25_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb25_5_err'
@@ -819,6 +900,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb25_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb25_5_err'
@@ -827,6 +909,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb25_5_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_mag_sb26_err'
@@ -835,6 +918,7 @@ tables:
     fits:tunit: AB mag
     name: g_mag_sb26_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_mag_sb26_err'
@@ -843,6 +927,7 @@ tables:
     fits:tunit: AB mag
     name: r_mag_sb26_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_mag_sb26_err'
@@ -851,6 +936,7 @@ tables:
     fits:tunit: AB mag
     name: z_mag_sb26_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_cog_params_mtot'
@@ -860,6 +946,7 @@ tables:
     fits:tunit: AB mag
     name: g_cog_params_mtot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_cog_params_m0'
@@ -869,6 +956,7 @@ tables:
     fits:tunit: AB mag
     name: g_cog_params_m0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_cog_params_alpha1'
@@ -877,6 +965,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: g_cog_params_alpha1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_cog_params_alpha2'
@@ -885,6 +974,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: g_cog_params_alpha2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.g_cog_params_chi2'
@@ -893,6 +983,7 @@ tables:
       section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: g_cog_params_chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_cog_params_mtot'
@@ -902,6 +993,7 @@ tables:
     fits:tunit: AB mag
     name: r_cog_params_mtot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_cog_params_m0'
@@ -911,6 +1003,7 @@ tables:
     fits:tunit: AB mag
     name: r_cog_params_m0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_cog_params_alpha1'
@@ -919,6 +1012,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: r_cog_params_alpha1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_cog_params_alpha2'
@@ -927,6 +1021,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: r_cog_params_alpha2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.r_cog_params_chi2'
@@ -935,6 +1030,7 @@ tables:
       section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: r_cog_params_chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_cog_params_mtot'
@@ -944,6 +1040,7 @@ tables:
     fits:tunit: AB mag
     name: z_cog_params_mtot
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_cog_params_m0'
@@ -953,6 +1050,7 @@ tables:
     fits:tunit: AB mag
     name: z_cog_params_m0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_cog_params_alpha1'
@@ -961,6 +1059,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: z_cog_params_alpha1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_cog_params_alpha2'
@@ -969,6 +1068,7 @@ tables:
       of growth (see the Ellipse-Fitting section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: z_cog_params_alpha2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.z_cog_params_chi2'
@@ -977,6 +1077,7 @@ tables:
       section here https://www.legacysurvey.org/sga/sga2020/#ellipse-fitting)
     name: z_cog_params_chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.random_id'
@@ -984,6 +1085,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.ellipse.ellipsebit'
@@ -1373,6 +1475,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_0p75'
@@ -1382,6 +1485,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_1p0'
@@ -1391,6 +1495,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_1p5'
@@ -1400,6 +1505,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_2p0'
@@ -1409,6 +1515,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_3p5'
@@ -1418,6 +1525,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_5p0'
@@ -1427,6 +1535,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_g_7p0'
@@ -1436,6 +1545,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_g_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_0p5'
@@ -1445,6 +1555,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_0p75'
@@ -1454,6 +1565,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_1p0'
@@ -1463,6 +1575,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_1p5'
@@ -1472,6 +1585,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_2p0'
@@ -1481,6 +1595,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_3p5'
@@ -1490,6 +1605,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_5p0'
@@ -1499,6 +1615,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_r_7p0'
@@ -1508,6 +1625,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_r_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_0p5'
@@ -1517,6 +1635,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_0p75'
@@ -1526,6 +1645,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_1p0'
@@ -1535,6 +1655,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_1p5'
@@ -1544,6 +1665,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_2p0'
@@ -1553,6 +1675,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_3p5'
@@ -1562,6 +1685,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_5p0'
@@ -1571,6 +1695,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_blobresid_z_7p0'
@@ -1580,6 +1705,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_blobresid_z_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_0p5'
@@ -1589,6 +1715,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_0p75'
@@ -1598,6 +1725,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_1p0'
@@ -1607,6 +1735,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_1p5'
@@ -1616,6 +1745,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_2p0'
@@ -1625,6 +1755,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_3p5'
@@ -1634,6 +1765,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_5p0'
@@ -1643,6 +1775,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_g_7p0'
@@ -1652,6 +1785,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_g_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_0p5'
@@ -1660,6 +1794,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_0p75'
@@ -1668,6 +1803,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_1p0'
@@ -1676,6 +1812,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_1p5'
@@ -1684,6 +1821,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_2p0'
@@ -1692,6 +1830,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_3p5'
@@ -1700,6 +1839,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_5p0'
@@ -1708,6 +1848,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_g_7p0'
@@ -1716,6 +1857,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_g_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_0p5'
@@ -1724,6 +1866,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_0p75'
@@ -1732,6 +1875,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_1p0'
@@ -1740,6 +1884,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_1p5'
@@ -1748,6 +1893,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_2p0'
@@ -1756,6 +1902,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_3p5'
@@ -1764,6 +1911,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_5p0'
@@ -1772,6 +1920,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_r_7p0'
@@ -1780,6 +1929,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_r_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w1_r11'
@@ -1788,6 +1938,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w1_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w1_r3'
@@ -1796,6 +1947,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w1_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w1_r5'
@@ -1804,6 +1956,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w1_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w1_r7'
@@ -1812,6 +1965,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w1_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w1_r9'
@@ -1820,6 +1974,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w1_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w2_r11'
@@ -1828,6 +1983,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w2_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w2_r3'
@@ -1836,6 +1992,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w2_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w2_r5'
@@ -1844,6 +2001,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w2_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w2_r7'
@@ -1852,6 +2010,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w2_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w2_r9'
@@ -1860,6 +2019,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w2_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w3_r11'
@@ -1868,6 +2028,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w3_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w3_r3'
@@ -1876,6 +2037,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w3_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w3_r5'
@@ -1884,6 +2046,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w3_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w3_r7'
@@ -1892,6 +2055,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w3_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w3_r9'
@@ -1900,6 +2064,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w3_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w4_r11'
@@ -1908,6 +2073,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w4_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w4_r3'
@@ -1916,6 +2082,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w4_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w4_r5'
@@ -1924,6 +2091,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w4_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w4_r7'
@@ -1932,6 +2100,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w4_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_w4_r9'
@@ -1940,6 +2109,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_w4_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_0p5'
@@ -1948,6 +2118,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_0p75'
@@ -1956,6 +2127,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_1p0'
@@ -1964,6 +2136,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_1p5'
@@ -1972,6 +2145,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_2p0'
@@ -1980,6 +2154,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_3p5'
@@ -1988,6 +2163,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_5p0'
@@ -1996,6 +2172,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_ivar_z_7p0'
@@ -2004,6 +2181,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: apflux_ivar_z_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_0p5'
@@ -2013,6 +2191,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_0p75'
@@ -2022,6 +2201,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_1p0'
@@ -2031,6 +2211,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_1p5'
@@ -2040,6 +2221,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_2p0'
@@ -2049,6 +2231,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_3p5'
@@ -2058,6 +2241,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_5p0'
@@ -2067,6 +2251,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_g_7p0'
@@ -2076,6 +2261,7 @@ tables:
       to the measurement)
     name: apflux_masked_g_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_0p5'
@@ -2085,6 +2271,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_0p75'
@@ -2094,6 +2281,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_1p0'
@@ -2103,6 +2291,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_1p5'
@@ -2112,6 +2301,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_2p0'
@@ -2121,6 +2311,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_3p5'
@@ -2130,6 +2321,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_5p0'
@@ -2139,6 +2331,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_r_7p0'
@@ -2148,6 +2341,7 @@ tables:
       to the measurement)
     name: apflux_masked_r_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_0p5'
@@ -2157,6 +2351,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_0p75'
@@ -2166,6 +2361,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_1p0'
@@ -2175,6 +2371,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_1p5'
@@ -2184,6 +2381,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_2p0'
@@ -2193,6 +2391,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_3p5'
@@ -2202,6 +2401,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_5p0'
@@ -2211,6 +2411,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_masked_z_7p0'
@@ -2220,6 +2421,7 @@ tables:
       to the measurement)
     name: apflux_masked_z_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_0p5'
@@ -2229,6 +2431,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_0p75'
@@ -2238,6 +2441,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_1p0'
@@ -2247,6 +2451,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_1p5'
@@ -2256,6 +2461,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_2p0'
@@ -2265,6 +2471,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_3p5'
@@ -2274,6 +2481,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_5p0'
@@ -2283,6 +2491,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_r_7p0'
@@ -2292,6 +2501,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_r_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_0p5'
@@ -2301,6 +2511,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_0p75'
@@ -2310,6 +2521,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_1p0'
@@ -2319,6 +2531,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_1p5'
@@ -2328,6 +2541,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_2p0'
@@ -2337,6 +2551,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_3p5'
@@ -2346,6 +2561,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_5p0'
@@ -2355,6 +2571,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_g_7p0'
@@ -2364,6 +2581,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_g_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_0p5'
@@ -2373,6 +2591,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_0p75'
@@ -2382,6 +2601,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_1p0'
@@ -2391,6 +2611,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_1p5'
@@ -2400,6 +2621,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_2p0'
@@ -2409,6 +2631,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_3p5'
@@ -2418,6 +2641,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_5p0'
@@ -2427,6 +2651,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_r_7p0'
@@ -2436,6 +2661,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_r_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_0p5'
@@ -2445,6 +2671,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_0p75'
@@ -2454,6 +2681,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_1p0'
@@ -2463,6 +2691,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_1p5'
@@ -2472,6 +2701,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_2p0'
@@ -2481,6 +2711,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_3p5'
@@ -2490,6 +2721,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_5p0'
@@ -2499,6 +2731,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_z_7p0'
@@ -2508,6 +2741,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_z_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w1_r11'
@@ -2517,6 +2751,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w1_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w1_r3'
@@ -2526,6 +2761,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w1_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w1_r5'
@@ -2535,6 +2771,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w1_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w1_r7'
@@ -2544,6 +2781,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w1_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w1_r9'
@@ -2553,6 +2791,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w1_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w2_r11'
@@ -2562,6 +2801,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w2_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w2_r3'
@@ -2571,6 +2811,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w2_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w2_r5'
@@ -2580,6 +2821,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w2_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w2_r7'
@@ -2589,6 +2831,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w2_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w2_r9'
@@ -2598,6 +2841,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w2_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w3_r11'
@@ -2607,6 +2851,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w3_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w3_r3'
@@ -2616,6 +2861,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w3_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w3_r5'
@@ -2625,6 +2871,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w3_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w3_r7'
@@ -2634,6 +2881,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w3_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w3_r9'
@@ -2643,6 +2891,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w3_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w4_r11'
@@ -2652,6 +2901,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w4_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w4_r3'
@@ -2661,6 +2911,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w4_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w4_r5'
@@ -2670,6 +2921,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w4_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w4_r7'
@@ -2679,6 +2931,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w4_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_resid_w4_r9'
@@ -2688,6 +2941,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_resid_w4_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w1_r11'
@@ -2697,6 +2951,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w1_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w1_r3'
@@ -2706,6 +2961,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w1_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w1_r5'
@@ -2715,6 +2971,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w1_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w1_r7'
@@ -2724,6 +2981,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w1_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w1_r9'
@@ -2733,6 +2991,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w1_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w2_r11'
@@ -2742,6 +3001,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w2_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w2_r3'
@@ -2751,6 +3011,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w2_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w2_r5'
@@ -2760,6 +3021,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w2_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w2_r7'
@@ -2769,6 +3031,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w2_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w2_r9'
@@ -2778,6 +3041,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w2_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w3_r11'
@@ -2787,6 +3051,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w3_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w3_r3'
@@ -2796,6 +3061,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w3_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w3_r5'
@@ -2805,6 +3071,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w3_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w3_r7'
@@ -2814,6 +3081,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w3_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w3_r9'
@@ -2823,6 +3091,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w3_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w4_r11'
@@ -2832,6 +3101,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w4_r11
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w4_r3'
@@ -2841,6 +3111,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w4_r3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w4_r5'
@@ -2850,6 +3121,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w4_r5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w4_r7'
@@ -2859,6 +3131,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w4_r7
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_w4_r9'
@@ -2868,6 +3141,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_w4_r9
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_0p5'
@@ -2877,6 +3151,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_0p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_0p75'
@@ -2886,6 +3161,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_0p75
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_1p0'
@@ -2895,6 +3171,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_1p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_1p5'
@@ -2904,6 +3181,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_1p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_2p0'
@@ -2913,6 +3191,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_2p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_3p5'
@@ -2922,6 +3201,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_3p5
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_5p0'
@@ -2931,6 +3211,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_5p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.apflux_z_7p0'
@@ -2940,6 +3221,7 @@ tables:
     fits:tunit: nanomaggy
     name: apflux_z_7p0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.bx'
@@ -2949,6 +3231,7 @@ tables:
     fits:tunit: pix
     name: bx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.by'
@@ -2957,6 +3240,7 @@ tables:
     fits:tunit: pix
     name: by
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dchisq_dev'
@@ -2965,6 +3249,7 @@ tables:
       fits for DEV. The difference is versus no source
     name: dchisq_dev
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dchisq_exp'
@@ -2973,6 +3258,7 @@ tables:
       fits for EXP. The difference is versus no source
     name: dchisq_exp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dchisq_psf'
@@ -2981,6 +3267,7 @@ tables:
       fits for PSF. The difference is versus no source
     name: dchisq_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dchisq_rex'
@@ -2989,6 +3276,7 @@ tables:
       fits for REX. The difference is versus no source
     name: dchisq_rex
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dchisq_ser'
@@ -2997,6 +3285,7 @@ tables:
       fits for SER. The difference is versus no source
     name: dchisq_ser
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.dec_ivar'
@@ -3005,6 +3294,7 @@ tables:
     fits:tunit: 1/deg^2
     name: dec_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.ebv'
@@ -3014,6 +3304,7 @@ tables:
     fits:tunit: mag
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fiberflux_g'
@@ -3023,6 +3314,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fiberflux_r'
@@ -3032,6 +3324,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fiberflux_z'
@@ -3041,6 +3334,7 @@ tables:
     fits:tunit: nanomaggy
     name: fiberflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fibertotflux_g'
@@ -3050,6 +3344,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fibertotflux_r'
@@ -3059,6 +3354,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fibertotflux_z'
@@ -3068,6 +3364,7 @@ tables:
     fits:tunit: nanomaggy
     name: fibertotflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_g'
@@ -3076,6 +3373,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_g'
@@ -3084,6 +3382,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_r'
@@ -3092,6 +3391,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_w1'
@@ -3100,6 +3400,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_w2'
@@ -3108,6 +3409,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_w3'
@@ -3116,6 +3418,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_w4'
@@ -3124,6 +3427,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_ivar_z'
@@ -3132,6 +3436,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: flux_ivar_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_r'
@@ -3140,6 +3445,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_w1'
@@ -3148,6 +3454,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_w2'
@@ -3156,6 +3463,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_w3'
@@ -3164,6 +3472,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_w4'
@@ -3172,6 +3481,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.flux_z'
@@ -3180,6 +3490,7 @@ tables:
     fits:tunit: nanomaggy
     name: flux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_g'
@@ -3188,6 +3499,7 @@ tables:
       by the total flux in g (typically [0,1])
     name: fracflux_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_r'
@@ -3196,6 +3508,7 @@ tables:
       by the total flux in r (typically [0,1])
     name: fracflux_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_w1'
@@ -3204,6 +3517,7 @@ tables:
       by the total flux in W1 (typically [0,1])
     name: fracflux_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_w2'
@@ -3212,6 +3526,7 @@ tables:
       by the total flux in W2 (typically [0,1])
     name: fracflux_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_w3'
@@ -3220,6 +3535,7 @@ tables:
       by the total flux in W3 (typically [0,1])
     name: fracflux_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_w4'
@@ -3228,6 +3544,7 @@ tables:
       by the total flux in W4 (typically [0,1])
     name: fracflux_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracflux_z'
@@ -3236,6 +3553,7 @@ tables:
       by the total flux in z (typically [0,1])
     name: fracflux_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracin_g'
@@ -3244,6 +3562,7 @@ tables:
       sources
     name: fracin_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracin_r'
@@ -3252,6 +3571,7 @@ tables:
       sources
     name: fracin_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracin_z'
@@ -3260,6 +3580,7 @@ tables:
       sources
     name: fracin_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracmasked_g'
@@ -3268,6 +3589,7 @@ tables:
       of this object in g, strictly between [0,1]
     name: fracmasked_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracmasked_r'
@@ -3276,6 +3598,7 @@ tables:
       of this object in r, strictly between [0,1]
     name: fracmasked_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.fracmasked_z'
@@ -3284,6 +3607,7 @@ tables:
       of this object in z, strictly between [0,1]
     name: fracmasked_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_a_g_val'
@@ -3292,6 +3616,7 @@ tables:
     fits:tunit: mag
     name: gaia_a_g_val
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_astrometric_excess_noise'
@@ -3299,6 +3624,7 @@ tables:
     description: Gaia astrometric excess noise
     name: gaia_astrometric_excess_noise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_astrometric_excess_noise_sig'
@@ -3306,6 +3632,7 @@ tables:
     description: Gaia astrometric excess noise uncertainty
     name: gaia_astrometric_excess_noise_sig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_astrometric_sigma5d_max'
@@ -3314,6 +3641,7 @@ tables:
     fits:tunit: mas
     name: gaia_astrometric_sigma5d_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_astrometric_weight_al'
@@ -3321,6 +3649,7 @@ tables:
     description: Gaia astrometric weight along scan direction
     name: gaia_astrometric_weight_al
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_e_bp_min_rp_val'
@@ -3329,6 +3658,7 @@ tables:
     fits:tunit: mag
     name: gaia_e_bp_min_rp_val
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_bp_mean_flux_over_error'
@@ -3336,6 +3666,7 @@ tables:
     description: Gaia BP signal-to-noise
     name: gaia_phot_bp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_bp_mean_mag'
@@ -3344,6 +3675,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_bp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_bp_rp_excess_factor'
@@ -3351,6 +3683,7 @@ tables:
     description: Gaia BP/RP excess factor
     name: gaia_phot_bp_rp_excess_factor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_g_mean_flux_over_error'
@@ -3358,6 +3691,7 @@ tables:
     description: Gaia G band signal-to-noise
     name: gaia_phot_g_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_g_mean_mag'
@@ -3366,6 +3700,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_g_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_rp_mean_flux_over_error'
@@ -3373,6 +3708,7 @@ tables:
     description: Gaia RP signal-to-noise
     name: gaia_phot_rp_mean_flux_over_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.gaia_phot_rp_mean_mag'
@@ -3381,6 +3717,7 @@ tables:
     fits:tunit: mag
     name: gaia_phot_rp_mean_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.galdepth_g'
@@ -3390,6 +3727,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.galdepth_r'
@@ -3399,6 +3737,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.galdepth_z'
@@ -3408,6 +3747,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: galdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_g'
@@ -3415,6 +3755,7 @@ tables:
     description: Galactic transmission in g filter in linear units [0,1]
     name: mw_transmission_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_r'
@@ -3422,6 +3763,7 @@ tables:
     description: Galactic transmission in r filter in linear units [0,1]
     name: mw_transmission_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_w1'
@@ -3429,6 +3771,7 @@ tables:
     description: Galactic transmission in W1 filter in linear units [0,1]
     name: mw_transmission_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_w2'
@@ -3436,6 +3779,7 @@ tables:
     description: Galactic transmission in W2 filter in linear units [0,1]
     name: mw_transmission_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_w3'
@@ -3443,6 +3787,7 @@ tables:
     description: Galactic transmission in W3 filter in linear units [0,1]
     name: mw_transmission_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_w4'
@@ -3450,6 +3795,7 @@ tables:
     description: Galactic transmission in W4 filter in linear units [0,1]
     name: mw_transmission_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.mw_transmission_z'
@@ -3457,6 +3803,7 @@ tables:
     description: Galactic transmission in z filter in linear units [0,1]
     name: mw_transmission_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.parallax'
@@ -3465,6 +3812,7 @@ tables:
     fits:tunit: mas
     name: parallax
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.parallax_ivar'
@@ -3473,6 +3821,7 @@ tables:
     fits:tunit: mas^-2
     name: parallax_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.pmdec'
@@ -3481,6 +3830,7 @@ tables:
     fits:tunit: mas/year
     name: pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.pmdec_ivar'
@@ -3489,6 +3839,7 @@ tables:
     fits:tunit: mas2 yr-2
     name: pmdec_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.pmra'
@@ -3497,6 +3848,7 @@ tables:
     fits:tunit: mas/year
     name: pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.pmra_ivar'
@@ -3505,6 +3857,7 @@ tables:
     fits:tunit: mas2 yr-2
     name: pmra_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_g'
@@ -3514,6 +3867,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_r'
@@ -3523,6 +3877,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_w1'
@@ -3532,6 +3887,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_w2'
@@ -3541,6 +3897,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_w3'
@@ -3550,6 +3907,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_w4'
@@ -3559,6 +3917,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfdepth_z'
@@ -3568,6 +3927,7 @@ tables:
     fits:tunit: nanomaggy^-2
     name: psfdepth_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfsize_g'
@@ -3576,6 +3936,7 @@ tables:
     fits:tunit: arcsec
     name: psfsize_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfsize_r'
@@ -3584,6 +3945,7 @@ tables:
     fits:tunit: arcsec
     name: psfsize_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.psfsize_z'
@@ -3592,6 +3954,7 @@ tables:
     fits:tunit: arcsec
     name: psfsize_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.ra_ivar'
@@ -3601,6 +3964,7 @@ tables:
     fits:tunit: 1/deg^2
     name: ra_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_g'
@@ -3609,6 +3973,7 @@ tables:
       of pixels in g
     name: rchisq_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_r'
@@ -3617,6 +3982,7 @@ tables:
       of pixels in r
     name: rchisq_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_w1'
@@ -3625,6 +3991,7 @@ tables:
       of pixels in W1
     name: rchisq_w1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_w2'
@@ -3633,6 +4000,7 @@ tables:
       of pixels in W2
     name: rchisq_w2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_w3'
@@ -3641,6 +4009,7 @@ tables:
       of pixels in W3
     name: rchisq_w3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_w4'
@@ -3649,6 +4018,7 @@ tables:
       of pixels in W4
     name: rchisq_w4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.rchisq_z'
@@ -3657,6 +4027,7 @@ tables:
       of pixels in z
     name: rchisq_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.ref_epoch'
@@ -3665,6 +4036,7 @@ tables:
     fits:tunit: year
     name: ref_epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.sersic'
@@ -3672,6 +4044,7 @@ tables:
     description: Power-law index for the Sersic profile model (type=SER)
     name: sersic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.sersic_ivar'
@@ -3679,6 +4052,7 @@ tables:
     description: Inverse variance of sersic
     name: sersic_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_e1'
@@ -3686,6 +4060,7 @@ tables:
     description: Ellipticity component 1 of galaxy model for galaxy type type
     name: shape_e1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_e1_ivar'
@@ -3693,6 +4068,7 @@ tables:
     description: Inverse variance of shape_e1
     name: shape_e1_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_e2'
@@ -3700,6 +4076,7 @@ tables:
     description: Ellipticity component 2 of galaxy model for galaxy type type
     name: shape_e2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_e2_ivar'
@@ -3707,6 +4084,7 @@ tables:
     description: Inverse variance of shape_e2
     name: shape_e2_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_r'
@@ -3715,6 +4093,7 @@ tables:
     fits:tunit: arcsec
     name: shape_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.shape_r_ivar'
@@ -3723,6 +4102,7 @@ tables:
     fits:tunit: 1/arcsec^2
     name: shape_r_ivar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.wise_x'
@@ -3733,6 +4113,7 @@ tables:
     fits:tunit: pix
     name: wise_x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.wise_y'
@@ -3743,6 +4124,7 @@ tables:
     fits:tunit: pix
     name: wise_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.random_id'
@@ -3750,6 +4132,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sga2020.tractor.brickid'

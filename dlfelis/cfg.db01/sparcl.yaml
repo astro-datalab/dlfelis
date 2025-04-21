@@ -108,6 +108,7 @@ tables:
     fits:tunit: s
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sparcl.main.random_id'
@@ -115,6 +116,7 @@ tables:
     description: Random ID in the range 0 to 100 (decimal)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#sparcl.main.htm9'

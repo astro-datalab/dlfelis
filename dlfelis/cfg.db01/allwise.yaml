@@ -58,6 +58,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.sigra'
@@ -66,6 +67,7 @@ tables:
     fits:tunit: arcsec
     name: sigra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.sigdec'
@@ -74,6 +76,7 @@ tables:
     fits:tunit: arcsec
     name: sigdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.sigradec'
@@ -82,6 +85,7 @@ tables:
     fits:tunit: arcsec
     name: sigradec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.glon'
@@ -126,6 +130,7 @@ tables:
     fits:tunit: pix
     name: wx
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.wy'
@@ -134,6 +139,7 @@ tables:
     fits:tunit: pix
     name: wy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.cntr'
@@ -173,6 +179,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.3-4um
     name: w1mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w1sigmpro'
@@ -181,6 +188,7 @@ tables:
     fits:tunit: mag
     name: w1sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w1snr'
@@ -188,6 +196,7 @@ tables:
     description: W1 S/N ratio
     name: w1snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w1rchi2'
@@ -195,6 +204,7 @@ tables:
     description: Reduced chi^2 of the W1 measurement
     name: w1rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2mpro'
@@ -204,6 +214,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.4-8um
     name: w2mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2sigmpro'
@@ -212,6 +223,7 @@ tables:
     fits:tunit: mag
     name: w2sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2snr'
@@ -219,6 +231,7 @@ tables:
     description: W2 S/N ratio
     name: w2snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2rchi2'
@@ -226,6 +239,7 @@ tables:
     description: Reduced chi^2 of the W2 measurement
     name: w2rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3mpro'
@@ -235,6 +249,7 @@ tables:
     ivoa:ucd: phot.flux.density;em.IR.8-15um
     name: w3mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3sigmpro'
@@ -243,6 +258,7 @@ tables:
     fits:tunit: mag
     name: w3sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3snr'
@@ -250,6 +266,7 @@ tables:
     description: W3 S/N ratio
     name: w3snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3rchi2'
@@ -257,6 +274,7 @@ tables:
     description: Reduced chi^2 of the W3 measurement
     name: w3rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4mpro'
@@ -266,6 +284,7 @@ tables:
     ivoa:ucd: phot.flux.density;em.IR.15-30um
     name: w4mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4sigmpro'
@@ -274,6 +293,7 @@ tables:
     fits:tunit: mag
     name: w4sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4snr'
@@ -281,6 +301,7 @@ tables:
     description: W4 S/N ratio
     name: w4snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4rchi2'
@@ -288,6 +309,7 @@ tables:
     description: Reduced chi^2 of the W4 measurement
     name: w4rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.rchi2'
@@ -295,6 +317,7 @@ tables:
     description: Combined reduced chi^w in all bands
     name: rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.nb'
@@ -321,6 +344,7 @@ tables:
     ivoa:ucd: instr.saturation
     name: w1sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2sat'
@@ -329,6 +353,7 @@ tables:
     ivoa:ucd: instr.saturation
     name: w2sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3sat'
@@ -337,6 +362,7 @@ tables:
     ivoa:ucd: instr.saturation
     name: w3sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4sat'
@@ -345,6 +371,7 @@ tables:
     ivoa:ucd: instr.saturation
     name: w4sat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.satnum'
@@ -382,6 +409,7 @@ tables:
     fits:tunit: arcsec
     name: sigra_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.sigdec_pm'
@@ -390,6 +418,7 @@ tables:
     fits:tunit: arcsec
     name: sigdec_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.sigradec_pm'
@@ -399,6 +428,7 @@ tables:
     fits:tunit: arcsec
     name: sigradec_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.pmra'
@@ -438,6 +468,7 @@ tables:
     description: Reduced chi^2 of W1 including motion estimation
     name: w1rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2rchi2_pm'
@@ -445,6 +476,7 @@ tables:
     description: Reduced chi^2 of W2 including motion estimation
     name: w2rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3rchi2_pm'
@@ -452,6 +484,7 @@ tables:
     description: Reduced chi^2 of W3 including motion estimation
     name: w3rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4rchi2_pm'
@@ -459,6 +492,7 @@ tables:
     description: Reduced chi^2 of W4 including motion estimation
     name: w4rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.rchi2_pm'
@@ -466,6 +500,7 @@ tables:
     description: Combined reduced chi^2 in all bands including motion estimation
     name: rchi2_pm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.pmcode'
@@ -601,6 +636,7 @@ tables:
     description: Mean pixel coverage in W1
     name: w1cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w2cov'
@@ -608,6 +644,7 @@ tables:
     description: Mean pixel coverage in W2
     name: w2cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w3cov'
@@ -615,6 +652,7 @@ tables:
     description: Mean pixel coverage in W3
     name: w3cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w4cov'
@@ -622,6 +660,7 @@ tables:
     description: Mean pixel coverage in W4
     name: w4cov
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.w1cc_map'
@@ -716,6 +755,7 @@ tables:
       2MASS PSC source
     name: r_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.pa_2mass'
@@ -724,6 +764,7 @@ tables:
       to the associated 2MASS PSC source
     name: pa_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.n_2mass'
@@ -740,6 +781,7 @@ tables:
       2MASS PSC source
     name: j_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.j_msig_2mass'
@@ -748,6 +790,7 @@ tables:
       2MASS PSC source
     name: j_msig_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.h_m_2mass'
@@ -756,6 +799,7 @@ tables:
       2MASS PSC source
     name: h_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.h_msig_2mass'
@@ -764,6 +808,7 @@ tables:
       2MASS PSC source
     name: h_msig_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.k_m_2mass'
@@ -772,6 +817,7 @@ tables:
       2MASS PSC source
     name: k_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.k_msig_2mass'
@@ -780,6 +826,7 @@ tables:
       2MASS PSC source
     name: k_msig_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#allwise.source.spt_ind'

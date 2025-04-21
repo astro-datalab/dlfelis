@@ -91,6 +91,7 @@ tables:
     ivoa:ucd: time.duration
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.airmass'
@@ -100,6 +101,7 @@ tables:
     ivoa:ucd: obs.airMass
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.nsources'
@@ -117,6 +119,7 @@ tables:
     ivoa:ucd: instr.det.psf
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.rarms'
@@ -126,6 +129,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: rarms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.rastderr'
@@ -135,6 +139,7 @@ tables:
     ivoa:ucd: stat.error
     name: rastderr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.ra_coef1'
@@ -178,6 +183,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: decrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.decstderr'
@@ -188,6 +194,7 @@ tables:
     ivoa:ucd: stat.error
     name: decstderr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.dec_coef1'
@@ -230,6 +237,7 @@ tables:
     ivoa:ucd: phys.absorption
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.vertex_ra1'
@@ -318,6 +326,7 @@ tables:
     ivoa:ucd: phot.calib;phot.mag
     name: zpterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.zptermerr'
@@ -327,6 +336,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zptermerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.nrefmatch'
@@ -345,6 +355,7 @@ tables:
     ivoa:ucd: phot.calib;phot.mag
     name: chipzpterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.chipzptermerr'
@@ -354,6 +365,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: chipzptermerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.chipnrefmatch'
@@ -371,6 +383,7 @@ tables:
     ivoa:ucd: phot.mag
     name: depth95
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.chip.depth10sig'
@@ -380,6 +393,7 @@ tables:
     ivoa:ucd: phot.mag
     name: depth10sig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: CCD information table
@@ -461,6 +475,7 @@ tables:
     ivoa:ucd: arith.factor
     name: coverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.nexp'
@@ -477,6 +492,7 @@ tables:
     ivoa:ucd: arith.factor
     name: ucoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.unexp'
@@ -494,6 +510,7 @@ tables:
     ivoa:ucd: phot.mag
     name: udepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.gcoverage'
@@ -502,6 +519,7 @@ tables:
     ivoa:ucd: arith.factor
     name: gcoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.gnexp'
@@ -519,6 +537,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gdepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.rcoverage'
@@ -527,6 +546,7 @@ tables:
     ivoa:ucd: arith.factor
     name: rcoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.rnexp'
@@ -544,6 +564,7 @@ tables:
     ivoa:ucd: phot.mag
     name: rdepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.icoverage'
@@ -552,6 +573,7 @@ tables:
     ivoa:ucd: arith.factor
     name: icoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.inexp'
@@ -569,6 +591,7 @@ tables:
     ivoa:ucd: phot.mag
     name: idepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.zcoverage'
@@ -577,6 +600,7 @@ tables:
     ivoa:ucd: arith.factor
     name: zcoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.znexp'
@@ -594,6 +618,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zdepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.ycoverage'
@@ -602,6 +627,7 @@ tables:
     ivoa:ucd: arith.factor
     name: ycoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.ynexp'
@@ -619,6 +645,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ydepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.vrcoverage'
@@ -627,6 +654,7 @@ tables:
     ivoa:ucd: arith.factor
     name: vrcoverage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.coverage.vrnexp'
@@ -644,6 +672,7 @@ tables:
     ivoa:ucd: phot.mag
     name: vrdepth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Survey coverage table
@@ -755,6 +784,7 @@ tables:
     ivoa:ucd: time.duration
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.airmass'
@@ -764,6 +794,7 @@ tables:
     ivoa:ucd: obs.airMass
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.nsources'
@@ -781,6 +812,7 @@ tables:
     ivoa:ucd: instr.det.psf
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.nchips'
@@ -798,6 +830,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: rarms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.rastderr'
@@ -807,6 +840,7 @@ tables:
     ivoa:ucd: stat.error
     name: rastderr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.decrms'
@@ -816,6 +850,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: decrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.decstderr'
@@ -826,6 +861,7 @@ tables:
     ivoa:ucd: stat.error
     name: decstderr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.ebv'
@@ -835,6 +871,7 @@ tables:
     ivoa:ucd: phys.absorption
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.ngaiamatch'
@@ -852,6 +889,7 @@ tables:
     ivoa:ucd: phot.calib;phot.mag
     name: zpterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.zptype'
@@ -870,6 +908,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zptermerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.zptermsig'
@@ -879,6 +918,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: zptermsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.nrefmatch'
@@ -896,6 +936,7 @@ tables:
     ivoa:ucd: phot.mag
     name: depth95
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.exposure.depth10sig'
@@ -905,6 +946,7 @@ tables:
     ivoa:ucd: phot.mag
     name: depth10sig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Exposures contributing to the catalog
@@ -1003,6 +1045,7 @@ tables:
     fits:tunit: mag
     name: w1mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w1sigmpro'
@@ -1011,6 +1054,7 @@ tables:
     fits:tunit: mag
     name: w1sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w1snr'
@@ -1018,6 +1062,7 @@ tables:
     description: W1 S/N ratio
     name: w1snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w1rchi2'
@@ -1025,6 +1070,7 @@ tables:
     description: Reduced chi^2 of the W1 measurement
     name: w1rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w2mpro'
@@ -1033,6 +1079,7 @@ tables:
     fits:tunit: mag
     name: w2mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w2sigmpro'
@@ -1041,6 +1088,7 @@ tables:
     fits:tunit: mag
     name: w2sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w2snr'
@@ -1048,6 +1096,7 @@ tables:
     description: W2 S/N ratio
     name: w2snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w2rchi2'
@@ -1055,6 +1104,7 @@ tables:
     description: Reduced chi^2 of the W2 measurement
     name: w2rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w3mpro'
@@ -1063,6 +1113,7 @@ tables:
     fits:tunit: mag
     name: w3mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w3sigmpro'
@@ -1071,6 +1122,7 @@ tables:
     fits:tunit: mag
     name: w3sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w3snr'
@@ -1078,6 +1130,7 @@ tables:
     description: W3 S/N ratio
     name: w3snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w3rchi2'
@@ -1085,6 +1138,7 @@ tables:
     description: Reduced chi^2 of the W3 measurement
     name: w3rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w4mpro'
@@ -1093,6 +1147,7 @@ tables:
     fits:tunit: mag
     name: w4mpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w4sigmpro'
@@ -1101,6 +1156,7 @@ tables:
     fits:tunit: mag
     name: w4sigmpro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w4snr'
@@ -1108,6 +1164,7 @@ tables:
     description: W4 S/N ratio
     name: w4snr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.w4rchi2'
@@ -1115,6 +1172,7 @@ tables:
     description: Reduced chi^2 of the W4 measurement
     name: w4rchi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.j_m_2mass'
@@ -1123,6 +1181,7 @@ tables:
       2MASS PSC source
     name: j_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.h_m_2mass'
@@ -1131,6 +1190,7 @@ tables:
       2MASS PSC source
     name: h_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.k_m_2mass'
@@ -1139,6 +1199,7 @@ tables:
       2MASS PSC source
     name: k_m_2mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.nsc_allwise.tmass_key'
@@ -1333,6 +1394,7 @@ tables:
     ivoa:ucd: time.duration
     name: deltamjd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.umag'
@@ -1342,6 +1404,7 @@ tables:
     ivoa:ucd: phot.mag
     name: umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.urms'
@@ -1351,6 +1414,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: urms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.uerr'
@@ -1360,6 +1424,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: uerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.uasemi'
@@ -1369,6 +1434,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: uasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ubsemi'
@@ -1378,6 +1444,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: ubsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.utheta'
@@ -1387,6 +1454,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: utheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.gmag'
@@ -1396,6 +1464,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.grms'
@@ -1405,6 +1474,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: grms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.gerr'
@@ -1414,6 +1484,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.gasemi'
@@ -1423,6 +1494,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: gasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.gbsemi'
@@ -1432,6 +1504,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: gbsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.gtheta'
@@ -1441,6 +1514,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: gtheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rmag'
@@ -1450,6 +1524,7 @@ tables:
     ivoa:ucd: phot.mag
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rrms'
@@ -1459,6 +1534,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: rrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rerr'
@@ -1468,6 +1544,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: rerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rasemi'
@@ -1477,6 +1554,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: rasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rbsemi'
@@ -1486,6 +1564,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: rbsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.rtheta'
@@ -1495,6 +1574,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: rtheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.imag'
@@ -1504,6 +1584,7 @@ tables:
     ivoa:ucd: phot.mag
     name: imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.irms'
@@ -1513,6 +1594,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: irms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ierr'
@@ -1522,6 +1604,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: ierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.iasemi'
@@ -1531,6 +1614,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: iasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ibsemi'
@@ -1540,6 +1624,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: ibsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.itheta'
@@ -1549,6 +1634,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: itheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.zmag'
@@ -1558,6 +1644,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.zrms'
@@ -1567,6 +1654,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: zrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.zerr'
@@ -1576,6 +1664,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.zasemi'
@@ -1585,6 +1674,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: zasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.zbsemi'
@@ -1594,6 +1684,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: zbsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ztheta'
@@ -1603,6 +1694,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: ztheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ymag'
@@ -1612,6 +1704,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ymag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.yrms'
@@ -1621,6 +1714,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: yrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.yerr'
@@ -1630,6 +1724,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: yerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.yasemi'
@@ -1639,6 +1734,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: yasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ybsemi'
@@ -1648,6 +1744,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: ybsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ytheta'
@@ -1657,6 +1754,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: ytheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrmag'
@@ -1666,6 +1764,7 @@ tables:
     ivoa:ucd: phot.mag
     name: vrmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrrms'
@@ -1675,6 +1774,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: vrrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrerr'
@@ -1684,6 +1784,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: vrerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrasemi'
@@ -1693,6 +1794,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: vrasemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrbsemi'
@@ -1702,6 +1804,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: vrbsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.vrtheta'
@@ -1711,6 +1814,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: vrtheta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.x2'
@@ -1720,6 +1824,7 @@ tables:
     ivoa:ucd: stat.variance;phys.angSize
     name: x2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.x2err'
@@ -1729,6 +1834,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize
     name: x2err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.y2'
@@ -1738,6 +1844,7 @@ tables:
     ivoa:ucd: stat.variance;phys.angSize
     name: y2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.y2err'
@@ -1747,6 +1854,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize
     name: y2err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.xy'
@@ -1756,6 +1864,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: xy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.xyerr'
@@ -1765,6 +1874,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize
     name: xyerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.asemi'
@@ -1774,6 +1884,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: asemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.asemierr'
@@ -1783,6 +1894,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.smajAxis
     name: asemierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.bsemi'
@@ -1792,6 +1904,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: bsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.bsemierr'
@@ -1801,6 +1914,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.sminAxis
     name: bsemierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.theta'
@@ -1810,6 +1924,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: theta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.thetaerr'
@@ -1819,6 +1934,7 @@ tables:
     ivoa:ucd: stat.error;pos.posAng
     name: thetaerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ellipticity'
@@ -1828,6 +1944,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: ellipticity
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.fwhm'
@@ -1837,6 +1954,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.class_star'
@@ -1846,6 +1964,7 @@ tables:
     ivoa:ucd: stat.probability
     name: class_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.ebv'
@@ -1855,6 +1974,7 @@ tables:
     ivoa:ucd: phys.absorption
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.u_g'
@@ -1862,6 +1982,7 @@ tables:
     description: Computed (u-g) color
     name: u_g
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.g_r'
@@ -1869,6 +1990,7 @@ tables:
     description: Computed (g-r) color
     name: g_r
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.r_i'
@@ -1876,6 +1998,7 @@ tables:
     description: Computed (r-i) color
     name: r_i
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.i_z'
@@ -1883,6 +2006,7 @@ tables:
     description: Computed (i-z) color
     name: i_z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.z_y'
@@ -1890,6 +2014,7 @@ tables:
     description: Computed (z-Y) color
     name: z_y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.random_id'
@@ -1897,6 +2022,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.object.pix'
@@ -2312,6 +2438,7 @@ tables:
     ivoa:ucd: pos.cartesian.x
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.y'
@@ -2321,6 +2448,7 @@ tables:
     ivoa:ucd: pos.cartesian.y
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.ra'
@@ -2366,6 +2494,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.magerr_auto'
@@ -2375,6 +2504,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: magerr_auto
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.mag_aper1'
@@ -2384,6 +2514,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag_aper1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.magerr_aper1'
@@ -2393,6 +2524,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: magerr_aper1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.mag_aper2'
@@ -2402,6 +2534,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag_aper2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.magerr_aper2'
@@ -2411,6 +2544,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: magerr_aper2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.mag_aper4'
@@ -2420,6 +2554,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag_aper4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.magerr_aper4'
@@ -2429,6 +2564,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: magerr_aper4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.mag_aper8'
@@ -2438,6 +2574,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag_aper8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.magerr_aper8'
@@ -2447,6 +2584,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: magerr_aper8
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.kron_radius'
@@ -2456,6 +2594,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: kron_radius
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.asemi'
@@ -2465,6 +2604,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis
     name: asemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.asemierr'
@@ -2474,6 +2614,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.smajAxis
     name: asemierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.bsemi'
@@ -2483,6 +2624,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis
     name: bsemi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.bsemierr'
@@ -2492,6 +2634,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.smajAxis
     name: bsemierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.theta'
@@ -2501,6 +2644,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: theta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.thetaerr'
@@ -2510,6 +2654,7 @@ tables:
     ivoa:ucd: stat.error;pos.posAng
     name: thetaerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.fwhm'
@@ -2519,6 +2664,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#nsc_dr1.meas.flags'

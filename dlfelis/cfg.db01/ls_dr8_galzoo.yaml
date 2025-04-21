@@ -774,6 +774,7 @@ tables:
     description: Measure of question relevance for smooth_or_featured_smooth_fraction
     name: smooth_or_featured_smooth_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_featured_or_disk_proportion_asked'
@@ -781,6 +782,7 @@ tables:
     description: Measure of question relevance for smooth_or_featured_featured_or_disk_fraction
     name: smooth_or_featured_featured_or_disk_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_artifact_proportion_asked'
@@ -788,6 +790,7 @@ tables:
     description: Measure of question relevance for smooth_or_featured_artifact_fraction
     name: smooth_or_featured_artifact_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_yes_proportion_asked'
@@ -795,6 +798,7 @@ tables:
     description: Measure of question relevance for disk_edge_on_yes_fraction
     name: disk_edge_on_yes_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_no_proportion_asked'
@@ -802,6 +806,7 @@ tables:
     description: Measure of question relevance for disk_edge_on_no_fraction
     name: disk_edge_on_no_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_yes_proportion_asked'
@@ -809,6 +814,7 @@ tables:
     description: Measure of question relevance for has_spiral_arms_yes_fraction
     name: has_spiral_arms_yes_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_no_proportion_asked'
@@ -816,6 +822,7 @@ tables:
     description: Measure of question relevance for has_spiral_arms_no_fraction
     name: has_spiral_arms_no_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_strong_proportion_asked'
@@ -823,6 +830,7 @@ tables:
     description: Measure of question relevance for bar_strong_fraction
     name: bar_strong_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_weak_proportion_asked'
@@ -830,6 +838,7 @@ tables:
     description: Measure of question relevance for bar_weak_fraction
     name: bar_weak_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_no_proportion_asked'
@@ -837,6 +846,7 @@ tables:
     description: Measure of question relevance for bar_no_fraction
     name: bar_no_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_dominant_proportion_asked'
@@ -844,6 +854,7 @@ tables:
     description: Measure of question relevance for bulge_size_dominant_fraction
     name: bulge_size_dominant_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_large_proportion_asked'
@@ -851,6 +862,7 @@ tables:
     description: Measure of question relevance for bulge_size_large_fraction
     name: bulge_size_large_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_moderate_proportion_asked'
@@ -858,6 +870,7 @@ tables:
     description: Measure of question relevance for bulge_size_moderate_fraction
     name: bulge_size_moderate_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_small_proportion_asked'
@@ -865,6 +878,7 @@ tables:
     description: Measure of question relevance for bulge_size_small_fraction
     name: bulge_size_small_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_none_proportion_asked'
@@ -872,6 +886,7 @@ tables:
     description: Measure of question relevance for bulge_size_none_fraction
     name: bulge_size_none_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_round_proportion_asked'
@@ -879,6 +894,7 @@ tables:
     description: Measure of question relevance for how_rounded_round_fraction
     name: how_rounded_round_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_in_between_proportion_asked'
@@ -886,6 +902,7 @@ tables:
     description: Measure of question relevance for how_rounded_in_between_fraction
     name: how_rounded_in_between_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_cigar_shaped_proportion_asked'
@@ -893,6 +910,7 @@ tables:
     description: Measure of question relevance for how_rounded_cigar_shaped_fraction
     name: how_rounded_cigar_shaped_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_boxy_proportion_asked'
@@ -900,6 +918,7 @@ tables:
     description: Measure of question relevance for edge_on_bulge_boxy_fraction
     name: edge_on_bulge_boxy_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_none_proportion_asked'
@@ -907,6 +926,7 @@ tables:
     description: Measure of question relevance for edge_on_bulge_none_fraction
     name: edge_on_bulge_none_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_rounded_proportion_asked'
@@ -914,6 +934,7 @@ tables:
     description: Measure of question relevance for edge_on_bulge_rounded_fraction
     name: edge_on_bulge_rounded_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_tight_proportion_asked'
@@ -921,6 +942,7 @@ tables:
     description: Measure of question relevance for spiral_winding_tight_fraction
     name: spiral_winding_tight_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_medium_proportion_asked'
@@ -928,6 +950,7 @@ tables:
     description: Measure of question relevance for spiral_winding_medium_fraction
     name: spiral_winding_medium_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_loose_proportion_asked'
@@ -935,6 +958,7 @@ tables:
     description: Measure of question relevance for spiral_winding_loose_fraction
     name: spiral_winding_loose_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_1_proportion_asked'
@@ -942,6 +966,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_1_fraction
     name: spiral_arm_count_1_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_2_proportion_asked'
@@ -949,6 +974,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_2_fraction
     name: spiral_arm_count_2_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_3_proportion_asked'
@@ -956,6 +982,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_3_fraction
     name: spiral_arm_count_3_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_4_proportion_asked'
@@ -963,6 +990,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_4_fraction
     name: spiral_arm_count_4_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_more_than_4_proportion_asked'
@@ -970,6 +998,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_more_than_4_fraction
     name: spiral_arm_count_more_than_4_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_cant_tell_proportion_asked'
@@ -977,6 +1006,7 @@ tables:
     description: Measure of question relevance for spiral_arm_count_cant_tell_fraction
     name: spiral_arm_count_cant_tell_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_none_proportion_asked'
@@ -984,6 +1014,7 @@ tables:
     description: Measure of question relevance for merging_none_fraction
     name: merging_none_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_minor_disturbance_proportion_asked'
@@ -991,6 +1022,7 @@ tables:
     description: Measure of question relevance for merging_minor_disturbance_fraction
     name: merging_minor_disturbance_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_major_disturbance_proportion_asked'
@@ -998,6 +1030,7 @@ tables:
     description: Measure of question relevance for merging_major_disturbance_fraction
     name: merging_major_disturbance_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_merger_proportion_asked'
@@ -1005,6 +1038,7 @@ tables:
     description: Measure of question relevance for merging_merger_fraction
     name: merging_merger_proportion_asked
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.random_id'
@@ -1012,6 +1046,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ls_dr8_galzoo.galaxy_zoo.htm9'

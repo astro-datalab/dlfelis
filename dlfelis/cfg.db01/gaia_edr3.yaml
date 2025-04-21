@@ -567,6 +567,7 @@ tables:
     description: Reference epoch Time[Julian Years]
     name: ref_epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_teff'
@@ -575,6 +576,7 @@ tables:
       Temperature[K]
     name: dr2_rv_template_teff
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_logg'
@@ -583,6 +585,7 @@ tables:
       GravitySurface[log cgs]
     name: dr2_rv_template_logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_fe_h'
@@ -591,6 +594,7 @@ tables:
       Abundances[dex]
     name: dr2_rv_template_fe_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_edr3.gaia_source.htm9'
@@ -619,6 +623,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#gaia_edr3.gaia_source.astrometric_n_obs_al'
@@ -957,6 +962,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: This table lists sources whose positions and proper motions define
@@ -1082,6 +1088,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: This table provides a representation of the Gaia scanning law over
@@ -1140,6 +1147,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0 (not unique)
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Sources used to compute the Gaia reference frame.

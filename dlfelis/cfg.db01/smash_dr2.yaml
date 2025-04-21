@@ -137,6 +137,7 @@ tables:
     ivoa:ucd: time.duration
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.filter'
@@ -175,6 +176,7 @@ tables:
     ivoa:ucd: obs.airMass
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.gain'
@@ -183,6 +185,7 @@ tables:
     fits:tunit: electron/adu
     name: gain
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.rdnoise'
@@ -192,6 +195,7 @@ tables:
     ivoa:ucd: instr.det.noise
     name: rdnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.nx'
@@ -228,6 +232,7 @@ tables:
     fits:tunit: arcsec
     name: pixscale
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.ra'
@@ -255,6 +260,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: wcsrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.gaiawcsrms'
@@ -264,6 +270,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: gaiawcsrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.gaiawcsnmatch'
@@ -282,6 +289,7 @@ tables:
     ivoa:ucd: instr.det.psf
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.skymode'
@@ -291,6 +299,7 @@ tables:
     ivoa:ucd: instr.skyLevel
     name: skymode
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.skysig'
@@ -300,6 +309,7 @@ tables:
     ivoa:ucd: stat.error
     name: skysig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.dao_nsources'
@@ -318,6 +328,7 @@ tables:
     ivoa:ucd: phot.mag
     name: dao_depth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.dao_npsfstars'
@@ -364,6 +375,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: dao_psfchi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.alf_nsources'
@@ -382,6 +394,7 @@ tables:
     ivoa:ucd: phot.mag
     name: alf_depth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.apcor'
@@ -390,6 +403,7 @@ tables:
     fits:tunit: mag
     name: apcor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.ebv'
@@ -399,6 +413,7 @@ tables:
     ivoa:ucd: phys.absorption
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.refexpnum'
@@ -500,6 +515,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ubercal_magoffset
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.ubercal_flag'
@@ -518,6 +534,7 @@ tables:
     ivoa:ucd: phot.calib;phot.mag
     name: zpcalib_magoffset
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.zpcalib_magofferr'
@@ -527,6 +544,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zpcalib_magofferr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.zpcalibflag'
@@ -592,6 +610,7 @@ tables:
     ivoa:ucd: phot.calib
     name: calib_zpterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.calib_zptermsig'
@@ -601,6 +620,7 @@ tables:
     ivoa:ucd: stat.error
     name: calib_zptermsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.calib_amterm'
@@ -610,6 +630,7 @@ tables:
     ivoa:ucd: obs.atmos.extinction
     name: calib_amterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.calib_amtermsig'
@@ -619,6 +640,7 @@ tables:
     ivoa:ucd: stat.error
     name: calib_amtermsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.calib_colterm'
@@ -628,6 +650,7 @@ tables:
     ivoa:ucd: stat.param
     name: calib_colterm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.chip.calib_coltermsig'
@@ -635,6 +658,7 @@ tables:
     description: Sigma of color term in calibration
     name: calib_coltermsig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Info on each chip in the frame
@@ -852,6 +876,7 @@ tables:
     ivoa:ucd: time.duration
     name: exptime
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.dateobs'
@@ -889,6 +914,7 @@ tables:
     ivoa:ucd: obs.airMass
     name: airmass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.wcstype'
@@ -926,6 +952,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: wcsrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.gaiawcsrms'
@@ -935,6 +962,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: gaiawcsrms
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.fwhm'
@@ -944,6 +972,7 @@ tables:
     ivoa:ucd: instr.det.psf
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.skymode'
@@ -953,6 +982,7 @@ tables:
     ivoa:ucd: instr.skyLevel
     name: skymode
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.skysig'
@@ -962,6 +992,7 @@ tables:
     ivoa:ucd: stat.stdev
     name: skysig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.dao_nsources'
@@ -980,6 +1011,7 @@ tables:
     ivoa:ucd: phot.mag
     name: dao_depth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.dao_psfchi'
@@ -989,6 +1021,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: dao_psfchi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.alf_nsources'
@@ -1007,6 +1040,7 @@ tables:
     ivoa:ucd: phot.mag
     name: alf_depth
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.apcor'
@@ -1015,6 +1049,7 @@ tables:
     fits:tunit: mag
     name: apcor
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.ebv'
@@ -1024,6 +1059,7 @@ tables:
     ivoa:ucd: phys.absorption
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.exposure.photometric'
@@ -1465,6 +1501,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.decscatter'
@@ -1472,6 +1509,7 @@ tables:
     description: RMS scatter in DEC from multiple measurements of this object
     name: decscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.rascatter'
@@ -1479,6 +1517,7 @@ tables:
     description: RMS scatter in RA from multiple measurements of this object
     name: rascatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.id'
@@ -1516,6 +1555,7 @@ tables:
     ivoa:ucd: stat.error
     name: raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.decerr'
@@ -1525,6 +1565,7 @@ tables:
     ivoa:ucd: stat.error
     name: decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndet'
@@ -1552,6 +1593,7 @@ tables:
     ivoa:ucd: phot.mag
     name: umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.uerr'
@@ -1561,6 +1603,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: uerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.uscatter'
@@ -1570,6 +1613,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: uscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndetu'
@@ -1588,6 +1632,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.gerr'
@@ -1597,6 +1642,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.gscatter'
@@ -1606,6 +1652,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: gscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndetg'
@@ -1624,6 +1671,7 @@ tables:
     ivoa:ucd: phot.mag
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.rerr'
@@ -1633,6 +1681,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: rerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.rscatter'
@@ -1642,6 +1691,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: rscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndetr'
@@ -1660,6 +1710,7 @@ tables:
     ivoa:ucd: phot.mag
     name: imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ierr'
@@ -1669,6 +1720,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: ierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.iscatter'
@@ -1678,6 +1730,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: iscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndeti'
@@ -1696,6 +1749,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.zerr'
@@ -1705,6 +1759,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.zscatter'
@@ -1714,6 +1769,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: zscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ndetz'
@@ -1732,6 +1788,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.sharp'
@@ -1741,6 +1798,7 @@ tables:
     ivoa:ucd: meta.code
     name: sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.flag'
@@ -1759,6 +1817,7 @@ tables:
     ivoa:ucd: stat.probability
     name: prob
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.object.ebv'
@@ -1766,6 +1825,7 @@ tables:
     description: Median SFD E(B-V) across frame
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Average photometry of each unique object
@@ -1938,6 +1998,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.sourceid'
@@ -2042,6 +2103,7 @@ tables:
     ivoa:ucd: pos.cartesian.x
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.y'
@@ -2051,6 +2113,7 @@ tables:
     ivoa:ucd: pos.cartesian.y
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.xref'
@@ -2060,6 +2123,7 @@ tables:
     ivoa:ucd: pos.cartesian.x
     name: xref
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.yref'
@@ -2069,6 +2133,7 @@ tables:
     ivoa:ucd: pos.cartesian.y
     name: yref
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.forced'
@@ -2087,6 +2152,7 @@ tables:
     ivoa:ucd: phot.mag
     name: mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.err'
@@ -2096,6 +2162,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.cmag'
@@ -2105,6 +2172,7 @@ tables:
     ivoa:ucd: phot.mag
     name: cmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.cerr'
@@ -2114,6 +2182,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: cerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.chi'
@@ -2123,6 +2192,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.sharp'
@@ -2132,6 +2202,7 @@ tables:
     ivoa:ucd: meta.code
     name: sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.flag'
@@ -2150,6 +2221,7 @@ tables:
     ivoa:ucd: stat.probability
     name: prob
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.ra'
@@ -2177,6 +2249,7 @@ tables:
     ivoa:ucd: stat.error
     name: raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.decerr'
@@ -2186,6 +2259,7 @@ tables:
     ivoa:ucd: stat.error
     name: decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.source.raindiv'
@@ -2367,6 +2441,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.decscatter'
@@ -2374,6 +2449,7 @@ tables:
     description: RMS scatter in DEC from multiple measurements of this object
     name: decscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.rascatter'
@@ -2381,6 +2457,7 @@ tables:
     description: RMS scatter in RA from multiple measurements of this object
     name: rascatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.id'
@@ -2418,6 +2495,7 @@ tables:
     ivoa:ucd: stat.error
     name: raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.decerr'
@@ -2427,6 +2505,7 @@ tables:
     ivoa:ucd: stat.error
     name: decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndet'
@@ -2454,6 +2533,7 @@ tables:
     ivoa:ucd: phot.mag
     name: umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.uerr'
@@ -2463,6 +2543,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: uerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.uscatter'
@@ -2472,6 +2553,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: uscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndetu'
@@ -2490,6 +2572,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.gerr'
@@ -2499,6 +2582,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.gscatter'
@@ -2508,6 +2592,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: gscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndetg'
@@ -2526,6 +2611,7 @@ tables:
     ivoa:ucd: phot.mag
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.rerr'
@@ -2535,6 +2621,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: rerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.rscatter'
@@ -2544,6 +2631,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: rscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndetr'
@@ -2562,6 +2650,7 @@ tables:
     ivoa:ucd: phot.mag
     name: imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ierr'
@@ -2571,6 +2660,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: ierr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.iscatter'
@@ -2580,6 +2670,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: iscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndeti'
@@ -2598,6 +2689,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.zerr'
@@ -2607,6 +2699,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: zerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.zscatter'
@@ -2616,6 +2709,7 @@ tables:
     ivoa:ucd: stat.stdev;phot.mag
     name: zscatter
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ndetz'
@@ -2634,6 +2728,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.sharp'
@@ -2643,6 +2738,7 @@ tables:
     ivoa:ucd: meta.code
     name: sharp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.flag'
@@ -2661,6 +2757,7 @@ tables:
     ivoa:ucd: stat.probability
     name: prob
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.deep.ebv'
@@ -2668,6 +2765,7 @@ tables:
     description: Median SFD E(B-V) across frame
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   description: Average photometry of each unique object only from deep exposures
@@ -2803,6 +2901,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: gaia_matchdist
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_sourceid'
@@ -2839,6 +2938,7 @@ tables:
     ivoa:ucd: stat.error
     name: gaia_raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_decerr'
@@ -2848,6 +2948,7 @@ tables:
     ivoa:ucd: stat.error
     name: gaia_decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_parallax'
@@ -2857,6 +2958,7 @@ tables:
     ivoa:ucd: pos.parallax
     name: gaia_parallax
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_parallax_error'
@@ -2866,6 +2968,7 @@ tables:
     ivoa:ucd: stat.error
     name: gaia_parallax_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_pmra'
@@ -2875,6 +2978,7 @@ tables:
     ivoa:ucd: pos.pm
     name: gaia_pmra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_pmra_error'
@@ -2884,6 +2988,7 @@ tables:
     ivoa:ucd: stat.error
     name: gaia_pmra_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_pmdec'
@@ -2893,6 +2998,7 @@ tables:
     ivoa:ucd: pos.pm
     name: gaia_pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_pmdec_error'
@@ -2902,6 +3008,7 @@ tables:
     ivoa:ucd: stat.error
     name: gaia_pmdec_error
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_gmag'
@@ -2911,6 +3018,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gaia_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_gerr'
@@ -2920,6 +3028,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gaia_gerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_bpmag'
@@ -2929,6 +3038,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gaia_bpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_bperr'
@@ -2938,6 +3048,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gaia_bperr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_rpmag'
@@ -2947,6 +3058,7 @@ tables:
     ivoa:ucd: phot.mag
     name: gaia_rpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.gaia_rperr'
@@ -2956,6 +3068,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: gaia_rperr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_match'
@@ -2974,6 +3087,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: tmass_matchdist
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_id'
@@ -3009,6 +3123,7 @@ tables:
     ivoa:ucd: stat.error
     name: tmass_raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_decerr'
@@ -3018,6 +3133,7 @@ tables:
     ivoa:ucd: stat.error
     name: tmass_decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_jmag'
@@ -3027,6 +3143,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.J
     name: tmass_jmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_jerr'
@@ -3036,6 +3153,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag;em.IR.J
     name: tmass_jerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_hmag'
@@ -3045,6 +3163,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.H
     name: tmass_hmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_herr'
@@ -3054,6 +3173,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag;em.IR.H
     name: tmass_herr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_kmag'
@@ -3063,6 +3183,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.K
     name: tmass_kmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_kerr'
@@ -3072,6 +3193,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag;em.IR.K
     name: tmass_kerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.tmass_qflg'
@@ -3100,6 +3222,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: wise_matchdist
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_id'
@@ -3135,6 +3258,7 @@ tables:
     ivoa:ucd: stat.error
     name: wise_raerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_decerr'
@@ -3144,6 +3268,7 @@ tables:
     ivoa:ucd: stat.error
     name: wise_decerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w1mag'
@@ -3153,6 +3278,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.3-4um
     name: wise_w1mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w1err'
@@ -3162,6 +3288,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: wise_w1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w2mag'
@@ -3171,6 +3298,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.4-8um
     name: wise_w2mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w2err'
@@ -3180,6 +3308,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: wise_w2err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w3mag'
@@ -3189,6 +3318,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.8-15um
     name: wise_w3mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w3err'
@@ -3198,6 +3328,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: wise_w3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w4mag'
@@ -3207,6 +3338,7 @@ tables:
     ivoa:ucd: phot.mag;em.IR.15-30um
     name: wise_w4mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_w4err'
@@ -3216,6 +3348,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: wise_w4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#smash_dr2.xmatch.wise_qph'

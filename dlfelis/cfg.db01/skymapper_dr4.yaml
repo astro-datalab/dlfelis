@@ -113,6 +113,7 @@ tables:
     ivoa:ucd: src.class.starGalaxy;stat.max
     name: class_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.cnt_self_15'
@@ -131,6 +132,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_g_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_g_petro'
@@ -140,6 +142,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_g_psf'
@@ -149,6 +152,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_g_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_i_apc05'
@@ -159,6 +163,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_i_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_i_petro'
@@ -168,6 +173,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_i_psf'
@@ -177,6 +183,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_i_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_r_apc05'
@@ -187,6 +194,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_r_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_r_petro'
@@ -196,6 +204,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_r_psf'
@@ -205,6 +214,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_r_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_u_apc05'
@@ -215,6 +225,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_u_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_u_petro'
@@ -224,6 +235,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_u_psf'
@@ -233,6 +245,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_u_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_v_apc05'
@@ -243,6 +256,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_v_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_v_petro'
@@ -252,6 +266,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_v_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_v_psf'
@@ -261,6 +276,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_v_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_z_apc05'
@@ -271,6 +287,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_z_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_z_petro'
@@ -280,6 +297,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.e_z_psf'
@@ -289,6 +307,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_z_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.ebmv_g_err'
@@ -298,6 +317,7 @@ tables:
     ivoa:ucd: stat.error;phot.color.excess;phys.absorption
     name: ebmv_g_err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.ebmv_gnilc'
@@ -307,6 +327,7 @@ tables:
     ivoa:ucd: phot.color.excess;phys.absorption
     name: ebmv_gnilc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.ebmv_sfd'
@@ -316,6 +337,7 @@ tables:
     ivoa:ucd: phot.color.excess;phys.absorption
     name: ebmv_sfd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.g_apc05'
@@ -326,6 +348,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: g_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.g_mmvar'
@@ -336,6 +359,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: g_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.g_petro'
@@ -345,6 +369,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: g_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.g_psf'
@@ -354,6 +379,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: g_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.gaia_dr3_dist1'
@@ -363,6 +389,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: gaia_dr3_dist1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.gaia_dr3_dist2'
@@ -372,6 +399,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: gaia_dr3_dist2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.glat'
@@ -402,6 +430,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: i_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.i_mmvar'
@@ -412,6 +441,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: i_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.i_petro'
@@ -421,6 +451,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: i_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.i_psf'
@@ -430,6 +461,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: i_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.mean_fwhm'
@@ -439,6 +471,7 @@ tables:
     ivoa:ucd: phys.angSize;stat.mean
     name: mean_fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.r_apc05'
@@ -449,6 +482,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: r_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.r_mmvar'
@@ -458,6 +492,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: r_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.r_petro'
@@ -467,6 +502,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: r_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.r_psf'
@@ -476,6 +512,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: r_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.radius_petro'
@@ -485,6 +522,7 @@ tables:
     ivoa:ucd: phys.angSize;stat.mean
     name: radius_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.rms_epoch'
@@ -494,6 +532,7 @@ tables:
     ivoa:ucd: stat.stdev;time.epoch
     name: rms_epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.self_dist1'
@@ -503,6 +542,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: self_dist1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.self_dist2'
@@ -512,6 +552,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: self_dist2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.self_dist3'
@@ -521,6 +562,7 @@ tables:
     ivoa:ucd: pos.angDistance
     name: self_dist3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.u_apc05'
@@ -531,6 +573,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: u_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.u_mmvar'
@@ -541,6 +584,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: u_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.u_petro'
@@ -550,6 +594,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: u_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.u_psf'
@@ -559,6 +604,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: u_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.v_apc05'
@@ -569,6 +615,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: v_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.v_mmvar'
@@ -579,6 +626,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: v_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.v_petro'
@@ -588,6 +636,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: v_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.v_psf'
@@ -597,6 +646,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: v_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.z_apc05'
@@ -607,6 +657,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: z_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.z_mmvar'
@@ -617,6 +668,7 @@ tables:
     ivoa:ucd: phot.mag;stat
     name: z_mmvar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.z_petro'
@@ -626,6 +678,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: z_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.z_psf'
@@ -635,6 +688,7 @@ tables:
     ivoa:ucd: phot.mag;stat.mean
     name: z_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.random_id'
@@ -642,6 +696,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.master.cnt_gaia_dr3_15'
@@ -1132,6 +1187,7 @@ tables:
     ivoa:ucd: phys.angSize.smajAxis;src
     name: a
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.b'
@@ -1141,6 +1197,7 @@ tables:
     ivoa:ucd: phys.angSize.sminAxis;src
     name: b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.background'
@@ -1166,6 +1223,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi2_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.class_star'
@@ -1174,6 +1232,7 @@ tables:
     ivoa:ucd: src.class.starGalaxy
     name: class_star
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.decl_img'
@@ -1192,6 +1251,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.smajAxis
     name: e_a
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_b'
@@ -1201,6 +1261,7 @@ tables:
     ivoa:ucd: stat.error;phys.angSize.sminAxis
     name: e_b
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_flux_ap02'
@@ -1327,6 +1388,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc02
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc03'
@@ -1336,6 +1398,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc03
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc04'
@@ -1345,6 +1408,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc04
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc05'
@@ -1354,6 +1418,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc06'
@@ -1363,6 +1428,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc06
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc08'
@@ -1372,6 +1438,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc08
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apc10'
@@ -1381,6 +1448,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apc10
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apr15'
@@ -1390,6 +1458,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apr15
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apr20'
@@ -1399,6 +1468,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apr20
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_apr30'
@@ -1408,6 +1478,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_apr30
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_kron'
@@ -1417,6 +1488,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_kron
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_petro'
@@ -1426,6 +1498,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_mag_psf'
@@ -1435,6 +1508,7 @@ tables:
     ivoa:ucd: stat.error;phot.mag
     name: e_mag_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.e_pa'
@@ -1444,6 +1518,7 @@ tables:
     ivoa:ucd: stat.error;pos.posAng
     name: e_pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.elong'
@@ -1452,6 +1527,7 @@ tables:
     ivoa:ucd: phys.size.axisRatio;src
     name: elong
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.filter'
@@ -1478,6 +1554,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap02
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap03'
@@ -1487,6 +1564,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap03
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap04'
@@ -1496,6 +1574,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap04
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap05'
@@ -1505,6 +1584,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap06'
@@ -1514,6 +1594,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap06
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap08'
@@ -1523,6 +1604,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap08
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap10'
@@ -1532,6 +1614,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap10
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap15'
@@ -1541,6 +1624,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap15
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap20'
@@ -1550,6 +1634,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap20
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_ap30'
@@ -1559,6 +1644,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_ap30
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_kron'
@@ -1568,6 +1654,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_kron
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_max'
@@ -1577,6 +1664,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_petro'
@@ -1586,6 +1674,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.flux_psf'
@@ -1595,6 +1684,7 @@ tables:
     ivoa:ucd: phot.count;src
     name: flux_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.fwhm'
@@ -1604,6 +1694,7 @@ tables:
     ivoa:ucd: phys.angSize;src
     name: fwhm
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.imaflags'
@@ -1631,6 +1722,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc02
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc03'
@@ -1641,6 +1733,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc03
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc04'
@@ -1651,6 +1744,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc04
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc05'
@@ -1661,6 +1755,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc05
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc06'
@@ -1671,6 +1766,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc06
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc08'
@@ -1681,6 +1777,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc08
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apc10'
@@ -1691,6 +1788,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apc10
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apr15'
@@ -1701,6 +1799,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apr15
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apr20'
@@ -1711,6 +1810,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apr20
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_apr30'
@@ -1721,6 +1821,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_apr30
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mag_kron'
@@ -1748,6 +1849,7 @@ tables:
     ivoa:ucd: phot.mag;src
     name: mag_psf
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.mu_max'
@@ -1757,6 +1859,7 @@ tables:
     ivoa:ucd: phot.mag.sb;src
     name: mu_max
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.nimaflags'
@@ -1791,6 +1894,7 @@ tables:
     ivoa:ucd: pos.posAng;src
     name: pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.ra_img'
@@ -1810,6 +1914,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: radius_frac20
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.radius_frac50'
@@ -1820,6 +1925,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: radius_frac50
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.radius_frac90'
@@ -1830,6 +1936,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: radius_frac90
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.radius_kron'
@@ -1838,6 +1945,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: radius_kron
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.radius_petro'
@@ -1846,6 +1954,7 @@ tables:
     ivoa:ucd: phys.angSize
     name: radius_petro
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.use_in_clipped'
@@ -1864,6 +1973,7 @@ tables:
     ivoa:ucd: pos.cartesian.x
     name: x_img
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.y_img'
@@ -1873,6 +1983,7 @@ tables:
     ivoa:ucd: pos.cartesian.y
     name: y_img
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.random_id'
@@ -1880,6 +1991,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.x_mosaic'
@@ -1889,6 +2001,7 @@ tables:
     ivoa:ucd: pos.cartesian.x
     name: x_mosaic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.y_mosaic'
@@ -1898,6 +2011,7 @@ tables:
     ivoa:ucd: pos.cartesian.y
     name: y_mosaic
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#skymapper_dr4.photometry.img_qual'

@@ -55,6 +55,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.B
     name: bmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.a2.rmag'
@@ -64,6 +65,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.a2.epoch'
@@ -73,6 +75,7 @@ tables:
     ivoa:ucd: time.epoch
     name: epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.a2.raj2000'
@@ -224,6 +227,7 @@ tables:
     ivoa:ucd: time.epoch;obs
     name: epoch
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.pmra'
@@ -313,6 +317,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.B
     name: b1_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.b1_c'
@@ -353,6 +358,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
     name: b1_xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.b1_eta'
@@ -362,6 +368,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
     name: b1_eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r1_mag'
@@ -371,6 +378,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: r1_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r1_c'
@@ -411,6 +419,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
     name: r1_xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r1_eta'
@@ -420,6 +429,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
     name: r1_eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.b2_mag'
@@ -429,6 +439,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.B
     name: b2_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.b2_c'
@@ -468,6 +479,7 @@ tables:
     fits:tunit: arcsec
     name: b2_xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.b2_eta'
@@ -476,6 +488,7 @@ tables:
     fits:tunit: arcsec
     name: b2_eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r2_mag'
@@ -484,6 +497,7 @@ tables:
     fits:tunit: mag
     name: r2_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r2_c'
@@ -524,6 +538,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
     name: r2_xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.r2_eta'
@@ -533,6 +548,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
     name: r2_eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.i_mag'
@@ -542,6 +558,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.I
     name: i_mag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.i_c'
@@ -582,6 +599,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
     name: i_xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.i_eta'
@@ -591,6 +609,7 @@ tables:
     ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
     name: i_eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#usno.b1.ring256'

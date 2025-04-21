@@ -55,6 +55,7 @@ tables:
     ivoa:ucd: time.age
     name: logage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.m_h'
@@ -62,6 +63,7 @@ tables:
     description: Initial Metallicity [M/H], equal to [Fe/H] in this version (dex)
     name: m_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.m_ini'
@@ -69,6 +71,7 @@ tables:
     description: Initial mass (M_sun)
     name: m_ini
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.mratio'
@@ -76,6 +79,7 @@ tables:
     description: Mass ratio of binary systems (0 for single stars)
     name: mratio
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.mu0'
@@ -85,6 +89,7 @@ tables:
     ivoa:ucd: phot.mag.distMod
     name: mu0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.av'
@@ -93,6 +98,7 @@ tables:
     fits:tunit: mag
     name: av
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.mass'
@@ -100,6 +106,7 @@ tables:
     description: Present mass (M_sun)
     name: mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.logl'
@@ -107,6 +114,7 @@ tables:
     description: Logarithm of luminosity in L_sun
     name: logl
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.logte'
@@ -115,6 +123,7 @@ tables:
     fits:tunit: Kelvin
     name: logte
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.logg'
@@ -122,6 +131,7 @@ tables:
     description: Logarithm of surface gravity in cgs units
     name: logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.label'
@@ -137,6 +147,7 @@ tables:
     description: Core mass during the TP-AGB, otherwise null (Msun)
     name: mcoretp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.c_o'
@@ -144,6 +155,7 @@ tables:
     description: Surface C/O ratio by number, n_C/n_O
     name: c_o
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.period0'
@@ -151,6 +163,7 @@ tables:
     description: Period of fundamental mode (days) if LPV, otherwise null
     name: period0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.period1'
@@ -158,6 +171,7 @@ tables:
     description: Period of first overtone mode (days) if LPV, otherwise null
     name: period1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.period2'
@@ -165,6 +179,7 @@ tables:
     description: Period of second overtone mode (days) if LPV, otherwise null
     name: period2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.period3'
@@ -172,6 +187,7 @@ tables:
     description: Period of third overtone mode (days) if LPV, otherwise null
     name: period3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.period4'
@@ -179,6 +195,7 @@ tables:
     description: Period of fourth overtone mode (days) if LPV, otherwise null
     name: period4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.pmode'
@@ -194,6 +211,7 @@ tables:
     description: Mass loss rate (M_sun/year)
     name: mloss
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.tau1m'
@@ -201,6 +219,7 @@ tables:
     description: Optical depth at 1 micron, for stars w/ heavy mass loss
     name: tau1m
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.x'
@@ -208,6 +227,7 @@ tables:
     description: Surface H mass fraction
     name: x
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.y'
@@ -215,6 +235,7 @@ tables:
     description: Surface He mass fraction
     name: y
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.xc'
@@ -222,6 +243,7 @@ tables:
     description: Surface C mass fraction
     name: xc
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.xn'
@@ -229,6 +251,7 @@ tables:
     description: Surface N mass fraction
     name: xn
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.xo'
@@ -236,6 +259,7 @@ tables:
     description: Surface O mass fraction
     name: xo
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.cexcess'
@@ -244,6 +268,7 @@ tables:
       stars
     name: cexcess
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.z'
@@ -251,6 +276,7 @@ tables:
     description: Linear heavy element abundance
     name: z
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.mbolmag'
@@ -258,6 +284,7 @@ tables:
     description: Apparent Bolometric luminosity (4.77 for Sun)
     name: mbolmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.umag'
@@ -267,6 +294,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.U
     name: umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.gmag'
@@ -275,6 +303,7 @@ tables:
     fits:tunit: mag
     name: gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.rmag'
@@ -284,6 +313,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.imag'
@@ -293,6 +323,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.I
     name: imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.zmag'
@@ -301,6 +332,7 @@ tables:
     fits:tunit: mag
     name: zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.ymag'
@@ -309,6 +341,7 @@ tables:
     fits:tunit: mag
     name: ymag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.gaia_gmag'
@@ -317,6 +350,7 @@ tables:
     fits:tunit: mag
     name: gaia_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.g_bpmag'
@@ -325,6 +359,7 @@ tables:
     fits:tunit: mag
     name: g_bpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.g_rpmag'
@@ -333,6 +368,7 @@ tables:
     fits:tunit: mag
     name: g_rpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.velu'
@@ -341,6 +377,7 @@ tables:
     fits:tunit: km/s
     name: velu
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.velv'
@@ -349,6 +386,7 @@ tables:
     fits:tunit: km/s
     name: velv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.velw'
@@ -357,6 +395,7 @@ tables:
     fits:tunit: km/s
     name: velw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.vrad'
@@ -365,6 +404,7 @@ tables:
     fits:tunit: km/s
     name: vrad
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.pmracosd'
@@ -374,6 +414,7 @@ tables:
     ivoa:ucd: pos.pm
     name: pmracosd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.pmdec'
@@ -383,6 +424,7 @@ tables:
     ivoa:ucd: pos.pm
     name: pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.htm9'
@@ -415,6 +457,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2.elon'
@@ -627,6 +670,7 @@ tables:
     ivoa:ucd: time.age
     name: logage
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.m_h'
@@ -635,6 +679,7 @@ tables:
     fits:tunit: dex
     name: m_h
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.mu0'
@@ -644,6 +689,7 @@ tables:
     ivoa:ucd: phot.mag.distMod
     name: mu0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.av'
@@ -652,6 +698,7 @@ tables:
     fits:tunit: mag
     name: av
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.velu'
@@ -660,6 +707,7 @@ tables:
     fits:tunit: km/s
     name: velu
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.velv'
@@ -668,6 +716,7 @@ tables:
     fits:tunit: km/s
     name: velv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.velw'
@@ -676,6 +725,7 @@ tables:
     fits:tunit: km/s
     name: velw
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.vrad'
@@ -684,6 +734,7 @@ tables:
     fits:tunit: km/s
     name: vrad
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.pmracosd'
@@ -693,6 +744,7 @@ tables:
     ivoa:ucd: pos.pm
     name: pmracosd
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.pmdec'
@@ -702,6 +754,7 @@ tables:
     ivoa:ucd: pos.pm
     name: pmdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_mass'
@@ -710,6 +763,7 @@ tables:
     fits:tunit: M_sun
     name: c1_mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_logl'
@@ -718,6 +772,7 @@ tables:
     fits:tunit: L_sun
     name: c1_logl
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_logte'
@@ -726,6 +781,7 @@ tables:
     fits:tunit: Kelvin
     name: c1_logte
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_logg'
@@ -733,6 +789,7 @@ tables:
     description: Logarithm of surface gravity g of the primary in cgs units
     name: c1_logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_mcoretp'
@@ -741,6 +798,7 @@ tables:
     fits:tunit: M_sun
     name: c1_mcoretp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_c_o'
@@ -749,6 +807,7 @@ tables:
       of the primary
     name: c1_c_o
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_period0'
@@ -759,6 +818,7 @@ tables:
     fits:tunit: d
     name: c1_period0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_period1'
@@ -769,6 +829,7 @@ tables:
     fits:tunit: d
     name: c1_period1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_period2'
@@ -779,6 +840,7 @@ tables:
     fits:tunit: d
     name: c1_period2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_period3'
@@ -789,6 +851,7 @@ tables:
     fits:tunit: d
     name: c1_period3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_period4'
@@ -799,6 +862,7 @@ tables:
     fits:tunit: d
     name: c1_period4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_mloss'
@@ -807,6 +871,7 @@ tables:
     fits:tunit: M_sun/yr
     name: c1_mloss
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_mbolmag'
@@ -815,6 +880,7 @@ tables:
     fits:tunit: mag
     name: c1_mbolmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_umag'
@@ -825,6 +891,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.U
     name: c1_umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_gmag'
@@ -834,6 +901,7 @@ tables:
     fits:tunit: mag
     name: c1_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_rmag'
@@ -844,6 +912,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: c1_rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_imag'
@@ -854,6 +923,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.I
     name: c1_imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_zmag'
@@ -863,6 +933,7 @@ tables:
     fits:tunit: mag
     name: c1_zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_ymag'
@@ -872,6 +943,7 @@ tables:
     fits:tunit: mag
     name: c1_ymag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_gaia_gmag'
@@ -881,6 +953,7 @@ tables:
     fits:tunit: mag
     name: c1_gaia_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_g_bpmag'
@@ -890,6 +963,7 @@ tables:
     fits:tunit: mag
     name: c1_g_bpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c1_g_rpmag'
@@ -899,6 +973,7 @@ tables:
     fits:tunit: mag
     name: c1_g_rpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_m_ini'
@@ -907,6 +982,7 @@ tables:
     fits:tunit: M_sun
     name: c2_m_ini
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_mass'
@@ -915,6 +991,7 @@ tables:
     fits:tunit: M_sun
     name: c2_mass
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_logl'
@@ -923,6 +1000,7 @@ tables:
     fits:tunit: L_sun
     name: c2_logl
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_logte'
@@ -931,6 +1009,7 @@ tables:
     fits:tunit: Kelvin
     name: c2_logte
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_logg'
@@ -938,6 +1017,7 @@ tables:
     description: Logarithm of surface gravity g of the secondary in cgs units
     name: c2_logg
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_mcoretp'
@@ -946,6 +1026,7 @@ tables:
     fits:tunit: M_sun
     name: c2_mcoretp
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_c_o'
@@ -954,6 +1035,7 @@ tables:
       of the secondary
     name: c2_c_o
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_period0'
@@ -964,6 +1046,7 @@ tables:
     fits:tunit: d
     name: c2_period0
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_period1'
@@ -974,6 +1057,7 @@ tables:
     fits:tunit: d
     name: c2_period1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_period2'
@@ -984,6 +1068,7 @@ tables:
     fits:tunit: d
     name: c2_period2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_period3'
@@ -994,6 +1079,7 @@ tables:
     fits:tunit: d
     name: c2_period3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_period4'
@@ -1004,6 +1090,7 @@ tables:
     fits:tunit: d
     name: c2_period4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_mloss'
@@ -1012,6 +1099,7 @@ tables:
     fits:tunit: M_sun/yr
     name: c2_mloss
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_mbolmag'
@@ -1020,6 +1108,7 @@ tables:
     fits:tunit: mag
     name: c2_mbolmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_umag'
@@ -1030,6 +1119,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.U
     name: c2_umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_gmag'
@@ -1039,6 +1129,7 @@ tables:
     fits:tunit: mag
     name: c2_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_rmag'
@@ -1049,6 +1140,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: c2_rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_imag'
@@ -1059,6 +1151,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.I
     name: c2_imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_zmag'
@@ -1068,6 +1161,7 @@ tables:
     fits:tunit: mag
     name: c2_zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_ymag'
@@ -1077,6 +1171,7 @@ tables:
     fits:tunit: mag
     name: c2_ymag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_gaia_gmag'
@@ -1086,6 +1181,7 @@ tables:
     fits:tunit: mag
     name: c2_gaia_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_g_bpmag'
@@ -1095,6 +1191,7 @@ tables:
     fits:tunit: mag
     name: c2_g_bpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c2_g_rpmag'
@@ -1104,6 +1201,7 @@ tables:
     fits:tunit: mag
     name: c2_g_rpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_mbolmag'
@@ -1112,6 +1210,7 @@ tables:
     fits:tunit: mag
     name: c3_mbolmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_umag'
@@ -1122,6 +1221,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.U
     name: c3_umag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_gmag'
@@ -1131,6 +1231,7 @@ tables:
     fits:tunit: mag
     name: c3_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_rmag'
@@ -1141,6 +1242,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.R
     name: c3_rmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_imag'
@@ -1151,6 +1253,7 @@ tables:
     ivoa:ucd: phot.mag;em.opt.I
     name: c3_imag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_zmag'
@@ -1160,6 +1263,7 @@ tables:
     fits:tunit: mag
     name: c3_zmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_ymag'
@@ -1169,6 +1273,7 @@ tables:
     fits:tunit: mag
     name: c3_ymag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_gaia_gmag'
@@ -1178,6 +1283,7 @@ tables:
     fits:tunit: mag
     name: c3_gaia_gmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_g_bpmag'
@@ -1187,6 +1293,7 @@ tables:
     fits:tunit: mag
     name: c3_g_bpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.c3_g_rpmag'
@@ -1196,6 +1303,7 @@ tables:
     fits:tunit: mag
     name: c3_g_rpmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.e'
@@ -1203,6 +1311,7 @@ tables:
     description: Current eccentricity
     name: e
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.random_id'
@@ -1210,6 +1319,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#lsst_sim.simdr2_binary.id'

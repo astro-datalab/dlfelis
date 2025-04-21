@@ -140,6 +140,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmhpnterr'
@@ -149,6 +150,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hmkpnt'
@@ -158,6 +160,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hmkpnterr'
@@ -167,6 +170,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmkpnt'
@@ -176,6 +180,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmkpnterr'
@@ -185,6 +190,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmhext'
@@ -194,6 +200,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmhexterr'
@@ -203,6 +210,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hmkext'
@@ -212,6 +220,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hmkexterr'
@@ -221,6 +230,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmkext'
@@ -230,6 +240,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jmkexterr'
@@ -239,6 +250,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.mergedclassstat'
@@ -247,6 +259,7 @@ tables:
     ivoa:ucd: stat.probability
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.pstar'
@@ -255,6 +268,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.pgalaxy'
@@ -263,6 +277,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.pnoise'
@@ -271,6 +286,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.psaturated'
@@ -279,6 +295,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.ebv'
@@ -289,6 +306,7 @@ tables:
       (E(B-V)>0.1)
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.aj'
@@ -298,6 +316,7 @@ tables:
     fits:tunit: mag
     name: aj
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.ah'
@@ -307,6 +326,7 @@ tables:
     fits:tunit: mag
     name: ah
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.ak'
@@ -316,6 +336,7 @@ tables:
     fits:tunit: mag
     name: ak
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jhallmag'
@@ -325,6 +346,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jhallmagerr'
@@ -334,6 +356,7 @@ tables:
     ivoa:ucd: stat.error
     name: jhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jpetromag'
@@ -343,6 +366,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jpetromagerr'
@@ -352,6 +376,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jpsfmag'
@@ -361,6 +386,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jpsfmagerr'
@@ -370,6 +396,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jsermag2d'
@@ -379,6 +406,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jsermag2derr'
@@ -388,6 +416,7 @@ tables:
     ivoa:ucd: stat.error
     name: jsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag3'
@@ -398,6 +427,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag3err'
@@ -407,6 +437,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag4'
@@ -416,6 +447,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag4err'
@@ -425,6 +457,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag6'
@@ -434,6 +467,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.japermag6err'
@@ -443,6 +477,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jgausig'
@@ -452,6 +487,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jell'
@@ -460,6 +496,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jpa'
@@ -469,6 +506,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jclassstat'
@@ -477,6 +515,7 @@ tables:
     ivoa:ucd: stat.probability
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jxi'
@@ -486,6 +525,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.jeta'
@@ -495,6 +535,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hhallmag'
@@ -504,6 +545,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hhallmagerr'
@@ -513,6 +555,7 @@ tables:
     ivoa:ucd: stat.error
     name: hhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hpetromag'
@@ -522,6 +565,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hpetromagerr'
@@ -531,6 +575,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hpsfmag'
@@ -540,6 +585,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hpsfmagerr'
@@ -549,6 +595,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hsermag2d'
@@ -558,6 +605,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hsermag2derr'
@@ -567,6 +615,7 @@ tables:
     ivoa:ucd: stat.error
     name: hsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag3'
@@ -577,6 +626,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag3err'
@@ -586,6 +636,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag4'
@@ -595,6 +646,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag4err'
@@ -604,6 +656,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag6'
@@ -613,6 +666,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hapermag6err'
@@ -622,6 +676,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hgausig'
@@ -631,6 +686,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hell'
@@ -639,6 +695,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hpa'
@@ -648,6 +705,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hclassstat'
@@ -656,6 +714,7 @@ tables:
     ivoa:ucd: stat.probability
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.hxi'
@@ -665,6 +724,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.heta'
@@ -674,6 +734,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.khallmag'
@@ -683,6 +744,7 @@ tables:
     ivoa:ucd: phot.mag
     name: khallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.khallmagerr'
@@ -692,6 +754,7 @@ tables:
     ivoa:ucd: stat.error
     name: khallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kpetromag'
@@ -701,6 +764,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kpetromagerr'
@@ -710,6 +774,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kpsfmag'
@@ -719,6 +784,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kpsfmagerr'
@@ -728,6 +794,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.ksermag2d'
@@ -737,6 +804,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ksermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.ksermag2derr'
@@ -746,6 +814,7 @@ tables:
     ivoa:ucd: stat.error
     name: ksermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag3'
@@ -756,6 +825,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag3err'
@@ -765,6 +835,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag4'
@@ -774,6 +845,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag4err'
@@ -783,6 +855,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag6'
@@ -792,6 +865,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kapermag6err'
@@ -801,6 +875,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kgausig'
@@ -810,6 +885,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: kgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kell'
@@ -818,6 +894,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: kell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kpa'
@@ -827,6 +904,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: kpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kclassstat'
@@ -835,6 +913,7 @@ tables:
     ivoa:ucd: stat.probability
     name: kclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.kxi'
@@ -844,6 +923,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: kxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.keta'
@@ -853,6 +933,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: keta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.random_id'
@@ -860,6 +941,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.dxssource.cueventid'
@@ -1376,6 +1458,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.sigdec'
@@ -1385,6 +1468,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.mura'
@@ -1394,6 +1478,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.ra
     name: mura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.mudec'
@@ -1403,6 +1488,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.dec
     name: mudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.sigmura'
@@ -1412,6 +1498,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.sigmudec'
@@ -1421,6 +1508,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.chi2'
@@ -1429,6 +1517,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zmypnt'
@@ -1438,6 +1527,7 @@ tables:
     ivoa:ucd: phot.color
     name: zmypnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zmypnterr'
@@ -1447,6 +1537,7 @@ tables:
     ivoa:ucd: stat.error
     name: zmypnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ymjpnt'
@@ -1456,6 +1547,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymjpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ymjpnterr'
@@ -1465,6 +1557,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymjpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jmhpnt'
@@ -1474,6 +1567,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jmhpnterr'
@@ -1483,6 +1577,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmkpnt'
@@ -1492,6 +1587,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmkpnterr'
@@ -1501,6 +1597,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_1pnt'
@@ -1510,6 +1607,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_1pnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_1pnterr'
@@ -1519,6 +1617,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_1pnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_2pnt'
@@ -1528,6 +1627,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_2pnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_2pnterr'
@@ -1537,6 +1637,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_2pnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zmyext'
@@ -1546,6 +1647,7 @@ tables:
     ivoa:ucd: phot.color
     name: zmyext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zmyexterr'
@@ -1555,6 +1657,7 @@ tables:
     ivoa:ucd: stat.error
     name: zmyexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ymjext'
@@ -1564,6 +1667,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymjext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ymjexterr'
@@ -1573,6 +1677,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymjexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jmhext'
@@ -1582,6 +1687,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jmhexterr'
@@ -1591,6 +1697,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmkext'
@@ -1600,6 +1707,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmkexterr'
@@ -1609,6 +1717,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_1ext'
@@ -1618,6 +1727,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_1ext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_1exterr'
@@ -1627,6 +1737,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_1exterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_2ext'
@@ -1636,6 +1747,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_2ext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hmk_2exterr'
@@ -1645,6 +1757,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_2exterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.mergedclassstat'
@@ -1653,6 +1766,7 @@ tables:
     ivoa:ucd: stat.probability
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.pstar'
@@ -1661,6 +1775,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.pgalaxy'
@@ -1669,6 +1784,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.pnoise'
@@ -1677,6 +1793,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.psaturated'
@@ -1685,6 +1802,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zhallmag'
@@ -1694,6 +1812,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zhallmagerr'
@@ -1703,6 +1822,7 @@ tables:
     ivoa:ucd: stat.error
     name: zhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zpetromag'
@@ -1712,6 +1832,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zpetromagerr'
@@ -1721,6 +1842,7 @@ tables:
     ivoa:ucd: stat.error
     name: zpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zpsfmag'
@@ -1730,6 +1852,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zpsfmagerr'
@@ -1739,6 +1862,7 @@ tables:
     ivoa:ucd: stat.error
     name: zpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zsermag2d'
@@ -1748,6 +1872,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zsermag2derr'
@@ -1757,6 +1882,7 @@ tables:
     ivoa:ucd: stat.error
     name: zsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag3'
@@ -1767,6 +1893,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag3err'
@@ -1776,6 +1903,7 @@ tables:
     ivoa:ucd: stat.error
     name: zapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag4'
@@ -1785,6 +1913,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag4err'
@@ -1794,6 +1923,7 @@ tables:
     ivoa:ucd: stat.error
     name: zapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag6'
@@ -1803,6 +1933,7 @@ tables:
     ivoa:ucd: phot.mag
     name: zapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zapermag6err'
@@ -1812,6 +1943,7 @@ tables:
     ivoa:ucd: stat.error
     name: zapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zgausig'
@@ -1821,6 +1953,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: zgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zell'
@@ -1829,6 +1962,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: zell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zpa'
@@ -1838,6 +1972,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: zpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zclassstat'
@@ -1846,6 +1981,7 @@ tables:
     ivoa:ucd: stat.probability
     name: zclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zxi'
@@ -1855,6 +1991,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: zxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.zeta'
@@ -1864,6 +2001,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: zeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yhallmag'
@@ -1873,6 +2011,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yhallmagerr'
@@ -1882,6 +2021,7 @@ tables:
     ivoa:ucd: stat.error
     name: yhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ypetromag'
@@ -1891,6 +2031,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ypetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ypetromagerr'
@@ -1900,6 +2041,7 @@ tables:
     ivoa:ucd: stat.error
     name: ypetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ypsfmag'
@@ -1909,6 +2051,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ypsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ypsfmagerr'
@@ -1918,6 +2061,7 @@ tables:
     ivoa:ucd: stat.error
     name: ypsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ysermag2d'
@@ -1927,6 +2071,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ysermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ysermag2derr'
@@ -1936,6 +2081,7 @@ tables:
     ivoa:ucd: stat.error
     name: ysermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag3'
@@ -1946,6 +2092,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag3err'
@@ -1955,6 +2102,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag4'
@@ -1964,6 +2112,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag4err'
@@ -1973,6 +2122,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag6'
@@ -1982,6 +2132,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yapermag6err'
@@ -1991,6 +2142,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ygausig'
@@ -2000,6 +2152,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: ygausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yell'
@@ -2008,6 +2161,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: yell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ypa'
@@ -2017,6 +2171,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: ypa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yclassstat'
@@ -2025,6 +2180,7 @@ tables:
     ivoa:ucd: stat.probability
     name: yclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yxi'
@@ -2034,6 +2190,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: yxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.yeta'
@@ -2043,6 +2200,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: yeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jhallmag'
@@ -2052,6 +2210,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jhallmagerr'
@@ -2061,6 +2220,7 @@ tables:
     ivoa:ucd: stat.error
     name: jhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jpetromag'
@@ -2070,6 +2230,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jpetromagerr'
@@ -2079,6 +2240,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jpsfmag'
@@ -2088,6 +2250,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jpsfmagerr'
@@ -2097,6 +2260,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jsermag2d'
@@ -2106,6 +2270,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jsermag2derr'
@@ -2115,6 +2280,7 @@ tables:
     ivoa:ucd: stat.error
     name: jsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag3'
@@ -2125,6 +2291,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag3err'
@@ -2134,6 +2301,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag4'
@@ -2143,6 +2311,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag4err'
@@ -2152,6 +2321,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag6'
@@ -2161,6 +2331,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.japermag6err'
@@ -2170,6 +2341,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jgausig'
@@ -2179,6 +2351,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jell'
@@ -2187,6 +2360,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jpa'
@@ -2196,6 +2370,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jclassstat'
@@ -2204,6 +2379,7 @@ tables:
     ivoa:ucd: stat.probability
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jxi'
@@ -2213,6 +2389,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.jeta'
@@ -2222,6 +2399,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hhallmag'
@@ -2231,6 +2409,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hhallmagerr'
@@ -2240,6 +2419,7 @@ tables:
     ivoa:ucd: stat.error
     name: hhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hpetromag'
@@ -2249,6 +2429,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hpetromagerr'
@@ -2258,6 +2439,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hpsfmag'
@@ -2267,6 +2449,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hpsfmagerr'
@@ -2276,6 +2459,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hsermag2d'
@@ -2285,6 +2469,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hsermag2derr'
@@ -2294,6 +2479,7 @@ tables:
     ivoa:ucd: stat.error
     name: hsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag3'
@@ -2304,6 +2490,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag3err'
@@ -2313,6 +2500,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag4'
@@ -2322,6 +2510,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag4err'
@@ -2331,6 +2520,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag6'
@@ -2340,6 +2530,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hapermag6err'
@@ -2349,6 +2540,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hgausig'
@@ -2358,6 +2550,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hell'
@@ -2366,6 +2559,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hpa'
@@ -2375,6 +2569,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hclassstat'
@@ -2383,6 +2578,7 @@ tables:
     ivoa:ucd: stat.probability
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.hxi'
@@ -2392,6 +2588,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.heta'
@@ -2401,6 +2598,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.khallmag'
@@ -2410,6 +2608,7 @@ tables:
     ivoa:ucd: phot.mag
     name: khallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.khallmagerr'
@@ -2419,6 +2618,7 @@ tables:
     ivoa:ucd: stat.error
     name: khallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kpetromag'
@@ -2428,6 +2628,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kpetromagerr'
@@ -2437,6 +2638,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kpsfmag'
@@ -2446,6 +2648,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kpsfmagerr'
@@ -2455,6 +2658,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ksermag2d'
@@ -2464,6 +2668,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ksermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.ksermag2derr'
@@ -2473,6 +2678,7 @@ tables:
     ivoa:ucd: stat.error
     name: ksermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag3'
@@ -2483,6 +2689,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag3err'
@@ -2492,6 +2699,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag4'
@@ -2501,6 +2709,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag4err'
@@ -2510,6 +2719,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag6'
@@ -2519,6 +2729,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kapermag6err'
@@ -2528,6 +2739,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kgausig'
@@ -2537,6 +2749,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: kgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kell'
@@ -2545,6 +2758,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: kell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kpa'
@@ -2554,6 +2768,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: kpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kclassstat'
@@ -2562,6 +2777,7 @@ tables:
     ivoa:ucd: stat.probability
     name: kclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.kxi'
@@ -2571,6 +2787,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: kxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.keta'
@@ -2580,6 +2797,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: keta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1hallmag'
@@ -2589,6 +2807,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1hallmagerr'
@@ -2598,6 +2817,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1petromag'
@@ -2607,6 +2827,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1petromagerr'
@@ -2616,6 +2837,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1psfmag'
@@ -2625,6 +2847,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1psfmagerr'
@@ -2634,6 +2857,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1sermag2d'
@@ -2643,6 +2867,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1sermag2derr'
@@ -2652,6 +2877,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag3'
@@ -2662,6 +2888,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag3err'
@@ -2671,6 +2898,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag4'
@@ -2680,6 +2908,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag4err'
@@ -2689,6 +2918,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag6'
@@ -2698,6 +2928,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1apermag6err'
@@ -2707,6 +2938,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1gausig'
@@ -2716,6 +2948,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: k_1gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1ell'
@@ -2724,6 +2957,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: k_1ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1pa'
@@ -2733,6 +2967,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: k_1pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1classstat'
@@ -2741,6 +2976,7 @@ tables:
     ivoa:ucd: stat.probability
     name: k_1classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1xi'
@@ -2750,6 +2986,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: k_1xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_1eta'
@@ -2759,6 +2996,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: k_1eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2hallmag'
@@ -2768,6 +3006,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2hallmagerr'
@@ -2777,6 +3016,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2petromag'
@@ -2786,6 +3026,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2petromagerr'
@@ -2795,6 +3036,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2psfmag'
@@ -2804,6 +3046,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2psfmagerr'
@@ -2813,6 +3056,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2sermag2d'
@@ -2822,6 +3066,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2sermag2derr'
@@ -2831,6 +3076,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag3'
@@ -2841,6 +3087,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag3err'
@@ -2850,6 +3097,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag4'
@@ -2859,6 +3107,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag4err'
@@ -2868,6 +3117,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag6'
@@ -2877,6 +3127,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2apermag6err'
@@ -2886,6 +3137,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2gausig'
@@ -2895,6 +3147,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: k_2gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2ell'
@@ -2903,6 +3156,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: k_2ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2pa'
@@ -2912,6 +3166,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: k_2pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2classstat'
@@ -2920,6 +3175,7 @@ tables:
     ivoa:ucd: stat.probability
     name: k_2classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2xi'
@@ -2929,6 +3185,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: k_2xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.k_2eta'
@@ -2938,6 +3195,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: k_2eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.random_id'
@@ -2945,6 +3203,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gcssource.cueventid'
@@ -3797,6 +4056,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.sigdec'
@@ -3806,6 +4066,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.mura'
@@ -3815,6 +4076,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.ra
     name: mura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.mudec'
@@ -3824,6 +4086,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.dec
     name: mudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.sigmura'
@@ -3833,6 +4096,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.sigmudec'
@@ -3842,6 +4106,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.chi2'
@@ -3850,6 +4115,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jmhpnt'
@@ -3859,6 +4125,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jmhpnterr'
@@ -3868,6 +4135,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmkpnt'
@@ -3877,6 +4145,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmkpnterr'
@@ -3886,6 +4155,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmk_1pnt'
@@ -3895,6 +4165,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_1pnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmk_1pnterr'
@@ -3904,6 +4175,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_1pnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jmhext'
@@ -3913,6 +4185,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jmhexterr'
@@ -3922,6 +4195,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmkext'
@@ -3931,6 +4205,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmkexterr'
@@ -3940,6 +4215,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmk_1ext'
@@ -3949,6 +4225,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmk_1ext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hmk_1exterr'
@@ -3958,6 +4235,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmk_1exterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.mergedclassstat'
@@ -3966,6 +4244,7 @@ tables:
     ivoa:ucd: stat.probability
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.pstar'
@@ -3974,6 +4253,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.pgalaxy'
@@ -3982,6 +4262,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.pnoise'
@@ -3990,6 +4271,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.psaturated'
@@ -3998,6 +4280,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jhallmag'
@@ -4007,6 +4290,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jhallmagerr'
@@ -4016,6 +4300,7 @@ tables:
     ivoa:ucd: stat.error
     name: jhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jpetromag'
@@ -4025,6 +4310,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jpetromagerr'
@@ -4034,6 +4320,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jpsfmag'
@@ -4043,6 +4330,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jpsfmagerr'
@@ -4052,6 +4340,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jsermag2d'
@@ -4061,6 +4350,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jsermag2derr'
@@ -4070,6 +4360,7 @@ tables:
     ivoa:ucd: stat.error
     name: jsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag1'
@@ -4080,6 +4371,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag1err'
@@ -4089,6 +4381,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag3'
@@ -4099,6 +4392,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag3err'
@@ -4108,6 +4402,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag4'
@@ -4117,6 +4412,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.japermag4err'
@@ -4126,6 +4422,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jgausig'
@@ -4135,6 +4432,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jell'
@@ -4143,6 +4441,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jpa'
@@ -4152,6 +4451,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jclassstat'
@@ -4160,6 +4460,7 @@ tables:
     ivoa:ucd: stat.probability
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jxi'
@@ -4169,6 +4470,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.jeta'
@@ -4178,6 +4480,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hhallmag'
@@ -4187,6 +4490,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hhallmagerr'
@@ -4196,6 +4500,7 @@ tables:
     ivoa:ucd: stat.error
     name: hhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hpetromag'
@@ -4205,6 +4510,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hpetromagerr'
@@ -4214,6 +4520,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hpsfmag'
@@ -4223,6 +4530,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hpsfmagerr'
@@ -4232,6 +4540,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hsermag2d'
@@ -4241,6 +4550,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hsermag2derr'
@@ -4250,6 +4560,7 @@ tables:
     ivoa:ucd: stat.error
     name: hsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag1'
@@ -4260,6 +4571,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag1err'
@@ -4269,6 +4581,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag3'
@@ -4279,6 +4592,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag3err'
@@ -4288,6 +4602,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag4'
@@ -4297,6 +4612,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hapermag4err'
@@ -4306,6 +4622,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hgausig'
@@ -4315,6 +4632,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hell'
@@ -4323,6 +4641,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hpa'
@@ -4332,6 +4651,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hclassstat'
@@ -4340,6 +4660,7 @@ tables:
     ivoa:ucd: stat.probability
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.hxi'
@@ -4349,6 +4670,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.heta'
@@ -4358,6 +4680,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.khallmag'
@@ -4367,6 +4690,7 @@ tables:
     ivoa:ucd: phot.mag
     name: khallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.khallmagerr'
@@ -4376,6 +4700,7 @@ tables:
     ivoa:ucd: stat.error
     name: khallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kpetromag'
@@ -4385,6 +4710,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kpetromagerr'
@@ -4394,6 +4720,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kpsfmag'
@@ -4403,6 +4730,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kpsfmagerr'
@@ -4412,6 +4740,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.ksermag2d'
@@ -4421,6 +4750,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ksermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.ksermag2derr'
@@ -4430,6 +4760,7 @@ tables:
     ivoa:ucd: stat.error
     name: ksermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag1'
@@ -4440,6 +4771,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag1err'
@@ -4449,6 +4781,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag3'
@@ -4459,6 +4792,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag3err'
@@ -4468,6 +4802,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag4'
@@ -4477,6 +4812,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kapermag4err'
@@ -4486,6 +4822,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kgausig'
@@ -4495,6 +4832,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: kgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kell'
@@ -4503,6 +4841,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: kell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kpa'
@@ -4512,6 +4851,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: kpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kclassstat'
@@ -4520,6 +4860,7 @@ tables:
     ivoa:ucd: stat.probability
     name: kclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.kxi'
@@ -4529,6 +4870,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: kxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.keta'
@@ -4538,6 +4880,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: keta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1hallmag'
@@ -4547,6 +4890,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1hallmagerr'
@@ -4556,6 +4900,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1petromag'
@@ -4565,6 +4910,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1petromagerr'
@@ -4574,6 +4920,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1psfmag'
@@ -4583,6 +4930,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1psfmagerr'
@@ -4592,6 +4940,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1sermag2d'
@@ -4601,6 +4950,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1sermag2derr'
@@ -4610,6 +4960,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag1'
@@ -4620,6 +4971,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag1err'
@@ -4629,6 +4981,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag3'
@@ -4639,6 +4992,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag3err'
@@ -4648,6 +5002,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag4'
@@ -4657,6 +5012,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_1apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1apermag4err'
@@ -4666,6 +5022,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_1apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1gausig'
@@ -4675,6 +5032,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: k_1gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1ell'
@@ -4683,6 +5041,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: k_1ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1pa'
@@ -4692,6 +5051,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: k_1pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1classstat'
@@ -4700,6 +5060,7 @@ tables:
     ivoa:ucd: stat.probability
     name: k_1classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1xi'
@@ -4709,6 +5070,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: k_1xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_1eta'
@@ -4718,6 +5080,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: k_1eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2hallmag'
@@ -4727,6 +5090,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2hallmagerr'
@@ -4736,6 +5100,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2petromag'
@@ -4745,6 +5110,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2petromagerr'
@@ -4754,6 +5120,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2psfmag'
@@ -4763,6 +5130,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2psfmagerr'
@@ -4772,6 +5140,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2sermag2d'
@@ -4781,6 +5150,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2sermag2derr'
@@ -4790,6 +5160,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag1'
@@ -4800,6 +5171,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag1err'
@@ -4809,6 +5181,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag3'
@@ -4819,6 +5192,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag3err'
@@ -4828,6 +5202,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag4'
@@ -4837,6 +5212,7 @@ tables:
     ivoa:ucd: phot.mag
     name: k_2apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2apermag4err'
@@ -4846,6 +5222,7 @@ tables:
     ivoa:ucd: stat.error
     name: k_2apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2gausig'
@@ -4855,6 +5232,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: k_2gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2ell'
@@ -4863,6 +5241,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: k_2ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2pa'
@@ -4872,6 +5251,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: k_2pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2classstat'
@@ -4880,6 +5260,7 @@ tables:
     ivoa:ucd: stat.probability
     name: k_2classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2xi'
@@ -4889,6 +5270,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: k_2xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.k_2eta'
@@ -4898,6 +5280,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: k_2eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2hallmag'
@@ -4907,6 +5290,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2hallmagerr'
@@ -4916,6 +5300,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2petromag'
@@ -4925,6 +5310,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2petromagerr'
@@ -4934,6 +5320,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2psfmag'
@@ -4943,6 +5330,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2psfmagerr'
@@ -4952,6 +5340,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2sermag2d'
@@ -4961,6 +5350,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2sermag2derr'
@@ -4970,6 +5360,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag1'
@@ -4980,6 +5371,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2apermag1
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag1err'
@@ -4989,6 +5381,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2apermag1err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag3'
@@ -4999,6 +5392,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag3err'
@@ -5008,6 +5402,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag4'
@@ -5017,6 +5412,7 @@ tables:
     ivoa:ucd: phot.mag
     name: h2apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2apermag4err'
@@ -5026,6 +5422,7 @@ tables:
     ivoa:ucd: stat.error
     name: h2apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2gausig'
@@ -5035,6 +5432,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: h2gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2ell'
@@ -5043,6 +5441,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: h2ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2pa'
@@ -5052,6 +5451,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: h2pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2classstat'
@@ -5060,6 +5460,7 @@ tables:
     ivoa:ucd: stat.probability
     name: h2classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2xi'
@@ -5069,6 +5470,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: h2xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.h2eta'
@@ -5078,6 +5480,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: h2eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.random_id'
@@ -5085,6 +5488,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.gpssource.cueventid'
@@ -5822,6 +6226,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigra
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.sigdec'
@@ -5831,6 +6236,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigdec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.mura'
@@ -5840,6 +6246,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.ra
     name: mura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.mudec'
@@ -5849,6 +6256,7 @@ tables:
     ivoa:ucd: pos.pm;pos.eq.dec
     name: mudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.sigmura'
@@ -5858,6 +6266,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmura
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.sigmudec'
@@ -5867,6 +6276,7 @@ tables:
     ivoa:ucd: stat.error
     name: sigmudec
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.chi2'
@@ -5875,6 +6285,7 @@ tables:
     ivoa:ucd: stat.fit.chi2
     name: chi2
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymjpnt'
@@ -5884,6 +6295,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymjpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymjpnterr'
@@ -5893,6 +6305,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymjpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jmhpnt'
@@ -5902,6 +6315,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jmhpnterr'
@@ -5911,6 +6325,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hmkpnt'
@@ -5920,6 +6335,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hmkpnterr'
@@ -5929,6 +6345,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1mhpnt'
@@ -5938,6 +6355,7 @@ tables:
     ivoa:ucd: phot.color
     name: j_1mhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1mhpnterr'
@@ -5947,6 +6365,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1mhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2mhpnt'
@@ -5956,6 +6375,7 @@ tables:
     ivoa:ucd: phot.color
     name: j_2mhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2mhpnterr'
@@ -5965,6 +6385,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2mhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_1pnt'
@@ -5974,6 +6395,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymj_1pnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_1pnterr'
@@ -5983,6 +6405,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymj_1pnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_2pnt'
@@ -5992,6 +6415,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymj_2pnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_2pnterr'
@@ -6001,6 +6425,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymj_2pnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymjext'
@@ -6010,6 +6435,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymjext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymjexterr'
@@ -6019,6 +6445,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymjexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jmhext'
@@ -6028,6 +6455,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jmhexterr'
@@ -6037,6 +6465,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hmkext'
@@ -6046,6 +6475,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hmkexterr'
@@ -6055,6 +6485,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1mhext'
@@ -6064,6 +6495,7 @@ tables:
     ivoa:ucd: phot.color
     name: j_1mhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1mhexterr'
@@ -6073,6 +6505,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1mhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2mhext'
@@ -6082,6 +6515,7 @@ tables:
     ivoa:ucd: phot.color
     name: j_2mhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2mhexterr'
@@ -6091,6 +6525,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2mhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_1ext'
@@ -6100,6 +6535,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymj_1ext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_1exterr'
@@ -6109,6 +6545,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymj_1exterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_2ext'
@@ -6118,6 +6555,7 @@ tables:
     ivoa:ucd: phot.color
     name: ymj_2ext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ymj_2exterr'
@@ -6127,6 +6565,7 @@ tables:
     ivoa:ucd: stat.error
     name: ymj_2exterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.mergedclassstat'
@@ -6135,6 +6574,7 @@ tables:
     ivoa:ucd: stat.probability
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.pstar'
@@ -6143,6 +6583,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.pgalaxy'
@@ -6151,6 +6592,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.pnoise'
@@ -6159,6 +6601,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.psaturated'
@@ -6167,6 +6610,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ebv'
@@ -6177,6 +6621,7 @@ tables:
       (E(B-V)>0.1)
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ay'
@@ -6186,6 +6631,7 @@ tables:
     fits:tunit: mag
     name: ay
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.aj'
@@ -6195,6 +6641,7 @@ tables:
     fits:tunit: mag
     name: aj
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ah'
@@ -6204,6 +6651,7 @@ tables:
     fits:tunit: mag
     name: ah
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ak'
@@ -6213,6 +6661,7 @@ tables:
     fits:tunit: mag
     name: ak
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yhallmag'
@@ -6222,6 +6671,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yhallmagerr'
@@ -6231,6 +6681,7 @@ tables:
     ivoa:ucd: stat.error
     name: yhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ypetromag'
@@ -6240,6 +6691,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ypetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ypetromagerr'
@@ -6249,6 +6701,7 @@ tables:
     ivoa:ucd: stat.error
     name: ypetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ypsfmag'
@@ -6258,6 +6711,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ypsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ypsfmagerr'
@@ -6267,6 +6721,7 @@ tables:
     ivoa:ucd: stat.error
     name: ypsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ysermag2d'
@@ -6276,6 +6731,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ysermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ysermag2derr'
@@ -6285,6 +6741,7 @@ tables:
     ivoa:ucd: stat.error
     name: ysermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag3'
@@ -6295,6 +6752,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag3err'
@@ -6304,6 +6762,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag4'
@@ -6313,6 +6772,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag4err'
@@ -6322,6 +6782,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag6'
@@ -6331,6 +6792,7 @@ tables:
     ivoa:ucd: phot.mag
     name: yapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yapermag6err'
@@ -6340,6 +6802,7 @@ tables:
     ivoa:ucd: stat.error
     name: yapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ygausig'
@@ -6349,6 +6812,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: ygausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yell'
@@ -6357,6 +6821,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: yell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ypa'
@@ -6366,6 +6831,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: ypa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yclassstat'
@@ -6374,6 +6840,7 @@ tables:
     ivoa:ucd: stat.probability
     name: yclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yxi'
@@ -6383,6 +6850,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: yxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.yeta'
@@ -6392,6 +6860,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: yeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jhallmag'
@@ -6401,6 +6870,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jhallmagerr'
@@ -6410,6 +6880,7 @@ tables:
     ivoa:ucd: stat.error
     name: jhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jpetromag'
@@ -6419,6 +6890,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jpetromagerr'
@@ -6428,6 +6900,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jpsfmag'
@@ -6437,6 +6910,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jpsfmagerr'
@@ -6446,6 +6920,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jsermag2d'
@@ -6455,6 +6930,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jsermag2derr'
@@ -6464,6 +6940,7 @@ tables:
     ivoa:ucd: stat.error
     name: jsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag3'
@@ -6474,6 +6951,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag3err'
@@ -6483,6 +6961,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag4'
@@ -6492,6 +6971,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag4err'
@@ -6501,6 +6981,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag6'
@@ -6510,6 +6991,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.japermag6err'
@@ -6519,6 +7001,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jgausig'
@@ -6528,6 +7011,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jell'
@@ -6536,6 +7020,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jpa'
@@ -6545,6 +7030,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jclassstat'
@@ -6553,6 +7039,7 @@ tables:
     ivoa:ucd: stat.probability
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jxi'
@@ -6562,6 +7049,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.jeta'
@@ -6571,6 +7059,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1hallmag'
@@ -6580,6 +7069,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1hallmagerr'
@@ -6589,6 +7079,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1petromag'
@@ -6598,6 +7089,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1petromagerr'
@@ -6607,6 +7099,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1psfmag'
@@ -6616,6 +7109,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1psfmagerr'
@@ -6625,6 +7119,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1sermag2d'
@@ -6634,6 +7129,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1sermag2derr'
@@ -6643,6 +7139,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag3'
@@ -6653,6 +7150,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag3err'
@@ -6662,6 +7160,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag4'
@@ -6671,6 +7170,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag4err'
@@ -6680,6 +7180,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag6'
@@ -6689,6 +7190,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_1apermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1apermag6err'
@@ -6698,6 +7200,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_1apermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1gausig'
@@ -6707,6 +7210,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: j_1gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1ell'
@@ -6715,6 +7219,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: j_1ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1pa'
@@ -6724,6 +7229,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: j_1pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1classstat'
@@ -6732,6 +7238,7 @@ tables:
     ivoa:ucd: stat.probability
     name: j_1classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1xi'
@@ -6741,6 +7248,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: j_1xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_1eta'
@@ -6750,6 +7258,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: j_1eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2hallmag'
@@ -6759,6 +7268,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2hallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2hallmagerr'
@@ -6768,6 +7278,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2hallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2petromag'
@@ -6777,6 +7288,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2petromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2petromagerr'
@@ -6786,6 +7298,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2petromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2psfmag'
@@ -6795,6 +7308,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2psfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2psfmagerr'
@@ -6804,6 +7318,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2psfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2sermag2d'
@@ -6813,6 +7328,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2sermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2sermag2derr'
@@ -6822,6 +7338,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2sermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag3'
@@ -6832,6 +7349,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2apermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag3err'
@@ -6841,6 +7359,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2apermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag4'
@@ -6850,6 +7369,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2apermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag4err'
@@ -6859,6 +7379,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2apermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag6'
@@ -6868,6 +7389,7 @@ tables:
     ivoa:ucd: phot.mag
     name: j_2apermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2apermag6err'
@@ -6877,6 +7399,7 @@ tables:
     ivoa:ucd: stat.error
     name: j_2apermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2gausig'
@@ -6886,6 +7409,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: j_2gausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2ell'
@@ -6894,6 +7418,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: j_2ell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2pa'
@@ -6903,6 +7428,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: j_2pa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2classstat'
@@ -6911,6 +7437,7 @@ tables:
     ivoa:ucd: stat.probability
     name: j_2classstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2xi'
@@ -6920,6 +7447,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: j_2xi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.j_2eta'
@@ -6929,6 +7457,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: j_2eta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hhallmag'
@@ -6938,6 +7467,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hhallmagerr'
@@ -6947,6 +7477,7 @@ tables:
     ivoa:ucd: stat.error
     name: hhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hpetromag'
@@ -6956,6 +7487,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hpetromagerr'
@@ -6965,6 +7497,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hpsfmag'
@@ -6974,6 +7507,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hpsfmagerr'
@@ -6983,6 +7517,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hsermag2d'
@@ -6992,6 +7527,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hsermag2derr'
@@ -7001,6 +7537,7 @@ tables:
     ivoa:ucd: stat.error
     name: hsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag3'
@@ -7011,6 +7548,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag3err'
@@ -7020,6 +7558,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag4'
@@ -7029,6 +7568,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag4err'
@@ -7038,6 +7578,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag6'
@@ -7047,6 +7588,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hapermag6err'
@@ -7056,6 +7598,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hgausig'
@@ -7065,6 +7608,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hell'
@@ -7073,6 +7617,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hpa'
@@ -7082,6 +7627,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hclassstat'
@@ -7090,6 +7636,7 @@ tables:
     ivoa:ucd: stat.probability
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.hxi'
@@ -7099,6 +7646,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.heta'
@@ -7108,6 +7656,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.khallmag'
@@ -7117,6 +7666,7 @@ tables:
     ivoa:ucd: phot.mag
     name: khallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.khallmagerr'
@@ -7126,6 +7676,7 @@ tables:
     ivoa:ucd: stat.error
     name: khallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kpetromag'
@@ -7135,6 +7686,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kpetromagerr'
@@ -7144,6 +7696,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kpsfmag'
@@ -7153,6 +7706,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kpsfmagerr'
@@ -7162,6 +7716,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ksermag2d'
@@ -7171,6 +7726,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ksermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.ksermag2derr'
@@ -7180,6 +7736,7 @@ tables:
     ivoa:ucd: stat.error
     name: ksermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag3'
@@ -7190,6 +7747,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag3err'
@@ -7199,6 +7757,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag4'
@@ -7208,6 +7767,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag4err'
@@ -7217,6 +7777,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag6'
@@ -7226,6 +7787,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kapermag6err'
@@ -7235,6 +7797,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kgausig'
@@ -7244,6 +7807,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: kgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kell'
@@ -7252,6 +7816,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: kell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kpa'
@@ -7261,6 +7826,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: kpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kclassstat'
@@ -7269,6 +7835,7 @@ tables:
     ivoa:ucd: stat.probability
     name: kclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.kxi'
@@ -7278,6 +7845,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: kxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.keta'
@@ -7287,6 +7855,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: keta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.random_id'
@@ -7294,6 +7863,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.lassource.cueventid'
@@ -8089,6 +8659,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jmhpnterr'
@@ -8098,6 +8669,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hmkpnt'
@@ -8107,6 +8679,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkpnt
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hmkpnterr'
@@ -8116,6 +8689,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkpnterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jmhext'
@@ -8125,6 +8699,7 @@ tables:
     ivoa:ucd: phot.color
     name: jmhext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jmhexterr'
@@ -8134,6 +8709,7 @@ tables:
     ivoa:ucd: stat.error
     name: jmhexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hmkext'
@@ -8143,6 +8719,7 @@ tables:
     ivoa:ucd: phot.color
     name: hmkext
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hmkexterr'
@@ -8152,6 +8729,7 @@ tables:
     ivoa:ucd: stat.error
     name: hmkexterr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.mergedclassstat'
@@ -8160,6 +8738,7 @@ tables:
     ivoa:ucd: stat.probability
     name: mergedclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.pstar'
@@ -8168,6 +8747,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pstar
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.pgalaxy'
@@ -8176,6 +8756,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pgalaxy
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.pnoise'
@@ -8184,6 +8765,7 @@ tables:
     ivoa:ucd: stat.probability
     name: pnoise
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.psaturated'
@@ -8192,6 +8774,7 @@ tables:
     ivoa:ucd: stat.probability
     name: psaturated
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.ebv'
@@ -8202,6 +8785,7 @@ tables:
       (E(B-V)>0.1)
     name: ebv
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.aj'
@@ -8211,6 +8795,7 @@ tables:
     fits:tunit: mag
     name: aj
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.ah'
@@ -8220,6 +8805,7 @@ tables:
     fits:tunit: mag
     name: ah
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.ak'
@@ -8229,6 +8815,7 @@ tables:
     fits:tunit: mag
     name: ak
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jhallmag'
@@ -8238,6 +8825,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jhallmagerr'
@@ -8247,6 +8835,7 @@ tables:
     ivoa:ucd: stat.error
     name: jhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jpetromag'
@@ -8256,6 +8845,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jpetromagerr'
@@ -8265,6 +8855,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jpsfmag'
@@ -8274,6 +8865,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jpsfmagerr'
@@ -8283,6 +8875,7 @@ tables:
     ivoa:ucd: stat.error
     name: jpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jsermag2d'
@@ -8292,6 +8885,7 @@ tables:
     ivoa:ucd: phot.mag
     name: jsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jsermag2derr'
@@ -8301,6 +8895,7 @@ tables:
     ivoa:ucd: stat.error
     name: jsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag3'
@@ -8310,6 +8905,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag3err'
@@ -8320,6 +8916,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag4'
@@ -8329,6 +8926,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag4err'
@@ -8338,6 +8936,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag6'
@@ -8347,6 +8946,7 @@ tables:
     ivoa:ucd: phot.mag
     name: japermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.japermag6err'
@@ -8356,6 +8956,7 @@ tables:
     ivoa:ucd: stat.error
     name: japermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jgausig'
@@ -8365,6 +8966,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: jgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jell'
@@ -8373,6 +8975,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: jell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jpa'
@@ -8382,6 +8985,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: jpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jclassstat'
@@ -8390,6 +8994,7 @@ tables:
     ivoa:ucd: stat.probability
     name: jclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jxi'
@@ -8399,6 +9004,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: jxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.jeta'
@@ -8408,6 +9014,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: jeta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hhallmag'
@@ -8417,6 +9024,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hhallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hhallmagerr'
@@ -8426,6 +9034,7 @@ tables:
     ivoa:ucd: stat.error
     name: hhallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hpetromag'
@@ -8435,6 +9044,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hpetromagerr'
@@ -8444,6 +9054,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hpsfmag'
@@ -8453,6 +9064,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hpsfmagerr'
@@ -8462,6 +9074,7 @@ tables:
     ivoa:ucd: stat.error
     name: hpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hsermag2d'
@@ -8471,6 +9084,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hsermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hsermag2derr'
@@ -8480,6 +9094,7 @@ tables:
     ivoa:ucd: stat.error
     name: hsermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag3'
@@ -8489,6 +9104,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag3err'
@@ -8499,6 +9115,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag4'
@@ -8508,6 +9125,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag4err'
@@ -8517,6 +9135,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag6'
@@ -8526,6 +9145,7 @@ tables:
     ivoa:ucd: phot.mag
     name: hapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hapermag6err'
@@ -8535,6 +9155,7 @@ tables:
     ivoa:ucd: stat.error
     name: hapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hgausig'
@@ -8544,6 +9165,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: hgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hell'
@@ -8552,6 +9174,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: hell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hpa'
@@ -8561,6 +9184,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: hpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hclassstat'
@@ -8569,6 +9193,7 @@ tables:
     ivoa:ucd: stat.probability
     name: hclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.hxi'
@@ -8578,6 +9203,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: hxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.heta'
@@ -8587,6 +9213,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: heta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.khallmag'
@@ -8596,6 +9223,7 @@ tables:
     ivoa:ucd: phot.mag
     name: khallmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.khallmagerr'
@@ -8605,6 +9233,7 @@ tables:
     ivoa:ucd: stat.error
     name: khallmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kpetromag'
@@ -8614,6 +9243,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpetromag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kpetromagerr'
@@ -8623,6 +9253,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpetromagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kpsfmag'
@@ -8632,6 +9263,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kpsfmag
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kpsfmagerr'
@@ -8641,6 +9273,7 @@ tables:
     ivoa:ucd: stat.error
     name: kpsfmagerr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.ksermag2d'
@@ -8650,6 +9283,7 @@ tables:
     ivoa:ucd: phot.mag
     name: ksermag2d
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.ksermag2derr'
@@ -8659,6 +9293,7 @@ tables:
     ivoa:ucd: stat.error
     name: ksermag2derr
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag3'
@@ -8668,6 +9303,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag3
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag3err'
@@ -8678,6 +9314,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag3err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag4'
@@ -8687,6 +9324,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag4
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag4err'
@@ -8696,6 +9334,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag4err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag6'
@@ -8705,6 +9344,7 @@ tables:
     ivoa:ucd: phot.mag
     name: kapermag6
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kapermag6err'
@@ -8714,6 +9354,7 @@ tables:
     ivoa:ucd: stat.error
     name: kapermag6err
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kgausig'
@@ -8723,6 +9364,7 @@ tables:
     ivoa:ucd: src.morph.param
     name: kgausig
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kell'
@@ -8731,6 +9373,7 @@ tables:
     ivoa:ucd: src.ellipticity
     name: kell
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kpa'
@@ -8740,6 +9383,7 @@ tables:
     ivoa:ucd: pos.posAng
     name: kpa
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kclassstat'
@@ -8748,6 +9392,7 @@ tables:
     ivoa:ucd: stat.probability
     name: kclassstat
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.kxi'
@@ -8757,6 +9402,7 @@ tables:
     ivoa:ucd: pos.eq.ra;instr.offset
     name: kxi
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.keta'
@@ -8766,6 +9412,7 @@ tables:
     ivoa:ucd: pos.eq.dec;instr.offset
     name: keta
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.random_id'
@@ -8773,6 +9420,7 @@ tables:
     description: Random ID in the range 0.0 => 100.0
     name: random_id
     nullable: true
+    postgresql:datatype: REAL
     tap:principal: 0
     tap:std: 0
   - '@id': '#ukidss_dr11plus.udssource.cueventid'
