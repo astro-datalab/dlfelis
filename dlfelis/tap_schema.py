@@ -249,13 +249,13 @@ def main():
     log = logging.getLogger('dlfelis.tap_schema.main')
     if options.debug:
         log.setLevel(logging.DEBUG)
-    schema_name = os.path.splitext(options.json)
-    schema_basename = os.path.basename(schema_name[0])
-    assert schema_name[1] == '.json'
+    file_name = os.path.splitext(options.json)
+    #schema_basename = os.path.basename(schema_name[0])
+    assert file_name[1] == '.json'
     with open(options.json) as j:
         json_schema = json.load(j)
     assert len(json_schema['schemas']) == 1
-    assert json_schema['schemas'][0]['schema_name'] == schema_basename
+    #assert json_schema['schemas'][0]['schema_name'] == schema_basename
 
     felis_schema = {'name': json_schema['schemas'][0]['schema_name'],
                     '@id': '#' + json_schema['schemas'][0]['schema_name'],
@@ -266,17 +266,27 @@ def main():
                     'tables': list()}
 
     for tap_index, json_table in enumerate(json_schema['tables']):
-        assert json_table['schema_name'] == schema_basename
+        #assert json_table['schema_name'] == schema_basename
         felis_table = {'name': json_table['table_name'],
-                       '@id': f"#{schema_basename}.{json_table['table_name']}",
+                       '@id': f"#{json_table['schema_name']}.{json_table['table_name']}",
                        'description': json_table['description'],
                        'tap:table_index': tap_index + 1,
-                       'primaryKey': '',
+                       #'primaryKey': json_table['primary_key'],
                        'indexes': list(),
                        'columns': list()}
         json_columns = [c for c in json_schema['columns']
                         if (c['table_name'] == json_table['table_name'])
                         or (c['table_name'] == f"{schema_basename}.{json_table['table_name']}")]
+
+#        if json_table['primary_key']:
+#            felis_pmk = {'@id': f"#{json_table['schema_name']}.{json_table['table_name']}.{json_table['primary_key']}"}
+#            felis_table['primaryKey'].append(felis_pmk)
+#        if 'primary_key' in json_table.keys():
+#            pmk = list()
+#            pmk.append(f"#{json_table['schema_name']}.{json_table['table_name']}.{json_table['primary_key']}")
+#        else:
+#            felis_pmk = ''
+#            felis_table['primaryKey'].append(felis_pmk)
 
         for column_index, json_column in enumerate(json_columns):
             #
@@ -287,7 +297,7 @@ def main():
             except KeyError:
                 felis_datatype = json_column['datatype']
             felis_column = {'name': json_column['column_name'],
-                            '@id': (f"#{schema_basename}." +
+                            '@id': (f"#{json_table['schema_name']}." +
                                     f"{json_table['table_name']}." +
                                     f"{json_column['column_name']}"),
                             'description': json_column['description'],
@@ -324,7 +334,7 @@ def main():
         felis_schema['tables'].append(felis_table)
 
     if options.output is None:
-        felis_yaml = schema_name[0] + '.yaml'
+        felis_yaml = file_name[0] + '.yaml'
     else:
         felis_yaml = options.output
 
