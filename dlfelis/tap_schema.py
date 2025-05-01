@@ -267,8 +267,8 @@ def main():
 
     for tap_index, json_table in enumerate(json_schema['tables']):
         #assert json_table['schema_name'] == schema_basename
-        if 'primary_key' in json_table.keys():
-            pmk = json_table['primary_key']
+        if 'primaryKey' in json_table.keys():
+            pmk = json_table['primaryKey']
         else:
             pmk = ''
         felis_table = {'name': json_table['table_name'],
@@ -276,6 +276,7 @@ def main():
                        'description': json_table['description'],
                        'tap:table_index': tap_index + 1,
                        'primaryKey': pmk,
+                       'constraints': list(),
                        'indexes': list(),
                        'columns': list()}
         json_columns = [c for c in json_schema['columns']
@@ -325,6 +326,14 @@ def main():
                 else:
                     felis_column['ivoa:ucd'] = json_column['ucd']
             felis_table['columns'].append(felis_column)
+
+        if 'constraints' in json_schema.keys():
+            for constraint_index, json_constraint in enumerate(json_schema['constraints']):
+                felis_constraint = {'name': json_constraint['constraint_name'],
+                                    '@id': f"#{json_table['schema_name']}.{json_table['table_name']}_unique_idx",
+                                    '@type': json_constraint['type'],
+                                    'columns': json_constraint['columns']}
+                felis_table['constraints'].append(felis_constraint)
 
         felis_schema['tables'].append(felis_table)
 
