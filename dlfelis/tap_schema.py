@@ -267,26 +267,20 @@ def main():
 
     for tap_index, json_table in enumerate(json_schema['tables']):
         #assert json_table['schema_name'] == schema_basename
+        if 'primary_key' in json_table.keys():
+            pmk = json_table['primary_key']
+        else:
+            pmk = ''
         felis_table = {'name': json_table['table_name'],
                        '@id': f"#{json_table['schema_name']}.{json_table['table_name']}",
                        'description': json_table['description'],
                        'tap:table_index': tap_index + 1,
-                       #'primaryKey': json_table['primary_key'],
+                       'primaryKey': pmk,
                        'indexes': list(),
                        'columns': list()}
         json_columns = [c for c in json_schema['columns']
                         if (c['table_name'] == json_table['table_name'])
                         or (c['table_name'] == f"{schema_basename}.{json_table['table_name']}")]
-
-#        if json_table['primary_key']:
-#            felis_pmk = {'@id': f"#{json_table['schema_name']}.{json_table['table_name']}.{json_table['primary_key']}"}
-#            felis_table['primaryKey'].append(felis_pmk)
-#        if 'primary_key' in json_table.keys():
-#            pmk = list()
-#            pmk.append(f"#{json_table['schema_name']}.{json_table['table_name']}.{json_table['primary_key']}")
-#        else:
-#            felis_pmk = ''
-#            felis_table['primaryKey'].append(felis_pmk)
 
         for column_index, json_column in enumerate(json_columns):
             #
@@ -303,6 +297,7 @@ def main():
                             'description': json_column['description'],
                             'datatype': felis_datatype,
                             'nullable': True,
+                            'autoincrement': False,
                             # 'fits:tunit': json_column['unit'],
                             # 'ivoa:ucd': json_column['ucd'],
                             # 'votable:utype': json_column['utype'],
