@@ -1,0 +1,532 @@
+---
+'@id': '#decaps_dr2'
+description: DECaPS Survey Data Release 2
+name: decaps_dr2
+tables:
+- '@id': '#decaps_dr2.meas'
+  columns:
+  - '@id': '#decaps_dr2.meas.x'
+    datatype: double
+    description: Pixels x coordinate
+    name: x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.y'
+    datatype: double
+    description: Pixels y coordinate
+    name: y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.flux'
+    datatype: float
+    description: ADU raw flux
+    name: flux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.passno'
+    datatype: double
+    description: Iteration at which source was found
+    name: passno
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dx'
+    datatype: float
+    description: Pixels x uncertainty
+    name: dx
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dy'
+    datatype: float
+    description: Pixels y uncertainty
+    name: dy
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dflux'
+    datatype: float
+    description: ADU flux uncertainty (statistical only)
+    name: dflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.qf'
+    datatype: float
+    description: '''quality factor'' based on PSF-weighted fraction of pixels contributing
+      to the detection. 0 < qf <1 ranges bad < qf < good'
+    name: qf
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.rchi2'
+    datatype: float
+    description: Average chir^2 per pixel, weighted by PSF
+    name: rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fracflux'
+    datatype: float
+    description: Fraction of flux in this object's PSF that comes from this object
+    name: fracflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fluxlbs'
+    datatype: float
+    description: '[DEFUNCT] flux with attempt at local background subtraction (Backwards
+      compatability only)'
+    name: fluxlbs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dfluxlbs'
+    datatype: float
+    description: '[DEFUNCT] fluxlbs uncertainty (Backwards compatability only)'
+    name: dfluxlbs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fwhm'
+    datatype: float
+    description: Pixels full-width at half-maximum of PSF
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.spread_model'
+    datatype: float
+    description: Sextractor-like spread_model; positive means the source is broader
+      than a PSF
+    name: spread_model
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dspread_model'
+    datatype: float
+    description: Uncertainty in sextractor spread_model
+    name: dspread_model
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fluxiso'
+    datatype: float
+    description: ADU flux derived from linear least squares fit to neighbor-subtracted
+      image; significant difference from ordinary flux indicates a convergence issue
+    name: fluxiso
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.xiso'
+    datatype: double
+    description: Pixels x coordinate derived from linear least squares fit to neighbor-subtracted
+      image; significant difference from ordinary x indicates a convergence issue
+    name: xiso
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.yiso'
+    datatype: double
+    description: Pixels y coordinate derived from linear least squares fit to neighbor-subtracted
+      image; significant difference from ordinary y indicates a convergence issue
+    name: yiso
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.flags'
+    datatype: int
+    description: DECam Community Pipeline flags at central pixel from upstream image
+      processing
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.sky'
+    datatype: float
+    description: ADU sky level at central pixel
+    fits:tunit: adu
+    name: sky
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.ra'
+    datatype: double
+    description: Degree right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dec'
+    datatype: double
+    description: Degree declination
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.decapsid'
+    datatype: long
+    description: Unique object id (internal to each data release)
+    ivoa:ucd: meta.id;meta.main
+    name: decapsid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.gain'
+    datatype: float
+    description: E-/ADU emperical gain (counts times inverse variance)
+    name: gain
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.prn'
+    datatype: float
+    description: Probability central pixel in 'nebulosity' class
+    name: prn
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.prl'
+    datatype: float
+    description: Probability central pixel in 'light nebulosity' class
+    name: prl
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.prr'
+    datatype: float
+    description: Probability central pixel in 'regular' class
+    name: prr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.pre'
+    datatype: float
+    description: Probability central pixel in 'error' class
+    name: pre
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dcflux'
+    datatype: float
+    description: ADU [CloudCovErr] flux uncertainty (using full background covariance)
+    name: dcflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dcflux_diag'
+    datatype: float
+    description: ADU [CloudCovErr] flux uncertainty (using diagonal covariance)
+    name: dcflux_diag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.cflux'
+    datatype: float
+    description: ADU [CloudCovErr] background-corrected flux
+    name: cflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fdb_res'
+    datatype: float
+    description: ADU [CloudCovErr] bias offset from residuals
+    name: fdb_res
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.fdb_pred'
+    datatype: float
+    description: ADU [CloudCovErr] bias offset from predicted background
+    name: fdb_pred
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.cchi2'
+    datatype: float
+    description: '[CloudCovErr] chi^2 of predicted background evaluated for ''good''
+      pixels'
+    name: cchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.kcond0'
+    datatype: float
+    description: '[CloudCovErr] initial number of ''good'' pixels (representative
+      of true background)'
+    name: kcond0
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.kcond'
+    datatype: float
+    description: '[CloudCovErr] final number of ''good'' pixels (representative of
+      true background)'
+    name: kcond
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.kpred'
+    datatype: float
+    description: '[CloudCovErr] number of ''hidden'' pixels (background interpolation
+      region)'
+    name: kpred
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.dnt'
+    datatype: float
+    description: '[CloudCovErr] bitmask on corrected flux solution'
+    name: dnt
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.det_id'
+    datatype: long
+    description: Detection ID
+    name: det_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.mjd_obs'
+    datatype: double
+    description: Modified Julian Date of observation
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.exptime'
+    datatype: float
+    description: Exposure time (sec)
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.filterid'
+    datatype: string
+    description: Filter (one of g,r,i,z,Y)
+    length: 1
+    name: filterid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.airmass'
+    datatype: double
+    description: Airmass extinction
+    name: airmass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.chip_id'
+    datatype: int
+    description: CCD number (one of 1,2,3,4)
+    name: chip_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.zp'
+    datatype: float
+    description: Zero point (mag)
+    fits:tunit: mag
+    name: zp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.obj_id'
+    datatype: long
+    description: Unique object identifier
+    name: obj_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.elat'
+    datatype: double
+    description: Ecliptic latitude (deg)
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.elon'
+    datatype: double
+    description: Ecliptic longitude (deg)
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.glat'
+    datatype: double
+    description: Galactic latitude (deg)
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.glon'
+    datatype: double
+    description: Galactic longitude (deg)
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.mag'
+    datatype: float
+    description: Magnitude
+    fits:tunit: mag
+    name: mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.mag_err'
+    datatype: float
+    description: Magnitude uncertainty
+    fits:tunit: mag
+    name: mag_err
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.snr'
+    datatype: float
+    description: Signal-to-noise ratio
+    name: snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#decaps_dr2.meas.random_id'
+    datatype: double
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Measurement table
+  indexes:
+  - '@id': '#meas_flux_idx'
+    columns:
+    - '#decaps_dr2.meas.flux'
+    name: meas_flux_idx
+  - '@id': '#meas_ra_idx'
+    columns:
+    - '#decaps_dr2.meas.ra'
+    name: meas_ra_idx
+  - '@id': '#meas_dec_idx'
+    columns:
+    - '#decaps_dr2.meas.dec'
+    name: meas_dec_idx
+  - '@id': '#meas_decapsid_idx'
+    columns:
+    - '#decaps_dr2.meas.decapsid'
+    name: meas_decapsid_idx
+  - '@id': '#meas_det_id_idx'
+    columns:
+    - '#decaps_dr2.meas.det_id'
+    name: meas_det_id_idx
+  - '@id': '#meas_mjd_obs_idx'
+    columns:
+    - '#decaps_dr2.meas.mjd_obs'
+    name: meas_mjd_obs_idx
+  - '@id': '#meas_chip_id_idx'
+    columns:
+    - '#decaps_dr2.meas.chip_id'
+    name: meas_chip_id_idx
+  - '@id': '#meas_mag_idx'
+    columns:
+    - '#decaps_dr2.meas.mag'
+    name: meas_mag_idx
+  - '@id': '#meas_mag_err_idx'
+    columns:
+    - '#decaps_dr2.meas.mag_err'
+    name: meas_mag_err_idx
+  - '@id': '#meas_snr_idx'
+    columns:
+    - '#decaps_dr2.meas.snr'
+    name: meas_snr_idx
+  - '@id': '#meas_htm9_idx'
+    columns:
+    - '#decaps_dr2.meas.htm9'
+    name: meas_htm9_idx
+  - '@id': '#meas_ring256_idx'
+    columns:
+    - '#decaps_dr2.meas.ring256'
+    name: meas_ring256_idx
+  - '@id': '#meas_nest4096_idx'
+    columns:
+    - '#decaps_dr2.meas.nest4096'
+    name: meas_nest4096_idx
+  - '@id': '#meas_random_id_idx'
+    columns:
+    - '#decaps_dr2.meas.random_id'
+    name: meas_random_id_idx
+  name: meas
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1
