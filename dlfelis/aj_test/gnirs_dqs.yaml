@@ -1,0 +1,1659 @@
+---
+'@id': '#gnirs_dqs'
+description: Gemini North Near-Infrared Distant Quasar Survey
+name: gnirs_dqs
+tables:
+- '@id': '#gnirs_dqs.gaussian_fit_parameters'
+  columns:
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_mg2'
+    datatype: short
+    description: Wavelength of the narrow Mg II Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_mg2'
+    datatype: short
+    description: Width of the narrow Mg II Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_mg2'
+    datatype: short
+    description: Normalization of the narrow Mg II Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_mg2'
+    datatype: short
+    description: Wavelength of the broad Mg II Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_mg2'
+    datatype: short
+    description: Width of the broad Mg II Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_mg2'
+    datatype: short
+    description: Normalization of the broad Mg II Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_o2'
+    datatype: short
+    description: Wavelength of the narrow O II Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_o2'
+    datatype: short
+    description: Width of the narrow O II Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_o2'
+    datatype: short
+    description: Normalization of the narrow O II Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_o2'
+    datatype: short
+    description: Wavelength of the broad O II Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_o2'
+    datatype: short
+    description: Width of the broad O II Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_o2'
+    datatype: short
+    description: Normalization of the broad O II Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_ne3'
+    datatype: short
+    description: Wavelength of the narrow Ne III Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_ne3'
+    datatype: short
+    description: Width of the narrow Ne III Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_ne3'
+    datatype: short
+    description: Normalization of the narrow Ne III Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_ne3'
+    datatype: short
+    description: Wavelength of the broad Ne III Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_ne3'
+    datatype: short
+    description: Width of the broad Ne III Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_ne3'
+    datatype: short
+    description: Normalization of the broad Ne III Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_hd'
+    datatype: short
+    description: Wavelength of the narrow Hdelta Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_hd'
+    datatype: short
+    description: Width of the narrow Hdelta Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_hd'
+    datatype: short
+    description: Normalization of the narrow Hdelta Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_hd'
+    datatype: short
+    description: Wavelength of the broad Hdelta Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_hd'
+    datatype: short
+    description: Width of the broad Hdelta Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_hd'
+    datatype: short
+    description: Normalization of the broad Hdelta Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_hg'
+    datatype: short
+    description: Wavelength of the narrow Hgamma Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_hg'
+    datatype: short
+    description: Width of the narrow Hgamma Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_hg'
+    datatype: short
+    description: Normalization of the narrow Hgamma Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_hg'
+    datatype: short
+    description: Wavelength of the broad Hgamma Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_hg'
+    datatype: short
+    description: Width of the broad Hgamma Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_hg'
+    datatype: short
+    description: Normalization of the broad Hgamma Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_hb'
+    datatype: short
+    description: Wavelength of the narrow Hbeta Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_hb'
+    datatype: short
+    description: Width of the narrow Hbeta Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_hb'
+    datatype: short
+    description: Normalization of the narrow Hbeta Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_hb'
+    datatype: short
+    description: Wavelength of the broad Hbeta Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_hb'
+    datatype: short
+    description: Width of the broad Hbeta Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_hb'
+    datatype: short
+    description: Normalization of the broad Hbeta Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_o31'
+    datatype: short
+    description: Wavelength of the narrow [O III] 4959A Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_o31'
+    datatype: short
+    description: Width of the narrow [O III] 4959A Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_o31'
+    datatype: short
+    description: Normalization of the narrow [O III] 4959A Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_o31'
+    datatype: short
+    description: Wavelength of the broad [O III] 4959A Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_o31'
+    datatype: short
+    description: Width of the broad [O III] 4959A Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_o31'
+    datatype: short
+    description: Normalization of the broad [O III] 4959A Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_o31
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_o32'
+    datatype: short
+    description: Wavelength of the narrow [O III] 5007A Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_o32'
+    datatype: short
+    description: Width of the narrow [O III] 5007A Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_o32'
+    datatype: short
+    description: Normalization of the narrow [O III] 5007A Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_o32'
+    datatype: short
+    description: Wavelength of the broad [O III] 5007A Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_o32'
+    datatype: short
+    description: Width of the broad [O III] 5007A Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_o32'
+    datatype: short
+    description: Normalization of the broad [O III] 5007A Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_o32
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_lp_ha'
+    datatype: short
+    description: Wavelength of the narrow Halpha Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_lp_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_std_ha'
+    datatype: short
+    description: Width of the narrow Halpha Gaussian profile
+    fits:tunit: 0.1nm
+    name: n_std_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.n_fl_ha'
+    datatype: short
+    description: Normalization of the narrow Halpha Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: n_fl_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_lp_ha'
+    datatype: short
+    description: Wavelength of the broad Halpha Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_lp_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_std_ha'
+    datatype: short
+    description: Width of the broad Halpha Gaussian profile
+    fits:tunit: 0.1nm
+    name: b_std_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.b_fl_ha'
+    datatype: short
+    description: Normalization of the broad Halpha Gaussian profile
+    fits:tunit: cW m-2 nm-1
+    name: b_fl_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.obj'
+    datatype: text
+    description: SDSS object designation
+    ivoa:ucd: meta.id;meta.main
+    name: obj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.random_id'
+    datatype: float
+    description: Random ID in the range 0 to 100 (decimal)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.ra'
+    datatype: double
+    description: Right ascension in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.dec'
+    datatype: double
+    description: Declination in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.ring256'
+    datatype: int
+    description: Healpix ID with nside 256, ring schema
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.nest4096'
+    datatype: int
+    description: Healpix ID with nside 4096, nested schema
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.htm9'
+    datatype: int
+    description: HTM Level-9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.gaussian_fit_parameters.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Gaussian parameters of emission-line profiles
+  indexes: []
+  name: gaussian_fit_parameters
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#gnirs_dqs.obs_log'
+  columns:
+  - '@id': '#gnirs_dqs.obs_log.zsdss'
+    datatype: float
+    description: SDSS spectroscopic redshift
+    name: zsdss
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.jmag'
+    datatype: float
+    description: SDSS J band magnitude
+    fits:tunit: mag
+    name: jmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.hmag'
+    datatype: float
+    description: SDSS H band magnitude
+    fits:tunit: mag
+    name: hmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.kmag'
+    datatype: float
+    description: SDSS Ks band magnitude
+    fits:tunit: mag
+    name: kmag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.netexp'
+    datatype: short
+    description: Net exposure time
+    fits:tunit: s
+    name: netexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.com'
+    datatype: short
+    description: Additional comment code. 1 = At least one exposure did not meet our
+      observation condition requirements. 2 = Observation failed to provide spectrum
+      of the source due to bad weather, instrument artifacts, or other technical difficulties
+      during the observation.
+    name: com
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.bal'
+    datatype: short
+    description: Broad Absorption Line quasar. 0=False. 1=True.
+    name: bal
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.rl'
+    datatype: short
+    description: Radio-Loud quasar. 0=False. 1=True.
+    name: rl
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.obj'
+    datatype: text
+    description: SDSS object designation
+    ivoa:ucd: meta.id;meta.main
+    name: obj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.obsdate'
+    datatype: text
+    description: Observation date; YYYY MMM DD
+    name: obsdate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.semester'
+    datatype: text
+    description: Semester of observation
+    name: semester
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.random_id'
+    datatype: float
+    description: Random ID in the range 0 to 100 (decimal)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.ra'
+    datatype: double
+    description: Right ascension in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.dec'
+    datatype: double
+    description: Declination in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.ring256'
+    datatype: int
+    description: Healpix ID with nside 256, ring schema
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.nest4096'
+    datatype: int
+    description: Healpix ID with nside 4096, nested schema
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.htm9'
+    datatype: int
+    description: HTM Level-9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.obs_log.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Observation log
+  indexes: []
+  name: obs_log
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#gnirs_dqs.spec_measurements'
+  columns:
+  - '@id': '#gnirs_dqs.spec_measurements.as_mg2'
+    datatype: double
+    description: Asymmetry of Mg II double Gaussian fit profile
+    name: as_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.as_hb'
+    datatype: double
+    description: Asymmetry of Hbeta double Gaussian fit profile
+    name: as_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.as_o3'
+    datatype: double
+    description: Asymmetry of O III 5007A double Gaussian fit profile
+    name: as_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.as_ha'
+    datatype: double
+    description: Asymmetry of Halpha double Gaussian fit profile
+    name: as_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.zsys'
+    datatype: float
+    description: Systemic redshift
+    name: zsys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.kurt_mg2'
+    datatype: float
+    description: Kurtosis of Mg II double Gaussian fit profile
+    name: kurt_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.kurt_hb'
+    datatype: float
+    description: Kurtosis of Hbeta double Gaussian fit profile
+    name: kurt_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ew_o3'
+    datatype: float
+    description: Rest-frame O III 5007A emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_ew_o3'
+    datatype: float
+    description: Upper uncertainty in EW_O3
+    fits:tunit: 0.1nm
+    name: upp_ew_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_ew_o3'
+    datatype: float
+    description: Lower uncertainty in EW_O3
+    fits:tunit: 0.1nm
+    name: low_ew_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.kurt_o3'
+    datatype: float
+    description: ' Kurtosis of O III 5007A double Gaussian fit profile'
+    name: kurt_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.kurt_ha'
+    datatype: float
+    description: Kurtosis of Halpha double Gaussian fit profile
+    name: kurt_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ew_fe2'
+    datatype: float
+    description: Rest-frame Fe II emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_fe2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_ew_fe2'
+    datatype: float
+    description: Upper uncertainty of EW of Fe II
+    fits:tunit: 0.1nm
+    name: upp_ew_fe2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_ew_fe2'
+    datatype: float
+    description: Lower uncertainty of EW of Fe II
+    fits:tunit: 0.1nm
+    name: low_ew_fe2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.logf5100'
+    datatype: float
+    description: log flux density at rest-frame 5100A
+    fits:tunit: cW m-2 nm-1
+    name: logf5100
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.logl5100'
+    datatype: float
+    description: log monochromatic luminosity at rest-frame 5100A
+    fits:tunit: 10-7W
+    name: logl5100
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.lc_mg2'
+    datatype: int
+    description: Mg II observed-frame wavelength (The emission link peak based on
+      the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.lc_hb'
+    datatype: int
+    description: Hbeta observed-frame wavelength (The emission link peak based on
+      the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.fwhm_hb'
+    datatype: int
+    description: Hbeta emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_fwhm_hb'
+    datatype: int
+    description: Upper uncertainty in FWHM_Hb
+    fits:tunit: km/s
+    name: upp_fwhm_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.lc_o3'
+    datatype: int
+    description: O III 5007A observed-frame wavelength (The emission link peak based
+      on the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.lc_ha'
+    datatype: int
+    description: Halpha observed-frame wavelength (The emission link peak based on
+      the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.fwhm_fe2'
+    datatype: int
+    description: FWHM of the kernel Gaussian used to broaden the Fe II template
+    fits:tunit: km/s
+    name: fwhm_fe2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_lc_mg2'
+    datatype: short
+    description: Upper uncertainty in LC_Mg2
+    fits:tunit: 0.1nm
+    name: upp_lc_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_lc_mg2'
+    datatype: short
+    description: Lower uncertainty in LC_Mg2
+    fits:tunit: 0.1nm
+    name: low_lc_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.fwhm_mg2'
+    datatype: short
+    description: Mg II emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_fwhm_mg2'
+    datatype: short
+    description: Upper uncertainty in FWHM_Mg2
+    fits:tunit: km/s
+    name: upp_fwhm_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_fwhm_mg2'
+    datatype: short
+    description: Lower uncertainty in FWHM_Mg2
+    fits:tunit: km/s
+    name: low_fwhm_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ew_mg2'
+    datatype: short
+    description: Rest-frame Mg II emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_ew_mg2'
+    datatype: short
+    description: Upper uncertainty in EW_Mg2
+    fits:tunit: 0.1nm
+    name: upp_ew_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_ew_mg2'
+    datatype: short
+    description: Lower uncertainty in EW_Mg2
+    fits:tunit: 0.1nm
+    name: low_ew_mg2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_lc_hb'
+    datatype: short
+    description: Upper uncertainty in LC_Hb
+    fits:tunit: 0.1nm
+    name: upp_lc_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_lc_hb'
+    datatype: short
+    description: Lower uncertainty in LC_Hb
+    fits:tunit: 0.1nm
+    name: low_lc_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_fwhm_hb'
+    datatype: short
+    description: Lower uncertainty in FWHM_Hb
+    fits:tunit: km/s
+    name: low_fwhm_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ew_hb'
+    datatype: short
+    description: Rest-frame Hbeta emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_ew_hb'
+    datatype: short
+    description: Upper uncertainty in EW_Hb
+    fits:tunit: 0.1nm
+    name: upp_ew_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_ew_hb'
+    datatype: short
+    description: Lower uncertainty in EW_Hb
+    fits:tunit: 0.1nm
+    name: low_ew_hb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_lc_o3'
+    datatype: short
+    description: Upper uncertainty in LC_O3
+    fits:tunit: 0.1nm
+    name: upp_lc_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_lc_o3'
+    datatype: short
+    description: Lower uncertainty in LC_O3
+    fits:tunit: 0.1nm
+    name: low_lc_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.fwhm_o3'
+    datatype: short
+    description: O III 5007A emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_fwhm_o3'
+    datatype: short
+    description: Upper uncertainty in FWHM_O3
+    fits:tunit: km/s
+    name: upp_fwhm_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_fwhm_o3'
+    datatype: short
+    description: Lower uncertainty in FWHM_O3
+    fits:tunit: km/s
+    name: low_fwhm_o3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_lc_ha'
+    datatype: short
+    description: Upper uncertainty in LC_Ha
+    fits:tunit: 0.1nm
+    name: upp_lc_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_lc_ha'
+    datatype: short
+    description: Lower uncertainty in LC_Ha
+    fits:tunit: 0.1nm
+    name: low_lc_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.fwhm_ha'
+    datatype: short
+    description: Halpha emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_fwhm_ha'
+    datatype: short
+    description: Upper uncertainty in FWHM_Ha
+    fits:tunit: km/s
+    name: upp_fwhm_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_fwhm_ha'
+    datatype: short
+    description: Lower uncertainty in FWHM_Ha
+    fits:tunit: km/s
+    name: low_fwhm_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ew_ha'
+    datatype: short
+    description: Rest-frame Halpha emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.upp_ew_ha'
+    datatype: short
+    description: Upper uncertainty in EW_Ha
+    fits:tunit: 0.1nm
+    name: upp_ew_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.low_ew_ha'
+    datatype: short
+    description: Lower uncertainty in EW_Ha
+    fits:tunit: 0.1nm
+    name: low_ew_ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.obj'
+    datatype: text
+    description: SDSS object designation
+    ivoa:ucd: meta.id;meta.main
+    name: obj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.random_id'
+    datatype: float
+    description: Random ID in the range 0 to 100 (decimal)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ra'
+    datatype: double
+    description: Right ascension in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.dec'
+    datatype: double
+    description: Declination in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.ring256'
+    datatype: int
+    description: Healpix ID with nside 256, ring schema
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.nest4096'
+    datatype: int
+    description: Healpix ID with nside 4096, nested schema
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.htm9'
+    datatype: int
+    description: HTM Level-9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Spectral measurements
+  indexes: []
+  name: spec_measurements
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#gnirs_dqs.spec_measurements_supp'
+  columns:
+  - '@id': '#gnirs_dqs.spec_measurements_supp.as_hd'
+    datatype: double
+    description: Asymmetry of Hdelta double Gaussian fit profile
+    name: as_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.as_hg'
+    datatype: double
+    description: Asymmetry of Hgamma double Gaussian fit profile
+    name: as_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.as_o2'
+    datatype: double
+    description: Asymmetry of O II 3727A double Gaussian fit profile
+    name: as_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.as_ne3'
+    datatype: double
+    description: Asymmetry of Ne III 3870A double Gaussian fit profile
+    name: as_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_hd'
+    datatype: float
+    description: Kurtosis of Hdelta double Gaussian fit profile
+    name: kurt_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_hg'
+    datatype: float
+    description: Kurtosis of Hgamma double Gaussian fit profile
+    name: kurt_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_o2'
+    datatype: float
+    description: Kurtosis of O II 3727A double Gaussian fit profile
+    name: kurt_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.kurt_ne3'
+    datatype: float
+    description: Kurtosis of Ne III 3870A double Gaussian fit profile
+    name: kurt_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.lc_hd'
+    datatype: int
+    description: Hdelta observed-frame wavelength (The emission link peak based on
+      the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.lc_hg'
+    datatype: int
+    description: Hgamma observed-frame wavelength (The emission link peak based on
+      the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.lc_o2'
+    datatype: int
+    description: O II 3727A observed-frame wavelength (The emission link peak based
+      on the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_fwhm_o2'
+    datatype: int
+    description: Upper uncertainty in FWHM_O2
+    fits:tunit: km/s
+    name: upp_fwhm_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.lc_ne3'
+    datatype: int
+    description: Ne III 3870A observed-frame wavelength (The emission link peak based
+      on the peak-fit value.)
+    fits:tunit: 0.1nm
+    name: lc_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_lc_hd'
+    datatype: short
+    description: Upper uncertainty in LC_Hd
+    fits:tunit: 0.1nm
+    name: upp_lc_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_lc_hd'
+    datatype: short
+    description: Lower uncertainty in LC_Hd
+    fits:tunit: 0.1nm
+    name: low_lc_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.fwhm_hd'
+    datatype: short
+    description: Hdelta emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_fwhm_hd'
+    datatype: short
+    description: Upper uncertainty in FWHM_Hd
+    fits:tunit: km/s
+    name: upp_fwhm_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_fwhm_hd'
+    datatype: short
+    description: Lower uncertainty in FWHM_Hd
+    fits:tunit: km/s
+    name: low_fwhm_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ew_hd'
+    datatype: short
+    description: Rest-frame Hdelta emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_ew_hd'
+    datatype: short
+    description: Upper uncertainty in EW_Hd
+    fits:tunit: 0.1nm
+    name: upp_ew_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_ew_hd'
+    datatype: short
+    description: Lower uncertainty in EW_Hd
+    fits:tunit: 0.1nm
+    name: low_ew_hd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_lc_hg'
+    datatype: short
+    description: Upper uncertainty in LC_Hg
+    fits:tunit: 0.1nm
+    name: upp_lc_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_lc_hg'
+    datatype: short
+    description: Lower uncertainty in LC_Hg
+    fits:tunit: 0.1nm
+    name: low_lc_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.fwhm_hg'
+    datatype: short
+    description: Hgamma emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_fwhm_hg'
+    datatype: short
+    description: Upper uncertainty in FWHM_Hg
+    fits:tunit: km/s
+    name: upp_fwhm_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_fwhm_hg'
+    datatype: short
+    description: Lower uncertainty in FWHM_Hg
+    fits:tunit: km/s
+    name: low_fwhm_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ew_hg'
+    datatype: short
+    description: Rest-frame Hgamma emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_ew_hg'
+    datatype: short
+    description: Upper uncertainty in EW_Hg
+    fits:tunit: 0.1nm
+    name: upp_ew_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_ew_hg'
+    datatype: short
+    description: Lower uncertainty in EW_Hg
+    fits:tunit: 0.1nm
+    name: low_ew_hg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_lc_o2'
+    datatype: short
+    description: Upper uncertainty in LC_O2
+    fits:tunit: 0.1nm
+    name: upp_lc_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_lc_o2'
+    datatype: short
+    description: Lower uncertainty in LC_O2
+    fits:tunit: 0.1nm
+    name: low_lc_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.fwhm_o2'
+    datatype: short
+    description: O II 3727A emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_fwhm_o2'
+    datatype: short
+    description: Lower uncertainty in FWHM_O2
+    fits:tunit: km/s
+    name: low_fwhm_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ew_o2'
+    datatype: short
+    description: Rest-frame O II 3727A emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_ew_o2'
+    datatype: short
+    description: Upper uncertainty in EW_O2
+    fits:tunit: 0.1nm
+    name: upp_ew_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_ew_o2'
+    datatype: short
+    description: Lower uncertainty in EW_O2
+    fits:tunit: 0.1nm
+    name: low_ew_o2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_lc_ne3'
+    datatype: short
+    description: Upper uncertainty in LC_Ne3
+    fits:tunit: 0.1nm
+    name: upp_lc_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_lc_ne3'
+    datatype: short
+    description: Lower uncertainty in LC_Ne3
+    fits:tunit: 0.1nm
+    name: low_lc_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.fwhm_ne3'
+    datatype: short
+    description: Ne III 3870A emission line FWHM
+    fits:tunit: km/s
+    name: fwhm_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_fwhm_ne3'
+    datatype: short
+    description: Upper uncertainty in FWHM_Ne3
+    fits:tunit: km/s
+    name: upp_fwhm_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_fwhm_ne3'
+    datatype: short
+    description: Lower uncertainty in FWHM_Ne3
+    fits:tunit: km/s
+    name: low_fwhm_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ew_ne3'
+    datatype: short
+    description: Rest-frame Ne III 3870A emission line equivalent width
+    fits:tunit: 0.1nm
+    name: ew_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.upp_ew_ne3'
+    datatype: short
+    description: Upper uncertainty in EW_Ne3
+    fits:tunit: 0.1nm
+    name: upp_ew_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.low_ew_ne3'
+    datatype: short
+    description: Lower uncertainty in EW_Ne3
+    fits:tunit: 0.1nm
+    name: low_ew_ne3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.obj'
+    datatype: text
+    description: SDSS object designation
+    ivoa:ucd: meta.id;meta.main
+    name: obj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.random_id'
+    datatype: float
+    description: Random ID in the range 0 to 100 (decimal)
+    name: random_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ra'
+    datatype: double
+    description: Right ascension in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.dec'
+    datatype: double
+    description: Declination in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.ring256'
+    datatype: int
+    description: Healpix ID with nside 256, ring schema
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.nest4096'
+    datatype: int
+    description: Healpix ID with nside 4096, nested schema
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.htm9'
+    datatype: int
+    description: HTM Level-9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gnirs_dqs.spec_measurements_supp.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Supplementary spectral measurements
+  indexes: []
+  name: spec_measurements_supp
+  primaryKey: ''
+  tap:table_index: 4
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

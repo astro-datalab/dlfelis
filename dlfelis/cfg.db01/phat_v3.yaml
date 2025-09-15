@@ -1,0 +1,868 @@
+---
+'@id': '#phat_v3'
+description: Panchromatic Hubble Andromeda Treasury Version 3
+name: phat_v3
+tables:
+- '@id': '#phat_v3.phot_mod'
+  columns:
+  - '@id': '#phat_v3.phot_mod.ra'
+    datatype: double
+    description: Right ascension (J2000)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.dec'
+    datatype: double
+    description: Declination (J2000)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.x'
+    datatype: double
+    description: Object X position on reference image (or first image, if no reference)
+    name: x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.y'
+    datatype: double
+    description: Object Y position on reference image (or first image, if no reference)
+    name: y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_rate'
+    datatype: double
+    description: Normalized count rate, F110W counts
+    name: f110w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F110W counts
+    name: f110w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F110W
+    name: f110w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_err'
+    datatype: double
+    description: Magnitude uncertainty, F110W
+    name: f110w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_chi'
+    datatype: double
+    description: Chi of fit, F110W
+    name: f110w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_snr'
+    datatype: double
+    description: Signal-to-noise, F110W
+    name: f110w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F110W
+    name: f110w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F110W
+    name: f110w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F110W
+    name: f110w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_rate'
+    datatype: double
+    description: Normalized count rate, F160W counts
+    name: f160w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F160W counts
+    name: f160w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F160W
+    name: f160w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_err'
+    datatype: double
+    description: Magnitude uncertainty, F160W
+    name: f160w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_chi'
+    datatype: double
+    description: Chi of fit, F160W
+    name: f160w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_snr'
+    datatype: double
+    description: Signal-to-noise, F160W
+    name: f160w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F160W
+    name: f160w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F160W
+    name: f160w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F160W
+    name: f160w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_rate'
+    datatype: double
+    description: Normalized count rate, F275W counts
+    name: f275w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F275W counts
+    name: f275w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F275W
+    name: f275w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_err'
+    datatype: double
+    description: Magnitude uncertainty, F275W
+    name: f275w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_chi'
+    datatype: double
+    description: Chi of fit, F275W
+    name: f275w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_snr'
+    datatype: double
+    description: Signal-to-noise, F275W
+    name: f275w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F275W
+    name: f275w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F275W
+    name: f275w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F275W
+    name: f275w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_rate'
+    datatype: double
+    description: Normalized count rate, F336W counts
+    name: f336w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F336W counts
+    name: f336w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F336W
+    name: f336w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_err'
+    datatype: double
+    description: Magnitude uncertainty, F336W
+    name: f336w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_chi'
+    datatype: double
+    description: Chi of fit, F336W
+    name: f336w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_snr'
+    datatype: double
+    description: Signal-to-noise, F336W
+    name: f336w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F336W
+    name: f336w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F336W
+    name: f336w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F336W
+    name: f336w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_rate'
+    datatype: double
+    description: Normalized count rate, F475W counts
+    name: f475w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F475W counts
+    name: f475w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F475W
+    name: f475w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_err'
+    datatype: double
+    description: Magnitude uncertainty, F475W
+    name: f475w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_chi'
+    datatype: double
+    description: Chi of fit, F475W
+    name: f475w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_snr'
+    datatype: double
+    description: Signal-to-noise, F475W
+    name: f475w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F475W
+    name: f475w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F475W
+    name: f475w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F475W
+    name: f475w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_rate'
+    datatype: double
+    description: Normalized count rate, F814W counts
+    name: f814w_rate
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_raterr'
+    datatype: double
+    description: Normalized count rate uncertainty, F814W counts
+    name: f814w_raterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_vega'
+    datatype: double
+    description: VEGAMAG magnitude, F814W
+    name: f814w_vega
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_err'
+    datatype: double
+    description: Magnitude uncertainty, F814W
+    name: f814w_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_chi'
+    datatype: double
+    description: Chi of fit, F814W
+    name: f814w_chi
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_snr'
+    datatype: double
+    description: Signal-to-noise, F814W
+    name: f814w_snr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_sharp'
+    datatype: double
+    description: DolPHOT sharpness parameter, F814W
+    name: f814w_sharp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_round'
+    datatype: double
+    description: DolPHOT roundness parameter, F814W
+    name: f814w_round
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_crowd'
+    datatype: double
+    description: DolPHOT crowding parameter, F814W
+    name: f814w_crowd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_count'
+    datatype: double
+    description: Measured counts, F475W
+    name: f475w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_sky'
+    datatype: double
+    description: Measured sky level, F475W
+    name: f475w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_count'
+    datatype: double
+    description: Measured counts, F814W
+    name: f814w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_sky'
+    datatype: double
+    description: Measured sky level, F814W
+    name: f814w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_count'
+    datatype: double
+    description: Measured counts, F275W
+    name: f275w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_sky'
+    datatype: double
+    description: Measured sky level, F275W
+    name: f275w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_count'
+    datatype: double
+    description: Measured counts, F336W
+    name: f336w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_sky'
+    datatype: double
+    description: Measured sky level, F336W
+    name: f336w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_count'
+    datatype: double
+    description: Measured counts, F110W
+    name: f110w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_sky'
+    datatype: double
+    description: Measured sky level, F110W
+    name: f110w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_count'
+    datatype: double
+    description: Measured counts, F160W
+    name: f160w_count
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_sky'
+    datatype: double
+    description: Measured sky level, F160W
+    name: f160w_sky
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F110W (0 clean measurement)
+    name: f110w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F160W (0 clean measurement)
+    name: f160w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F275W (0 clean measurement)
+    name: f275w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F336W (0 clean measurement)
+    name: f336w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F475W (0 clean measurement)
+    name: f475w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_flag'
+    datatype: long
+    description: DolPHOT photometric quality flag, F814W (0 clean measurement)
+    name: f814w_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_st_flag'
+    datatype: long
+    description: Output F275W ST quality flag
+    name: f275w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_st_flag'
+    datatype: long
+    description: Output F336W ST quality flag
+    name: f336w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_st_flag'
+    datatype: long
+    description: Output F475W ST quality flag
+    name: f475w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_st_flag'
+    datatype: long
+    description: Output F814W ST quality flag
+    name: f814w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_st_flag'
+    datatype: long
+    description: Output F110W ST quality flag
+    name: f110w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_st_flag'
+    datatype: long
+    description: Output F160W ST quality flag
+    name: f160w_st_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f275w_gst_flag'
+    datatype: long
+    description: Output F275W GST quality flag
+    name: f275w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f336w_gst_flag'
+    datatype: long
+    description: Output F336W GST quality flag
+    name: f336w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f475w_gst_flag'
+    datatype: long
+    description: Output F475W GST quality flag
+    name: f475w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f814w_gst_flag'
+    datatype: long
+    description: Output F814W GST quality flag
+    name: f814w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f110w_gst_flag'
+    datatype: long
+    description: Output F110W GST quality flag
+    name: f110w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.f160w_gst_flag'
+    datatype: long
+    description: Output F160W GST quality flag
+    name: f160w_gst_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.n_detected'
+    datatype: long
+    description: Number of detected stars
+    name: n_detected
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.random_id'
+    datatype: float
+    description: Unique random number between 0 and 100
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.htm9'
+    datatype: int
+    description: HTM base 9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.ring256'
+    datatype: int
+    description: HEALPix index (RING scheme, NSIDE 256)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.nest4096'
+    datatype: int
+    description: HEALPix index (NEST scheme, NSIDE 4096)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.objid_uniq'
+    datatype: string
+    description: Unique object ID
+    ivoa:ucd: meta.id;meta.main
+    length: 28
+    name: objid_uniq
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#phat_v3.phot_mod.objid'
+    datatype: char
+    description: Object ID (may not be unique)
+    ivoa:ucd: meta.id;meta.main
+    length: 25
+    name: objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Combined average photometry
+  indexes:
+  - '@id': '#phot_mod_ra_idx'
+    columns:
+    - '#phat_v3.phot_mod.ra'
+    name: phot_mod_ra_idx
+  - '@id': '#phot_mod_dec_idx'
+    columns:
+    - '#phat_v3.phot_mod.dec'
+    name: phot_mod_dec_idx
+  - '@id': '#phot_mod_elon_idx'
+    columns:
+    - '#phat_v3.phot_mod.elon'
+    name: phot_mod_elon_idx
+  - '@id': '#phot_mod_elat_idx'
+    columns:
+    - '#phat_v3.phot_mod.elat'
+    name: phot_mod_elat_idx
+  - '@id': '#phot_mod_glon_idx'
+    columns:
+    - '#phat_v3.phot_mod.glon'
+    name: phot_mod_glon_idx
+  - '@id': '#phot_mod_glat_idx'
+    columns:
+    - '#phat_v3.phot_mod.glat'
+    name: phot_mod_glat_idx
+  - '@id': '#phot_mod_f110w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f110w_vega'
+    name: phot_mod_f110w_vega_idx
+  - '@id': '#phot_mod_f110w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f110w_err'
+    name: phot_mod_f110w_err_idx
+  - '@id': '#phot_mod_f110w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f110w_crowd'
+    name: phot_mod_f110w_crowd_idx
+  - '@id': '#phot_mod_f160w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f160w_vega'
+    name: phot_mod_f160w_vega_idx
+  - '@id': '#phot_mod_f160w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f160w_err'
+    name: phot_mod_f160w_err_idx
+  - '@id': '#phot_mod_f160w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f160w_crowd'
+    name: phot_mod_f160w_crowd_idx
+  - '@id': '#phot_mod_f275w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f275w_vega'
+    name: phot_mod_f275w_vega_idx
+  - '@id': '#phot_mod_f275w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f275w_err'
+    name: phot_mod_f275w_err_idx
+  - '@id': '#phot_mod_f275w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f275w_crowd'
+    name: phot_mod_f275w_crowd_idx
+  - '@id': '#phot_mod_f336w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f336w_vega'
+    name: phot_mod_f336w_vega_idx
+  - '@id': '#phot_mod_f336w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f336w_err'
+    name: phot_mod_f336w_err_idx
+  - '@id': '#phot_mod_f336w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f336w_crowd'
+    name: phot_mod_f336w_crowd_idx
+  - '@id': '#phot_mod_f475w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f475w_vega'
+    name: phot_mod_f475w_vega_idx
+  - '@id': '#phot_mod_f475w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f475w_err'
+    name: phot_mod_f475w_err_idx
+  - '@id': '#phot_mod_f475w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f475w_crowd'
+    name: phot_mod_f475w_crowd_idx
+  - '@id': '#phot_mod_f814w_vega_idx'
+    columns:
+    - '#phat_v3.phot_mod.f814w_vega'
+    name: phot_mod_f814w_vega_idx
+  - '@id': '#phot_mod_f814w_err_idx'
+    columns:
+    - '#phat_v3.phot_mod.f814w_err'
+    name: phot_mod_f814w_err_idx
+  - '@id': '#phot_mod_f814w_crowd_idx'
+    columns:
+    - '#phat_v3.phot_mod.f814w_crowd'
+    name: phot_mod_f814w_crowd_idx
+  - '@id': '#phot_mod_f110w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f110w_flag'
+    name: phot_mod_f110w_flag_idx
+  - '@id': '#phot_mod_f160w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f160w_flag'
+    name: phot_mod_f160w_flag_idx
+  - '@id': '#phot_mod_f275w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f275w_flag'
+    name: phot_mod_f275w_flag_idx
+  - '@id': '#phot_mod_f336w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f336w_flag'
+    name: phot_mod_f336w_flag_idx
+  - '@id': '#phot_mod_f475w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f475w_flag'
+    name: phot_mod_f475w_flag_idx
+  - '@id': '#phot_mod_f814w_flag_idx'
+    columns:
+    - '#phat_v3.phot_mod.f814w_flag'
+    name: phot_mod_f814w_flag_idx
+  - '@id': '#phot_mod_random_id_idx'
+    columns:
+    - '#phat_v3.phot_mod.random_id'
+    name: phot_mod_random_id_idx
+  - '@id': '#phot_mod_htm9_idx'
+    columns:
+    - '#phat_v3.phot_mod.htm9'
+    name: phot_mod_htm9_idx
+  - '@id': '#phot_mod_ring256_idx'
+    columns:
+    - '#phat_v3.phot_mod.ring256'
+    name: phot_mod_ring256_idx
+  - '@id': '#phot_mod_nest4096_idx'
+    columns:
+    - '#phat_v3.phot_mod.nest4096'
+    name: phot_mod_nest4096_idx
+  - '@id': '#phot_mod_objid_uniq_idx'
+    columns:
+    - '#phat_v3.phot_mod.objid_uniq'
+    name: phot_mod_objid_uniq_idx
+  - '@id': '#phot_mod_objid_idx'
+    columns:
+    - '#phat_v3.phot_mod.objid'
+    name: phot_mod_objid_idx
+  name: phot_mod
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

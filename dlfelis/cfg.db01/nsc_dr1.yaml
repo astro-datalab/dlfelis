@@ -1,0 +1,2693 @@
+---
+'@id': '#nsc_dr1'
+description: NOIRLab Source Catalog Data Release 1
+name: nsc_dr1
+tables:
+- '@id': '#nsc_dr1.chip'
+  columns:
+  - '@id': '#nsc_dr1.chip.instrument'
+    datatype: char
+    description: Instrument name (c4d, k4m, ksb)
+    ivoa:ucd: meta.id;meta.main
+    length: 16
+    name: instrument
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.exposure'
+    datatype: char
+    description: Exposure name
+    ivoa:ucd: meta.id;meta.main
+    length: 24
+    name: exposure
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.expnum'
+    datatype: int
+    description: Exposure number
+    ivoa:ucd: meta.id;meta.main
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ccdnum'
+    datatype: short
+    description: CCD number
+    ivoa:ucd: meta.id;meta.main
+    name: ccdnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ra'
+    datatype: double
+    description: Right ascension at center of chip, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dec'
+    datatype: double
+    description: Declination at center of chip, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dateobs'
+    datatype: char
+    description: Observation timestamp. YYYY-MM-DDTHH:MM:SS.SSSSSS
+    ivoa:ucd: time.epoch
+    length: 16
+    name: dateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.mjd'
+    datatype: double
+    description: Observation Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.filter'
+    datatype: char
+    description: Filter (u, g, r, i, z, Y, VR)
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 24
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.exptime'
+    datatype: float
+    description: Exposure time, in seconds
+    fits:tunit: s
+    ivoa:ucd: time.duration
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.airmass'
+    datatype: float
+    description: Airmass
+    fits:tunit: mag
+    ivoa:ucd: obs.airMass
+    name: airmass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.nsources'
+    datatype: int
+    description: Number of good sources in this chip
+    ivoa:ucd: meta.number
+    name: nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.fwhm'
+    datatype: float
+    description: Median FWHM of PSF (i.e. seeing) of chip, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: instr.det.psf
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.rarms'
+    datatype: float
+    description: RMS in WCS fit for RA with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: rarms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.rastderr'
+    datatype: float
+    description: Standard error of WCS fit for RA with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: rastderr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ra_coef1'
+    datatype: double
+    description: 'RA correction term 1: constant offset term'
+    fits:tunit: deg
+    ivoa:ucd: arith.zp;pos.eq.ra
+    name: ra_coef1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ra_coef2'
+    datatype: double
+    description: 'RA correction term 2: delta_RA linear term'
+    ivoa:ucd: arith.grad;pos.eq.ra
+    name: ra_coef2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ra_coef3'
+    datatype: double
+    description: 'RA correction term 3: delta_RA x delta_DEC cross term'
+    fits:tunit: 1/deg
+    ivoa:ucd: arith.grad
+    name: ra_coef3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ra_coef4'
+    datatype: double
+    description: 'RA correction term 4: delta_DEC linear term'
+    ivoa:ucd: arith.grad;pos.eq.dec
+    name: ra_coef4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.decrms'
+    datatype: float
+    description: RMS in WCS fit for DEC with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: decrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.decstderr'
+    datatype: float
+    description: Standard error of WCS fit for DEC with respect to Gaia reference
+      stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: decstderr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dec_coef1'
+    datatype: double
+    description: 'DEC correction term 1: constant offset term'
+    fits:tunit: deg
+    ivoa:ucd: arith.zp;pos.eq.dec
+    name: dec_coef1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dec_coef2'
+    datatype: double
+    description: 'DEC correction term 2: delta_RA linear term'
+    ivoa:ucd: arith.grad;pos.eq.ra
+    name: dec_coef2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dec_coef3'
+    datatype: double
+    description: 'DEC correction term 3: delta_RA x delta_DEC cross term'
+    fits:tunit: 1/deg
+    ivoa:ucd: arith.grad
+    name: dec_coef3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.dec_coef4'
+    datatype: double
+    description: 'DEC correction term 4: delta_DEC linear term'
+    ivoa:ucd: arith.grad;pos.eq.dec
+    name: dec_coef4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ebv'
+    datatype: float
+    description: Median SFD E(B-V) of sources in this chip
+    ivoa:ucd: phys.absorption
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_ra1'
+    datatype: double
+    description: First RA value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: vertex_ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_ra2'
+    datatype: double
+    description: Second RA value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: vertex_ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_ra3'
+    datatype: double
+    description: Third RA value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: vertex_ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_ra4'
+    datatype: double
+    description: Fourth RA value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: vertex_ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_dec1'
+    datatype: double
+    description: First DEC value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: vertex_dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_dec2'
+    datatype: double
+    description: Second DEC value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: vertex_dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_dec3'
+    datatype: double
+    description: Third DEC value for the four corners of the chip
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: vertex_dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.vertex_dec4'
+    datatype: double
+    description: Fourth DEC value for the four corners of the chip
+    ivoa:ucd: pos.eq.dec
+    name: vertex_dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.ngaiamatch'
+    datatype: int
+    description: Number of Gaia astrometric reference sources matched
+    ivoa:ucd: meta.number
+    name: ngaiamatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.zpterm'
+    datatype: float
+    description: Exposure-level zero-point offset used for phot calibration
+    fits:tunit: mag
+    ivoa:ucd: phot.calib;phot.mag
+    name: zpterm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.zptermerr'
+    datatype: float
+    description: Uncertainty of ZPTERM
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zptermerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.nrefmatch'
+    datatype: int
+    description: Number of photometric reference sources matched for exposure
+    ivoa:ucd: meta.number
+    name: nrefmatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.chipzpterm'
+    datatype: float
+    description: Chip-level zero-point offset used to estimate spatial variation of
+      zeropoint
+    fits:tunit: mag
+    ivoa:ucd: phot.calib;phot.mag
+    name: chipzpterm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.chipzptermerr'
+    datatype: float
+    description: Uncertainty of CHIPZPTERM
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: chipzptermerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.chipnrefmatch'
+    datatype: int
+    description: Number of photometric reference sources matched for chip
+    ivoa:ucd: meta.number
+    name: chipnrefmatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.depth95'
+    datatype: float
+    description: 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: depth95
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.chip.depth10sig'
+    datatype: float
+    description: 10 sigma magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: depth10sig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: CCD information table
+  indexes:
+  - '@id': '#chip_exposure_idx'
+    columns:
+    - '#nsc_dr1.chip.exposure'
+    name: chip_exposure_idx
+  - '@id': '#chip_ra_idx'
+    columns:
+    - '#nsc_dr1.chip.ra'
+    name: chip_ra_idx
+  - '@id': '#chip_dec_idx'
+    columns:
+    - '#nsc_dr1.chip.dec'
+    name: chip_dec_idx
+  - '@id': '#chip_mjd_idx'
+    columns:
+    - '#nsc_dr1.chip.mjd'
+    name: chip_mjd_idx
+  - '@id': '#chip_filter_idx'
+    columns:
+    - '#nsc_dr1.chip.filter'
+    name: chip_filter_idx
+  - '@id': '#chip_exptime_idx'
+    columns:
+    - '#nsc_dr1.chip.exptime'
+    name: chip_exptime_idx
+  name: chip
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#nsc_dr1.coverage'
+  columns:
+  - '@id': '#nsc_dr1.coverage.pix'
+    datatype: int
+    description: Healpix nside=4096 pixel number
+    ivoa:ucd: meta.number
+    name: pix
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.pix128'
+    datatype: int
+    description: Healpix nside=128 pixel number
+    ivoa:ucd: meta.number
+    name: pix128
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.ra'
+    datatype: double
+    description: Right ascension (J2000.0) of healpix center, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.dec'
+    datatype: double
+    description: Declination (J2000.0) of healpix center, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.nobj'
+    datatype: int
+    description: Number of objects in this pixel
+    ivoa:ucd: meta.number
+    name: nobj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.coverage'
+    datatype: float
+    description: Fractional coverage in any band
+    ivoa:ucd: arith.factor
+    name: coverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.nexp'
+    datatype: short
+    description: Total number of exposures in all bands
+    ivoa:ucd: meta.number
+    name: nexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.ucoverage'
+    datatype: float
+    description: Fractional u-band coverage
+    ivoa:ucd: arith.factor
+    name: ucoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.unexp'
+    datatype: short
+    description: Number of u-band exposures
+    ivoa:ucd: meta.number
+    name: unexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.udepth'
+    datatype: float
+    description: u-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: udepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.gcoverage'
+    datatype: float
+    description: Fractional g-band coverage
+    ivoa:ucd: arith.factor
+    name: gcoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.gnexp'
+    datatype: short
+    description: Number of g-band exposures
+    ivoa:ucd: meta.number
+    name: gnexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.gdepth'
+    datatype: float
+    description: g-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gdepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.rcoverage'
+    datatype: float
+    description: Fractional r-band coverage
+    ivoa:ucd: arith.factor
+    name: rcoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.rnexp'
+    datatype: short
+    description: Number of r-band exposures
+    ivoa:ucd: meta.number
+    name: rnexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.rdepth'
+    datatype: float
+    description: r-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: rdepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.icoverage'
+    datatype: float
+    description: Fractional i-band coverage
+    ivoa:ucd: arith.factor
+    name: icoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.inexp'
+    datatype: short
+    description: Number of i-band exposures
+    ivoa:ucd: meta.number
+    name: inexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.idepth'
+    datatype: float
+    description: i-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: idepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.zcoverage'
+    datatype: float
+    description: Fractional z-band coverage
+    ivoa:ucd: arith.factor
+    name: zcoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.znexp'
+    datatype: short
+    description: Number of z-band exposures
+    ivoa:ucd: meta.number
+    name: znexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.zdepth'
+    datatype: float
+    description: z-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: zdepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.ycoverage'
+    datatype: float
+    description: Fractional Y-band coverage
+    ivoa:ucd: arith.factor
+    name: ycoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.ynexp'
+    datatype: short
+    description: Number of Y-band exposures
+    ivoa:ucd: meta.number
+    name: ynexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.ydepth'
+    datatype: float
+    description: Y-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: ydepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.vrcoverage'
+    datatype: float
+    description: Fractional VR-band coverage
+    ivoa:ucd: arith.factor
+    name: vrcoverage
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.vrnexp'
+    datatype: short
+    description: Number of VR-band exposures
+    ivoa:ucd: meta.number
+    name: vrnexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.coverage.vrdepth'
+    datatype: float
+    description: VR-band 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: vrdepth
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Survey coverage table
+  indexes:
+  - '@id': '#coverage_pix_idx'
+    columns:
+    - '#nsc_dr1.coverage.pix'
+    name: coverage_pix_idx
+  - '@id': '#coverage_pix128_idx'
+    columns:
+    - '#nsc_dr1.coverage.pix128'
+    name: coverage_pix128_idx
+  - '@id': '#coverage_ra_idx'
+    columns:
+    - '#nsc_dr1.coverage.ra'
+    name: coverage_ra_idx
+  - '@id': '#coverage_dec_idx'
+    columns:
+    - '#nsc_dr1.coverage.dec'
+    name: coverage_dec_idx
+  - '@id': '#coverage_nobj_idx'
+    columns:
+    - '#nsc_dr1.coverage.nobj'
+    name: coverage_nobj_idx
+  - '@id': '#coverage_nexp_idx'
+    columns:
+    - '#nsc_dr1.coverage.nexp'
+    name: coverage_nexp_idx
+  name: coverage
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#nsc_dr1.exposure'
+  columns:
+  - '@id': '#nsc_dr1.exposure.instrument'
+    datatype: char
+    description: Instrument name (c4d, k4m, ksb)
+    ivoa:ucd: meta.id;meta.main
+    length: 16
+    name: instrument
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.exposure'
+    datatype: char
+    description: Exposure name
+    ivoa:ucd: meta.id;meta.main
+    length: 24
+    name: exposure
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.expnum'
+    datatype: int
+    description: Exposure number
+    ivoa:ucd: meta.id;meta.main
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.ra'
+    datatype: double
+    description: Right ascension at center of frame, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.dec'
+    datatype: double
+    description: Declination at center of frame, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.dateobs'
+    datatype: char
+    description: Observation timestamp. YYYY-MM-DDTHH:MM:SS.SSSSSS
+    ivoa:ucd: time.epoch
+    length: 16
+    name: dateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.mjd'
+    datatype: double
+    description: Observed Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.filter'
+    datatype: char
+    description: Filter (u, g, r, i, z, Y, VR)
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 12
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.exptime'
+    datatype: float
+    description: Exposure time, in seconds
+    fits:tunit: s
+    ivoa:ucd: time.duration
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.airmass'
+    datatype: float
+    description: Airmass
+    fits:tunit: mag
+    ivoa:ucd: obs.airMass
+    name: airmass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.nsources'
+    datatype: int
+    description: Number of good sources in this exposure
+    ivoa:ucd: meta.number
+    name: nsources
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.fwhm'
+    datatype: float
+    description: Median FWHM of PSF (i.e. seeing) of frame, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: instr.det.psf
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.nchips'
+    datatype: short
+    description: Number of chips with data for this exposure
+    ivoa:ucd: meta.number
+    name: nchips
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.rarms'
+    datatype: float
+    description: RMS in WCS fit for RA with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: rarms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.rastderr'
+    datatype: float
+    description: Standard error of WCS fit for RA with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: rastderr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.decrms'
+    datatype: float
+    description: RMS in WCS fit for DEC with respect to Gaia reference stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.stdev
+    name: decrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.decstderr'
+    datatype: float
+    description: Standard error of WCS fit for DEC with respect to Gaia reference
+      stars
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: decstderr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.ebv'
+    datatype: float
+    description: Median SFD E(B-V) of sources in this exposure
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.ngaiamatch'
+    datatype: int
+    description: Number of Gaia astrometric reference sources matched
+    ivoa:ucd: meta.number
+    name: ngaiamatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.zpterm'
+    datatype: float
+    description: Zero-point offset used for this exposure
+    fits:tunit: mag
+    ivoa:ucd: phot.calib;phot.mag
+    name: zpterm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.zptype'
+    datatype: short
+    description: 'Calibration type: 1-external reference catalogs, 2-other NSC exposures'
+    fits:tunit: mag
+    ivoa:ucd: meta.code
+    name: zptype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.zptermerr'
+    datatype: float
+    description: Uncertainty of ZPTERM
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zptermerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.zptermsig'
+    datatype: float
+    description: RMS scatter of zero-point offset from multiple reference sources
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: zptermsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.nrefmatch'
+    datatype: int
+    description: Number of photometric reference sources matched
+    ivoa:ucd: meta.number
+    name: nrefmatch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.depth95'
+    datatype: float
+    description: 95th percentile magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: depth95
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.exposure.depth10sig'
+    datatype: float
+    description: 10 sigma magnitude depth
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: depth10sig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Exposures contributing to the catalog
+  indexes:
+  - '@id': '#exposure_exposure_idx'
+    columns:
+    - '#nsc_dr1.exposure.exposure'
+    name: exposure_exposure_idx
+  - '@id': '#exposure_expnum_idx'
+    columns:
+    - '#nsc_dr1.exposure.expnum'
+    name: exposure_expnum_idx
+  - '@id': '#exposure_ra_idx'
+    columns:
+    - '#nsc_dr1.exposure.ra'
+    name: exposure_ra_idx
+  - '@id': '#exposure_dec_idx'
+    columns:
+    - '#nsc_dr1.exposure.dec'
+    name: exposure_dec_idx
+  - '@id': '#exposure_dateobs_idx'
+    columns:
+    - '#nsc_dr1.exposure.dateobs'
+    name: exposure_dateobs_idx
+  - '@id': '#exposure_mjd_idx'
+    columns:
+    - '#nsc_dr1.exposure.mjd'
+    name: exposure_mjd_idx
+  - '@id': '#exposure_exptime_idx'
+    columns:
+    - '#nsc_dr1.exposure.exptime'
+    name: exposure_exptime_idx
+  - '@id': '#exposure_nsources_idx'
+    columns:
+    - '#nsc_dr1.exposure.nsources'
+    name: exposure_nsources_idx
+  name: exposure
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#nsc_dr1.nsc_allwise'
+  columns:
+  - '@id': '#nsc_dr1.nsc_allwise.id'
+    datatype: char
+    description: Unique object identifier
+    length: 16
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.cntr'
+    datatype: long
+    description: Unique Allwise object identifier
+    name: cntr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.nsc_ra'
+    datatype: double
+    description: Right ascension (J2000.0) of NSC object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: nsc_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.nsc_dec'
+    datatype: double
+    description: Declination (J2000.0) of NSC object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: nsc_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.ra'
+    datatype: double
+    description: Right ascension (J2000.0) of allwise object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.dec'
+    datatype: double
+    description: Declination (J2000.0) of allwise object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w1mpro'
+    datatype: float
+    description: W1 magnitude measured with profile-fitting photometry
+    fits:tunit: mag
+    name: w1mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w1sigmpro'
+    datatype: float
+    description: W1 measurement uncertainty in mag units
+    fits:tunit: mag
+    name: w1sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w1snr'
+    datatype: float
+    description: W1 S/N ratio
+    name: w1snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w1rchi2'
+    datatype: float
+    description: Reduced chi^2 of the W1 measurement
+    name: w1rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w2mpro'
+    datatype: float
+    description: W2 magnitude measured with profile-fitting photometry
+    fits:tunit: mag
+    name: w2mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w2sigmpro'
+    datatype: float
+    description: W2 measurement uncertainty in mag units
+    fits:tunit: mag
+    name: w2sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w2snr'
+    datatype: float
+    description: W2 S/N ratio
+    name: w2snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w2rchi2'
+    datatype: float
+    description: Reduced chi^2 of the W2 measurement
+    name: w2rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w3mpro'
+    datatype: float
+    description: W3 magnitude measured with profile-fitting photometry
+    fits:tunit: mag
+    name: w3mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w3sigmpro'
+    datatype: float
+    description: W3 measurement uncertainty in mag units
+    fits:tunit: mag
+    name: w3sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w3snr'
+    datatype: float
+    description: W3 S/N ratio
+    name: w3snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w3rchi2'
+    datatype: float
+    description: Reduced chi^2 of the W3 measurement
+    name: w3rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w4mpro'
+    datatype: float
+    description: W4 magnitude measured with profile-fitting photometry
+    fits:tunit: mag
+    name: w4mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w4sigmpro'
+    datatype: float
+    description: W4 measurement uncertainty in mag units
+    fits:tunit: mag
+    name: w4sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w4snr'
+    datatype: float
+    description: W4 S/N ratio
+    name: w4snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.w4rchi2'
+    datatype: float
+    description: Reduced chi^2 of the W4 measurement
+    name: w4rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.j_m_2mass'
+    datatype: float
+    description: 2MASS J-band magnitude or magnitude upper limit of the associated
+      2MASS PSC source
+    name: j_m_2mass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.h_m_2mass'
+    datatype: float
+    description: 2MASS H-band magnitude or magnitude upper limit of the associated
+      2MASS PSC source
+    name: h_m_2mass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.k_m_2mass'
+    datatype: float
+    description: 2MASS K-band magnitude or magnitude upper limit of the associated
+      2MASS PSC source
+    name: k_m_2mass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.tmass_key'
+    datatype: int
+    description: 2MASS PSC association. Unique identifier of the closest source in
+      the 2MASS Point Source Catalog (PSC) that falls within 3arcsec of the non-motion
+      fit position of this WISE source.
+    name: tmass_key
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.cc_flags'
+    datatype: char
+    description: Contamination and confusion flag
+    length: 22
+    name: cc_flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.coadd_id'
+    datatype: char
+    description: Atlas Tile identifier from which source was extracted
+    length: 22
+    name: coadd_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.source_id'
+    datatype: char
+    description: Unique source ID for allwise object
+    length: 22
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.nsc_allwise.designation'
+    datatype: char
+    description: Unique source ID
+    length: 22
+    name: designation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: NSC vs ALLWISE 1-arcsec crossmatch
+  indexes:
+  - '@id': '#nsc_allwise_id_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.id'
+    name: nsc_allwise_id_idx
+  - '@id': '#nsc_allwise_ra_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.ra'
+    name: nsc_allwise_ra_idx
+  - '@id': '#nsc_allwise_dec_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.dec'
+    name: nsc_allwise_dec_idx
+  - '@id': '#nsc_allwise_tmass_key_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.tmass_key'
+    name: nsc_allwise_tmass_key_idx
+  - '@id': '#nsc_allwise_coadd_id_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.coadd_id'
+    name: nsc_allwise_coadd_id_idx
+  - '@id': '#nsc_allwise_source_id_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.source_id'
+    name: nsc_allwise_source_id_idx
+  - '@id': '#nsc_allwise_designation_idx'
+    columns:
+    - '#nsc_dr1.nsc_allwise.designation'
+    name: nsc_allwise_designation_idx
+  name: nsc_allwise
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#nsc_dr1.object'
+  columns:
+  - '@id': '#nsc_dr1.object.ra'
+    datatype: double
+    description: Right ascension (J2000.0) of object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.dec'
+    datatype: double
+    description: Declination (J2000.0) of object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.glon'
+    datatype: double
+    description: Galactic Longitude
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.glat'
+    datatype: double
+    description: Galactic Latitude
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.elon'
+    datatype: double
+    description: Ecliptic Longitude
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.elat'
+    datatype: double
+    description: Ecliptic Latitude
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.raerr'
+    datatype: double
+    description: Uncertainty of RA
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.decerr'
+    datatype: double
+    description: Uncertainty in DEC
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.pmra'
+    datatype: double
+    description: Proper motion in RA*cos(DEC)
+    fits:tunit: milliarcsecond/yr
+    ivoa:ucd: pos.pm;pos.eq.ra
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.pmdec'
+    datatype: double
+    description: Proper motion in DEC
+    fits:tunit: milliarcsecond/yr
+    ivoa:ucd: pos.pm;pos.eq.dec
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.pmraerr'
+    datatype: double
+    description: Uncertainty in PMRA
+    fits:tunit: milliarcsecond/yr
+    ivoa:ucd: stat.error;pos.pm;pos.eq.ra
+    name: pmraerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.pmdecerr'
+    datatype: double
+    description: Uncertainty in PMDEC
+    fits:tunit: milliarcsecond/yr
+    ivoa:ucd: stat.error;pos.pm;pos.eq.dec
+    name: pmdecerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.mjd'
+    datatype: double
+    description: Mean Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.deltamjd'
+    datatype: float
+    description: Range of Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.duration
+    name: deltamjd
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.umag'
+    datatype: float
+    description: Weighted-average u-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: umag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.urms'
+    datatype: float
+    description: RMS scatter in u from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: urms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.uerr'
+    datatype: float
+    description: Uncertainty in mean u-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: uerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.uasemi'
+    datatype: float
+    description: u-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: uasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ubsemi'
+    datatype: float
+    description: u-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: ubsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.utheta'
+    datatype: float
+    description: u-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: utheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.gmag'
+    datatype: float
+    description: Weighted-average g-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: gmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.grms'
+    datatype: float
+    description: RMS scatter in g from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: grms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.gerr'
+    datatype: float
+    description: Uncertainty in mean g-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: gerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.gasemi'
+    datatype: float
+    description: g-band profile RMS along major axis, in arcseconds
+    fits:tunit: deg
+    ivoa:ucd: phys.angSize.smajAxis
+    name: gasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.gbsemi'
+    datatype: float
+    description: g-band profile RMS along minor axis, in arcseconds
+    fits:tunit: deg
+    ivoa:ucd: phys.angSize.sminAxis
+    name: gbsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.gtheta'
+    datatype: float
+    description: g-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: gtheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rmag'
+    datatype: float
+    description: Weighted-average r-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: rmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rrms'
+    datatype: float
+    description: RMS scatter in r from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: rrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rerr'
+    datatype: float
+    description: Uncertainty in mean r-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: rerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rasemi'
+    datatype: float
+    description: r-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: rasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rbsemi'
+    datatype: float
+    description: r-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: rbsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.rtheta'
+    datatype: float
+    description: r-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: rtheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.imag'
+    datatype: float
+    description: Weighted-average i-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: imag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.irms'
+    datatype: float
+    description: RMS scatter in i from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: irms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ierr'
+    datatype: float
+    description: Uncertainty in mean i-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: ierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.iasemi'
+    datatype: float
+    description: i-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: iasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ibsemi'
+    datatype: float
+    description: i-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: ibsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.itheta'
+    datatype: float
+    description: i-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: itheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.zmag'
+    datatype: float
+    description: Weighted-average z-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: zmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.zrms'
+    datatype: float
+    description: RMS scatter in z from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: zrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.zerr'
+    datatype: float
+    description: Uncertainty in mean z-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: zerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.zasemi'
+    datatype: float
+    description: z-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: zasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.zbsemi'
+    datatype: float
+    description: z-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: zbsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ztheta'
+    datatype: float
+    description: z-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: ztheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ymag'
+    datatype: float
+    description: Weighted-average Y-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: ymag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.yrms'
+    datatype: float
+    description: RMS scatter in Y from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: yrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.yerr'
+    datatype: float
+    description: Uncertainty in mean Y-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: yerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.yasemi'
+    datatype: float
+    description: Y-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: yasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ybsemi'
+    datatype: float
+    description: Y-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: ybsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ytheta'
+    datatype: float
+    description: Y-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: ytheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrmag'
+    datatype: float
+    description: Weighted-average VR-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: vrmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrrms'
+    datatype: float
+    description: RMS scatter in VR from multiple measurements of this object
+    fits:tunit: mag
+    ivoa:ucd: stat.stdev;phot.mag
+    name: vrrms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrerr'
+    datatype: float
+    description: Uncertainty in mean VR-band magnitude
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: vrerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrasemi'
+    datatype: float
+    description: VR-band profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: vrasemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrbsemi'
+    datatype: float
+    description: VR-band profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: vrbsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.vrtheta'
+    datatype: float
+    description: VR-band position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: vrtheta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.x2'
+    datatype: float
+    description: Mean variance (second moment) along RA
+    fits:tunit: arcsec^2
+    ivoa:ucd: stat.variance;phys.angSize
+    name: x2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.x2err'
+    datatype: float
+    description: Uncertainty in mean variance along RA
+    fits:tunit: arcsec^2
+    ivoa:ucd: stat.error;phys.angSize
+    name: x2err
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.y2'
+    datatype: float
+    description: Mean variance (second moment) along DEC
+    fits:tunit: arcsec^2
+    ivoa:ucd: stat.variance;phys.angSize
+    name: y2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.y2err'
+    datatype: float
+    description: Uncertainty in mean variance along DEC
+    fits:tunit: arcsec^2
+    ivoa:ucd: stat.error;phys.angSize
+    name: y2err
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.xy'
+    datatype: float
+    description: Mean covariance between RA and DEC
+    fits:tunit: arcsec^2
+    ivoa:ucd: phys.angSize
+    name: xy
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.xyerr'
+    datatype: float
+    description: Uncertainty in mean covariance between RA and DEC
+    fits:tunit: arcsec^2
+    ivoa:ucd: stat.error;phys.angSize
+    name: xyerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.asemi'
+    datatype: float
+    description: Mean profile RMS along major axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.smajAxis
+    name: asemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.asemierr'
+    datatype: float
+    description: Uncertainty in mean RMS along major axis
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error;phys.angSize.smajAxis
+    name: asemierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.bsemi'
+    datatype: float
+    description: Mean profile RMS along minor axis, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize.sminAxis
+    name: bsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.bsemierr'
+    datatype: float
+    description: Uncertainty in mean RMS along minor axis
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error;phys.angSize.sminAxis
+    name: bsemierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.theta'
+    datatype: float
+    description: Position angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: theta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.thetaerr'
+    datatype: float
+    description: Uncertainty in THETA
+    fits:tunit: deg
+    ivoa:ucd: stat.error;pos.posAng
+    name: thetaerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ellipticity'
+    datatype: float
+    description: Object ellipticity, 1 - BSEMI/ASEMI
+    fits:tunit: ''
+    ivoa:ucd: src.ellipticity
+    name: ellipticity
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.fwhm'
+    datatype: float
+    description: FWHM assuming a gaussian core, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.class_star'
+    datatype: float
+    description: Star/Galaxy classifier
+    fits:tunit: ''
+    ivoa:ucd: stat.probability
+    name: class_star
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ebv'
+    datatype: float
+    description: SFD E(B-V) reddening
+    fits:tunit: mag
+    ivoa:ucd: phys.absorption
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.u_g'
+    datatype: float
+    description: Computed (u-g) color
+    name: u_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.g_r'
+    datatype: float
+    description: Computed (g-r) color
+    name: g_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.r_i'
+    datatype: float
+    description: Computed (r-i) color
+    name: r_i
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.i_z'
+    datatype: float
+    description: Computed (i-z) color
+    name: i_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.z_y'
+    datatype: float
+    description: Computed (z-Y) color
+    name: z_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.pix'
+    datatype: int
+    description: Healpix nside=128 pixel number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    name: pix
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndet'
+    datatype: int
+    description: Number of detections in all bands
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphot'
+    datatype: int
+    description: Number of photometric detections in all bands
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndetu'
+    datatype: short
+    description: Number of detections in u
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphotu'
+    datatype: short
+    description: Number of photometric detections in u
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphotu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndetg'
+    datatype: short
+    description: Number of detections in g
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphotg'
+    datatype: short
+    description: Number of photometric detections in g
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphotg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndetr'
+    datatype: short
+    description: Number of detections in r
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphotr'
+    datatype: short
+    description: Number of photometric detections in r
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphotr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndeti'
+    datatype: short
+    description: Number of detections in i
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndeti
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphoti'
+    datatype: short
+    description: Number of photometric detections in i
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphoti
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndetz'
+    datatype: short
+    description: Number of detections in z
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphotz'
+    datatype: short
+    description: Number of photometric detections in z
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphotz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndety'
+    datatype: short
+    description: Number of detections in Y
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndety
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphoty'
+    datatype: short
+    description: Number of photometric detections in Y
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphoty
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.ndetvr'
+    datatype: short
+    description: Number of detections in VR
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: ndetvr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.nphotvr'
+    datatype: short
+    description: Number of photometric detections in VR
+    fits:tunit: ''
+    ivoa:ucd: meta.number
+    name: nphotvr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.flags'
+    datatype: short
+    description: OR-combined SExtractor FLAG value
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.object.id'
+    datatype: char
+    description: Unique object ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 16
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Primary object table
+  indexes:
+  - '@id': '#object_ra_idx'
+    columns:
+    - '#nsc_dr1.object.ra'
+    name: object_ra_idx
+  - '@id': '#object_dec_idx'
+    columns:
+    - '#nsc_dr1.object.dec'
+    name: object_dec_idx
+  - '@id': '#object_glon_idx'
+    columns:
+    - '#nsc_dr1.object.glon'
+    name: object_glon_idx
+  - '@id': '#object_glat_idx'
+    columns:
+    - '#nsc_dr1.object.glat'
+    name: object_glat_idx
+  - '@id': '#object_elon_idx'
+    columns:
+    - '#nsc_dr1.object.elon'
+    name: object_elon_idx
+  - '@id': '#object_elat_idx'
+    columns:
+    - '#nsc_dr1.object.elat'
+    name: object_elat_idx
+  - '@id': '#object_pmra_idx'
+    columns:
+    - '#nsc_dr1.object.pmra'
+    name: object_pmra_idx
+  - '@id': '#object_pmdec_idx'
+    columns:
+    - '#nsc_dr1.object.pmdec'
+    name: object_pmdec_idx
+  - '@id': '#object_mjd_idx'
+    columns:
+    - '#nsc_dr1.object.mjd'
+    name: object_mjd_idx
+  - '@id': '#object_umag_idx'
+    columns:
+    - '#nsc_dr1.object.umag'
+    name: object_umag_idx
+  - '@id': '#object_gmag_idx'
+    columns:
+    - '#nsc_dr1.object.gmag'
+    name: object_gmag_idx
+  - '@id': '#object_rmag_idx'
+    columns:
+    - '#nsc_dr1.object.rmag'
+    name: object_rmag_idx
+  - '@id': '#object_imag_idx'
+    columns:
+    - '#nsc_dr1.object.imag'
+    name: object_imag_idx
+  - '@id': '#object_zmag_idx'
+    columns:
+    - '#nsc_dr1.object.zmag'
+    name: object_zmag_idx
+  - '@id': '#object_ymag_idx'
+    columns:
+    - '#nsc_dr1.object.ymag'
+    name: object_ymag_idx
+  - '@id': '#object_vrmag_idx'
+    columns:
+    - '#nsc_dr1.object.vrmag'
+    name: object_vrmag_idx
+  - '@id': '#object_ellipticity_idx'
+    columns:
+    - '#nsc_dr1.object.ellipticity'
+    name: object_ellipticity_idx
+  - '@id': '#object_class_star_idx'
+    columns:
+    - '#nsc_dr1.object.class_star'
+    name: object_class_star_idx
+  - '@id': '#object_u_g_idx'
+    columns:
+    - '#nsc_dr1.object.u_g'
+    name: object_u_g_idx
+  - '@id': '#object_g_r_idx'
+    columns:
+    - '#nsc_dr1.object.g_r'
+    name: object_g_r_idx
+  - '@id': '#object_r_i_idx'
+    columns:
+    - '#nsc_dr1.object.r_i'
+    name: object_r_i_idx
+  - '@id': '#object_i_z_idx'
+    columns:
+    - '#nsc_dr1.object.i_z'
+    name: object_i_z_idx
+  - '@id': '#object_z_y_idx'
+    columns:
+    - '#nsc_dr1.object.z_y'
+    name: object_z_y_idx
+  - '@id': '#object_random_id_idx'
+    columns:
+    - '#nsc_dr1.object.random_id'
+    name: object_random_id_idx
+  - '@id': '#object_ndet_idx'
+    columns:
+    - '#nsc_dr1.object.ndet'
+    name: object_ndet_idx
+  - '@id': '#object_nphot_idx'
+    columns:
+    - '#nsc_dr1.object.nphot'
+    name: object_nphot_idx
+  - '@id': '#object_htm9_idx'
+    columns:
+    - '#nsc_dr1.object.htm9'
+    name: object_htm9_idx
+  - '@id': '#object_ring256_idx'
+    columns:
+    - '#nsc_dr1.object.ring256'
+    name: object_ring256_idx
+  - '@id': '#object_nest4096_idx'
+    columns:
+    - '#nsc_dr1.object.nest4096'
+    name: object_nest4096_idx
+  - '@id': '#object_ndetu_idx'
+    columns:
+    - '#nsc_dr1.object.ndetu'
+    name: object_ndetu_idx
+  - '@id': '#object_ndetg_idx'
+    columns:
+    - '#nsc_dr1.object.ndetg'
+    name: object_ndetg_idx
+  - '@id': '#object_ndetr_idx'
+    columns:
+    - '#nsc_dr1.object.ndetr'
+    name: object_ndetr_idx
+  - '@id': '#object_ndeti_idx'
+    columns:
+    - '#nsc_dr1.object.ndeti'
+    name: object_ndeti_idx
+  - '@id': '#object_ndetz_idx'
+    columns:
+    - '#nsc_dr1.object.ndetz'
+    name: object_ndetz_idx
+  - '@id': '#object_ndety_idx'
+    columns:
+    - '#nsc_dr1.object.ndety'
+    name: object_ndety_idx
+  - '@id': '#object_ndetvr_idx'
+    columns:
+    - '#nsc_dr1.object.ndetvr'
+    name: object_ndetvr_idx
+  - '@id': '#object_id_idx'
+    columns:
+    - '#nsc_dr1.object.id'
+    name: object_id_idx
+  name: object
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#nsc_dr1.meas'
+  columns:
+  - '@id': '#nsc_dr1.meas.measid'
+    datatype: char
+    description: Unique measurement ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 24
+    name: measid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.objectid'
+    datatype: char
+    description: Unique object ID
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 16
+    name: objectid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.exposure'
+    datatype: char
+    description: Exposure name
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    length: 32
+    name: exposure
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.ccdnum'
+    datatype: int
+    description: CCD number
+    fits:tunit: ''
+    ivoa:ucd: meta.id;meta.main
+    name: ccdnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.filter'
+    datatype: char
+    description: Filter (u, g, r, i, z, Y, VR)
+    fits:tunit: ''
+    ivoa:ucd: phys.transmission;instr.filter
+    length: 2
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mjd'
+    datatype: double
+    description: Observation Modified Julian Date
+    fits:tunit: d
+    ivoa:ucd: time.epoch
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.x'
+    datatype: float
+    description: Centroid in X-dimension (1st moment), in pixels
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.x
+    name: x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.y'
+    datatype: float
+    description: Centroid in Y-dimension (1st moment), in pixels
+    fits:tunit: pixel
+    ivoa:ucd: pos.cartesian.y
+    name: y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.ra'
+    datatype: double
+    description: Right ascension (J2000.0) of object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.raerr'
+    datatype: double
+    description: Uncertainty of RA
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.dec'
+    datatype: double
+    description: Declination (J2000.0) of object, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.decerr'
+    datatype: double
+    description: Uncertainty in DEC
+    fits:tunit: arcsec
+    ivoa:ucd: stat.error
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mag_auto'
+    datatype: float
+    description: Automatic elliptical aperture photometry
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag_auto
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.magerr_auto'
+    datatype: float
+    description: Uncertainty in MAG_AUTO
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: magerr_auto
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mag_aper1'
+    datatype: float
+    description: Aperture photometry in 1-arcsec diameter aperture
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag_aper1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.magerr_aper1'
+    datatype: float
+    description: Uncertainty in MAG_APER1
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: magerr_aper1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mag_aper2'
+    datatype: float
+    description: Aperture photometry in 2-arcsec diameter aperture
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag_aper2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.magerr_aper2'
+    datatype: float
+    description: Uncertainty in MAG_APER2
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: magerr_aper2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mag_aper4'
+    datatype: float
+    description: Aperture photometry in 4-arcsec diameter aperture
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag_aper4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.magerr_aper4'
+    datatype: float
+    description: Uncertainty in MAG_APER4
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: magerr_aper4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.mag_aper8'
+    datatype: float
+    description: Aperture photometry in 8-arcsec diameter aperture
+    fits:tunit: mag
+    ivoa:ucd: phot.mag
+    name: mag_aper8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.magerr_aper8'
+    datatype: float
+    description: Uncertainty in MAG_APER8
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag
+    name: magerr_aper8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.kron_radius'
+    datatype: float
+    description: Kron radius, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize
+    name: kron_radius
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.asemi'
+    datatype: float
+    description: Profile RMS along major axis, in arcseconds
+    fits:tunit: deg
+    ivoa:ucd: phys.angSize.smajAxis
+    name: asemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.asemierr'
+    datatype: float
+    description: Uncertainty in ASEMI
+    fits:tunit: deg
+    ivoa:ucd: stat.error;phys.angSize.smajAxis
+    name: asemierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.bsemi'
+    datatype: float
+    description: Profile RMS along minor axis, in arcseconds
+    fits:tunit: deg
+    ivoa:ucd: phys.angSize.sminAxis
+    name: bsemi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.bsemierr'
+    datatype: float
+    description: Uncertainty in BSEMI
+    fits:tunit: deg
+    ivoa:ucd: stat.error;phys.angSize.smajAxis
+    name: bsemierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.theta'
+    datatype: float
+    description: Position-angle measured CCW East of North, in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.posAng
+    name: theta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.thetaerr'
+    datatype: float
+    description: Uncertainty in THETA
+    fits:tunit: deg
+    ivoa:ucd: stat.error;pos.posAng
+    name: thetaerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.fwhm'
+    datatype: float
+    description: FWHM assuming a gaussian core, in arcseconds
+    fits:tunit: arcsec
+    ivoa:ucd: phys.angSize
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nsc_dr1.meas.flags'
+    datatype: int
+    description: SExtractor FLAG value
+    fits:tunit: ''
+    ivoa:ucd: meta.code
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Primary measurements table
+  indexes:
+  - '@id': '#meas_objectid_idx'
+    columns:
+    - '#nsc_dr1.meas.objectid'
+    name: meas_objectid_idx
+  name: meas
+  primaryKey: ''
+  tap:table_index: 6
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

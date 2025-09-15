@@ -1,0 +1,1280 @@
+---
+'@id': '#gogreen_dr1'
+description: GOGREEN and GCLASS first data release survey catalogues
+name: gogreen_dr1
+tables:
+- '@id': '#gogreen_dr1.clusters'
+  columns:
+  - '@id': '#gogreen_dr1.clusters.cluster'
+    datatype: string
+    description: Short name of each cluster.
+    length: 10
+    name: cluster
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.fullname'
+    datatype: string
+    description: Longer format cluster name
+    length: 17
+    name: fullname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.cluster_id'
+    datatype: int
+    description: An integer which is used to identify the corresponding photometry.
+      It is a unique number for each SpARCS and SPT cluster; it is 14 for all COSMOS
+      clusters and 13 for those in the SXDF.
+    name: cluster_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.ra_best'
+    datatype: float
+    description: 'Coordinates, in J2000 degrees, for the best estimate of the cluster
+      centre. For the SPT and SpARCS clusters, this is the location of the BCG. For
+      the COSMOS and SXDF clusters, it is the average position of members as described
+      in &sect;4.2.3 of GOGREEN adn GCLASS Survey: First Data Release paper'
+    ivoa:ucd: pos.eq.ra
+    name: ra_best
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.dec_best'
+    datatype: float
+    description: 'Coordinates, in J2000 degrees, for the best estimate of the cluster
+      centre. For the SPT and SpARCS clusters, this is the location of the BCG. For
+      the COSMOS and SXDF clusters, it is the average position of members as described
+      in &sect;4.2.3 of The GOGREEN adn GCLASS Survey: First Data Release paper'
+    ivoa:ucd: pos.eq.dec
+    name: dec_best
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.ra_gmos'
+    datatype: float
+    description: Coordinates, in J2000 degrees, for the centre of the GMOS spectroscopic
+      observations (GOGREEN only)
+    name: ra_gmos
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.dec_gmos'
+    datatype: double
+    description: Coordinates, in J2000 degrees, for the centre of the GMOS spectroscopic
+      observations (GOGREEN only)
+    name: dec_gmos
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.pa_deg'
+    datatype: double
+    description: Position angle, in degrees, for the GMOS spectroscopic observations
+      (GOGREEN only).
+    name: pa_deg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.redshift'
+    datatype: double
+    description: Best estimate of the cluster redshift, based on available spectroscopy,
+      including publicly available spectra from other sources not included in this
+      release.
+    name: redshift
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.vdisp'
+    datatype: float
+    description: 'Velocity dispersion in km/s, computed as described in &sect;4.2.3
+      of The GOGREEN adn GCLASS Survey: First Data Release paper.'
+    name: vdisp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.vdisp_err'
+    datatype: float
+    description: 'Veolicty dispersion uncertainty in km/s, computed as described in
+      &sect;4.2.3 of The GOGREEN adn GCLASS Survey: First Data Release paper.'
+    name: vdisp_err
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m1'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 15
+    name: gogreen_m1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m2'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 15
+    name: gogreen_m2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m3'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 15
+    name: gogreen_m3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m4'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 15
+    name: gogreen_m4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m5'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 16
+    name: gogreen_m5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gogreen_m6'
+    datatype: string
+    description: Name of each GOGREEN GMOS mask, for N from 1 to 6, used to obtain
+      spectra for this program.
+    length: 15
+    name: gogreen_m6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gclass_m1'
+    datatype: string
+    description: Name of each GCLASS GMOS mask, for N from 1 to 5, used to obtain
+      spectra for this program.
+    length: 14
+    name: gclass_m1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gclass_m2'
+    datatype: string
+    description: Name of each GCLASS GMOS mask, for N from 1 to 5, used to obtain
+      spectra for this program.
+    length: 14
+    name: gclass_m2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gclass_m3'
+    datatype: string
+    description: Name of each GCLASS GMOS mask, for N from 1 to 5, used to obtain
+      spectra for this program.
+    length: 14
+    name: gclass_m3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gclass_m4'
+    datatype: string
+    description: Name of each GCLASS GMOS mask, for N from 1 to 5, used to obtain
+      spectra for this program.
+    length: 14
+    name: gclass_m4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.gclass_m5'
+    datatype: string
+    description: Name of each GCLASS GMOS mask, for N from 1 to 5, used to obtain
+      spectra for this program.
+    length: 14
+    name: gclass_m5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.kphot_cat'
+    datatype: string
+    description: Name of K-selected photometry catalogue
+    length: 35
+    name: kphot_cat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.photoz_cat'
+    datatype: string
+    description: Name of photometric redshift catalogue
+    length: 28
+    name: photoz_cat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.stelmass_cat'
+    datatype: string
+    description: Name of catalogue with stellar mass information
+    length: 33
+    name: stelmass_cat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_u'
+    datatype: string
+    description: Name of image for filter u for SpARCS and SPT clusters.
+    length: 14
+    name: image_u
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_b'
+    datatype: string
+    description: Name of image for filter b for SpARCS and SPT clusters.
+    length: 12
+    name: image_b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_g'
+    datatype: string
+    description: Name of image for filter g for SpARCS and SPT clusters.
+    length: 14
+    name: image_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_v'
+    datatype: string
+    description: Name of image for filter v for SpARCS and SPT clusters.
+    length: 12
+    name: image_v
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_r'
+    datatype: string
+    description: Name of image for filter r for SpARCS and SPT clusters.
+    length: 14
+    name: image_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_i'
+    datatype: string
+    description: Name of image for filter i for SpARCS and SPT clusters.
+    length: 14
+    name: image_i
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_z'
+    datatype: string
+    description: Name of image for filter z for SpARCS and SPT clusters.
+    length: 12
+    name: image_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_j'
+    datatype: string
+    description: Name of image for filter j for SpARCS and SPT clusters.
+    length: 15
+    name: image_j
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_j1'
+    datatype: string
+    description: Name of image for filter j1 for SpARCS and SPT clusters.
+    length: 16
+    name: image_j1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_y'
+    datatype: string
+    description: Name of image for filter y for SpARCS and SPT clusters.
+    length: 10
+    name: image_y
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_k'
+    datatype: string
+    description: Name of image for filter k for SpARCS and SPT clusters.
+    length: 16
+    name: image_k
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.image_irac1'
+    datatype: string
+    description: Name of image for filter irac1 for SpARCS and SPT clusters.
+    length: 11
+    name: image_irac1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.preimage'
+    datatype: string
+    description: Name of the GMOS z-band image, or Subaru pseudo-image, used for mask
+      design. Note the preimages were used for mask design but are not optimally reduced,
+      specifically regarding sky subtraction and astrometry.
+    length: 22
+    name: preimage
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.clusters.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: information relevant to each cluster in system in the GCLASS and GOGREEN
+    surveys
+  indexes: []
+  name: clusters
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#gogreen_dr1.photo'
+  columns:
+  - '@id': '#gogreen_dr1.photo.cluster'
+    datatype: string
+    description: Name of the corresponding cluster, when there is an associated photometric
+      catalogue. Objects in the COSMOS or SXDF photometric catalogues are identified
+      with those labels, unless there is a GOGREEN spectroscopic redshift, in which
+      case we use the name of the associated target. Note that SXDF49 and SXDF87 share
+      a field, and are identified here only by SXDF49. Similarly SXDF76a and SXDF76b
+      are identified here as SXDF76.
+    length: 10
+    name: cluster
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.cphotid'
+    datatype: int
+    description: 'This is a unique identifier for each object in this table. The first
+      digit identifies the source of the photometry (1: GOGREEN; 2: GCLASS; 3: UltraVISTA/COSMOS;
+      4:SPLASH/SXDF). The next two digits are the cluster_id column from Table 2.
+      The remaining numbers are the PHOTID identifier in the main photometric catalogues'
+    name: cphotid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.specid'
+    datatype: int
+    description: The ID corresponding to Table 4 for objects with a corresponding
+      GCLASS or GOGREEN spectrum
+    name: specid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ra'
+    datatype: double
+    description: J2000 positions, in degrees. Calibrated with SDSS DR7 or USNO-b whenever
+      a cluster falls outside of the SDSS footprint.
+    ivoa:ucd: pos.eq.ra
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.dec'
+    datatype: double
+    description: J2000 positions, in degrees. Calibrated with SDSS DR7 or USNO-b whenever
+      a cluster falls outside of the SDSS footprint.
+    ivoa:ucd: pos.eq.dec
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.zspec'
+    datatype: double
+    description: The spectroscopic redshift for the associated spectrum, if any. (See
+      redshift_quality for the quality flag).  Redshifts without a corresponding Redshift_Quality
+      are copied from the parent (UltraVISTA or SPLASH) catalogue.
+    name: zspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.redshift_quality'
+    datatype: double
+    description: Quality flag for associated spectrum in zspec
+    name: redshift_quality
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.zphot'
+    datatype: double
+    description: Photometric redshift from the 68 per cent confidence region. Based
+      on the zpeak output from EAZY (Brammer et al. 2008), where for the GOGREEN galaxies
+      a polynomial correction is applied to improve the correspondence with spectroscopy.
+    name: zphot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.zphot_l68'
+    datatype: double
+    description: Photometric redshift loweri uncertainty for zphot
+    name: zphot_l68
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.zphot_u68'
+    datatype: double
+    description: Photometric redshift upper uncertainty for zphot
+    name: zphot_u68
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.uminv'
+    datatype: double
+    description: U - V, Rest-frame colours between Johnson U and  V, as measured with
+      EAZY (Brammer et al. 2008). Small offsets, as described in van der Burg et al.
+      (2020), have been applied on a cluster-by-cluster basis to improve correspondence
+      with UltraVISTA. For the COSMOS galaxies the rest-frame colours are from the
+      UltraVISTA catalogue.
+    name: uminv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.vminj'
+    datatype: double
+    description: V - J, Rest-frame colours between Johnson V and J, as measured with
+      EAZY (Brammer et al. 2008). Small offsets, as described in van der Burg et al.
+      (2020), have been applied on a cluster-by-cluster basis to improve correspondence
+      with UltraVISTA. For the COSMOS galaxies the rest-frame colours are from the
+      UltraVISTA catalogue.
+    name: vminj
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.star'
+    datatype: double
+    description: Star/galaxy classification based on colours, as described in van
+      der Burg et al. (2020). Flag is 1 for a star, and 0 otherwise.
+    name: star
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.k_flag'
+    datatype: double
+    description: SExtractor flag in the K -band.
+    name: k_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.totmask'
+    datatype: double
+    description: Manual mask at position of detection, where objects are masked (totmask=
+      1) if they do not have an image in all available filters for that cluster. Only
+      sources with totmask=0 are included in this compilation catalogue. Photometry
+      for other sources must be obtained from the original catalogues.
+    name: totmask
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.mstellar'
+    datatype: double
+    description: Total stellar masses, measured with the FAST (Kriek et al. 2009)
+      code and assuming the best redshift for the object (spectroscopic or zphot).
+      These assume &tau;-model star formation histories, and are known to underestimate
+      the stellar mass obtained with a non-parametric star formation history, by up
+      to 0.3 dex (Leja et al. 2019). For objects in COSMOS and SXDF the stellar masses
+      are taken from their respective catalogues.
+    name: mstellar
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.u_tot'
+    datatype: double
+    description: Total fluxes in u filter.  See survey paper for derivation detail.
+    name: u_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.g_tot'
+    datatype: double
+    description: Total fluxes in g filter.  See survey paper for derivation detail
+    name: g_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.r_tot'
+    datatype: double
+    description: Total fluxes in g filter.  See survey paper for derivation detail
+    name: r_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.i_tot'
+    datatype: double
+    description: Total fluxes in i filter.  See survey paper for derivation detail
+    name: i_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.z_tot'
+    datatype: double
+    description: Total fluxes in z filter.  See survey paper for derivation detail
+    name: z_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.y_tot'
+    datatype: double
+    description: Total fluxes in y filter.  See survey paper for derivation detail
+    name: y_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.v_tot'
+    datatype: double
+    description: Total fluxes in v filter.  See survey paper for derivation detail
+    name: v_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.b_tot'
+    datatype: double
+    description: Total fluxes in b filter.  See survey paper for derivation detail
+    name: b_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.j_tot'
+    datatype: double
+    description: Total fluxes in j filter.  See survey paper for derivation detail
+    name: j_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.h_tot'
+    datatype: double
+    description: Total fluxes in h filter.  See survey paper for derivation detail
+    name: h_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.k_tot'
+    datatype: double
+    description: Total fluxes in k filter.  See survey paper for derivation detail
+    name: k_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ks_tot'
+    datatype: double
+    description: Total fluxes in ks filter.  See survey paper for derivation detail
+    name: ks_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.irac1_tot'
+    datatype: double
+    description: Total fluxes in irac1 filter.  See survey paper for derivation detail
+    name: irac1_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.irac2_tot'
+    datatype: double
+    description: Total fluxes in irac2 filter.  See survey paper for derivation detail
+    name: irac2_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.irac3_tot'
+    datatype: double
+    description: Total fluxes in irac3 filter.  See survey paper for derivation detail
+    name: irac3_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.irac4_tot'
+    datatype: double
+    description: Total fluxes in irac4 filter.  See survey paper for derivation detail
+    name: irac4_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia484_tot'
+    datatype: double
+    description: Total fluxes in ia484 filter.  See survey paper for derivation detail
+    name: ia484_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia527_tot'
+    datatype: double
+    description: Total fluxes in ia527 filter.  See survey paper for derivation detail
+    name: ia527_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia624_tot'
+    datatype: double
+    description: Total fluxes in ia624 filter.  See survey paper for derivation detail
+    name: ia624_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia679_tot'
+    datatype: double
+    description: Total fluxes in a679 filter.  See survey paper for derivation detail
+    name: ia679_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia738_tot'
+    datatype: double
+    description: Total fluxes in ia738 filter.  See survey paper for derivation detail
+    name: ia738_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ia767_tot'
+    datatype: double
+    description: Total fluxes in ia767 filter. See survey paper for derivation detail
+    name: ia767_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib427_tot'
+    datatype: double
+    description: Total fluxes in ib427 filter. See survey paper for derivation detail
+    name: ib427_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib464_tot'
+    datatype: double
+    description: Total fluxes in ib464 filter. See survey paper for derivation detail
+    name: ib464_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib505_tot'
+    datatype: double
+    description: Total fluxes in ib505 filter. See survey paper for derivation detail
+    name: ib505_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib574_tot'
+    datatype: double
+    description: Total fluxes in ib574 filter. See survey paper for derivation detail
+    name: ib574_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib709_tot'
+    datatype: double
+    description: Total fluxes in ib709 filter. See survey paper for derivation detail
+    name: ib709_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ib827_tot'
+    datatype: double
+    description: Total fluxes in ib827 filter. See survey paper for derivation detail
+    name: ib827_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.fuv_tot'
+    datatype: double
+    description: Total fluxes in fuv filter. See survey paper for derivation detail
+    name: fuv_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.nuv_tot'
+    datatype: double
+    description: Total fluxes in nuv filter. See survey paper for derivation detail
+    name: nuv_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.mips24_tot'
+    datatype: double
+    description: Total fluxes in mips24 filter. See survey paper for derivation detail
+    name: mips24_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eu_tot'
+    datatype: double
+    description: Total fluxes in eu filter. See survey paper for derivation detail
+    name: eu_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eg_tot'
+    datatype: double
+    description: Total fluxes in eg filter. See survey paper for derivation detail
+    name: eg_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.er_tot'
+    datatype: double
+    description: Total fluxes in er filter. See survey paper for derivation detail
+    name: er_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ei_tot'
+    datatype: double
+    description: Total fluxes in ei filter. See survey paper for derivation detail
+    name: ei_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ez_tot'
+    datatype: double
+    description: Total fluxes in ez filter. See survey paper for derivation detail
+    name: ez_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ey_tot'
+    datatype: double
+    description: Total fluxes in ey filter. See survey paper for derivation detail
+    name: ey_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ev_tot'
+    datatype: double
+    description: Total fluxes in ev filter. See survey paper for derivation detail
+    name: ev_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eb_tot'
+    datatype: double
+    description: Total fluxes in eb filter. See survey paper for derivation detail
+    name: eb_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ej_tot'
+    datatype: double
+    description: Total fluxes in ej filter. See survey paper for derivation detail
+    name: ej_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eh_tot'
+    datatype: double
+    description: Total fluxes in eh filter. See survey paper for derivation detail
+    name: eh_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ek_tot'
+    datatype: double
+    description: Total fluxes in ek filter. See survey paper for derivation detail
+    name: ek_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eks_tot'
+    datatype: double
+    description: Total fluxes in eks filter. See survey paper for derivation detail
+    name: eks_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eirac1_tot'
+    datatype: double
+    description: Total fluxes in eirac1 filter. See survey paper for derivation detail
+    name: eirac1_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eirac2_tot'
+    datatype: double
+    description: Total fluxes in eirac2 filter. See survey paper for derivation detail
+    name: eirac2_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eirac3_tot'
+    datatype: double
+    description: Total fluxes in eirac3 filter. See survey paper for derivation detail
+    name: eirac3_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eirac4_tot'
+    datatype: double
+    description: Total fluxes in eirac4 filter. See survey paper for derivation detail
+    name: eirac4_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia484_tot'
+    datatype: double
+    description: Total fluxes in eia484 filter. See survey paper for derivation detail
+    name: eia484_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia527_tot'
+    datatype: double
+    description: Total fluxes in eia527 filter. See survey paper for derivation detail
+    name: eia527_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia624_tot'
+    datatype: double
+    description: Total fluxes in eia624 filter. See survey paper for derivation detail
+    name: eia624_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia679_tot'
+    datatype: double
+    description: Total fluxes in eia679 filter. See survey paper for derivation detail
+    name: eia679_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia738_tot'
+    datatype: double
+    description: Total fluxes in eia738 filter. See survey paper for derivation detail
+    name: eia738_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eia767_tot'
+    datatype: double
+    description: Total fluxes in eia767 filter. See survey paper for derivation detail
+    name: eia767_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib427_tot'
+    datatype: double
+    description: Total fluxes in eib427 filter. See survey paper for derivation detail
+    name: eib427_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib464_tot'
+    datatype: double
+    description: Total fluxes in eib464 filter. See survey paper for derivation detail
+    name: eib464_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib505_tot'
+    datatype: double
+    description: Total fluxes in eib505 filter. See survey paper for derivation detail
+    name: eib505_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib574_tot'
+    datatype: double
+    description: Total fluxes in eib574 filter. See survey paper for derivation detail
+    name: eib574_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib709_tot'
+    datatype: double
+    description: Total fluxes in eib709 filter. See survey paper for derivation detail
+    name: eib709_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.eib827_tot'
+    datatype: double
+    description: Total fluxes in eib827 filter. See survey paper for derivation detail
+    name: eib827_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.efuv_tot'
+    datatype: double
+    description: Total fluxes in efuv filter. See survey paper for derivation detail
+    name: efuv_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.enuv_tot'
+    datatype: double
+    description: Total fluxes in enuv filter. See survey paper for derivation detail
+    name: enuv_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.emips24_tot'
+    datatype: double
+    description: Total fluxes in emips24 filter. See survey paper for derivation detail
+    name: emips24_tot
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.photo.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: selected photometric data for each cluster system in the GCLASS, GOGREEN
+    samples, COMOS UltraVISTA, and SXDF SPLASH fields
+  indexes: []
+  name: photo
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#gogreen_dr1.redshift'
+  columns:
+  - '@id': '#gogreen_dr1.redshift.cluster'
+    datatype: string
+    description: Short name of each cluster; matches name in cluster table
+    length: 10
+    name: cluster
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.specid'
+    datatype: int
+    description: 'A unique identification number. The first digit identifies the origin
+      of the spectrum: 1 for GOGREEN and 2 for GCLASS. The next two digits correspond
+      to the cluster_id identifier in the Cluster catalogue, that specify the photometric
+      field. The remaining digits are the galaxy ID (only unique for a given field
+      and source).'
+    name: specid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ra'
+    datatype: float
+    description: Target RA coordinates in J2000 degrees. For GOGREEN, these coordinates
+      correspond to the z&prime; image coordinates used for mask design. These have
+      been transformed to align with the K<sub>s</sub> images; however positions will
+      not match exactly with coordinates in the photometric catalogues.
+    ivoa:ucd: pos.eq.ra
+    name: ra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.dec'
+    datatype: float
+    description: Target Dec coordinate in J2000 degrees. For GOGREEN, these coordinates
+      correspond to the z&prime; image coordinates used for mask design. These have
+      been transformed to align with the K<sub>s</sub> images; however positions will
+      not match exactly with coordinates in the photometric catalogues.
+    ivoa:ucd: pos.eq.dec
+    name: dec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.objclass'
+    datatype: short
+    description: This has a value of 1 for GOGREEN primary targets, i.e. those that
+      match our photometric selection criteria.  A value of 3 corresponds to a GOGREEN
+      &quot;mask filler&quot; object, and 4 identifies a GCLASS spectrum.  (OBJClass=2
+      was reserved for stellar sources used for telluric correction, and these are
+      not included in the catalogue).
+    name: objclass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.redshift'
+    datatype: float
+    description: The redshift measured from the spectrum
+    name: redshift
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.redshift_quality'
+    datatype: short
+    description: The redshift quality flag. Both quality 3 and 4 are secure galaxy
+      redshifts and can be used for scientific analysis; the difference between them
+      is subjective and not rigorously defined. Quality 2 is a &quot;best guess&quot;
+      but should be used with caution; this includes cases where there is plausible
+      consistency with the photometric redshift, but no clearly identifiable spectral
+      features. Quality 1 means no redshift is available.
+    name: redshift_quality
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.extver'
+    datatype: short
+    description: This is the science extension number in the fits files with the 1D
+      and 2D spectra (see &sect;6.5 of the survey paper).
+    name: extver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.spec_flag'
+    datatype: float
+    description: 'Integer that identifies spectra with problems that might compromise
+      the ability to measure a redshift or line indices of a spectrum. Flags are assigned
+      for the following: 1: Mild slit contamination or artefacts that should not strongly
+      affect measurements 2: Non-galaxy-like spectrum and/or image 4: Significant
+      slit contamination from neighbouring objects. Redshift & features may be compromised.
+      8: Poor telluric correction or sky subtraction 16: Major artefacts or large
+      masked regions that render the spectrum nearly useless.  Flags can be added.
+      So, for example, a flag of 12 means there is both contamination from neighbouring
+      objects, and poor sky subtraction'
+    name: spec_flag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.snr_8500_var'
+    datatype: float
+    description: The signal-to-noise ratio per pixel, measured in the range 7500 <
+      &lambda; < 9500&#8491;. The noise estimate is taken from the VAR array associated
+      with the spectrum.
+    name: snr_8500_var
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.snr_8500_rms'
+    datatype: float
+    description: The signal-to-noise ratio per pixel, measured in the range 7500 <
+      &lambda; < 9500&#8491;. The noise estimate is taken from the rms in the science
+      spectrum over the same range.
+    name: snr_8500_rms
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.d4000'
+    datatype: float
+    description: The D<sub>n</sub> 4000 index as defined in Balogh et al. (1999).
+      See &sect; 4.2.2 in survey paper.
+    name: d4000
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ed4000'
+    datatype: float
+    description: The D<sub>n</sub> 4000 index uncertainty
+    name: ed4000
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ewoii'
+    datatype: float
+    description: The equivalent width of the [Oii] emission line in &#8491;, using
+      the line index definitions in Balogh et al. (1999). Positive values represent
+      emission. See &sect; 4.2.2
+    name: ewoii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.eewoii'
+    datatype: float
+    description: Uncertainty of ewoii
+    name: eewoii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ewhdelta'
+    datatype: float
+    description: The equivalent width of the H &delta; absorption line, in &#8491;,
+      using the line index definitions in Balogh et al. (1999). Positive values represent
+      absorption. See &sect; 4.2.2 in survey paper
+    name: ewhdelta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.eewhdelta'
+    datatype: float
+    description: Uncertainty of ewhdelta
+    name: eewhdelta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ewoii_model'
+    datatype: float
+    description: The equivalent width of the [Oii] emission line, in &#8491, calculated
+      from the Gaussian fitting model described in Old et al. (2020).
+    name: ewoii_model
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.eewoii_model'
+    datatype: float
+    description: Uncertainty of ewoii_model
+    name: eewoii_model
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.f_oii'
+    datatype: float
+    description: The integrated flux of the [Oii] emission line, in ergs/s/cm<super>2</super>/&#8491,
+      calculated from the Gaussian fitting model described in Old et al. (2020).
+    name: f_oii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ef_oii'
+    datatype: float
+    description: Uncertainty of f_oii
+    name: ef_oii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.sfr_oii'
+    datatype: float
+    description: The star formation rate in solar masses per year, estimated from
+      the [Oii] emission line flux and the stellar mass, using the calibration of
+      Gilbank et al. (2010).
+    name: sfr_oii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.esfr_oii'
+    datatype: float
+    description: Uncertainty of sfr_oii
+    name: esfr_oii
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.delta_bic'
+    datatype: float
+    description: The difference in Bayesian Information Criterion used to identify
+      the presence of [Oii] emission (&Delta;BIC > 10) or its absence (&Delta;BIC
+      < -10). See Old et al. (2020) for more details.
+    name: delta_bic
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.member_clean'
+    datatype: float
+    description: Applicable only to the 11 SPT and SpARCS clusters in GOGREEN, this
+      indicates likely cluster membership based on the clean algorithm of Mamon et
+      al. (2013). A value of 1 indicates a member, 0 is a non-member, and -1 indicates
+      membership could not be determined.
+    name: member_clean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.member_em'
+    datatype: float
+    description: Applicable only to the 11 SPT and SpARCS clusters in GOGREEN, this
+      indicates likely cluster membership based on the C.L.U.M.P.S. algorithm of Munari
+      et al. (in prep). A value of 1 indicates a member, 0 is a non-member, and -1
+      indicates membership could not be determined.
+    name: member_em
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.member'
+    datatype: float
+    description: A flag that identifies likely cluster members (1) or nonmembers (0).
+      A value of -1 means membership could not be determined. For SpARCS and SPT clusters
+      in GOGREEN, this is the maximum of the member_Clean and member_EM flags. For
+      the five GCLASS clusters we use the membership given in Muzzin et al. (2012).  Finally,
+      for the systems in COSMOS and SXDF we define members as those within 1 Mpc and
+      2.5&sigma; of the centre, as described in &sect; 4.2.3. of the survey paper
+    name: member
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gogreen_dr1.redshift.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: contains an entry for every unique object with a GOGREEN or GCLASS
+    spectrum
+  indexes: []
+  name: redshift
+  primaryKey: ''
+  tap:table_index: 3
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

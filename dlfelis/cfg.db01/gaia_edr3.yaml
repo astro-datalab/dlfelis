@@ -1,0 +1,1163 @@
+---
+'@id': '#gaia_edr3'
+description: The early installment of the third Gaia data release, Gaia EDR3, encompasses
+  astrometry and photometry, complemented with radial velocities copied from Gaia
+  DR2 after removal of a small number of spurious entries.
+name: gaia_edr3
+tables:
+- '@id': '#gaia_edr3.gaia_source'
+  columns:
+  - '@id': '#gaia_edr3.gaia_source.solution_id'
+    datatype: long
+    description: Solution Identifier. To decode a given solution ID visit https://gaia.esac.esa.int/decoder/solnDecoder.jsp
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.source_id'
+    datatype: long
+    description: Unique source identifier (unique within a particular Data Release)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra'
+    datatype: double
+    description: Barycentric right ascension &alpha; of the source in ICRS at the
+      reference epoch ref_epoch
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_error'
+    datatype: double
+    description: Standard error of the right ascension of the source in ICRS at the
+      reference epoch ref_epoch.
+    ivoa:ucd: stat.stdev
+    name: ra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec'
+    datatype: double
+    description: Declination Angle[deg]
+    ivoa:ucd: pos.eq.dec
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec_error'
+    datatype: double
+    description: Standard error of declination Angle[mas]
+    ivoa:ucd: stat.stdev
+    name: dec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax'
+    datatype: double
+    description: Parallax Angle[mas]
+    name: parallax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax_error'
+    datatype: double
+    description: Standard error of Parallax Angle[mas]
+    name: parallax_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax_over_error'
+    datatype: double
+    description: Standard error of parallax Angle[mas]
+    name: parallax_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pm'
+    datatype: double
+    description: Total proper motion Angular Velocity[mas/year]
+    name: pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmra'
+    datatype: double
+    description: Proper motion in right ascension direction Angular Velocity[mas/year]
+    ivoa:ucd: pos.pm
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmra_error'
+    datatype: double
+    description: Standard error of proper motion in right ascension direction Angular
+      Velocity[mas/year]
+    name: pmra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmdec'
+    datatype: double
+    description: Proper motion in declination direction Angular Velocity[mas/year]
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmdec_error'
+    datatype: double
+    description: Standard error of proper motion in declination direction Angular
+      Velocity[mas/year]
+    name: pmdec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_dec_corr'
+    datatype: double
+    description: Correlation between right ascension and declination [-1,+1]
+    name: ra_dec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_parallax_corr'
+    datatype: double
+    description: Correlation between right ascension and parallax [-1,+1]
+    name: ra_parallax_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_pmra_corr'
+    datatype: double
+    description: Correlation between right ascension and proper motion in right ascension
+      [-1,+1]
+    name: ra_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_pmdec_corr'
+    datatype: double
+    description: Correlation between right ascension and proper motion in declination
+      [-1,+1]
+    name: ra_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec_parallax_corr'
+    datatype: double
+    description: Correlation between declination and parallax [-1,+1]
+    name: dec_parallax_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec_pmra_corr'
+    datatype: double
+    description: Correlation between declination and proper motion in right ascension
+      [-1,+1]
+    name: dec_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec_pmdec_corr'
+    datatype: double
+    description: Correlation between declination and proper motion in declination
+      [-1,+1]
+    name: dec_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax_pmra_corr'
+    datatype: double
+    description: Correlation between parallax and proper motion in right ascension
+      [-1,+1]
+    name: parallax_pmra_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax_pmdec_corr'
+    datatype: double
+    description: Correlation between parallax and proper motion in declination [-1,+1]
+    name: parallax_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmra_pmdec_corr'
+    datatype: double
+    description: Correlation between proper motion in right ascension and proper motion
+      in declination [-1,+1]
+    name: pmra_pmdec_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_gof_al'
+    datatype: double
+    description: Goodness of fit statistic of model wrt along-scan observations Values
+      exceeding, say, +3 thus indicate a bad fit to the data.
+    name: astrometric_gof_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_chi2_al'
+    datatype: double
+    description: AL chi-square value Astrometric goodness-of-fit (&chi;<sup>2</sup>)
+    name: astrometric_chi2_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_excess_noise'
+    datatype: double
+    description: Excess noise of the source Angle[mas]
+    name: astrometric_excess_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_excess_noise_sig'
+    datatype: double
+    description: Significance of excess noise
+    name: astrometric_excess_noise_sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.nu_eff_used_in_astrometry'
+    datatype: double
+    description: Effective wavenumber of the source used in the astrometric solution
+      Misc[&mu;<sup>-1</sup>]
+    name: nu_eff_used_in_astrometry
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pseudocolour'
+    datatype: double
+    description: Astrometrically estimated pseudocolour of the source Misc[&mu;<sup>-1</sup>]
+    name: pseudocolour
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pseudocolour_error'
+    datatype: double
+    description: Standard error of the pseudocolour of the source Misc[&mu;<sup>-1</sup>]
+    name: pseudocolour_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ra_pseudocolour_corr'
+    datatype: double
+    description: Correlation between right ascension and pseudocolour [-1,+1]
+    name: ra_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dec_pseudocolour_corr'
+    datatype: double
+    description: Correlation between declination and pseudocolour [-1,+1]
+    name: dec_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.parallax_pseudocolour_corr'
+    datatype: double
+    description: Correlation between parallax and pseudocolour [-1,+1]
+    name: parallax_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmra_pseudocolour_corr'
+    datatype: double
+    description: Correlation between proper motion in right asension and pseudocolour
+      [-1,+1]
+    name: pmra_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.pmdec_pseudocolour_corr'
+    datatype: double
+    description: Correlation between proper motion in declination and pseudocolour
+      [-1,+1]
+    name: pmdec_pseudocolour_corr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_sigma5d_max'
+    datatype: double
+    description: Matched FOV transits used in the AGIS solution
+    ivoa:ucd: meta.number
+    name: astrometric_sigma5d_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ipd_gof_harmonic_amplitude'
+    datatype: double
+    description: Amplitude of the IPD GoF versus position angle of scan
+    name: ipd_gof_harmonic_amplitude
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ipd_gof_harmonic_phase'
+    datatype: double
+    description: Phase of the IPD GoF versus position angle of scan Angle[deg]
+    name: ipd_gof_harmonic_phase
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ruwe'
+    datatype: double
+    description: Renormalised unit weight error
+    name: ruwe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_strength_k1'
+    datatype: double
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_strength_k2'
+    datatype: double
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_strength_k3'
+    datatype: double
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_strength_k4'
+    datatype: double
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_mean_k1'
+    datatype: double
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_mean_k2'
+    datatype: double
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_mean_k3'
+    datatype: double
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.scan_direction_mean_k4'
+    datatype: double
+    description: Mean position angle of scan directions across the source
+    name: scan_direction_mean_k4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_g_mean_flux'
+    datatype: double
+    description: G-band mean flux Flux[e-/s]
+    name: phot_g_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_g_mean_flux_error'
+    datatype: double
+    description: Error on G-band mean flux Flux[e-/s]
+    name: phot_g_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_g_mean_flux_over_error'
+    datatype: double
+    description: G-band mean flux divided by its error
+    name: phot_g_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_g_mean_mag'
+    datatype: double
+    description: G-band mean magnitude Magnitude[mag]
+    name: phot_g_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_mean_flux'
+    datatype: double
+    description: Integrated BP mean flux Flux[e-/s]
+    name: phot_bp_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_mean_flux_error'
+    datatype: double
+    description: Error on the integrated BP mean flux Flux[e-/s]
+    name: phot_bp_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_mean_flux_over_error'
+    datatype: double
+    description: Integrated BP mean flux divided by its error
+    name: phot_bp_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_mean_mag'
+    datatype: double
+    description: Integrated BP mean magnitude Magnitude[mag]
+    name: phot_bp_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_mean_flux'
+    datatype: double
+    description: Integrated RP mean flux Flux[e-/s]
+    name: phot_rp_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_mean_flux_error'
+    datatype: double
+    description: Error on the integrated RP mean flux Flux[e-/s]
+    name: phot_rp_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_mean_flux_over_error'
+    datatype: double
+    description: Integrated RP mean flux divided by its error
+    name: phot_rp_mean_flux_over_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_mean_mag'
+    datatype: double
+    description: Integrated RP mean magnitude Magnitude[mag]
+    name: phot_rp_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_rp_excess_factor'
+    datatype: double
+    description: BP/RP excess factor
+    ivoa:ucd: phot.color.excess
+    name: phot_bp_rp_excess_factor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.bp_rp'
+    datatype: double
+    description: BP - RP colour Magnitude[mag]
+    ivoa:ucd: phot.color
+    name: bp_rp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.bp_g'
+    datatype: double
+    description: BP - G colour Magnitude[mag]
+    ivoa:ucd: phot.color
+    name: bp_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.g_rp'
+    datatype: double
+    description: G - RP colour Magnitude[mag]
+    ivoa:ucd: phot.color
+    name: g_rp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_radial_velocity'
+    datatype: double
+    description: Radial velocity from Gaia DR2 [km/s]
+    name: dr2_radial_velocity
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_radial_velocity_error'
+    datatype: double
+    description: Radial velocity error from Gaia DR2 Velocity[km/s]
+    name: dr2_radial_velocity_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.l'
+    datatype: double
+    description: Galactic longitude Angle[deg]
+    ivoa:ucd: pos.galactic.lon
+    name: l
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.b'
+    datatype: double
+    description: Galactic latitude Angle[deg]
+    ivoa:ucd: pos.galactic.lat
+    name: b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ecl_lon'
+    datatype: double
+    description: Ecliptic longitude Angle[deg]
+    ivoa:ucd: pos.ecliptic.lon
+    name: ecl_lon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ecl_lat'
+    datatype: double
+    description: Ecliptic latitude Angle[deg]
+    ivoa:ucd: pos.ecliptic.lat
+    name: ecl_lat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.glon'
+    datatype: double
+    description: Galactic longitude autogenerated Data Lab
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.glat'
+    datatype: double
+    description: Galactic lattitude autogenerated Data Lab
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.elon'
+    datatype: double
+    description: Ecliptic longitude autogenerated Data Lab
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.elat'
+    datatype: double
+    description: Ecliptic lattitude autogenerated Data Lab
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.random_index'
+    datatype: int
+    description: Random index used to select subsets
+    name: random_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ref_epoch'
+    datatype: float
+    description: Reference epoch Time[Julian Years]
+    name: ref_epoch
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_teff'
+    datatype: float
+    description: Teff of the template used to compute radial velocity in Gaia DR2
+      Temperature[K]
+    name: dr2_rv_template_teff
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_logg'
+    datatype: float
+    description: logg of the template used to compute radial velocity in Gaia DR2
+      GravitySurface[log cgs]
+    name: dr2_rv_template_logg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_rv_template_fe_h'
+    datatype: float
+    description: Fe/H of the template used to compute radial velocity in Gaia DR2
+      Abundances[dex]
+    name: dr2_rv_template_fe_h
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_n_obs_al'
+    datatype: short
+    description: ' Total number of observations AL'
+    ivoa:ucd: meta.number
+    name: astrometric_n_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_n_obs_ac'
+    datatype: short
+    description: Total number of observations AC
+    ivoa:ucd: meta.number
+    name: astrometric_n_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_n_good_obs_al'
+    datatype: short
+    description: Number of good observations AL
+    ivoa:ucd: meta.number
+    name: astrometric_n_good_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_n_bad_obs_al'
+    datatype: short
+    description: Number of bad observations AL
+    ivoa:ucd: meta.number
+    name: astrometric_n_bad_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_params_solved'
+    datatype: short
+    description: Which parameters have been solved for [byte]
+    name: astrometric_params_solved
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_primary_flag'
+    datatype: short
+    description: Primary or secondary
+    name: astrometric_primary_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.astrometric_matched_transits'
+    datatype: short
+    description: Matched FOV transits used in the AGIS solution
+    name: astrometric_matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.visibility_periods_used'
+    datatype: short
+    description: Number of visibility periods used in Astrometric solution
+    name: visibility_periods_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.matched_transits'
+    datatype: short
+    description: 'The number of transits matched to this source '
+    name: matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.new_matched_transits'
+    datatype: short
+    description: The number of transits newly incorporated into an existing source
+      in the current cycle
+    name: new_matched_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.matched_transits_removed'
+    datatype: short
+    description: The number of transits removed from an existing source in the current
+      cycle
+    name: matched_transits_removed
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ipd_frac_multi_peak'
+    datatype: short
+    description: Percent of successful-IPD windows with more than one peak
+    name: ipd_frac_multi_peak
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.ipd_frac_odd_win'
+    datatype: short
+    description: Percent of transits with truncated windows or multiple gate
+    name: ipd_frac_odd_win
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.duplicated_source'
+    datatype: short
+    description: Source with multiple source identifiers
+    name: duplicated_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_g_n_obs'
+    datatype: short
+    description: Number of observations contributing to G photometry
+    ivoa:ucd: meta.number
+    name: phot_g_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_n_obs'
+    datatype: short
+    description: Number of observations contributing to BP photometry
+    ivoa:ucd: meta.number
+    name: phot_bp_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_n_obs'
+    datatype: short
+    description: Number of observations contributing to RP photometry
+    ivoa:ucd: meta.number
+    name: phot_rp_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_n_contaminated_transits'
+    datatype: short
+    description: Number of BP contaminated transits
+    ivoa:ucd: meta.number
+    name: phot_bp_n_contaminated_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_bp_n_blended_transits'
+    datatype: short
+    description: Number of BP blended transits
+    ivoa:ucd: meta.number
+    name: phot_bp_n_blended_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_n_contaminated_transits'
+    datatype: short
+    description: Number of RP contaminated transits
+    ivoa:ucd: meta.number
+    name: phot_rp_n_contaminated_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_rp_n_blended_transits'
+    datatype: short
+    description: Number of RP blended transits
+    ivoa:ucd: meta.number
+    name: phot_rp_n_blended_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.phot_proc_mode'
+    datatype: short
+    description: Photometry processing mode
+    name: phot_proc_mode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.dr2_rv_nb_transits'
+    datatype: short
+    description: Number of transits used to compute radial velocity in Gaia DR2
+    ivoa:ucd: meta.number
+    name: dr2_rv_nb_transits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.gaia_source.designation'
+    datatype: string
+    description: Unique source designation (unique across all Data Releases)
+    length: 29
+    name: designation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: 'This table has an entry for every Gaia observed source as listed in
+    the Main Database accumulating catalogue version from which the catalogue release
+    has been generated. It contains the basic source parameters, that is only final
+    data (no epoch data) and no spectra (neither final nor epoch). Documentation:
+    https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html'
+  indexes:
+  - '@id': '#gaia_source_source_id_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.source_id'
+    name: gaia_source_source_id_idx
+  - '@id': '#gaia_source_ra_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.ra'
+    name: gaia_source_ra_idx
+  - '@id': '#gaia_source_dec_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.dec'
+    name: gaia_source_dec_idx
+  - '@id': '#gaia_source_parallax_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.parallax'
+    name: gaia_source_parallax_idx
+  - '@id': '#gaia_source_pm_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.pm'
+    name: gaia_source_pm_idx
+  - '@id': '#gaia_source_pmra_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.pmra'
+    name: gaia_source_pmra_idx
+  - '@id': '#gaia_source_pmdec_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.pmdec'
+    name: gaia_source_pmdec_idx
+  - '@id': '#gaia_source_pseudocolour_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.pseudocolour'
+    name: gaia_source_pseudocolour_idx
+  - '@id': '#gaia_source_phot_g_mean_flux_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_g_mean_flux'
+    name: gaia_source_phot_g_mean_flux_idx
+  - '@id': '#gaia_source_phot_g_mean_mag_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_g_mean_mag'
+    name: gaia_source_phot_g_mean_mag_idx
+  - '@id': '#gaia_source_phot_bp_mean_flux_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_bp_mean_flux'
+    name: gaia_source_phot_bp_mean_flux_idx
+  - '@id': '#gaia_source_phot_bp_mean_mag_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_bp_mean_mag'
+    name: gaia_source_phot_bp_mean_mag_idx
+  - '@id': '#gaia_source_phot_rp_mean_flux_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_rp_mean_flux'
+    name: gaia_source_phot_rp_mean_flux_idx
+  - '@id': '#gaia_source_phot_rp_mean_mag_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_rp_mean_mag'
+    name: gaia_source_phot_rp_mean_mag_idx
+  - '@id': '#gaia_source_bp_rp_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.bp_rp'
+    name: gaia_source_bp_rp_idx
+  - '@id': '#gaia_source_bp_g_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.bp_g'
+    name: gaia_source_bp_g_idx
+  - '@id': '#gaia_source_g_rp_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.g_rp'
+    name: gaia_source_g_rp_idx
+  - '@id': '#gaia_source_glon_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.glon'
+    name: gaia_source_glon_idx
+  - '@id': '#gaia_source_glat_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.glat'
+    name: gaia_source_glat_idx
+  - '@id': '#gaia_source_elon_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.elon'
+    name: gaia_source_elon_idx
+  - '@id': '#gaia_source_elat_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.elat'
+    name: gaia_source_elat_idx
+  - '@id': '#gaia_source_random_index_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.random_index'
+    name: gaia_source_random_index_idx
+  - '@id': '#gaia_source_ring256_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.ring256'
+    name: gaia_source_ring256_idx
+  - '@id': '#gaia_source_nest4096_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.nest4096'
+    name: gaia_source_nest4096_idx
+  - '@id': '#gaia_source_random_id_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.random_id'
+    name: gaia_source_random_id_idx
+  - '@id': '#gaia_source_phot_g_n_obs_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_g_n_obs'
+    name: gaia_source_phot_g_n_obs_idx
+  - '@id': '#gaia_source_phot_bp_n_obs_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_bp_n_obs'
+    name: gaia_source_phot_bp_n_obs_idx
+  - '@id': '#gaia_source_phot_rp_n_obs_idx'
+    columns:
+    - '#gaia_edr3.gaia_source.phot_rp_n_obs'
+    name: gaia_source_phot_rp_n_obs_idx
+  name: gaia_source
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#gaia_edr3.agn_cross_id'
+  columns:
+  - '@id': '#gaia_edr3.agn_cross_id.source_name_in_catalogue'
+    datatype: char
+    description: Identifier in the external catalogue
+    ivoa:ucd: meta.id;meta.main
+    length: 1
+    name: source_name_in_catalogue
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.agn_cross_id.source_id'
+    datatype: long
+    description: Gaia source identifier
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.agn_cross_id.catalogue_name'
+    datatype: char
+    description: Name of the external catalogue
+    length: 1
+    name: catalogue_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.agn_cross_id.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: This table lists sources whose positions and proper motions define
+    the celestial reference frame of Gaia catalogue.
+  indexes: []
+  name: agn_cross_id
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#gaia_edr3.commanded_scan_law'
+  columns:
+  - '@id': '#gaia_edr3.commanded_scan_law.jd_time'
+    datatype: double
+    description: Time [Julian Date in TCB at Gaia - 2455197.5]
+    fits:tunit: day
+    name: jd_time
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.bjd_fov1'
+    datatype: double
+    description: Time [Julian Date in TCB at barycentre for FOV1 - 2455197.5]
+    fits:tunit: day
+    name: bjd_fov1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.bjd_fov2'
+    datatype: double
+    description: Time [Julian Date in TCB at barycentre for FOV2 - 2455197.5]
+    fits:tunit: day
+    name: bjd_fov2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.obmt_time'
+    datatype: long
+    description: Time at Gaia (OBMT)
+    name: obmt_time
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.ra_fov1'
+    datatype: double
+    description: Barycentric Right Ascension of Field of View 1 (preceding) in ICRS
+      at given time.
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra_fov1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.dec_fov1'
+    datatype: double
+    description: Barycentric Declination of Field of View 1 (preceding) in ICRS at
+      given time.
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec_fov1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.heal_pix_fov1'
+    datatype: int
+    description: Level 12 nested scheme HEALPix containing the Field of View 1 (preceding)
+      right ascension and declination.
+    name: heal_pix_fov1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.scan_angle_fov1'
+    datatype: double
+    description: Field of View 1 (preceding) scan angle.
+    fits:tunit: deg
+    name: scan_angle_fov1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.ra_fov2'
+    datatype: double
+    description: Barycentric Right Ascension of Field of View 2 (following) in ICRS
+      at given time.
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra_fov2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.dec_fov2'
+    datatype: double
+    description: Barycentric Declination of Field of View 2 (preceding) in ICRS at
+      given time.
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec_fov2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.heal_pix_fov2'
+    datatype: int
+    description: Level 12 nested scheme HEALPix containing the Field of View 2 (following)
+      right ascension and declination.
+    name: heal_pix_fov2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.scan_angle_fov2'
+    datatype: double
+    description: Field of View 2 (following) scan angle.
+    fits:tunit: deg
+    name: scan_angle_fov2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.solution_id'
+    datatype: long
+    description: Solution Identifier
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.commanded_scan_law.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: This table provides a representation of the Gaia scanning law over
+    the 34 month time period covered by the Gaia Data Release 3 (from 2014-07-25 10:31:26
+    to 2017-05-28 08:46:29), including the Ecliptic Pole Scanning at the begin of
+    the mission.
+  indexes: []
+  name: commanded_scan_law
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#gaia_edr3.frame_rotator_source'
+  columns:
+  - '@id': '#gaia_edr3.frame_rotator_source.source_id'
+    datatype: long
+    description: Gaia source identifier
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.frame_rotator_source.considered_for_reference_frame_orientation'
+    datatype: short
+    description: Considered for the reference frame orientation (boolean). True if
+      the source was a considered source for the reference frame orientation, false
+      otherwise.
+    name: considered_for_reference_frame_orientation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.frame_rotator_source.used_for_reference_frame_orientation'
+    datatype: short
+    description: Used for the reference frame orientation (boolean). True if the source
+      was effectively used for the reference frame orientation, false otherwise.
+    name: used_for_reference_frame_orientation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.frame_rotator_source.considered_for_reference_frame_spin'
+    datatype: short
+    description: Considered for the reference frame spin (boolean). True if the source
+      was a considered source for the reference frame spin determination, false otherwise.
+    name: considered_for_reference_frame_spin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.frame_rotator_source.used_for_reference_frame_spin'
+    datatype: short
+    description: Used for the reference frame spin (boolean). True if the source was
+      effectively used for the reference frame spin determination, false otherwise.
+    name: used_for_reference_frame_spin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_edr3.frame_rotator_source.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Sources used to compute the Gaia reference frame.
+  indexes: []
+  name: frame_rotator_source
+  primaryKey: ''
+  tap:table_index: 4
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

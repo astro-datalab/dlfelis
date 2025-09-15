@@ -1,0 +1,701 @@
+---
+'@id': '#usno'
+description: USNO Astrometry Catalogs
+name: usno
+tables:
+- '@id': '#usno.a2'
+  columns:
+  - '@id': '#usno.a2.id'
+    datatype: char
+    description: Original designation in USNO-A2 catalog
+    ivoa:ucd: meta.id;meta.main
+    length: 13
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.raj2000_'
+    datatype: char
+    description: Right Ascension (sexagesimal)
+    length: 12
+    name: raj2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.dej2000_'
+    datatype: char
+    description: Declination (sexagesimal)
+    length: 12
+    name: dej2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.actflag'
+    datatype: char
+    description: Does star belong to ACT
+    ivoa:ucd: meta.code
+    length: 1
+    name: actflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.mflag'
+    datatype: char
+    description: Magnitudes are probably wrong
+    ivoa:ucd: meta.code
+    length: 1
+    name: mflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.bmag'
+    datatype: float
+    description: Magnitude from blue plate
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.B
+    name: bmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.rmag'
+    datatype: float
+    description: Magnitude from red plate
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: rmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.epoch'
+    datatype: float
+    description: Mean epoch of position
+    fits:tunit: yr
+    ivoa:ucd: time.epoch
+    name: epoch
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.raj2000'
+    datatype: double
+    description: Right Ascension (ICRS) of blue/red plates
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: raj2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.dej2000'
+    datatype: double
+    description: Declination (ICRS) of blue/red plates
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dej2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with NSIDE=256 (~14
+      arcmin resolution)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.nest256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: nest256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.a2.htm9'
+    datatype: long
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: USNO-A2 catalog
+  indexes:
+  - '@id': '#a2_id_idx'
+    columns:
+    - '#usno.a2.id'
+    name: a2_id_idx
+  - '@id': '#a2_bmag_idx'
+    columns:
+    - '#usno.a2.bmag'
+    name: a2_bmag_idx
+  - '@id': '#a2_rmag_idx'
+    columns:
+    - '#usno.a2.rmag'
+    name: a2_rmag_idx
+  - '@id': '#a2_raj2000_idx'
+    columns:
+    - '#usno.a2.raj2000'
+    name: a2_raj2000_idx
+  - '@id': '#a2_dej2000_idx'
+    columns:
+    - '#usno.a2.dej2000'
+    name: a2_dej2000_idx
+  - '@id': '#a2_ring256_idx'
+    columns:
+    - '#usno.a2.ring256'
+    name: a2_ring256_idx
+  - '@id': '#a2_nest256_idx'
+    columns:
+    - '#usno.a2.nest256'
+    name: a2_nest256_idx
+  - '@id': '#a2_htm9_idx'
+    columns:
+    - '#usno.a2.htm9'
+    name: a2_htm9_idx
+  name: a2
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#usno.b1'
+  columns:
+  - '@id': '#usno.b1.id'
+    datatype: char
+    description: Object identifier
+    ivoa:ucd: meta.id;meta.main
+    length: 12
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.raj2000'
+    datatype: double
+    description: Right Ascension (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: raj2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.dej2000'
+    datatype: double
+    description: Declination (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dej2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.raj2000_'
+    datatype: char
+    description: Right Ascension (ICRS, sexagesimal)
+    length: 12
+    name: raj2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.dej2000_'
+    datatype: char
+    description: Declination (ICRS, sexagesimal)
+    length: 12
+    name: dej2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.e_raj2000'
+    datatype: int
+    description: Mean error on RAdeg*cos(DEdeg) at Epoch
+    fits:tunit: mas
+    ivoa:ucd: stat.error;pos.eq.ra
+    name: e_raj2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.e_dej2000'
+    datatype: int
+    description: Mean error on DEdeg at Epoch
+    fits:tunit: mas
+    ivoa:ucd: stat.error;pos.eq.dec
+    name: e_dej2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.epoch'
+    datatype: float
+    description: Mean epoch of observation
+    fits:tunit: yr
+    ivoa:ucd: time.epoch;obs
+    name: epoch
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.pmra'
+    datatype: int
+    description: Proper motion in RA (relative to YS4.0)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm;pos.eq.ra
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.pmde'
+    datatype: int
+    description: Proper motion in DE (relative to YS4.0)
+    fits:tunit: mas/yr
+    ivoa:ucd: pos.pm;pos.eq.dec
+    name: pmde
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.mupr'
+    datatype: short
+    description: Total proper motion probability
+    fits:tunit: '0.1'
+    ivoa:ucd: stat.probability
+    name: mupr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.e_pmra'
+    datatype: short
+    description: Mean error on pmRA
+    fits:tunit: mas
+    ivoa:ucd: stat.error;pos.pm;pos.eq.ra
+    name: e_pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.e_pmde'
+    datatype: short
+    description: Mean error on pmDE
+    fits:tunit: mas
+    ivoa:ucd: stat.error;pos.pm;pos.eq.dec
+    name: e_pmde
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.fit_ra'
+    datatype: short
+    description: Mean error on RA fit
+    fits:tunit: 100mas
+    ivoa:ucd: stat.error
+    name: fit_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.fit_de'
+    datatype: short
+    description: Mean error on DEC fit
+    fits:tunit: 100mas
+    ivoa:ucd: stat.error
+    name: fit_de
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.ndet'
+    datatype: short
+    description: Number of detections
+    ivoa:ucd: meta.number
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.flags'
+    datatype: char
+    description: Flags on object
+    ivoa:ucd: meta.code
+    length: 3
+    name: flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_mag'
+    datatype: float
+    description: First blue magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.B
+    name: b1_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_c'
+    datatype: short
+    description: Source of photometric calibration
+    ivoa:ucd: instr.calib
+    name: b1_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_s'
+    datatype: short
+    description: Survey number
+    ivoa:ucd: meta.id
+    name: b1_s
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_f'
+    datatype: short
+    description: Field number on survey
+    name: b1_f
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_sg'
+    datatype: short
+    description: Star-galaxy separation
+    ivoa:ucd: src.class.starGalaxy
+    name: b1_sg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_xi'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
+    name: b1_xi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b1_eta'
+    datatype: float
+    description: Residual in Y direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
+    name: b1_eta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_mag'
+    datatype: float
+    description: First red magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.R
+    name: r1_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_c'
+    datatype: short
+    description: Source of photometric calibration
+    ivoa:ucd: instr.calib
+    name: r1_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_s'
+    datatype: short
+    description: Survey number
+    ivoa:ucd: meta.id
+    name: r1_s
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_f'
+    datatype: short
+    description: Field number on survey
+    name: r1_f
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_sg'
+    datatype: short
+    description: Star-galaxy separation
+    ivoa:ucd: src.class.starGalaxy
+    name: r1_sg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_xi'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
+    name: r1_xi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r1_eta'
+    datatype: float
+    description: Residual in Y direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
+    name: r1_eta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_mag'
+    datatype: float
+    description: Second blue mag
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.B
+    name: b2_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_c'
+    datatype: short
+    description: Source of photometric calibration
+    ivoa:ucd: meta.code
+    name: b2_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_s'
+    datatype: short
+    description: Survey number
+    ivoa:ucd: meta.id
+    name: b2_s
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_f'
+    datatype: short
+    description: Field number in survey
+    name: b2_f
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_sg'
+    datatype: short
+    description: Star-galaxy separation
+    ivoa:ucd: src.class.starGalaxy
+    name: b2_sg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_xi'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    name: b2_xi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.b2_eta'
+    datatype: float
+    description: Residual in Y direction
+    fits:tunit: arcsec
+    name: b2_eta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_mag'
+    datatype: float
+    description: Second red mag
+    fits:tunit: mag
+    name: r2_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_c'
+    datatype: short
+    description: Source of photometric calibration
+    ivoa:ucd: meta.code
+    name: r2_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_s'
+    datatype: short
+    description: Survey number
+    ivoa:ucd: meta.id
+    name: r2_s
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_f'
+    datatype: short
+    description: Field number in survey
+    name: r2_f
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_sg'
+    datatype: short
+    description: Star-galaxy separation
+    ivoa:ucd: src.class.starGalaxy
+    name: r2_sg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_xi'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
+    name: r2_xi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.r2_eta'
+    datatype: float
+    description: Residual in Y direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
+    name: r2_eta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_mag'
+    datatype: float
+    description: Infrared (N) magnitude
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt.I
+    name: i_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_c'
+    datatype: short
+    description: Source of photometric calibration
+    ivoa:ucd: meta.code
+    name: i_c
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_s'
+    datatype: short
+    description: Survey number
+    ivoa:ucd: meta.id
+    name: i_s
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_f'
+    datatype: short
+    description: Field number in survey
+    name: i_f
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_sg'
+    datatype: short
+    description: Star-galaxy separation
+    ivoa:ucd: src.class.starGalaxy
+    name: i_sg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_xi'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.ra;arith.diff
+    name: i_xi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.i_eta'
+    datatype: float
+    description: Residual in X direction
+    fits:tunit: arcsec
+    ivoa:ucd: stat.fit.residual;pos.eq.dec;arith.diff
+    name: i_eta
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with NSIDE=256 (~14
+      arcmin resolution)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.nest256'
+    datatype: int
+    description: HEALPIX index (Nsides 256 => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: nest256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#usno.b1.htm9'
+    datatype: long
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: USNO-B1 catalog
+  indexes:
+  - '@id': '#b1_id_idx'
+    columns:
+    - '#usno.b1.id'
+    name: b1_id_idx
+  - '@id': '#b1_raj2000_idx'
+    columns:
+    - '#usno.b1.raj2000'
+    name: b1_raj2000_idx
+  - '@id': '#b1_dej2000_idx'
+    columns:
+    - '#usno.b1.dej2000'
+    name: b1_dej2000_idx
+  - '@id': '#b1_pmra_idx'
+    columns:
+    - '#usno.b1.pmra'
+    name: b1_pmra_idx
+  - '@id': '#b1_pmde_idx'
+    columns:
+    - '#usno.b1.pmde'
+    name: b1_pmde_idx
+  - '@id': '#b1_b1_mag_idx'
+    columns:
+    - '#usno.b1.b1_mag'
+    name: b1_b1_mag_idx
+  - '@id': '#b1_r1_mag_idx'
+    columns:
+    - '#usno.b1.r1_mag'
+    name: b1_r1_mag_idx
+  - '@id': '#b1_b2_mag_idx'
+    columns:
+    - '#usno.b1.b2_mag'
+    name: b1_b2_mag_idx
+  - '@id': '#b1_r2_mag_idx'
+    columns:
+    - '#usno.b1.r2_mag'
+    name: b1_r2_mag_idx
+  - '@id': '#b1_i_mag_idx'
+    columns:
+    - '#usno.b1.i_mag'
+    name: b1_i_mag_idx
+  - '@id': '#b1_ring256_idx'
+    columns:
+    - '#usno.b1.ring256'
+    name: b1_ring256_idx
+  - '@id': '#b1_nest256_idx'
+    columns:
+    - '#usno.b1.nest256'
+    name: b1_nest256_idx
+  - '@id': '#b1_htm9_idx'
+    columns:
+    - '#usno.b1.htm9'
+    name: b1_htm9_idx
+  name: b1
+  primaryKey: ''
+  tap:table_index: 2
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

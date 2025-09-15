@@ -1,0 +1,36 @@
+{
+  "name": "sparcl",
+  "@id": "#sparcl",
+  "description": "SPectra Analysis & Retrieveable Catalog Lab",
+  "tables":     [
+		  { "name" : "main",
+		    "@id" : "#main",
+		    "description" : "Main table for SPARCL metadata",
+                    "columns":
+                       [
+                          { "name": "elon",
+                            "@id": "#main.elon",
+                            "datatype": "double",
+                            "description": "Ecliptic longitude",
+                            "ivoa:ucd": "pos.ecliptic.lon",
+                            "ivoa:unit": "deg"
+                          },
+                          { "name": "elat",
+                            "@id": "#main.elat",
+                            "datatype": "double",
+                            "description": "Ecliptic latitude",
+                            "ivoa:ucd": "pos.ecliptic.lat",
+                            "ivoa:unit": "deg"
+                          },
+                          { "name": "ra",
+                            "@id": "#main.ra",
+                            "datatype": "double",
+                            "description": "Right ascension",
+                            "ivoa:ucd": "pos.eq.ra;meta.main",
+                            "ivoa:unit": "deg"
+                          }
+                       ]
+		   }
+                ]
+}
+

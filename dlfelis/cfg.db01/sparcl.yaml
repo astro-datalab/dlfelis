@@ -1,0 +1,289 @@
+---
+'@id': '#sparcl'
+description: SPectra Analysis & Retrieveable Catalog Lab
+name: sparcl
+tables:
+- '@id': '#sparcl.main'
+  columns:
+  - '@id': '#sparcl.main.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.redshift'
+    datatype: double
+    description: Observed redshift, or radial velocity in units of redshift
+    name: redshift
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.ra'
+    datatype: double
+    description: Right Ascension in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.dec'
+    datatype: double
+    description: Declination in degrees
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.wavemin'
+    datatype: double
+    description: Minimum value of wavelength coverage
+    fits:tunit: Angstrom
+    name: wavemin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.wavemax'
+    datatype: double
+    description: Maximum value of wavelength coverage
+    fits:tunit: Angstrom
+    name: wavemax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.redshift_err'
+    datatype: double
+    description: Uncertainty on the observed redshift, or radial velocity in units
+      of redshift
+    name: redshift_err
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.targetid'
+    datatype: long
+    description: Dataset-specific photometric target identifier
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.specid'
+    datatype: long
+    description: Dataset-specific spectrum identifier (may not be unique)
+    name: specid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.exptime'
+    datatype: float
+    description: Exposure time in seconds
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.random_id'
+    datatype: float
+    description: Random ID in the range 0 to 100 (decimal)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.htm9'
+    datatype: int
+    description: HTM Level-9 index
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.ring256'
+    datatype: int
+    description: Healpix ID with nside 256, ring schema
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.nest4096'
+    datatype: int
+    description: Healpix ID with nside 4096, nested schema
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.redshift_warning'
+    datatype: short
+    description: Bitmask with warning on redshift result
+    name: redshift_warning
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.specprimary'
+    datatype: short
+    description: Whether an entry is the primary spectrum for a given target object
+    name: specprimary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.datasetgroup'
+    datatype: text
+    description: Human-readable common name for a coherent set of spectra that go
+      together
+    name: datasetgroup
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.spectype'
+    datatype: text
+    description: Spectral type of the object (STAR, GALAXY, QSO)
+    name: spectype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.instrument'
+    datatype: text
+    description: Instrument used for observation
+    name: instrument
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.sparcl_id'
+    datatype: text
+    description: Universally Unique Identifier for spectrum in SPARCL
+    ivoa:ucd: meta.id;meta.main
+    name: sparcl_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.telescope'
+    datatype: text
+    description: Telescope used for the observation
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.site'
+    datatype: text
+    description: Site of observations
+    name: site
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.data_release'
+    datatype: text
+    description: Data release of a given record
+    name: data_release
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.dateobs_center'
+    datatype: text
+    description: Central value of the dateobs range
+    name: dateobs_center
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#sparcl.main.dateobs'
+    datatype: text
+    description: Range of observational dates for a given spectrum (single value for
+      a single date)
+    name: dateobs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Main table for SPARCL metadata
+  indexes:
+  - '@id': '#main_elon_idx'
+    columns:
+    - '#sparcl.main.elon'
+    name: main_elon_idx
+  - '@id': '#main_elat_idx'
+    columns:
+    - '#sparcl.main.elat'
+    name: main_elat_idx
+  - '@id': '#main_glon_idx'
+    columns:
+    - '#sparcl.main.glon'
+    name: main_glon_idx
+  - '@id': '#main_glat_idx'
+    columns:
+    - '#sparcl.main.glat'
+    name: main_glat_idx
+  - '@id': '#main_redshift_idx'
+    columns:
+    - '#sparcl.main.redshift'
+    name: main_redshift_idx
+  - '@id': '#main_ra_idx'
+    columns:
+    - '#sparcl.main.ra'
+    name: main_ra_idx
+  - '@id': '#main_dec_idx'
+    columns:
+    - '#sparcl.main.dec'
+    name: main_dec_idx
+  - '@id': '#main_targetid_idx'
+    columns:
+    - '#sparcl.main.targetid'
+    name: main_targetid_idx
+  - '@id': '#main_specid_idx'
+    columns:
+    - '#sparcl.main.specid'
+    name: main_specid_idx
+  - '@id': '#main_random_id_idx'
+    columns:
+    - '#sparcl.main.random_id'
+    name: main_random_id_idx
+  - '@id': '#main_htm9_idx'
+    columns:
+    - '#sparcl.main.htm9'
+    name: main_htm9_idx
+  - '@id': '#main_ring256_idx'
+    columns:
+    - '#sparcl.main.ring256'
+    name: main_ring256_idx
+  - '@id': '#main_nest4096_idx'
+    columns:
+    - '#sparcl.main.nest4096'
+    name: main_nest4096_idx
+  - '@id': '#main_sparcl_id_idx'
+    columns:
+    - '#sparcl.main.sparcl_id'
+    name: main_sparcl_id_idx
+  name: main
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

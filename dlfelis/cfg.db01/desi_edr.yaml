@@ -1,0 +1,4219 @@
+---
+'@id': '#desi_edr'
+description: Early Data Release from the Dark Energy Spectroscopic Instrument
+name: desi_edr
+tables:
+- '@id': '#desi_edr.exposure'
+  columns:
+  - '@id': '#desi_edr.exposure.mjd'
+    datatype: double
+    description: Modified Julian Date when shutter was opened for this exposure
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.exptime'
+    datatype: double
+    description: Length of time shutter was open
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_spec'
+    datatype: double
+    description: Effective exposure time for nominal conditions derived from the TSNR2
+      fits to the spectroscopy
+    fits:tunit: s
+    name: efftime_spec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.ebv'
+    datatype: double
+    description: Galactic extinction E(B-V) reddening from SFD98
+    fits:tunit: mag
+    name: ebv
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.seeing_etc'
+    datatype: double
+    description: Average FWHM atmospheric seeing during this exposure as measured
+      by ETC
+    fits:tunit: arcsec
+    name: seeing_etc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_lya'
+    datatype: double
+    description: LYA template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lya
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.lya_efftime_dark'
+    datatype: double
+    description: Effective exposure time for nominal dark conditions inferred for
+      LYA targets
+    fits:tunit: s
+    name: lya_efftime_dark
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.transparency_gfa'
+    datatype: double
+    description: Average airmass during this exposure as measured by GFA
+    name: transparency_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.seeing_gfa'
+    datatype: double
+    description: Average FWHM atmospheric seeing during this exposure as measured
+      by GFA
+    fits:tunit: arcsec
+    name: seeing_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiber_fracflux_gfa'
+    datatype: double
+    description: Fraction of the flux entering the fiber relative to nominal 1.1 arcsec
+      seeing using the PSF inferred from the GFAs
+    name: fiber_fracflux_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiber_fracflux_elg_gfa'
+    datatype: double
+    description: Fraction of the flux entering the fiber relative to nominal 1.1 arcsec
+      seeing using the PSF inferred from the GFAs for a source with an ELG profile
+      (0.45 arcsec exponential galaxy profile)
+    name: fiber_fracflux_elg_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiber_fracflux_bgs_gfa'
+    datatype: double
+    description: Fraction of the flux entering the fiber relative to nominal 1.1 arcsec
+      seeing using the PSF inferred from the GFAs for a source with a BGS profile
+      (deV profile half light radius of 1.5 arcsec)
+    name: fiber_fracflux_bgs_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiberfac_gfa'
+    datatype: double
+    description: Fraction of light entering a fiber relative to expectations for 1.1
+      arcsec seeing, transparency 1, for an object with a PSF profile, measured by
+      comparing the flux integrated over a 107 micron diameter circle on the GFA images
+      centered at the PlateMaker expectations for where stars should land
+    name: fiberfac_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiberfac_elg_gfa'
+    datatype: double
+    description: Same as FIBERFAC_GFA except for an ELG profile
+    name: fiberfac_elg_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.fiberfac_bgs_gfa'
+    datatype: double
+    description: Same as FIBERFAC_GFA except for a BGS profile
+    name: fiberfac_bgs_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.airmass_gfa'
+    datatype: double
+    description: Average airmass during this exposure as measured by GFA
+    name: airmass_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.sky_mag_ab_gfa'
+    datatype: double
+    description: Sky background in the GFA passband, measured from the GFA backgrounds
+    name: sky_mag_ab_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.sky_mag_g_spec'
+    datatype: double
+    description: Sky background measured in the spectroscopy integrated over the DECam
+      g passband, AB mags
+    fits:tunit: AB mag
+    name: sky_mag_g_spec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.sky_mag_r_spec'
+    datatype: double
+    description: Sky background measured in the spectroscopy integrated over the DECam
+      r passband, AB mags
+    fits:tunit: AB mag
+    name: sky_mag_r_spec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.sky_mag_z_spec'
+    datatype: double
+    description: Sky background measured in the spectroscopy integrated over the DECam
+      z passband, AB mags
+    fits:tunit: AB mag
+    name: sky_mag_z_spec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_gfa'
+    datatype: double
+    description: Effective exposure time for nominal conditions derived from exposure
+      GFA data
+    fits:tunit: s
+    name: efftime_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_dark_gfa'
+    datatype: double
+    description: Effective exposure time for nominal dark conditions inferred from
+      GFA data
+    fits:tunit: s
+    name: efftime_dark_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_bright_gfa'
+    datatype: double
+    description: Effective exposure time for nominal bright conditions inferred from
+      GFA data
+    fits:tunit: s
+    name: efftime_bright_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_backup_gfa'
+    datatype: double
+    description: Effective exposure time for nominal backup conditions inferred from
+      GFA data
+    fits:tunit: s
+    name: efftime_backup_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tilera'
+    datatype: double
+    description: RA of tile given in fiberassign file
+    fits:tunit: deg
+    name: tilera
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tiledec'
+    datatype: double
+    description: DEC of tile given in fiberassign file
+    fits:tunit: deg
+    name: tiledec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.mintfrac'
+    datatype: float
+    description: Minimum fraction of GOALTIME acceptable for considering a tile complete
+    name: mintfrac
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.airmass'
+    datatype: float
+    description: Average airmass during this exposure
+    name: airmass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.efftime_etc'
+    datatype: float
+    description: Effective exposure time for nominal conditions inferred from ETC
+      data
+    fits:tunit: s
+    name: efftime_etc
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_elg'
+    datatype: float
+    description: ELG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_elg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_qso'
+    datatype: float
+    description: QSO template (S/N)^2 summed over B, R, Z
+    name: tsnr2_qso
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_lrg'
+    datatype: float
+    description: LRG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lrg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_bgs'
+    datatype: float
+    description: BGS template (S/N)^2 summed over B, R, Z
+    name: tsnr2_bgs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_gpbdark'
+    datatype: float
+    description: GPBDARK template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbdark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_gpbbright'
+    datatype: float
+    description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tsnr2_gpbbackup'
+    datatype: float
+    description: GPBBACKUP template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbackup
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.lrg_efftime_dark'
+    datatype: float
+    description: Effective exposure time for nominal dark conditions inferred for
+      LRG targets
+    fits:tunit: s
+    name: lrg_efftime_dark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.elg_efftime_dark'
+    datatype: float
+    description: Effective exposure time for nominal dark conditions inferred for
+      ELG targets
+    fits:tunit: s
+    name: elg_efftime_dark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.bgs_efftime_bright'
+    datatype: float
+    description: Effective exposure time for nominal bright conditions inferred for
+      BGS targets
+    fits:tunit: s
+    name: bgs_efftime_bright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.gpb_efftime_dark'
+    datatype: float
+    description: Effective exposure time for nominal dark conditions inferred for
+      GPB targets
+    fits:tunit: s
+    name: gpb_efftime_dark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.gpb_efftime_bright'
+    datatype: float
+    description: Effective exposure time for nominal bright conditions inferred for
+      GPB targets
+    fits:tunit: s
+    name: gpb_efftime_bright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.gpb_efftime_backup'
+    datatype: float
+    description: Effective exposure time for nominal backup conditions inferred for
+      GPB targets
+    fits:tunit: s
+    name: gpb_efftime_backup
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.night'
+    datatype: int
+    description: Observing night
+    name: night
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.expid'
+    datatype: int
+    description: DESI Exposure ID number
+    ivoa:ucd: meta.id;meta.main
+    name: expid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.goaltime'
+    datatype: short
+    description: Goal for total effective exposure time for the tile
+    fits:tunit: s
+    name: goaltime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.date_obs'
+    datatype: string
+    description: '[UTC] Observation data and start time'
+    length: 29
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.faprgrm'
+    datatype: string
+    description: Fiberassign program name
+    length: 16
+    name: faprgrm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.faflavor'
+    datatype: string
+    description: Fiberassign flavor name
+    length: 19
+    name: faflavor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.program'
+    datatype: string
+    description: DESI program type - BRIGHT, DARK, or BACKUP
+    length: 6
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.goaltype'
+    datatype: string
+    description: The intended observing conditions for the tile
+    length: 6
+    name: goaltype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.exposure.survey'
+    datatype: string
+    description: Survey name
+    length: 7
+    name: survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Summary quantities for every DESI exposure
+  indexes:
+  - '@id': '#exposure_random_id_idx'
+    columns:
+    - '#desi_edr.exposure.random_id'
+    name: exposure_random_id_idx
+  - '@id': '#exposure_night_idx'
+    columns:
+    - '#desi_edr.exposure.night'
+    name: exposure_night_idx
+  - '@id': '#exposure_expid_idx'
+    columns:
+    - '#desi_edr.exposure.expid'
+    name: exposure_expid_idx
+  - '@id': '#exposure_tileid_idx'
+    columns:
+    - '#desi_edr.exposure.tileid'
+    name: exposure_tileid_idx
+  - '@id': '#exposure_program_idx'
+    columns:
+    - '#desi_edr.exposure.program'
+    name: exposure_program_idx
+  - '@id': '#exposure_survey_idx'
+    columns:
+    - '#desi_edr.exposure.survey'
+    name: exposure_survey_idx
+  name: exposure
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#desi_edr.fiberassign'
+  columns:
+  - '@id': '#desi_edr.fiberassign.target_ra'
+    datatype: double
+    description: Target right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: target_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.target_dec'
+    datatype: double
+    description: Target declination
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: target_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.id'
+    datatype: string
+    description: Arbitrary primary key composed from targetid, tileid, location
+    ivoa:ucd: meta.id;meta.main
+    length: 39
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fa_target'
+    datatype: long
+    description: Targeting bit internally used by fiberassign (linked with FA_TYPE)
+    name: fa_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.lambda_ref'
+    datatype: float
+    description: Wavelength at which targets should be centered on fibers
+    name: lambda_ref
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fiberassign_x'
+    datatype: float
+    description: Expected CS5 X on focal plane
+    name: fiberassign_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fiberassign_y'
+    datatype: float
+    description: Expected CS5 Y on focal plane
+    name: fiberassign_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.htm9'
+    datatype: int
+    description: Ninth level (~10 arcmin resolution) Hierarchical Triangular Mesh
+      index (Szalay et al. 2007)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with Nsides=256 (~14
+      arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.nest4096'
+    datatype: int
+    description: Nested-scheme HEALPix (Gorski et al. 2005) index with Nsides=4096
+      (~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.device_loc'
+    datatype: int
+    description: Device location on focal plane [0-523]
+    name: device_loc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.location'
+    datatype: int
+    description: Location on the focal plane PETAL_LOC*1000 + DEVICE_LOC
+    name: location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fiber'
+    datatype: int
+    description: Fiber ID on the CCDs [0-4999]
+    name: fiber
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fiberstatus'
+    datatype: int
+    description: Fiber status mask. 0=good
+    name: fiberstatus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.priority'
+    datatype: int
+    description: Target current priority
+    name: priority
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.petal_loc'
+    datatype: short
+    description: Petal location [0-9]
+    name: petal_loc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.fiberassign.fa_type'
+    datatype: short
+    description: Target type (science, standard, sky, safe, suppsky)
+    name: fa_type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Quantities obtained when a DESI target is assigned to a fiber
+  indexes:
+  - '@id': '#fiberassign_target_ra_idx'
+    columns:
+    - '#desi_edr.fiberassign.target_ra'
+    name: fiberassign_target_ra_idx
+  - '@id': '#fiberassign_target_dec_idx'
+    columns:
+    - '#desi_edr.fiberassign.target_dec'
+    name: fiberassign_target_dec_idx
+  - '@id': '#fiberassign_elon_idx'
+    columns:
+    - '#desi_edr.fiberassign.elon'
+    name: fiberassign_elon_idx
+  - '@id': '#fiberassign_elat_idx'
+    columns:
+    - '#desi_edr.fiberassign.elat'
+    name: fiberassign_elat_idx
+  - '@id': '#fiberassign_glon_idx'
+    columns:
+    - '#desi_edr.fiberassign.glon'
+    name: fiberassign_glon_idx
+  - '@id': '#fiberassign_glat_idx'
+    columns:
+    - '#desi_edr.fiberassign.glat'
+    name: fiberassign_glat_idx
+  - '@id': '#fiberassign_id_idx'
+    columns:
+    - '#desi_edr.fiberassign.id'
+    name: fiberassign_id_idx
+  - '@id': '#fiberassign_targetid_idx'
+    columns:
+    - '#desi_edr.fiberassign.targetid'
+    name: fiberassign_targetid_idx
+  - '@id': '#fiberassign_random_id_idx'
+    columns:
+    - '#desi_edr.fiberassign.random_id'
+    name: fiberassign_random_id_idx
+  - '@id': '#fiberassign_htm9_idx'
+    columns:
+    - '#desi_edr.fiberassign.htm9'
+    name: fiberassign_htm9_idx
+  - '@id': '#fiberassign_ring256_idx'
+    columns:
+    - '#desi_edr.fiberassign.ring256'
+    name: fiberassign_ring256_idx
+  - '@id': '#fiberassign_nest4096_idx'
+    columns:
+    - '#desi_edr.fiberassign.nest4096'
+    name: fiberassign_nest4096_idx
+  - '@id': '#fiberassign_tileid_idx'
+    columns:
+    - '#desi_edr.fiberassign.tileid'
+    name: fiberassign_tileid_idx
+  - '@id': '#fiberassign_location_idx'
+    columns:
+    - '#desi_edr.fiberassign.location'
+    name: fiberassign_location_idx
+  name: fiberassign
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#desi_edr.frame'
+  columns:
+  - '@id': '#desi_edr.frame.mjd'
+    datatype: double
+    description: Modified Julian Date when shutter was opened for this exposure
+    name: mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_lya'
+    datatype: double
+    description: LYA template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lya
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.exptime'
+    datatype: float
+    description: Length of time shutter was open
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.ebv'
+    datatype: float
+    description: Galactic extinction E(B-V) reddening from SFD98
+    fits:tunit: mag
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_gpbdark'
+    datatype: float
+    description: GPBDARK template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbdark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_elg'
+    datatype: float
+    description: ELG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_elg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_gpbbright'
+    datatype: float
+    description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_bgs'
+    datatype: float
+    description: BGS template (S/N)^2 summed over B, R, Z
+    name: tsnr2_bgs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_gpbbackup'
+    datatype: float
+    description: GPBBACKUP template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbackup
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_qso'
+    datatype: float
+    description: QSO template (S/N)^2 summed over B, R, Z
+    name: tsnr2_qso
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tsnr2_lrg'
+    datatype: float
+    description: LRG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lrg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.frameid'
+    datatype: int
+    description: Arbitrary primary key composed from expid, camera
+    ivoa:ucd: meta.id;meta.main
+    name: frameid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.night'
+    datatype: int
+    description: Observing night
+    name: night
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.expid'
+    datatype: int
+    description: DESI Exposure ID number
+    name: expid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.frame.camera'
+    datatype: string
+    description: Camera identifier. Passband and SPECGRPH ([brz][0-9])
+    length: 2
+    name: camera
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Summary quantities for each petal of the DESI instrument in a given
+    exposure; in normal operation there are ten frames for every exposure
+  indexes:
+  - '@id': '#frame_random_id_idx'
+    columns:
+    - '#desi_edr.frame.random_id'
+    name: frame_random_id_idx
+  - '@id': '#frame_frameid_idx'
+    columns:
+    - '#desi_edr.frame.frameid'
+    name: frame_frameid_idx
+  - '@id': '#frame_night_idx'
+    columns:
+    - '#desi_edr.frame.night'
+    name: frame_night_idx
+  - '@id': '#frame_tileid_idx'
+    columns:
+    - '#desi_edr.frame.tileid'
+    name: frame_tileid_idx
+  name: frame
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#desi_edr.photometry'
+  columns:
+  - '@id': '#desi_edr.photometry.ra'
+    datatype: double
+    description: Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dec'
+    datatype: double
+    description: Declination
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ls_id'
+    datatype: long
+    description: Unique Legacy Survey object ID
+    name: ls_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ref_id'
+    datatype: long
+    description: Tyc1*1000000+Tyc2*10+Tyc3 for Tycho-2; sourceid for Gaia DR2
+    name: ref_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    ivoa:ucd: meta.id;meta.main
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ra_ivar'
+    datatype: float
+    description: Right ascension inverse variance
+    fits:tunit: deg^-2
+    name: ra_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dec_ivar'
+    datatype: float
+    description: Declination inverse variance
+    fits:tunit: deg^-2
+    name: dec_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dchisq_psf'
+    datatype: float
+    description: Difference in chi-squared between PSF (stellar) Tractor model fits
+    name: dchisq_psf
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dchisq_rex'
+    datatype: float
+    description: Difference in chi-squared between REX (round exponential galaxy)
+      Tractor model fits
+    name: dchisq_rex
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dchisq_dev'
+    datatype: float
+    description: Difference in chi-squared between DEV (deVauc) Tractor model fits
+    name: dchisq_dev
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dchisq_exp'
+    datatype: float
+    description: Difference in chi-squared between EXP (exponential) Tractor model
+      fits
+    name: dchisq_exp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.dchisq_ser'
+    datatype: float
+    description: Difference in chi-squared between SER (Sersic) Tractor model fits
+    name: dchisq_ser
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ebv'
+    datatype: float
+    description: Galactic extinction E(B-V) reddening from SFD98
+    fits:tunit: mag
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_g'
+    datatype: float
+    description: Flux in the Legacy Survey g-band (AB)
+    fits:tunit: nanomaggy
+    name: flux_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_r'
+    datatype: float
+    description: Flux in the Legacy Survey r-band (AB)
+    fits:tunit: nanomaggy
+    name: flux_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_z'
+    datatype: float
+    description: Flux in the Legacy Survey z-band (AB)
+    fits:tunit: nanomaggy
+    name: flux_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_g'
+    datatype: float
+    description: Inverse variance of FLUX_G (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_r'
+    datatype: float
+    description: Inverse variance of FLUX_R (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_z'
+    datatype: float
+    description: Inverse variance of FLUX_Z (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_g'
+    datatype: float
+    description: Milky Way dust transmission in LS g-band
+    name: mw_transmission_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_r'
+    datatype: float
+    description: Milky Way dust transmission in LS r-band
+    name: mw_transmission_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_z'
+    datatype: float
+    description: Milky Way dust transmission in LS z-band
+    name: mw_transmission_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracflux_g'
+    datatype: float
+    description: Profile-weighted fraction of the flux from other sources divided
+      by the total flux in g (typically [0,1])
+    name: fracflux_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracflux_r'
+    datatype: float
+    description: Profile-weighted fraction of the flux from other sources divided
+      by the total flux in r (typically [0,1])
+    name: fracflux_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracflux_z'
+    datatype: float
+    description: Profile-weighted fraction of the flux from other sources divided
+      by the total flux in z (typically [0,1])
+    name: fracflux_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracmasked_g'
+    datatype: float
+    description: Profile-weighted fraction of pixels masked from all observations
+      of this object in g, strictly between [0,1]
+    name: fracmasked_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracmasked_r'
+    datatype: float
+    description: Profile-weighted fraction of pixels masked from all observations
+      of this object in r, strictly between [0,1]
+    name: fracmasked_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracmasked_z'
+    datatype: float
+    description: Profile-weighted fraction of pixels masked from all observations
+      of this object in z, strictly between [0,1]
+    name: fracmasked_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracin_g'
+    datatype: float
+    description: Fraction of a sources flux within the blob in g, near unity for real
+      sources
+    name: fracin_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracin_r'
+    datatype: float
+    description: Fraction of a sources flux within the blob in r, near unity for real
+      sources
+    name: fracin_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fracin_z'
+    datatype: float
+    description: Fraction of a sources flux within the blob in z, near unity for real
+      sources
+    name: fracin_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.psfdepth_g'
+    datatype: float
+    description: PSF-based depth in g-band
+    fits:tunit: nanomaggy^-2
+    name: psfdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.psfdepth_r'
+    datatype: float
+    description: PSF-based depth in r-band
+    fits:tunit: nanomaggy^-2
+    name: psfdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.psfdepth_z'
+    datatype: float
+    description: PSF-based depth in z-band
+    fits:tunit: nanomaggy^-2
+    name: psfdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.galdepth_g'
+    datatype: float
+    description: Galaxy model-based depth in Legacy Survey g-band
+    fits:tunit: nanomaggy^-2
+    name: galdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.galdepth_r'
+    datatype: float
+    description: Galaxy model-based depth in Legacy Survey r-band
+    fits:tunit: nanomaggy^-2
+    name: galdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.galdepth_z'
+    datatype: float
+    description: Galaxy model-based depth in Legacy Survey z-band
+    fits:tunit: nanomaggy^-2
+    name: galdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_w1'
+    datatype: float
+    description: WISE flux in W1 (AB)
+    fits:tunit: nanomaggy
+    name: flux_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_w2'
+    datatype: float
+    description: WISE flux in W2 (AB)
+    fits:tunit: nanomaggy
+    name: flux_w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_w3'
+    datatype: float
+    description: WISE flux in W3 (AB)
+    fits:tunit: nanomaggy
+    name: flux_w3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_w4'
+    datatype: float
+    description: WISE flux in W4 (AB)
+    fits:tunit: nanomaggy
+    name: flux_w4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_w1'
+    datatype: float
+    description: Inverse variance of FLUX_W1 (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_w2'
+    datatype: float
+    description: Inverse variance of FLUX_W2 (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_w3'
+    datatype: float
+    description: Inverse variance of FLUX_W3 (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_w3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.flux_ivar_w4'
+    datatype: float
+    description: Inverse variance of FLUX_W4 (AB)
+    fits:tunit: nanomaggy^-2
+    name: flux_ivar_w4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_w1'
+    datatype: float
+    description: Milky Way dust transmission in WISE W1
+    name: mw_transmission_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_w2'
+    datatype: float
+    description: Milky Way dust transmission in WISE W2
+    name: mw_transmission_w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_w3'
+    datatype: float
+    description: Milky Way dust transmission in WISE W3
+    name: mw_transmission_w3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.mw_transmission_w4'
+    datatype: float
+    description: Milky Way dust transmission in WISE W4
+    name: mw_transmission_w4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fiberflux_g'
+    datatype: float
+    description: Predicted g-band flux within a fiber of diameter 1.5 arcsec from
+      this object in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fiberflux_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fiberflux_r'
+    datatype: float
+    description: Predicted r-band flux within a fiber of diameter 1.5 arcsec from
+      this object in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fiberflux_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fiberflux_z'
+    datatype: float
+    description: Predicted z-band flux within a fiber of diameter 1.5 arcsec from
+      this object in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fiberflux_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fibertotflux_g'
+    datatype: float
+    description: Predicted g-band flux within a fiber of diameter 1.5 arcsec from
+      all sources at this location in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fibertotflux_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fibertotflux_r'
+    datatype: float
+    description: Predicted r-band flux within a fiber of diameter 1.5 arcsec from
+      all sources at this location in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fibertotflux_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.fibertotflux_z'
+    datatype: float
+    description: Predicted z-band flux within a fiber of diameter 1.5 arcsec from
+      all sources at this location in 1 arcsec Gaussian seeing
+    fits:tunit: nanomaggy
+    name: fibertotflux_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ref_epoch'
+    datatype: float
+    description: Reference epoch for Gaia/Tycho astrometry. Typically 2015.5 for Gaia
+    name: ref_epoch
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_r'
+    datatype: float
+    description: Half-light radius of galaxy model (>0)
+    fits:tunit: arcsec
+    name: shape_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_e1'
+    datatype: float
+    description: Ellipticity component 1 of galaxy model for galaxy type MORPHTYPE
+    name: shape_e1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_e2'
+    datatype: float
+    description: Ellipticity component 2 of galaxy model for galaxy type MORPHTYPE
+    name: shape_e2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_r_ivar'
+    datatype: float
+    description: Inverse variance of SHAPE_R
+    fits:tunit: arcsec^-2
+    name: shape_r_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_e1_ivar'
+    datatype: float
+    description: Inverse variance of SHAPE_E1
+    name: shape_e1_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.shape_e2_ivar'
+    datatype: float
+    description: Inverse variance of SHAPE_E2
+    name: shape_e2_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.sersic'
+    datatype: float
+    description: Power-law index for the Sersic profile model (MORPHTYPE=SER)
+    name: sersic
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.sersic_ivar'
+    datatype: float
+    description: Inverse variance of SERSIC
+    name: sersic_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_g_mean_mag'
+    datatype: float
+    description: Gaia G band magnitude
+    fits:tunit: mag
+    name: gaia_phot_g_mean_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_g_mean_flux_over_error'
+    datatype: float
+    description: Gaia G band signal-to-noise
+    name: gaia_phot_g_mean_flux_over_error
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_bp_mean_mag'
+    datatype: float
+    description: Gaia BP band magnitude
+    fits:tunit: mag
+    name: gaia_phot_bp_mean_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_bp_mean_flux_over_error'
+    datatype: float
+    description: Gaia BP band signal-to-noise
+    name: gaia_phot_bp_mean_flux_over_error
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_rp_mean_mag'
+    datatype: float
+    description: Gaia RP band magnitude
+    fits:tunit: mag
+    name: gaia_phot_rp_mean_mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_rp_mean_flux_over_error'
+    datatype: float
+    description: Gaia RP band signal-to-noise
+    name: gaia_phot_rp_mean_flux_over_error
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_phot_bp_rp_excess_factor'
+    datatype: float
+    description: Gaia BP/RP excess factor
+    name: gaia_phot_bp_rp_excess_factor
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_astrometric_sigma5d_max'
+    datatype: float
+    description: Gaia longest semi-major axis of the 5-d error ellipsoid
+    fits:tunit: mas
+    name: gaia_astrometric_sigma5d_max
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.parallax'
+    datatype: float
+    description: Reference catalog parallax
+    fits:tunit: mas
+    name: parallax
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.parallax_ivar'
+    datatype: float
+    description: Inverse variance of PARALLAX
+    fits:tunit: mas^-2
+    name: parallax_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.pmra'
+    datatype: float
+    description: Reference catalog proper motion in the RA direction
+    fits:tunit: mas yr^-1
+    name: pmra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.pmra_ivar'
+    datatype: float
+    description: Inverse variance of PMRA
+    fits:tunit: yr^2 mas^-2
+    name: pmra_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.pmdec'
+    datatype: float
+    description: Reference catalog proper motion in the Dec direction
+    fits:tunit: mas yr^-1
+    name: pmdec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.pmdec_ivar'
+    datatype: float
+    description: Inverse variance of PMDEC
+    fits:tunit: yr^2 mas^-2
+    name: pmdec_ivar
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.brickid'
+    datatype: int
+    description: Brick ID from Tractor input
+    name: brickid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.brick_objid'
+    datatype: int
+    description: Imaging Surveys OBJID on that brick
+    name: brick_objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.htm9'
+    datatype: int
+    description: Ninth level (~10 arcmin resolution) Hierarchical Triangular Mesh
+      index (Szalay et al. 2007)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with Nsides=256 (~14
+      arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.nest4096'
+    datatype: int
+    description: Nested-scheme HEALPix (Gorski et al. 2005) index with Nsides=4096
+      (~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.release'
+    datatype: short
+    description: Imaging Surveys release ID
+    name: release
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.nobs_g'
+    datatype: short
+    description: Number of images for central pixel in g-band
+    name: nobs_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.nobs_r'
+    datatype: short
+    description: Number of images for central pixel in r-band
+    name: nobs_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.nobs_z'
+    datatype: short
+    description: Number of images for central pixel in z-band
+    name: nobs_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.allmask_g'
+    datatype: short
+    description: Bitwise mask set if the central pixel from all images satisfy each
+      condition in g as cataloged on the LS DR9 bitmasks page
+    name: allmask_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.allmask_r'
+    datatype: short
+    description: Bitwise mask set if the central pixel from all images satisfy each
+      condition in r as cataloged on the LS DR9 bitmasks page
+    name: allmask_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.allmask_z'
+    datatype: short
+    description: Bitwise mask set if the central pixel from all images satisfy each
+      condition in z as cataloged on the LS DR9 bitmasks page
+    name: allmask_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.wisemask_w1'
+    datatype: short
+    description: W1 bitmask as cataloged on the DR9 bitmasks page here https://www.legacysurvey.org/dr9/bitmasks
+    name: wisemask_w1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.wisemask_w2'
+    datatype: short
+    description: W2 bitmask as cataloged on the DR9 bitmasks page here https://www.legacysurvey.org/dr9/bitmasks
+    name: wisemask_w2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.maskbits'
+    datatype: short
+    description: Bitwise mask from the imaging indicating potential issue or blending
+    name: maskbits
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_astrometric_params_solved'
+    datatype: short
+    description: Which astrometric parameters were estimated for a Gaia source
+    name: gaia_astrometric_params_solved
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.gaia_duplicated_source'
+    datatype: short
+    description: Gaia duplicated source flag
+    name: gaia_duplicated_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.ref_cat'
+    datatype: string
+    description: 'Reference catalog source for star: T2 for Tycho2, G2 for Gaia DR2,
+      L2 for the SGA, empty otherwise'
+    length: 2
+    name: ref_cat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.morphtype'
+    datatype: string
+    description: Imaging Surveys morphological type from Tractor
+    length: 4
+    name: morphtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.photometry.brickname'
+    datatype: string
+    description: Brick name from Tractor input
+    length: 8
+    name: brickname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Photometric quantities from LS DR9 for every TARGETID
+  indexes:
+  - '@id': '#photometry_ra_idx'
+    columns:
+    - '#desi_edr.photometry.ra'
+    name: photometry_ra_idx
+  - '@id': '#photometry_dec_idx'
+    columns:
+    - '#desi_edr.photometry.dec'
+    name: photometry_dec_idx
+  - '@id': '#photometry_elon_idx'
+    columns:
+    - '#desi_edr.photometry.elon'
+    name: photometry_elon_idx
+  - '@id': '#photometry_elat_idx'
+    columns:
+    - '#desi_edr.photometry.elat'
+    name: photometry_elat_idx
+  - '@id': '#photometry_glon_idx'
+    columns:
+    - '#desi_edr.photometry.glon'
+    name: photometry_glon_idx
+  - '@id': '#photometry_glat_idx'
+    columns:
+    - '#desi_edr.photometry.glat'
+    name: photometry_glat_idx
+  - '@id': '#photometry_ls_id_idx'
+    columns:
+    - '#desi_edr.photometry.ls_id'
+    name: photometry_ls_id_idx
+  - '@id': '#photometry_targetid_idx'
+    columns:
+    - '#desi_edr.photometry.targetid'
+    name: photometry_targetid_idx
+  - '@id': '#photometry_ebv_idx'
+    columns:
+    - '#desi_edr.photometry.ebv'
+    name: photometry_ebv_idx
+  - '@id': '#photometry_flux_g_idx'
+    columns:
+    - '#desi_edr.photometry.flux_g'
+    name: photometry_flux_g_idx
+  - '@id': '#photometry_flux_r_idx'
+    columns:
+    - '#desi_edr.photometry.flux_r'
+    name: photometry_flux_r_idx
+  - '@id': '#photometry_flux_z_idx'
+    columns:
+    - '#desi_edr.photometry.flux_z'
+    name: photometry_flux_z_idx
+  - '@id': '#photometry_flux_w1_idx'
+    columns:
+    - '#desi_edr.photometry.flux_w1'
+    name: photometry_flux_w1_idx
+  - '@id': '#photometry_flux_w2_idx'
+    columns:
+    - '#desi_edr.photometry.flux_w2'
+    name: photometry_flux_w2_idx
+  - '@id': '#photometry_flux_w3_idx'
+    columns:
+    - '#desi_edr.photometry.flux_w3'
+    name: photometry_flux_w3_idx
+  - '@id': '#photometry_flux_w4_idx'
+    columns:
+    - '#desi_edr.photometry.flux_w4'
+    name: photometry_flux_w4_idx
+  - '@id': '#photometry_gaia_phot_g_mean_mag_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_g_mean_mag'
+    name: photometry_gaia_phot_g_mean_mag_idx
+  - '@id': '#photometry_gaia_phot_g_mean_flux_over_error_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_g_mean_flux_over_error'
+    name: photometry_gaia_phot_g_mean_flux_over_error_idx
+  - '@id': '#photometry_gaia_phot_bp_mean_mag_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_bp_mean_mag'
+    name: photometry_gaia_phot_bp_mean_mag_idx
+  - '@id': '#photometry_gaia_phot_bp_mean_flux_over_error_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_bp_mean_flux_over_error'
+    name: photometry_gaia_phot_bp_mean_flux_over_error_idx
+  - '@id': '#photometry_gaia_phot_rp_mean_mag_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_rp_mean_mag'
+    name: photometry_gaia_phot_rp_mean_mag_idx
+  - '@id': '#photometry_gaia_phot_rp_mean_flux_over_error_idx'
+    columns:
+    - '#desi_edr.photometry.gaia_phot_rp_mean_flux_over_error'
+    name: photometry_gaia_phot_rp_mean_flux_over_error_idx
+  - '@id': '#photometry_parallax_idx'
+    columns:
+    - '#desi_edr.photometry.parallax'
+    name: photometry_parallax_idx
+  - '@id': '#photometry_pmra_idx'
+    columns:
+    - '#desi_edr.photometry.pmra'
+    name: photometry_pmra_idx
+  - '@id': '#photometry_pmdec_idx'
+    columns:
+    - '#desi_edr.photometry.pmdec'
+    name: photometry_pmdec_idx
+  - '@id': '#photometry_random_id_idx'
+    columns:
+    - '#desi_edr.photometry.random_id'
+    name: photometry_random_id_idx
+  - '@id': '#photometry_htm9_idx'
+    columns:
+    - '#desi_edr.photometry.htm9'
+    name: photometry_htm9_idx
+  - '@id': '#photometry_ring256_idx'
+    columns:
+    - '#desi_edr.photometry.ring256'
+    name: photometry_ring256_idx
+  - '@id': '#photometry_nest4096_idx'
+    columns:
+    - '#desi_edr.photometry.nest4096'
+    name: photometry_nest4096_idx
+  - '@id': '#photometry_morphtype_idx'
+    columns:
+    - '#desi_edr.photometry.morphtype'
+    name: photometry_morphtype_idx
+  - '@id': '#photometry_brickname_idx'
+    columns:
+    - '#desi_edr.photometry.brickname'
+    name: photometry_brickname_idx
+  name: photometry
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#desi_edr.potential'
+  columns:
+  - '@id': '#desi_edr.potential.id'
+    datatype: string
+    description: Arbitrary primary key composed from targetid, tileid, location
+    ivoa:ucd: meta.id;meta.main
+    length: 39
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.potential.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.potential.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.potential.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.potential.fiber'
+    datatype: int
+    description: Fiber ID on the CCDs [0-4999]
+    name: fiber
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.potential.location'
+    datatype: short
+    description: Location on the focal plane PETAL_LOC*1000 + DEVICE_LOC
+    name: location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: For a given tile, this table lists all targets that could have received
+    a fiber assignment
+  indexes:
+  - '@id': '#potential_id_idx'
+    columns:
+    - '#desi_edr.potential.id'
+    name: potential_id_idx
+  - '@id': '#potential_targetid_idx'
+    columns:
+    - '#desi_edr.potential.targetid'
+    name: potential_targetid_idx
+  - '@id': '#potential_random_id_idx'
+    columns:
+    - '#desi_edr.potential.random_id'
+    name: potential_random_id_idx
+  - '@id': '#potential_tileid_idx'
+    columns:
+    - '#desi_edr.potential.tileid'
+    name: potential_tileid_idx
+  - '@id': '#potential_location_idx'
+    columns:
+    - '#desi_edr.potential.location'
+    name: potential_location_idx
+  name: potential
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#desi_edr.target'
+  columns:
+  - '@id': '#desi_edr.target.subpriority'
+    datatype: double
+    description: Random subpriority [0-1] to break assignment ties
+    name: subpriority
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.id'
+    datatype: string
+    description: Arbitrary primary key composed from targetid, survey, tileid
+    ivoa:ucd: meta.id;meta.main
+    length: 39
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.cmx_target'
+    datatype: long
+    description: Target selection bitmask for commissioning
+    name: cmx_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.desi_target'
+    datatype: long
+    description: Dark survey + calibration targeting bits
+    name: desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv1_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV1
+    name: sv1_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv1_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV1
+    name: sv1_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv2_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV2
+    name: sv2_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv2_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV2
+    name: sv2_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv3_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV3
+    name: sv3_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv3_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV3
+    name: sv3_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.scnd_target'
+    datatype: long
+    description: Target selection bitmask for secondary programs
+    name: scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv1_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV1
+    name: sv1_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv3_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV3
+    name: sv3_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.priority_init'
+    datatype: long
+    description: Target initial priority from target selection bitmasks and OBSCONDITIONS
+    name: priority_init
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.hpxpixel'
+    datatype: long
+    description: HEALPixel containing this location at NSIDE=64 in the NESTED scheme
+    name: hpxpixel
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask
+    name: bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv1_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV1
+    name: sv1_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv3_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV3
+    name: sv3_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.obsconditions'
+    datatype: long
+    description: Bit-coded of allowed observing conditions
+    name: obsconditions
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.numobs_init'
+    datatype: long
+    description: Initial number of observations for target calculated across target
+      selection bitmasks and OBSCONDITIONS
+    name: numobs_init
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.mws_target'
+    datatype: long
+    description: Milky Way Survey targeting bits
+    name: mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv2_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV2
+    name: sv2_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.sv2_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV2
+    name: sv2_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.photsys'
+    datatype: char
+    description: N for the MzLS/BASS photometric system, S for DECaLS
+    length: 1
+    name: photsys
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.program'
+    datatype: string
+    description: DESI program type - BRIGHT, DARK, or BACKUP
+    length: 6
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.target.survey'
+    datatype: string
+    description: Survey name
+    length: 7
+    name: survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: The quantities obtained when photometric objects are analyzed in the
+    target selection process
+  indexes:
+  - '@id': '#target_id_idx'
+    columns:
+    - '#desi_edr.target.id'
+    name: target_id_idx
+  - '@id': '#target_targetid_idx'
+    columns:
+    - '#desi_edr.target.targetid'
+    name: target_targetid_idx
+  - '@id': '#target_random_id_idx'
+    columns:
+    - '#desi_edr.target.random_id'
+    name: target_random_id_idx
+  - '@id': '#target_hpxpixel_idx'
+    columns:
+    - '#desi_edr.target.hpxpixel'
+    name: target_hpxpixel_idx
+  - '@id': '#target_tileid_idx'
+    columns:
+    - '#desi_edr.target.tileid'
+    name: target_tileid_idx
+  - '@id': '#target_program_idx'
+    columns:
+    - '#desi_edr.target.program'
+    name: target_program_idx
+  - '@id': '#target_survey_idx'
+    columns:
+    - '#desi_edr.target.survey'
+    name: target_survey_idx
+  name: target
+  primaryKey: ''
+  tap:table_index: 6
+- '@id': '#desi_edr.tile'
+  columns:
+  - '@id': '#desi_edr.tile.tilera'
+    datatype: double
+    description: RA of tile given in fiberassign file
+    fits:tunit: deg
+    name: tilera
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.tiledec'
+    datatype: double
+    description: DEC of tile given in fiberassign file
+    fits:tunit: deg
+    name: tiledec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.exptime'
+    datatype: double
+    description: Length of time shutter was open
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.efftime_etc'
+    datatype: double
+    description: Effective exposure time for nominal conditions inferred from ETC
+      data
+    fits:tunit: s
+    name: efftime_etc
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.efftime_spec'
+    datatype: double
+    description: Effective exposure time for nominal conditions derived from the TSNR2
+      fits to the spectroscopy
+    fits:tunit: s
+    name: efftime_spec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.efftime_gfa'
+    datatype: double
+    description: Effective exposure time for nominal conditions derived from exposure
+      GFA data
+    fits:tunit: s
+    name: efftime_gfa
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.lrg_efftime_dark'
+    datatype: double
+    description: Effective exposure time for nominal dark conditions inferred for
+      LRG targets
+    fits:tunit: s
+    name: lrg_efftime_dark
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.elg_efftime_dark'
+    datatype: double
+    description: Effective exposure time for nominal dark conditions inferred for
+      ELG targets
+    fits:tunit: s
+    name: elg_efftime_dark
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.bgs_efftime_bright'
+    datatype: double
+    description: Effective exposure time for nominal bright conditions inferred for
+      BGS targets
+    fits:tunit: s
+    name: bgs_efftime_bright
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.lya_efftime_dark'
+    datatype: double
+    description: Effective exposure time for nominal dark conditions inferred for
+      LYA targets
+    fits:tunit: s
+    name: lya_efftime_dark
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.mintfrac'
+    datatype: double
+    description: Minimum fraction of GOALTIME acceptable for considering a tile complete
+    name: mintfrac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    ivoa:ucd: meta.id;meta.main
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.lastnight'
+    datatype: int
+    description: Most recent night with a good exposure
+    name: lastnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.goaltime'
+    datatype: double
+    description: Goal for total effective exposure time for the tile
+    fits:tunit: s
+    name: goaltime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.nexp'
+    datatype: long
+    description: Number of exposures used in EFFTIME estimates
+    name: nexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.survey'
+    datatype: string
+    description: Survey name
+    length: 20
+    name: survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.faprgrm'
+    datatype: string
+    description: Fiberassign program name
+    length: 20
+    name: faprgrm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.faflavor'
+    datatype: string
+    description: Fiberassign flavor name
+    length: 20
+    name: faflavor
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.obsstatus'
+    datatype: string
+    description: Observing conditions bitmask
+    length: 20
+    name: obsstatus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.goaltype'
+    datatype: string
+    description: The intended observing conditions for the tile
+    length: 20
+    name: goaltype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.tile.program'
+    datatype: string
+    description: DESI program type - BRIGHT, DARK, or BACKUP
+    length: 6
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Summary quantities for every DESI tile (pointing on the sky)
+  indexes:
+  - '@id': '#tile_random_id_idx'
+    columns:
+    - '#desi_edr.tile.random_id'
+    name: tile_random_id_idx
+  - '@id': '#tile_tileid_idx'
+    columns:
+    - '#desi_edr.tile.tileid'
+    name: tile_tileid_idx
+  - '@id': '#tile_survey_idx'
+    columns:
+    - '#desi_edr.tile.survey'
+    name: tile_survey_idx
+  - '@id': '#tile_program_idx'
+    columns:
+    - '#desi_edr.tile.program'
+    name: tile_program_idx
+  name: tile
+  primaryKey: ''
+  tap:table_index: 7
+- '@id': '#desi_edr.zpix'
+  columns:
+  - '@id': '#desi_edr.zpix.z'
+    datatype: double
+    description: Redshift measured by Redrock
+    name: z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.zerr'
+    datatype: double
+    description: Redshift error from Redrock
+    name: zerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.chi2'
+    datatype: double
+    description: Best fit chi squared
+    name: chi2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_0'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_1'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_2'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_3'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_4'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_5'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_6'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_7'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_8'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_8
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coeff_9'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.deltachi2'
+    datatype: double
+    description: Delta-chi-squared for template fit from Redrock
+    name: deltachi2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_fiber_ra'
+    datatype: float
+    description: Mean (over exposures) RA of actual fiber position
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: mean_fiber_ra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_fiber_dec'
+    datatype: float
+    description: Mean (over exposures) DEC of actual fiber position
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: mean_fiber_dec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.id'
+    datatype: string
+    description: Arbitrary primary key composed from targetid, survey, program
+    ivoa:ucd: meta.id;meta.main
+    length: 39
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coadd_exptime'
+    datatype: float
+    description: Sum of the exposure times contributing to the coadd for this target
+    fits:tunit: s
+    name: coadd_exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_delta_x'
+    datatype: float
+    description: Mean (over exposures) fiber difference between measured and requested
+      CS5 X location on focal plane
+    name: mean_delta_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.rms_delta_x'
+    datatype: float
+    description: RMS (over exposures) of the fiber difference between measured and
+      requested CS5 X location on focal plane
+    name: rms_delta_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_delta_y'
+    datatype: float
+    description: Mean (over exposures) fiber difference between measured and requested
+      CS5 Y location on focal plane
+    name: mean_delta_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.rms_delta_y'
+    datatype: float
+    description: RMS (over exposures) of the fiber difference between measured and
+      requested CS5 Y location on focal plane
+    name: rms_delta_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.std_fiber_ra'
+    datatype: float
+    description: Standard deviation (over exposures) of RA of actual fiber position
+    fits:tunit: deg
+    name: std_fiber_ra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.std_fiber_dec'
+    datatype: float
+    description: Standard deviation (over exposures) of DEC of actual fiber position
+    fits:tunit: deg
+    name: std_fiber_dec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_psf_to_fiber_specflux'
+    datatype: float
+    description: Mean of the PSF_TO_FIBER_SPECFLUX values of the spectra used in the
+      coadd
+    name: mean_psf_to_fiber_specflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbdark_b'
+    datatype: float
+    description: GPBDARK B template (S/N)^2
+    name: tsnr2_gpbdark_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_elg_b'
+    datatype: float
+    description: ELG B template (S/N)^2
+    name: tsnr2_elg_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbright_b'
+    datatype: float
+    description: GPBBRIGHT B template (S/N)^2
+    name: tsnr2_gpbbright_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lya_b'
+    datatype: float
+    description: LYA B template (S/N)^2
+    name: tsnr2_lya_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_bgs_b'
+    datatype: float
+    description: BGS B template (S/N)^2
+    name: tsnr2_bgs_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_b'
+    datatype: float
+    description: GPBBACKUP B template (S/N)^2
+    name: tsnr2_gpbbackup_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_qso_b'
+    datatype: float
+    description: QSO B template (S/N)^2
+    name: tsnr2_qso_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lrg_b'
+    datatype: float
+    description: LRG B template (S/N)^2
+    name: tsnr2_lrg_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbdark_r'
+    datatype: float
+    description: GPBDARK R template (S/N)^2
+    name: tsnr2_gpbdark_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_elg_r'
+    datatype: float
+    description: ELG R template (S/N)^2
+    name: tsnr2_elg_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbright_r'
+    datatype: float
+    description: GPBBRIGHT R template (S/N)^2
+    name: tsnr2_gpbbright_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lya_r'
+    datatype: float
+    description: LYA R template (S/N)^2
+    name: tsnr2_lya_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_bgs_r'
+    datatype: float
+    description: BGS R template (S/N)^2
+    name: tsnr2_bgs_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_r'
+    datatype: float
+    description: GPBBACKUP R template (S/N)^2
+    name: tsnr2_gpbbackup_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_qso_r'
+    datatype: float
+    description: QSO R template (S/N)^2
+    name: tsnr2_qso_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lrg_r'
+    datatype: float
+    description: LRG R template (S/N)^2
+    name: tsnr2_lrg_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbdark_z'
+    datatype: float
+    description: GPBDARK Z template (S/N)^2
+    name: tsnr2_gpbdark_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_elg_z'
+    datatype: float
+    description: ELG Z template (S/N)^2
+    name: tsnr2_elg_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbright_z'
+    datatype: float
+    description: GPBBRIGHT Z template (S/N)^2
+    name: tsnr2_gpbbright_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lya_z'
+    datatype: float
+    description: LYA Z template (S/N)^2
+    name: tsnr2_lya_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_bgs_z'
+    datatype: float
+    description: BGS Z template (S/N)^2
+    name: tsnr2_bgs_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbackup_z'
+    datatype: float
+    description: GPBBACKUP Z template (S/N)^2
+    name: tsnr2_gpbbackup_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_qso_z'
+    datatype: float
+    description: QSO Z template (S/N)^2
+    name: tsnr2_qso_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lrg_z'
+    datatype: float
+    description: LRG Z template (S/N)^2
+    name: tsnr2_lrg_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbdark'
+    datatype: float
+    description: GPBDARK template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbdark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_elg'
+    datatype: float
+    description: ELG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_elg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbright'
+    datatype: float
+    description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lya'
+    datatype: float
+    description: LYA template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lya
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_bgs'
+    datatype: float
+    description: BGS template (S/N)^2 summed over B, R, Z
+    name: tsnr2_bgs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_gpbbackup'
+    datatype: float
+    description: GPBBACKUP template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbackup
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_qso'
+    datatype: float
+    description: QSO template (S/N)^2 summed over B, R, Z
+    name: tsnr2_qso
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.tsnr2_lrg'
+    datatype: float
+    description: LRG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lrg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.spgrpval'
+    datatype: int
+    description: Value corresponding to the grouping type indicated in the spgrp column.
+      For zpix table this is the same as the healpix column
+    name: spgrpval
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.healpix'
+    datatype: int
+    description: HEALPixel containing this location at NSIDE=64 in the NESTED scheme
+    name: healpix
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coadd_fiberstatus'
+    datatype: int
+    description: Bitwise AND of the FIBERSTATUS values of the spectra used in the
+      coadd
+    name: coadd_fiberstatus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.htm9'
+    datatype: int
+    description: Ninth level (~10 arcmin resolution) Hierarchical Triangular Mesh
+      index (Szalay et al. 2007)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with Nsides=256 (~14
+      arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.nest4096'
+    datatype: int
+    description: Nested-scheme HEALPix (Gorski et al. 2005) index with Nsides=4096
+      (~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.zwarn'
+    datatype: short
+    description: Redshift warning bitmask measured by Redrock
+    name: zwarn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.npixels'
+    datatype: long
+    description: Number of unmasked wavelengths that contributed to the redshift fit
+    name: npixels
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.ncoeff'
+    datatype: long
+    description: Number of Redrock template coefficients
+    name: ncoeff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coadd_numexp'
+    datatype: short
+    description: Number of exposures included in the coadd for this target
+    name: coadd_numexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coadd_numnight'
+    datatype: short
+    description: Number of different nights included in the coadd for this target
+    name: coadd_numnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.coadd_numtile'
+    datatype: short
+    description: Number of different tiles included in the coadd for this target
+    name: coadd_numtile
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in SV (SV1+2+3)
+    name: sv_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.main_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in Main survey
+    name: main_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.zcat_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in this zcatalog
+    name: zcat_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in SV
+      (SV1+2+3)
+    name: sv_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.main_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in Main
+      survey
+    name: main_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.zcat_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in this
+      zcatalog
+    name: zcat_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.spgrp'
+    datatype: string
+    description: Type of spectral grouping. For zpix table this is always = healpix
+    length: 10
+    name: spgrp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.subtype'
+    datatype: string
+    description: Spectral subtype
+    length: 20
+    name: subtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.program'
+    datatype: string
+    description: DESI program type - BRIGHT, DARK, or BACKUP
+    length: 6
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.spectype'
+    datatype: string
+    description: Spectype from Redrock file
+    length: 6
+    name: spectype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.survey'
+    datatype: string
+    description: Survey name
+    length: 7
+    name: survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.firstnight'
+    datatype: int
+    description: KPNO Calendar Date for the first NIGHT of observation coadded into
+      the spectrum
+    name: firstnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.lastnight'
+    datatype: int
+    description: KPNO Calendar Date for the last NIGHT of the last observation coadded
+      into the spectrum
+    name: lastnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mean_mjd'
+    datatype: double
+    description: Mean (over exposures) of the Modified Julian Date (MJD) when the
+      shutter was opened
+    fits:tunit: day
+    name: mean_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.min_mjd'
+    datatype: double
+    description: Minimum value of the Modified Julian Date (when the shutter was open
+      for the first exposure)
+    fits:tunit: day
+    name: min_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.max_mjd'
+    datatype: double
+    description: Maximum value of the Modified Julian Date (when the shutter was open
+      for the last exposure, i.e. not including the exposure time)
+    fits:tunit: day
+    name: max_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.mws_target'
+    datatype: long
+    description: Milky Way Survey targeting bits
+    name: mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv1_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV1
+    name: sv1_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv2_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV2
+    name: sv2_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv3_mws_target'
+    datatype: long
+    description: MWS (bright time program) target selection bitmask for SV3
+    name: sv3_mws_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.scnd_target'
+    datatype: long
+    description: Target selection bitmask for secondary programs
+    name: scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv1_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV1
+    name: sv1_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv2_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV2
+    name: sv2_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv3_scnd_target'
+    datatype: long
+    description: Secondary target selection bitmask for SV3
+    name: sv3_scnd_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask
+    name: bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv1_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV1
+    name: sv1_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv2_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV2
+    name: sv2_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv3_bgs_target'
+    datatype: long
+    description: BGS (bright time program) target selection bitmask for SV3
+    name: sv3_bgs_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.desi_target'
+    datatype: long
+    description: Dark survey + calibration targeting bits
+    name: desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv1_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV1
+    name: sv1_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv2_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV2
+    name: sv2_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.sv3_desi_target'
+    datatype: long
+    description: DESI (dark time program) target selection bitmask for SV3
+    name: sv3_desi_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.zpix.cmx_target'
+    datatype: long
+    description: Target selection bitmask for commissioning
+    name: cmx_target
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Redshift and other quantities for spectra that have been grouped and
+    coadded by HEALPixel
+  indexes:
+  - '@id': '#zpix_z_idx'
+    columns:
+    - '#desi_edr.zpix.z'
+    name: zpix_z_idx
+  - '@id': '#zpix_mean_fiber_ra_idx'
+    columns:
+    - '#desi_edr.zpix.mean_fiber_ra'
+    name: zpix_mean_fiber_ra_idx
+  - '@id': '#zpix_mean_fiber_dec_idx'
+    columns:
+    - '#desi_edr.zpix.mean_fiber_dec'
+    name: zpix_mean_fiber_dec_idx
+  - '@id': '#zpix_elon_idx'
+    columns:
+    - '#desi_edr.zpix.elon'
+    name: zpix_elon_idx
+  - '@id': '#zpix_elat_idx'
+    columns:
+    - '#desi_edr.zpix.elat'
+    name: zpix_elat_idx
+  - '@id': '#zpix_glon_idx'
+    columns:
+    - '#desi_edr.zpix.glon'
+    name: zpix_glon_idx
+  - '@id': '#zpix_glat_idx'
+    columns:
+    - '#desi_edr.zpix.glat'
+    name: zpix_glat_idx
+  - '@id': '#zpix_id_idx'
+    columns:
+    - '#desi_edr.zpix.id'
+    name: zpix_id_idx
+  - '@id': '#zpix_targetid_idx'
+    columns:
+    - '#desi_edr.zpix.targetid'
+    name: zpix_targetid_idx
+  - '@id': '#zpix_random_id_idx'
+    columns:
+    - '#desi_edr.zpix.random_id'
+    name: zpix_random_id_idx
+  - '@id': '#zpix_spgrpval_idx'
+    columns:
+    - '#desi_edr.zpix.spgrpval'
+    name: zpix_spgrpval_idx
+  - '@id': '#zpix_healpix_idx'
+    columns:
+    - '#desi_edr.zpix.healpix'
+    name: zpix_healpix_idx
+  - '@id': '#zpix_coadd_fiberstatus_idx'
+    columns:
+    - '#desi_edr.zpix.coadd_fiberstatus'
+    name: zpix_coadd_fiberstatus_idx
+  - '@id': '#zpix_htm9_idx'
+    columns:
+    - '#desi_edr.zpix.htm9'
+    name: zpix_htm9_idx
+  - '@id': '#zpix_ring256_idx'
+    columns:
+    - '#desi_edr.zpix.ring256'
+    name: zpix_ring256_idx
+  - '@id': '#zpix_nest4096_idx'
+    columns:
+    - '#desi_edr.zpix.nest4096'
+    name: zpix_nest4096_idx
+  - '@id': '#zpix_zwarn_idx'
+    columns:
+    - '#desi_edr.zpix.zwarn'
+    name: zpix_zwarn_idx
+  - '@id': '#zpix_spgrp_idx'
+    columns:
+    - '#desi_edr.zpix.spgrp'
+    name: zpix_spgrp_idx
+  - '@id': '#zpix_subtype_idx'
+    columns:
+    - '#desi_edr.zpix.subtype'
+    name: zpix_subtype_idx
+  - '@id': '#zpix_program_idx'
+    columns:
+    - '#desi_edr.zpix.program'
+    name: zpix_program_idx
+  - '@id': '#zpix_spectype_idx'
+    columns:
+    - '#desi_edr.zpix.spectype'
+    name: zpix_spectype_idx
+  - '@id': '#zpix_survey_idx'
+    columns:
+    - '#desi_edr.zpix.survey'
+    name: zpix_survey_idx
+  - '@id': '#zpix_mean_mjd_idx'
+    columns:
+    - '#desi_edr.zpix.mean_mjd'
+    name: zpix_mean_mjd_idx
+  - '@id': '#zpix_min_mjd_idx'
+    columns:
+    - '#desi_edr.zpix.min_mjd'
+    name: zpix_min_mjd_idx
+  - '@id': '#zpix_max_mjd_idx'
+    columns:
+    - '#desi_edr.zpix.max_mjd'
+    name: zpix_max_mjd_idx
+  name: zpix
+  primaryKey: ''
+  tap:table_index: 8
+- '@id': '#desi_edr.ztile'
+  columns:
+  - '@id': '#desi_edr.ztile.z'
+    datatype: double
+    description: Redshift measured by Redrock
+    name: z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.zerr'
+    datatype: double
+    description: Redshift error from Redrock
+    name: zerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.chi2'
+    datatype: double
+    description: Best fit chi squared
+    name: chi2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_0'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_0
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_1'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_2'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_3'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_4'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_5'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_6'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_7'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_8'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_8
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coeff_9'
+    datatype: double
+    description: Redrock template coefficients
+    name: coeff_9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.deltachi2'
+    datatype: double
+    description: Delta-chi-squared for template fit from Redrock
+    name: deltachi2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_fiber_ra'
+    datatype: float
+    description: Mean (over exposures) RA of actual fiber position
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: mean_fiber_ra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_fiber_dec'
+    datatype: float
+    description: Mean (over exposures) DEC of actual fiber position
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: mean_fiber_dec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.id'
+    datatype: string
+    description: Arbitrary primary key composed from targetid, survey, program
+    ivoa:ucd: meta.id;meta.main
+    length: 39
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.targetphotid'
+    datatype: string
+    description: Foreign key on the target table
+    length: 39
+    name: targetphotid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.targetid'
+    datatype: long
+    description: Unique DESI target ID
+    name: targetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coadd_exptime'
+    datatype: float
+    description: Sum of the exposure times contributing to the coadd for this target
+    fits:tunit: s
+    name: coadd_exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_delta_x'
+    datatype: float
+    description: Mean (over exposures) fiber difference between measured and requested
+      CS5 X location on focal plane
+    name: mean_delta_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.rms_delta_x'
+    datatype: float
+    description: RMS (over exposures) of the fiber difference between measured and
+      requested CS5 X location on focal plane
+    name: rms_delta_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_delta_y'
+    datatype: float
+    description: Mean (over exposures) fiber difference between measured and requested
+      CS5 Y location on focal plane
+    name: mean_delta_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.rms_delta_y'
+    datatype: float
+    description: RMS (over exposures) of the fiber difference between measured and
+      requested CS5 Y location on focal plane
+    name: rms_delta_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.std_fiber_ra'
+    datatype: float
+    description: Standard deviation (over exposures) of RA of actual fiber position
+    fits:tunit: deg
+    name: std_fiber_ra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.std_fiber_dec'
+    datatype: float
+    description: Standard deviation (over exposures) of DEC of actual fiber position
+    fits:tunit: deg
+    name: std_fiber_dec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_psf_to_fiber_specflux'
+    datatype: float
+    description: Mean of the PSF_TO_FIBER_SPECFLUX values of the spectra used in the
+      coadd
+    name: mean_psf_to_fiber_specflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbdark_b'
+    datatype: float
+    description: GPBDARK B template (S/N)^2
+    name: tsnr2_gpbdark_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_elg_b'
+    datatype: float
+    description: ELG B template (S/N)^2
+    name: tsnr2_elg_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbright_b'
+    datatype: float
+    description: GPBBRIGHT B template (S/N)^2
+    name: tsnr2_gpbbright_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lya_b'
+    datatype: float
+    description: LYA B template (S/N)^2
+    name: tsnr2_lya_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_bgs_b'
+    datatype: float
+    description: BGS B template (S/N)^2
+    name: tsnr2_bgs_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_b'
+    datatype: float
+    description: GPBBACKUP B template (S/N)^2
+    name: tsnr2_gpbbackup_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_qso_b'
+    datatype: float
+    description: QSO B template (S/N)^2
+    name: tsnr2_qso_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lrg_b'
+    datatype: float
+    description: LRG B template (S/N)^2
+    name: tsnr2_lrg_b
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbdark_r'
+    datatype: float
+    description: GPBDARK R template (S/N)^2
+    name: tsnr2_gpbdark_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_elg_r'
+    datatype: float
+    description: ELG R template (S/N)^2
+    name: tsnr2_elg_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbright_r'
+    datatype: float
+    description: GPBBRIGHT R template (S/N)^2
+    name: tsnr2_gpbbright_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lya_r'
+    datatype: float
+    description: LYA R template (S/N)^2
+    name: tsnr2_lya_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_bgs_r'
+    datatype: float
+    description: BGS R template (S/N)^2
+    name: tsnr2_bgs_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_r'
+    datatype: float
+    description: GPBBACKUP R template (S/N)^2
+    name: tsnr2_gpbbackup_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_qso_r'
+    datatype: float
+    description: QSO R template (S/N)^2
+    name: tsnr2_qso_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lrg_r'
+    datatype: float
+    description: LRG R template (S/N)^2
+    name: tsnr2_lrg_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbdark_z'
+    datatype: float
+    description: GPBDARK Z template (S/N)^2
+    name: tsnr2_gpbdark_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_elg_z'
+    datatype: float
+    description: ELG Z template (S/N)^2
+    name: tsnr2_elg_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbright_z'
+    datatype: float
+    description: GPBBRIGHT Z template (S/N)^2
+    name: tsnr2_gpbbright_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lya_z'
+    datatype: float
+    description: LYA Z template (S/N)^2
+    name: tsnr2_lya_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_bgs_z'
+    datatype: float
+    description: BGS Z template (S/N)^2
+    name: tsnr2_bgs_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbackup_z'
+    datatype: float
+    description: GPBBACKUP Z template (S/N)^2
+    name: tsnr2_gpbbackup_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_qso_z'
+    datatype: float
+    description: QSO Z template (S/N)^2
+    name: tsnr2_qso_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lrg_z'
+    datatype: float
+    description: LRG Z template (S/N)^2
+    name: tsnr2_lrg_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbdark'
+    datatype: float
+    description: GPBDARK template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbdark
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_elg'
+    datatype: float
+    description: ELG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_elg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbright'
+    datatype: float
+    description: GPBBRIGHT template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbright
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lya'
+    datatype: float
+    description: LYA template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lya
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_bgs'
+    datatype: float
+    description: BGS template (S/N)^2 summed over B, R, Z
+    name: tsnr2_bgs
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_gpbbackup'
+    datatype: float
+    description: GPBBACKUP template (S/N)^2 summed over B, R, Z
+    name: tsnr2_gpbbackup
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_qso'
+    datatype: float
+    description: QSO template (S/N)^2 summed over B, R, Z
+    name: tsnr2_qso
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tsnr2_lrg'
+    datatype: float
+    description: LRG template (S/N)^2 summed over B, R, Z
+    name: tsnr2_lrg
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0 (not unique)
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.htm9'
+    datatype: int
+    description: Ninth level (~10 arcmin resolution) Hierarchical Triangular Mesh
+      index (Szalay et al. 2007)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.ring256'
+    datatype: int
+    description: Ring-scheme HEALPix (Gorski et al. 2005) index with Nsides=256 (~14
+      arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.nest4096'
+    datatype: int
+    description: Nested-scheme HEALPix (Gorski et al. 2005) index with Nsides=4096
+      (~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.spgrpval'
+    datatype: int
+    description: Value corresponding to the grouping type indicated in the spgrp column.
+      For ztile table this is a night or exposure id
+    name: spgrpval
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coadd_fiberstatus'
+    datatype: int
+    description: Bitwise AND of the FIBERSTATUS values of the spectra used in the
+      coadd
+    name: coadd_fiberstatus
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.tileid'
+    datatype: int
+    description: Unique DESI tile ID
+    name: tileid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.zwarn'
+    datatype: long
+    description: Redshift warning bitmask measured by Redrock
+    name: zwarn
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.npixels'
+    datatype: long
+    description: Number of unmasked wavelengths that contributed to the redshift fit
+    name: npixels
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.ncoeff'
+    datatype: long
+    description: Number of Redrock template coefficients
+    name: ncoeff
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coadd_numexp'
+    datatype: short
+    description: Number of exposures included in the coadd for this target
+    name: coadd_numexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coadd_numnight'
+    datatype: short
+    description: Number of different nights included in the coadd for this target
+    name: coadd_numnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.coadd_numtile'
+    datatype: short
+    description: Number of different tiles included in the coadd for this target
+    name: coadd_numtile
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.sv_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in SV (SV1+2+3)
+    name: sv_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.main_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in Main survey
+    name: main_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.zcat_nspec'
+    datatype: short
+    description: Number of coadded spectra for this TARGETID in this zcatalog
+    name: zcat_nspec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.sv_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in SV
+      (SV1+2+3)
+    name: sv_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.main_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in Main
+      survey
+    name: main_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.zcat_primary'
+    datatype: boolean
+    description: Boolean flag (True/False) for the primary coadded spectrum in this
+      zcatalog
+    name: zcat_primary
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.spgrp'
+    datatype: string
+    description: Type of spectral grouping. For ztile table this can be = cumulative,
+      perexp, or pernight
+    length: 10
+    name: spgrp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.subtype'
+    datatype: string
+    description: Spectral subtype
+    length: 20
+    name: subtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.program'
+    datatype: string
+    description: DESI program type - BRIGHT, DARK, or BACKUP
+    length: 6
+    name: program
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.spectype'
+    datatype: string
+    description: Spectype from Redrock file
+    length: 6
+    name: spectype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.survey'
+    datatype: string
+    description: Survey name
+    length: 7
+    name: survey
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.lastnight'
+    datatype: int
+    description: KPNO Calendar Date for the last NIGHT of the observation of the TILEID
+    name: lastnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.firstnight'
+    datatype: int
+    description: KPNO Calendar Date for the first NIGHT of the observation of the
+      TILEID
+    name: firstnight
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_mjd'
+    datatype: double
+    description: Mean (over exposures) of the Modified Julian Date (MJD) when the
+      shutter was opened
+    fits:tunit: day
+    name: mean_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.max_mjd'
+    datatype: double
+    description: Maximum value of the Modified Julian Date (when the shutter was open
+      for the last exposure, i.e. not including the exposure time)
+    fits:tunit: day
+    name: max_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.min_mjd'
+    datatype: double
+    description: Minimum value of the Modified Julian Date (when the shutter was open
+      for the first exposure)
+    fits:tunit: day
+    name: min_mjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_fiber_x'
+    datatype: float
+    description: Mean (over exposures) fiber CS5 X location on focal plane
+    fits:tunit: mm
+    name: mean_fiber_x
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#desi_edr.ztile.mean_fiber_y'
+    datatype: float
+    description: Mean (over exposures) fiber CS5 Y location on focal plane
+    fits:tunit: mm
+    name: mean_fiber_y
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Redshift and other quantities for spectra that have been grouped and
+    coadded by tile
+  indexes:
+  - '@id': '#ztile_z_idx'
+    columns:
+    - '#desi_edr.ztile.z'
+    name: ztile_z_idx
+  - '@id': '#ztile_mean_fiber_ra_idx'
+    columns:
+    - '#desi_edr.ztile.mean_fiber_ra'
+    name: ztile_mean_fiber_ra_idx
+  - '@id': '#ztile_mean_fiber_dec_idx'
+    columns:
+    - '#desi_edr.ztile.mean_fiber_dec'
+    name: ztile_mean_fiber_dec_idx
+  - '@id': '#ztile_elon_idx'
+    columns:
+    - '#desi_edr.ztile.elon'
+    name: ztile_elon_idx
+  - '@id': '#ztile_elat_idx'
+    columns:
+    - '#desi_edr.ztile.elat'
+    name: ztile_elat_idx
+  - '@id': '#ztile_glon_idx'
+    columns:
+    - '#desi_edr.ztile.glon'
+    name: ztile_glon_idx
+  - '@id': '#ztile_glat_idx'
+    columns:
+    - '#desi_edr.ztile.glat'
+    name: ztile_glat_idx
+  - '@id': '#ztile_id_idx'
+    columns:
+    - '#desi_edr.ztile.id'
+    name: ztile_id_idx
+  - '@id': '#ztile_targetphotid_idx'
+    columns:
+    - '#desi_edr.ztile.targetphotid'
+    name: ztile_targetphotid_idx
+  - '@id': '#ztile_targetid_idx'
+    columns:
+    - '#desi_edr.ztile.targetid'
+    name: ztile_targetid_idx
+  - '@id': '#ztile_random_id_idx'
+    columns:
+    - '#desi_edr.ztile.random_id'
+    name: ztile_random_id_idx
+  - '@id': '#ztile_htm9_idx'
+    columns:
+    - '#desi_edr.ztile.htm9'
+    name: ztile_htm9_idx
+  - '@id': '#ztile_ring256_idx'
+    columns:
+    - '#desi_edr.ztile.ring256'
+    name: ztile_ring256_idx
+  - '@id': '#ztile_nest4096_idx'
+    columns:
+    - '#desi_edr.ztile.nest4096'
+    name: ztile_nest4096_idx
+  - '@id': '#ztile_spgrpval_idx'
+    columns:
+    - '#desi_edr.ztile.spgrpval'
+    name: ztile_spgrpval_idx
+  - '@id': '#ztile_coadd_fiberstatus_idx'
+    columns:
+    - '#desi_edr.ztile.coadd_fiberstatus'
+    name: ztile_coadd_fiberstatus_idx
+  - '@id': '#ztile_tileid_idx'
+    columns:
+    - '#desi_edr.ztile.tileid'
+    name: ztile_tileid_idx
+  - '@id': '#ztile_zwarn_idx'
+    columns:
+    - '#desi_edr.ztile.zwarn'
+    name: ztile_zwarn_idx
+  - '@id': '#ztile_spgrp_idx'
+    columns:
+    - '#desi_edr.ztile.spgrp'
+    name: ztile_spgrp_idx
+  - '@id': '#ztile_subtype_idx'
+    columns:
+    - '#desi_edr.ztile.subtype'
+    name: ztile_subtype_idx
+  - '@id': '#ztile_program_idx'
+    columns:
+    - '#desi_edr.ztile.program'
+    name: ztile_program_idx
+  - '@id': '#ztile_spectype_idx'
+    columns:
+    - '#desi_edr.ztile.spectype'
+    name: ztile_spectype_idx
+  - '@id': '#ztile_survey_idx'
+    columns:
+    - '#desi_edr.ztile.survey'
+    name: ztile_survey_idx
+  - '@id': '#ztile_mean_mjd_idx'
+    columns:
+    - '#desi_edr.ztile.mean_mjd'
+    name: ztile_mean_mjd_idx
+  - '@id': '#ztile_max_mjd_idx'
+    columns:
+    - '#desi_edr.ztile.max_mjd'
+    name: ztile_max_mjd_idx
+  - '@id': '#ztile_min_mjd_idx'
+    columns:
+    - '#desi_edr.ztile.min_mjd'
+    name: ztile_min_mjd_idx
+  name: ztile
+  primaryKey: ''
+  tap:table_index: 9
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

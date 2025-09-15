@@ -1,0 +1,1852 @@
+---
+'@id': '#gaia_dr1'
+description: GAIA Data Release 1
+name: gaia_dr1
+tables:
+- '@id': '#gaia_dr1.cepheid'
+  columns:
+  - '@id': '#gaia_dr1.cepheid.type_best_classification'
+    datatype: char
+    description: Classification of a Cepheid into CEP, 2CEP or CEP using the period-luminosity
+      relations, which are different for the three different types of Cepheids.
+    ivoa:ucd: meta.code.class;src.class
+    length: 5
+    name: type_best_classification
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.type2_best_sub_classification'
+    datatype: char
+    description: Sub-classification of a T2CEP Cepheids into BL Herculis (BL_HER),
+      W Virginis (W_VIR) or RV Tauris (RV_TAU) sub-types depending on the source periodicity.
+    ivoa:ucd: meta.code.class;src.class
+    length: 6
+    name: type2_best_sub_classification
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.mode_best_classification'
+    datatype: char
+    description: 'Best mode classification estimate:  -   FUNDAMENTAL: fundamental
+      mode for typeBestClassification=DCEP or     ACEP  -   FIRST_OVERTONE: first
+      overtone for typeBestClassification=DCEP     or ACEP  -   SECOND_OVERTONE: second
+      overtone for typeBestClassification=DCEP     or ACEP  -   UNDEFINED: if mode
+      could not be clearly determined for     typeBestClassification=DCEP or ACEP  -   NOT_APPLICABLE:
+      when typeBestClassification=T2CEP  Cepheid pulsation mode is assigned using
+      the period-luminosity relations, which are different for the various pulsation
+      modes, and the plot of the Fourier parameter R21 vs Period.'
+    ivoa:ucd: meta.code.class;src.class
+    length: 14
+    name: mode_best_classification
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.p1'
+    datatype: double
+    description: This parameter is filled with the period of the maximum power peak
+      in the frequencygram obtained from the modeling of the time series. The light
+      curve of the target star is modeled with a truncated Fourier series (mag(t_j)=zp+\sum[A_i
+      sin(i \times 2 \pi \nu_{max}t_j +\phi_i)]). Zero-point (zp), period (1/\nu_{max}),
+      number of harmonics (i), amplitudes (A_i), and phases (\phi_i) of the harmonics,
+      for the G-band light curve are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    fits:tunit: d
+    ivoa:ucd: time.period
+    name: p1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.p1_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the p1 parameter.
+      Its value is derived with Monte Carlo simulations that generate several (100)
+      time series with the same time path as the data points but with magnitudes generated
+      randomly around the corresponding data value. For each of these time series
+      the period is derived from the non linear modeling with a truncated Fourier
+      series of the light curve. The mean of all the periods found and its standard
+      deviation are then computed, and the latter value is kept as value to fill the
+      p1Error parameter.
+    fits:tunit: d
+    ivoa:ucd: stat.error;time.period
+    name: p1_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.epoch_g'
+    datatype: double
+    description: The epoch of maximum light for the Gaia integrated G band. It corresponds
+      to the Baricentric Julian day (BJD) of the maximum value of the light curve
+      model which is closest to the BJD of the first observations -3\timesp1.  The
+      mentioned BJD is offset by JD 2455197.5 (= J2010.0).
+    fits:tunit: d
+    ivoa:ucd: time.epoch;stat.max
+    name: epoch_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.epoch_g_error'
+    datatype: double
+    description: The uncertainty value of the epochG parameter. Its value is three
+      times the error on the p1.
+    fits:tunit: day
+    ivoa:ucd: stat.error;time.epoch
+    name: epoch_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.int_average_g'
+    datatype: double
+    description: The intensity-averaged magnitude in the G-band. The intensity-averaged
+      magnitude is obtained by computing the average flux and then converting the
+      average flux to magnitude.
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt
+    name: int_average_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.int_average_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the intAverageG
+      parameter. The uncertainty is computed as the error(zp), where zp is the zero
+      point obtained by the non linear Fourier modeling of the light curve.
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag;em.opt
+    name: int_average_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.peak_to_peak_g'
+    datatype: double
+    description: This parameter is filled with the peak-to-peak amplitude value of
+      the G band light curve. The peak-to-peak amplitude is calculated as the (maximum)
+      - (minimum) of the folded modeled light curve in the G band. The light curve
+      of the target star is modeled with a truncated Fourier series (mag(t_j)=zp+\sum[A_i
+      sin(i \times 2 \pi \nu_{max}t_j   +\phi_i)]). Zero-point (zp), period (1/\nu_{max}),
+      number of harmonics (i), amplitudes (A_i), and phases (\phi_i) of the harmonics,
+      for the G-band light curve are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    fits:tunit: mag
+    ivoa:ucd: src.var.amplitude;em.opt
+    name: peak_to_peak_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.peak_to_peak_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the peakToPeakG
+      parameter. The uncertainty is computed as the \sqrt{2}\times error(zp), where
+      zp is the zero point obtained by the non linear Fourier modeling of the light
+      curve.
+    fits:tunit: mag
+    ivoa:ucd: stat.error;src.var.amplitude;em.opt
+    name: peak_to_peak_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.num_harmonics_for_p1'
+    datatype: int
+    description: This parameter is filled with the number of harmonics used to model
+      P1 of the light curve. The light curve of the target star is modeled with a
+      truncated Fourier series (mag(t_j)=zp+\sum[A_i sin(i \times 2 \pi \nu_{max}t_j
+      +\phi_i)]). Zero-point (zp), period (1/\nu_{max}), number of harmonics (i),
+      amplitudes (A_i), and phases (\phi_i) of the harmonics are determined using
+      the Levenberg-Marquardt non linear fitting algorithm.
+    ivoa:ucd: meta.number
+    name: num_harmonics_for_p1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.r21_g'
+    datatype: double
+    description: This parameter is filled with the Fourier decomposition parameter
+      R_{21} = A_2/A_1, where A_2 is the amplitude of the 2nd harmonic and A_{1} is
+      the amplitude of the fundamental harmonic of the truncated Fourier series defined
+      hereafter. The light curve of the target star is modeled with a truncated Fourier
+      series (mag(t_j)=zp+\sum[A_i sin(i \times 2 \pi \nu_{max}t_j +\phi_i)]). Zero-point
+      (zp), period (1/\nu_{max}), number of harmonics (i), amplitudes (A_i), and phases
+      (\phi_i) of the harmonics, are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    ivoa:ucd: stat.Fourier
+    name: r21_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.r21_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value on the r21G parameter.
+      Its value isderived by propagation of the errors in the A2 and A1 parameters.
+      Errors in A1,A2 are computed from Monte Carlo simulations that generate several
+      (100) time series with the same time path as the data points but with magnitudes
+      generated randomly around the corresponding data value. The mean for each of
+      these values and their standard deviations are then computed, and the latter
+      values are kept as value to fill the uncertainty of the A1, A2 parameters.
+    ivoa:ucd: stat.error
+    name: r21_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.phi21_g'
+    datatype: double
+    description: 'This parameter is filled with the Fourier decomposition parameter
+      \phi_{21}: \phi_2 - 2\phi_1 value. The light curve of the target star is modeled
+      with a truncated Fourier series (mag(t_j)=zp+\sum[A_i   sin(i \times 2 \pi \nu_{max}
+      t_j +\phi_i)]). Zero-point (zp), period (1/\nu_{max}), number of harmonics (i),
+      amplitudes (A_i), and phases (\phi_i) of the harmonics, for the G-band light
+      curve are determined using the Levenberg-Marquardt non linear fitting algorithm.'
+    ivoa:ucd: stat.Fourier
+    name: phi21_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.cepheid.phi21_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty of the phi21G parameter.
+      Its value is derived by propagation of the errors in the phi1 and phi2 parameters.
+      Errors in phi1,phi2 are computed from Monte Carlo simulations that generate
+      several (100) time series with the same time path as the data points but with
+      magnitudes generated randomly around the corresponding data value. For each
+      of these time series the phi1, phi2 values are computed. The mean for each of
+      these values and their standard deviation are then computed, and the latter
+      values are kept as value to fill the uncertainty of the phi1 and phi2 parameters.
+    ivoa:ucd: stat.error
+    name: phi21_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table describes the Cepheid stars identified in table VariableSummary
+    as classification=CEP. In the analyses only observations with rejectedByVariabilityProcessing=false
+    are included, as found in table PhotVariableTimeSeriesGfov.
+  indexes:
+  - '@id': '#cepheid_source_id_idx'
+    columns:
+    - '#gaia_dr1.cepheid.source_id'
+    name: cepheid_source_id_idx
+  name: cepheid
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#gaia_dr1.gaia_source'
+  columns:
+  - '@id': '#gaia_dr1.gaia_source.pmdec_error'
+    datatype: double
+    description: Standard error of proper motion in declination direction
+    fits:tunit: mas.yr**-1
+    name: pmdec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra_dec_corr'
+    datatype: float
+    description: Correlation between right ascension and declination
+    name: ra_dec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.random_index'
+    datatype: long
+    description: Random index used to select subsets
+    name: random_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.htm9'
+    datatype: long
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.nest256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Nest scheme => ~14 arcmin size
+    name: nest256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ref_epoch'
+    datatype: double
+    description: Reference epoch
+    fits:tunit: yr
+    name: ref_epoch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra'
+    datatype: double
+    description: Right Ascension (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra_error'
+    datatype: double
+    description: Standard error of right ascension
+    fits:tunit: mas
+    name: ra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.dec'
+    datatype: double
+    description: Declination (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.dec_error'
+    datatype: double
+    description: Standard error of declination
+    fits:tunit: mas
+    name: dec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.parallax'
+    datatype: double
+    description: Parallax
+    fits:tunit: mas
+    name: parallax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.parallax_error'
+    datatype: double
+    description: Standard error of parallax
+    fits:tunit: mas
+    name: parallax_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.pmra'
+    datatype: double
+    description: Proper motion in right ascension direction
+    fits:tunit: mas.yr**-1
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.pmra_error'
+    datatype: double
+    description: Standard error of proper motion in right ascension direction
+    fits:tunit: mas.yr**-1
+    name: pmra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.pmdec'
+    datatype: double
+    description: Proper motion in declination direction
+    fits:tunit: mas.yr**-1
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra_parallax_corr'
+    datatype: float
+    description: Correlation between right ascension and parallax
+    name: ra_parallax_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra_pmra_corr'
+    datatype: float
+    description: Correlation between right ascension and proper motion in right ascension
+    name: ra_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ra_pmdec_corr'
+    datatype: float
+    description: Correlation between right ascension and proper motion in declination
+    name: ra_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.dec_parallax_corr'
+    datatype: float
+    description: Correlation between declination and parallax
+    name: dec_parallax_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.dec_pmra_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in right ascension
+    name: dec_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.dec_pmdec_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in declination
+    name: dec_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.parallax_pmra_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in right ascension
+    name: parallax_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.parallax_pmdec_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in declination
+    name: parallax_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.pmra_pmdec_corr'
+    datatype: float
+    description: Correlation between proper motion in right ascension and proper motion
+      in declination
+    name: pmra_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_obs_al'
+    datatype: int
+    description: Total number of observations AL
+    name: astrometric_n_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_obs_ac'
+    datatype: int
+    description: Total number of observations AC
+    name: astrometric_n_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_good_obs_al'
+    datatype: int
+    description: Number of good observations AL
+    name: astrometric_n_good_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_good_obs_ac'
+    datatype: int
+    description: Number of good observations AC
+    name: astrometric_n_good_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_bad_obs_al'
+    datatype: int
+    description: Number of bad observations AL
+    name: astrometric_n_bad_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_n_bad_obs_ac'
+    datatype: int
+    description: Number of bad observations AC
+    name: astrometric_n_bad_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_delta_q'
+    datatype: float
+    description: Hipparcos/Gaia proper motion difference (Hipparcos subset of TGAS
+      only)
+    name: astrometric_delta_q
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_excess_noise'
+    datatype: double
+    description: Excess noise of the source
+    fits:tunit: mas
+    name: astrometric_excess_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_excess_noise_sig'
+    datatype: double
+    description: Significance of excess noise
+    name: astrometric_excess_noise_sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_primary_flag'
+    datatype: short
+    description: Flag indicating if this source was used as a primary source (true)
+      or secondary source (false). Only primary sources contribute to the estimation
+      of attitude, calibration, and global parameters. The estimation of source parameters
+      is otherwise done in exactly the same way for primary and secondary sources.
+    name: astrometric_primary_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_relegation_factor'
+    datatype: float
+    description: Relegation factor of the source calculated used for the primary selection
+      process
+    name: astrometric_relegation_factor
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_weight_al'
+    datatype: float
+    description: Mean astrometric weight of the source in the AL direction
+    fits:tunit: mas^-2
+    name: astrometric_weight_al
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_weight_ac'
+    datatype: float
+    description: Mean astrometric weight of the source in the AC direction
+    fits:tunit: mas^-2
+    name: astrometric_weight_ac
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.astrometric_priors_used'
+    datatype: int
+    description: Type of prior used in the astrometric solution
+    name: astrometric_priors_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.matched_observations'
+    datatype: short
+    description: Amount of observations matched to this source
+    name: matched_observations
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.duplicated_source'
+    datatype: short
+    description: Source with duplicate sources
+    name: duplicated_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k1'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k2'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k3'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_strength_k4'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k1'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k2'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k3'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.scan_direction_mean_k4'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.phot_g_n_obs'
+    datatype: int
+    description: Number of observations contributing to G photometry
+    name: phot_g_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.phot_g_mean_flux'
+    datatype: double
+    description: G-band mean flux
+    fits:tunit: electron/s
+    name: phot_g_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.phot_g_mean_flux_error'
+    datatype: double
+    description: Error on G-band mean flux
+    fits:tunit: electron/s
+    name: phot_g_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.phot_g_mean_mag'
+    datatype: double
+    description: G-band mean magnitude
+    fits:tunit: mag
+    name: phot_g_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.phot_variable_flag'
+    datatype: char
+    description: Flag indicating if variability was identified in the photometric
+      G band
+    length: 255
+    name: phot_variable_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.l'
+    datatype: double
+    description: Galactic Longitude of the object at reference epoch ref_epoch, see
+      ESA, 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200, Volume 1, Section
+      1.5.3, for the conversion details.
+    fits:tunit: deg
+    name: l
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.b'
+    datatype: double
+    description: Galactic Latitude of the object at reference epoch ref_epoch, see
+      ESA, 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200, Volume 1, Section
+      1.5.3, for the conversion details.
+    fits:tunit: deg
+    name: b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ecl_lon'
+    datatype: double
+    description: Ecliptic Longitude of the object at reference epoch ref_epoch, see
+      ESA, 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200, Volume 1, Section
+      1.5.3, for the conversion details.
+    fits:tunit: deg
+    name: ecl_lon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.gaia_source.ecl_lat'
+    datatype: double
+    description: 'Ecliptic Latitude of the object at reference epoch ref_epoch, see
+      ESA, 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200, Volume 1, Section
+      1.5.3, for the conversion details. '
+    fits:tunit: deg
+    name: ecl_lat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table has an entry for every Gaia observed source as listed in
+    the Main Database accumulating catalogue version from which the catalogue release
+    has been generated. It contains the basic source parameters, that is only final
+    data (no epoch data) and no spectra (neither final nor epoch).
+  indexes:
+  - '@id': '#gaia_source_source_id_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.source_id'
+    name: gaia_source_source_id_idx
+  - '@id': '#gaia_source_random_index_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.random_index'
+    name: gaia_source_random_index_idx
+  - '@id': '#gaia_source_htm9_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.htm9'
+    name: gaia_source_htm9_idx
+  - '@id': '#gaia_source_ring256_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.ring256'
+    name: gaia_source_ring256_idx
+  - '@id': '#gaia_source_ra_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.ra'
+    name: gaia_source_ra_idx
+  - '@id': '#gaia_source_dec_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.dec'
+    name: gaia_source_dec_idx
+  - '@id': '#gaia_source_parallax_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.parallax'
+    name: gaia_source_parallax_idx
+  - '@id': '#gaia_source_pmra_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.pmra'
+    name: gaia_source_pmra_idx
+  - '@id': '#gaia_source_pmdec_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.pmdec'
+    name: gaia_source_pmdec_idx
+  - '@id': '#gaia_source_phot_g_mean_flux_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.phot_g_mean_flux'
+    name: gaia_source_phot_g_mean_flux_idx
+  - '@id': '#gaia_source_phot_g_mean_mag_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.phot_g_mean_mag'
+    name: gaia_source_phot_g_mean_mag_idx
+  - '@id': '#gaia_source_phot_variable_flag_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.phot_variable_flag'
+    name: gaia_source_phot_variable_flag_idx
+  - '@id': '#gaia_source_l_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.l'
+    name: gaia_source_l_idx
+  - '@id': '#gaia_source_b_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.b'
+    name: gaia_source_b_idx
+  - '@id': '#gaia_source_ecl_lon_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.ecl_lon'
+    name: gaia_source_ecl_lon_idx
+  - '@id': '#gaia_source_ecl_lat_idx'
+    columns:
+    - '#gaia_dr1.gaia_source.ecl_lat'
+    name: gaia_source_ecl_lat_idx
+  name: gaia_source
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#gaia_dr1.phot_variable_time_series_gfov'
+  columns:
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.observation_time'
+    datatype: double
+    description: Barycentric light-travel time corrected timestamp for each FOV observation
+      (days)
+    fits:tunit: d
+    name: observation_time
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.g_flux'
+    datatype: double
+    description: G-band flux for each FOV observation
+    fits:tunit: electron/s
+    name: g_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.g_flux_error'
+    datatype: double
+    description: Estimated G-band flux uncertainty for each FOV observation
+    fits:tunit: electron/s
+    name: g_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.g_magnitude'
+    datatype: double
+    description: G-band magnitude for each FOV observation
+    fits:tunit: mag
+    name: g_magnitude
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov.rejected_by_variability_processing'
+    datatype: char
+    description: '[0/1] 1 (true) when this FOV observation was excluded from variability
+      analyses'
+    length: 1
+    name: rejected_by_variability_processing
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: FOV time series of sources that have phtoVariableFlag=VARIABLE
+  indexes:
+  - '@id': '#phot_variable_time_series_gfov_solution_id_idx'
+    columns:
+    - '#gaia_dr1.phot_variable_time_series_gfov.solution_id'
+    name: phot_variable_time_series_gfov_solution_id_idx
+  - '@id': '#phot_variable_time_series_gfov_source_id_idx'
+    columns:
+    - '#gaia_dr1.phot_variable_time_series_gfov.source_id'
+    name: phot_variable_time_series_gfov_source_id_idx
+  name: phot_variable_time_series_gfov
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters'
+  columns:
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.num_observations_processed'
+    datatype: int
+    description: Number of processed G-band observations for variability analyses
+    name: num_observations_processed
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.mean_obs_time'
+    datatype: double
+    description: Mean observation time (with respect to T0) of G-band time series
+      (days)
+    fits:tunit: d
+    name: mean_obs_time
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.minimum'
+    datatype: double
+    description: Minimum magnitude of the G-band time series
+    fits:tunit: mag
+    name: minimum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.maximum'
+    datatype: double
+    description: Maximum magnitude of the G-band time series
+    fits:tunit: mag
+    name: maximum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.mean'
+    datatype: double
+    description: Mean magnitude of the G-band time series
+    fits:tunit: mag
+    name: mean
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.median'
+    datatype: double
+    description: Median magnitude of the G-band time series
+    fits:tunit: mag
+    name: median
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.range'
+    datatype: double
+    description: Difference between the highest and lowest magnitude of the G-band
+      time series
+    fits:tunit: mag
+    name: range
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.std_dev'
+    datatype: double
+    description: Square root of the unweighted variance of the G-band time series
+      values
+    fits:tunit: mag
+    name: std_dev
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.skewness'
+    datatype: double
+    description: Standardized unweighted skewness of the G-band time series values
+    name: skewness
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.kurtosis'
+    datatype: double
+    description: Standardized unweighted kurtosis of the G-band time series values
+    name: kurtosis
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.time_duration'
+    datatype: double
+    description: Time duration of the G-band time series (days)
+    fits:tunit: d
+    name: time_duration
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.median_absolute_deviation'
+    datatype: double
+    description: Median Absolute Deviation of the G-band time series values
+    fits:tunit: mag
+    name: median_absolute_deviation
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.abbe'
+    datatype: double
+    description: Abbe value of the G-band time series values
+    name: abbe
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.iqr'
+    datatype: double
+    description: Interquartile range of the time series values
+    fits:tunit: mag
+    name: iqr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Statistical parameter of FOV time series
+  indexes:
+  - '@id': '#phot_variable_time_series_gfov_statistical_parameters_solution_id_idx'
+    columns:
+    - '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.solution_id'
+    name: phot_variable_time_series_gfov_statistical_parameters_solution_id_idx
+  - '@id': '#phot_variable_time_series_gfov_statistical_parameters_source_id_idx'
+    columns:
+    - '#gaia_dr1.phot_variable_time_series_gfov_statistical_parameters.source_id'
+    name: phot_variable_time_series_gfov_statistical_parameters_source_id_idx
+  name: phot_variable_time_series_gfov_statistical_parameters
+  primaryKey: ''
+  tap:table_index: 4
+- '@id': '#gaia_dr1.rrlyrae'
+  columns:
+  - '@id': '#gaia_dr1.rrlyrae.best_classification'
+    datatype: char
+    description: 'Classification of an RR Lyrae star according to the pulsation mode:
+      RRc (&#8220;RRC&#8221;) for first overtone and RRab (&#8220;RRAB&#8221;) for
+      fundamental mode, obtained using the period-amplitude diagram in the G-band
+      and the plots of the Fourier parameters R21 and Phi2 vs period.'
+    fits:tunit: ''
+    ivoa:ucd: meta.code.class;src.class
+    length: 4
+    name: best_classification
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.p1'
+    datatype: double
+    description: This parameter is filled with the period of the maximum power peak
+      in the frequencygram obtained from the modeling of the time series. The light
+      curve of the target star is modeled with a truncated Fourier series (mag(t_j)=zp+\sum[A_i
+      sin(i \times 2 \pi \nu_{max}t_j +\phi_i)]). Zero-point (zp), period (1/\nu_{max}),
+      number of harmonics (i), amplitudes (A_i), and phases (\phi_i) of the harmonics,
+      for the G-band light curve are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    fits:tunit: d
+    ivoa:ucd: time.period
+    name: p1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.p1_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the p1 parameter.
+      Its value is derived with Monte Carlo simulations that generate several (100)
+      time series with the same time path as the data points but with magnitudes generated
+      randomly around the corresponding data value. For each of these time series
+      the period is derived from the non linear modeling with a truncated Fourier
+      series of the light curve. The mean of all the periods found and its standard
+      deviation are then computed, and the latter value is kept as value to fill the
+      p1Error parameter.
+    fits:tunit: d
+    ivoa:ucd: stat.error;time.period
+    name: p1_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.epoch_g'
+    datatype: double
+    description: The epoch of maximum light for the Gaia integrated G band. It corresponds
+      to the Baricentric Julian day (BJD) of the maximum value of the light curve
+      model which is closest to the BJD of the first observations -3\timesp1.  The
+      mentioned BJD is offset by JD 2455197.5 (= J2010.0).
+    fits:tunit: d
+    ivoa:ucd: time.epoch;stat.max
+    name: epoch_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.epoch_g_error'
+    datatype: double
+    description: The uncertainty value of the epochG parameter. Its value is three
+      times the error on the p1.
+    fits:tunit: day
+    ivoa:ucd: stat.error;time.epoch
+    name: epoch_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.int_average_g'
+    datatype: double
+    description: The intensity-averaged magnitude in the G-band. The intensity-averaged
+      magnitude is obtained by computing the average flux and then converting the
+      average flux to magnitude.
+    fits:tunit: mag
+    ivoa:ucd: phot.mag;em.opt
+    name: int_average_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.int_average_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the intAverageG
+      parameter. The uncertainty is computed as the error(zp), where zp is the zero
+      point obtained by the non linear Fourier modeling of the light curve.
+    fits:tunit: mag
+    ivoa:ucd: stat.error;phot.mag;em.opt
+    name: int_average_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.peak_to_peak_g'
+    datatype: double
+    description: This parameter is filled with the peak-to-peak amplitude value of
+      the G band light curve. The peak-to-peak amplitude is calculated as the (maximum)
+      - (minimum) of the folded modeled light curve in the G band. The light curve
+      of the target star is modeled with a truncated Fourier series (mag(t_j)=zp+\sum[A_i
+      sin(i \times 2 \pi \nu_{max}t_j   +\phi_i)]). Zero-point (zp), period (1/\nu_{max}),
+      number of harmonics (i), amplitudes (A_i), and phases (\phi_i) of the harmonics,
+      for the G-band light curve are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    fits:tunit: mag
+    ivoa:ucd: src.var.amplitude;em.opt
+    name: peak_to_peak_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.peak_to_peak_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value of the peakToPeakG
+      parameter. The uncertainty is computed as the \sqrt{2}\times error(zp), where
+      zp is the zero point obtained by the non linear Fourier modeling of the light
+      curve.
+    fits:tunit: mag
+    ivoa:ucd: stat.error;src.var.amplitude;em.opt
+    name: peak_to_peak_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.num_harmonics_for_p1'
+    datatype: int
+    description: This parameter is filled with the number of harmonics used to model
+      P1 of the light curve. The light curve of the target star is modeled with a
+      truncated Fourier series (mag(t_j)=zp+\sum[A_i sin(i \times 2 \pi \nu_{max}t_j
+      +\phi_i)]). Zero-point (zp), period (1/\nu_{max}), number of harmonics (i),
+      amplitudes (A_i), and phases (\phi_i) of the harmonics are determined using
+      the Levenberg-Marquardt non linear fitting algorithm.
+    ivoa:ucd: meta.number
+    name: num_harmonics_for_p1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.r21_g'
+    datatype: double
+    description: This parameter is filled with the Fourier decomposition parameter
+      R_{21} = A_2/A_1, where A_2 is the amplitude of the 2nd harmonic and A_{1} is
+      the amplitude of the fundamental harmonic of the truncated Fourier series defined
+      hereafter. The light curve of the target star is modeled with a truncated Fourier
+      series (mag(t_j)=zp+\sum[A_i sin(i \times 2 \pi \nu_{max}t_j +\phi_i)]). Zero-point
+      (zp), period (1/\nu_{max}), number of harmonics (i), amplitudes (A_i), and phases
+      (\phi_i) of the harmonics, are determined using the Levenberg-Marquardt non
+      linear fitting algorithm.
+    ivoa:ucd: stat.Fourier
+    name: r21_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.r21_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty value on the r21G parameter.
+      Its value isderived by propagation of the errors in the A2 and A1 parameters.
+      Errors in A1,A2 are computed from Monte Carlo simulations that generate several
+      (100) time series with the same time path as the data points but with magnitudes
+      generated randomly around the corresponding data value. The mean for each of
+      these values and their standard deviations are then computed, and the latter
+      values are kept as value to fill the uncertainty of the A1, A2 parameters.
+    ivoa:ucd: stat.error
+    name: r21_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.phi21_g'
+    datatype: double
+    description: 'This parameter is filled with the Fourier decomposition parameter
+      \phi_{21}: \phi_2 - 2\phi_1 value. The light curve of the target star is modeled
+      with a truncated Fourier series (mag(t_j)=zp+\sum[A_i   sin(i \times 2 \pi \nu_{max}
+      t_j +\phi_i)]). Zero-point (zp), period (1/\nu_{max}), number of harmonics (i),
+      amplitudes (A_i), and phases (\phi_i) of the harmonics, for the G-band light
+      curve are determined using the Levenberg-Marquardt non linear fitting algorithm.'
+    ivoa:ucd: stat.Fourier
+    name: phi21_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.rrlyrae.phi21_g_error'
+    datatype: double
+    description: This parameter is filled with the uncertainty of the phi21G parameter.
+      Its value is derived by propagation of the errors in the phi1 and phi2 parameters.
+      Errors in phi1,phi2 are computed from Monte Carlo simulations that generate
+      several (100) time series with the same time path as the data points but with
+      magnitudes generated randomly around the corresponding data value. For each
+      of these time series the phi1, phi2 values are computed. The mean for each of
+      these values and their standard deviation are then computed, and the latter
+      values are kept as value to fill the uncertainty of the phi1 and phi2 parameters.
+    ivoa:ucd: stat.error
+    name: phi21_g_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table describes the RRLyrae stars identified in table VariableSummary
+    as classification=RRLYR. In the analyses only observations with rejectedByVariabilityProcessing=false
+    are included, as found in table PhotVariableTimeSeriesGfov.
+  indexes:
+  - '@id': '#rrlyrae_solution_id_idx'
+    columns:
+    - '#gaia_dr1.rrlyrae.solution_id'
+    name: rrlyrae_solution_id_idx
+  - '@id': '#rrlyrae_source_id_idx'
+    columns:
+    - '#gaia_dr1.rrlyrae.source_id'
+    name: rrlyrae_source_id_idx
+  name: rrlyrae
+  primaryKey: ''
+  tap:table_index: 5
+- '@id': '#gaia_dr1.tgas_source'
+  columns:
+  - '@id': '#gaia_dr1.tgas_source.hip'
+    datatype: int
+    description: Hipparcos identifier
+    name: hip
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.tycho2_id'
+    datatype: char
+    description: Tycho 2 identifier
+    length: 255
+    name: tycho2_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.random_index'
+    datatype: long
+    description: Random index used to select subsets
+    name: random_index
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ref_epoch'
+    datatype: double
+    description: '[2015.0] Reference epoch in Julian years'
+    fits:tunit: yr
+    name: ref_epoch
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra'
+    datatype: double
+    description: Right ascension (ICRS) at epoch 2015.0 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra_error'
+    datatype: double
+    description: Standard error of right ascension
+    fits:tunit: mas
+    name: ra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.dec'
+    datatype: double
+    description: Declination (ICRS) at epoch 2015.0 (deg)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.dec_error'
+    datatype: double
+    description: Standard error of declination
+    fits:tunit: mas
+    name: dec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.parallax'
+    datatype: double
+    description: Absolute barycentric stellar parallax of the source at the reference
+      epoch Epoch
+    fits:tunit: mas
+    name: parallax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.parallax_error'
+    datatype: double
+    description: Standard error of parallax
+    fits:tunit: mas
+    name: parallax_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.pmra'
+    datatype: double
+    description: Proper motion in right ascension direction
+    fits:tunit: mas/yr
+    name: pmra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.pmra_error'
+    datatype: double
+    description: Standard error of proper motion in right ascension direction
+    fits:tunit: mas/yr
+    name: pmra_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.pmdec'
+    datatype: double
+    description: Proper motion in declination direction
+    fits:tunit: mas/yr
+    name: pmdec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.pmdec_error'
+    datatype: double
+    description: Standard error of proper motion in declination direction
+    fits:tunit: mas/yr
+    name: pmdec_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra_dec_corr'
+    datatype: float
+    description: Correlation between right ascension and declination
+    name: ra_dec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra_parallax_corr'
+    datatype: float
+    description: Correlation between right ascension and parallax
+    name: ra_parallax_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra_pmra_corr'
+    datatype: float
+    description: Correlation between right ascention and proper motion in right ascension
+    name: ra_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ra_pmdec_corr'
+    datatype: float
+    description: Correlation between right ascention and proper motion in declination
+    name: ra_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.dec_parallax_corr'
+    datatype: float
+    description: Correlation between declination and parallax
+    name: dec_parallax_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.dec_pmra_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in right ascension
+    name: dec_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.dec_pmdec_corr'
+    datatype: float
+    description: Correlation between declination and proper motion in declination
+    name: dec_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.parallax_pmra_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in right ascension
+    name: parallax_pmra_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.parallax_pmdec_corr'
+    datatype: float
+    description: Correlation between parallax and proper motion in declination
+    name: parallax_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.pmra_pmdec_corr'
+    datatype: float
+    description: Correlation between proper motion in right ascension and proper motion
+      in declination
+    name: pmra_pmdec_corr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_obs_al'
+    datatype: int
+    description: Total number of observations AL
+    name: astrometric_n_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_obs_ac'
+    datatype: int
+    description: Total number of observations AC
+    name: astrometric_n_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_good_obs_al'
+    datatype: int
+    description: Number of good observations AL
+    name: astrometric_n_good_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_good_obs_ac'
+    datatype: int
+    description: Number of good observations AC
+    name: astrometric_n_good_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_bad_obs_al'
+    datatype: int
+    description: Number of bad observations AL
+    name: astrometric_n_bad_obs_al
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_n_bad_obs_ac'
+    datatype: int
+    description: Number of bad observations AC
+    name: astrometric_n_bad_obs_ac
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_delta_q'
+    datatype: float
+    description: Hipparcos/Gaia data discrepancy (Hipparcos subset of TGAS only)
+    name: astrometric_delta_q
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_excess_noise'
+    datatype: double
+    description: Excess noise of the source
+    fits:tunit: mas
+    name: astrometric_excess_noise
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_excess_noise_sig'
+    datatype: double
+    description: Significance of excess noise
+    name: astrometric_excess_noise_sig
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_primary_flag'
+    datatype: short
+    description: Primary or secondard
+    name: astrometric_primary_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_relegation_factor'
+    datatype: float
+    description: Relegation factor
+    name: astrometric_relegation_factor
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_weight_al'
+    datatype: float
+    description: Mean astrometric weight of the source in the AL direction
+    fits:tunit: mas-2
+    name: astrometric_weight_al
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_weight_ac'
+    datatype: float
+    description: Mean astrometric weight of the source in the AC direction
+    fits:tunit: mas-2
+    name: astrometric_weight_ac
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.astrometric_priors_used'
+    datatype: int
+    description: Type of prior used in the astrometric solution
+    name: astrometric_priors_used
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.matched_observations'
+    datatype: short
+    description: Amount of observations matched to this source
+    name: matched_observations
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.duplicated_source'
+    datatype: short
+    description: Source with duplicate sources
+    name: duplicated_source
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k1'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k2'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k3'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_strength_k4'
+    datatype: float
+    description: Degree of concentration of scan directions across the source
+    name: scan_direction_strength_k4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k1'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k2'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k3'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.scan_direction_mean_k4'
+    datatype: float
+    description: Mean position angle of scan directions across the source
+    fits:tunit: deg
+    name: scan_direction_mean_k4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.phot_g_n_obs'
+    datatype: int
+    description: Number of observations contributing to G photometry
+    name: phot_g_n_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.phot_g_mean_flux'
+    datatype: double
+    description: G-band mean flux
+    fits:tunit: electron/s
+    name: phot_g_mean_flux
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.phot_g_mean_flux_error'
+    datatype: double
+    description: Error on G-band mean flux
+    fits:tunit: electron/s
+    name: phot_g_mean_flux_error
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.phot_g_mean_mag'
+    datatype: double
+    description: G-band mean magnitude
+    fits:tunit: mag
+    name: phot_g_mean_mag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.phot_variable_flag'
+    datatype: char
+    description: Photometric variability flag
+    length: 255
+    name: phot_variable_flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.l'
+    datatype: double
+    description: Galactic longitude at epoch 2015.0
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lon
+    name: l
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.b'
+    datatype: double
+    description: Galactic latitude at epoch 2015.0
+    fits:tunit: deg
+    ivoa:ucd: pos.galactic.lat
+    name: b
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ecl_lon'
+    datatype: double
+    description: Ecliptic longitude at epoch 2015.0
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lon
+    name: ecl_lon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.tgas_source.ecl_lat'
+    datatype: double
+    description: Ecliptic latitude at epoch 2015.0
+    fits:tunit: deg
+    ivoa:ucd: pos.ecliptic.lat
+    name: ecl_lat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: This table is a subset of GaiaSource comprising those stars in the
+    Hipparcos and Tycho-2 Catalogues for which a full 5-parameter astrometric solution
+    has been possible in Gaia Data Release 1. This is possible because the early Hipparcos
+    epoch positions break some degeneracies due to the limited Gaia time coverage.  This
+    table contains a substantial fraction of the around 2.5 million stars in the Hipparcos
+    and Tycho-2 catalogue. Many stars have been excluded due to several reasons, such
+    as saturation, cross-match errors or bad astrometric solution.
+  indexes:
+  - '@id': '#tgas_source_source_id_idx'
+    columns:
+    - '#gaia_dr1.tgas_source.source_id'
+    name: tgas_source_source_id_idx
+  - '@id': '#tgas_source_ra_idx'
+    columns:
+    - '#gaia_dr1.tgas_source.ra'
+    name: tgas_source_ra_idx
+  - '@id': '#tgas_source_dec_idx'
+    columns:
+    - '#gaia_dr1.tgas_source.dec'
+    name: tgas_source_dec_idx
+  - '@id': '#tgas_source_phot_g_mean_mag_idx'
+    columns:
+    - '#gaia_dr1.tgas_source.phot_g_mean_mag'
+    name: tgas_source_phot_g_mean_mag_idx
+  - '@id': '#tgas_source_phot_variable_flag_idx'
+    columns:
+    - '#gaia_dr1.tgas_source.phot_variable_flag'
+    name: tgas_source_phot_variable_flag_idx
+  name: tgas_source
+  primaryKey: ''
+  tap:table_index: 6
+- '@id': '#gaia_dr1.variable_summary'
+  columns:
+  - '@id': '#gaia_dr1.variable_summary.solution_id'
+    datatype: long
+    description: All Gaia data processed by the Data Processing and Analysis Consortium
+      comes tagged with a solution identifier. This is a numeric field attached to
+      each table row that can be used to unequivocally identify the version of all
+      the subsystems that where used in the generation of the data as well as the
+      input data used. It is mainly for internal DPAC use but is included in the published
+      data releases to enable end users to examine the provenance of processed data
+      products. To decode a given solution ID visit
+    ivoa:ucd: meta.id
+    name: solution_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.variable_summary.source_id'
+    datatype: long
+    description: A unique single numerical identifier o f the source obtained from
+      GaiaSource (for a detailed description see GaiaSource.sourceId)
+    ivoa:ucd: meta.id;meta.main
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.variable_summary.phot_variable_fundam_freq1'
+    datatype: double
+    description: Identified 1st fundamental frequencies in the photometric G band,
+      copied from either the Cepheid or Rrlyrae table depending on the value of classification.
+    fits:tunit: 1/day
+    ivoa:ucd: src.var.pulse
+    name: phot_variable_fundam_freq1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#gaia_dr1.variable_summary.classification'
+    datatype: char
+    description: 'Photometric variability classification for the types included in
+      this data release: &#8216;RRLYR&#8217; (RR Lyrae) or &#8216;CEP&#8217; (Cepheid).
+      The ta bles Cepheid and Rrlyrae contain detailed results for each type.'
+    fits:tunit: ''
+    ivoa:ucd: meta.code.class;src.var
+    length: 5
+    name: classification
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Variability summary of sources with photVariableFlag=VARIABLE
+  indexes:
+  - '@id': '#variable_summary_solution_id_idx'
+    columns:
+    - '#gaia_dr1.variable_summary.solution_id'
+    name: variable_summary_solution_id_idx
+  - '@id': '#variable_summary_source_id_idx'
+    columns:
+    - '#gaia_dr1.variable_summary.source_id'
+    name: variable_summary_source_id_idx
+  name: variable_summary
+  primaryKey: ''
+  tap:table_index: 7
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

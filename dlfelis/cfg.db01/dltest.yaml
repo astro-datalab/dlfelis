@@ -1,0 +1,380 @@
+---
+'@id': '#dltest'
+description: test
+name: dltest
+tables:
+- '@id': '#dltest.dltest.object'
+  columns:
+  - '@id': '#dltest.dltest.object.id'
+    datatype: string
+    description: test
+    ivoa:ucd: meta.id;meta.main
+    length: 3
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ra'
+    datatype: double
+    description: test
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.dec'
+    datatype: double
+    description: test
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.raerr'
+    datatype: float
+    description: test
+    name: raerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.decerr'
+    datatype: float
+    description: test
+    name: decerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.rascatter'
+    datatype: float
+    description: test
+    name: rascatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.decscatter'
+    datatype: float
+    description: test
+    name: decscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndet'
+    datatype: short
+    description: test
+    name: ndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.depthflag'
+    datatype: short
+    description: test
+    name: depthflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.umag'
+    datatype: float
+    description: test
+    name: umag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.uerr'
+    datatype: float
+    description: test
+    name: uerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.uscatter'
+    datatype: float
+    description: test
+    name: uscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndetu'
+    datatype: short
+    description: test
+    name: ndetu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.gmag'
+    datatype: float
+    description: test
+    name: gmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.gerr'
+    datatype: float
+    description: test
+    name: gerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.gscatter'
+    datatype: float
+    description: test
+    name: gscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndetg'
+    datatype: short
+    description: test
+    name: ndetg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.rmag'
+    datatype: float
+    description: test
+    name: rmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.rerr'
+    datatype: float
+    description: test
+    name: rerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.rscatter'
+    datatype: float
+    description: test
+    name: rscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndetr'
+    datatype: short
+    description: test
+    name: ndetr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.imag'
+    datatype: float
+    description: test
+    name: imag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ierr'
+    datatype: float
+    description: test
+    name: ierr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.iscatter'
+    datatype: float
+    description: test
+    name: iscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndeti'
+    datatype: short
+    description: test
+    name: ndeti
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.zmag'
+    datatype: float
+    description: test
+    name: zmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.zerr'
+    datatype: float
+    description: test
+    name: zerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.zscatter'
+    datatype: float
+    description: test
+    name: zscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ndetz'
+    datatype: short
+    description: test
+    name: ndetz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.chi'
+    datatype: float
+    description: test
+    name: chi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.sharp'
+    datatype: float
+    description: test
+    name: sharp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.flag'
+    datatype: short
+    description: test
+    name: flag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.prob'
+    datatype: float
+    description: test
+    name: prob
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ebv'
+    datatype: float
+    description: test
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.htm9'
+    datatype: int
+    description: test
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ring256'
+    datatype: int
+    description: test
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.nest4096'
+    datatype: int
+    description: test
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.glon'
+    datatype: double
+    description: test
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.glat'
+    datatype: double
+    description: test
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.elon'
+    datatype: double
+    description: test
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.elat'
+    datatype: double
+    description: test
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.random_id'
+    datatype: float
+    description: test
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ugrizmag'
+    datatype: float
+    description: test
+    name: ugrizmag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ugrizerr'
+    datatype: float
+    description: test
+    name: ugrizerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ugrizscatter'
+    datatype: float
+    description: test
+    name: ugrizscatter
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.bigid'
+    datatype: long
+    description: test
+    name: bigid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#dltest.dltest.object.ugrizndet'
+    datatype: short
+    description: test
+    name: ugrizndet
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: test
+  indexes: []
+  name: dltest.object
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

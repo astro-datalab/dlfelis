@@ -1,0 +1,1775 @@
+---
+'@id': '#ivoa_gogreen_dr1'
+description: IVOA SIA/ObsCore Tables for gogreen_dr1 images
+name: ivoa_gogreen_dr1
+tables:
+- '@id': '#ivoa_gogreen_dr1.exposure'
+  columns:
+  - '@id': '#ivoa_gogreen_dr1.exposure.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.product_type'
+    datatype: char
+    description: Logical data product type (image etc.)
+    ivoa:ucd: meta.id
+    length: 16
+    name: product_type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.ra_j2000'
+    datatype: double
+    description: Right Ascension (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: ra_j2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.dec_j2000'
+    datatype: double
+    description: Declination (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: dec_j2000
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.raj2000_'
+    datatype: char
+    description: Right Ascension (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    length: 32
+    name: raj2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.decj2000_'
+    datatype: char
+    description: Declination (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    length: 32
+    name: decj2000_
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.date_obs'
+    datatype: char
+    description: Date of observation
+    ivoa:ucd: time;meta.dataset
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    fits:tunit: d
+    ivoa:ucd: time;meta.dataset
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.expnum'
+    datatype: int
+    description: Exposure number
+    ivoa:ucd: meta.number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    ivoa:ucd: time.duration;obs.exposure
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.filter'
+    datatype: char
+    description: Filter name (short form)
+    ivoa:ucd: meta.id
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.filt_str'
+    datatype: char
+    description: Full filter string
+    ivoa:ucd: meta.id
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.path'
+    datatype: char
+    description: File path in archive
+    length: 160
+    name: path
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.proctype'
+    datatype: char
+    description: Processing type (Raw, InstCal, Stack, Resampled, etc)
+    ivoa:ucd: meta.id;obs.calib
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    ivoa:ucd: meta.id
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    ivoa:ucd: meta.id
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.instrument'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.propid'
+    datatype: char
+    description: Proposal ID
+    length: 20
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.plver'
+    datatype: char
+    description: Pipeline version
+    length: 20
+    name: plver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.photflag'
+    datatype: int
+    description: Photometric quality flag
+    name: photflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    fits:tunit: deg
+    name: moonangle
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.exposure.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Exposure information
+  indexes:
+  - '@id': '#exposure_ra_j2000_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.ra_j2000'
+    name: exposure_ra_j2000_idx
+  - '@id': '#exposure_dec_j2000_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.dec_j2000'
+    name: exposure_dec_j2000_idx
+  - '@id': '#exposure_mjd_obs_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.mjd_obs'
+    name: exposure_mjd_obs_idx
+  - '@id': '#exposure_filter_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.filter'
+    name: exposure_filter_idx
+  - '@id': '#exposure_fileref_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.fileref'
+    name: exposure_fileref_idx
+  - '@id': '#exposure_proctype_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.proctype'
+    name: exposure_proctype_idx
+  - '@id': '#exposure_prodtype_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.exposure.prodtype'
+    name: exposure_prodtype_idx
+  name: exposure
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#ivoa_gogreen_dr1.obscore'
+  columns:
+  - '@id': '#ivoa_gogreen_dr1.obscore.product_type'
+    datatype: char
+    description: Logical data product type (image etc.)
+    ivoa:ucd: meta.id
+    length: 16
+    name: product_type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 64
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 64
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.target_name'
+    datatype: char
+    description: Object of interest
+    length: 64
+    name: target_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_fov'
+    datatype: double
+    description: Estimated size of the covered region as the diameter of a containing
+      circle
+    fits:tunit: deg
+    ivoa:ucd: phys.angSize;instr.fov
+    name: s_fov
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_region'
+    datatype: char
+    description: Sky region covered by the data product (expressed in ICRS frame)
+    ivoa:ucd: pos.outline;obs.field
+    length: 160
+    name: s_region
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_resolution'
+    datatype: double
+    description: Spatial resolution of data as FWHM of PSF
+    fits:tunit: arcsec
+    ivoa:ucd: pos.angResolution
+    name: s_resolution
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_xel1'
+    datatype: long
+    description: Number of elements along the first coordinate of the spatial axis
+    ivoa:ucd: meta.number
+    name: s_xel1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.s_xel2'
+    datatype: long
+    description: Number of elements along the second coordinate of the spatial axis
+    ivoa:ucd: meta.number
+    name: s_xel2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.t_min'
+    datatype: double
+    description: Start time in MJD
+    fits:tunit: d
+    ivoa:ucd: time.start;obs.exposure
+    name: t_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.t_max'
+    datatype: double
+    description: End time in MJD
+    fits:tunit: d
+    ivoa:ucd: time.end;obs.exposure
+    name: t_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.t_exptime'
+    datatype: double
+    description: Total exposure time
+    fits:tunit: s
+    ivoa:ucd: time.duration;obs.exposure
+    name: t_exptime
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.t_resolution'
+    datatype: double
+    description: Temporal resolution FWHM
+    fits:tunit: s
+    ivoa:ucd: time.resolution
+    name: t_resolution
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.t_xel'
+    datatype: long
+    description: Number of elements along the time axis
+    ivoa:ucd: meta.number
+    name: t_xel
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.em_max'
+    datatype: double
+    description: End in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.em_res_power'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: em_res_power
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.em_xel'
+    datatype: long
+    description: Number of elements along the spectral axis
+    ivoa:ucd: meta.number
+    name: em_xel
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.o_ucd'
+    datatype: char
+    description: Nature of the observable axis
+    ivoa:ucd: meta.ucd
+    length: 32
+    name: o_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.pol_states'
+    datatype: char
+    description: List of polarization states present in the data file
+    ivoa:ucd: meta.code;phys.polarization
+    length: 32
+    name: pol_states
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.pol_xel'
+    datatype: long
+    description: Number of elements along the polarization axis
+    ivoa:ucd: meta.number
+    name: pol_xel
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.facility_name'
+    datatype: char
+    description: Name of the facility used for this observation
+    ivoa:ucd: meta.id;instr.tel
+    length: 64
+    name: facility_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.obscore.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 64
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: ObsCore metadata table
+  indexes:
+  - '@id': '#obscore_product_type_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.product_type'
+    name: obscore_product_type_idx
+  - '@id': '#obscore_obs_id_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.obs_id'
+    name: obscore_obs_id_idx
+  - '@id': '#obscore_obs_pub_did_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.obs_pub_did'
+    name: obscore_obs_pub_did_idx
+  - '@id': '#obscore_s_ra_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.s_ra'
+    name: obscore_s_ra_idx
+  - '@id': '#obscore_s_dec_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.s_dec'
+    name: obscore_s_dec_idx
+  - '@id': '#obscore_t_min_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.t_min'
+    name: obscore_t_min_idx
+  - '@id': '#obscore_t_exptime_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.t_exptime'
+    name: obscore_t_exptime_idx
+  - '@id': '#obscore_instrument_name_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.obscore.instrument_name'
+    name: obscore_instrument_name_idx
+  name: obscore
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#ivoa_gogreen_dr1.siav1'
+  columns:
+  - '@id': '#ivoa_gogreen_dr1.siav1.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.project_code'
+    datatype: char
+    description: NOAO Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: project_code
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.propid'
+    datatype: char
+    description: Proposal ID
+    ivoa:ucd: meta.id
+    length: 64
+    name: propid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.assoc_id'
+    datatype: char
+    description: Unique observation identifier
+    length: 64
+    name: assoc_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 8
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.obs_bandpass'
+    datatype: char
+    description: Observation bandpass
+    length: 8
+    name: obs_bandpass
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    ivoa:ucd: meta.code;obs.calib
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.im_naxes'
+    datatype: int
+    description: Number of image axes
+    name: im_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.im_naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: im_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.im_naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: im_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.s_ra'
+    datatype: double
+    description: Central Spatial Position in ICRS Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra
+    name: s_ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.s_dec'
+    datatype: double
+    description: 'Central Spatial Position in ICRS Declination '
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec
+    name: s_dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spat_lolimit1'
+    datatype: double
+    description: Start location along spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spat_lolimit2'
+    datatype: double
+    description: Start location along spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spat_hilimit1'
+    datatype: double
+    description: End location along spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spat_hilimit2'
+    datatype: double
+    description: End location along spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.im_scale'
+    datatype: double
+    description: Image pixel scale
+    name: im_scale
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.em_min'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.min
+    name: em_min
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.em_max'
+    datatype: double
+    description: Start in spectral coordinates
+    fits:tunit: m
+    ivoa:ucd: em.wl;stat.max
+    name: em_max
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.em_res'
+    datatype: double
+    description: Spectral resolution
+    ivoa:ucd: spect.resolution
+    name: em_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.fluxaxis_ucd'
+    datatype: char
+    description: Flux axis UCD
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.fluxaxis_unit'
+    datatype: char
+    description: Flux axis units
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.el_length'
+    datatype: int
+    description: Number of pixel elements
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.el_size'
+    datatype: int
+    description: Pixel element size
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.id'
+    datatype: char
+    description: Unique observation ID
+    length: 128
+    name: id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.date_obs'
+    datatype: char
+    description: Date of observation
+    length: 32
+    name: date_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.mjd_obs'
+    datatype: char
+    description: MJD of observation
+    length: 32
+    name: mjd_obs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.expnum'
+    datatype: int
+    description: Exposure number
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.exptime'
+    datatype: float
+    description: Exposure time
+    fits:tunit: s
+    name: exptime
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.filt_str'
+    datatype: char
+    description: Full filter string
+    length: 32
+    name: filt_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.obstype'
+    datatype: char
+    description: Observation type (object, zero, dark, dome flat)
+    length: 20
+    name: obstype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.telescope'
+    datatype: char
+    description: Telescope used for observation
+    ivoa:ucd: meta.code;instr.tel
+    length: 20
+    name: telescope
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.instrument_name'
+    datatype: char
+    description: Name of the instrument used for this observation
+    ivoa:ucd: meta.id;instr
+    length: 32
+    name: instrument_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.object'
+    datatype: char
+    description: Object name
+    length: 128
+    name: object
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.proposer'
+    datatype: char
+    description: Name of proposal PI
+    length: 60
+    name: proposer
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.ha'
+    datatype: char
+    description: Hour angle of observation
+    fits:tunit: deg
+    length: 20
+    name: ha
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.zd'
+    datatype: float
+    description: Zenith distance of observation
+    fits:tunit: deg
+    name: zd
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.airmass'
+    datatype: float
+    description: Airmass of observation
+    name: airmass
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.seeing'
+    datatype: float
+    description: Seeing estimate
+    fits:tunit: arcsec
+    name: seeing
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.moonangle'
+    datatype: float
+    description: Angle between target and moon
+    name: moonangle
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.fwhm'
+    datatype: float
+    description: Estimate of average FWHM
+    fits:tunit: arcsec
+    name: fwhm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.elliptic'
+    datatype: float
+    description: Estimate of average ellipticity
+    name: elliptic
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav1.magzero'
+    datatype: float
+    description: Magnitude zero point
+    fits:tunit: mag
+    name: magzero
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: SIA v1 metadata table
+  indexes:
+  - '@id': '#siav1_obs_id_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.obs_id'
+    name: siav1_obs_id_idx
+  - '@id': '#siav1_obs_pub_did_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.obs_pub_did'
+    name: siav1_obs_pub_did_idx
+  - '@id': '#siav1_filter_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.filter'
+    name: siav1_filter_idx
+  - '@id': '#siav1_s_ra_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.s_ra'
+    name: siav1_s_ra_idx
+  - '@id': '#siav1_s_dec_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.s_dec'
+    name: siav1_s_dec_idx
+  - '@id': '#siav1_time_start_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.time_start'
+    name: siav1_time_start_idx
+  - '@id': '#siav1_mjd_obs_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.mjd_obs'
+    name: siav1_mjd_obs_idx
+  - '@id': '#siav1_fileref_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav1.fileref'
+    name: siav1_fileref_idx
+  name: siav1
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#ivoa_gogreen_dr1.siav2'
+  columns:
+  - '@id': '#ivoa_gogreen_dr1.siav2.obs_collection'
+    datatype: char
+    description: Data collection to which dataset belongs
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.obs_id'
+    datatype: char
+    description: Free syntax Observation Identifier
+    ivoa:ucd: meta.id
+    length: 64
+    name: obs_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.obs_pub_did'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    ivoa:ucd: meta.ref.uri;meta.curation
+    length: 128
+    name: obs_pub_did
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.access_url'
+    datatype: char
+    description: URL used to access (download) dataset
+    ivoa:ucd: meta.ref.url
+    length: 255
+    name: access_url
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.access_format'
+    datatype: char
+    description: File content format
+    ivoa:ucd: meta.code.mime
+    length: 64
+    name: access_format
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.access_estsize'
+    datatype: int
+    description: Estimated size of dataset in kilo bytes
+    fits:tunit: kilobyte
+    ivoa:ucd: phys.size;meta.file
+    name: access_estsize
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.filter'
+    datatype: char
+    description: Filter name (short form)
+    length: 32
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.calib_level'
+    datatype: int
+    description: Calibration level {0, 1, 2, 3, 4}
+    name: calib_level
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.datalength'
+    datatype: int
+    description: Total Number of pixels
+    name: datalength
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.nsubarrays'
+    datatype: int
+    description: Number of sub-arrays
+    name: nsubarrays
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.naxes'
+    datatype: int
+    description: Number of image axes
+    name: naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.naxis1'
+    datatype: int
+    description: Length of first image axis
+    name: naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.naxis2'
+    datatype: int
+    description: Length of second image axis
+    name: naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.pixtype'
+    datatype: char
+    description: pixel type
+    length: 20
+    name: pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.wcsaxes1'
+    datatype: char
+    description: WCS project along axis 1
+    length: 20
+    name: wcsaxes1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.wcsaxes2'
+    datatype: char
+    description: WCS project along axis 2
+    length: 20
+    name: wcsaxes2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.title'
+    datatype: char
+    description: Brief description of dataset in free format
+    length: 128
+    name: title
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.creator'
+    datatype: char
+    description: Name of the creator of the data
+    length: 128
+    name: creator
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.collection'
+    datatype: char
+    description: Name of the data collection
+    length: 128
+    name: collection
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.pubdid'
+    datatype: char
+    description: Dataset identifier given by the publisher
+    length: 160
+    name: pubdid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.creationtype'
+    datatype: char
+    description: Nature or genre of the content
+    length: 10
+    name: creationtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_loc1'
+    datatype: double
+    description: Spatial position along axis 1
+    name: spat_loc1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_loc2'
+    datatype: double
+    description: Spatial position along axis 2
+    name: spat_loc2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_lolimit1'
+    datatype: double
+    description: Lower limit of spatial axis 1
+    name: spat_lolimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_lolimit2'
+    datatype: double
+    description: Lower limit of spatial axis 2
+    name: spat_lolimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_hilimit1'
+    datatype: double
+    description: Upper limit of spatial axis 1
+    name: spat_hilimit1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_hilimit2'
+    datatype: double
+    description: Upper limit of spatial axis 2
+    name: spat_hilimit2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.ra1'
+    datatype: double
+    description: Lower-left RA (ICRS) position of image
+    name: ra1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.dec1'
+    datatype: double
+    description: Lower-left Dec (ICRS) position of image
+    name: dec1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.ra2'
+    datatype: double
+    description: Lower-right RA (ICRS) position of image
+    name: ra2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.dec2'
+    datatype: double
+    description: Lower-right Dec (ICRS) position of image
+    name: dec2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.ra3'
+    datatype: double
+    description: Upper-right RA (ICRS) position of image
+    name: ra3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.dec3'
+    datatype: double
+    description: Upper-right Dec (ICRS) position of image
+    name: dec3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.ra4'
+    datatype: double
+    description: Upper-left RA (ICRS) position of image
+    name: ra4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.dec4'
+    datatype: double
+    description: Upper-left Dec (ICRS) position of image
+    name: dec4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_res1'
+    datatype: double
+    description: Spatial resolution of axis 1
+    name: spat_res1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spat_res2'
+    datatype: double
+    description: Spatial resolution of axis 2
+    name: spat_res2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.pix_res1'
+    datatype: double
+    description: Pixel resolution of axis 1
+    name: pix_res1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.pix_res2'
+    datatype: double
+    description: Pixel resolution of axis 2
+    name: pix_res2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spec_location'
+    datatype: double
+    description: Central location along spectral axis
+    name: spec_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spec_start'
+    datatype: double
+    description: Start location along spectral axis
+    name: spec_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spec_stop'
+    datatype: double
+    description: End location along spectral axis
+    name: spec_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spec_res'
+    datatype: double
+    description: Spectral resolution
+    name: spec_res
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.spec_respower'
+    datatype: double
+    description: Value of the resolving power along the spectral axis. (R)
+    name: spec_respower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.time_location'
+    datatype: char
+    description: Central location along time axis
+    length: 30
+    name: time_location
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.time_start'
+    datatype: double
+    description: Start location along time axis
+    name: time_start
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.time_stop'
+    datatype: double
+    description: End location along time axis
+    name: time_stop
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.fluxaxis_ucd'
+    datatype: char
+    description: UCD of Flux axis
+    length: 64
+    name: fluxaxis_ucd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.fluxaxis_unit'
+    datatype: char
+    description: Units of Flux axis
+    length: 20
+    name: fluxaxis_unit
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_naxes'
+    datatype: int
+    description: Number of axes
+    name: el_naxes
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_naxis1'
+    datatype: int
+    description: Length of axis 1
+    name: el_naxis1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_naxis2'
+    datatype: int
+    description: Length of axis 2
+    name: el_naxis2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_pixtype'
+    datatype: char
+    description: Pixel type
+    length: 20
+    name: el_pixtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_length'
+    datatype: int
+    description: Number of total pixels
+    name: el_length
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.el_size'
+    datatype: int
+    description: Size of each pixel
+    name: el_size
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.extname'
+    datatype: char
+    description: MEF Extension Name
+    length: 20
+    name: extname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.ccdnum'
+    datatype: int
+    description: Detector (mosaic) CCD number
+    name: ccdnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.plver'
+    datatype: char
+    description: Pipeline version
+    length: 20
+    name: plver
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.photflag'
+    datatype: int
+    description: Photometric quality flag
+    name: photflag
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.fileref'
+    datatype: char
+    description: Archive file reference
+    length: 128
+    name: fileref
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.proctype'
+    datatype: char
+    description: Processing type
+    length: 20
+    name: proctype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ivoa_gogreen_dr1.siav2.prodtype'
+    datatype: char
+    description: Product type (image, dqmask, expmap, etc)
+    length: 20
+    name: prodtype
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: SIA v2 metadata table
+  indexes:
+  - '@id': '#siav2_obs_id_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.obs_id'
+    name: siav2_obs_id_idx
+  - '@id': '#siav2_obs_pub_did_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.obs_pub_did'
+    name: siav2_obs_pub_did_idx
+  - '@id': '#siav2_filter_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.filter'
+    name: siav2_filter_idx
+  - '@id': '#siav2_spat_loc1_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.spat_loc1'
+    name: siav2_spat_loc1_idx
+  - '@id': '#siav2_spat_loc2_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.spat_loc2'
+    name: siav2_spat_loc2_idx
+  - '@id': '#siav2_time_start_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.time_start'
+    name: siav2_time_start_idx
+  - '@id': '#siav2_fileref_idx'
+    columns:
+    - '#ivoa_gogreen_dr1.siav2.fileref'
+    name: siav2_fileref_idx
+  name: siav2
+  primaryKey: ''
+  tap:table_index: 4
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

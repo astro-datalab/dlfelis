@@ -1,0 +1,636 @@
+---
+'@id': '#bulge_dr1'
+description: ''
+name: bulge_dr1
+tables:
+- '@id': '#bulge_dr1.exposure'
+  columns:
+  - '@id': '#bulge_dr1.exposure.hjd'
+    datatype: double
+    description: ''
+    name: hjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.expnum'
+    datatype: int
+    description: ''
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.skypc2'
+    datatype: float
+    description: ''
+    name: skypc2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.skypc5'
+    datatype: float
+    description: ''
+    name: skypc5
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.skypc10'
+    datatype: float
+    description: ''
+    name: skypc10
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.skypc90'
+    datatype: float
+    description: ''
+    name: skypc90
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.filter'
+    datatype: char
+    description: ''
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.exposure.fitsfilename'
+    datatype: char
+    description: ''
+    length: 1
+    name: fitsfilename
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: ''
+  indexes: []
+  name: exposure
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#bulge_dr1.meas'
+  columns:
+  - '@id': '#bulge_dr1.meas.hjd'
+    datatype: double
+    description: ''
+    name: hjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.ra'
+    datatype: double
+    description: ''
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.dec'
+    datatype: double
+    description: ''
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.glon'
+    datatype: double
+    description: ''
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.glat'
+    datatype: double
+    description: ''
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.elon'
+    datatype: double
+    description: ''
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.elat'
+    datatype: double
+    description: ''
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.mag'
+    datatype: float
+    description: ''
+    name: mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.magerr'
+    datatype: float
+    description: ''
+    name: magerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.contam'
+    datatype: float
+    description: ''
+    name: contam
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.xpos'
+    datatype: float
+    description: ''
+    name: xpos
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.ypos'
+    datatype: float
+    description: ''
+    name: ypos
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.errfloor'
+    datatype: float
+    description: ''
+    name: errfloor
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.mag_offset'
+    datatype: float
+    description: ''
+    name: mag_offset
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.sky'
+    datatype: float
+    description: ''
+    name: sky
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.blim'
+    datatype: float
+    description: ''
+    name: blim
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.random_id'
+    datatype: float
+    description: ''
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.objid'
+    datatype: int
+    description: ''
+    name: objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.expnum'
+    datatype: int
+    description: ''
+    name: expnum
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.ring256'
+    datatype: int
+    description: ''
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.nest4096'
+    datatype: int
+    description: ''
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.dophot_type'
+    datatype: short
+    description: ''
+    name: dophot_type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.chipid'
+    datatype: short
+    description: ''
+    name: chipid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.field'
+    datatype: short
+    description: ''
+    name: field
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.meas.filter'
+    datatype: char
+    description: ''
+    length: 1
+    name: filter
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: ''
+  indexes: []
+  name: meas
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#bulge_dr1.object'
+  columns:
+  - '@id': '#bulge_dr1.object.ra'
+    datatype: double
+    description: ''
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.raerr'
+    datatype: double
+    description: ''
+    name: raerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.dec'
+    datatype: double
+    description: ''
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.decerr'
+    datatype: double
+    description: ''
+    name: decerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.glon'
+    datatype: double
+    description: ''
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.glonerr'
+    datatype: double
+    description: ''
+    name: glonerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.glat'
+    datatype: double
+    description: ''
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.glaterr'
+    datatype: double
+    description: ''
+    name: glaterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.elon'
+    datatype: double
+    description: ''
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.elonerr'
+    datatype: double
+    description: ''
+    name: elonerr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.elat'
+    datatype: double
+    description: ''
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.elaterr'
+    datatype: double
+    description: ''
+    name: elaterr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.ring256'
+    datatype: int
+    description: ''
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.nest4096'
+    datatype: int
+    description: ''
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.objid'
+    datatype: int
+    description: ''
+    name: objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.random_id'
+    datatype: float
+    description: ''
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.umean'
+    datatype: float
+    description: ''
+    name: umean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.umeanerr'
+    datatype: float
+    description: ''
+    name: umeanerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.umed'
+    datatype: float
+    description: ''
+    name: umed
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.umederr'
+    datatype: float
+    description: ''
+    name: umederr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.gmean'
+    datatype: float
+    description: ''
+    name: gmean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.gmeanerr'
+    datatype: float
+    description: ''
+    name: gmeanerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.gmed'
+    datatype: float
+    description: ''
+    name: gmed
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.gmederr'
+    datatype: float
+    description: ''
+    name: gmederr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.rmean'
+    datatype: float
+    description: ''
+    name: rmean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.rmeanerr'
+    datatype: float
+    description: ''
+    name: rmeanerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.rmed'
+    datatype: float
+    description: ''
+    name: rmed
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.rmederr'
+    datatype: float
+    description: ''
+    name: rmederr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.imean'
+    datatype: float
+    description: ''
+    name: imean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.imeanerr'
+    datatype: float
+    description: ''
+    name: imeanerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.imed'
+    datatype: float
+    description: ''
+    name: imed
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.imederr'
+    datatype: float
+    description: ''
+    name: imederr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.zmean'
+    datatype: float
+    description: ''
+    name: zmean
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.zmeanerr'
+    datatype: float
+    description: ''
+    name: zmeanerr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.zmed'
+    datatype: float
+    description: ''
+    name: zmed
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.zmederr'
+    datatype: float
+    description: ''
+    name: zmederr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.a_u'
+    datatype: float
+    description: ''
+    name: a_u
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.a_g'
+    datatype: float
+    description: ''
+    name: a_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.a_r'
+    datatype: float
+    description: ''
+    name: a_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.a_i'
+    datatype: float
+    description: ''
+    name: a_i
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.e_rz'
+    datatype: float
+    description: ''
+    name: e_rz
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.e_gi'
+    datatype: float
+    description: ''
+    name: e_gi
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.nu'
+    datatype: short
+    description: ''
+    name: nu
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.ng'
+    datatype: short
+    description: ''
+    name: ng
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.nr'
+    datatype: short
+    description: ''
+    name: nr
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.ni'
+    datatype: short
+    description: ''
+    name: ni
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#bulge_dr1.object.nz'
+    datatype: short
+    description: ''
+    name: nz
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: ''
+  indexes: []
+  name: object
+  primaryKey: ''
+  tap:table_index: 3
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

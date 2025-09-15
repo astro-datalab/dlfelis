@@ -1,0 +1,1152 @@
+---
+'@id': '#ls_dr8_galzoo'
+description: Legacy Survey Data Release 8 for Galaxy Zoo
+name: ls_dr8_galzoo
+tables:
+- '@id': '#ls_dr8_galzoo.galaxy_zoo'
+  columns:
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_smooth_fraction'
+    datatype: double
+    description: 'Fraction of: Is this galaxy smooth or featured'
+    name: smooth_or_featured_smooth_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_featured_or_disk_fraction'
+    datatype: double
+    description: 'Fraction of: Is this galaxy smooth or disk featured'
+    name: smooth_or_featured_featured_or_disk_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_artifact_fraction'
+    datatype: double
+    description: 'Fraction of: Is this galaxy smooth or featured artifact'
+    name: smooth_or_featured_artifact_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_yes_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have disk edge on (yes)'
+    name: disk_edge_on_yes_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_no_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have disk edge on (no)'
+    name: disk_edge_on_no_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_yes_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral arms (yes)'
+    name: has_spiral_arms_yes_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_no_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral arms (no)'
+    name: has_spiral_arms_no_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_strong_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bar strong'
+    name: bar_strong_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_weak_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bar weak'
+    name: bar_weak_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_no_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have a bar (no)'
+    name: bar_no_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_dominant_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bulge size dominant'
+    name: bulge_size_dominant_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_large_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bulge size large'
+    name: bulge_size_large_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_moderate_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bulge size moderate'
+    name: bulge_size_moderate_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_small_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bulge size small'
+    name: bulge_size_small_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_none_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have bulge size (none)'
+    name: bulge_size_none_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_round_fraction'
+    datatype: double
+    description: 'Fraction of: Is this galaxy completely round'
+    name: how_rounded_round_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_in_between_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have in-between roundness'
+    name: how_rounded_in_between_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_cigar_shaped_fraction'
+    datatype: double
+    description: 'Fraction of: Is this galaxy cigar-shaped'
+    name: how_rounded_cigar_shaped_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_boxy_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have edge on bulge boxy'
+    name: edge_on_bulge_boxy_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_none_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have edge on bulge (none)'
+    name: edge_on_bulge_none_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_rounded_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have edge on bulge rounded'
+    name: edge_on_bulge_rounded_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_tight_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral winding tight'
+    name: spiral_winding_tight_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_medium_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral winding medium'
+    name: spiral_winding_medium_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_loose_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral winding loose'
+    name: spiral_winding_loose_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_1_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have 1 spiral arm'
+    name: spiral_arm_count_1_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_2_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have 2 spiral arms'
+    name: spiral_arm_count_2_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_3_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have 3 spiral arms'
+    name: spiral_arm_count_3_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_4_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have 4 spiral arms'
+    name: spiral_arm_count_4_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_more_than_4_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have more than 4 spiral arms'
+    name: spiral_arm_count_more_than_4_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_cant_tell_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have spiral arms (cannot tell)'
+    name: spiral_arm_count_cant_tell_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_none_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have merging (none)'
+    name: merging_none_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_minor_disturbance_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have merging minor disturbance'
+    name: merging_minor_disturbance_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_major_disturbance_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have merging major disturbance'
+    name: merging_major_disturbance_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_merger_fraction'
+    datatype: double
+    description: 'Fraction of: Does this galaxy have merging merger'
+    name: merging_merger_fraction
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_smooth_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of smooth_or_featured_smooth_fraction
+    name: smooth_or_featured_smooth_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_featured_or_disk_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of smooth_or_featured_featured_or_disk_fraction
+    name: smooth_or_featured_featured_or_disk_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_artifact_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of smooth_or_featured_artifact_fraction
+    name: smooth_or_featured_artifact_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_yes_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of disk_edge_on_yes_fraction
+    name: disk_edge_on_yes_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_no_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of disk_edge_on_no_fraction
+    name: disk_edge_on_no_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_yes_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of has_spiral_arms_yes_fraction
+    name: has_spiral_arms_yes_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_no_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of has_spiral_arms_no_fraction
+    name: has_spiral_arms_no_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_strong_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bar_strong_fraction
+    name: bar_strong_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_weak_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bar_weak_fraction
+    name: bar_weak_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_no_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bar_no_fraction
+    name: bar_no_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_dominant_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bulge_size_dominant_fraction
+    name: bulge_size_dominant_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_large_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bulge_size_large_fraction
+    name: bulge_size_large_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_moderate_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bulge_size_moderate_fraction
+    name: bulge_size_moderate_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_small_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bulge_size_small_fraction
+    name: bulge_size_small_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_none_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of bulge_size_none_fraction
+    name: bulge_size_none_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_round_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of how_rounded_round_fraction
+    name: how_rounded_round_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_in_between_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of how_rounded_in_between_fraction
+    name: how_rounded_in_between_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_cigar_shaped_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of how_rounded_cigar_shaped_fraction
+    name: how_rounded_cigar_shaped_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_boxy_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of edge_on_bulge_boxy_fraction
+    name: edge_on_bulge_boxy_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_none_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of edge_on_bulge_none_fraction
+    name: edge_on_bulge_none_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_rounded_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of edge_on_bulge_rounded_fraction
+    name: edge_on_bulge_rounded_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_tight_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_winding_tight_fraction
+    name: spiral_winding_tight_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_medium_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_winding_medium_fraction
+    name: spiral_winding_medium_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_loose_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_winding_loose_fraction
+    name: spiral_winding_loose_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_1_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_1_fraction
+    name: spiral_arm_count_1_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_2_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_2_fraction
+    name: spiral_arm_count_2_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_3_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_3_fraction
+    name: spiral_arm_count_3_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_4_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_4_fraction
+    name: spiral_arm_count_4_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_more_than_4_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_more_than_4_fraction
+    name: spiral_arm_count_more_than_4_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_cant_tell_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of spiral_arm_count_cant_tell_fraction
+    name: spiral_arm_count_cant_tell_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_none_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of merging_none_fraction
+    name: merging_none_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_minor_disturbance_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of merging_minor_disturbance_fraction
+    name: merging_minor_disturbance_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_major_disturbance_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of merging_major_disturbance_fraction
+    name: merging_major_disturbance_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_merger_90pc_lower'
+    datatype: double
+    description: Lower 90% confidence interval of merging_merger_fraction
+    name: merging_merger_90pc_lower
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_smooth_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of smooth_or_featured_smooth_fraction
+    name: smooth_or_featured_smooth_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_featured_or_disk_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of smooth_or_featured_featured_or_disk_fraction
+    name: smooth_or_featured_featured_or_disk_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_artifact_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of smooth_or_featured_artifact_fraction
+    name: smooth_or_featured_artifact_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_yes_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of disk_edge_on_yes_fraction
+    name: disk_edge_on_yes_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_no_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of disk_edge_on_no_fraction
+    name: disk_edge_on_no_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_yes_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of has_spiral_arms_yes_fraction
+    name: has_spiral_arms_yes_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_no_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of has_spiral_arms_no_fraction
+    name: has_spiral_arms_no_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_strong_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bar_strong_fraction
+    name: bar_strong_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_weak_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bar_weak_fraction
+    name: bar_weak_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_no_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bar_no_fraction
+    name: bar_no_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_dominant_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bulge_size_dominant_fraction
+    name: bulge_size_dominant_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_large_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bulge_size_large_fraction
+    name: bulge_size_large_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_moderate_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bulge_size_moderate_fraction
+    name: bulge_size_moderate_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_small_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bulge_size_small_fraction
+    name: bulge_size_small_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_none_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of bulge_size_none_fraction
+    name: bulge_size_none_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_round_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of how_rounded_round_fraction
+    name: how_rounded_round_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_in_between_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of how_rounded_in_between_fraction
+    name: how_rounded_in_between_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_cigar_shaped_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of how_rounded_cigar_shaped_fraction
+    name: how_rounded_cigar_shaped_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_boxy_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of edge_on_bulge_boxy_fraction
+    name: edge_on_bulge_boxy_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_none_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of edge_on_bulge_none_fraction
+    name: edge_on_bulge_none_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_rounded_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of edge_on_bulge_rounded_fraction
+    name: edge_on_bulge_rounded_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_tight_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_winding_tight_fraction
+    name: spiral_winding_tight_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_medium_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_winding_medium_fraction
+    name: spiral_winding_medium_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_loose_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_winding_loose_fraction
+    name: spiral_winding_loose_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_1_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_1_fraction
+    name: spiral_arm_count_1_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_2_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_2_fraction
+    name: spiral_arm_count_2_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_3_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_3_fraction
+    name: spiral_arm_count_3_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_4_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_4_fraction
+    name: spiral_arm_count_4_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_more_than_4_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_more_than_4_fraction
+    name: spiral_arm_count_more_than_4_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_cant_tell_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of spiral_arm_count_cant_tell_fraction
+    name: spiral_arm_count_cant_tell_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_none_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of merging_none_fraction
+    name: merging_none_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_minor_disturbance_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of merging_minor_disturbance_fraction
+    name: merging_minor_disturbance_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_major_disturbance_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of merging_major_disturbance_fraction
+    name: merging_major_disturbance_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_merger_90pc_upper'
+    datatype: double
+    description: Upper 90% confidence interval of merging_merger_fraction
+    name: merging_merger_90pc_upper
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.ra'
+    datatype: double
+    description: Right ascension
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.dec'
+    datatype: double
+    description: Declination
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.elon'
+    datatype: double
+    description: Ecliptic longitude
+    fits:tunit: deg
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.elat'
+    datatype: double
+    description: Ecliptic latitude
+    fits:tunit: deg
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.glon'
+    datatype: double
+    description: Galactic longitude
+    fits:tunit: deg
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.glat'
+    datatype: double
+    description: Galactic latitude
+    fits:tunit: deg
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_smooth_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for smooth_or_featured_smooth_fraction
+    name: smooth_or_featured_smooth_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_featured_or_disk_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for smooth_or_featured_featured_or_disk_fraction
+    name: smooth_or_featured_featured_or_disk_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.smooth_or_featured_artifact_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for smooth_or_featured_artifact_fraction
+    name: smooth_or_featured_artifact_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_yes_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for disk_edge_on_yes_fraction
+    name: disk_edge_on_yes_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.disk_edge_on_no_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for disk_edge_on_no_fraction
+    name: disk_edge_on_no_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_yes_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for has_spiral_arms_yes_fraction
+    name: has_spiral_arms_yes_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.has_spiral_arms_no_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for has_spiral_arms_no_fraction
+    name: has_spiral_arms_no_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_strong_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bar_strong_fraction
+    name: bar_strong_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_weak_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bar_weak_fraction
+    name: bar_weak_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bar_no_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bar_no_fraction
+    name: bar_no_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_dominant_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bulge_size_dominant_fraction
+    name: bulge_size_dominant_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_large_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bulge_size_large_fraction
+    name: bulge_size_large_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_moderate_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bulge_size_moderate_fraction
+    name: bulge_size_moderate_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_small_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bulge_size_small_fraction
+    name: bulge_size_small_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.bulge_size_none_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for bulge_size_none_fraction
+    name: bulge_size_none_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_round_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for how_rounded_round_fraction
+    name: how_rounded_round_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_in_between_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for how_rounded_in_between_fraction
+    name: how_rounded_in_between_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.how_rounded_cigar_shaped_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for how_rounded_cigar_shaped_fraction
+    name: how_rounded_cigar_shaped_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_boxy_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for edge_on_bulge_boxy_fraction
+    name: edge_on_bulge_boxy_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_none_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for edge_on_bulge_none_fraction
+    name: edge_on_bulge_none_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.edge_on_bulge_rounded_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for edge_on_bulge_rounded_fraction
+    name: edge_on_bulge_rounded_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_tight_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_winding_tight_fraction
+    name: spiral_winding_tight_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_medium_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_winding_medium_fraction
+    name: spiral_winding_medium_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_winding_loose_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_winding_loose_fraction
+    name: spiral_winding_loose_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_1_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_1_fraction
+    name: spiral_arm_count_1_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_2_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_2_fraction
+    name: spiral_arm_count_2_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_3_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_3_fraction
+    name: spiral_arm_count_3_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_4_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_4_fraction
+    name: spiral_arm_count_4_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_more_than_4_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_more_than_4_fraction
+    name: spiral_arm_count_more_than_4_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.spiral_arm_count_cant_tell_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for spiral_arm_count_cant_tell_fraction
+    name: spiral_arm_count_cant_tell_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_none_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for merging_none_fraction
+    name: merging_none_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_minor_disturbance_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for merging_minor_disturbance_fraction
+    name: merging_minor_disturbance_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_major_disturbance_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for merging_major_disturbance_fraction
+    name: merging_major_disturbance_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.merging_merger_proportion_asked'
+    datatype: float
+    description: Measure of question relevance for merging_merger_fraction
+    name: merging_merger_proportion_asked
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size)
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.dr8_id'
+    datatype: string
+    description: Unique LS DR8 object ID
+    ivoa:ucd: meta.id;meta.main
+    length: 12
+    name: dr8_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.catalog_version'
+    datatype: char
+    description: GZ DESI release
+    length: 5
+    name: catalog_version
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#ls_dr8_galzoo.galaxy_zoo.legacy_survey_data_release'
+    datatype: char
+    description: Legacy survey data release
+    length: 3
+    name: legacy_survey_data_release
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: DESI Galaxy Zoo
+  indexes:
+  - '@id': '#galaxy_zoo_ra_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.ra'
+    name: galaxy_zoo_ra_idx
+  - '@id': '#galaxy_zoo_dec_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.dec'
+    name: galaxy_zoo_dec_idx
+  - '@id': '#galaxy_zoo_elon_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.elon'
+    name: galaxy_zoo_elon_idx
+  - '@id': '#galaxy_zoo_elat_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.elat'
+    name: galaxy_zoo_elat_idx
+  - '@id': '#galaxy_zoo_glon_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.glon'
+    name: galaxy_zoo_glon_idx
+  - '@id': '#galaxy_zoo_glat_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.glat'
+    name: galaxy_zoo_glat_idx
+  - '@id': '#galaxy_zoo_random_id_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.random_id'
+    name: galaxy_zoo_random_id_idx
+  - '@id': '#galaxy_zoo_htm9_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.htm9'
+    name: galaxy_zoo_htm9_idx
+  - '@id': '#galaxy_zoo_ring256_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.ring256'
+    name: galaxy_zoo_ring256_idx
+  - '@id': '#galaxy_zoo_nest4096_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.nest4096'
+    name: galaxy_zoo_nest4096_idx
+  - '@id': '#galaxy_zoo_dr8_id_idx'
+    columns:
+    - '#ls_dr8_galzoo.galaxy_zoo.dr8_id'
+    name: galaxy_zoo_dr8_id_idx
+  name: galaxy_zoo
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

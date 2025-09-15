@@ -1,0 +1,1346 @@
+---
+'@id': '#nbdata'
+description: Group of datasets intended to use mostly in DataLab notebooks
+name: nbdata
+tables:
+- '@id': '#nbdata.nb0068_lsdr6_bricks_dr6'
+  columns:
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.brickname'
+    datatype: text
+    description: Name of the brick
+    name: brickname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ra'
+    datatype: double
+    description: RA of the center of the brick
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.dec'
+    datatype: double
+    description: Dec of the center of the brick
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexp_g'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the g-band
+    name: nexp_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexp_r'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the r-band
+    name: nexp_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexp_z'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the z-band
+    name: nexp_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_g_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_r_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexphist_z_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nobjs'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of all types
+    name: nobjs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.npsf'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of PSF types
+    name: npsf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nsimp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of SIMP types
+    name: nsimp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nrex'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick, of type REX
+    name: nrex
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nexp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of EXP types
+    name: nexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ndev'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of DEV types
+    name: ndev
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ncomp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of COMP types
+    name: ncomp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfsize_g'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in g-band
+    name: psfsize_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfsize_r'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in r-band
+    name: psfsize_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfsize_z'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in z-band
+    name: psfsize_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_g'
+    datatype: float
+    description: 5-sigma PSF detection depth in g-band (AB mag), using PsfEx PSF model
+    name: psfdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_r'
+    datatype: float
+    description: 5-sigma PSF detection depth in r-band (AB mag), using PsfEx PSF model
+    name: psfdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.psfdepth_z'
+    datatype: float
+    description: 5-sigma PSF detection depth in z-band (AB mag), using PsfEx PSF model
+    name: psfdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_g'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in g-band
+      (AB) mag
+    name: galdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_r'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in r-band
+      (AB) mag
+    name: galdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.galdepth_z'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in z-band
+      (AB) mag
+    name: galdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ebv'
+    datatype: float
+    description: Median SFD dust map E(B-V) extinction, in magnitudes, evaluated at
+      BRICK_UNIQUE objects in this brick
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_g'
+    datatype: float
+    description: Median Milky Way dust transparency in g-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_r'
+    datatype: float
+    description: Median Milky Way dust transparency in r-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_z'
+    datatype: float
+    description: Median Milky Way dust transparency in z-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_g'
+    datatype: float
+    description: Extinction in g-band
+    name: ext_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_r'
+    datatype: float
+    description: Extinction in r-band
+    name: ext_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_z'
+    datatype: float
+    description: Extinction in z-band
+    name: ext_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.wise_nobs_1'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.wise_nobs_2'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.wise_nobs_3'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.wise_nobs_4'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_1'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_2'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_3'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.trans_wise_4'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w1'
+    datatype: float
+    description: Extinction in W1
+    name: ext_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w2'
+    datatype: float
+    description: Extinction in W2
+    name: ext_w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w3'
+    datatype: float
+    description: Extinction in W3
+    name: ext_w3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ext_w4'
+    datatype: float
+    description: Extinction in W4
+    name: ext_w4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.glon'
+    datatype: double
+    description: Galactic Longitude
+    ivoa:ucd: pos.galactic.lon;meta.main
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.glat'
+    datatype: double
+    description: Galactic Latitude
+    ivoa:ucd: pos.galactic.lat;meta.main
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.elon'
+    datatype: double
+    description: Ecliptic Longitude
+    ivoa:ucd: pos.ecliptic.lon;meta.main
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_bricks_dr6.elat'
+    datatype: double
+    description: Ecliptic Latitude
+    ivoa:ucd: pos.ecliptic.lat;meta.main
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Table with information that summarizes the contents of each brick
+  indexes:
+  - '@id': '#nb0068_lsdr6_bricks_dr6_brickname_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.brickname'
+    name: nb0068_lsdr6_bricks_dr6_brickname_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_ra_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.ra'
+    name: nb0068_lsdr6_bricks_dr6_ra_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_dec_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.dec'
+    name: nb0068_lsdr6_bricks_dr6_dec_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_glon_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.glon'
+    name: nb0068_lsdr6_bricks_dr6_glon_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_glat_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.glat'
+    name: nb0068_lsdr6_bricks_dr6_glat_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_elon_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.elon'
+    name: nb0068_lsdr6_bricks_dr6_elon_idx
+  - '@id': '#nb0068_lsdr6_bricks_dr6_elat_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_bricks_dr6.elat'
+    name: nb0068_lsdr6_bricks_dr6_elat_idx
+  name: nb0068_lsdr6_bricks_dr6
+  primaryKey: ''
+  tap:table_index: 1
+- '@id': '#nbdata.nb0068_lsdr6_tractor'
+  columns:
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.decals_id'
+    datatype: long
+    description: Unique DECaLS object ID
+    name: decals_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.ra'
+    datatype: double
+    description: Right Ascension (ICRS)
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.dec'
+    datatype: double
+    description: Declination (ICRS)
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.g_r'
+    datatype: float
+    description: Computed (g-r) color
+    name: g_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.r_z'
+    datatype: float
+    description: Computed (r_z) color
+    name: r_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.z_w1'
+    datatype: float
+    description: Computed (z_w1) color
+    name: z_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr6_tractor.type'
+    datatype: text
+    description: 'Morphological model: PSF=stellar, EXP=exponential, DEV=deVauc, COMP=composite'
+    name: type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Main tractor photometry catalog (with just 8 columns)
+  indexes:
+  - '@id': '#nb0068_lsdr6_tractor_decals_id_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.decals_id'
+    name: nb0068_lsdr6_tractor_decals_id_idx
+  - '@id': '#nb0068_lsdr6_tractor_ra_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.ra'
+    name: nb0068_lsdr6_tractor_ra_idx
+  - '@id': '#nb0068_lsdr6_tractor_dec_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.dec'
+    name: nb0068_lsdr6_tractor_dec_idx
+  - '@id': '#nb0068_lsdr6_tractor_random_id_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.random_id'
+    name: nb0068_lsdr6_tractor_random_id_idx
+  - '@id': '#nb0068_lsdr6_tractor_g_r_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.g_r'
+    name: nb0068_lsdr6_tractor_g_r_idx
+  - '@id': '#nb0068_lsdr6_tractor_r_z_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.r_z'
+    name: nb0068_lsdr6_tractor_r_z_idx
+  - '@id': '#nb0068_lsdr6_tractor_z_w1_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.z_w1'
+    name: nb0068_lsdr6_tractor_z_w1_idx
+  - '@id': '#nb0068_lsdr6_tractor_type_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr6_tractor.type'
+    name: nb0068_lsdr6_tractor_type_idx
+  name: nb0068_lsdr6_tractor
+  primaryKey: ''
+  tap:table_index: 2
+- '@id': '#nbdata.nb0068_lsdr7_bricks_dr7'
+  columns:
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.brickname'
+    datatype: text
+    description: Name of the brick
+    name: brickname
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ra'
+    datatype: double
+    description: RA of the center of the brick
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.dec'
+    datatype: double
+    description: Dec of the center of the brick
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexp_g'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the g-band
+    name: nexp_g
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexp_r'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the r-band
+    name: nexp_r
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexp_z'
+    datatype: short
+    description: Median number of exposures in the unique are (i.e. BRICK_PRIMARY
+      area) of the brick in the z-band
+    name: nexp_z
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_g_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in g
+    name: nexphist_g_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_r_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in r
+    name: nexphist_r_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_1'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_2'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_3'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_4'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_5'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexphist_z_6'
+    datatype: int
+    description: Histogram of number of pixels in the unique brick area with 0,1,2,3,4
+      or 5 exposures in z
+    name: nexphist_z_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nobjs'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of all types
+    name: nobjs
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.npsf'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of PSF types
+    name: npsf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nsimp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of SIMP types
+    name: nsimp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nrex'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick, of type REX
+    name: nrex
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nexp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of EXP types
+    name: nexp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ndev'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of DEV types
+    name: ndev
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ncomp'
+    datatype: short
+    description: Total number of BRICK_UNIQUE objects in this brick of COMP types
+    name: ncomp
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfsize_g'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in g-band
+    name: psfsize_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfsize_r'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in r-band
+    name: psfsize_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfsize_z'
+    datatype: float
+    description: Median PSF size, in arcsec, evaluated at the BRICK_UNIQUE objects
+      in this brick in z-band
+    name: psfsize_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_g'
+    datatype: float
+    description: 5-sigma PSF detection depth in g-band (AB mag), using PsfEx PSF model
+    name: psfdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_r'
+    datatype: float
+    description: 5-sigma PSF detection depth in r-band (AB mag), using PsfEx PSF model
+    name: psfdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.psfdepth_z'
+    datatype: float
+    description: 5-sigma PSF detection depth in z-band (AB mag), using PsfEx PSF model
+    name: psfdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_g'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in g-band
+      (AB) mag
+    name: galdepth_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_r'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in g-band
+      (AB) mag
+    name: galdepth_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.galdepth_z'
+    datatype: float
+    description: 5-sigma galaxy (0.45 arcsec round exp) detection depth in g-band
+      (AB) mag
+    name: galdepth_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ebv'
+    datatype: float
+    description: Median SFD dust map E(B-V) extinction, in magnitudes, evaluated at
+      BRICK_UNIQUE objects in this brick
+    name: ebv
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_g'
+    datatype: float
+    description: Median Milky Way dust transparency in g-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_r'
+    datatype: float
+    description: Median Milky Way dust transparency in r-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_z'
+    datatype: float
+    description: Median Milky Way dust transparency in z-band, based on ebv. See also
+      DECAM_MW_TRANSMISSION
+    name: trans_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_g'
+    datatype: float
+    description: Extinction in g-band
+    name: ext_g
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_r'
+    datatype: float
+    description: Extinction in r-band
+    name: ext_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_z'
+    datatype: float
+    description: Extinction in z-band
+    name: ext_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.wise_nobs_1'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.wise_nobs_2'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.wise_nobs_3'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.wise_nobs_4'
+    datatype: short
+    description: Number of images that contributed to WISE calculations in each filter
+      (not profile-weighted)
+    name: wise_nobs_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_1'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_2'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_3'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.trans_wise_4'
+    datatype: float
+    description: Median Milky Way dust transparency in WISE bands, based on ebv. See
+      also, e.g., MW_TRANSMISSION_W1
+    name: trans_wise_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w1'
+    datatype: float
+    description: Extinction in W1
+    name: ext_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w2'
+    datatype: float
+    description: Extinction in W2
+    name: ext_w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w3'
+    datatype: float
+    description: Extinction in W3
+    name: ext_w3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ext_w4'
+    datatype: float
+    description: Extinction in W4
+    name: ext_w4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.glon'
+    datatype: double
+    description: Galactic Longitude
+    ivoa:ucd: pos.galactic.lon;meta.main
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.glat'
+    datatype: double
+    description: Galactic Latitude
+    ivoa:ucd: pos.galactic.lat;meta.main
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.elon'
+    datatype: double
+    description: Ecliptic Longitude
+    ivoa:ucd: pos.ecliptic.lon;meta.main
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_bricks_dr7.elat'
+    datatype: double
+    description: Ecliptic Latitude
+    ivoa:ucd: pos.ecliptic.lat;meta.main
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: Table with information that summarizes the contents of each brick
+  indexes:
+  - '@id': '#nb0068_lsdr7_bricks_dr7_brickname_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.brickname'
+    name: nb0068_lsdr7_bricks_dr7_brickname_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_ra_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.ra'
+    name: nb0068_lsdr7_bricks_dr7_ra_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_dec_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.dec'
+    name: nb0068_lsdr7_bricks_dr7_dec_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_glon_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.glon'
+    name: nb0068_lsdr7_bricks_dr7_glon_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_glat_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.glat'
+    name: nb0068_lsdr7_bricks_dr7_glat_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_elon_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.elon'
+    name: nb0068_lsdr7_bricks_dr7_elon_idx
+  - '@id': '#nb0068_lsdr7_bricks_dr7_elat_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_bricks_dr7.elat'
+    name: nb0068_lsdr7_bricks_dr7_elat_idx
+  name: nb0068_lsdr7_bricks_dr7
+  primaryKey: ''
+  tap:table_index: 3
+- '@id': '#nbdata.nb0068_lsdr7_tractor'
+  columns:
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.dec'
+    datatype: double
+    description: Declination (ICRS)
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.g_r'
+    datatype: float
+    description: Computed (g-r) color
+    name: g_r
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.mag_w1'
+    datatype: float
+    description: Computed W1 magnitude
+    name: mag_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.ra'
+    datatype: double
+    description: RA of the center of the brick
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.r_z'
+    datatype: float
+    description: Computed (r_z) color
+    name: r_z
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.type'
+    datatype: text
+    description: 'Morphological model: PSF=stellar, EXP=exponential, DEV=deVauc, COMP=composite'
+    name: type
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#nbdata.nb0068_lsdr7_tractor.z_w1'
+    datatype: float
+    description: Computed (z_w1) color
+    name: z_w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  description: Main tractor photometry catalog (with just 8 columns)
+  indexes:
+  - '@id': '#nb0068_lsdr7_tractor_dec_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.dec'
+    name: nb0068_lsdr7_tractor_dec_idx
+  - '@id': '#nb0068_lsdr7_tractor_g_r_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.g_r'
+    name: nb0068_lsdr7_tractor_g_r_idx
+  - '@id': '#nb0068_lsdr7_tractor_mag_w1_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.mag_w1'
+    name: nb0068_lsdr7_tractor_mag_w1_idx
+  - '@id': '#nb0068_lsdr7_tractor_ra_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.ra'
+    name: nb0068_lsdr7_tractor_ra_idx
+  - '@id': '#nb0068_lsdr7_tractor_random_id_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.random_id'
+    name: nb0068_lsdr7_tractor_random_id_idx
+  - '@id': '#nb0068_lsdr7_tractor_r_z_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.r_z'
+    name: nb0068_lsdr7_tractor_r_z_idx
+  - '@id': '#nb0068_lsdr7_tractor_type_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.type'
+    name: nb0068_lsdr7_tractor_type_idx
+  - '@id': '#nb0068_lsdr7_tractor_z_w1_idx'
+    columns:
+    - '#nbdata.nb0068_lsdr7_tractor.z_w1'
+    name: nb0068_lsdr7_tractor_z_w1_idx
+  name: nb0068_lsdr7_tractor
+  primaryKey: ''
+  tap:table_index: 4
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1

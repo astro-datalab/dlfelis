@@ -1,0 +1,1631 @@
+---
+'@id': '#catwise2020'
+description: CatWise 2020 data, containing the main catalog with 191 columns and 1.89
+  billion rows
+name: catwise2020
+tables:
+- '@id': '#catwise2020.main'
+  columns:
+  - '@id': '#catwise2020.main.ra'
+    datatype: double
+    description: Right ascension in degrees (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.ra;meta.main
+    name: ra
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dec'
+    datatype: double
+    description: Declination in degrees (ICRS)
+    fits:tunit: deg
+    ivoa:ucd: pos.eq.dec;meta.main
+    name: dec
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mjdmin'
+    datatype: double
+    description: Minimum modified Julian Date of frame extractions, band 1
+    name: w1mjdmin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mjdmax'
+    datatype: double
+    description: Maximum modified Julian Date of frame extractions, band 1
+    name: w1mjdmax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mjdmean'
+    datatype: double
+    description: Mean modified Julian Date of frame extractions, band 1
+    name: w1mjdmean
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mjdmin'
+    datatype: double
+    description: Minimum modified Julian Date of frame extractions, band 2
+    name: w2mjdmin
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mjdmax'
+    datatype: double
+    description: Maximum modified Julian Date of frame extractions, band 2
+    name: w2mjdmax
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mjdmean'
+    datatype: double
+    description: Mean modified Julian Date of frame extractions, band 2
+    name: w2mjdmean
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.meanobsmjd'
+    datatype: double
+    description: Mean observation epoch
+    name: meanobsmjd
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.ra_pm'
+    datatype: double
+    description: Right ascension at epoch MJD=57170 (2015.405) from psf model incl.
+      motion
+    name: ra_pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dec_pm'
+    datatype: double
+    description: Declination at epoch MJD=57170 (2015.405) from psf model incl. motion
+    name: dec_pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elon_avg'
+    datatype: double
+    description: Average ecliptic longitude
+    name: elon_avg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elat_avg'
+    datatype: double
+    description: Average ecliptic latitude
+    name: elat_avg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dist_x'
+    datatype: double
+    description: Distance between CatWISE and AllWISE source
+    name: dist_x
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.glon'
+    datatype: double
+    description: Galactic longitude
+    ivoa:ucd: pos.galactic.lon;meta.main
+    name: glon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.glat'
+    datatype: double
+    description: Galactic latitude
+    ivoa:ucd: pos.galactic.lat;meta.main
+    name: glat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elon'
+    datatype: double
+    description: Ecliptic longitude
+    ivoa:ucd: pos.ecliptic.lon;meta.main
+    name: elon
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elat'
+    datatype: double
+    description: Ecliptic latitude
+    ivoa:ucd: pos.ecliptic.lat;meta.main
+    name: elat
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigra'
+    datatype: float
+    description: Uncertainty in RA (arcsec)
+    name: sigra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigdec'
+    datatype: float
+    description: Uncertainty in Dec (arcsec)
+    name: sigdec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigradec'
+    datatype: float
+    description: Cross-term of RA and Dec uncertainty (arcsec)
+    name: sigradec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.wx'
+    datatype: float
+    description: X-pixel value
+    name: wx
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.wy'
+    datatype: float
+    description: Y-pixel value
+    name: wy
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sky'
+    datatype: float
+    description: Frame sky background value, band-1
+    name: w1sky
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigsk'
+    datatype: float
+    description: Frame sky background value uncertainty, band-1
+    name: w1sigsk
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1conf'
+    datatype: float
+    description: Frame sky confusion based on the uncertainty images, band-1
+    name: w1conf
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sky'
+    datatype: float
+    description: Frame sky background value, band-2
+    name: w2sky
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigsk'
+    datatype: float
+    description: Frame sky background value uncertainty, band-2
+    name: w2sigsk
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2conf'
+    datatype: float
+    description: Frame sky confusion based on the uncertainty images, band-2
+    name: w2conf
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1fitr'
+    datatype: float
+    description: Fitting radius, band-1 (clipped at 999.99)
+    name: w1fitr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2fitr'
+    datatype: float
+    description: Fitting radius, band-2 (clipped at 999.99)
+    name: w2fitr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1snr'
+    datatype: float
+    description: Instrumental profile-fit photometry S/N ratio, band-1
+    name: w1snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2snr'
+    datatype: float
+    description: Instrumental profile-fit photometry S/N ratio, band-2
+    name: w2snr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flux'
+    datatype: float
+    description: Profile-fit photometry raw flux, band-1
+    name: w1flux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigflux'
+    datatype: float
+    description: profile-fit photometry raw flux uncertainty, band-1
+    name: w1sigflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flux'
+    datatype: float
+    description: profile-fit photometry raw flux, band-2
+    name: w2flux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigflux'
+    datatype: float
+    description: profile-fit photometry raw flux uncertainty, band-2
+    name: w2sigflux
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mpro'
+    datatype: float
+    description: Instrumental profile-fit photometry magnitud, band-1
+    name: w1mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigmpro'
+    datatype: float
+    description: Instrumental profile-fit photometry flux uncertainty in mag units,
+      band-1
+    name: w1sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1rchi2'
+    datatype: float
+    description: Instrumental profile-fit photometry reduced chi^2, band-1
+    name: w1rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mpro'
+    datatype: float
+    description: Instrumental profile-fit photometry magnitude, band-2
+    name: w2mpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigmpro'
+    datatype: float
+    description: Instrumental profile-fit photometry flux uncertainty in mag units,
+      band-2
+    name: w2sigmpro
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2rchi2'
+    datatype: float
+    description: Instrumental profile-fit photometry reduced chi^2, band-2
+    name: w2rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.rchi2'
+    datatype: float
+    description: Instrumental profile-fit photometry reduced chi squared, total
+    name: rchi2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.nb'
+    datatype: int
+    description: Number of blend components used in each fit
+    name: nb
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.na'
+    datatype: int
+    description: Number of actively deblended components
+    name: na
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sat'
+    datatype: float
+    description: Fraction of pixels affected by saturation, band-1
+    name: w1sat
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sat'
+    datatype: float
+    description: Fraction of pixels affected by saturation, band-2
+    name: w2sat
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag'
+    datatype: float
+    description: Instrumental standard aperture mag w/ correction applied, band-1
+    name: w1mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm'
+    datatype: float
+    description: Instrumental standard aperture mag uncertainty applied, band-1
+    name: w1sigm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg'
+    datatype: int
+    description: Instrumental standard aperture flag, band-1
+    name: w1flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1cov'
+    datatype: float
+    description: Mean coverage depth, band-1
+    name: w1cov
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag'
+    datatype: float
+    description: Instrumental standard aperture mag w/ correction applied, band-2
+    name: w2mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm'
+    datatype: float
+    description: Instrumental standard aperture mag uncertainty applied, band-2
+    name: w2sigm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg'
+    datatype: int
+    description: Instrumental standard aperture flag, band-2
+    name: w2flg
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2cov'
+    datatype: float
+    description: Mean coverage depth, band-2
+    name: w2cov
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_1'
+    datatype: float
+    description: Aperture 1, instrumental aperture mag, band-1
+    name: w1mag_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_1'
+    datatype: float
+    description: Aperture 1, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_1'
+    datatype: int
+    description: Aperture 1, instrumental aperture flag, band-1
+    name: w1flg_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_1'
+    datatype: float
+    description: Aperture 1, instrumental aperture mag, band-2
+    name: w2mag_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_1'
+    datatype: float
+    description: Aperture 1, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_1'
+    datatype: int
+    description: Aperture 1, instrumental aperture flag, band-2
+    name: w2flg_1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_2'
+    datatype: float
+    description: Aperture 2, instrumental aperture mag, band-1
+    name: w1mag_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_2'
+    datatype: float
+    description: Aperture 2, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_2'
+    datatype: int
+    description: Aperture 2, instrumental aperture flag, band-1
+    name: w1flg_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_2'
+    datatype: float
+    description: Aperture 2, instrumental aperture mag, band-2
+    name: w2mag_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_2'
+    datatype: float
+    description: Aperture 2, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_2'
+    datatype: int
+    description: Aperture 2, instrumental aperture flag, band-2
+    name: w2flg_2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_3'
+    datatype: float
+    description: Aperture 3, instrumental aperture mag, band-1
+    name: w1mag_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_3'
+    datatype: float
+    description: Aperture 3, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_3'
+    datatype: int
+    description: Aperture 3, instrumental aperture flag, band-1
+    name: w1flg_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_3'
+    datatype: float
+    description: Aperture 3, instrumental aperture mag, band-2
+    name: w2mag_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_3'
+    datatype: float
+    description: Aperture 3, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_3
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_3'
+    datatype: int
+    description: Aperture 3, instrumental aperture flag, band-2
+    name: w2flg_3
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_4'
+    datatype: float
+    description: Aperture 4, instrumental aperture mag, band-1
+    name: w1mag_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_4'
+    datatype: float
+    description: Aperture 4, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_4'
+    datatype: int
+    description: Aperture 4, instrumental aperture flag, band-1
+    name: w1flg_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_4'
+    datatype: float
+    description: Aperture 4, instrumental aperture mag, band-2
+    name: w2mag_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_4'
+    datatype: float
+    description: Aperture 4, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_4
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_4'
+    datatype: int
+    description: Aperture 4, instrumental aperture flag, band-2
+    name: w2flg_4
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_5'
+    datatype: float
+    description: Aperture 5, instrumental aperture mag, band-1
+    name: w1mag_5
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_5'
+    datatype: float
+    description: Aperture 5, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_5
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_5'
+    datatype: int
+    description: Aperture 5, instrumental aperture flag, band-1
+    name: w1flg_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_5'
+    datatype: float
+    description: Aperture 5, instrumental aperture mag, band-2
+    name: w2mag_5
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_5'
+    datatype: float
+    description: Aperture 5, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_5
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_5'
+    datatype: int
+    description: Aperture 5, instrumental aperture flag, band-2
+    name: w2flg_5
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_6'
+    datatype: float
+    description: Aperture 6, instrumental aperture mag, band-1
+    name: w1mag_6
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_6'
+    datatype: float
+    description: Aperture 6, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_6
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_6'
+    datatype: int
+    description: Aperture 6, instrumental aperture flag, band-1
+    name: w1flg_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_6'
+    datatype: float
+    description: Aperture 6, instrumental aperture mag, band-2
+    name: w2mag_6
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_6'
+    datatype: float
+    description: Aperture 6, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_6
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_6'
+    datatype: int
+    description: Aperture 6, instrumental aperture flag, band-2
+    name: w2flg_6
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_7'
+    datatype: float
+    description: Aperture 7, instrumental aperture mag, band-1
+    name: w1mag_7
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_7'
+    datatype: float
+    description: Aperture 7, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_7
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_7'
+    datatype: int
+    description: Aperture 7, instrumental aperture flag, band-1
+    name: w1flg_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_7'
+    datatype: float
+    description: Aperture 7, instrumental aperture mag, band-2
+    name: w2mag_7
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_7'
+    datatype: float
+    description: Aperture 7, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_7
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_7'
+    datatype: int
+    description: Aperture 7, instrumental aperture flag, band-2
+    name: w2flg_7
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mag_8'
+    datatype: float
+    description: Aperture 8, instrumental aperture mag, band-1
+    name: w1mag_8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigm_8'
+    datatype: float
+    description: Aperture 8, instrumental aperture mag uncertainty, band-1
+    name: w1sigm_8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flg_8'
+    datatype: int
+    description: Aperture 8, instrumental aperture flag, band-1
+    name: w1flg_8
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mag_8'
+    datatype: float
+    description: Aperture 8, instrumental aperture mag, band-2
+    name: w2mag_8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigm_8'
+    datatype: float
+    description: Aperture 8, instrumental aperture mag uncertainty, band-2
+    name: w2sigm_8
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flg_8'
+    datatype: int
+    description: Aperture 8, instrumental aperture flag, band-2
+    name: w2flg_8
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1nm'
+    datatype: int
+    description: Number of profile-fit flux measurements for source with SNR >= 3,
+      band-1
+    name: w1nm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1m'
+    datatype: int
+    description: Number of profile-fit flux measurements for source, band-1
+    name: w1m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1magp'
+    datatype: float
+    description: Profile-fit repeatability mag, band-1
+    name: w1magp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigp1'
+    datatype: float
+    description: Standard deviation of population of profile-fit repeatability mag;
+      band-1
+    name: w1sigp1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigp2'
+    datatype: float
+    description: Standard deviation of the mean of profile-fit repeatability mag the
+      mean; band-1
+    name: w1sigp2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1k'
+    datatype: float
+    description: Stetson k index for variability; band-1
+    name: w1k
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1ndf'
+    datatype: int
+    description: Number degrees of freedom in variability chi^2; band-1
+    name: w1ndf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mlq'
+    datatype: float
+    description: -ln(Q), where Q = 1-P(chi^2);  band-1
+    name: w1mlq
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2nm'
+    datatype: int
+    description: Number of profile-fit flux measurements for source with SNR >= 3,
+      band-2
+    name: w2nm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2m'
+    datatype: int
+    description: Number of profile-fit flux measurements for source, band-2
+    name: w2m
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2magp'
+    datatype: float
+    description: Profile-fit repeatability mag, band-1
+    name: w2magp
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigp1'
+    datatype: float
+    description: Standard deviation of population of profile-fit repeatability mag;
+      band-2
+    name: w2sigp1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigp2'
+    datatype: float
+    description: Standard deviation of the mean of profile-fit repeatability mag the
+      mean; band-1
+    name: w2sigp2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2k'
+    datatype: float
+    description: Stetson k index for variability; band-2
+    name: w2k
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2ndf'
+    datatype: int
+    description: Number degrees of freedom in variability chi^2; band-2
+    name: w2ndf
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mlq'
+    datatype: float
+    description: -ln(Q), where Q = 1-P(chi^2);  band-2
+    name: w2mlq
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.rho12'
+    datatype: int
+    description: band 1 - band 2 correlation coefficient
+    name: rho12
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.q12'
+    datatype: int
+    description: -log10(1-P(rho12)) given no real correlation
+    name: q12
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.niters'
+    datatype: int
+    description: Number of chi-square-minimization iterations
+    name: niters
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.nsteps'
+    datatype: int
+    description: Number of steps in all iterations
+    name: nsteps
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.mdetid'
+    datatype: int
+    description: Source ID in mdet list
+    name: mdetid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.p1'
+    datatype: float
+    description: Vector from the mdet position to the wphot template-fit position,
+      component 1
+    name: p1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.p2'
+    datatype: float
+    description: Vector from the mdet position to the wphot template-fit position,
+      component 2
+    name: p2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigra_pm'
+    datatype: float
+    description: Uncertainty in the RA motion estimate
+    name: sigra_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigdec_pm'
+    datatype: float
+    description: Uncertainty in the Dec motion estimate
+    name: sigdec_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigradec_pm'
+    datatype: float
+    description: The co-sigma of the equatorial position uncertainties from psf model
+      incl motion
+    name: sigradec_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.pmra'
+    datatype: float
+    description: Aparent motion in RA
+    name: pmra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.pmdec'
+    datatype: float
+    description: Aparent motion in Dec
+    name: pmdec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigpmra'
+    datatype: float
+    description: Uncertainty in RA motion estimate
+    name: sigpmra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.sigpmdec'
+    datatype: float
+    description: Uncertainty in Dec motion estimate
+    name: sigpmdec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1snr_pm'
+    datatype: float
+    description: S/N ratio of the W1 profile-fit photometry including motion
+    name: w1snr_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2snr_pm'
+    datatype: float
+    description: S/N ratio of the W2 profile-fit photometry including motion
+    name: w2snr_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1flux_pm'
+    datatype: float
+    description: Raw flux W1 profile-fit photometry including motion
+    name: w1flux_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigflux_pm'
+    datatype: float
+    description: Raw flux uncertainty W1 profile-fit photometry including motion1
+    name: w1sigflux_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2flux_pm'
+    datatype: float
+    description: Raw flux W2 profile-fit photometry including motion
+    name: w2flux_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigflux_pm'
+    datatype: float
+    description: Raw flux uncertainty W2 profile-fit photometry including motion1
+    name: w2sigflux_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1mpro_pm'
+    datatype: float
+    description: W1 magnitude from profile-fit photometry including motion
+    name: w1mpro_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1sigmpro_pm'
+    datatype: float
+    description: W1 flux uncertainty from profile-fit photometry including motion
+    name: w1sigmpro_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1rchi2_pm'
+    datatype: float
+    description: Reduced chi^2 of the W1 profile-fit photometry measurement including
+      motion estimate
+    name: w1rchi2_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2mpro_pm'
+    datatype: float
+    description: W2 magnitude from profile-fit photometry including motion
+    name: w2mpro_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2sigmpro_pm'
+    datatype: float
+    description: W2 flux uncertainty from profile-fit photometry including motion
+    name: w2sigmpro_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2rchi2_pm'
+    datatype: float
+    description: Reduced chi^2 of the W2 profile-fit photometry measurement including
+      motion estimate
+    name: w2rchi2_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.rchi2_pm'
+    datatype: float
+    description: Combined Reduced chi^2 in all bands for the psf photometry includes
+      src motion
+    name: rchi2_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.niters_pm'
+    datatype: int
+    description: Number of chi-square-minimization iterations
+    name: niters_pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.nsteps_pm'
+    datatype: int
+    description: Number of steps in all iterations
+    name: nsteps_pm
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dist'
+    datatype: float
+    description: Radial distance between source positions in ascending and descending
+      scans
+    name: dist
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dw1mag'
+    datatype: float
+    description: Difference in w1mpro between ascending and descending scans
+    name: dw1mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.rch2w1'
+    datatype: float
+    description: Chi-square for dw1mag (1 degree of freedom)
+    name: rch2w1
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.dw2mag'
+    datatype: float
+    description: Difference in w1mpro between ascending and descending scans
+    name: dw2mag
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.rch2w2'
+    datatype: float
+    description: Chi-square for dw2mag (1 degree of freedom)
+    name: rch2w2
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elonsig'
+    datatype: float
+    description: One-sigma uncertainty in ecliptic longitude
+    name: elonsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.elatsig'
+    datatype: float
+    description: One-sigma uncertainty in ecliptic latitude
+    name: elatsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delon'
+    datatype: float
+    description: Descending scan - ascending scan ecliptic longitude
+    name: delon
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delonsig'
+    datatype: float
+    description: One-sigma uncertainty in Delon
+    name: delonsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delat'
+    datatype: float
+    description: Descending scan - ascending scan ecliptic latitude
+    name: delat
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delatsig'
+    datatype: float
+    description: One-sigma uncertainty in Delat
+    name: delatsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delonsnr'
+    datatype: float
+    description: '|Delon|/DelonSig'
+    name: delonsnr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.delatsnr'
+    datatype: float
+    description: '|Delat|/DelatSig'
+    name: delatsnr
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.chi2pmra'
+    datatype: float
+    description: Chi-square for PMRA difference (1 degree of freedom)
+    name: chi2pmra
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.chi2pmdec'
+    datatype: float
+    description: Chi-square for PMDEC difference (1 degree of freedom)
+    name: chi2pmdec
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.ka'
+    datatype: int
+    description: Astrometry usage code
+    name: ka
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.k1'
+    datatype: int
+    description: W1 photometry usage code
+    name: k1
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.k2'
+    datatype: int
+    description: W2 photometry usage code
+    name: k2
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.km'
+    datatype: int
+    description: Proper motion usage code
+    name: km
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.par_pm'
+    datatype: float
+    description: Parallax from PM desc-asce elon
+    name: par_pm
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.par_pmsig'
+    datatype: float
+    description: One-sigma uncertainty in par_pm
+    name: par_pmsig
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.par_stat'
+    datatype: float
+    description: Parallax estimate from stationary solution
+    name: par_stat
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.par_sigma'
+    datatype: float
+    description: One-sigma uncertainty in par_stat
+    name: par_sigma
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1cc_map'
+    datatype: int
+    description: Worst case w1cc_map from AllWISE
+    name: w1cc_map
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2cc_map'
+    datatype: int
+    description: Worst case w2cc_map from AllWISE
+    name: w2cc_map
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.n_aw'
+    datatype: int
+    description: Number of AllWISE matches within 2.75 asec
+    name: n_aw
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1ab_map'
+    datatype: int
+    description: unWISE artifact bitmask contamination map for W1
+    name: w1ab_map
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2ab_map'
+    datatype: int
+    description: unWISE artifact bitmask contamination map for W2
+    name: w2ab_map
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.htm9'
+    datatype: int
+    description: HTM index (order 9 => ~10 arcmin size)
+    ivoa:ucd: meta.code
+    name: htm9
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.ring256'
+    datatype: int
+    description: HEALPIX index (Nsides 256, Ring scheme => ~14 arcmin size)
+    ivoa:ucd: meta.code
+    name: ring256
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.nest4096'
+    datatype: int
+    description: HEALPIX index (Nsides 4096, Nest scheme => ~52 arcsec size
+    ivoa:ucd: meta.code
+    name: nest4096
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.random_id'
+    datatype: float
+    description: Random ID in the range 0.0 => 100.0
+    name: random_id
+    nullable: true
+    postgresql:datatype: REAL
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.source_name'
+    datatype: string
+    description: Source hexagesimal designation
+    length: 20
+    name: source_name
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.source_id'
+    datatype: string
+    description: Tile name + processing code + wphot index
+    length: 18
+    name: source_id
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.pmcode'
+    datatype: string
+    description: Motion estimate quality code
+    length: 5
+    name: pmcode
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.cc_flags'
+    datatype: string
+    description: Worst case 4 character cc_flag from AllWISE
+    length: 4
+    name: cc_flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1cc_map_str'
+    datatype: string
+    description: Worst case w1cc_map_str from AllWISE
+    length: 4
+    name: w1cc_map_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2cc_map_str'
+    datatype: string
+    description: Worst case w2cc_map_str from AllWISE
+    length: 4
+    name: w2cc_map_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.ab_flags'
+    datatype: string
+    description: unWISE artifact bitmask contamination flags
+    length: 2
+    name: ab_flags
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w1ab_map_str'
+    datatype: string
+    description: unWISE artifact bitmask contamination string for W1
+    length: 3
+    name: w1ab_map_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.w2ab_map_str'
+    datatype: string
+    description: unWISE artifact bitmask contamination string for W2
+    length: 3
+    name: w2ab_map_str
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  - '@id': '#catwise2020.main.unwise_objid'
+    datatype: string
+    description: unWISE catalog object ID
+    length: 19
+    name: unwise_objid
+    nullable: true
+    tap:principal: 0
+    tap:std: 0
+  description: CatWise2020 Main Table. For more details on the columns, see https://portal.nersc.gov/project/cosmo/data/CatWISE/2020cwcat.sis20200318.txt
+  indexes:
+  - '@id': '#main_ra_idx'
+    columns:
+    - '#catwise2020.main.ra'
+    name: main_ra_idx
+  - '@id': '#main_dec_idx'
+    columns:
+    - '#catwise2020.main.dec'
+    name: main_dec_idx
+  - '@id': '#main_glon_idx'
+    columns:
+    - '#catwise2020.main.glon'
+    name: main_glon_idx
+  - '@id': '#main_glat_idx'
+    columns:
+    - '#catwise2020.main.glat'
+    name: main_glat_idx
+  - '@id': '#main_elon_idx'
+    columns:
+    - '#catwise2020.main.elon'
+    name: main_elon_idx
+  - '@id': '#main_elat_idx'
+    columns:
+    - '#catwise2020.main.elat'
+    name: main_elat_idx
+  - '@id': '#main_w1flux_idx'
+    columns:
+    - '#catwise2020.main.w1flux'
+    name: main_w1flux_idx
+  - '@id': '#main_w1sigflux_idx'
+    columns:
+    - '#catwise2020.main.w1sigflux'
+    name: main_w1sigflux_idx
+  - '@id': '#main_w2flux_idx'
+    columns:
+    - '#catwise2020.main.w2flux'
+    name: main_w2flux_idx
+  - '@id': '#main_w2sigflux_idx'
+    columns:
+    - '#catwise2020.main.w2sigflux'
+    name: main_w2sigflux_idx
+  - '@id': '#main_w1mpro_idx'
+    columns:
+    - '#catwise2020.main.w1mpro'
+    name: main_w1mpro_idx
+  - '@id': '#main_w1sigmpro_idx'
+    columns:
+    - '#catwise2020.main.w1sigmpro'
+    name: main_w1sigmpro_idx
+  - '@id': '#main_w2mpro_idx'
+    columns:
+    - '#catwise2020.main.w2mpro'
+    name: main_w2mpro_idx
+  - '@id': '#main_w2sigmpro_idx'
+    columns:
+    - '#catwise2020.main.w2sigmpro'
+    name: main_w2sigmpro_idx
+  - '@id': '#main_pmra_idx'
+    columns:
+    - '#catwise2020.main.pmra'
+    name: main_pmra_idx
+  - '@id': '#main_pmdec_idx'
+    columns:
+    - '#catwise2020.main.pmdec'
+    name: main_pmdec_idx
+  - '@id': '#main_sigpmra_idx'
+    columns:
+    - '#catwise2020.main.sigpmra'
+    name: main_sigpmra_idx
+  - '@id': '#main_sigpmdec_idx'
+    columns:
+    - '#catwise2020.main.sigpmdec'
+    name: main_sigpmdec_idx
+  - '@id': '#main_w1mpro_pm_idx'
+    columns:
+    - '#catwise2020.main.w1mpro_pm'
+    name: main_w1mpro_pm_idx
+  - '@id': '#main_w1sigmpro_pm_idx'
+    columns:
+    - '#catwise2020.main.w1sigmpro_pm'
+    name: main_w1sigmpro_pm_idx
+  - '@id': '#main_w2mpro_pm_idx'
+    columns:
+    - '#catwise2020.main.w2mpro_pm'
+    name: main_w2mpro_pm_idx
+  - '@id': '#main_w2sigmpro_pm_idx'
+    columns:
+    - '#catwise2020.main.w2sigmpro_pm'
+    name: main_w2sigmpro_pm_idx
+  - '@id': '#main_htm9_idx'
+    columns:
+    - '#catwise2020.main.htm9'
+    name: main_htm9_idx
+  - '@id': '#main_ring256_idx'
+    columns:
+    - '#catwise2020.main.ring256'
+    name: main_ring256_idx
+  - '@id': '#main_nest4096_idx'
+    columns:
+    - '#catwise2020.main.nest4096'
+    name: main_nest4096_idx
+  - '@id': '#main_random_id_idx'
+    columns:
+    - '#catwise2020.main.random_id'
+    name: main_random_id_idx
+  - '@id': '#main_source_name_idx'
+    columns:
+    - '#catwise2020.main.source_name'
+    name: main_source_name_idx
+  - '@id': '#main_source_id_idx'
+    columns:
+    - '#catwise2020.main.source_id'
+    name: main_source_id_idx
+  - '@id': '#main_cc_flags_idx'
+    columns:
+    - '#catwise2020.main.cc_flags'
+    name: main_cc_flags_idx
+  - '@id': '#main_ab_flags_idx'
+    columns:
+    - '#catwise2020.main.ab_flags'
+    name: main_ab_flags_idx
+  name: main
+  primaryKey: ''
+  tap:table_index: 1
+version:
+  compatible:
+  - v1
+  current: v1
+  read_compatible:
+  - v1
