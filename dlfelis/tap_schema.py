@@ -21,42 +21,14 @@ import yaml
 # Conversion between types used in TapSchema and types required by Felis.
 #
 felis_datatypes = {'bigint': 'long',
-                   'BIGINT': 'long',
                    'integer': 'int',
-                   'INTEGER': 'int',
                    'smallint': 'short',
-                   'SMALLINT': 'short',
                    'real': 'float',
-                   'REAL': 'float',
                    'character': 'char',
-                   'CHAR': 'char',
+                   'character(1)': 'char',
                    'varchar': 'string',
-                   'DOUBLE': 'double',
-                   'adql:INTEGER': 'int',
-                   'adql:integer': 'int',
-                   'adql:SMALLINT': 'short',
-                   'adql:smallint': 'short',
-                   'adql:SMALLINT[]': 'short',
-                   'adql:BIGINT': 'long',
-                   'adql:bigint': 'long',
-                   'adql:REAL': 'float',
-                   'adql:real': 'float',
-                   'adql:REAL[]': 'float',
-                   'adql:DOUBLE': 'double',
-                   'adql:double': 'double',
-                   'adql:DOUBLE[]': 'double',
-                   'adql:CHAR': 'char',
-                   'adql:char': 'char',
-                   'adql:character': 'char',
-                   'adql:character(1)': 'char',
-                   'adql:VARCHAR': 'string',
-                   'adql:varchar': 'string',
-                   'adql:VARCHAR(n)': 'string',
-                   'adql:TIMESTAMP': 'timestamp',
-                   'adql:POINT': 'point',
-                   'adql:REGION': 'region',
-                   'adql:BOOLEAN': 'boolean',
-                   'adql:text': 'string'
+                   'varchar(n)': 'string',
+                   'text': 'string'
                    }
 #
 # Conversion between units used in TapSchema and units recommended by Felis,
@@ -100,7 +72,7 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'microns': 'um',
                'degrees': 'deg',
                'Degrees': 'deg',
-               '1/Degrees': '1/deg',
+               '1/Degrees': 'deg^-1',
                'ADU': 'adu',
                'pixels': 'pixel',
                'Pixels': 'pixel',
@@ -116,7 +88,7 @@ felis_units = {'nanomaggies': 'nanomaggy',
                'mag./sq.arcsec': 'mag/arcsec^2',
                'None': '',
                'Dimensionless': '',
-               'Frequency[1/day]': '1/day',
+               'Frequency[1/day]': 'day^-1',
                'e-/s': 'electron/s',
                'Electrons/ADU': 'electron/adu',
                'Time[Barycentric JD in TCB - 2455197.5 (day)]': 'd',
@@ -289,10 +261,14 @@ def main():
             #
             # TODO: Are TAP indexes 0-based or 1-based?
             #
+            if "adql:" in json_column['datatype']:
+                json_column['datatype'] = json_column['datatype'].replace("adql:", "").lower()
+            if "[]" in json_column['datatype']:
+                json_column['datatype'] = json_column['datatype'].replace("[]", "").lower()
             try:
                 felis_datatype = felis_datatypes[json_column['datatype']]
             except KeyError:
-                felis_datatype = json_column['datatype']
+                felis_datatype = json_column['datatype'].lower()
             felis_column = {'name': json_column['column_name'],
                             '@id': (f"#{json_table['schema_name']}." +
                                     f"{json_table['table_name']}." +
