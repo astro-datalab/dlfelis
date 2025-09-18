@@ -252,12 +252,12 @@ def main():
     if options.debug:
         log.setLevel(logging.DEBUG)
     file_name = os.path.splitext(options.json)
-    #schema_basename = os.path.basename(schema_name[0])
+    # schema_basename = os.path.basename(schema_name[0])
     assert file_name[1] == '.json'
     with open(options.json) as j:
         json_schema = json.load(j)
     assert len(json_schema['schemas']) == 1
-    #assert json_schema['schemas'][0]['schema_name'] == schema_basename
+    # assert json_schema['schemas'][0]['schema_name'] == schema_basename
 
     felis_schema = {'name': json_schema['schemas'][0]['schema_name'],
                     '@id': '#' + json_schema['schemas'][0]['schema_name'],
@@ -268,7 +268,7 @@ def main():
                     'tables': list()}
 
     for tap_index, json_table in enumerate(json_schema['tables']):
-        #assert json_table['schema_name'] == schema_basename
+        # assert json_table['schema_name'] == schema_basename
         if 'primaryKey' in json_table.keys():
             pmk = json_table['primaryKey']
         else:
@@ -307,7 +307,6 @@ def main():
                             # 'votable:arraysize': json_column['size'],
                             'tap:principal': json_column['principal'],
                             'tap:std': json_column['std']}
-                            # 'tap:column_index': column_index + 1}
             if felis_datatype == 'float':
                 felis_column['postgresql:datatype'] = 'REAL'
             if felis_datatype in ['string', 'char']:
@@ -332,7 +331,8 @@ def main():
         if 'constraints' in json_schema.keys():
             for constraint_index, json_constraint in enumerate(json_schema['constraints']):
                 felis_constraint = {'name': json_constraint['constraint_name'],
-                                    '@id': f"#{json_table['schema_name']}.{json_table['table_name']}_unique_idx",
+                                    '@id': (f"#{json_table['schema_name']}.{json_table['table_name']}"
+                                            f"_unique_idx"),
                                     '@type': json_constraint['type'],
                                     'columns': json_constraint['columns']}
                 felis_table['constraints'].append(felis_constraint)
