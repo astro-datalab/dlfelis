@@ -25,6 +25,7 @@ release = package.__version__
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
+    'sphinx.ext.napoleon',
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
@@ -50,7 +51,7 @@ napoleon_include_private_with_doc = True
 
 # We don't necessarily need a full installation to build documentation.
 autodoc_mock_imports = []
-for missing in ('yaml', ):
+for missing in ('felis', 'yaml'):
     try:
         foo = import_module(missing)
     except ImportError:
@@ -67,6 +68,7 @@ html_theme = 'sphinx_rtd_theme'
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
+    'felis': ('https://felis.lsst.io/', None)
     # 'airflow': ('https://airflow.apache.org/docs/apache-airflow/stable/', None)
 }
 

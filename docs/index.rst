@@ -13,7 +13,11 @@ Introduction
 ``dlfelis`` provides tools for interfacing with Felis_ in the `Astro Data Lab`_
 environment.
 
+:command:`python -m dlfelis.tap_schema` provides a script for converting
+Astro Data Lab TapSchema (private repository) JSON schema files to `Felis YAML format`_.
+
 .. _Felis: https://felis.lsst.io/
+.. _`Felis YAML format`: https://felis.lsst.io/user-guide/model.html
 .. _`Astro Data Lab`: https://datalab.noirlab.edu
 
 Contents
