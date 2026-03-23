@@ -196,13 +196,18 @@ def validate(filename):
     :class:`int`
         Status returned by :command:`felis`.
     """
+    standard_message = f"""
+INFO:felis:ID generation is enabled
+INFO:felis:Validating {filename}
+INFO:felis:Successfully validated {filename}
+""".lstrip()
     log = logging.getLogger('dlfelis.tap_schema.validate')
     proc = subprocess.Popen(['felis', 'validate', filename],
                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     out = out.decode('utf-8')
     err = err.decode('utf-8')
-    if proc.returncode != 0 or err != f"INFO:felis:Validating {filename}\n":
+    if proc.returncode != 0 or err != standard_message:
         if out:
             log.error('STDOUT =')
             log.error(out)
@@ -249,7 +254,10 @@ def main():
                        'columns': list()}
         if 'primaryKey' in json_table.keys():
             # Should already be a list with format "#schema_name.table_name.column_name".
-            felis_table['primaryKey'] = json_table['primaryKey']
+            if len(json_table['primaryKey']) == 1:
+                felis_table['primaryKey'] = json_table['primaryKey'][0]
+            else:
+                felis_table['primaryKey'] = json_table['primaryKey'].copy()
 
         json_columns = [c for c in json_schema['columns']
                         if (c['table_name'] == json_table['table_name'])
