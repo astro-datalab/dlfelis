@@ -60,4 +60,4 @@ def test_validate(monkeypatch, caplog):
                                      'STDERR ='),
                                     ('dlfelis.tap_schema.validate', logging.ERROR,
                                      'INFO:felis:Validating failure.json\n'
-                                    'ERROR:felis:Some sort of error!\n')]
+                                     'ERROR:felis:Some sort of error!\n')]

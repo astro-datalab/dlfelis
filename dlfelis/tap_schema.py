@@ -196,18 +196,13 @@ def validate(filename):
     :class:`int`
         Status returned by :command:`felis`.
     """
-    standard_message = f"""
-INFO:felis:ID generation is enabled
-INFO:felis:Validating {filename}
-INFO:felis:Successfully validated {filename}
-""".lstrip()
     log = logging.getLogger('dlfelis.tap_schema.validate')
     proc = subprocess.Popen(['felis', 'validate', filename],
                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     out = out.decode('utf-8')
     err = err.decode('utf-8')
-    if proc.returncode != 0 or err != standard_message:
+    if proc.returncode != 0:
         if out:
             log.error('STDOUT =')
             log.error(out)
