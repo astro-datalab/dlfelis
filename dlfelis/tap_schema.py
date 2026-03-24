@@ -247,12 +247,21 @@ def main():
                        'constraints': list(),
                        'indexes': list(),
                        'columns': list()}
+
         if 'primaryKey' in json_table.keys():
-            # Should already be a list with format "#schema_name.table_name.column_name".
-            if len(json_table['primaryKey']) == 1:
-                felis_table['primaryKey'] = json_table['primaryKey'][0]
+            if isinstance(json_table['primaryKey'], list):
+                # Should already be a list with format "#schema_name.table_name.column_name".
+                if len(json_table['primaryKey']) == 1:
+                    felis_table['primaryKey'] = json_table['primaryKey'][0]
+                else:
+                    felis_table['primaryKey'] = json_table['primaryKey'].copy()
             else:
-                felis_table['primaryKey'] = json_table['primaryKey'].copy()
+                # Assume a str.
+                pk_qualifier = f"#{json_table['schema_name']}.{json_table['table_name']}."
+                if json_table['primaryKey'].startswith(pk_qualifier):
+                    felis_table['primaryKey'] = json_table['primaryKey']
+                else:
+                    felis_table['primaryKey'] = pk_qualifier + json_table['primaryKey']
 
         json_columns = [c for c in json_schema['columns']
                         if (c['table_name'] == json_table['table_name'])
