@@ -2,7 +2,7 @@
 dlfelis Change Log
 ==================
 
-0.2.0 (unreleased)
+0.2.0 (2026-03-25)
 ------------------
 
 * Fix formatting of ``primaryKey`` entries (PR `#5`_).
