@@ -202,7 +202,7 @@ def validate(filename):
     out, err = proc.communicate()
     out = out.decode('utf-8')
     err = err.decode('utf-8')
-    if proc.returncode != 0 or err != f"INFO:felis:Validating {filename}\n":
+    if proc.returncode != 0:
         if out:
             log.error('STDOUT =')
             log.error(out)
@@ -224,15 +224,14 @@ def main():
     if options.debug:
         log.setLevel(logging.DEBUG)
     file_name = os.path.splitext(options.json)
-    # schema_basename = os.path.basename(schema_name[0])
     assert file_name[1] == '.json'
     with open(options.json) as j:
         json_schema = json.load(j)
     assert len(json_schema['schemas']) == 1
-    # assert json_schema['schemas'][0]['schema_name'] == schema_basename
+    schema_name = json_schema['schemas'][0]['schema_name']
 
-    felis_schema = {'name': json_schema['schemas'][0]['schema_name'],
-                    '@id': '#' + json_schema['schemas'][0]['schema_name'],
+    felis_schema = {'name': schema_name,
+                    '@id': '#' + schema_name,
                     'description': json_schema['schemas'][0]['description'],
                     'version': {'current': 'v1',
                                 'compatible': ['v1'],
@@ -240,22 +239,33 @@ def main():
                     'tables': list()}
 
     for tap_index, json_table in enumerate(json_schema['tables']):
-        # assert json_table['schema_name'] == schema_basename
-        if 'primaryKey' in json_table.keys():
-            pmk = json_table['primaryKey']
-        else:
-            pmk = ''
+        # assert json_table['schema_name'] == schema_name
         felis_table = {'name': json_table['table_name'],
                        '@id': f"#{json_table['schema_name']}.{json_table['table_name']}",
                        'description': json_table['description'],
                        'tap:table_index': tap_index + 1,
-                       'primaryKey': pmk,
                        'constraints': list(),
                        'indexes': list(),
                        'columns': list()}
+
+        if 'primaryKey' in json_table.keys():
+            if isinstance(json_table['primaryKey'], list):
+                # Should already be a list with format "#schema_name.table_name.column_name".
+                if len(json_table['primaryKey']) == 1:
+                    felis_table['primaryKey'] = json_table['primaryKey'][0]
+                else:
+                    felis_table['primaryKey'] = json_table['primaryKey'].copy()
+            else:
+                # Assume a str.
+                pk_qualifier = f"#{json_table['schema_name']}.{json_table['table_name']}."
+                if json_table['primaryKey'].startswith(pk_qualifier):
+                    felis_table['primaryKey'] = json_table['primaryKey']
+                else:
+                    felis_table['primaryKey'] = pk_qualifier + json_table['primaryKey']
+
         json_columns = [c for c in json_schema['columns']
                         if (c['table_name'] == json_table['table_name'])
-                        or (c['table_name'] == f"{schema_basename}.{json_table['table_name']}")]
+                        or (c['table_name'] == f"{json_table['schema_name']}.{json_table['table_name']}")]
 
         for column_index, json_column in enumerate(json_columns):
             #
