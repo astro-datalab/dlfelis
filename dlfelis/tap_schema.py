@@ -314,6 +314,15 @@ def main():
                     felis_column['ivoa:ucd'] = json_column['ucd']
             felis_table['columns'].append(felis_column)
 
+        # Reorder columns by datatype: double, long, float, int, short, char, string.
+        # Columns with unrecognized datatypes are sorted to the end.
+
+        datatype_order = ['double', 'long', 'float', 'int', 'short', 'char', 'string']
+        felis_table['columns'].sort(
+            key=lambda col: datatype_order.index(col['datatype'])
+            if col['datatype'] in datatype_order
+            else len(datatype_order))
+
         if 'constraints' in json_schema.keys():
             for constraint_index, json_constraint in enumerate(json_schema['constraints']):
                 felis_constraint = {'name': json_constraint['constraint_name'],
